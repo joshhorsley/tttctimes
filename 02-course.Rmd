@@ -1,0 +1,11 @@
+# Course
+
+Under construction
+
+```{r}
+leaflet(width = 1500, height = 700) %>% 
+  setView(lng = 153.537275, lat = -28.214789, zoom = 16) %>% 
+  addMarkers(lng = 153.537275, lat = -28.214789) %>% 
+  addTiles()
+```
+

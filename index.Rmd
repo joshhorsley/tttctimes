@@ -1,0 +1,55 @@
+--- 
+title: "TwinTown Triathlon Club Race Times"
+author: "Josh Horsley"
+date: "Upated: `r format(Sys.time(),'%Y-%m-%d %H:%M %Z')`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib]
+biblio-style: apalike
+link-citations: yes
+description: "TTTC Race Times"
+---
+
+
+```{r}
+
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE)
+
+library(data.table)
+library(ggplot2)
+library(plotly)
+library(leaflet)
+
+
+dt_times <- fread("data_provided/webscorer/TTTC 5 Dec 2020.txt")
+
+dt_times[, place_overall := as.numeric(Place)]
+
+dt_times[, Swim := as.ITime(`Lap 1`, format = "%M:%S")]
+dt_times[, Ride := as.ITime(`Lap 2`, format = "%M:%S")]
+dt_times[, Run := as.ITime(`Lap 3`, format = "%M:%S")]
+
+dt_times_long <- melt.data.table(dt_times, id.vars = c("Name","place_overall"),
+                                 measure.vars = c("Swim",
+                                                  "Ride",
+                                                  "Run"),
+                                 variable.name = "part",value.name = "duration")
+
+dt_times_long[, duration_mins := as.numeric(duration/60)]
+
+problems_names <- c("Matt Gabb", "Val Lambard", "Rob Gillies")
+
+dt_times_long[Name %in% problems_names, data_problem := TRUE]
+dt_times_long[is.na(data_problem), data_problem := FALSE]
+
+dt_times_long[, place_name := paste0(place_overall, " ", Name)]
+
+dt_times_long[, tooltext := paste0(Name, "\n", part, ": ", duration)]
+
+```
+
+
+# Welcome
+
+This is a quick test of visualising race time results. Have a look at the [December 5 example](#r-2020-12-05)
+

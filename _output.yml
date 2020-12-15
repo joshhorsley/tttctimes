@@ -1,0 +1,8 @@
+bookdown::gitbook:
+  css: style.css
+  number_sections: false
+  config:
+    sharing:
+      facebook: false
+      linkedin: true
+      all: false
