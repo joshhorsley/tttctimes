@@ -1,5 +1,5 @@
 --- 
-title: "TwinTown Triathlon Club Race Times"
+title: "TwinTowns Triathlon Club Race Times"
 author: "Josh Horsley"
 date: "Upated: `r format(Sys.time(),'%Y-%m-%d %H:%M %Z')`"
 site: bookdown::bookdown_site
@@ -52,4 +52,6 @@ dt_times_long[, tooltext := paste0(Name, "\n", part, ": ", duration)]
 # Welcome
 
 This is a quick test of visualising race time results. Have a look at the [December 5 example](#r-2020-12-05)
+
+Only publicly available data from the [club's webscorer page](https://www.webscorer.com/33755) is used.
 
