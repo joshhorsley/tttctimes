@@ -52,7 +52,7 @@ p
   </div>
 
   <div class="mobile">
-```{r fig.cap="An intervative version of this plot is available on desktop or tablet devices."}
+```{r fig.cap="An interactive version of this plot is available on desktop or tablet devices."}
 print(g)
 ```
  
