@@ -13,7 +13,7 @@ description: "TTTC Race Times"
 
 ```{r}
 
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, fig.height = 6, fig.width = 7)
 
 library(data.table)
 library(ggplot2)
