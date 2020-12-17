@@ -7,7 +7,7 @@ Overall times
 
 
 ```{r}
-p <- ggplot(dt_times_long[order(place_overall)][!(data_problem)],
+g <- ggplot(dt_times_long[order(place_overall)][!(data_problem)],
             aes(x = duration_mins, y = - place_overall, fill = part, group = Name, text = tooltext)) +
     geom_col(orientation = "y") +
     # geom_col(aes(x = swim_duration/60 + ride_duration/60, y = Name),width = 2, orientation = "y", fill = "#3B8544") +
@@ -22,11 +22,43 @@ p <- ggplot(dt_times_long[order(place_overall)][!(data_problem)],
       scale_x_continuous("Time (mins)", breaks = seq(0,100, 10), minor_breaks = seq(0,100, 5)) +
       scale_y_continuous("Athlete", breaks = -dt_times_long$place_overall,
                          labels = dt_times_long$place_name) +
-  theme_minimal()
+  theme_minimal() +
+  theme(legend.position="top")
 
 
-ggplotly(p,width = 800, height = 700, tooltip = "text")
+p <- ggplotly(g,width = 800, height = 700, tooltip = "text",layerData = TRUE, style = "mobile")
+
+# m <- list(
+#   l = 0,
+#   r = 0,
+#   b = 0,
+#   t = 0,
+#   pad = 4
+# )
+# 
+# p %>% layout(autosize = TRUE, margin = m)
+
+# p
 ```
+
+
+
+<div id="content">
+  <div class="desktop">
+```{r}
+p
+```
+  
+  </div>
+
+  <div class="mobile">
+```{r fig.cap="An intervative version of this plot is available on desktop or tablet devices."}
+print(g)
+```
+ 
+  </div>
+</div>
+
 
 Some results have been omitted due to webscorer data issues:
 

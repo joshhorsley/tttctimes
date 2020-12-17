@@ -1,12 +1,13 @@
 /* if desktop */
-  @media all and (min-width: 600px) {
+  @media (min-widthL 600px) {
     .mobile {display: none;}
     .desktop {display: block;}
+
   }
 
   /* if mobile device max width 380px */
-  @media all and (max-width: 600px) {
-      .mobile {display: block;}       
+  @media (max-width: 600px) {
+      .mobile{display: block;}       
       .desktop {display: none;}
   } 
 
