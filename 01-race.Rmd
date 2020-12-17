@@ -25,7 +25,7 @@ p <- ggplot(dt_times_long[order(place_overall)][!(data_problem)],
   theme_minimal()
 
 
-ggplotly(p,width = 1500, height = 700, tooltip = "text")
+ggplotly(p,width = 800, height = 700, tooltip = "text")
 ```
 
 Some results have been omitted due to webscorer data issues:
