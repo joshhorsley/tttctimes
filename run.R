@@ -9,7 +9,7 @@ source("req_packages.R")
 # Initial analysis --------------------------------------------------------
 
 
-dt_times <- fread("data_provided/webscorer/TTTC 5 Dec 2020.txt")
+dt_times <- fread("data_provided/webscorer/full/TTTC 5 Dec 2020.txt")
 
 dt_times[, place_overall := as.numeric(Place)]
 

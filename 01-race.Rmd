@@ -2,8 +2,7 @@
 
 ## Dec 5 {#r-2020-12-05}
 
-Overall times
-
+### Full
 
 
 
@@ -30,3 +29,6 @@ Some results have been omitted due to webscorer data issues:
 knitr::kable(dt_times_long[(data_problem), .(Name, part, duration)][order(Name, part)], caption = "Results omitted from plot because of data issues.")
 ```
 
+### Intermediate
+
+TBC

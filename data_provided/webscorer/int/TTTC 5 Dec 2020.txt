@@ -1,0 +1,23 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Time	Lap 1	Lap 2	Lap 3	Difference	% Back	% Winning	% Average	% Median
+1	63	Sebastian Thomson	Sebastian	Thomson	Intermediate	34:46.9	5:55.0	19:42.4	9:09.5	-	-	100%	23.47%	22.68%
+2	244	Lydia Kuschmirz	Lydia	Kuschmirz	Intermediate	35:19.3	6:06.3	15:04.8	14:08.2	+0:32.4	+1.55%	98.47%	22.28%	21.48%
+3	202	Rod Sewell	Rod	Sewell	Intermediate	36:31.0	5:24.2	19:23.8	11:43.0	+1:44.1	+4.99%	95.25%	19.65%	18.83%
+4	207	Jamie Brindley	Jamie	Brindley	Intermediate	39:16.7	6:12.6	22:00.3	11:03.7	+4:29.8	+12.93%	88.55%	13.58%	12.69%
+5	273	Marcus Williamson	Marcus	Williamson	Intermediate	42:50.7	7:05.2	24:16.2	11:29.2	+8:03.8	+23.18%	81.18%	5.73%	4.76%
+6	204	Lucas Nixon-Hind	Lucas	Nixon-Hind	Intermediate	44:11.8	7:19.0	26:10.4	10:42.4	+9:24.9	+27.07%	78.70%	2.76%	1.76%
+7	239	Glenn Hind	Glenn	Hind	Intermediate	44:32.6	8:15.1	26:01.6	10:15.8	+9:45.7	+28.07%	78.09%	1.99%	0.99%
+8	50	Manda Hall	Manda	Hall	Intermediate	44:59.2	6:29.0	25:25.4	13:04.7	+10:12.3	+29.34%	77.32%	1.02%	0.00%
+9	35	Judy Murray	Judy	Murray	Intermediate	47:29.2	8:00.5	26:04.9	13:23.8	+12:42.3	+36.53%	73.25%	-4.48%	-5.56%
+10	263	Katie Glynn	Katie	Glynn	Intermediate	47:31.4	7:55.3	27:35.4	12:00.7	+12:44.5	+36.63%	73.19%	-4.56%	-5.64%
+11	205	Karen Nixon	Karen	Nixon	Intermediate	50:06.0	8:38.6	28:52.9	12:34.6	+15:19.1	+44.04%	69.42%	-10.23%	-11.37%
+12	272	Cheryl Atkinson	Cheryl	Atkinson	Intermediate	51:54.2	7:26.7	29:31.7	14:55.8	+17:07.3	+49.23%	67.01%	-14.20%	-15.37%
+13	136	Greg Williamson	Greg	Williamson	Intermediate	53:06.8	7:24.4	27:46.5	17:56.0	+18:19.9	+52.70%	65.49%	-16.86%	-18.06%
+14	201	Tracey Sewell	Tracey	Sewell	Intermediate	54:15.1	8:03.9	34:41.5	11:29.6	+19:28.2	+55.98%	64.11%	-19.37%	-20.59%
+15	200	Steve West	Steve	West	Intermediate	54:53.6	5:45.3	31:58.7	17:09.6	+20:06.7	+57.82%	63.36%	-20.78%	-22.02%
+-	64	Wendy Sanders	Wendy	Sanders	Intermediate	DNS				-	-	-	-	-
+-	141	Erin Davoren	Erin	Davoren	Intermediate	DNS				-	-	-	-	-
+-	208	Ava Thomson	Ava	Thomson	Intermediate	DNS				-	-	-	-	-
+-	214	Timothy Taylor	Timothy	Taylor	Intermediate	DNS				-	-	-	-	-
+-	215	William Taylor	William	Taylor	Intermediate	DNS				-	-	-	-	-
+-	238	Lorraine Bassett	Lorraine	Bassett	Intermediate	DNS				-	-	-	-	-
+-	259	Kylie Gibson	Kylie	Gibson	Intermediate	DNS				-	-	-	-	-
