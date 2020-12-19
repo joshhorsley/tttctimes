@@ -51,15 +51,14 @@ g <- ggplot(dt_times_long[order(place_overall)][!(data_problem)],
                     values = c(Swim = "#2E63BC",
                                Ride = "#3B8544",
                                Run = "#BF5324")) +
-  scale_x_continuous("Time (mins)", breaks = seq(0,100, 10), minor_breaks = seq(0,100, 5)) +
+  scale_x_continuous("Time (mins)", breaks = seq(0,100, 10), minor_breaks = seq(0,100, 5),position = "top") +
   scale_y_continuous("Athlete", breaks = -dt_times_long$place_overall,
-                     labels = dt_times_long$place_name) +
+                     labels = dt_times_long$place_name, minor_breaks = NULL) +
   theme_minimal() +
   theme(legend.position="top")
 
 
-ggsave(filename = "figures/2020-12-02_full.pdf",width = 6, height = 7)
-
+ggsave(filename = "figures/2020-12-02_full.pdf",plot = g, width = 6, height = 7)
 
 p <- ggplotly(g,width = 800, height = 700, tooltip = "text",layerData = TRUE, style = "mobile")
 
