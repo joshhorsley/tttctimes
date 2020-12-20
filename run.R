@@ -6,69 +6,112 @@
 source("req_packages.R")
 
 
-# Initial analysis --------------------------------------------------------
+# Races and files ---------------------------------------------------------
 
 
-dt_times <- fread("data_provided/webscorer/full/TTTC 5 Dec 2020.txt")
+dt_season_import <- fread("data_provided/season_definition/2020-2021.csv")
+dt_season_import[, date_ymd := as.IDate(date_ymd, format = "%d/%m/%y")]
 
-dt_times[, place_overall := as.numeric(Place)]
+n_weeks <- nrow(dt_season_import)
 
-dt_times[, Swim := as.ITime(`Lap 1`, format = "%M:%S")]
-dt_times[, Ride := as.ITime(`Lap 2`, format = "%M:%S")]
-dt_times[, Run := as.ITime(`Lap 3`, format = "%M:%S")]
+dt_season <- dt_season_import[rep(seq(.N),2)]
 
-dt_times_long <- melt.data.table(dt_times, id.vars = c("Name","place_overall"),
+dt_season[, course := "int"]
+dt_season[1:n_weeks, course := "full"]
+
+dt_season[, path_webscorer := paste0("data_provided/webscorer/",course,"/TTTC ", mday(date_ymd), " ", format(date_ymd, "%b"), " ", year(date_ymd), ".txt")]
+dt_season[, have_results := file.exists(path_webscorer)]
+
+dt_season[, row_id := seq(.N)]
+
+# Load race results
+dt_season[(have_results), dt_race := .(list(fread(path_webscorer))), by = row_id]
+
+# Flatten available results
+id_results <- which(dt_season$have_results)
+
+dt_all <- foreach(i=id_results, .combine = rbind) %do% {
+  dt_season[i, .(row_id, dt_race[[1]])]
+}
+
+new_cols <- c("race_number", "date_ymd", "race_type", "course")
+dt_all[dt_season, on = .(row_id), (new_cols) := mget(new_cols)]
+setcolorder(dt_all, new_cols)
+
+# Cleaning ----------------------------------------------------------------
+
+# Formats
+dt_all[, place_overall := as.numeric(Place)]
+
+dt_all[, Swim := as.ITime(`Lap.1`, format = "%M:%S")]
+dt_all[, Ride := as.ITime(`Lap.2`, format = "%M:%S")]
+dt_all[, Run := as.ITime(`Lap.3`, format = "%M:%S")]
+
+# Convert to long
+dt_all_long <- melt.data.table(dt_all, id.vars = c("race_number", "date_ymd", "race_type", "course", "Name","place_overall"),
                                  measure.vars = c("Swim",
                                                   "Ride",
                                                   "Run"),
-                                 variable.name = "part",value.name = "duration")
+                                 variable.name = "part", value.name = "duration")
 
-dt_times_long[, duration_mins := as.numeric(duration/60)]
+dt_all_long[, duration_mins := as.numeric(duration/60)]
 
-problems_names <- c("Matt Gabb", "Val Lambard", "Rob Gillies")
+# known webscorer problems
+dt_problems <- fread("data_provided/webscorer/webscorer_problems.csv")
+dt_problems[, date_ymd := as.IDate(date_ymd, format = "%d/%m/%y")]
+dt_problems[, data_problem := TRUE]
 
-dt_times_long[Name %in% problems_names, data_problem := TRUE]
-dt_times_long[is.na(data_problem), data_problem := FALSE]
-
-dt_times_long[, place_name := paste0(place_overall, " ", Name)]
-
-dt_times_long[, tooltext := paste0(Name, "\n", part, ": ", duration)]
-
+dt_all_long[dt_problems, on = .(date_ymd, Name), data_problem := i.data_problem]
+dt_all_long[is.na(data_problem), data_problem := FALSE]
 
 
-# Plots -------------------------------------------------------------------
+# Race plots --------------------------------------------------------------
 
 
-g <- ggplot(dt_times_long[order(place_overall)][!(data_problem)],
-            aes(x = duration_mins, y = - place_overall, fill = part, group = Name, text = tooltext)) +
-  geom_col(orientation = "y") +
-  # geom_col(aes(x = swim_duration/60 + ride_duration/60, y = Name),width = 2, orientation = "y", fill = "#3B8544") +
-  # geom_col(aes(x = swim_duration/60, y = Name),width = 2, orientation = "y", fill = "#2E63BC")  +
-  scale_fill_manual("Part",
-                    labels = c(Swim = "Swim",
-                               Ride = "Ride",
-                               Run = "Run"),
-                    values = c(Swim = "#2E63BC",
-                               Ride = "#3B8544",
-                               Run = "#BF5324")) +
-  scale_x_continuous("Time (mins)", breaks = seq(0,100, 10), minor_breaks = seq(0,100, 5),position = "top") +
-  scale_y_continuous("Athlete", breaks = -dt_times_long$place_overall,
-                     labels = dt_times_long$place_name, minor_breaks = NULL) +
-  theme_minimal() +
-  theme(legend.position="top")
+race_numbers <- unique(dt_all_long$race_number)
 
-
-ggsave(filename = "figures/2020-12-02_full.pdf",plot = g, width = 6, height = 7)
-
-p <- ggplotly(g,width = 800, height = 700, tooltip = "text",layerData = TRUE, style = "mobile")
-
+list_plotly_race <- 
+  foreach(i=race_numbers, .combine = list, .final = function(x) setNames(x, paste0("race_",race_numbers))) %do% {
+    foreach(j = c("full","int"), .combine = list, .final = function(x) setNames(x, c("full","int"))) %do% {
+    
+      dt_i <- dt_all_long[race_number== i & course == j][order(place_overall)][!(data_problem)]
+      dt_i[, place_name := paste0(place_overall, " ", Name)]
+      dt_i[, tooltext := paste0(Name, "\n", part, ": ", duration)]
+      
+      g <- ggplot(dt_i,
+                  aes(x = duration_mins, y = - place_overall, fill = part, group = Name, text = tooltext)) +
+        geom_col(orientation = "y") +
+        # geom_col(aes(x = swim_duration/60 + ride_duration/60, y = Name),width = 2, orientation = "y", fill = "#3B8544") +
+        # geom_col(aes(x = swim_duration/60, y = Name),width = 2, orientation = "y", fill = "#2E63BC")  +
+        scale_fill_manual("Part",
+                          labels = c(Swim = "Swim",
+                                     Ride = "Ride",
+                                     Run = "Run"),
+                          values = c(Swim = "#2E63BC",
+                                     Ride = "#3B8544",
+                                     Run = "#BF5324")) +
+        scale_x_continuous("Time (mins)", breaks = seq(0,100, 10), minor_breaks = seq(0,100, 5),position = "top") +
+        scale_y_continuous("Athlete", breaks = -dt_i$place_overall,
+                           labels = dt_i$place_name, minor_breaks = NULL) +
+        theme_minimal() +
+        theme(legend.position="top")
+      
+      ggsave(filename = paste0("figures/",dt_i$date_ymd[1],"_",j,".pdf"),
+             plot = g, width = 6, height = 7)
+      
+      ggplotly(g,width = 800, height = 700, tooltip = "text",layerData = TRUE, style = "mobile")
+      
+    
+  }
+}
 
 
 # Export for website ------------------------------------------------------
 
 
-saveRDS(p, "data_derived/plotly.rds")
-saveRDS(dt_times_long, "data_derived/dt_times_long.rds")
+saveRDS(dt_season, "data_derived/dt_season.rds")
+saveRDS(dt_all_long, "data_derived/dt_all_long.rds")
+saveRDS(list_plotly_race, "data_derived/list_plotly_race.rds")
 
 
 # Update website ----------------------------------------------------------

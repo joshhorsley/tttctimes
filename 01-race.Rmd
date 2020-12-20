@@ -1,34 +1,95 @@
-# Race Results
+# (PART) Race Results {#races}
 
-## Dec 5 {#r-2020-12-05}
+<!-- ```{r, results='asis'} -->
 
-### Full
+<!-- race_numbers <- unique(dt_all_long$race_number) -->
 
+<!-- for (i in rev(race_numbers) ){ -->
+
+<!--     i_date_file <- format(dt_season[race_number == i]$date_ymd[1], "%Y-%m-%d") -->
+<!--     i_date <- format(dt_season[race_number == i]$date_ymd[1], "%b %d") -->
+<!--     cat("\n# ", i_date, "\n") -->
+
+
+<!--     cat(paste0("Race number: ",i,"\n\n ")) -->
+
+
+<!--   for (j in c("full","int")) { -->
+
+<!--         cat(paste0("\n## ", j, "\n")) -->
+
+
+
+<!--         # cat("![](",paste0("figures/",i_date_file,"_",j,".pdf"),")") -->
+
+<!--         # cat("\n") -->
+
+
+<!--         cat("<img src='",paste0("figures/",i_date_file,"_",j,".pdf"),"'>") -->
+
+<!--         cat("\n") -->
+
+
+
+<!--         list_plotly_race[[which(j==c("full","int"))]][which(i==race_numbers)] -->
+
+
+
+
+<!--     # i_type <- dt_season[race_number == i]$race_type[1] -->
+
+<!--     # knitr::include_graphics(paste0("figures/",i_date_file,"_",j,".pdf")) -->
+
+
+<!--   } -->
+<!-- } -->
+<!-- ``` -->
+
+
+
+# Dec 5 {#r-2020-12-05}
+
+## Full
 
 
 <div id="content">
   <div class="desktop">
 ```{r}
-p
+list_plotly_race$race_11$full
 ```
-  
+
   </div>
 
   <div class="mobile">
 ```{r fig.cap="An interactive version of this plot is available on desktop or tablet devices."}
-knitr::include_graphics("figures/2020-12-02_full.pdf")
+knitr::include_graphics("figures/2020-12-05_full.pdf")
 ```
- 
+
   </div>
 </div>
 
 
-Some results have been omitted due to webscorer data issues:
+<!-- Some results have been omitted due to webscorer data issues: -->
 
 ```{r}
-knitr::kable(dt_times_long[(data_problem), .(Name, part, duration)][order(Name, part)], caption = "Results omitted from plot because of data issues.")
+# knitr::kable(dt_times_long[(data_problem), .(Name, part, duration)][order(Name, part)], caption = "Results omitted from plot because of data issues.")
 ```
 
-### Intermediate
+## Intermediate
 
-TBC
+
+<div id="content">
+  <div class="desktop">
+```{r}
+list_plotly_race$race_11$int
+```
+
+  </div>
+
+  <div class="mobile">
+```{r fig.cap="An interactive version of this plot is available on desktop or tablet devices."}
+knitr::include_graphics("figures/2020-12-05_int.pdf")
+```
+
+  </div>
+</div>
