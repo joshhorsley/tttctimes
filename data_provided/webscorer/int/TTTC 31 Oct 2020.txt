@@ -1,0 +1,16 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Time	Lap 1	Lap 2	Lap 3	Difference	% Back	% Winning	% Average	% Median
+1	147	Remy Hawkins	Remy	Hawkins	Intermediate	36:23.0	6:02.7	19:55.5	10:24.8	-	-	100%	12.28%	8.06%
+2	244	Lydia Kuschmirz	Lydia	Kuschmirz	Intermediate	36:52.5	6:32.1	17:34.1	12:46.4	+0:29.5	+1.35%	98.67%	11.10%	6.81%
+3	63	Sebastian Thomson	Sebastian	Thomson	Intermediate	37:09.6	5:47.9	20:16.3	11:05.4	+0:46.6	+2.13%	97.91%	10.41%	6.09%
+4	259	Kylie Gibson	Kylie	Gibson	Intermediate	37:37.5	6:19.5	21:02.6	10:15.4	+1:14.5	+3.41%	96.70%	9.29%	4.92%
+5	202	Rod Sewell	Rod	Sewell	Intermediate	38:35.5	5:26.1	21:19.7	11:49.7	+2:12.5	+6.07%	94.28%	6.96%	2.48%
+6	254	Darren Murray	Darren	Murray	Intermediate	39:34.3	6:13.7	22:03.4	11:17.2	+3:11.3	+8.76%	91.94%	4.59%	0.00%
+7	208	Ava Thomson	Ava	Thomson	Intermediate	40:25.1	6:52.4	21:56.6	11:36.2	+4:02.1	+11.09%	90.02%	2.55%	-2.14%
+8	207	Jamie Brindley	Jamie	Brindley	Intermediate	42:45.7	6:44.4	23:59.7	12:01.5	+6:22.7	+17.53%	85.08%	-3.10%	-8.06%
+9	250	Helen Murphy	Helen	Murphy	Intermediate	43:42.4	5:48.9	24:41.1	13:12.4	+7:19.4	+20.13%	83.24%	-5.38%	-10.45%
+10	263	Katie Glynn	Katie	Glynn	Intermediate	50:56.7	8:29.3	29:10.7	13:16.7	+14:33.7	+40.02%	71.42%	-22.83%	-28.74%
+11	268	Jo-Anne Borgas	Jo-Anne	Borgas	Intermediate	52:12.6	7:59.5	30:10.1	14:03.1	+15:49.6	+43.50%	69.69%	-25.88%	-31.94%
+-	64	Wendy Sanders	Wendy	Sanders	Intermediate	DNS				-	-	-	-	-
+-	141	Erin Davoren	Erin	Davoren	Intermediate	DNS				-	-	-	-	-
+-	214	Timothy Taylor	Timothy	Taylor	Intermediate	DNS				-	-	-	-	-
+-	215	William Taylor	William	Taylor	Intermediate	DNS				-	-	-	-	-

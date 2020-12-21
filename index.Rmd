@@ -30,8 +30,16 @@ list_plotly_race <- readRDS("data_derived/list_plotly_race.rds")
 
 # Welcome
 
-This is a completely unofficial test of visualising race results for [TwinTowns Triathlon Club](http://www.twintownstriathlon.org.au). Have a look at the [December 5 example](#r-2020-12-05).
+This is a completely unofficial test of visualising race results for [TwinTowns Triathlon Club](http://www.twintownstriathlon.org.au). Have a look at the [December 19 example](#r-2020-12-19).
 
-Only publicly available data from the [club's webscorer page](https://www.webscorer.com/33755) is used.
+Only publicly available data from the [club's webscorer page](https://www.webscorer.com/33755) is used. This data appears to have several issues (unrealistic or missing lap times) which will be flagged in future updates.
 
+# Season
 
+```{r}
+knitr::kable(dt_season[course=='full', .(`Race number` = race_number,
+                            Date = date_ymd,
+                            `Event type` = race_type,
+                            cancelled,
+                            have_results)])
+```
