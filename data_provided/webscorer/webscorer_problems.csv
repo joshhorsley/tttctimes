@@ -57,6 +57,8 @@ race_number,date_ymd,Name,part,split_valid,cumulative_valid
 ,,,,,
 6,31/10/20,Craig Broadhurst,Run,FALSE,FALSE
 ,,,,,
+6,31/10/20,Glenn Payne,Run,FALSE,FALSE
+,,,,,
 ,,,,,
 7,7/11/20,Erin Davoren,Run,FALSE,FALSE
 ,,,,,
@@ -83,6 +85,3 @@ race_number,date_ymd,Name,part,split_valid,cumulative_valid
 13,19/12/20,Lydia Kuschmirz,Run,FALSE,FALSE
 ,,,,,
 13,19/12/20,Rob Gilllies,Swim,FALSE,FALSE
-,,,,,
-,,,,,
-,,,,,

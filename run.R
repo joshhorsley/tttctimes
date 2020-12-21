@@ -113,10 +113,47 @@ dt_all_long[is.na(valid_overall), valid_overall := TRUE]
 # dt_problems[Name=="Rowena Smith" & race_number ==4]
 
 
-# Entry errors ------------------------------------------------------------
+# Course entry errors -----------------------------------------------------
 
 
 dt_all_long[race_number==3 & Name == "Lydia Kuschmirz", course := "int"]
+
+
+# Name inconsistencies ----------------------------------------------------
+
+
+dt_all_long[Name %in% c("Dave de Closey","Dave De Closey","Dave DE CLOSEY","David De Closey"), Name := "David De Closey"]
+dt_all_long[Name %in% c("Peta EDGE"), Name := "Peta Edge"]
+dt_all_long[Name %in% c("Jo Ward"), Name := "Jolyon Ward"]
+dt_all_long[Name %in% c("Joshua Horsley"), Name := "Josh Horsley"]
+dt_all_long[Name %in% c("Robyn BARRY"), Name := "Robyn Barry"]
+dt_all_long[Name %in% c("Ian Driffil"), Name := "Ian Driffill"]
+dt_all_long[Name %in% c("Stephen RING"), Name := "Stephen Ring"]
+dt_all_long[Name %in% c("Philip SALTER"), Name := "Philip Salter"]
+dt_all_long[Name %in% c("Sally KINGSTON"), Name := "Sally Kingston"]
+dt_all_long[Name %in% c("Aaron NEYLAN"), Name := "Aaron Neylan"]
+dt_all_long[Name %in% c("Greg Freeman"), Name := "Gregory Freeman"]
+dt_all_long[Name %in% c("Lydia Kuschnirz"), Name := "Lydia Kuschmirz"]
+dt_all_long[Name %in% c("Samatha Leonard"), Name := "Samantha Leonard"]
+dt_all_long[Name %in% c("Valerie Lambard"), Name := "Val Lambard"]
+dt_all_long[Name %in% c("Amanda Hall"), Name := "Manda Hall"]
+
+
+# Separate Names ----------------------------------------------------------
+
+
+dt_all_long[, row_id := seq(.N)]
+dt_all_long[, name_first := strsplit(Name, " ")[[1]][1],  by = row_id]
+dt_all_long[, name_last := gsub(paste0(name_first, " "), "", Name), by = row_id]
+
+# dt_all_long[, .(Name, name_first, name_last)]
+
+
+# Order names -------------------------------------------------------------
+
+
+# athletes <- unique(dt_all_long[(started)]$Name)
+athletes_ordered <- unique(dt_all_long[(started)][order(tolower(name_last))]$Name)
 
 
 # Recalculate places ------------------------------------------------------
@@ -158,6 +195,9 @@ dt_all_long[(started) & place_cum_recalc %% 10 ==1, place_cum_nice := paste0(pla
 dt_all_long[(started) & place_cum_recalc %% 10 ==2, place_cum_nice := paste0(place_cum_recalc, "nd")]
 dt_all_long[(started) & place_cum_recalc %% 10 ==3, place_cum_nice := paste0(place_cum_recalc, "rd")]
 dt_all_long[(started) & place_cum_recalc %in% c(11,12,13), place_cum_nice := paste0(place_cum_recalc, "th")]
+
+
+
 
 
 # Race plots --------------------------------------------------------------
@@ -215,7 +255,7 @@ for(i in race_numbers) {
     theme_minimal() +
     theme(legend.position="top")
   
-  ggsave(filename = paste0("figures/",dt_i$date_ymd[1],"_",j,".pdf"),
+  ggsave(filename = paste0("figures/race/",dt_i$date_ymd[1],"_",j,".pdf"),
          plot = g, width = 6, height = 7)
   
   
@@ -224,47 +264,81 @@ for(i in race_numbers) {
   }
 }
 
-# test <- foreach(i=race_numbers, .combine = list) %do% {
-#   foreach(j = c("full","int"), .combine = list, .final = function(x) setNames(x, c("full","int"))) %do% {
-#     paste0(i, j)
-#   }
-# }
-# 
-# list_plotly_race <- 
-#   # foreach(i=race_numbers, .combine = list, .final = function(x) setNames(x, paste0("race_",race_numbers))) %do% {
-#   foreach(i=c(1,10,11,2)) %do% {
-#     foreach(j = c("full","int"), .combine = list, .final = function(x) setNames(x, c("full","int"))) %do% {
-# 
-#       dt_i <- dt_all_long[race_number== i & course == j][order(place_overall)][!(data_problem)]
-#       dt_i[, place_name := paste0(place_overall, " ", Name)]
-#       dt_i[, tooltext := paste0(Name, "\n", part, ": ", duration)]
-#       
-#       g <- ggplot(dt_i,
-#                   aes(x = duration_mins, y = - place_overall, fill = part, group = Name, text = tooltext)) +
-#         geom_col(orientation = "y") +
-#         # geom_col(aes(x = swim_duration/60 + ride_duration/60, y = Name),width = 2, orientation = "y", fill = "#3B8544") +
-#         # geom_col(aes(x = swim_duration/60, y = Name),width = 2, orientation = "y", fill = "#2E63BC")  +
-#         scale_fill_manual("Part",
-#                           labels = c(Swim = "Swim",
-#                                      Ride = "Ride",
-#                                      Run = "Run"),
-#                           values = c(Swim = "#2E63BC",
-#                                      Ride = "#3B8544",
-#                                      Run = "#BF5324")) +
-#         scale_x_continuous("Time (mins)", breaks = seq(0,100, 10), minor_breaks = seq(0,100, 5),position = "top") +
-#         scale_y_continuous("Athlete", breaks = -dt_i$place_overall,
-#                            labels = dt_i$place_name, minor_breaks = NULL) +
-#         theme_minimal() +
-#         theme(legend.position="top")
-#       
-#       ggsave(filename = paste0("figures/",dt_i$date_ymd[1],"_",j,".pdf"),
-#              plot = g, width = 6, height = 7)
-#       
-#       ggplotly(g,width = 800, height = 700, tooltip = "text",layerData = TRUE, style = "mobile")
-#       
-#     
-#   }
-# }
+
+# Athlete plots -----------------------------------------------------------
+
+
+
+
+
+# k <- "Ben Hall"
+# k <- "John King"
+
+list_plotly_athlete <- list()
+
+
+for(k in athletes_ordered) {
+  
+  # k_courses <- unique(dt_all_long[(started) & Name==k]$course)
+    
+  dt_k <- dt_all_long[(started) & Name==k][order(race_number)]
+  
+  dt_k[!(split_valid), part := paste0(part, " (invalid)")]
+  dt_k[, part := ordered(part, levels = c("Swim", "Swim (invalid)",
+                                          "Ride", "Ride (invalid)",
+                                          "Run", "Run (invalid)"))]
+  
+  dt_k[course == "int", course := "Intermediate"]
+  dt_k[course == "full", course := "Full"]
+  dt_k[course == "double", course := "Double Distance"]
+  dt_k[, course := ordered(course, levels = c("Full", "Intermediate","Double Distance"))]
+  
+  dt_k[(valid_overall), place_name := paste0(place_overall_recalc, " ", Name)]
+  dt_k[!(valid_overall), place_name := paste0("DNF ", Name)]
+  
+  dt_k[, tooltext := paste0("Race number: ", race_number,"\n",
+                            "Date: ", date_ymd, "\n",
+                            part, ": ", duration,"\n",
+                            "Cumulative", ifelse(!(cumulative_valid), paste0(" (invalid): ", total), paste0( ": ",total)))]
+  
+  
+  
+  
+  gk <- ggplot(dt_k,
+         aes(y = duration_mins, x = race_number, fill = part, group = race_number, text = tooltext)) +
+    geom_col(orientation = "x", width = 0.9) +
+    facet_grid(rows = "course") +
+    scale_fill_manual("Part",
+                      labels = c(Swim = "Swim",
+                                 Ride = "Ride",
+                                 Run = "Run",
+                                 `Swim (invalid)` = "Swim (invalid)",
+                                 `Ride (invalid)` = "Ride (invalid)",
+                                 `Run (invalid)` = "Run (invalid)"),
+                      values = c(Swim = "#2E63BC",
+                                 Ride = "#3B8544",
+                                 Run = "#BF5324",
+                                 `Swim (invalid)` = "grey",
+                                 `Ride (invalid)` = "black",
+                                 `Run (invalid)` = "grey")) +
+  scale_y_continuous("Time (mins)", breaks = seq(0,150, 10), minor_breaks = seq(0,150, 5),position = "left") +
+    scale_x_continuous("Race (number)", breaks = 1:26, limits = c(0,27)) +
+    # scale_alpha_discrete("Valid Split", range = c(0.5, 1)) +
+    # theme_minimal() +
+    theme(legend.position="top")
+  
+  ggsave(filename = paste0("figures/athlete/",k,".pdf"),
+         plot = gk, width = 6, height = 7)
+  
+  
+  list_plotly_athlete[[k]] <- ggplotly(gk,width = 800, height = 700, tooltip = "text",layerData = TRUE, style = "mobile")
+  
+    
+  # }
+  
+}
+
+
 
 
 # Export for website ------------------------------------------------------
@@ -273,10 +347,12 @@ for(i in race_numbers) {
 saveRDS(dt_season, "data_derived/dt_season.rds")
 saveRDS(dt_all_long, "data_derived/dt_all_long.rds")
 saveRDS(list_plotly_race, "data_derived/list_plotly_race.rds")
+saveRDS(list_plotly_athlete, "data_derived/list_plotly_athlete.rds")
 
 
 # Update website ----------------------------------------------------------
 
 
 source("make_race_rmd.R")
+source("make_athlete_rmd.R")
 bookdown::render_book("index.Rmd")

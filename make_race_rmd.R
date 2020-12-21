@@ -54,7 +54,7 @@ list_plotly_race$race_',i,'$',j,'
 
   <div class="mobile">
 ```{r fig.cap="An interactive version of this plot is available on desktop or tablet devices."}
-knitr::include_graphics("figures/',i_date_file,'_',j,'.pdf")
+knitr::include_graphics("figures/race/',i_date_file,'_',j,'.pdf")
 ```
 
   </div>

@@ -21,6 +21,7 @@ dt_season <- readRDS("data_derived/dt_season.rds")
 
 dt_all_long <- readRDS("data_derived/dt_all_long.rds")
 list_plotly_race <- readRDS("data_derived/list_plotly_race.rds")
+list_plotly_athlete <- readRDS("data_derived/list_plotly_athlete.rds")
 
 
 
@@ -30,7 +31,9 @@ list_plotly_race <- readRDS("data_derived/list_plotly_race.rds")
 
 # Welcome
 
-This is a completely unofficial test of visualising race results for [TwinTowns Triathlon Club](http://www.twintownstriathlon.org.au). Have a look at the [December 19 example](#r-2020-12-19).
+This is a completely unofficial test of visualising race results for [TwinTowns Triathlon Club](http://www.twintownstriathlon.org.au).
+
+Results are presented for each race ([Example: December 19](#r-2020-12-19)) and each competitor ([Example](#a-Tracy-Foyster)).
 
 The results on this website are based on publicly available data from the [club's webscorer page](https://www.webscorer.com/33755) and some guesses (for now) in places where the webscorer data appears inaccurate (e.g. split times unrealistic or missing). This is still a work-in-progress, let me know if I've guessed something wrong.
 
