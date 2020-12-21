@@ -59,23 +59,60 @@ dt_all[, place_overall := as.numeric(Place)]
 dt_all[, Swim := as.ITime(`Lap.1`, format = "%M:%S")]
 dt_all[, Ride := as.ITime(`Lap.2`, format = "%M:%S")]
 dt_all[, Run := as.ITime(`Lap.3`, format = "%M:%S")]
+dt_all[, Swim_total := Swim]
+dt_all[, Ride_total := Swim + Ride]
+dt_all[, Run_total := Swim + Ride + Run]
 
 # Convert to long
 dt_all_long <- melt.data.table(dt_all, id.vars = c("race_number", "date_ymd", "race_type", "course", "Name","place_overall"),
-                                 measure.vars = c("Swim",
+                                 # measure.vars = c("Swim",
+                                 #                  "Ride",
+                                 #                  "Run"),
+                                 measure.vars = list(c("Swim",
                                                   "Ride",
                                                   "Run"),
-                                 variable.name = "part", value.name = "duration")
+                                                  c("Swim_total",
+                                                    "Ride_total",
+                                                    "Run_total")),
+                                 variable.name = c("part"),
+                               value.name = c("duration","total"))
+
+dt_all_long[part=="1", part := "Swim"]
+dt_all_long[part=="2", part := "Ride"]
+dt_all_long[part=="3", part := "Run"]
+dt_all_long[, part := as.character(part)]
 
 dt_all_long[, duration_mins := as.numeric(duration/60)]
+dt_all_long[, total_mins := as.numeric(total/60)]
 
 # known webscorer problems
-dt_problems <- fread("data_provided/webscorer/webscorer_problems.csv")
-dt_problems[, date_ymd := as.IDate(date_ymd, format = "%d/%m/%y")]
-dt_problems[, data_problem := TRUE]
+# dt_problems <- fread("data_provided/webscorer/webscorer_problems.csv")
+# dt_problems[, date_ymd := as.IDate(date_ymd, format = "%d/%m/%y")]
+# dt_problems[, data_problem := TRUE]
 
-dt_all_long[dt_problems, on = .(date_ymd, Name), data_problem := i.data_problem]
-dt_all_long[is.na(data_problem), data_problem := FALSE]
+# dt_all_long[dt_problems, on = .(date_ymd, Name), data_problem := i.data_problem]
+# dt_all_long[is.na(data_problem), data_problem := FALSE]
+dt_all_long[, data_problem := FALSE]
+
+
+
+# Recalculate places ------------------------------------------------------
+
+
+dt_all_long[!(data_problem), place_lap := as.integer(rank(duration_mins)), by = .(race_number, course, part)]
+dt_all_long[!(data_problem), place_overall_recalc := as.integer(rank(total_mins)), by = .(race_number, course, part)]
+
+dt_all_long[!(data_problem), place_lap_nice := paste0(place_lap, "th")]
+dt_all_long[!(data_problem) & place_lap %% 10 ==1, place_lap_nice := paste0(place_lap, "st")]
+dt_all_long[!(data_problem) & place_lap %% 10 ==2, place_lap_nice := paste0(place_lap, "nd")]
+dt_all_long[!(data_problem) & place_lap %% 10 ==3, place_lap_nice := paste0(place_lap, "rd")]
+dt_all_long[!(data_problem) & place_lap %in% c(11,12,13), place_lap_nice := paste0(place_lap, "th")]
+
+dt_all_long[!(data_problem), place_overall_nice := paste0(place_overall_recalc, "th")]
+dt_all_long[!(data_problem) & place_overall_recalc %% 10 ==1, place_overall_nice := paste0(place_overall_recalc, "st")]
+dt_all_long[!(data_problem) & place_overall_recalc %% 10 ==2, place_overall_nice := paste0(place_overall_recalc, "nd")]
+dt_all_long[!(data_problem) & place_overall_recalc %% 10 ==3, place_overall_nice := paste0(place_overall_recalc, "rd")]
+dt_all_long[!(data_problem) & place_overall_recalc %in% c(11,12,13), place_overall_nice := paste0(place_overall_recalc, "th")]
 
 
 # Race plots --------------------------------------------------------------
@@ -94,10 +131,11 @@ for(i in race_numbers) {
   for( j in i_courses) {
     
     
-    
   dt_i <- dt_all_long[race_number== i & course == j][order(place_overall)][!(data_problem)]
   dt_i[, place_name := paste0(place_overall, " ", Name)]
-  dt_i[, tooltext := paste0(Name, "\n", part, ": ", duration)]
+  dt_i[, tooltext := paste0(Name, "\n",
+                            part, ": ", duration, " (",place_lap_nice,")",
+                            "\nCumulative: ", total, " (", place_overall_nice,")")]
   
   g <- ggplot(dt_i,
               aes(x = duration_mins, y = - place_overall, fill = part, group = Name, text = tooltext)) +
