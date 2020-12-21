@@ -51,6 +51,7 @@ new_cols <- c("race_number", "date_ymd", "race_type", "course")
 dt_all[dt_season, on = .(row_id), (new_cols) := mget(new_cols)]
 setcolorder(dt_all, new_cols)
 
+
 # Cleaning ----------------------------------------------------------------
 
 # Formats
@@ -62,13 +63,17 @@ dt_all[, Run := as.ITime(`Lap.3`, format = "%M:%S")]
 dt_all[, Swim_total := Swim]
 dt_all[, Ride_total := Swim + Ride]
 dt_all[, Run_total := Swim + Ride + Run]
+dt_all[, total_overall := Run_total]
+
+dt_all[, started := TRUE]
+dt_all[`Lap.1` %in% c("","-"), started := FALSE]
+
 
 # Convert to long
-dt_all_long <- melt.data.table(dt_all, id.vars = c("race_number", "date_ymd", "race_type", "course", "Name","place_overall"),
-                                 # measure.vars = c("Swim",
-                                 #                  "Ride",
-                                 #                  "Run"),
-                                 measure.vars = list(c("Swim",
+dt_all_long <- melt.data.table(dt_all,
+                               id.vars = c("race_number", "date_ymd", "race_type", "course",
+                                           "Name","place_overall","total_overall","started"),
+                               measure.vars = list(c("Swim",
                                                   "Ride",
                                                   "Run"),
                                                   c("Swim_total",
@@ -85,38 +90,79 @@ dt_all_long[, part := as.character(part)]
 dt_all_long[, duration_mins := as.numeric(duration/60)]
 dt_all_long[, total_mins := as.numeric(total/60)]
 
-# known webscorer problems
-# dt_problems <- fread("data_provided/webscorer/webscorer_problems.csv")
-# dt_problems[, date_ymd := as.IDate(date_ymd, format = "%d/%m/%y")]
-# dt_problems[, data_problem := TRUE]
 
-# dt_all_long[dt_problems, on = .(date_ymd, Name), data_problem := i.data_problem]
-# dt_all_long[is.na(data_problem), data_problem := FALSE]
-dt_all_long[, data_problem := FALSE]
+# Timing errors -----------------------------------------------------------
 
+
+dt_problems <- fread("data_provided/webscorer/webscorer_problems.csv")
+dt_problems[, date_ymd := as.IDate(date_ymd, format = "%d/%m/%y")]
+
+dt_all_long[dt_problems, on = .(race_number, date_ymd, Name, part), `:=`(split_valid = i.split_valid, cumulative_valid = i.cumulative_valid)]
+dt_all_long[is.na(split_valid), split_valid := TRUE]
+dt_all_long[is.na(cumulative_valid), cumulative_valid := TRUE]
+
+
+# overall_invalid if cumulative time at end of run is invalid
+dt_all_long[, valid_overall := cumulative_valid[which(part=="Run")], by = .(race_number, Name)]
+
+
+dt_all_long[is.na(valid_overall), valid_overall := TRUE]
+
+# dt_all_long[Name=="Rowena Smith" & race_number ==4]
+# dt_problems[Name=="Rowena Smith" & race_number ==4]
+# dt_problems[Name=="Rowena Smith" & race_number ==4]
+
+
+# Entry errors ------------------------------------------------------------
+
+
+dt_all_long[race_number==3 & Name == "Lydia Kuschmirz", course := "int"]
 
 
 # Recalculate places ------------------------------------------------------
 
 
-dt_all_long[!(data_problem), place_lap := as.integer(rank(duration_mins)), by = .(race_number, course, part)]
-dt_all_long[!(data_problem), place_overall_recalc := as.integer(rank(total_mins)), by = .(race_number, course, part)]
+dt_all_long[(split_valid), duration_mins_sort := duration_mins]
+dt_all_long[!(split_valid), duration_mins_sort := NA]
 
-dt_all_long[!(data_problem), place_lap_nice := paste0(place_lap, "th")]
-dt_all_long[!(data_problem) & place_lap %% 10 ==1, place_lap_nice := paste0(place_lap, "st")]
-dt_all_long[!(data_problem) & place_lap %% 10 ==2, place_lap_nice := paste0(place_lap, "nd")]
-dt_all_long[!(data_problem) & place_lap %% 10 ==3, place_lap_nice := paste0(place_lap, "rd")]
-dt_all_long[!(data_problem) & place_lap %in% c(11,12,13), place_lap_nice := paste0(place_lap, "th")]
+dt_all_long[(cumulative_valid), total_mins_sort := total_mins]
+dt_all_long[!(cumulative_valid), total_mins_sort := NA]
 
-dt_all_long[!(data_problem), place_overall_nice := paste0(place_overall_recalc, "th")]
-dt_all_long[!(data_problem) & place_overall_recalc %% 10 ==1, place_overall_nice := paste0(place_overall_recalc, "st")]
-dt_all_long[!(data_problem) & place_overall_recalc %% 10 ==2, place_overall_nice := paste0(place_overall_recalc, "nd")]
-dt_all_long[!(data_problem) & place_overall_recalc %% 10 ==3, place_overall_nice := paste0(place_overall_recalc, "rd")]
-dt_all_long[!(data_problem) & place_overall_recalc %in% c(11,12,13), place_overall_nice := paste0(place_overall_recalc, "th")]
+dt_all_long[(valid_overall), total_overall_sort := total_overall]
+dt_all_long[!(valid_overall), total_overall_sort := NA]
+
+# dt_all_long[race_number==4 & course=="double" & Name =="Ben Hall"]
+# dt_all_long[race_number==4 & course=="double" & Name =="Rowena Smith"]
+
+
+# dt_all_long[!(data_problem_part) & (started), place_lap := as.integer(rank(duration_mins, ties.method = "first")), by = .(race_number, course, part)]
+dt_all_long[(started), place_lap := as.integer(rank(duration_mins_sort, ties.method = "first")), by = .(race_number, course, part)]
+dt_all_long[(started), place_cum_recalc := as.integer(rank(total_mins_sort, ties.method = "first")), by = .(race_number, course, part)]
+dt_all_long[(started), place_overall_recalc := as.integer(rank(total_overall_sort, ties.method = "first")), by = .(race_number, course, part)]
+
+dt_all_long[(started) & (split_valid), place_lap_display := place_lap]
+dt_all_long[(started) & !(split_valid), place_lap_display := NA]
+
+# dt_all_long[!(split_valid), .(place_lap, place_lap_display, place_lap_nice)]
+
+
+dt_all_long[(started),                               place_lap_nice := paste0(place_lap_display, "th")]
+dt_all_long[(started) & place_lap_display %% 10 ==1, place_lap_nice := paste0(place_lap_display, "st")]
+dt_all_long[(started) & place_lap_display %% 10 ==2, place_lap_nice := paste0(place_lap_display, "nd")]
+dt_all_long[(started) & place_lap_display %% 10 ==3, place_lap_nice := paste0(place_lap_display, "rd")]
+dt_all_long[(started) & place_lap_display %in% c(11,12,13), place_lap_nice := paste0(place_lap_display, "th")]
+dt_all_long[(started) & is.na(place_lap_display), place_lap_nice := "NA"]
+
+dt_all_long[(started),                              place_cum_nice := paste0(place_cum_recalc, "th")]
+dt_all_long[(started) & place_cum_recalc %% 10 ==1, place_cum_nice := paste0(place_cum_recalc, "st")]
+dt_all_long[(started) & place_cum_recalc %% 10 ==2, place_cum_nice := paste0(place_cum_recalc, "nd")]
+dt_all_long[(started) & place_cum_recalc %% 10 ==3, place_cum_nice := paste0(place_cum_recalc, "rd")]
+dt_all_long[(started) & place_cum_recalc %in% c(11,12,13), place_cum_nice := paste0(place_cum_recalc, "th")]
 
 
 # Race plots --------------------------------------------------------------
-
+# i=4;j="double"
+# i=10;j="full"
 
 race_numbers <- unique(dt_all_long$race_number)
 
@@ -131,27 +177,41 @@ for(i in race_numbers) {
   for( j in i_courses) {
     
     
-  dt_i <- dt_all_long[race_number== i & course == j][order(place_overall)][!(data_problem)]
-  dt_i[, place_name := paste0(place_overall, " ", Name)]
+  dt_i <- dt_all_long[race_number== i & course == j][order(place_overall)][(started)]
+  
+  dt_i[!(split_valid), part := paste0(part, " (invalid)")]
+
+  dt_i[(valid_overall), place_name := paste0(place_overall_recalc, " ", Name)]
+  dt_i[!(valid_overall), place_name := paste0("DNF ", Name)]
+  
   dt_i[, tooltext := paste0(Name, "\n",
-                            part, ": ", duration, " (",place_lap_nice,")",
-                            "\nCumulative: ", total, " (", place_overall_nice,")")]
+                            part, ": ", duration,ifelse(!(split_valid),"",{paste0(" (",place_lap_nice,")")}),
+                            "\nCumulative", ifelse(!(cumulative_valid), paste0(" (invalid): ", total), paste0( ": ",total," (", place_cum_nice,")")))]
   
   g <- ggplot(dt_i,
-              aes(x = duration_mins, y = - place_overall, fill = part, group = Name, text = tooltext)) +
+              # aes(x = duration_mins, y = - place_overall, fill = part, group = Name, text = tooltext)) +
+              aes(x = duration_mins, y = - place_overall_recalc, fill = part, group = Name, text = tooltext)) +
     geom_col(orientation = "y") +
     # geom_col(aes(x = swim_duration/60 + ride_duration/60, y = Name),width = 2, orientation = "y", fill = "#3B8544") +
     # geom_col(aes(x = swim_duration/60, y = Name),width = 2, orientation = "y", fill = "#2E63BC")  +
     scale_fill_manual("Part",
                       labels = c(Swim = "Swim",
                                  Ride = "Ride",
-                                 Run = "Run"),
+                                 Run = "Run",
+                                 `Swim (invalid)` = "Swim (invalid)",
+                                 `Ride (invalid)` = "Ride (invalid)",
+                                 `Run (invalid)` = "Run (invalid)"),
                       values = c(Swim = "#2E63BC",
                                  Ride = "#3B8544",
-                                 Run = "#BF5324")) +
+                                 Run = "#BF5324",
+                                 `Swim (invalid)` = "grey",
+                                 `Ride (invalid)` = "black",
+                                 `Run (invalid)` = "grey")) +
     scale_x_continuous("Time (mins)", breaks = seq(0,150, 10), minor_breaks = seq(0,150, 5),position = "top") +
-    scale_y_continuous("Athlete", breaks = -dt_i$place_overall,
-                       labels = dt_i$place_name, minor_breaks = NULL) +
+    scale_y_continuous("Athlete", breaks = -dt_i$place_overall_recalc,
+                       labels = dt_i$place_name, minor_breaks = NULL,
+                       limits = range(c(0,min(-dt_i$place_overall_recalc)-1))) +
+    # scale_alpha_discrete("Valid Split", range = c(0.5, 1)) +
     theme_minimal() +
     theme(legend.position="top")
   
