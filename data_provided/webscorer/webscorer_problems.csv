@@ -49,7 +49,7 @@ race_number,date_ymd,Name,part,split_valid,cumulative_valid
 ,,,,,
 ,,,,,
 5,24/10/20,Craig Telling,Run,FALSE,FALSE
-5,24/10/20,Rob Gillies,Run,FALSE,FALSE
+5,24/10/20,Rob Gillies,Swim,FALSE,FALSE
 ,,,,,
 6,31/10/20,Nadja Kundrus-Little,Run,FALSE,FALSE
 ,,,,,
@@ -84,4 +84,4 @@ race_number,date_ymd,Name,part,split_valid,cumulative_valid
 ,,,,,
 13,19/12/20,Lydia Kuschmirz,Run,FALSE,FALSE
 ,,,,,
-13,19/12/20,Rob Gilllies,Swim,FALSE,FALSE
+13,19/12/20,Rob Gillies,Swim,FALSE,FALSE
