@@ -220,6 +220,9 @@ for(i in race_numbers) {
   dt_i <- dt_all_long[race_number== i & course == j][order(place_overall)][(started)]
   
   dt_i[!(split_valid), part := paste0(part, " (invalid)")]
+  dt_i[, part := ordered(part, levels = c("Swim", "Swim (invalid)",
+                                          "Ride", "Ride (invalid)",
+                                          "Run", "Run (invalid)"))]
 
   dt_i[(valid_overall), place_name := paste0(place_overall_recalc, " ", Name)]
   dt_i[!(valid_overall), place_name := paste0("DNF ", Name)]
