@@ -4,6 +4,6 @@ bookdown::gitbook:
   number_sections: false
   config:
     sharing:
-      facebook: false
-      linkedin: true
+      facebook: true
+      linkedin: false
       all: false

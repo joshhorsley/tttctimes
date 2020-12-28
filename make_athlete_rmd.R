@@ -26,32 +26,27 @@ races <- foreach (k=athletes_ordered, .combine = paste0 ) %do% {
     "
 ",
 "# ", k, " {#a-", k_ref, "}
-    
-    
+
 All entries in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then  separate plots are shown.
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
-    ",
+",
 
     
 paste0(
+'```{r}
+htmltools::tags$iframe(
+  src = "',paste0(k,".html"),'", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
+```
+
 '
-<div id="content">
-  <div class="desktop">
-```{r}
-list_plotly_athlete$`',k,'`
-```
-
-  </div>
-
-  <div class="mobile">
-```{r fig.cap="An interactive version of this plot is available on desktop or tablet devices."}
-knitr::include_graphics("figures/athlete/',k,'.pdf")
-```
-
-  </div>
-</div>'
 )
   
     

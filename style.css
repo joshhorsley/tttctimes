@@ -29,3 +29,7 @@ pre code {
   max-width: 1200px !important;
 }
 
+.page-inner {
+  width: 100%;
+}
+

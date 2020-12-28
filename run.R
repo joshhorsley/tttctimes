@@ -207,7 +207,7 @@ dt_all_long[(started) & place_cum_recalc %in% c(11,12,13), place_cum_nice := pas
 race_numbers <- unique(dt_all_long$race_number)
 
 
-list_plotly_race <- list()
+# list_plotly_race <- list()
 
 for(i in race_numbers) {
   # list_plotly_race[[paste0("race_",as.character(i))]] <- list()
@@ -232,11 +232,8 @@ for(i in race_numbers) {
                             "\nCumulative", ifelse(!(cumulative_valid), paste0(" (invalid): ", total), paste0( ": ",total," (", place_cum_nice,")")))]
   
   g <- ggplot(dt_i,
-              # aes(x = duration_mins, y = - place_overall, fill = part, group = Name, text = tooltext)) +
               aes(x = duration_mins, y = - place_overall_recalc, fill = part, group = Name, text = tooltext)) +
     geom_col(orientation = "y") +
-    # geom_col(aes(x = swim_duration/60 + ride_duration/60, y = Name),width = 2, orientation = "y", fill = "#3B8544") +
-    # geom_col(aes(x = swim_duration/60, y = Name),width = 2, orientation = "y", fill = "#2E63BC")  +
     scale_fill_manual("Part",
                       labels = c(Swim = "Swim",
                                  Ride = "Ride",
@@ -254,29 +251,25 @@ for(i in race_numbers) {
     scale_y_continuous("", breaks = -dt_i$place_overall_recalc,
                        labels = dt_i$place_name, minor_breaks = NULL,
                        limits = range(c(0,min(-dt_i$place_overall_recalc)-1))) +
-    # scale_alpha_discrete("Valid Split", range = c(0.5, 1)) +
     theme_minimal() +
     theme(legend.position="top")
   
-  # ggsave(filename = paste0("figures/race/",dt_i$date_ymd[1],"_",j,".pdf"),
-         # plot = g, width = 6, height = 7)
-  
-  
-  # p <- ggplotly(g, width = 800, height = 700, tooltip = "text",layerData = TRUE, style = "mobile") %>% 
   p <- ggplotly(g, width = NULL, tooltip = "text",layerData = TRUE, style = "mobile") %>% 
     layout(xaxis = list(fixedrange = TRUE, side = "top"),
            yaxis = list(fixedrange = TRUE),
            dragmode = FALSE,
            autosize = TRUE,
-           margin = list(l=50, r=0, t=0,b=0, pad=0),
-           legend = list(orientation = "h", y = 0, x= 0.5, xanchor = "center")) %>% 
+           margin = list(l=100, r=0, t=0,b=0, pad=0),
+           legend = list(orientation = "h", y = 0, x= 0.5, xanchor = "center",
+                         itemclick = FALSE, itemdoubleclick  = FALSE)) %>% 
     config(displayModeBar = FALSE)
   
+  p$sizingPolicy$padding <- 0
+  
   # saveWidget(p, file = paste0(getwd(), "/figures/race/",dt_i$date_ymd[1],"_",j,".html"),selfcontained = FALSE,libdir = "libs")
-  saveWidget(p, file = paste0(dt_i$date_ymd[1],"_",j,".html"),selfcontained = FALSE,libdir = "libs")
+  # saveWidget(p, file = paste0(dt_i$date_ymd[1],"_",j,".html"),selfcontained = FALSE,libdir = "libs", knitrOptions = list(sizingPolicy(viewer.padding = 0,browser.padding = 0)))
+  saveWidget(p, file = paste0(dt_i$date_ymd[1],"_",j,".html"),selfcontained = FALSE,libdir = "libs" )
     
-    
-  # list_plotly_race[[paste0("race_",as.character(i))]][[j]] <- p
   }
 }
 
@@ -290,7 +283,7 @@ for(i in race_numbers) {
 # k <- "Ben Hall"
 # k <- "John King"
 
-list_plotly_athlete <- list()
+# list_plotly_athlete <- list()
 
 
 for(k in athletes_ordered) {
@@ -339,15 +332,30 @@ for(k in athletes_ordered) {
                                  `Run (invalid)` = "grey")) +
   scale_y_continuous("Time (mins)", breaks = seq(0,150, 10), minor_breaks = seq(0,150, 5),position = "left") +
     scale_x_continuous("Race (number)", breaks = 1:26, limits = c(0,27)) +
-    # scale_alpha_discrete("Valid Split", range = c(0.5, 1)) +
-    # theme_minimal() +
-    theme(legend.position="top")
+    theme_minimal() +
+    theme(legend.position="top",
+          strip.background = element_rect(colour="black",
+                                          fill="white"))
+    
   
-  ggsave(filename = paste0("figures/athlete/",k,".pdf"),
-         plot = gk, width = 6, height = 7)
+  pk <- ggplotly(gk, width = NULL, tooltip = "text",layerData = TRUE, style = "mobile") %>% 
+    layout(xaxis = list(fixedrange = TRUE),
+           yaxis = list(fixedrange = TRUE),
+           dragmode = FALSE,
+           autosize = TRUE,
+           margin = list(l=50, r=25, t=0,b=0, pad=0),
+           legend = list(orientation = "h", y = -0.1, x= 0.5, xanchor = "center",
+                         itemclick = FALSE, itemdoubleclick  = FALSE)) %>% 
+    config(displayModeBar = FALSE)
+  
+  pk$sizingPolicy$padding <- 0
+  
+  # ggsave(filename = paste0("figures/athlete/",k,".pdf"),
+  #        plot = gk, width = 6, height = 7)
   
   
-  list_plotly_athlete[[k]] <- ggplotly(gk,width = 800, height = 700, tooltip = "text",layerData = TRUE, style = "mobile")
+  # list_plotly_athlete[[k]] <- ggplotly(gk,width = 800, height = 700, tooltip = "text",layerData = TRUE, style = "mobile")
+  saveWidget(pk, file = paste0(k,".html"),selfcontained = FALSE,libdir = "libs" )
   
     
   # }
@@ -362,8 +370,8 @@ for(k in athletes_ordered) {
 
 saveRDS(dt_season, "data_derived/dt_season.rds")
 saveRDS(dt_all_long, "data_derived/dt_all_long.rds")
-saveRDS(list_plotly_race, "data_derived/list_plotly_race.rds")
-saveRDS(list_plotly_athlete, "data_derived/list_plotly_athlete.rds")
+# saveRDS(list_plotly_race, "data_derived/list_plotly_race.rds")
+# saveRDS(list_plotly_athlete, "data_derived/list_plotly_athlete.rds")
 
 
 # Update website ----------------------------------------------------------
