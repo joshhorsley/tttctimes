@@ -42,7 +42,6 @@ dt_season[(have_results), dt_race := .(list(fread(path_webscorer))), by = row_id
 # Flatten available results
 id_results <- which(dt_season$have_results)
 
-# dt_all <- foreach(i=id_results, .combine = rbind) %do% {
 dt_all <- foreach(i=id_results, .combine = function(x,y) rbind(x,y,fill=TRUE)) %do% {
   dt_season[i, .(row_id, dt_race[[1]])]
 }
@@ -53,6 +52,7 @@ setcolorder(dt_all, new_cols)
 
 
 # Cleaning ----------------------------------------------------------------
+
 
 # Formats
 dt_all[, place_overall := as.numeric(Place)]
@@ -108,10 +108,6 @@ dt_all_long[, valid_overall := cumulative_valid[which(part=="Run")], by = .(race
 
 dt_all_long[is.na(valid_overall), valid_overall := TRUE]
 
-# dt_all_long[Name=="Rowena Smith" & race_number ==4]
-# dt_problems[Name=="Rowena Smith" & race_number ==4]
-# dt_problems[Name=="Rowena Smith" & race_number ==4]
-
 
 # Course entry errors -----------------------------------------------------
 
@@ -146,13 +142,10 @@ dt_all_long[, row_id := seq(.N)]
 dt_all_long[, name_first := strsplit(Name, " ")[[1]][1],  by = row_id]
 dt_all_long[, name_last := gsub(paste0(name_first, " "), "", Name), by = row_id]
 
-# dt_all_long[, .(Name, name_first, name_last)]
-
 
 # Order names -------------------------------------------------------------
 
 
-# athletes <- unique(dt_all_long[(started)]$Name)
 athletes_ordered <- unique(dt_all_long[(started)][order(tolower(name_last))]$Name)
 
 
@@ -197,22 +190,13 @@ dt_all_long[(started) & place_cum_recalc %% 10 ==3, place_cum_nice := paste0(pla
 dt_all_long[(started) & place_cum_recalc %in% c(11,12,13), place_cum_nice := paste0(place_cum_recalc, "th")]
 
 
-
-
-
 # Race plots --------------------------------------------------------------
-# i=4;j="double"
-# i=10;j="full"
+
 
 race_numbers <- unique(dt_all_long$race_number)
 
-
-# list_plotly_race <- list()
-
 for(i in race_numbers) {
-  # list_plotly_race[[paste0("race_",as.character(i))]] <- list()
-  # for( j in c("full", "int"))
-  
+
   i_courses <- dt_season[race_number==i]$course
   for( j in i_courses) {
     
@@ -266,8 +250,6 @@ for(i in race_numbers) {
   
   p$sizingPolicy$padding <- 0
   
-  # saveWidget(p, file = paste0(getwd(), "/figures/race/",dt_i$date_ymd[1],"_",j,".html"),selfcontained = FALSE,libdir = "libs")
-  # saveWidget(p, file = paste0(dt_i$date_ymd[1],"_",j,".html"),selfcontained = FALSE,libdir = "libs", knitrOptions = list(sizingPolicy(viewer.padding = 0,browser.padding = 0)))
   saveWidget(p, file = paste0(dt_i$date_ymd[1],"_",j,".html"),selfcontained = FALSE,libdir = "libs" )
     
   }
@@ -277,19 +259,8 @@ for(i in race_numbers) {
 # Athlete plots -----------------------------------------------------------
 
 
-
-
-
-# k <- "Ben Hall"
-# k <- "John King"
-
-# list_plotly_athlete <- list()
-
-
 for(k in athletes_ordered) {
   
-  # k_courses <- unique(dt_all_long[(started) & Name==k]$course)
-    
   dt_k <- dt_all_long[(started) & Name==k][order(race_number)]
   
   dt_k[!(split_valid), part := paste0(part, " (invalid)")]
@@ -309,9 +280,6 @@ for(k in athletes_ordered) {
                             "Date: ", date_ymd, "\n",
                             part, ": ", duration,"\n",
                             "Cumulative", ifelse(!(cumulative_valid), paste0(" (invalid): ", total), paste0( ": ",total)))]
-  
-  
-  
   
   gk <- ggplot(dt_k,
          aes(y = duration_mins, x = race_number, fill = part, group = race_number, text = tooltext)) +
@@ -350,19 +318,9 @@ for(k in athletes_ordered) {
   
   pk$sizingPolicy$padding <- 0
   
-  # ggsave(filename = paste0("figures/athlete/",k,".pdf"),
-  #        plot = gk, width = 6, height = 7)
-  
-  
-  # list_plotly_athlete[[k]] <- ggplotly(gk,width = 800, height = 700, tooltip = "text",layerData = TRUE, style = "mobile")
   saveWidget(pk, file = paste0(k,".html"),selfcontained = FALSE,libdir = "libs" )
   
-    
-  # }
-  
 }
-
-
 
 
 # Export for website ------------------------------------------------------
@@ -370,8 +328,6 @@ for(k in athletes_ordered) {
 
 saveRDS(dt_season, "data_derived/dt_season.rds")
 saveRDS(dt_all_long, "data_derived/dt_all_long.rds")
-# saveRDS(list_plotly_race, "data_derived/list_plotly_race.rds")
-# saveRDS(list_plotly_athlete, "data_derived/list_plotly_athlete.rds")
 
 
 # Update website ----------------------------------------------------------

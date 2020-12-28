@@ -13,11 +13,13 @@ header <- paste0({
 })
 
 
-races <- foreach (k=athletes_ordered, .combine = paste0 ) %do% {
+repeated <- foreach (k=athletes_ordered, .combine = paste0 ) %do% {
   
   
   k_ref <- gsub(pattern = " ", "-", k)  
   k_ref <- gsub(pattern = "'", "", k_ref)  
+  
+  n_courses <- length(unique(dt_all_long[Name==k, .(course)]$course))
 
   
   
@@ -27,14 +29,10 @@ races <- foreach (k=athletes_ordered, .combine = paste0 ) %do% {
 ",
 "# ", k, " {#a-", k_ref, "}
 
-All entries in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then  separate plots are shown.
-
-Please let me know if any split times have been incorrectly flagged as invalid.
+All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
 
 ",
 
-    
-paste0(
 '```{r}
 htmltools::tags$iframe(
   src = "',paste0(k,".html"),'", 
@@ -42,20 +40,20 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "700"
+  height = "',500*n_courses,'"
 )
 ```
 
-'
-)
-  
-    
 
+
+Please let me know if any split times have been incorrectly flagged as invalid.
+
+
+'
 )
   
   
 }
 
-# cat(header, races)
 
-write(paste0(header, races),file = "02-athlete_generated.Rmd")
+write(paste0(header, repeated),file = "02-athlete_generated.Rmd")
