@@ -268,7 +268,7 @@ for(i in race_numbers) {
            yaxis = list(fixedrange = TRUE),
            dragmode = FALSE,
            autosize = TRUE,
-           margin = list(l=0, r=0, t=0,b=0, pad=0),
+           margin = list(l=50, r=0, t=0,b=0, pad=0),
            legend = list(orientation = "h", y = 0, x= 0.5, xanchor = "center")) %>% 
     config(displayModeBar = FALSE)
   
