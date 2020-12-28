@@ -44,21 +44,35 @@ paste0(
 '
 ## ',i_courses_nice[which(j==i_courses)],'
 
-<div id="content">
-  <div class="desktop">
-```{r}
-list_plotly_race$race_',i,'$',j,'
+',
+# <div id="content">
+#   <div class="desktop">
+# ```{r}
+# list_plotly_race$race_',i,'$',j,'
+# ```
+
+'```{r}
+htmltools::tags$iframe(
+  src = "',paste0(i_date_file,"_",j,".html"),'", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
 ```
+    
+    '
 
-  </div>
-
-  <div class="mobile">
-```{r fig.cap="An interactive version of this plot is available on desktop or tablet devices."}
-knitr::include_graphics("figures/race/',i_date_file,'_',j,'.pdf")
-```
-
-  </div>
-</div>'
+#   </div>
+# 
+#   <div class="mobile">
+# ```{r fig.cap="An interactive version of this plot is available on desktop or tablet devices."}
+# knitr::include_graphics("figures/race/',i_date_file,'_',j,'.pdf")
+# ```
+# 
+#   </div>
+# </div>'
 )
   
     

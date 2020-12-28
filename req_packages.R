@@ -7,3 +7,5 @@ library(plotly)
 library(leaflet)
 library(leaflet.extras)
 library(foreach)
+library(htmlwidgets)
+

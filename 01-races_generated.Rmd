@@ -9,385 +9,322 @@
     
 ## Full
 
-<div id="content">
-  <div class="desktop">
 ```{r}
-list_plotly_race$race_13$full
+htmltools::tags$iframe(
+  src = "2020-12-19_full.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
 ```
-
-  </div>
-
-  <div class="mobile">
-```{r fig.cap="An interactive version of this plot is available on desktop or tablet devices."}
-knitr::include_graphics("figures/race/2020-12-19_full.pdf")
-```
-
-  </div>
-</div>
+    
+    
 ## Intermediate
 
-<div id="content">
-  <div class="desktop">
 ```{r}
-list_plotly_race$race_13$int
+htmltools::tags$iframe(
+  src = "2020-12-19_int.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
 ```
-
-  </div>
-
-  <div class="mobile">
-```{r fig.cap="An interactive version of this plot is available on desktop or tablet devices."}
-knitr::include_graphics("figures/race/2020-12-19_int.pdf")
-```
-
-  </div>
-</div>
+    
+    
 # 11: Dec 05 {#r-2020-12-05}
     
     
 ## Full
 
-<div id="content">
-  <div class="desktop">
 ```{r}
-list_plotly_race$race_11$full
+htmltools::tags$iframe(
+  src = "2020-12-05_full.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
 ```
-
-  </div>
-
-  <div class="mobile">
-```{r fig.cap="An interactive version of this plot is available on desktop or tablet devices."}
-knitr::include_graphics("figures/race/2020-12-05_full.pdf")
-```
-
-  </div>
-</div>
+    
+    
 ## Intermediate
 
-<div id="content">
-  <div class="desktop">
 ```{r}
-list_plotly_race$race_11$int
+htmltools::tags$iframe(
+  src = "2020-12-05_int.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
 ```
-
-  </div>
-
-  <div class="mobile">
-```{r fig.cap="An interactive version of this plot is available on desktop or tablet devices."}
-knitr::include_graphics("figures/race/2020-12-05_int.pdf")
-```
-
-  </div>
-</div>
+    
+    
 # 10: Nov 28 {#r-2020-11-28}
     
     
 ## Full
 
-<div id="content">
-  <div class="desktop">
 ```{r}
-list_plotly_race$race_10$full
+htmltools::tags$iframe(
+  src = "2020-11-28_full.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
 ```
-
-  </div>
-
-  <div class="mobile">
-```{r fig.cap="An interactive version of this plot is available on desktop or tablet devices."}
-knitr::include_graphics("figures/race/2020-11-28_full.pdf")
-```
-
-  </div>
-</div>
+    
+    
 ## Intermediate
 
-<div id="content">
-  <div class="desktop">
 ```{r}
-list_plotly_race$race_10$int
+htmltools::tags$iframe(
+  src = "2020-11-28_int.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
 ```
-
-  </div>
-
-  <div class="mobile">
-```{r fig.cap="An interactive version of this plot is available on desktop or tablet devices."}
-knitr::include_graphics("figures/race/2020-11-28_int.pdf")
-```
-
-  </div>
-</div>
+    
+    
 # 7: Nov 07 {#r-2020-11-07}
     
     
 ## Full
 
-<div id="content">
-  <div class="desktop">
 ```{r}
-list_plotly_race$race_7$full
+htmltools::tags$iframe(
+  src = "2020-11-07_full.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
 ```
-
-  </div>
-
-  <div class="mobile">
-```{r fig.cap="An interactive version of this plot is available on desktop or tablet devices."}
-knitr::include_graphics("figures/race/2020-11-07_full.pdf")
-```
-
-  </div>
-</div>
+    
+    
 ## Intermediate
 
-<div id="content">
-  <div class="desktop">
 ```{r}
-list_plotly_race$race_7$int
+htmltools::tags$iframe(
+  src = "2020-11-07_int.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
 ```
-
-  </div>
-
-  <div class="mobile">
-```{r fig.cap="An interactive version of this plot is available on desktop or tablet devices."}
-knitr::include_graphics("figures/race/2020-11-07_int.pdf")
-```
-
-  </div>
-</div>
+    
+    
 # 6: Oct 31 {#r-2020-10-31}
     
     
 ## Full
 
-<div id="content">
-  <div class="desktop">
 ```{r}
-list_plotly_race$race_6$full
+htmltools::tags$iframe(
+  src = "2020-10-31_full.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
 ```
-
-  </div>
-
-  <div class="mobile">
-```{r fig.cap="An interactive version of this plot is available on desktop or tablet devices."}
-knitr::include_graphics("figures/race/2020-10-31_full.pdf")
-```
-
-  </div>
-</div>
+    
+    
 ## Intermediate
 
-<div id="content">
-  <div class="desktop">
 ```{r}
-list_plotly_race$race_6$int
+htmltools::tags$iframe(
+  src = "2020-10-31_int.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
 ```
-
-  </div>
-
-  <div class="mobile">
-```{r fig.cap="An interactive version of this plot is available on desktop or tablet devices."}
-knitr::include_graphics("figures/race/2020-10-31_int.pdf")
-```
-
-  </div>
-</div>
+    
+    
 # 5: Oct 24 {#r-2020-10-24}
     
     
 ## Full
 
-<div id="content">
-  <div class="desktop">
 ```{r}
-list_plotly_race$race_5$full
+htmltools::tags$iframe(
+  src = "2020-10-24_full.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
 ```
-
-  </div>
-
-  <div class="mobile">
-```{r fig.cap="An interactive version of this plot is available on desktop or tablet devices."}
-knitr::include_graphics("figures/race/2020-10-24_full.pdf")
-```
-
-  </div>
-</div>
+    
+    
 ## Intermediate
 
-<div id="content">
-  <div class="desktop">
 ```{r}
-list_plotly_race$race_5$int
+htmltools::tags$iframe(
+  src = "2020-10-24_int.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
 ```
-
-  </div>
-
-  <div class="mobile">
-```{r fig.cap="An interactive version of this plot is available on desktop or tablet devices."}
-knitr::include_graphics("figures/race/2020-10-24_int.pdf")
-```
-
-  </div>
-</div>
+    
+    
 # 4: Oct 17 - Double Distance {#r-2020-10-17}
     
     
 ## Double Distance
 
-<div id="content">
-  <div class="desktop">
 ```{r}
-list_plotly_race$race_4$double
+htmltools::tags$iframe(
+  src = "2020-10-17_double.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
 ```
-
-  </div>
-
-  <div class="mobile">
-```{r fig.cap="An interactive version of this plot is available on desktop or tablet devices."}
-knitr::include_graphics("figures/race/2020-10-17_double.pdf")
-```
-
-  </div>
-</div>
+    
+    
 ## Full
 
-<div id="content">
-  <div class="desktop">
 ```{r}
-list_plotly_race$race_4$full
+htmltools::tags$iframe(
+  src = "2020-10-17_full.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
 ```
-
-  </div>
-
-  <div class="mobile">
-```{r fig.cap="An interactive version of this plot is available on desktop or tablet devices."}
-knitr::include_graphics("figures/race/2020-10-17_full.pdf")
-```
-
-  </div>
-</div>
+    
+    
 ## Intermediate
 
-<div id="content">
-  <div class="desktop">
 ```{r}
-list_plotly_race$race_4$int
+htmltools::tags$iframe(
+  src = "2020-10-17_int.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
 ```
-
-  </div>
-
-  <div class="mobile">
-```{r fig.cap="An interactive version of this plot is available on desktop or tablet devices."}
-knitr::include_graphics("figures/race/2020-10-17_int.pdf")
-```
-
-  </div>
-</div>
+    
+    
 # 3: Oct 10 {#r-2020-10-10}
     
     
 ## Full
 
-<div id="content">
-  <div class="desktop">
 ```{r}
-list_plotly_race$race_3$full
+htmltools::tags$iframe(
+  src = "2020-10-10_full.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
 ```
-
-  </div>
-
-  <div class="mobile">
-```{r fig.cap="An interactive version of this plot is available on desktop or tablet devices."}
-knitr::include_graphics("figures/race/2020-10-10_full.pdf")
-```
-
-  </div>
-</div>
+    
+    
 ## Intermediate
 
-<div id="content">
-  <div class="desktop">
 ```{r}
-list_plotly_race$race_3$int
+htmltools::tags$iframe(
+  src = "2020-10-10_int.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
 ```
-
-  </div>
-
-  <div class="mobile">
-```{r fig.cap="An interactive version of this plot is available on desktop or tablet devices."}
-knitr::include_graphics("figures/race/2020-10-10_int.pdf")
-```
-
-  </div>
-</div>
+    
+    
 # 2: Oct 03 {#r-2020-10-03}
     
     
 ## Full
 
-<div id="content">
-  <div class="desktop">
 ```{r}
-list_plotly_race$race_2$full
+htmltools::tags$iframe(
+  src = "2020-10-03_full.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
 ```
-
-  </div>
-
-  <div class="mobile">
-```{r fig.cap="An interactive version of this plot is available on desktop or tablet devices."}
-knitr::include_graphics("figures/race/2020-10-03_full.pdf")
-```
-
-  </div>
-</div>
+    
+    
 ## Intermediate
 
-<div id="content">
-  <div class="desktop">
 ```{r}
-list_plotly_race$race_2$int
+htmltools::tags$iframe(
+  src = "2020-10-03_int.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
 ```
-
-  </div>
-
-  <div class="mobile">
-```{r fig.cap="An interactive version of this plot is available on desktop or tablet devices."}
-knitr::include_graphics("figures/race/2020-10-03_int.pdf")
-```
-
-  </div>
-</div>
+    
+    
 # 1: Sep 26 {#r-2020-09-26}
     
     
 ## Full
 
-<div id="content">
-  <div class="desktop">
 ```{r}
-list_plotly_race$race_1$full
+htmltools::tags$iframe(
+  src = "2020-09-26_full.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
 ```
-
-  </div>
-
-  <div class="mobile">
-```{r fig.cap="An interactive version of this plot is available on desktop or tablet devices."}
-knitr::include_graphics("figures/race/2020-09-26_full.pdf")
-```
-
-  </div>
-</div>
+    
+    
 ## Intermediate
 
-<div id="content">
-  <div class="desktop">
 ```{r}
-list_plotly_race$race_1$int
+htmltools::tags$iframe(
+  src = "2020-09-26_int.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
 ```
-
-  </div>
-
-  <div class="mobile">
-```{r fig.cap="An interactive version of this plot is available on desktop or tablet devices."}
-knitr::include_graphics("figures/race/2020-09-26_int.pdf")
-```
-
-  </div>
-</div>
+    
+    

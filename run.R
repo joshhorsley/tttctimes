@@ -251,19 +251,32 @@ for(i in race_numbers) {
                                  `Ride (invalid)` = "black",
                                  `Run (invalid)` = "grey")) +
     scale_x_continuous("Time (mins)", breaks = seq(0,150, 10), minor_breaks = seq(0,150, 5),position = "top") +
-    scale_y_continuous("Athlete", breaks = -dt_i$place_overall_recalc,
+    scale_y_continuous("", breaks = -dt_i$place_overall_recalc,
                        labels = dt_i$place_name, minor_breaks = NULL,
                        limits = range(c(0,min(-dt_i$place_overall_recalc)-1))) +
     # scale_alpha_discrete("Valid Split", range = c(0.5, 1)) +
     theme_minimal() +
     theme(legend.position="top")
   
-  ggsave(filename = paste0("figures/race/",dt_i$date_ymd[1],"_",j,".pdf"),
-         plot = g, width = 6, height = 7)
+  # ggsave(filename = paste0("figures/race/",dt_i$date_ymd[1],"_",j,".pdf"),
+         # plot = g, width = 6, height = 7)
   
   
+  # p <- ggplotly(g, width = 800, height = 700, tooltip = "text",layerData = TRUE, style = "mobile") %>% 
+  p <- ggplotly(g, width = NULL, tooltip = "text",layerData = TRUE, style = "mobile") %>% 
+    layout(xaxis = list(fixedrange = TRUE, side = "top"),
+           yaxis = list(fixedrange = TRUE),
+           dragmode = FALSE,
+           autosize = TRUE,
+           margin = list(l=0, r=0, t=0,b=0, pad=0),
+           legend = list(orientation = "h", y = 0, x= 0.5, xanchor = "center")) %>% 
+    config(displayModeBar = FALSE)
+  
+  # saveWidget(p, file = paste0(getwd(), "/figures/race/",dt_i$date_ymd[1],"_",j,".html"),selfcontained = FALSE,libdir = "libs")
+  saveWidget(p, file = paste0(dt_i$date_ymd[1],"_",j,".html"),selfcontained = FALSE,libdir = "libs")
     
-  list_plotly_race[[paste0("race_",as.character(i))]][[j]] <- ggplotly(g,width = 800, height = 700, tooltip = "text",layerData = TRUE, style = "mobile")
+    
+  # list_plotly_race[[paste0("race_",as.character(i))]][[j]] <- p
   }
 }
 
@@ -359,4 +372,4 @@ saveRDS(list_plotly_athlete, "data_derived/list_plotly_athlete.rds")
 source("make_race_rmd.R")
 source("make_athlete_rmd.R")
 bookdown::render_book("index.Rmd")
-unlink("data_derived/*")
+unlink("data_derived/*.rds")
