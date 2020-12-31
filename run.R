@@ -190,6 +190,12 @@ dt_all_long[(started) & place_cum_recalc %% 10 ==3, place_cum_nice := paste0(pla
 dt_all_long[(started) & place_cum_recalc %in% c(11,12,13), place_cum_nice := paste0(place_cum_recalc, "th")]
 
 
+# Plots paths -------------------------------------------------------------
+
+
+libpath <- paste0(getwd(), "/site/libs")
+
+
 # Race plots --------------------------------------------------------------
 
 
@@ -250,13 +256,16 @@ for(i in race_numbers) {
   
   p$sizingPolicy$padding <- 0
   
-  saveWidget(p, file = paste0(dt_i$date_ymd[1],"_",j,".html"),selfcontained = FALSE,libdir = "libs" )
+  savepath = paste0(getwd(), "/site/",dt_i$date_ymd[1],"_",j,".html")
+  
+  saveWidget(p, file = savepath ,selfcontained = FALSE,libdir = libpath)
     
   }
 }
 
 
 # Athlete plots -----------------------------------------------------------
+
 
 
 for(k in athletes_ordered) {
@@ -318,7 +327,9 @@ for(k in athletes_ordered) {
   
   pk$sizingPolicy$padding <- 0
   
-  saveWidget(pk, file = paste0(k,".html"),selfcontained = FALSE,libdir = "libs" )
+  savepath = paste0(getwd(),"/site/",k,".html")
+  
+  saveWidget(pk, file = savepath,selfcontained = FALSE,libdir = libpath)
   
 }
 
@@ -335,5 +346,5 @@ saveRDS(dt_all_long, "data_derived/dt_all_long.rds")
 
 source("make_race_rmd.R")
 source("make_athlete_rmd.R")
-bookdown::render_book("index.Rmd")
+bookdown::render_book("index.Rmd",output_dir = "site")
 unlink("data_derived/*.rds")
