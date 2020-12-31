@@ -104,8 +104,6 @@ dt_all_long[is.na(cumulative_valid), cumulative_valid := TRUE]
 
 # overall_invalid if cumulative time at end of run is invalid
 dt_all_long[, valid_overall := cumulative_valid[which(part=="Run")], by = .(race_number, Name)]
-
-
 dt_all_long[is.na(valid_overall), valid_overall := TRUE]
 
 
@@ -161,20 +159,13 @@ dt_all_long[!(cumulative_valid), total_mins_sort := NA]
 dt_all_long[(valid_overall), total_overall_sort := total_overall]
 dt_all_long[!(valid_overall), total_overall_sort := NA]
 
-# dt_all_long[race_number==4 & course=="double" & Name =="Ben Hall"]
-# dt_all_long[race_number==4 & course=="double" & Name =="Rowena Smith"]
 
-
-# dt_all_long[!(data_problem_part) & (started), place_lap := as.integer(rank(duration_mins, ties.method = "first")), by = .(race_number, course, part)]
 dt_all_long[(started), place_lap := as.integer(rank(duration_mins_sort, ties.method = "first")), by = .(race_number, course, part)]
 dt_all_long[(started), place_cum_recalc := as.integer(rank(total_mins_sort, ties.method = "first")), by = .(race_number, course, part)]
 dt_all_long[(started), place_overall_recalc := as.integer(rank(total_overall_sort, ties.method = "first")), by = .(race_number, course, part)]
 
 dt_all_long[(started) & (split_valid), place_lap_display := place_lap]
 dt_all_long[(started) & !(split_valid), place_lap_display := NA]
-
-# dt_all_long[!(split_valid), .(place_lap, place_lap_display, place_lap_nice)]
-
 
 dt_all_long[(started),                               place_lap_nice := paste0(place_lap_display, "th")]
 dt_all_long[(started) & place_lap_display %% 10 ==1, place_lap_nice := paste0(place_lap_display, "st")]
@@ -196,11 +187,17 @@ dt_all_long[(started) & place_cum_recalc %in% c(11,12,13), place_cum_nice := pas
 
 dt_all_long[(started), isFirstRace := race_number == min(race_number), by = .(Name, part, course) ]
 
-dt_all_long[(started) & (split_valid), pb_cum := cummin(duration_mins), by = .(Name, part, course) ]
-dt_all_long[(started) & (split_valid), isNewPB := duration_mins == pb_cum, by = .(Name, part, course) ]
+dt_all_long[(started) & (split_valid), pb_split_running := cummin(duration_mins), by = .(Name, part, course) ]
+dt_all_long[(started) & (split_valid), isNewPB_split := duration_mins == pb_split_running, by = .(Name, part, course) ]
 
-dt_all_long[is.na(isNewPB), isNewPB := FALSE]
-dt_all_long[(isFirstRace), isNewPB := FALSE]
+dt_all_long[is.na(isNewPB_split), isNewPB_split := FALSE]
+dt_all_long[(isFirstRace), isNewPB_split := FALSE]
+
+dt_all_long[(started) & (cumulative_valid), pb_cum_running := cummin(total_mins), by = .(Name, part, course) ]
+dt_all_long[(started) & (cumulative_valid), isNewPB_cum := total_mins == pb_cum_running, by = .(Name, part, course) ]
+
+dt_all_long[is.na(isNewPB_cum), isNewPB_cum := FALSE]
+dt_all_long[(isFirstRace), isNewPB_cum := FALSE]
 
 
 # Plots paths -------------------------------------------------------------
@@ -233,8 +230,8 @@ for(i in race_numbers) {
   dt_i[!(valid_overall), place_name := paste0("DNF ", Name)]
   
   dt_i[, tooltext := paste0(Name, ifelse((isFirstRace) & i !=1, " - First race this season",""),"\n",
-                            part, ": ", duration,ifelse(!(split_valid),"",{paste0(" (",place_lap_nice,")",ifelse((isNewPB)," New PB!",""))}),
-                            "\nCumulative", ifelse(!(cumulative_valid), paste0(" (invalid): ", total), paste0( ": ",total," (", place_cum_nice,")")))]
+                            part, ": ", duration,ifelse(!(split_valid),"",{paste0(" (",place_lap_nice,")",ifelse((isNewPB_split)," New PB!",""))}),
+                            "\nCumulative", ifelse(!(cumulative_valid), paste0(" (invalid): ", total), paste0( ": ",total," (", place_cum_nice,")",ifelse((isNewPB_cum)," New PB!",""))))]
   
   g <- ggplot(dt_i,
               aes(x = duration_mins, y = - place_overall_recalc, fill = part, group = Name, text = tooltext)) +
@@ -302,8 +299,8 @@ for(k in athletes_ordered) {
   
   dt_k[, tooltext := paste0("Race number: ", race_number,"\n",
                             "Date: ", date_ymd, "\n",
-                            part, ": ", duration,ifelse((isNewPB)," New PB!",""),"\n",
-                            "Cumulative", ifelse(!(cumulative_valid), paste0(" (invalid): ", total), paste0( ": ",total)))]
+                            part, ": ", duration,ifelse((isNewPB_split)," New PB!",""),"\n",
+                            "Cumulative", ifelse(!(cumulative_valid), paste0(" (invalid): ", total), paste0( ": ",total, ifelse((isNewPB_cum)," New PB!",""))))]
   
   gk <- ggplot(dt_k,
          aes(y = duration_mins, x = race_number, fill = part, group = race_number, text = tooltext)) +
