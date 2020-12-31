@@ -190,6 +190,19 @@ dt_all_long[(started) & place_cum_recalc %% 10 ==3, place_cum_nice := paste0(pla
 dt_all_long[(started) & place_cum_recalc %in% c(11,12,13), place_cum_nice := paste0(place_cum_recalc, "th")]
 
 
+
+# PBs ---------------------------------------------------------------------
+
+
+dt_all_long[(started), isFirstRace := race_number == min(race_number), by = .(Name, part, course) ]
+
+dt_all_long[(started) & (split_valid), pb_cum := cummin(duration_mins), by = .(Name, part, course) ]
+dt_all_long[(started) & (split_valid), isNewPB := duration_mins == pb_cum, by = .(Name, part, course) ]
+
+dt_all_long[is.na(isNewPB), isNewPB := FALSE]
+dt_all_long[(isFirstRace), isNewPB := FALSE]
+
+
 # Plots paths -------------------------------------------------------------
 
 
@@ -219,8 +232,8 @@ for(i in race_numbers) {
   dt_i[(valid_overall), place_name := paste0(place_overall_recalc, " ", Name)]
   dt_i[!(valid_overall), place_name := paste0("DNF ", Name)]
   
-  dt_i[, tooltext := paste0(Name, "\n",
-                            part, ": ", duration,ifelse(!(split_valid),"",{paste0(" (",place_lap_nice,")")}),
+  dt_i[, tooltext := paste0(Name, ifelse((isFirstRace) & i !=1, " - First race this season",""),"\n",
+                            part, ": ", duration,ifelse(!(split_valid),"",{paste0(" (",place_lap_nice,")",ifelse((isNewPB)," New PB!",""))}),
                             "\nCumulative", ifelse(!(cumulative_valid), paste0(" (invalid): ", total), paste0( ": ",total," (", place_cum_nice,")")))]
   
   g <- ggplot(dt_i,
@@ -289,7 +302,7 @@ for(k in athletes_ordered) {
   
   dt_k[, tooltext := paste0("Race number: ", race_number,"\n",
                             "Date: ", date_ymd, "\n",
-                            part, ": ", duration,"\n",
+                            part, ": ", duration,ifelse((isNewPB)," New PB!",""),"\n",
                             "Cumulative", ifelse(!(cumulative_valid), paste0(" (invalid): ", total), paste0( ": ",total)))]
   
   gk <- ggplot(dt_k,
