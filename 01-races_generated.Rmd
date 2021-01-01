@@ -4,6 +4,37 @@
 <!-- This Rmd file is created using make_race_rmd.R -->
 
 
+# 15: Jan 02 {#r-2021-01-02}
+    
+    
+## Full
+
+```{r}
+htmltools::tags$iframe(
+  src = "2021-01-02_full.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
+```
+    
+    
+## Intermediate
+
+```{r}
+htmltools::tags$iframe(
+  src = "2021-01-02_int.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
+```
+    
+    
 # 13: Dec 19 {#r-2020-12-19}
     
     

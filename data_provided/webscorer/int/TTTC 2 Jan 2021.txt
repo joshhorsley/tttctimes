@@ -1,0 +1,15 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Time	Lap 1	Lap 2	Lap 3	Difference	% Back	% Winning	% Average	% Median
+1	63	Sebastian Thomson	Sebastian	Thomson	Intermediate	36:53.8	6:04.1	20:51.2	9:58.5	-	-	100%	32.85%	24.14%
+2	208	Ava Thomson	Ava	Thomson	Intermediate	40:15.1	6:46.6	21:58.9	11:29.7	+3:21.3	+9.09%	91.66%	26.75%	17.24%
+3	204	Lucas Nixon-Hind	Lucas	Nixon-Hind	Intermediate	44:55.6	7:25.7	26:54.8	10:35.0	+8:01.8	+21.76%	82.13%	18.24%	7.63%
+4	35	Judy Murray	Judy	Murray	Intermediate	46:16.3	7:52.7	25:02.9	13:20.7	+9:22.5	+25.41%	79.74%	15.79%	4.87%
+5	249	Robyn Barry	Robyn	Barry	Intermediate	48:28.6	7:24.1	25:47.1	15:17.4	+11:34.8	+31.38%	76.11%	11.78%	0.33%
+6	239	Glenn Hind	Glenn	Hind	Intermediate	48:38.3	8:31.4	28:31.8	11:35.1	+11:44.5	+31.82%	75.86%	11.48%	0.00%
+7	64	Wendy Sanders	Wendy	Sanders	Intermediate	55:17.0	9:12.3	30:30.1	15:34.7	+18:23.2	+49.83%	66.74%	-0.61%	-13.66%
+8	238	Lorraine Bassett	Lorraine	Bassett	Intermediate	57:16.2	10:38.8	30:47.1	15:50.3	+20:22.4	+55.22%	64.43%	-4.23%	-17.75%
+9	277	Alex Smith	Alex	Smith	Intermediate	1:13:58.5	7:29.2	56:44.5	9:44.7	+37:04.7	+100.49%	49.88%	-34.63%	-52.09%
+10	276	Geoff Smith	Geoff	Smith	Intermediate	1:14:01.3	7:30.8	56:42.1	9:48.4	+37:07.5	+100.62%	49.85%	-34.71%	-52.19%
+11	280	Ashleigh Murphy	Ashleigh	Murphy	Intermediate	1:18:24.8	6:54.8	41:45.6	29:44.4	+41:31.0	+112.52%	47.05%	-42.71%	-61.22%
+-	50	Amanda Hall	Amanda	Hall	Intermediate	DNS				-	-	-	-	-
+-	200	Steve West	Steve	West	Intermediate	DNS				-	-	-	-	-
+-	205	Karen Nixon	Karen	Nixon	Intermediate	DNS				-	-	-	-	-

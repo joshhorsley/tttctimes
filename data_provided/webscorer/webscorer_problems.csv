@@ -85,3 +85,9 @@ race_number,date_ymd,Name,part,split_valid,cumulative_valid
 13,19/12/20,Lydia Kuschmirz,Run,FALSE,FALSE
 ,,,,,
 13,19/12/20,Rob Gillies,Swim,FALSE,FALSE
+,,,,,
+,,,,,
+15,2/1/21,Dean Webb,Swim,FALSE,FALSE
+15,2/1/21,Dean Webb,Ride,FALSE,TRUE
+,,,,,
+15,2/1/21,Rob Gillies,Swim,FALSE,FALSE
