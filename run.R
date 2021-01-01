@@ -138,7 +138,9 @@ dt_all_long[Name %in% c("Amanda Hall"), Name := "Manda Hall"]
 
 dt_all_long[, row_id := seq(.N)]
 dt_all_long[, name_first := strsplit(Name, " ")[[1]][1],  by = row_id]
+
 dt_all_long[, name_last := gsub(paste0(name_first, " "), "", Name), by = row_id]
+dt_all_long[name_first == Name, name_last := ""] # Catch any people with only a first name
 
 
 # Order names -------------------------------------------------------------
