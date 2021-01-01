@@ -89,6 +89,7 @@ dt_all_long[, part := as.character(part)]
 
 dt_all_long[, duration_mins := as.numeric(duration/60)]
 dt_all_long[, total_mins := as.numeric(total/60)]
+dt_all_long[, total_overall_mins := as.numeric(total_overall/60)]
 
 
 # Timing errors -----------------------------------------------------------
@@ -183,6 +184,12 @@ dt_all_long[(started) & place_cum_recalc %% 10 ==3, place_cum_nice := paste0(pla
 dt_all_long[(started) & place_cum_recalc %in% c(11,12,13), place_cum_nice := paste0(place_cum_recalc, "th")]
 
 
+# Set row order -----------------------------------------------------------
+
+
+dt_all_long[, part := ordered(part, levels = c("Swim","Ride","Run"))]
+setorder(dt_all_long, Name, race_number, part)
+
 
 # PBs ---------------------------------------------------------------------
 
@@ -201,6 +208,12 @@ dt_all_long[(started) & (cumulative_valid), isNewPB_cum := total_mins == pb_cum_
 dt_all_long[is.na(isNewPB_cum), isNewPB_cum := FALSE]
 dt_all_long[(isFirstRace), isNewPB_cum := FALSE]
 
+dt_all_long[(started) & (valid_overall), pb_overall_running := cummin(total_overall_mins), by = .(Name, course) ]
+dt_all_long[(started) & (valid_overall), isNewPB_overall := total_overall_mins == pb_overall_running, by = .(Name, course) ]
+
+dt_all_long[is.na(isNewPB_overall), isNewPB_overall := FALSE]
+dt_all_long[(isFirstRace), isNewPB_overall := FALSE]
+
 
 # Plots paths -------------------------------------------------------------
 
@@ -213,7 +226,7 @@ libpath <- file.path(getwd(), "docs/libs")
 # Race plots --------------------------------------------------------------
 
 
-race_numbers <- unique(dt_all_long$race_number)
+race_numbers <- sort(unique(dt_all_long$race_number))
 
 for(i in race_numbers) {
 
@@ -228,7 +241,7 @@ for(i in race_numbers) {
                                           "Ride", "Ride (invalid)",
                                           "Run", "Run (invalid)"))]
 
-  dt_i[(valid_overall), place_name := paste0(place_overall_recalc, " ", Name)]
+  dt_i[(valid_overall), place_name := paste0(place_overall_recalc, " ", Name, ifelse((isNewPB_overall), " (New PB!)", ""))]
   dt_i[!(valid_overall), place_name := paste0("DNF ", Name)]
   
   dt_i[, tooltext := paste0(Name, ifelse((isFirstRace) & i !=1, " - First race this season",""),"\n",

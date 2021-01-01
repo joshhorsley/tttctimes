@@ -2,9 +2,6 @@
 # Create Race results Rmd -------------------------------------------------
 
 
-race_numbers <- unique(dt_all_long$race_number)
-
-
 header <- paste0({
 "# (PART) Race Results {#races}
 
