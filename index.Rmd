@@ -32,9 +32,21 @@ The results on this website are based on publicly available data from the [club'
 # Season
 
 ```{r}
-knitr::kable(dt_season[course=='full', .(`Race number` = race_number,
+
+dt_season_show <- dt_season[course=='full', .(`Race #` = race_number,
                             Date = date_ymd,
                             `Event type` = race_type,
                             cancelled,
-                            have_results)])
+                            cancelled_reason,
+                            have_results)]
+
+dt_season_show[(cancelled), Note:= paste0("Cancelled due to ", cancelled_reason)]
+dt_season_show[!(cancelled) & !(have_results), Note := "webscorer data not available"]
+dt_season_show[is.na(Note), Note := ""]
+
+knitr::kable(dt_season_show[, .(`Race #`,
+                                Date,
+                                `Event type`,
+                                Note
+                                )])
 ```
