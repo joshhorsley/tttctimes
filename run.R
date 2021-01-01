@@ -273,7 +273,7 @@ for(i in race_numbers) {
   
   p <- ggplotly(g, width = NULL, tooltip = "text",layerData = TRUE, style = "mobile") %>% 
     layout(xaxis = list(fixedrange = TRUE, side = "top"),
-           yaxis = list(fixedrange = TRUE),
+           yaxis = list(fixedrange = TRUE, tickfont = list(size = 10)),
            dragmode = FALSE,
            autosize = TRUE,
            margin = list(l=125, r=0, t=0,b=0, pad=0),
