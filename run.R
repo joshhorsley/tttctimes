@@ -331,6 +331,11 @@ for(i in race_numbers) {
                                        format = "png",
                                        filename = paste0(dt_i$date_ymd[1],"_",j)))
   
+  #' Reference for plotly options
+  #' https://github.com/plotly/plotly.js/blob/master/src/plot_api/plot_config.js
+  #' https://github.com/plotly/plotly.js/blob/master/src/components/modebar/buttons.js
+  #' https://plotly.com/javascript/configuration-options/#customize-download-plot-options
+  
   p$sizingPolicy$padding <- 0
   
   savepath = paste0(getwd(), "/",site_path_relative,"/",dt_i$date_ymd[1],"_",j,".html")
