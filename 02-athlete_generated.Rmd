@@ -529,6 +529,27 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+# Debbie Davies {#a-Debbie-Davies}
+
+All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+
+```{r}
+htmltools::tags$iframe(
+  src = "Debbie Davies.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "500"
+)
+```
+
+
+
+Please let me know if any split times have been incorrectly flagged as invalid.
+
+
+
 # Jonathan Davies {#a-Jonathan-Davies}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -550,13 +571,13 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
-# Debbie Davies {#a-Debbie-Davies}
+# Erin Davoren {#a-Erin-Davoren}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
 
 ```{r}
 htmltools::tags$iframe(
-  src = "Debbie Davies.html", 
+  src = "Erin Davoren.html", 
   scrolling = "no", 
   seamless = "seamless",
   frameBorder = "0",
@@ -583,27 +604,6 @@ htmltools::tags$iframe(
   frameBorder = "0",
   width = "100%",
   height = "1000"
-)
-```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
-
-
-
-# Erin Davoren {#a-Erin-Davoren}
-
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
-
-```{r}
-htmltools::tags$iframe(
-  src = "Erin Davoren.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
 )
 ```
 
@@ -1012,27 +1012,6 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
-# Ben Hall {#a-Ben-Hall}
-
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
-
-```{r}
-htmltools::tags$iframe(
-  src = "Ben Hall.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
-```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
-
-
-
 # Manda Hall {#a-Manda-Hall}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -1045,6 +1024,27 @@ htmltools::tags$iframe(
   frameBorder = "0",
   width = "100%",
   height = "500"
+)
+```
+
+
+
+Please let me know if any split times have been incorrectly flagged as invalid.
+
+
+
+# Ben Hall {#a-Ben-Hall}
+
+All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+
+```{r}
+htmltools::tags$iframe(
+  src = "Ben Hall.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "1000"
 )
 ```
 
@@ -1306,13 +1306,13 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
-# Virginia Jones {#a-Virginia-Jones}
+# Michelle Jones {#a-Michelle-Jones}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
 
 ```{r}
 htmltools::tags$iframe(
-  src = "Virginia Jones.html", 
+  src = "Michelle Jones.html", 
   scrolling = "no", 
   seamless = "seamless",
   frameBorder = "0",
@@ -1327,13 +1327,13 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
-# Michelle Jones {#a-Michelle-Jones}
+# Virginia Jones {#a-Virginia-Jones}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
 
 ```{r}
 htmltools::tags$iframe(
-  src = "Michelle Jones.html", 
+  src = "Virginia Jones.html", 
   scrolling = "no", 
   seamless = "seamless",
   frameBorder = "0",
@@ -1621,27 +1621,6 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
-# Michelle Miller {#a-Michelle-Miller}
-
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
-
-```{r}
-htmltools::tags$iframe(
-  src = "Michelle Miller.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
-```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
-
-
-
 # Andrew Miller {#a-Andrew-Miller}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -1684,6 +1663,27 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+# Michelle Miller {#a-Michelle-Miller}
+
+All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+
+```{r}
+htmltools::tags$iframe(
+  src = "Michelle Miller.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "1000"
+)
+```
+
+
+
+Please let me know if any split times have been incorrectly flagged as invalid.
+
+
+
 # Kyle Mooney {#a-Kyle-Mooney}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -1696,6 +1696,27 @@ htmltools::tags$iframe(
   frameBorder = "0",
   width = "100%",
   height = "1000"
+)
+```
+
+
+
+Please let me know if any split times have been incorrectly flagged as invalid.
+
+
+
+# James Mourant {#a-James-Mourant}
+
+All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+
+```{r}
+htmltools::tags$iframe(
+  src = "James Mourant.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "500"
 )
 ```
 
@@ -1726,13 +1747,13 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
-# James Mourant {#a-James-Mourant}
+# Ashleigh Murphy {#a-Ashleigh-Murphy}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
 
 ```{r}
 htmltools::tags$iframe(
-  src = "James Mourant.html", 
+  src = "Ashleigh Murphy.html", 
   scrolling = "no", 
   seamless = "seamless",
   frameBorder = "0",
@@ -1789,13 +1810,13 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
-# Ashleigh Murphy {#a-Ashleigh-Murphy}
+# Darren Murray {#a-Darren-Murray}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
 
 ```{r}
 htmltools::tags$iframe(
-  src = "Ashleigh Murphy.html", 
+  src = "Darren Murray.html", 
   scrolling = "no", 
   seamless = "seamless",
   frameBorder = "0",
@@ -1838,27 +1859,6 @@ All races in the season are shown below, if more than one type of course (Full, 
 ```{r}
 htmltools::tags$iframe(
   src = "Judy Murray.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
-```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
-
-
-
-# Darren Murray {#a-Darren-Murray}
-
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
-
-```{r}
-htmltools::tags$iframe(
-  src = "Darren Murray.html", 
   scrolling = "no", 
   seamless = "seamless",
   frameBorder = "0",
@@ -1936,27 +1936,6 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
-# Nick O'Reilly {#a-Nick-OReilly}
-
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
-
-```{r}
-htmltools::tags$iframe(
-  src = "Nick O'Reilly.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
-```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
-
-
-
 # Andy O'Reilly {#a-Andy-OReilly}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -1969,6 +1948,27 @@ htmltools::tags$iframe(
   frameBorder = "0",
   width = "100%",
   height = "500"
+)
+```
+
+
+
+Please let me know if any split times have been incorrectly flagged as invalid.
+
+
+
+# Nick O'Reilly {#a-Nick-OReilly}
+
+All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+
+```{r}
+htmltools::tags$iframe(
+  src = "Nick O'Reilly.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "1000"
 )
 ```
 
@@ -2062,27 +2062,6 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
-# Kaleb Robards {#a-Kaleb-Robards}
-
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
-
-```{r}
-htmltools::tags$iframe(
-  src = "Kaleb Robards.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
-```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
-
-
-
 # Gerard Robards {#a-Gerard-Robards}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -2111,6 +2090,27 @@ All races in the season are shown below, if more than one type of course (Full, 
 ```{r}
 htmltools::tags$iframe(
   src = "Hollie Robards.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "500"
+)
+```
+
+
+
+Please let me know if any split times have been incorrectly flagged as invalid.
+
+
+
+# Kaleb Robards {#a-Kaleb-Robards}
+
+All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+
+```{r}
+htmltools::tags$iframe(
+  src = "Kaleb Robards.html", 
   scrolling = "no", 
   seamless = "seamless",
   frameBorder = "0",
@@ -2251,27 +2251,6 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
-# Tracey Sewell {#a-Tracey-Sewell}
-
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
-
-```{r}
-htmltools::tags$iframe(
-  src = "Tracey Sewell.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
-```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
-
-
-
 # Rod Sewell {#a-Rod-Sewell}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -2284,6 +2263,27 @@ htmltools::tags$iframe(
   frameBorder = "0",
   width = "100%",
   height = "500"
+)
+```
+
+
+
+Please let me know if any split times have been incorrectly flagged as invalid.
+
+
+
+# Tracey Sewell {#a-Tracey-Sewell}
+
+All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+
+```{r}
+htmltools::tags$iframe(
+  src = "Tracey Sewell.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "1000"
 )
 ```
 
@@ -2335,27 +2335,6 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
-# Rowena Smith {#a-Rowena-Smith}
-
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
-
-```{r}
-htmltools::tags$iframe(
-  src = "Rowena Smith.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
-```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
-
-
-
 # Alex Smith {#a-Alex-Smith}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -2389,6 +2368,27 @@ htmltools::tags$iframe(
   frameBorder = "0",
   width = "100%",
   height = "500"
+)
+```
+
+
+
+Please let me know if any split times have been incorrectly flagged as invalid.
+
+
+
+# Rowena Smith {#a-Rowena-Smith}
+
+All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+
+```{r}
+htmltools::tags$iframe(
+  src = "Rowena Smith.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "1000"
 )
 ```
 
@@ -2503,13 +2503,13 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
-# William Taylor {#a-William-Taylor}
+# Timothy Taylor {#a-Timothy-Taylor}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
 
 ```{r}
 htmltools::tags$iframe(
-  src = "William Taylor.html", 
+  src = "Timothy Taylor.html", 
   scrolling = "no", 
   seamless = "seamless",
   frameBorder = "0",
@@ -2524,13 +2524,13 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
-# Timothy Taylor {#a-Timothy-Taylor}
+# William Taylor {#a-William-Taylor}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
 
 ```{r}
 htmltools::tags$iframe(
-  src = "Timothy Taylor.html", 
+  src = "William Taylor.html", 
   scrolling = "no", 
   seamless = "seamless",
   frameBorder = "0",
@@ -2566,27 +2566,6 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
-# Scott Thomson {#a-Scott-Thomson}
-
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
-
-```{r}
-htmltools::tags$iframe(
-  src = "Scott Thomson.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
-```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
-
-
-
 # Ava Thomson {#a-Ava-Thomson}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -2599,6 +2578,27 @@ htmltools::tags$iframe(
   frameBorder = "0",
   width = "100%",
   height = "500"
+)
+```
+
+
+
+Please let me know if any split times have been incorrectly flagged as invalid.
+
+
+
+# Scott Thomson {#a-Scott-Thomson}
+
+All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+
+```{r}
+htmltools::tags$iframe(
+  src = "Scott Thomson.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "1000"
 )
 ```
 
@@ -2713,13 +2713,13 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
-# Lisa Warner {#a-Lisa-Warner}
+# Danny Warner {#a-Danny-Warner}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
 
 ```{r}
 htmltools::tags$iframe(
-  src = "Lisa Warner.html", 
+  src = "Danny Warner.html", 
   scrolling = "no", 
   seamless = "seamless",
   frameBorder = "0",
@@ -2734,13 +2734,13 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
-# Danny Warner {#a-Danny-Warner}
+# Lisa Warner {#a-Lisa-Warner}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
 
 ```{r}
 htmltools::tags$iframe(
-  src = "Danny Warner.html", 
+  src = "Lisa Warner.html", 
   scrolling = "no", 
   seamless = "seamless",
   frameBorder = "0",

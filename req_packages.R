@@ -8,4 +8,5 @@ library(leaflet)
 library(leaflet.extras)
 library(foreach)
 library(htmlwidgets)
+library(lubridate)
 

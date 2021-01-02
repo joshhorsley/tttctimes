@@ -1,51 +1,49 @@
 race_number,date_ymd,Name,part,split_valid,cumulative_valid
 ,,,,,
 1,26/9/20,Hollie Robards,Run,FALSE,FALSE
+,,,,,
 1,26/9/20,Rob Gillies,Swim,FALSE,FALSE
 ,,,,,
+,,,,,
 2,3/10/20,Aaron Neylan,Swim,FALSE,FALSE
-2,3/10/20,Aaron Neylan,Run,FALSE,FALSE
 2,3/10/20,Aaron Neylan,Ride,FALSE,FALSE
+2,3/10/20,Aaron Neylan,Run,FALSE,TRUE
 ,,,,,
 2,3/10/20,Andrew Costello,Swim,FALSE,FALSE
-2,3/10/20,Andrew Costello,Run,FALSE,FALSE
 2,3/10/20,Andrew Costello,Ride,FALSE,FALSE
+2,3/10/20,Andrew Costello,Run,FALSE,TRUE
 ,,,,,
 2,3/10/20,Kent Holmes,Swim,FALSE,FALSE
-2,3/10/20,Kent Holmes,Run,FALSE,FALSE
 2,3/10/20,Kent Holmes,Ride,FALSE,FALSE
-2,3/10/20,Rob Gillies,Run,FALSE,FALSE
+2,3/10/20,Kent Holmes,Run,FALSE,TRUE
 ,,,,,
-2,3/10/20,Ross Salmon,Run,FALSE,FALSE
+2,3/10/20,Rob Gillies,Run,FALSE,TRUE
+,,,,,
 2,3/10/20,Ross Salmon,Ride,FALSE,FALSE
+2,3/10/20,Ross Salmon,Run,FALSE,TRUE
 ,,,,,
 2,3/10/20,Hollie Robards,Swim,FALSE,FALSE
 2,3/10/20,Hollie Robards,Ride,FALSE,FALSE
-2,3/10/20,Hollie Robards,Run,FALSE,FALSE
+2,3/10/20,Hollie Robards,Run,FALSE,TRUE
 ,,,,,
 2,3/10/20,Jo Ward,Ride,FALSE,FALSE
 2,3/10/20,Jo Ward,Run,FALSE,FALSE
 ,,,,,
 2,3/10/20,Marcel Van Kampen,Ride,FALSE,FALSE
-2,3/10/20,Marcel Van Kampen,Run,FALSE,FALSE
+2,3/10/20,Marcel Van Kampen,Run,FALSE,TRUE
 ,,,,,
 ,,,,,
 3,10/10/20,Val Lambard,Run,FALSE,FALSE
 3,10/10/20,Val Lambard,Ride,FALSE,FALSE
 ,,,,,
 ,,,,,
-4,17/10/20,Ben Hall,Run,FALSE,FALSE
 4,17/10/20,Ben Hall,Ride,FALSE,FALSE
+4,17/10/20,Ben Hall,Run,FALSE,TRUE
 ,,,,,
 4,17/10/20,Rob Gillies,Swim,FALSE,FALSE
 ,,,,,
-4,17/10/20,Robyn Barry,Run,FALSE,FALSE
-,,,,,
-4,17/10/20,Rowena Smith,Ride,FALSE,FALSE
-4,17/10/20,Rowena Smith,Run,TRUE,FALSE
-,,,,,
-4,17/10/20,Samantha Leonard,Ride,FALSE,FALSE
-4,17/10/20,Samantha Leonard,Run,TRUE,FALSE
+4,17/10/20,Robyn Barry,Ride,FALSE,FALSE
+4,17/10/20,Robyn Barry,Run,FALSE,TRUE
 ,,,,,
 ,,,,,
 5,24/10/20,Craig Telling,Run,FALSE,FALSE
@@ -57,10 +55,12 @@ race_number,date_ymd,Name,part,split_valid,cumulative_valid
 ,,,,,
 6,31/10/20,Craig Broadhurst,Run,FALSE,FALSE
 ,,,,,
-6,31/10/20,Glenn Payne,Run,FALSE,FALSE
+6,31/10/20,Glenn Payne,Ride,FALSE,FALSE
+6,31/10/20,Glenn Payne,Run,FALSE,TRUE
 ,,,,,
 ,,,,,
-7,7/11/20,Erin Davoren,Run,FALSE,FALSE
+7,7/11/20,Erin Davoren,Ride,FALSE,FALSE
+7,7/11/20,Erin Davoren,Run,FALSE,TRUE
 ,,,,,
 ,,,,,
 10,28/11/20,Aaron Neylan,Swim,FALSE,FALSE
@@ -74,15 +74,16 @@ race_number,date_ymd,Name,part,split_valid,cumulative_valid
 ,,,,,
 11,5/12/20,Rob Gillies,Swim,FALSE,FALSE
 ,,,,,
-11,5/12/20,Val Lambard,Run,FALSE,FALSE
 11,5/12/20,Val Lambard,Ride,FALSE,FALSE
+11,5/12/20,Val Lambard,Run,FALSE,TRUE
 ,,,,,
 ,,,,,
 13,19/12/20,Des Gooda,Swim,FALSE,FALSE
 13,19/12/20,Des Gooda,Ride,TRUE,FALSE
 13,19/12/20,Des Gooda,Run,TRUE,FALSE
 ,,,,,
-13,19/12/20,Lydia Kuschmirz,Run,FALSE,FALSE
+13,19/12/20,Lydia Kuschmirz,Ride,FALSE,FALSE
+13,19/12/20,Lydia Kuschmirz,Run,FALSE,TRUE
 ,,,,,
 13,19/12/20,Rob Gillies,Swim,FALSE,FALSE
 ,,,,,

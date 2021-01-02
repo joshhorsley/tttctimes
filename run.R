@@ -50,46 +50,74 @@ new_cols <- c("race_number", "date_ymd", "race_type", "course")
 dt_all[dt_season, on = .(row_id), (new_cols) := mget(new_cols)]
 setcolorder(dt_all, new_cols)
 
+setnames(dt_all, c("Lap.1","Lap.2","Lap.3"), c("Swim", "Ride", "Run"))
+
 
 # Cleaning ----------------------------------------------------------------
 
 
 # Formats
-dt_all[, place_overall := as.numeric(Place)]
-
-dt_all[, Swim := as.ITime(`Lap.1`, format = "%M:%S")]
-dt_all[, Ride := as.ITime(`Lap.2`, format = "%M:%S")]
-dt_all[, Run := as.ITime(`Lap.3`, format = "%M:%S")]
-dt_all[, Swim_total := Swim]
-dt_all[, Ride_total := Swim + Ride]
-dt_all[, Run_total := Swim + Ride + Run]
-dt_all[, total_overall := Run_total]
+dt_all[, place_import := as.numeric(Place)]
+dt_all[, time_overall_import := Time]
 
 dt_all[, started := TRUE]
-dt_all[`Lap.1` %in% c("","-"), started := FALSE]
+dt_all[Swim %in% c("","-"), started := FALSE]
 
 
 # Convert to long
 dt_all_long <- melt.data.table(dt_all,
                                id.vars = c("race_number", "date_ymd", "race_type", "course",
-                                           "Name","place_overall","total_overall","started"),
-                               measure.vars = list(c("Swim",
+                                           "Name","place_import","time_overall_import","started"),
+                               measure.vars = c("Swim",
                                                   "Ride",
                                                   "Run"),
-                                                  c("Swim_total",
-                                                    "Ride_total",
-                                                    "Run_total")),
                                  variable.name = c("part"),
-                               value.name = c("duration","total"))
+                               value.name = c("duration_import"))
 
-dt_all_long[part=="1", part := "Swim"]
-dt_all_long[part=="2", part := "Ride"]
-dt_all_long[part=="3", part := "Run"]
-dt_all_long[, part := as.character(part)]
 
-dt_all_long[, duration_mins := as.numeric(duration/60)]
-dt_all_long[, total_mins := as.numeric(total/60)]
-dt_all_long[, total_overall_mins := as.numeric(total_overall/60)]
+
+# Set row order
+dt_all_long[, part := ordered(as.character(part), levels = c("Swim","Ride","Run"))]
+setorder(dt_all_long, Name, race_number, part)
+
+
+# Format time
+dt_all_long[, n_char_duration := nchar(duration_import)]
+dt_all_long[n_char_duration==6, duration_hms := paste0("0:0", duration_import)]
+dt_all_long[n_char_duration==7, duration_hms := paste0("0:", duration_import)]
+dt_all_long[n_char_duration==9, duration_hms := duration_import]
+
+dt_all_long[, duration_seconds := as.numeric(seconds(hms(duration_hms)))]
+dt_all_long[, cumulative_seconds := cumsum(duration_seconds), by = .(Name, race_number)]
+
+
+dt_all_long[, duration_mins := duration_seconds/60]
+dt_all_long[, cumulative_mins := cumulative_seconds/60]
+
+to_hms <- function(x, nsmall_seconds = 1L) {
+  paste0(hour(x), ":",
+         format(minute(x), width=2),
+         ":",
+         format(round(second(x),nsmall_seconds),nsmall = nsmall_seconds, width=4)
+         )
+}
+
+dt_all_long[, duration_hms_short := to_hms(seconds_to_period(duration_seconds))]
+dt_all_long[, duration_hms_short := gsub("^0:","",duration_hms_short)]
+dt_all_long[, duration_hms_short := gsub(": ",":0",duration_hms_short)]
+dt_all_long[, duration_hms_short := trimws(duration_hms_short)]
+
+dt_all_long[, cumulative_hms_short := to_hms(seconds_to_period(cumulative_seconds))]
+dt_all_long[, cumulative_hms_short := gsub("^0:","",cumulative_hms_short)]
+dt_all_long[, cumulative_hms_short := gsub(": ",":0",cumulative_hms_short)]
+
+dt_all_long[, total_overall_seconds := cumulative_seconds[which(part=="Run")], by = .(race_number, Name)]
+dt_all_long[, total_overall_mins := total_overall_seconds/60]
+
+
+dt_all_long[, total_overall_hms_short := to_hms(seconds_to_period(total_overall_seconds))]
+dt_all_long[, total_overall_hms_short := gsub("^0:","",total_overall_hms_short)]
+dt_all_long[, total_overall_hms_short := gsub(": ",":0",total_overall_hms_short)]
 
 
 # Timing errors -----------------------------------------------------------
@@ -156,10 +184,10 @@ athletes_ordered <- unique(dt_all_long[(started)][order(tolower(name_last))]$Nam
 dt_all_long[(split_valid), duration_mins_sort := duration_mins]
 dt_all_long[!(split_valid), duration_mins_sort := NA]
 
-dt_all_long[(cumulative_valid), total_mins_sort := total_mins]
+dt_all_long[(cumulative_valid), total_mins_sort := cumulative_mins]
 dt_all_long[!(cumulative_valid), total_mins_sort := NA]
 
-dt_all_long[(valid_overall), total_overall_sort := total_overall]
+dt_all_long[(valid_overall), total_overall_sort := total_overall_mins]
 dt_all_long[!(valid_overall), total_overall_sort := NA]
 
 
@@ -184,13 +212,6 @@ dt_all_long[(started) & place_cum_recalc %% 10 ==3, place_cum_nice := paste0(pla
 dt_all_long[(started) & place_cum_recalc %in% c(11,12,13), place_cum_nice := paste0(place_cum_recalc, "th")]
 
 
-# Set row order -----------------------------------------------------------
-
-
-dt_all_long[, part := ordered(part, levels = c("Swim","Ride","Run"))]
-setorder(dt_all_long, Name, race_number, part)
-
-
 # PBs ---------------------------------------------------------------------
 
 
@@ -202,8 +223,8 @@ dt_all_long[(started) & (split_valid), isNewPB_split := duration_mins == pb_spli
 dt_all_long[is.na(isNewPB_split), isNewPB_split := FALSE]
 dt_all_long[(isFirstRace), isNewPB_split := FALSE]
 
-dt_all_long[(started) & (cumulative_valid), pb_cum_running := cummin(total_mins), by = .(Name, part, course) ]
-dt_all_long[(started) & (cumulative_valid), isNewPB_cum := total_mins == pb_cum_running, by = .(Name, part, course) ]
+dt_all_long[(started) & (cumulative_valid), pb_cum_running := cummin(total_overall_mins), by = .(Name, part, course) ]
+dt_all_long[(started) & (cumulative_valid), isNewPB_cum := total_overall_mins == pb_cum_running, by = .(Name, part, course) ]
 
 dt_all_long[is.na(isNewPB_cum), isNewPB_cum := FALSE]
 dt_all_long[(isFirstRace), isNewPB_cum := FALSE]
@@ -234,7 +255,7 @@ for(i in race_numbers) {
   for( j in i_courses) {
     
     
-  dt_i <- dt_all_long[race_number== i & course == j][order(place_overall)][(started)]
+  dt_i <- dt_all_long[race_number== i & course == j][(started)]
   
   dt_i[!(split_valid), part := paste0(part, " (invalid)")]
   dt_i[, part := ordered(part, levels = c("Swim", "Swim (invalid)",
@@ -244,9 +265,24 @@ for(i in race_numbers) {
   dt_i[(valid_overall), place_name := paste0(place_overall_recalc, " ", Name, ifelse((isNewPB_overall), " (New PB!)", ""))]
   dt_i[!(valid_overall), place_name := paste0("DNF ", Name)]
   
-  dt_i[, tooltext := paste0(Name, ifelse((isFirstRace) & i !=1, " - First race this season",""),"\n",
-                            part, ": ", duration,ifelse(!(split_valid),"",{paste0(" (",place_lap_nice,")",ifelse((isNewPB_split)," New PB!",""))}),
-                            "\nCumulative", ifelse(!(cumulative_valid), paste0(" (invalid): ", total), paste0( ": ",total," (", place_cum_nice,")",ifelse((isNewPB_cum)," New PB!",""))))]
+  dt_i[, tooltext := paste0(Name,
+                            ifelse((isFirstRace) & i !=1, " - First race this season",""),"\n",
+                            
+                            part,
+                            ifelse(split_valid & !(cumulative_valid)," (valid)",""),
+                            ": ", 
+                            duration_hms_short,
+                            ifelse((split_valid),paste0(" (",place_lap_nice,")"),""),
+                            ifelse((isNewPB_split)," New PB!",""),
+                            "\n",
+                            
+                            "Cumulative",
+                            ifelse((cumulative_valid), "", " (invalid)"),
+                            ifelse((cumulative_valid) & !(split_valid), " (valid)",""),
+                            ": ",
+                            cumulative_hms_short,
+                            ifelse((split_valid),paste0(" (", place_cum_nice,")"),""),
+                            ifelse((isNewPB_cum)," New PB!",""))]
   
   g <- ggplot(dt_i,
               aes(x = duration_mins, y = - place_overall_recalc, fill = part, group = Name, text = tooltext)) +
@@ -312,10 +348,23 @@ for(k in athletes_ordered) {
   dt_k[(valid_overall), place_name := paste0(place_overall_recalc, " ", Name)]
   dt_k[!(valid_overall), place_name := paste0("DNF ", Name)]
   
-  dt_k[, tooltext := paste0("Race number: ", race_number,"\n",
+  dt_k[, tooltext := paste0("Race #: ", race_number,"\n",
                             "Date: ", date_ymd, "\n",
-                            part, ": ", duration,ifelse((isNewPB_split)," New PB!",""),"\n",
-                            "Cumulative", ifelse(!(cumulative_valid), paste0(" (invalid): ", total), paste0( ": ",total, ifelse((isNewPB_cum)," New PB!",""))))]
+                            
+                            part,
+                            ifelse(split_valid & !(cumulative_valid)," (valid)",""),
+                            ": ", 
+                            duration_hms_short,
+                            ifelse((isNewPB_split)," New PB!",""),"\n",
+                            
+                            
+                            
+                            "Cumulative",
+                            ifelse((cumulative_valid),""," (invalid)"),
+                            ifelse((cumulative_valid) & !(split_valid)," (valid)",""),
+                            ": ",
+                            cumulative_hms_short,
+                            ifelse((isNewPB_cum)," New PB!",""))]
   
   gk <- ggplot(dt_k,
          aes(y = duration_mins, x = race_number, fill = part, group = race_number, text = tooltext)) +
