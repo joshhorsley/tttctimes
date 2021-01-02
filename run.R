@@ -247,8 +247,14 @@ dt_all_long[is.na(isNewPB_overall), isNewPB_overall := FALSE]
 dt_all_long[(isFirstRace), isNewPB_overall := FALSE]
 
 
-# Plots paths -------------------------------------------------------------
+# Plot prep ---------------------------------------------------------------
 
+
+set.seed(100)
+setWidgetIdSeed(100)
+#' Plotly sets ids via plotly::new_id()
+#' which calls base::tempfile()
+#' which doesn't seem reproducible - annoying
 
 site_path_relative <- "docs"
 if(!dir.exists(site_path_relative)) dir.create(site_path_relative)
@@ -338,6 +344,12 @@ for(i in race_numbers) {
   
   p$sizingPolicy$padding <- 0
   
+  new_name <- "removed"
+  p$x$cur_data <- new_name
+  names(p$x$attrs) <- new_name
+  names(p$x$visdat) <- new_name
+  names(p$x$attrs) <- new_name
+  
   savepath = paste0(getwd(), "/",site_path_relative,"/",dt_i$date_ymd[1],"_",j,".html")
   
   saveWidget(p, file = savepath ,selfcontained = FALSE,libdir = libpath)
@@ -426,6 +438,12 @@ for(k in athletes_ordered) {
                                        filename = paste0(k)))
   
   pk$sizingPolicy$padding <- 0
+  
+  new_name <- "removed"
+  pk$x$cur_data <- new_name
+  names(pk$x$attrs) <- new_name
+  names(pk$x$visdat) <- new_name
+  names(pk$x$attrs) <- new_name
   
   savepath = paste0(getwd(),"/",site_path_relative,"/",k,".html")
   
