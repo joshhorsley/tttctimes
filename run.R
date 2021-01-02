@@ -75,6 +75,39 @@ dt_all_long <- melt.data.table(dt_all,
                                value.name = c("duration_import"))
 
 
+# Name inconsistencies ----------------------------------------------------
+
+
+dt_all_long[Name %in% c("Dave de Closey","Dave De Closey","Dave DE CLOSEY","David De Closey"), Name := "David De Closey"]
+dt_all_long[Name %in% c("Peta EDGE"), Name := "Peta Edge"]
+dt_all_long[Name %in% c("Jo Ward"), Name := "Jolyon Ward"]
+dt_all_long[Name %in% c("Joshua Horsley"), Name := "Josh Horsley"]
+dt_all_long[Name %in% c("Robyn BARRY"), Name := "Robyn Barry"]
+dt_all_long[Name %in% c("Ian Driffil"), Name := "Ian Driffill"]
+dt_all_long[Name %in% c("Stephen RING"), Name := "Stephen Ring"]
+dt_all_long[Name %in% c("Philip SALTER"), Name := "Philip Salter"]
+dt_all_long[Name %in% c("Sally KINGSTON"), Name := "Sally Kingston"]
+dt_all_long[Name %in% c("Aaron NEYLAN"), Name := "Aaron Neylan"]
+dt_all_long[Name %in% c("Greg Freeman"), Name := "Gregory Freeman"]
+dt_all_long[Name %in% c("Lydia Kuschnirz"), Name := "Lydia Kuschmirz"]
+dt_all_long[Name %in% c("Samatha Leonard"), Name := "Samantha Leonard"]
+dt_all_long[Name %in% c("Valerie Lambard"), Name := "Val Lambard"]
+dt_all_long[Name %in% c("Amanda Hall"), Name := "Manda Hall"]
+dt_all_long[Name %in% c("Virginia Jones"), Name := "Ginny Jones"]
+
+
+# Separate Names ----------------------------------------------------------
+
+
+dt_all_long[, row_id := seq(.N)]
+dt_all_long[, name_first := strsplit(Name, " ")[[1]][1],  by = row_id]
+
+dt_all_long[, name_last := gsub(paste0(name_first, " "), "", Name), by = row_id]
+dt_all_long[name_first == Name, name_last := ""] # Catch any people with only a first name
+
+
+# Cleaning ----------------------------------------------------------------
+
 
 # Set row order
 dt_all_long[, part := ordered(as.character(part), levels = c("Swim","Ride","Run"))]
@@ -142,36 +175,6 @@ dt_all_long[is.na(valid_overall), valid_overall := TRUE]
 dt_all_long[race_number==3 & Name == "Lydia Kuschmirz", course := "int"]
 
 
-# Name inconsistencies ----------------------------------------------------
-
-
-dt_all_long[Name %in% c("Dave de Closey","Dave De Closey","Dave DE CLOSEY","David De Closey"), Name := "David De Closey"]
-dt_all_long[Name %in% c("Peta EDGE"), Name := "Peta Edge"]
-dt_all_long[Name %in% c("Jo Ward"), Name := "Jolyon Ward"]
-dt_all_long[Name %in% c("Joshua Horsley"), Name := "Josh Horsley"]
-dt_all_long[Name %in% c("Robyn BARRY"), Name := "Robyn Barry"]
-dt_all_long[Name %in% c("Ian Driffil"), Name := "Ian Driffill"]
-dt_all_long[Name %in% c("Stephen RING"), Name := "Stephen Ring"]
-dt_all_long[Name %in% c("Philip SALTER"), Name := "Philip Salter"]
-dt_all_long[Name %in% c("Sally KINGSTON"), Name := "Sally Kingston"]
-dt_all_long[Name %in% c("Aaron NEYLAN"), Name := "Aaron Neylan"]
-dt_all_long[Name %in% c("Greg Freeman"), Name := "Gregory Freeman"]
-dt_all_long[Name %in% c("Lydia Kuschnirz"), Name := "Lydia Kuschmirz"]
-dt_all_long[Name %in% c("Samatha Leonard"), Name := "Samantha Leonard"]
-dt_all_long[Name %in% c("Valerie Lambard"), Name := "Val Lambard"]
-dt_all_long[Name %in% c("Amanda Hall"), Name := "Manda Hall"]
-
-
-# Separate Names ----------------------------------------------------------
-
-
-dt_all_long[, row_id := seq(.N)]
-dt_all_long[, name_first := strsplit(Name, " ")[[1]][1],  by = row_id]
-
-dt_all_long[, name_last := gsub(paste0(name_first, " "), "", Name), by = row_id]
-dt_all_long[name_first == Name, name_last := ""] # Catch any people with only a first name
-
-
 # Order names -------------------------------------------------------------
 
 
@@ -223,8 +226,8 @@ dt_all_long[(started) & (split_valid), isNewPB_split := duration_mins == pb_spli
 dt_all_long[is.na(isNewPB_split), isNewPB_split := FALSE]
 dt_all_long[(isFirstRace), isNewPB_split := FALSE]
 
-dt_all_long[(started) & (cumulative_valid), pb_cum_running := cummin(total_overall_mins), by = .(Name, part, course) ]
-dt_all_long[(started) & (cumulative_valid), isNewPB_cum := total_overall_mins == pb_cum_running, by = .(Name, part, course) ]
+dt_all_long[(started) & (cumulative_valid), pb_cum_running := cummin(cumulative_mins), by = .(Name, part, course) ]
+dt_all_long[(started) & (cumulative_valid), isNewPB_cum := cumulative_mins == pb_cum_running, by = .(Name, part, course) ]
 
 dt_all_long[is.na(isNewPB_cum), isNewPB_cum := FALSE]
 dt_all_long[(isFirstRace), isNewPB_cum := FALSE]
