@@ -62,6 +62,9 @@ race_number,date_ymd,Name,part,split_valid,cumulative_valid
 7,7/11/20,Erin Davoren,Ride,FALSE,FALSE
 7,7/11/20,Erin Davoren,Run,FALSE,TRUE
 ,,,,,
+7,7/11/20,Michelle Miller,Swim,FALSE,FALSE
+7,7/11/20,Michelle Miller,Ride,FALSE,TRUE
+,,,,,
 ,,,,,
 10,28/11/20,Aaron Neylan,Swim,FALSE,FALSE
 10,28/11/20,Aaron Neylan,Ride,FALSE,TRUE
