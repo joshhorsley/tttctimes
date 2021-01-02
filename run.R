@@ -126,8 +126,12 @@ dt_all_long[n_char_overall==7, overall_hms := paste0("0:", time_overall_import)]
 dt_all_long[n_char_overall==9, overall_hms := time_overall_import]
 
 dt_all_long[, duration_seconds := as.numeric(seconds(hms(duration_hms)))]
+dt_all_long[is.na(duration_seconds) & (started), duration_seconds := 0]
+
 dt_all_long[, cumulative_seconds := cumsum(duration_seconds), by = .(Name, race_number)]
 dt_all_long[, overall_seconds := as.numeric(seconds(hms(overall_hms)))]
+# Catch cases where overtime is valid but no run time has been recorded
+dt_all_long[(started) & is.na(overall_seconds), overall_seconds := max(cumulative_seconds), by = .(Name, race_number)]
 
 
 dt_all_long[, duration_mins := duration_seconds/60]
@@ -221,6 +225,7 @@ dt_all_long[(started) & place_cum_recalc %% 10 ==1, place_cum_nice := paste0(pla
 dt_all_long[(started) & place_cum_recalc %% 10 ==2, place_cum_nice := paste0(place_cum_recalc, "nd")]
 dt_all_long[(started) & place_cum_recalc %% 10 ==3, place_cum_nice := paste0(place_cum_recalc, "rd")]
 dt_all_long[(started) & place_cum_recalc %in% c(11,12,13), place_cum_nice := paste0(place_cum_recalc, "th")]
+
 
 
 # PBs ---------------------------------------------------------------------
