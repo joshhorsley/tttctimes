@@ -326,7 +326,10 @@ for(i in race_numbers) {
            margin = list(l=125, r=0, t=0,b=0, pad=0),
            legend = list(orientation = "h", y = 0, x= 0.5, xanchor = "center",
                          itemclick = FALSE, itemdoubleclick  = FALSE)) %>% 
-    config(displayModeBar = FALSE)
+    config(displayModeBar = TRUE, modeBarButtons = list(list("toImage")), displaylogo=FALSE,
+           toImageButtonOptions = list(height = 1000, width = 700, scale = 2,
+                                       format = "png",
+                                       filename = paste0(dt_i$date_ymd[1],"_",j)))
   
   p$sizingPolicy$padding <- 0
   
@@ -377,6 +380,8 @@ for(k in athletes_ordered) {
                             cumulative_hms_short,
                             ifelse((isNewPB_cum)," New PB!",""))]
   
+  n_courses <- length(unique(dt_all_long[Name==k, .(course)]$course))
+  
   gk <- ggplot(dt_k,
          aes(y = duration_mins, x = race_number, fill = part, group = race_number, text = tooltext)) +
     geom_col(orientation = "x", width = 0.9) +
@@ -410,7 +415,10 @@ for(k in athletes_ordered) {
            margin = list(l=50, r=25, t=0,b=0, pad=0),
            legend = list(orientation = "h", y = -0.1, x= 0.5, xanchor = "center",
                          itemclick = FALSE, itemdoubleclick  = FALSE)) %>% 
-    config(displayModeBar = FALSE)
+    config(displayModeBar = TRUE, modeBarButtons = list(list("toImage")), displaylogo=FALSE,
+           toImageButtonOptions = list(height = 500*n_courses, width = 700, scale = 2,
+                                       format = "png",
+                                       filename = paste0(k)))
   
   pk$sizingPolicy$padding <- 0
   
