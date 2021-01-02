@@ -20,14 +20,14 @@ race_number,date_ymd,Name,part,split_valid,cumulative_valid
 2,3/10/20,Rob Gillies,Run,FALSE,TRUE
 ,,,,,
 2,3/10/20,Ross Salmon,Ride,FALSE,FALSE
-2,3/10/20,Ross Salmon,Run,FALSE,TRUE
+2,3/10/20,Ross Salmon,Run,FALSE,FALSE
 ,,,,,
 2,3/10/20,Hollie Robards,Swim,FALSE,FALSE
 2,3/10/20,Hollie Robards,Ride,FALSE,FALSE
 2,3/10/20,Hollie Robards,Run,FALSE,TRUE
 ,,,,,
-2,3/10/20,Jo Ward,Ride,FALSE,FALSE
-2,3/10/20,Jo Ward,Run,FALSE,FALSE
+2,3/10/20,Jolyon Ward,Ride,FALSE,FALSE
+2,3/10/20,Jolyon Ward,Run,FALSE,FALSE
 ,,,,,
 2,3/10/20,Marcel Van Kampen,Ride,FALSE,FALSE
 2,3/10/20,Marcel Van Kampen,Run,FALSE,TRUE
