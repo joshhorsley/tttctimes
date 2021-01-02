@@ -120,12 +120,20 @@ dt_all_long[n_char_duration==6, duration_hms := paste0("0:0", duration_import)]
 dt_all_long[n_char_duration==7, duration_hms := paste0("0:", duration_import)]
 dt_all_long[n_char_duration==9, duration_hms := duration_import]
 
+dt_all_long[, n_char_overall := nchar(time_overall_import)]
+dt_all_long[n_char_overall==6, overall_hms := paste0("0:0", time_overall_import)]
+dt_all_long[n_char_overall==7, overall_hms := paste0("0:", time_overall_import)]
+dt_all_long[n_char_overall==9, overall_hms := time_overall_import]
+
 dt_all_long[, duration_seconds := as.numeric(seconds(hms(duration_hms)))]
 dt_all_long[, cumulative_seconds := cumsum(duration_seconds), by = .(Name, race_number)]
+dt_all_long[, overall_seconds := as.numeric(seconds(hms(overall_hms)))]
 
 
 dt_all_long[, duration_mins := duration_seconds/60]
 dt_all_long[, cumulative_mins := cumulative_seconds/60]
+dt_all_long[, total_overall_mins := overall_seconds/60]
+
 
 to_hms <- function(x, nsmall_seconds = 1L) {
   paste0(hour(x), ":",
@@ -144,13 +152,13 @@ dt_all_long[, cumulative_hms_short := to_hms(seconds_to_period(cumulative_second
 dt_all_long[, cumulative_hms_short := gsub("^0:","",cumulative_hms_short)]
 dt_all_long[, cumulative_hms_short := gsub(": ",":0",cumulative_hms_short)]
 
-dt_all_long[, total_overall_seconds := cumulative_seconds[which(part=="Run")], by = .(race_number, Name)]
-dt_all_long[, total_overall_mins := total_overall_seconds/60]
-
-
-dt_all_long[, total_overall_hms_short := to_hms(seconds_to_period(total_overall_seconds))]
+dt_all_long[, total_overall_hms_short := to_hms(seconds_to_period(overall_seconds))]
 dt_all_long[, total_overall_hms_short := gsub("^0:","",total_overall_hms_short)]
 dt_all_long[, total_overall_hms_short := gsub(": ",":0",total_overall_hms_short)]
+
+
+# Use recorded overall time for run cumulative
+dt_all_long[(started) & part == "Run", cumulative_seconds := overall_seconds]
 
 
 # Timing errors -----------------------------------------------------------
