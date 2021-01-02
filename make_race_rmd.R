@@ -37,6 +37,10 @@ races <- foreach (i=rev(race_numbers), .combine = paste0 ) %do% {
     ",
   foreach (j=i_courses, .combine = paste0 ) %do% {
     
+    dt_i <- dt_all_long[race_number== i & course == j][(started)]
+    n_athletes <- length(unique(dt_i$Name))
+    
+    
 paste0(
 '
 ## ',i_courses_nice[which(j==i_courses)],'
@@ -50,7 +54,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "700"
+  height = "',150 + 16*n_athletes,'"
 )
 ```
     

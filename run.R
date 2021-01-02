@@ -329,6 +329,8 @@ for(i in race_numbers) {
     theme_minimal() +
     theme(legend.position="top")
   
+  n_athletes <- length(unique(dt_i$Name))
+  
   p <- ggplotly(g, width = NULL, tooltip = "text",layerData = TRUE, style = "mobile") %>% 
     layout(xaxis = list(fixedrange = TRUE, side = "top"),
            yaxis = list(fixedrange = TRUE, tickfont = list(size = 10)),
@@ -338,7 +340,7 @@ for(i in race_numbers) {
            legend = list(orientation = "h", y = 0, x= 0.5, xanchor = "center",
                          itemclick = FALSE, itemdoubleclick  = FALSE)) %>% 
     config(displayModeBar = TRUE, modeBarButtons = list(list("toImage")), displaylogo=FALSE,
-           toImageButtonOptions = list(height = 1000, width = 700, scale = 2,
+           toImageButtonOptions = list(height = 150 + 16*n_athletes, width = 700, scale = 2,
                                        format = "png",
                                        filename = paste0(dt_i$date_ymd[1],"_",j)))
   
