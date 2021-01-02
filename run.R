@@ -292,7 +292,7 @@ for(i in race_numbers) {
                             ifelse((cumulative_valid) & !(split_valid), " (valid)",""),
                             ": ",
                             cumulative_hms_short,
-                            ifelse((split_valid),paste0(" (", place_cum_nice,")"),""),
+                            ifelse((cumulative_valid),paste0(" (", place_cum_nice,")"),""),
                             ifelse((isNewPB_cum)," New PB!",""))]
   
   g <- ggplot(dt_i,
