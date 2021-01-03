@@ -113,6 +113,22 @@ dt_all_long[, name_last := gsub(paste0(name_first, " "), "", Name), by = row_id]
 dt_all_long[name_first == Name, name_last := ""] # Catch any people with only a first name
 
 
+# Timing errors -----------------------------------------------------------
+
+
+dt_problems <- fread("data_provided/webscorer/webscorer_problems.csv")
+dt_problems[, date_ymd := as.IDate(date_ymd, format = "%d/%m/%y")]
+
+dt_all_long[dt_problems, on = .(race_number, date_ymd, Name, part), `:=`(split_valid = i.split_valid, cumulative_valid = i.cumulative_valid)]
+dt_all_long[is.na(split_valid), split_valid := TRUE]
+dt_all_long[is.na(cumulative_valid), cumulative_valid := TRUE]
+
+
+# overall_invalid if cumulative time at end of run is invalid
+dt_all_long[, valid_overall := cumulative_valid[which(part=="Run")], by = .(race_number, Name)]
+dt_all_long[is.na(valid_overall), valid_overall := TRUE]
+
+
 # Cleaning ----------------------------------------------------------------
 
 
@@ -137,7 +153,28 @@ dt_all_long[is.na(duration_seconds) & (started), duration_seconds := 0]
 
 dt_all_long[, cumulative_seconds := cumsum(duration_seconds), by = .(Name, race_number)]
 dt_all_long[, overall_seconds := as.numeric(seconds(hms(overall_hms)))]
-# Catch cases where overtime is valid but no run time has been recorded
+
+# Check for any large disagreement between cumulative run and recorded total and resolve
+dt_all_long[part == "Run" & abs(cumulative_seconds - overall_seconds) > 1, total_disagree := TRUE]
+dt_all_long[,total_disagree := any(total_disagree,na.rm = TRUE),by = .(Name, race_number)]
+
+dt_all_long[(total_disagree) & part=="Run" & (cumulative_valid), total_resolve := "cumulative"]
+dt_all_long[(total_disagree) & part=="Run" & !(cumulative_valid), total_resolve := "imported"]
+dt_all_long[(total_disagree),total_resolve := total_resolve[which(part=="Run")],by = .(Name, race_number)]
+
+dt_all_long[(total_disagree) & total_resolve =="cumulative",
+            `:=`(total_resolved = TRUE,
+                 overall_seconds = cumulative_seconds[which(part=="Run")]), by = .(Name, race_number)]
+
+dt_all_long[(total_disagree) & total_resolve =="imported" & part=="Run", cumulative_seconds := overall_seconds]
+dt_all_long[(total_disagree) & total_resolve =="imported", total_resolved := TRUE]
+
+
+n_total_resolve_errors <- nrow(dt_all_long[(total_disagree) & !(total_resolved)])
+stopifnot(n_total_resolve_errors==0)
+
+
+# Catch cases where overall time is invalid but a run time has been recorded
 dt_all_long[(started) & is.na(overall_seconds), overall_seconds := max(cumulative_seconds), by = .(Name, race_number)]
 
 
@@ -171,21 +208,6 @@ dt_all_long[, total_overall_hms_short := gsub(": ",":0",total_overall_hms_short)
 # Use recorded overall time for run cumulative
 dt_all_long[(started) & part == "Run", cumulative_seconds := overall_seconds]
 
-
-# Timing errors -----------------------------------------------------------
-
-
-dt_problems <- fread("data_provided/webscorer/webscorer_problems.csv")
-dt_problems[, date_ymd := as.IDate(date_ymd, format = "%d/%m/%y")]
-
-dt_all_long[dt_problems, on = .(race_number, date_ymd, Name, part), `:=`(split_valid = i.split_valid, cumulative_valid = i.cumulative_valid)]
-dt_all_long[is.na(split_valid), split_valid := TRUE]
-dt_all_long[is.na(cumulative_valid), cumulative_valid := TRUE]
-
-
-# overall_invalid if cumulative time at end of run is invalid
-dt_all_long[, valid_overall := cumulative_valid[which(part=="Run")], by = .(race_number, Name)]
-dt_all_long[is.na(valid_overall), valid_overall := TRUE]
 
 
 # Course entry errors -----------------------------------------------------
@@ -489,11 +511,6 @@ for(k in athletes_ordered) {
 # Athlete tables ----------------------------------------------------------
 
 
-
-# k <-  "Des Gooda"
-# k <-  "Josh Horsley"
-# j <- "full"
-
 for(k in athletes_ordered) {
   
 
@@ -503,12 +520,12 @@ for(k in athletes_ordered) {
   
   for(j in k_courses) {
   
-    dt_k_wide <- dcast(dt_k[(started) & course == j], athlete_rank_overall + overall_hms + date_ymd + race_number + valid_overall + isPB_overall ~ part,
+    dt_k_wide <- dcast(dt_k[(started) & course == j], athlete_rank_overall + total_overall_hms_short + date_ymd + race_number + valid_overall + isPB_overall ~ part,
                        value.var = c("duration_hms", "athlete_rank_split","isPB_split", "isPB_cumulative", "split_valid",
                                      "cumulative_valid"))
     
     setcolorder(dt_k_wide,
-                c("athlete_rank_overall", "overall_hms",
+                c("athlete_rank_overall", "total_overall_hms_short",
                   "date_ymd","race_number",
                   "duration_hms_Swim", "duration_hms_Ride","duration_hms_Run",
                   "athlete_rank_split_Swim",
@@ -517,7 +534,7 @@ for(k in athletes_ordered) {
     
     setnames(dt_k_wide,
              c("athlete_rank_overall",
-               "overall_hms",
+               "total_overall_hms_short",
                "date_ymd",
                "race_number",
                "duration_hms_Swim",
