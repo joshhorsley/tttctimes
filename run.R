@@ -200,9 +200,9 @@ dt_all_long[, cumulative_hms_short := to_hms(seconds_to_period(cumulative_second
 dt_all_long[, cumulative_hms_short := gsub("^0:","",cumulative_hms_short)]
 dt_all_long[, cumulative_hms_short := gsub(": ",":0",cumulative_hms_short)]
 
-dt_all_long[, total_overall_hms_short := to_hms(seconds_to_period(overall_seconds))]
-dt_all_long[, total_overall_hms_short := gsub("^0:","",total_overall_hms_short)]
-dt_all_long[, total_overall_hms_short := gsub(": ",":0",total_overall_hms_short)]
+dt_all_long[, total_overall_hms := to_hms(seconds_to_period(overall_seconds))]
+dt_all_long[, total_overall_hms := gsub(": ",":0",total_overall_hms)]
+dt_all_long[, total_overall_hms_short := gsub("^0:","",total_overall_hms)]
 
 
 # Use recorded overall time for run cumulative
@@ -520,12 +520,12 @@ for(k in athletes_ordered) {
   
   for(j in k_courses) {
   
-    dt_k_wide <- dcast(dt_k[(started) & course == j], athlete_rank_overall + total_overall_hms_short + date_ymd + race_number + valid_overall + isPB_overall ~ part,
+    dt_k_wide <- dcast(dt_k[(started) & course == j], athlete_rank_overall + total_overall_hms + date_ymd + race_number + valid_overall + isPB_overall ~ part,
                        value.var = c("duration_hms", "athlete_rank_split","isPB_split", "isPB_cumulative", "split_valid",
                                      "cumulative_valid"))
     
     setcolorder(dt_k_wide,
-                c("athlete_rank_overall", "total_overall_hms_short",
+                c("athlete_rank_overall", "total_overall_hms",
                   "date_ymd","race_number",
                   "duration_hms_Swim", "duration_hms_Ride","duration_hms_Run",
                   "athlete_rank_split_Swim",
@@ -534,7 +534,7 @@ for(k in athletes_ordered) {
     
     setnames(dt_k_wide,
              c("athlete_rank_overall",
-               "total_overall_hms_short",
+               "total_overall_hms",
                "date_ymd",
                "race_number",
                "duration_hms_Swim",
