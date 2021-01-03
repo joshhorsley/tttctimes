@@ -29,7 +29,9 @@ Results are presented for each race ([Example: December 19](#r-2020-12-19)) and 
 
 The results on this website are based on publicly available data from the [club's webscorer page](https://www.webscorer.com/33755) and some guesses (for now) in places where the webscorer data appears inaccurate (e.g. split times unrealistic or missing). This is still a work-in-progress, let me know if I've guessed something wrong.
 
-# Season
+# (PART) Season
+
+# Schedule
 
 ```{r}
 

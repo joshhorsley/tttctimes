@@ -6,6 +6,13 @@
 source("req_packages.R")
 
 
+# Colours -----------------------------------------------------------------
+
+
+col_PB <- "lightgreen"
+col_invalid <- "grey"
+
+
 # Races and files ---------------------------------------------------------
 
 
@@ -210,6 +217,10 @@ dt_all_long[(started), place_lap := as.integer(rank(duration_mins_sort, ties.met
 dt_all_long[(started), place_cum_recalc := as.integer(rank(total_mins_sort, ties.method = "first")), by = .(race_number, course, part)]
 dt_all_long[(started), place_overall_recalc := as.integer(rank(total_overall_sort, ties.method = "first")), by = .(race_number, course, part)]
 
+dt_all_long[(started), athlete_rank_split := as.integer(rank(duration_mins_sort, ties.method = "first")), by = .(Name, course, part)]
+dt_all_long[(started), athlete_rank_cumulative := as.integer(rank(total_mins_sort, ties.method = "first")), by = .(Name, course, part)]
+dt_all_long[(started), athlete_rank_overall := as.integer(rank(total_overall_sort, ties.method = "first")), by = .(Name, course, part)]
+
 dt_all_long[(started) & (split_valid), place_lap_display := place_lap]
 dt_all_long[(started) & !(split_valid), place_lap_display := NA]
 
@@ -233,6 +244,8 @@ dt_all_long[(started) & place_cum_recalc %in% c(11,12,13), place_cum_nice := pas
 
 dt_all_long[(started), isFirstRace := race_number == min(race_number), by = .(Name, part, course) ]
 
+
+# PB change over seasons
 dt_all_long[(started) & (split_valid), pb_split_running := cummin(duration_mins), by = .(Name, part, course) ]
 dt_all_long[(started) & (split_valid), isNewPB_split := duration_mins == pb_split_running, by = .(Name, part, course) ]
 
@@ -250,6 +263,20 @@ dt_all_long[(started) & (valid_overall), isNewPB_overall := total_overall_mins =
 
 dt_all_long[is.na(isNewPB_overall), isNewPB_overall := FALSE]
 dt_all_long[(isFirstRace), isNewPB_overall := FALSE]
+
+# season pB
+dt_all_long[(started) & (valid_overall), pb_overall := min(total_overall_mins), by = .(Name, course) ]
+dt_all_long[(started) & (valid_overall), isPB_overall := total_overall_mins == pb_overall, by = .(Name, course) ]
+dt_all_long[is.na(isPB_overall), isPB_overall := FALSE]
+
+dt_all_long[(started) & (split_valid), pb_split := min(duration_mins), by = .(Name, part, course) ]
+dt_all_long[(started) & (split_valid), isPB_split := duration_mins == pb_split, by = .(Name, part, course) ]
+dt_all_long[is.na(isPB_split), isPB_split := FALSE]
+
+dt_all_long[(started) & (cumulative_valid), pb_cumulative := min(cumulative_mins), by = .(Name, part, course) ]
+dt_all_long[(started) & (cumulative_valid), isPB_cumulative := cumulative_mins == pb_cumulative, by = .(Name, part, course) ]
+dt_all_long[is.na(isPB_cumulative), isPB_cumulative := FALSE]
+
 
 
 # Plot prep ---------------------------------------------------------------
@@ -456,6 +483,96 @@ for(k in athletes_ordered) {
   
   saveWidget(pk, file = savepath,selfcontained = FALSE,libdir = libpath)
   
+}
+
+
+# Athlete tables ----------------------------------------------------------
+
+
+
+# k <-  "Des Gooda"
+# k <-  "Josh Horsley"
+# j <- "full"
+
+for(k in athletes_ordered) {
+  
+
+  dt_k <- dt_all_long[Name==k]
+  
+  k_courses <- unique(dt_k$course)
+  
+  for(j in k_courses) {
+  
+    dt_k_wide <- dcast(dt_k[(started) & course == j], athlete_rank_overall + overall_hms + date_ymd + race_number + valid_overall + isPB_overall ~ part,
+                       value.var = c("duration_hms", "athlete_rank_split","isPB_split", "isPB_cumulative", "split_valid",
+                                     "cumulative_valid"))
+    
+    setcolorder(dt_k_wide,
+                c("athlete_rank_overall", "overall_hms",
+                  "date_ymd","race_number",
+                  "duration_hms_Swim", "duration_hms_Ride","duration_hms_Run",
+                  "athlete_rank_split_Swim",
+                  "athlete_rank_split_Ride",
+                  "athlete_rank_split_Run"))
+    
+    setnames(dt_k_wide,
+             c("athlete_rank_overall",
+               "overall_hms",
+               "date_ymd",
+               "race_number",
+               "duration_hms_Swim",
+               "duration_hms_Ride",
+               "duration_hms_Run",
+               "athlete_rank_split_Swim",
+               "athlete_rank_split_Ride",
+               "athlete_rank_split_Run"),
+             c("Rank",
+               "Time",
+               "Date",
+               "Race #",
+               "Swim",
+               "Ride",
+               "Run",
+               "Rank (Swim)",
+               "Rank (Ride)",
+               "Rank (Run)"))
+    
+
+  
+  
+    tab_k <- DT::datatable(dt_k_wide,
+                  rownames = FALSE,
+                  elementId = paste0("tab_", gsub("'","",k), "_", j),
+                  # extensions = c('Buttons', 'Responsive'),
+                  extensions = c('Buttons'),
+                  options = list(autoWidth=FALSE,
+                                 paging=FALSE,
+                                 dom = 'Brtp',
+                                 buttons = c('copy', 'csv', 'excel'))) %>% 
+      
+      formatStyle(columns = "Swim",valueColumns = "isPB_split_Swim",
+                  background = styleEqual(c(TRUE,FALSE),c(col_PB,NA))) %>% 
+      formatStyle(columns = "Ride",valueColumns = "isPB_split_Ride",
+                  background = styleEqual(c(TRUE,FALSE),c(col_PB,NA))) %>% 
+      formatStyle(columns = "Run",valueColumns = "isPB_split_Run",
+                  background = styleEqual(c(TRUE,FALSE),c(col_PB,NA))) %>% 
+      formatStyle(columns = "Time",valueColumns = "isPB_overall",
+                  background = styleEqual(c(TRUE,FALSE),c(col_PB,NA))) %>% 
+      
+      formatStyle(columns = "Time",valueColumns = "valid_overall",
+                  background = styleEqual(c(TRUE,FALSE),c(NA,col_invalid))) %>% 
+      formatStyle(columns = "Swim",valueColumns = "split_valid_Swim",
+                  background = styleEqual(c(TRUE,FALSE),c(NA,col_invalid))) %>% 
+      formatStyle(columns = "Ride",valueColumns = "split_valid_Ride",
+                  background = styleEqual(c(TRUE,FALSE),c(NA,col_invalid))) %>% 
+      formatStyle(columns = "Run",valueColumns = "split_valid_Run",
+                  background = styleEqual(c(TRUE,FALSE),c(NA,col_invalid)))
+    
+    savepath = paste0(getwd(),"/",site_path_relative,"/tab_",k,"_",j,".html")
+    
+    saveWidget(tab_k, file = savepath,selfcontained = FALSE,libdir = libpath)
+
+  }
 }
 
 

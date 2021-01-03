@@ -25,6 +25,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Adrian_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
+
+
 # Frank Adler {#a-Frank-Adler}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -44,6 +61,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Frank Adler_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
 
 
 # Christian Andrews {#a-Christian-Andrews}
@@ -67,6 +101,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Christian Andrews_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "650"
+)
+```
+
+
 # Andrew Armstrong {#a-Andrew-Armstrong}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -86,6 +137,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Andrew Armstrong_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "350"
+)
+```
 
 
 # Cheryl Atkinson {#a-Cheryl-Atkinson}
@@ -109,6 +177,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Cheryl Atkinson_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "300"
+)
+```
+
+
 # Benjamin Austin {#a-Benjamin-Austin}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -128,6 +213,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Benjamin Austin_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
 
 
 # Kev Bannerman {#a-Kev-Bannerman}
@@ -151,6 +253,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Kev Bannerman_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
+```
+
+
 # Robyn Barry {#a-Robyn-Barry}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -170,6 +289,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Robyn Barry_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "550"
+)
+```
 
 
 # Lorraine Bassett {#a-Lorraine-Bassett}
@@ -193,6 +329,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Lorraine Bassett_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "650"
+)
+```
+
+
 # Greg Bemet {#a-Greg-Bemet}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -212,6 +365,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Greg Bemet_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "550"
+)
+```
 
 
 # Jo-Anne Borgas {#a-Jo-Anne-Borgas}
@@ -235,6 +405,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Jo-Anne Borgas_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "300"
+)
+```
+
+
 # Scott Bornholt {#a-Scott-Bornholt}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -254,6 +441,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Scott Bornholt_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "600"
+)
+```
 
 
 # Simon Bradbery {#a-Simon-Bradbery}
@@ -277,6 +481,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Simon Bradbery_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "450"
+)
+```
+
+
 # Jamie Brindley {#a-Jamie-Brindley}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -296,6 +517,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Jamie Brindley_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "600"
+)
+```
 
 
 # Craig Broadhurst {#a-Craig-Broadhurst}
@@ -319,6 +557,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Craig Broadhurst_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "500"
+)
+```
+
+
 # Sarah Buchanan {#a-Sarah-Buchanan}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -338,6 +593,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Double Distance course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Sarah Buchanan_double.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
 
 
 # Joanne Colja {#a-Joanne-Colja}
@@ -361,6 +633,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Joanne Colja_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "550"
+)
+```
+
+
 # Jim Collins {#a-Jim-Collins}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -380,6 +669,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Jim Collins_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
+```
 
 
 # Mark Collinson {#a-Mark-Collinson}
@@ -403,6 +709,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Mark Collinson_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
+```
+
+
 # Sam Colman {#a-Sam-Colman}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -422,6 +745,40 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Sam Colman_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "650"
+)
+```
+
+
+
+## Detailed results for Double Distance course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Sam Colman_double.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
 
 
 # Warren Copping {#a-Warren-Copping}
@@ -445,6 +802,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Warren Copping_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "650"
+)
+```
+
+
 # Andrew Costello {#a-Andrew-Costello}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -464,6 +838,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Andrew Costello_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "550"
+)
+```
 
 
 # Ben Courage {#a-Ben-Courage}
@@ -487,6 +878,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Ben Courage_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
+
+
 # Stuart Crawford {#a-Stuart-Crawford}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -506,6 +914,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Stuart Crawford_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
+```
 
 
 # Peter Crowe {#a-Peter-Crowe}
@@ -529,6 +954,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Peter Crowe_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "550"
+)
+```
+
+
 # Debbie Davies {#a-Debbie-Davies}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -548,6 +990,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Debbie Davies_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "550"
+)
+```
 
 
 # Jonathan Davies {#a-Jonathan-Davies}
@@ -571,6 +1030,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Jonathan Davies_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "600"
+)
+```
+
+
 # Erin Davoren {#a-Erin-Davoren}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -590,6 +1066,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Erin Davoren_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "600"
+)
+```
 
 
 # Guy Davoren {#a-Guy-Davoren}
@@ -613,6 +1106,40 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Guy Davoren_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
+```
+
+
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Guy Davoren_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
+
+
 # David De Closey {#a-David-De-Closey}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -632,6 +1159,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_David De Closey_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
+```
 
 
 # Ian Driffill {#a-Ian-Driffill}
@@ -655,6 +1199,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Ian Driffill_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "300"
+)
+```
+
+
 # Melanie Duff {#a-Melanie-Duff}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -674,6 +1235,40 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Melanie Duff_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "300"
+)
+```
+
+
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Melanie Duff_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
 
 
 # Tim Eade {#a-Tim-Eade}
@@ -697,6 +1292,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Tim Eade_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "350"
+)
+```
+
+
 # Peta Edge {#a-Peta-Edge}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -716,6 +1328,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Peta Edge_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "350"
+)
+```
 
 
 # Kirsten Ellis {#a-Kirsten-Ellis}
@@ -739,6 +1368,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Kirsten Ellis_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "300"
+)
+```
+
+
 # David Emery {#a-David-Emery}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -758,6 +1404,40 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Double Distance course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_David Emery_double.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_David Emery_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "400"
+)
+```
 
 
 # Nicholas Fawaz {#a-Nicholas-Fawaz}
@@ -781,6 +1461,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Nicholas Fawaz_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
+
+
 # Tracy Foyster {#a-Tracy-Foyster}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -800,6 +1497,40 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Tracy Foyster_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "600"
+)
+```
+
+
+
+## Detailed results for Double Distance course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Tracy Foyster_double.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
 
 
 # Gregory Freeman {#a-Gregory-Freeman}
@@ -823,6 +1554,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Gregory Freeman_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "750"
+)
+```
+
+
 # Kipp Freeman {#a-Kipp-Freeman}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -842,6 +1590,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Kipp Freeman_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "450"
+)
+```
 
 
 # Matt Gabb {#a-Matt-Gabb}
@@ -865,6 +1630,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Matt Gabb_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "450"
+)
+```
+
+
 # Trudy Gadaleta {#a-Trudy-Gadaleta}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -884,6 +1666,40 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Trudy Gadaleta_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Trudy Gadaleta_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
 
 
 # Alycia Garriock {#a-Alycia-Garriock}
@@ -907,6 +1723,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Alycia Garriock_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "350"
+)
+```
+
+
 # Kylie Gibson {#a-Kylie-Gibson}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -926,6 +1759,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Kylie Gibson_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "500"
+)
+```
 
 
 # Alex Gilks {#a-Alex-Gilks}
@@ -949,6 +1799,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Alex Gilks_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "650"
+)
+```
+
+
 # Rob Gillies {#a-Rob-Gillies}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -968,6 +1835,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Rob Gillies_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "650"
+)
+```
 
 
 # Katie Glynn {#a-Katie-Glynn}
@@ -991,6 +1875,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Katie Glynn_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "450"
+)
+```
+
+
 # Des Gooda {#a-Des-Gooda}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -1010,6 +1911,40 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Des Gooda_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "450"
+)
+```
+
+
+
+## Detailed results for Double Distance course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Des Gooda_double.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
 
 
 # Ben Hall {#a-Ben-Hall}
@@ -1033,6 +1968,40 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Ben Hall_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "650"
+)
+```
+
+
+
+## Detailed results for Double Distance course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Ben Hall_double.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
+
+
 # Manda Hall {#a-Manda-Hall}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -1052,6 +2021,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Manda Hall_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "400"
+)
+```
 
 
 # Simon Harradence {#a-Simon-Harradence}
@@ -1075,6 +2061,40 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Simon Harradence_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "400"
+)
+```
+
+
+
+## Detailed results for Double Distance course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Simon Harradence_double.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
+
+
 # Peter Harrington {#a-Peter-Harrington}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -1094,6 +2114,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Peter Harrington_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "300"
+)
+```
 
 
 # Remy Hawkins {#a-Remy-Hawkins}
@@ -1117,6 +2154,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Remy Hawkins_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "600"
+)
+```
+
+
 # Glenn Hind {#a-Glenn-Hind}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -1136,6 +2190,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Glenn Hind_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "600"
+)
+```
 
 
 # Caroline Hogan {#a-Caroline-Hogan}
@@ -1159,6 +2230,40 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Caroline Hogan_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "450"
+)
+```
+
+
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Caroline Hogan_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "300"
+)
+```
+
+
 # David Hogan {#a-David-Hogan}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -1178,6 +2283,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_David Hogan_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "450"
+)
+```
 
 
 # Kent Holmes {#a-Kent-Holmes}
@@ -1201,6 +2323,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Kent Holmes_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "550"
+)
+```
+
+
 # Josh Horsley {#a-Josh-Horsley}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -1220,6 +2359,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Josh Horsley_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "400"
+)
+```
 
 
 # Haydn Jenkins {#a-Haydn-Jenkins}
@@ -1243,6 +2399,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Haydn Jenkins_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
+
+
 # Dan Johnson {#a-Dan-Johnson}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -1262,6 +2435,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Dan Johnson_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "350"
+)
+```
 
 
 # Darren Jones {#a-Darren-Jones}
@@ -1285,6 +2475,40 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Darren Jones_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
+```
+
+
+
+## Detailed results for Double Distance course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Darren Jones_double.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
+
+
 # Ginny Jones {#a-Ginny-Jones}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -1304,6 +2528,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Ginny Jones_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
+```
 
 
 # Michelle Jones {#a-Michelle-Jones}
@@ -1327,6 +2568,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Michelle Jones_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "450"
+)
+```
+
+
 # Danny Khazen {#a-Danny-Khazen}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -1346,6 +2604,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Danny Khazen_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "500"
+)
+```
 
 
 # John King {#a-John-King}
@@ -1369,6 +2644,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_John King_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "650"
+)
+```
+
+
 # Sally Kingston {#a-Sally-Kingston}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -1388,6 +2680,40 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Sally Kingston_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "300"
+)
+```
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Sally Kingston_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
 
 
 # Sharyn Klein {#a-Sharyn-Klein}
@@ -1411,6 +2737,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Sharyn Klein_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "550"
+)
+```
+
+
 # Nadja Kundrus-Little {#a-Nadja-Kundrus-Little}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -1430,6 +2773,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Nadja Kundrus-Little_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "400"
+)
+```
 
 
 # Lydia Kuschmirz {#a-Lydia-Kuschmirz}
@@ -1453,6 +2813,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Lydia Kuschmirz_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "600"
+)
+```
+
+
 # Val Lambard {#a-Val-Lambard}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -1472,6 +2849,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Val Lambard_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "650"
+)
+```
 
 
 # Samantha Leonard {#a-Samantha-Leonard}
@@ -1495,6 +2889,40 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Samantha Leonard_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "550"
+)
+```
+
+
+
+## Detailed results for Double Distance course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Samantha Leonard_double.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
+
+
 # Jennifer Love {#a-Jennifer-Love}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -1514,6 +2942,40 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Jennifer Love_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "400"
+)
+```
+
+
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Jennifer Love_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
 
 
 # Julie Lowe {#a-Julie-Lowe}
@@ -1537,6 +2999,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Julie Lowe_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
+
+
 # Stuart Mason {#a-Stuart-Mason}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -1556,6 +3035,40 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Stuart Mason_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Stuart Mason_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "300"
+)
+```
 
 
 # David McEwan {#a-David-McEwan}
@@ -1579,6 +3092,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_David McEwan_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
+
+
 # Bec McLucas {#a-Bec-McLucas}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -1598,6 +3128,40 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Bec McLucas_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "400"
+)
+```
+
+
+
+## Detailed results for Double Distance course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Bec McLucas_double.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
 
 
 # Andrew Miller {#a-Andrew-Miller}
@@ -1621,6 +3185,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Andrew Miller_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "600"
+)
+```
+
+
 # Kat Miller {#a-Kat-Miller}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -1640,6 +3221,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Kat Miller_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "600"
+)
+```
 
 
 # Michelle Miller {#a-Michelle-Miller}
@@ -1663,6 +3261,40 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Michelle Miller_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "350"
+)
+```
+
+
+
+## Detailed results for Double Distance course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Michelle Miller_double.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
+
+
 # Kyle Mooney {#a-Kyle-Mooney}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -1682,6 +3314,40 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Kyle Mooney_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "500"
+)
+```
+
+
+
+## Detailed results for Double Distance course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Kyle Mooney_double.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
 
 
 # James Mourant {#a-James-Mourant}
@@ -1705,6 +3371,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_James Mourant_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "400"
+)
+```
+
+
 # Richard Mourant {#a-Richard-Mourant}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -1724,6 +3407,40 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Richard Mourant_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "600"
+)
+```
+
+
+
+## Detailed results for Double Distance course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Richard Mourant_double.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
 
 
 # Ashleigh Murphy {#a-Ashleigh-Murphy}
@@ -1747,6 +3464,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Ashleigh Murphy_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
+
+
 # Ben Murphy {#a-Ben-Murphy}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -1766,6 +3500,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Ben Murphy_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
 
 
 # Helen Murphy {#a-Helen-Murphy}
@@ -1789,6 +3540,40 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Helen Murphy_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "500"
+)
+```
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Helen Murphy_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "350"
+)
+```
+
+
 # Darren Murray {#a-Darren-Murray}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -1808,6 +3593,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Darren Murray_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "500"
+)
+```
 
 
 # Jeff Murray {#a-Jeff-Murray}
@@ -1831,6 +3633,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Jeff Murray_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "650"
+)
+```
+
+
 # Judy Murray {#a-Judy-Murray}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -1850,6 +3669,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Judy Murray_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "600"
+)
+```
 
 
 # Aaron Neylan {#a-Aaron-Neylan}
@@ -1873,6 +3709,40 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Aaron Neylan_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "550"
+)
+```
+
+
+
+## Detailed results for Double Distance course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Aaron Neylan_double.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
+
+
 # Karen Nixon {#a-Karen-Nixon}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -1892,6 +3762,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Karen Nixon_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "350"
+)
+```
 
 
 # Lucas Nixon-Hind {#a-Lucas-Nixon-Hind}
@@ -1915,6 +3802,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Lucas Nixon-Hind_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "600"
+)
+```
+
+
 # Andy O'Reilly {#a-Andy-OReilly}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -1934,6 +3838,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Andy O'Reilly_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
 
 
 # Nick O'Reilly {#a-Nick-OReilly}
@@ -1957,6 +3878,40 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Nick O'Reilly_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "450"
+)
+```
+
+
+
+## Detailed results for Double Distance course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Nick O'Reilly_double.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
+
+
 # Trent Ousby {#a-Trent-Ousby}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -1976,6 +3931,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Trent Ousby_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
 
 
 # Glenn Payne {#a-Glenn-Payne}
@@ -1999,6 +3971,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Glenn Payne_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "300"
+)
+```
+
+
 # Clive Pearce {#a-Clive-Pearce}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -2018,6 +4007,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Clive Pearce_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "600"
+)
+```
 
 
 # Stephen Ring {#a-Stephen-Ring}
@@ -2041,6 +4047,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Stephen Ring_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "350"
+)
+```
+
+
 # Gerard Robards {#a-Gerard-Robards}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -2060,6 +4083,40 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Gerard Robards_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
+```
+
+
+
+## Detailed results for Double Distance course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Gerard Robards_double.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
 
 
 # Hollie Robards {#a-Hollie-Robards}
@@ -2083,6 +4140,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Hollie Robards_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "750"
+)
+```
+
+
 # Kaleb Robards {#a-Kaleb-Robards}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -2102,6 +4176,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Kaleb Robards_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "750"
+)
+```
 
 
 # Anthony Rushton {#a-Anthony-Rushton}
@@ -2125,6 +4216,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Anthony Rushton_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "450"
+)
+```
+
+
 # Ross Salmon {#a-Ross-Salmon}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -2144,6 +4252,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Ross Salmon_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
+```
 
 
 # Philip Salter {#a-Philip-Salter}
@@ -2167,6 +4292,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Philip Salter_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
+```
+
+
 # Wendy Sanders {#a-Wendy-Sanders}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -2186,6 +4328,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Wendy Sanders_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "650"
+)
+```
 
 
 # Jenny Scaysbrook {#a-Jenny-Scaysbrook}
@@ -2209,6 +4368,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Jenny Scaysbrook_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "600"
+)
+```
+
+
 # Peter Serone {#a-Peter-Serone}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -2228,6 +4404,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Peter Serone_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "450"
+)
+```
 
 
 # Rod Sewell {#a-Rod-Sewell}
@@ -2251,6 +4444,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Rod Sewell_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "600"
+)
+```
+
+
 # Tracey Sewell {#a-Tracey-Sewell}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -2270,6 +4480,40 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Tracey Sewell_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
+
+
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Tracey Sewell_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
 
 
 # Terence Simpson {#a-Terence-Simpson}
@@ -2293,6 +4537,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Terence Simpson_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "550"
+)
+```
+
+
 # Vaughan Skelly {#a-Vaughan-Skelly}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -2312,6 +4573,40 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Vaughan Skelly_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "600"
+)
+```
+
+
+
+## Detailed results for Double Distance course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Vaughan Skelly_double.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
 
 
 # Alex Smith {#a-Alex-Smith}
@@ -2335,6 +4630,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Alex Smith_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
+
+
 # Geoff Smith {#a-Geoff-Smith}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -2354,6 +4666,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Geoff Smith_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
 
 
 # Rowena Smith {#a-Rowena-Smith}
@@ -2377,6 +4706,40 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Rowena Smith_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "550"
+)
+```
+
+
+
+## Detailed results for Double Distance course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Rowena Smith_double.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
+
+
 # Heidi Sowerby {#a-Heidi-Sowerby}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -2396,6 +4759,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Heidi Sowerby_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "400"
+)
+```
 
 
 # Matthew Stanley {#a-Matthew-Stanley}
@@ -2419,6 +4799,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Matthew Stanley_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "400"
+)
+```
+
+
 # Peter Stowe {#a-Peter-Stowe}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -2438,6 +4835,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Peter Stowe_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "600"
+)
+```
 
 
 # Scott Styman {#a-Scott-Styman}
@@ -2461,6 +4875,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Scott Styman_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "600"
+)
+```
+
+
 # Will Styman {#a-Will-Styman}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -2480,6 +4911,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Will Styman_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "300"
+)
+```
 
 
 # Timothy Taylor {#a-Timothy-Taylor}
@@ -2503,6 +4951,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Timothy Taylor_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "550"
+)
+```
+
+
 # William Taylor {#a-William-Taylor}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -2522,6 +4987,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_William Taylor_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "550"
+)
+```
 
 
 # Craig Telling {#a-Craig-Telling}
@@ -2545,6 +5027,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Craig Telling_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "550"
+)
+```
+
+
 # Ava Thomson {#a-Ava-Thomson}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -2564,6 +5063,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Ava Thomson_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "750"
+)
+```
 
 
 # Scott Thomson {#a-Scott-Thomson}
@@ -2587,6 +5103,40 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Scott Thomson_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
+```
+
+
+
+## Detailed results for Double Distance course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Scott Thomson_double.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
+
+
 # Sebastian Thomson {#a-Sebastian-Thomson}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -2606,6 +5156,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Sebastian Thomson_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "750"
+)
+```
 
 
 # Alex Torrance {#a-Alex-Torrance}
@@ -2629,6 +5196,40 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Double Distance course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Alex Torrance_double.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Alex Torrance_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "450"
+)
+```
+
+
 # Sue Van Den Broek {#a-Sue-Van-Den-Broek}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -2648,6 +5249,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Sue Van Den Broek_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "500"
+)
+```
 
 
 # Marcel Van Kampen {#a-Marcel-Van-Kampen}
@@ -2671,6 +5289,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Marcel Van Kampen_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "750"
+)
+```
+
+
 # Jolyon Ward {#a-Jolyon-Ward}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -2690,6 +5325,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Jolyon Ward_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "600"
+)
+```
 
 
 # Danny Warner {#a-Danny-Warner}
@@ -2713,6 +5365,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Danny Warner_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "650"
+)
+```
+
+
 # Lisa Warner {#a-Lisa-Warner}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -2732,6 +5401,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Lisa Warner_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "600"
+)
+```
 
 
 # Chris Watt {#a-Chris-Watt}
@@ -2755,6 +5441,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Chris Watt_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
+
+
 # Dean Webb {#a-Dean-Webb}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -2774,6 +5477,40 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Dean Webb_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "600"
+)
+```
+
+
+
+## Detailed results for Double Distance course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Dean Webb_double.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
 
 
 # Steve West {#a-Steve-West}
@@ -2797,6 +5534,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Steve West_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "550"
+)
+```
+
+
 # Mark Whiticker {#a-Mark-Whiticker}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -2816,6 +5570,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Mark Whiticker_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "350"
+)
+```
 
 
 # Scott Wildin {#a-Scott-Wildin}
@@ -2839,6 +5610,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Scott Wildin_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "450"
+)
+```
+
+
 # Greg Williamson {#a-Greg-Williamson}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -2858,6 +5646,40 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Greg Williamson_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
+
+
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Greg Williamson_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "300"
+)
+```
 
 
 # Marcus Williamson {#a-Marcus-Williamson}
@@ -2881,6 +5703,23 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Intermediate course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Marcus Williamson_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "300"
+)
+```
+
+
 # Wendy Wise {#a-Wendy-Wise}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -2900,6 +5739,23 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Wendy Wise_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "500"
+)
+```
 
 
 # Rob Worth {#a-Rob-Worth}
@@ -2923,6 +5779,40 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Rob Worth_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "550"
+)
+```
+
+
+
+## Detailed results for Double Distance course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Rob Worth_double.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
+
+
 # Viv Wright {#a-Viv-Wright}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -2942,5 +5832,22 @@ htmltools::tags$iframe(
 
 Please let me know if any split times have been incorrectly flagged as invalid.
 
+
+
+
+## Detailed results for Full course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Viv Wright_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
+```
 
 

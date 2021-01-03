@@ -17,9 +17,10 @@ repeated <- foreach (k=athletes_ordered, .combine = paste0 ) %do% {
   
   
   k_ref <- gsub(pattern = " ", "-", k)  
-  k_ref <- gsub(pattern = "'", "", k_ref)  
-  
-  n_courses <- length(unique(dt_all_long[Name==k, .(course)]$course))
+  k_ref <- gsub(pattern = "'", "", k_ref) 
+
+  k_courses <- unique(dt_all_long[Name==k, .(course)]$course)
+  n_courses <- length(k_courses)
 
   
   
@@ -49,7 +50,37 @@ htmltools::tags$iframe(
 Please let me know if any split times have been incorrectly flagged as invalid.
 
 
+',
+  
+foreach(j=k_courses, .combine=paste0) %do% {
+  
+  n_entries <- nrow(dt_all_long[Name==k & course ==j & part =="Swim"])
+  
+  
+  j_course_nice <- c("Double Distance","Full","Intermediate")[which(j==c("double","full","int"))]
+
+  paste0(
 '
+
+## Detailed results for ',j_course_nice,' course
+
+Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "',paste0("tab_", k,"_",j,".html"),'", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "',n_entries*50+200,'"
+)
+```
+
+'
+  )
+
+}
 )
   
   
