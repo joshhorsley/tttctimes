@@ -699,7 +699,6 @@ for(j in c("full", "int")) {
                             ifelse(split_valid & !(cumulative_valid)," (valid)",""),
                             ": ", 
                             duration_hms_short,
-                            ifelse((split_valid),paste0(" (",place_lap_nice,")"),""),
                             ifelse((isPB_split)," PB!",""),
 
                             ifelse(ifelse(!is.na(rank_pb_split),rank_pb_split==1, FALSE)," Season record!",""),
@@ -710,9 +709,8 @@ for(j in c("full", "int")) {
                             ifelse((cumulative_valid), "", " (invalid)"),
                             ifelse((cumulative_valid) & !(split_valid), " (valid)",""),
                             ": ",
-                            cumulative_hms_short,
-                            ifelse((cumulative_valid),paste0(" (", place_cum_nice,")"),""),
-                            ifelse((isPB_cumulative)," PB!",""))]
+                            cumulative_hms_short
+                            )]
   
   g <- ggplot(dt_record_j,
               aes(x = duration_mins, y = - rank_pb_overall, fill = part, group = Name, text = tooltext)) +
