@@ -10,6 +10,7 @@ source("req_packages.R")
 
 
 col_PB <- "lightgreen"
+col_record <- "gold"
 col_invalid <- "grey"
 
 
@@ -40,6 +41,8 @@ dt_season[race_type=="Double Distance" & course == "double", path_webscorer := p
 dt_season[!(race_type=="Double Distance" & course == "double"), path_webscorer := paste0("data_provided/webscorer/",course,"/TTTC ", mday(date_ymd), " ", format(date_ymd, "%b"), " ", year(date_ymd), ".txt")]
 dt_season[, path_webscorer := gsub("Sep","Sept",path_webscorer)]
 dt_season[, have_results := file.exists(path_webscorer)]
+
+dt_season[, missing_results := !cancelled & !have_results]
 
 dt_season[, row_id := seq(.N)]
 
@@ -300,6 +303,12 @@ dt_all_long[(started) & (cumulative_valid), isPB_cumulative := cumulative_mins =
 dt_all_long[is.na(isPB_cumulative), isPB_cumulative := FALSE]
 
 
+# Records -----------------------------------------------------------------
+
+
+dt_all_long[(started) & (isPB_overall), rank_pb_overall := rank(total_overall_mins, ties.method = "first"), by = .(course, part)]
+dt_all_long[(started) & (isPB_split), rank_pb_split := rank(duration_mins, ties.method = "first"), by = .(course, part)]
+
 
 # Plot prep ---------------------------------------------------------------
 
@@ -344,7 +353,9 @@ for(i in race_numbers) {
                             ": ", 
                             duration_hms_short,
                             ifelse((split_valid),paste0(" (",place_lap_nice,")"),""),
-                            ifelse((isNewPB_split)," New PB!",""),
+                            ifelse((isNewPB_split) & !(isPB_split)," New PB!",""),
+                            ifelse((isPB_split)," Season PB!",""),
+                            ifelse(ifelse(!is.na(rank_pb_split),rank_pb_split==1, FALSE)," Season record!",""),
                             "\n",
                             
                             "Cumulative",
@@ -442,7 +453,10 @@ for(k in athletes_ordered) {
                             ifelse(split_valid & !(cumulative_valid)," (valid)",""),
                             ": ", 
                             duration_hms_short,
-                            ifelse((isNewPB_split)," New PB!",""),"\n",
+                            ifelse((isNewPB_split) & !(isPB_split)," New PB!",""),
+                            ifelse((isPB_split)," Season PB!",""),
+                            ifelse(ifelse(!is.na(rank_pb_split),rank_pb_split==1, FALSE)," Season record!",""),
+                            "\n",
                             
                             
                             
@@ -592,6 +606,165 @@ for(k in athletes_ordered) {
   }
 }
 
+
+# Season record tables and plots ------------------------------------------
+
+
+
+for(j in c("full", "int")) {
+  
+  dt_record_j <- dt_all_long[(started) & (isPB_overall) & course==j][order(rank_pb_overall)]
+  
+  dt_record_j_wide <- dcast(dt_record_j, rank_pb_overall + Name + total_overall_hms + date_ymd + race_number  ~ part,
+                            value.var = c("duration_hms","isPB_split", "split_valid","rank_pb_split",
+                                          "cumulative_valid"))
+  
+  setcolorder(dt_record_j_wide,
+              c("rank_pb_overall", "Name","total_overall_hms",
+                "date_ymd","race_number",
+                "duration_hms_Swim", "duration_hms_Ride","duration_hms_Run"))
+  
+  setnames(dt_record_j_wide,
+           c("rank_pb_overall",
+             "total_overall_hms",
+             "date_ymd",
+             "race_number",
+             "duration_hms_Swim",
+             "duration_hms_Ride",
+             "duration_hms_Run"),
+           c("Rank",
+             "Time",
+             "Date",
+             "Race #",
+             "Swim",
+             "Ride",
+             "Run"))
+  
+  tab_j <- DT::datatable(dt_record_j_wide,
+                         rownames = FALSE,
+                         elementId = paste0("tab_record_", j),
+                         # extensions = c('Buttons', 'Responsive'),
+                         extensions = c('Buttons'),
+                         options = list(autoWidth=FALSE,
+                                        paging=FALSE,
+                                        dom = 'Brtp',
+                                        buttons = c('copy', 'csv', 'excel'))) %>% 
+    
+    formatStyle(columns = "Swim",valueColumns = "isPB_split_Swim",
+                background = styleEqual(c(TRUE),c(col_PB))) %>% 
+    formatStyle(columns = "Ride",valueColumns = "isPB_split_Ride",
+                background = styleEqual(c(TRUE),c(col_PB))) %>% 
+    formatStyle(columns = "Run",valueColumns = "isPB_split_Run",
+                background = styleEqual(c(TRUE),c(col_PB))) %>% 
+    
+    formatStyle(columns = "Swim",valueColumns = "rank_pb_split_Swim",
+                background = styleEqual(c(1),c(col_record))) %>% 
+    formatStyle(columns = "Ride",valueColumns = "rank_pb_split_Ride",
+                background = styleEqual(c(1),c(col_record))) %>% 
+    formatStyle(columns = "Run",valueColumns = "rank_pb_split_Run",
+                background = styleEqual(c(1),c(col_record))) %>% 
+    
+    formatStyle(columns = "Time",valueColumns = "Rank",
+                background = styleEqual(c(1),c(col_record))) %>% 
+    
+    # formatStyle(columns = "Time",valueColumns = "valid_overall",
+    #             background = styleEqual(c(TRUE,FALSE),c(NA,col_invalid))) %>% 
+    formatStyle(columns = "Swim",valueColumns = "split_valid_Swim",
+                background = styleEqual(c(TRUE,FALSE),c(NA,col_invalid))) %>% 
+    formatStyle(columns = "Ride",valueColumns = "split_valid_Ride",
+                background = styleEqual(c(TRUE,FALSE),c(NA,col_invalid))) %>% 
+    formatStyle(columns = "Run",valueColumns = "split_valid_Run",
+                background = styleEqual(c(TRUE,FALSE),c(NA,col_invalid)))
+  
+  savepath = paste0(getwd(),"/",site_path_relative,"/tab_overall_",j,".html")
+  
+  saveWidget(tab_j, file = savepath,selfcontained = FALSE,libdir = libpath)
+  
+  
+  # Plot
+  
+
+  dt_record_j[!(split_valid), part := paste0(part, " (invalid)")]
+  dt_record_j[, part := ordered(part, levels = c("Swim", "Swim (invalid)",
+                                          "Ride", "Ride (invalid)",
+                                          "Run", "Run (invalid)"))]
+  
+  dt_record_j[, place_name := paste0(rank_pb_overall, " ", Name)]
+
+  dt_record_j[, tooltext := paste0(Name, "\n",
+                            "Race #: ", race_number,"\n",
+                            "Date: ", date_ymd, "\n",
+
+                            part,
+                            ifelse(split_valid & !(cumulative_valid)," (valid)",""),
+                            ": ", 
+                            duration_hms_short,
+                            ifelse((split_valid),paste0(" (",place_lap_nice,")"),""),
+                            ifelse((isPB_split)," PB!",""),
+
+                            ifelse(ifelse(!is.na(rank_pb_split),rank_pb_split==1, FALSE)," Season record!",""),
+                            
+                            "\n",
+                            
+                            "Cumulative",
+                            ifelse((cumulative_valid), "", " (invalid)"),
+                            ifelse((cumulative_valid) & !(split_valid), " (valid)",""),
+                            ": ",
+                            cumulative_hms_short,
+                            ifelse((cumulative_valid),paste0(" (", place_cum_nice,")"),""),
+                            ifelse((isPB_cumulative)," PB!",""))]
+  
+  g <- ggplot(dt_record_j,
+              aes(x = duration_mins, y = - rank_pb_overall, fill = part, group = Name, text = tooltext)) +
+    geom_col(orientation = "y") +
+    scale_fill_manual("Part",
+                      labels = c(Swim = "Swim",
+                                 Ride = "Ride",
+                                 Run = "Run",
+                                 `Swim (invalid)` = "Swim (invalid)",
+                                 `Ride (invalid)` = "Ride (invalid)",
+                                 `Run (invalid)` = "Run (invalid)"),
+                      values = c(Swim = "#2E63BC",
+                                 Ride = "#3B8544",
+                                 Run = "#BF5324",
+                                 `Swim (invalid)` = "grey",
+                                 `Ride (invalid)` = "black",
+                                 `Run (invalid)` = "grey")) +
+    scale_x_continuous("Time (mins)", breaks = seq(0,150, 10), minor_breaks = seq(0,150, 5),position = "top") +
+    scale_y_continuous("", breaks = -dt_record_j$rank_pb_overall,
+                       labels = dt_record_j$place_name, minor_breaks = NULL,
+                       limits = range(c(0,min(-dt_record_j$rank_pb_overall)-1))) +
+    theme_minimal() +
+    theme(legend.position="top")
+  
+  n_athletes <- length(unique(dt_record_j$Name))
+  
+  p <- ggplotly(g, width = NULL, tooltip = "text",layerData = TRUE, style = "mobile") %>% 
+    layout(xaxis = list(fixedrange = TRUE, side = "top"),
+           yaxis = list(fixedrange = TRUE, tickfont = list(size = 10)),
+           dragmode = FALSE,
+           autosize = TRUE,
+           margin = list(l=125, r=0, t=0,b=0, pad=0),
+           legend = list(orientation = "h", y = 0, x= 0.5, xanchor = "center",
+                         itemclick = FALSE, itemdoubleclick  = FALSE)) %>% 
+    config(displayModeBar = TRUE, modeBarButtons = list(list("toImage")), displaylogo=FALSE,
+           toImageButtonOptions = list(height = 150 + 16*n_athletes, width = 700, scale = 2,
+                                       format = "png",
+                                       filename = paste0("season_record_",j)))
+  
+  p$sizingPolicy$padding <- 0
+  
+  new_name <- "removed"
+  p$x$cur_data <- new_name
+  names(p$x$attrs) <- new_name
+  names(p$x$visdat) <- new_name
+  names(p$x$attrs) <- new_name
+  
+  savepath = paste0(getwd(), "/",site_path_relative,"/plot_record_",j,".html")
+  
+  saveWidget(p, file = savepath ,selfcontained = FALSE,libdir = libpath)
+  
+}
 
 # Export for website ------------------------------------------------------
 

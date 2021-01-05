@@ -18,6 +18,12 @@ source("req_packages.R")
 dt_season <- readRDS("data_derived/dt_season.rds")
 dt_all_long <- readRDS("data_derived/dt_all_long.rds")
 
+
+weeks_missing_full <- unique(dt_season[(missing_results) & course =="full"]$race_number)
+weeks_missing_int <- unique(dt_season[(missing_results) & course =="int"]$race_number)
+some_weeks_missing_full <-length(weeks_missing_full) !=0
+some_weeks_missing_int <-length(weeks_missing_int) !=0
+
 ```
 
 
@@ -28,27 +34,3 @@ This is a completely unofficial test of visualising race results for [TwinTowns 
 Results are presented for each race ([Example: December 19](#r-2020-12-19)) and each competitor ([Example](#a-Tracy-Foyster)).
 
 The results on this website are based on publicly available data from the [club's webscorer page](https://www.webscorer.com/33755) and some guesses (for now) in places where the webscorer data appears inaccurate (e.g. split times unrealistic or missing). This is still a work-in-progress, let me know if I've guessed something wrong.
-
-# (PART) Season
-
-# Schedule
-
-```{r}
-
-dt_season_show <- dt_season[course=='full', .(`Race #` = race_number,
-                            Date = date_ymd,
-                            `Event type` = race_type,
-                            cancelled,
-                            cancelled_reason,
-                            have_results)]
-
-dt_season_show[(cancelled), Note:= paste0("Cancelled due to ", cancelled_reason)]
-dt_season_show[!(cancelled) & !(have_results), Note := "webscorer data not available"]
-dt_season_show[is.na(Note), Note := ""]
-
-knitr::kable(dt_season_show[, .(`Race #`,
-                                Date,
-                                `Event type`,
-                                Note
-                                )])
-```

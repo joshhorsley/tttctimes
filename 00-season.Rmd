@@ -1,0 +1,92 @@
+# (PART) Season
+
+# Schedule
+
+```{r}
+
+dt_season_show <- dt_season[course=='full', .(`Race #` = race_number,
+                            Date = date_ymd,
+                            `Event type` = race_type,
+                            cancelled,
+                            cancelled_reason,
+                            have_results)]
+
+dt_season_show[(cancelled), Note:= paste0("Cancelled due to ", cancelled_reason)]
+dt_season_show[!(cancelled) & !(have_results), Note := "webscorer data not available"]
+dt_season_show[is.na(Note), Note := ""]
+
+knitr::kable(dt_season_show[, .(`Race #`,
+                                Date,
+                                `Event type`,
+                                Note
+                                )])
+```
+
+# Best Times - Full
+
+The best valid times for each competitor are ranked in the plot and table below.
+
+Disclaimer: These results are based on webscorer data but are completely unofficial. `r if(some_weeks_missing_full) paste0("Results are not available for the following weeks: ", paste0(weeks_missing_full, collapse= ", "))`.
+
+
+```{r}
+n_athletes <- nrow(dt_all_long[course=="full" & (isPB_overall) & part=="Swim"])
+
+htmltools::tags$iframe(
+  src = "plot_record_full.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = 150 + 16*n_athletes
+)
+```
+
+
+Season records are show in gold, split PBs are shown in green, and invalid times in grey.
+
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_overall_full.html", 
+  scrolling = "yes", 
+  #seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
+```
+
+# Best Times - Intermediate
+
+The best valid times for each competitor are ranked in the plot and table below.
+
+
+Disclaimer: These results are based on webscorer data but are completely unofficial. `r if(some_weeks_missing_full) paste0("Results are not available for the following weeks: ", paste0(weeks_missing_int, collapse= ", "))`.
+
+
+```{r}
+n_athletes <- nrow(dt_all_long[course=="int" & (isPB_overall) & part=="Swim"])
+
+htmltools::tags$iframe(
+  src = "plot_record_int.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = 150 + 16*n_athletes
+)
+```
+
+Season records are show in gold, split PBs are shown in green, and invalid times in grey.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_overall_int.html", 
+  scrolling = "yes", 
+  #seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
+```
