@@ -28,7 +28,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -66,7 +66,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -104,7 +104,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -142,7 +142,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -180,7 +180,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -218,7 +218,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -256,7 +256,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -294,7 +294,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -332,7 +332,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -370,7 +370,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -408,7 +408,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -446,7 +446,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -484,7 +484,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -522,7 +522,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -560,7 +560,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -598,7 +598,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Double Distance course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -636,7 +636,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -674,7 +674,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -712,7 +712,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -750,7 +750,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -767,7 +767,7 @@ htmltools::tags$iframe(
 
 ## Detailed results for Double Distance course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -805,7 +805,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -843,7 +843,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -881,7 +881,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -919,7 +919,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -957,7 +957,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -995,7 +995,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1033,7 +1033,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1071,7 +1071,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1109,7 +1109,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1126,7 +1126,7 @@ htmltools::tags$iframe(
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1164,7 +1164,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1202,7 +1202,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1240,7 +1240,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1257,7 +1257,7 @@ htmltools::tags$iframe(
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1295,7 +1295,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1333,7 +1333,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1371,7 +1371,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1409,7 +1409,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Double Distance course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1426,7 +1426,7 @@ htmltools::tags$iframe(
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1464,7 +1464,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1502,7 +1502,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1519,7 +1519,7 @@ htmltools::tags$iframe(
 
 ## Detailed results for Double Distance course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1557,7 +1557,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1595,7 +1595,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1633,7 +1633,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1671,7 +1671,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1688,7 +1688,7 @@ htmltools::tags$iframe(
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1726,7 +1726,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1764,7 +1764,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1802,7 +1802,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1840,7 +1840,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1878,7 +1878,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1916,7 +1916,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1933,7 +1933,7 @@ htmltools::tags$iframe(
 
 ## Detailed results for Double Distance course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1971,7 +1971,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1988,7 +1988,7 @@ htmltools::tags$iframe(
 
 ## Detailed results for Double Distance course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2026,7 +2026,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2064,7 +2064,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2081,7 +2081,7 @@ htmltools::tags$iframe(
 
 ## Detailed results for Double Distance course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2119,7 +2119,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2157,7 +2157,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2195,7 +2195,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2233,7 +2233,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2250,7 +2250,7 @@ htmltools::tags$iframe(
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2288,7 +2288,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2326,7 +2326,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2364,7 +2364,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2402,7 +2402,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2440,7 +2440,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2478,7 +2478,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2495,7 +2495,7 @@ htmltools::tags$iframe(
 
 ## Detailed results for Double Distance course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2533,7 +2533,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2571,7 +2571,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2609,7 +2609,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2647,7 +2647,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2685,7 +2685,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2702,7 +2702,7 @@ htmltools::tags$iframe(
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2740,7 +2740,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2778,7 +2778,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2816,7 +2816,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2854,7 +2854,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2892,7 +2892,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2909,7 +2909,7 @@ htmltools::tags$iframe(
 
 ## Detailed results for Double Distance course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2947,7 +2947,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2964,7 +2964,7 @@ htmltools::tags$iframe(
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3002,7 +3002,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3040,7 +3040,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3057,7 +3057,7 @@ htmltools::tags$iframe(
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3095,7 +3095,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3133,7 +3133,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3150,7 +3150,7 @@ htmltools::tags$iframe(
 
 ## Detailed results for Double Distance course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3188,7 +3188,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3226,7 +3226,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3264,7 +3264,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3281,7 +3281,7 @@ htmltools::tags$iframe(
 
 ## Detailed results for Double Distance course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3319,7 +3319,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3336,7 +3336,7 @@ htmltools::tags$iframe(
 
 ## Detailed results for Double Distance course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3374,7 +3374,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3412,7 +3412,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3429,7 +3429,7 @@ htmltools::tags$iframe(
 
 ## Detailed results for Double Distance course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3467,7 +3467,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3505,7 +3505,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3543,7 +3543,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3560,7 +3560,7 @@ htmltools::tags$iframe(
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3598,7 +3598,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3636,7 +3636,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3674,7 +3674,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3712,7 +3712,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3729,7 +3729,7 @@ htmltools::tags$iframe(
 
 ## Detailed results for Double Distance course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3767,7 +3767,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3805,7 +3805,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3843,7 +3843,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3881,7 +3881,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3898,7 +3898,7 @@ htmltools::tags$iframe(
 
 ## Detailed results for Double Distance course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3936,7 +3936,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3974,7 +3974,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4012,7 +4012,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4050,7 +4050,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4088,7 +4088,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4105,7 +4105,7 @@ htmltools::tags$iframe(
 
 ## Detailed results for Double Distance course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4143,7 +4143,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4181,7 +4181,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4219,7 +4219,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4257,7 +4257,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4295,7 +4295,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4333,7 +4333,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4371,7 +4371,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4409,7 +4409,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4447,7 +4447,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4485,7 +4485,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4502,7 +4502,7 @@ htmltools::tags$iframe(
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4540,7 +4540,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4578,7 +4578,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4595,7 +4595,7 @@ htmltools::tags$iframe(
 
 ## Detailed results for Double Distance course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4633,7 +4633,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4671,7 +4671,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4709,7 +4709,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4726,7 +4726,7 @@ htmltools::tags$iframe(
 
 ## Detailed results for Double Distance course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4764,7 +4764,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4802,7 +4802,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4840,7 +4840,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4878,7 +4878,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4916,7 +4916,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4954,7 +4954,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4992,7 +4992,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5030,7 +5030,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5068,7 +5068,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5106,7 +5106,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5123,7 +5123,7 @@ htmltools::tags$iframe(
 
 ## Detailed results for Double Distance course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5161,7 +5161,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5199,7 +5199,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Double Distance course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5216,7 +5216,7 @@ htmltools::tags$iframe(
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5254,7 +5254,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5292,7 +5292,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5330,7 +5330,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5368,7 +5368,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5406,7 +5406,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5444,7 +5444,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5482,7 +5482,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5499,7 +5499,7 @@ htmltools::tags$iframe(
 
 ## Detailed results for Double Distance course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5537,7 +5537,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5575,7 +5575,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5613,7 +5613,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5651,7 +5651,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5668,7 +5668,7 @@ htmltools::tags$iframe(
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5706,7 +5706,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Intermediate course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5744,7 +5744,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5782,7 +5782,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5799,7 +5799,7 @@ htmltools::tags$iframe(
 
 ## Detailed results for Double Distance course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5837,7 +5837,7 @@ Please let me know if any split times have been incorrectly flagged as invalid.
 
 ## Detailed results for Full course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(

@@ -78,7 +78,7 @@ htmltools::tags$iframe(
 )
 ```
 
-Season records are show in gold, split PBs are shown in green, and invalid times in grey.
+Season records are show in gold, split PBs are shown in pink, and invalid times in grey.
 
 ```{r}
 htmltools::tags$iframe(

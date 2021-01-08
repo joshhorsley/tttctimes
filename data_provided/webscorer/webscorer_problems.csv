@@ -32,6 +32,12 @@ race_number,date_ymd,Name,part,split_valid,cumulative_valid
 2,3/10/20,Marcel Van Kampen,Ride,FALSE,FALSE
 2,3/10/20,Marcel Van Kampen,Run,FALSE,TRUE
 ,,,,,
+2,3/10/20,Craig Broadhurst,Ride,FALSE,FALSE
+2,3/10/20,Craig Broadhurst,Run,FALSE,TRUE
+,,,,,
+2,3/10/20,Trudy Gadaleta,Ride,FALSE,FALSE
+2,3/10/20,Trudy Gadaleta,Run,FALSE,TRUE
+,,,,,
 ,,,,,
 3,10/10/20,Val Lambard,Run,FALSE,FALSE
 3,10/10/20,Val Lambard,Ride,FALSE,FALSE
@@ -63,7 +69,8 @@ race_number,date_ymd,Name,part,split_valid,cumulative_valid
 7,7/11/20,Erin Davoren,Run,FALSE,TRUE
 ,,,,,
 7,7/11/20,Michelle Miller,Swim,FALSE,FALSE
-7,7/11/20,Michelle Miller,Ride,FALSE,TRUE
+7,7/11/20,Michelle Miller,Ride,FALSE,FALSE
+7,7/11/20,Michelle Miller,Run,TRUE,FALSE
 ,,,,,
 ,,,,,
 10,28/11/20,Aaron Neylan,Swim,FALSE,FALSE

@@ -64,7 +64,7 @@ foreach(j=k_courses, .combine=paste0) %do% {
 
 ## Detailed results for ',j_course_nice,' course
 
-Season PBs are shown in green, invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
 htmltools::tags$iframe(
