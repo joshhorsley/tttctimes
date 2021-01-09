@@ -1,0 +1,22 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Time	Lap 1	Lap 2	Lap 3	Difference	% Back	% Winning	% Average	% Median
+1	63	Sebastian Thomson	Sebastian	Thomson	Intermediate	37:11.0	5:57.2	20:28.3	10:45.4	-	-	100%	15.61%	10.66%
+2	147	Remy Hawkins	Remy	Hawkins	Intermediate	38:40.1	5:46.7	21:05.3	11:48.1	+1:29.1	+3.99%	96.16%	12.24%	7.10%
+3	278	Robert Townsend	Robert	Townsend	Intermediate	40:43.1	7:05.3	20:42.7	12:55.2	+3:32.1	+9.51%	91.32%	7.59%	2.17%
+4	240	Sally KINGSTON	Sally	KINGSTON	Intermediate	41:34.5	6:24.4	22:56.1	12:13.9	+4:23.5	+11.81%	89.44%	5.65%	0.11%
+5	130	Melanie DUFF	Melanie	DUFF	Intermediate	41:37.3	6:59.4	22:25.5	12:12.4	+4:26.3	+11.94%	89.34%	5.54%	0.00%
+6	204	Lucas Nixon-Hind	Lucas	Nixon-Hind	Intermediate	45:48.6	7:06.4	27:55.0	10:47.2	+8:37.6	+23.20%	81.17%	-3.97%	-10.06%
+7	249	Robyn Barry	Robyn	Barry	Intermediate	48:17.5	7:24.3	26:01.7	14:51.6	+11:06.5	+29.87%	77.00%	-9.60%	-16.03%
+8	205	Karen Nixon	Karen	Nixon	Intermediate	51:07.4	8:21.9	29:52.3	12:53.2	+13:56.4	+37.49%	72.73%	-16.02%	-22.83%
+9	280	Ashleigh Murphy	Ashleigh	Murphy	Intermediate	51:34.4	23:13.6	14:18.4	14:02.4	+14:23.4	+38.70%	72.10%	-17.05%	-23.91%
+-	-	Darren Murray	Darren	Murray	Intermediate	DNS				-	-	-	-	-
+-	-	Sarah Gatt	Sarah	Gatt	Intermediate	DNS				-	-	-	-	-
+-	22	Julie Lowe	Julie	Lowe	Intermediate	DNS				-	-	-	-	-
+-	35	Judy Murray	Judy	Murray	Intermediate	DNS				-	-	-	-	-
+-	200	Steve West	Steve	West	Intermediate	DNS				-	-	-	-	-
+-	202	Rod Sewell	Rod	Sewell	Intermediate	DNS				-	-	-	-	-
+-	238	Lorraine Bassett	Lorraine	Bassett	Intermediate	DNS				-	-	-	-	-
+-	239	Glenn Hind	Glenn	Hind	Intermediate	DNS				-	-	-	-	-
+-	263	Katie Glynn	Katie	Glynn	Intermediate	DNS				-	-	-	-	-
+-	272	Cheryl Atkinson	Cheryl	Atkinson	Intermediate	DNS				-	-	-	-	-
+-	276	Geoff Smith	Geoff	Smith	Intermediate	DNS				-	-	-	-	-
+-	277	Alex Smith	Alex	Smith	Intermediate	DNS				-	-	-	-	-

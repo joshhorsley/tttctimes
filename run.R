@@ -108,6 +108,7 @@ dt_all_long[Name %in% c("Samatha Leonard"), Name := "Samantha Leonard"]
 dt_all_long[Name %in% c("Valerie Lambard"), Name := "Val Lambard"]
 dt_all_long[Name %in% c("Amanda Hall"), Name := "Manda Hall"]
 dt_all_long[Name %in% c("Virginia Jones"), Name := "Ginny Jones"]
+dt_all_long[Name %in% c("Melanie DUFF"), Name := "Melanie Duff"]
 
 
 # Separate Names ----------------------------------------------------------
@@ -597,7 +598,7 @@ for(k in athletes_ordered) {
 
   dt_k <- dt_all_long[Name==k]
   
-  k_courses <- unique(dt_k$course)
+  k_courses <- unique(dt_k[(started)]$course)
   
   for(j in k_courses) {
   
