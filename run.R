@@ -6,6 +6,12 @@
 source("req_packages.R")
 
 
+# Utilities ---------------------------------------------------------------
+
+
+source("R/utils.R")
+
+
 # Colours -----------------------------------------------------------------
 
 
@@ -389,38 +395,14 @@ for(i in race_numbers) {
   g <- ggplot(dt_i,
               aes(x = duration_mins, y = - place_overall_recalc, fill = part, col = part, group = Name, text = tooltext)) +
     geom_col(orientation = "y", width = 0.9, size = 0.3) +
-    scale_fill_manual("Part",
-                      values = c(Swim = tri_cols$swim,
-                                 Ride = tri_cols$ride,
-                                 Run = tri_cols$run,
-                                 # `Swim (PB)` = col_pb,
-                                 # `Ride (PB)` = col_pb,
-                                 # `Run (PB)` = col_pb,
-                                 `Swim (record)` = tri_cols$record,
-                                 `Ride (record)` = tri_cols$record,
-                                 `Run (record)` = tri_cols$record,
-                                 `Swim (invalid)` = tri_cols$invalid,
-                                 `Ride (invalid)` = tri_cols$invalid,
-                                 `Run (invalid)` = tri_cols$invalid)) +
-    scale_color_manual("Part",
-                      values = c(Swim = NA,
-                                 Ride = NA,
-                                 Run = NA,
-                                 # `Swim (PB)` = col_swim,
-                                 # `Ride (PB)` = col_ride,
-                                 # `Run (PB)` = col_run,
-                                 `Swim (record)` = tri_cols$swim,
-                                 `Ride (record)` = tri_cols$ride,
-                                 `Run (record)` = tri_cols$run,
-                                 `Swim (invalid)` = tri_cols$swim,
-                                 `Ride (invalid)` = tri_cols$ride,
-                                 `Run (invalid)` = tri_cols$run)) +
     scale_x_continuous("Time (mins)", breaks = seq(0,150, 10), minor_breaks = seq(0,150, 5),position = "top") +
     scale_y_continuous("", breaks = -dt_i$place_overall_recalc,
                        labels = dt_i$place_name, minor_breaks = NULL,
                        limits = range(c(0,min(-dt_i$place_overall_recalc)-1))) +
     theme_minimal() +
     theme(legend.position="top")
+  
+  g <- apply_col(g, tri_cols)
   
   n_athletes <- length(unique(dt_i$Name))
   
@@ -515,45 +497,20 @@ for(k in athletes_ordered) {
   
   n_courses <- length(unique(dt_all_long[Name==k, .(course)]$course))
   
-  gk <- ggplot(dt_k,
+  g <- ggplot(dt_k,
          aes(y = duration_mins, x = race_number, fill = part, col = part, group = race_number, text = tooltext)) +
     geom_col(orientation = "x", width = 0.9, size = 0.3) +
     facet_grid(rows = "course") +
-    scale_fill_manual("Part",
-                      values = c(Swim = tri_cols$swim,
-                                 Ride = tri_cols$ride,
-                                 Run = tri_cols$run,
-                                 # `Swim (PB)` = col_pb,
-                                 # `Ride (PB)` = col_pb,
-                                 # `Run (PB)` = col_pb,
-                                 `Swim (record)` = tri_cols$record,
-                                 `Ride (record)` = tri_cols$record,
-                                 `Run (record)` = tri_cols$record,
-                                 `Swim (invalid)` = tri_cols$invalid,
-                                 `Ride (invalid)` = tri_cols$invalid,
-                                 `Run (invalid)` = tri_cols$invalid)) +
-    scale_color_manual("Part",
-                       values = c(Swim = NA,
-                                  Ride = NA,
-                                  Run = NA,
-                                  # `Swim (PB)` = col_swim,
-                                  # `Ride (PB)` = col_ride,
-                                  # `Run (PB)` = col_run,
-                                  `Swim (record)` = tri_cols$swim,
-                                  `Ride (record)` = tri_cols$ride,
-                                  `Run (record)` = tri_cols$run,
-                                  `Swim (invalid)` = tri_cols$swim,
-                                  `Ride (invalid)` = tri_cols$ride,
-                                  `Run (invalid)` = tri_cols$run)) +
   scale_y_continuous("Time (mins)", breaks = seq(0,150, 10), minor_breaks = seq(0,150, 5),position = "left") +
     scale_x_continuous("Race (number)", breaks = 1:26, limits = c(0,27)) +
     theme_minimal() +
     theme(legend.position="top",
           strip.background = element_rect(colour="black",
                                           fill="white"))
-    
   
-  pk <- ggplotly(gk, width = NULL, tooltip = "text",layerData = TRUE, style = "mobile") %>% 
+  g <- apply_col(g, tri_cols)
+  
+  p <- ggplotly(g, width = NULL, tooltip = "text",layerData = TRUE, style = "mobile") %>% 
     layout(xaxis = list(fixedrange = TRUE),
            yaxis = list(fixedrange = TRUE),
            dragmode = FALSE,
@@ -566,25 +523,27 @@ for(k in athletes_ordered) {
                                        format = "png",
                                        filename = paste0(k)))
   
+  
+  
   # Clean up legend
-  n_legend <- length(pk$x$data)
+  n_legend <- length(p$x$data)
   
   for (i_legend in seq(n_legend)) {
-    pk$x$data[[i_legend]]$name <- gsub(",1\\)$","",gsub("^\\(","",pk$x$data[[i_legend]]$name))
+    p$x$data[[i_legend]]$name <- gsub(",1\\)$","",gsub("^\\(","",p$x$data[[i_legend]]$name))
     
   }
   
-  pk$sizingPolicy$padding <- 0
+  p$sizingPolicy$padding <- 0
   
   new_name <- "removed"
-  pk$x$cur_data <- new_name
-  names(pk$x$attrs) <- new_name
-  names(pk$x$visdat) <- new_name
-  names(pk$x$attrs) <- new_name
+  p$x$cur_data <- new_name
+  names(p$x$attrs) <- new_name
+  names(p$x$visdat) <- new_name
+  names(p$x$attrs) <- new_name
   
   savepath = paste0(getwd(),"/",site_path_relative,"/",k,".html")
   
-  saveWidget(pk, file = savepath,selfcontained = FALSE,libdir = libpath)
+  saveWidget(p, file = savepath,selfcontained = FALSE,libdir = libpath)
   
 }
 
@@ -601,12 +560,14 @@ for(k in athletes_ordered) {
   
   for(j in k_courses) {
   
-    dt_k_wide <- dcast(dt_k[(started) & course == j], athlete_rank_overall + total_overall_hms + date_ymd + race_number + valid_overall + isPB_overall + rank_pb_overall ~ part,
+    dt_k_wide <- dcast(dt_k[(started) & course == j], rank_pb_overall + athlete_rank_overall + total_overall_hms + date_ymd + race_number + valid_overall + isPB_overall + rank_pb_overall ~ part,
                        value.var = c("duration_hms", "athlete_rank_split","isPB_split", "isPB_cumulative", "split_valid",
-                                     "rank_pb_split","cumulative_valid"))
+                                     "rank_pb_split","cumulative_valid"))[order(athlete_rank_overall)]
+    
+    dt_k_wide[, Rank := athlete_rank_overall]
     
     setcolorder(dt_k_wide,
-                c("athlete_rank_overall", "total_overall_hms",
+                c("Rank", "total_overall_hms",
                   "date_ymd","race_number",
                   "duration_hms_Swim", "duration_hms_Ride","duration_hms_Run",
                   "athlete_rank_split_Swim",
@@ -614,8 +575,7 @@ for(k in athletes_ordered) {
                   "athlete_rank_split_Run"))
     
     setnames(dt_k_wide,
-             c("athlete_rank_overall",
-               "total_overall_hms",
+             c("total_overall_hms",
                "date_ymd",
                "race_number",
                "duration_hms_Swim",
@@ -624,8 +584,7 @@ for(k in athletes_ordered) {
                "athlete_rank_split_Swim",
                "athlete_rank_split_Ride",
                "athlete_rank_split_Run"),
-             c("Rank",
-               "Time",
+             c("Time",
                "Date",
                "Race #",
                "Swim",
@@ -636,8 +595,6 @@ for(k in athletes_ordered) {
                "Rank (Run)"))
     
 
-  
-  
     tab_k <- DT::datatable(dt_k_wide,
                   rownames = FALSE,
                   elementId = paste0("tab_", gsub("'","",k), "_", j),
@@ -647,35 +604,12 @@ for(k in athletes_ordered) {
                                  paging=FALSE,
                                  dom = 'Brtp',
                                  buttons = c('copy', 'csv', 'excel'))) %>% 
+      apply_col(tri_cols)
+    
       
-      formatStyle(columns = "Swim",valueColumns = "isPB_split_Swim",
-                  background = styleEqual(c(TRUE,FALSE),c(tri_cols$pb,NA))) %>% 
-      formatStyle(columns = "Ride",valueColumns = "isPB_split_Ride",
-                  background = styleEqual(c(TRUE,FALSE),c(tri_cols$pb,NA))) %>% 
-      formatStyle(columns = "Run",valueColumns = "isPB_split_Run",
-                  background = styleEqual(c(TRUE,FALSE),c(tri_cols$pb,NA))) %>% 
-      formatStyle(columns = "Time",valueColumns = "isPB_overall",
-                  background = styleEqual(c(TRUE,FALSE),c(tri_cols$pb,NA))) %>% 
-      
-      formatStyle(columns = "Swim",valueColumns = "rank_pb_split_Swim",
-                  background = styleEqual(c(1),c(tri_cols$record))) %>% 
-      formatStyle(columns = "Ride",valueColumns = "rank_pb_split_Ride",
-                  background = styleEqual(c(1),c(tri_cols$record))) %>% 
-      formatStyle(columns = "Run",valueColumns = "rank_pb_split_Run",
-                  background = styleEqual(c(1),c(tri_cols$record))) %>% 
-      
-      formatStyle(columns = "Time",valueColumns = "valid_overall",
-                  background = styleEqual(c(TRUE,FALSE),c(NA,tri_cols$invalid))) %>% 
-      formatStyle(columns = "Swim",valueColumns = "split_valid_Swim",
-                  background = styleEqual(c(TRUE,FALSE),c(NA,tri_cols$invalid))) %>% 
-      formatStyle(columns = "Ride",valueColumns = "split_valid_Ride",
-                  background = styleEqual(c(TRUE,FALSE),c(NA,tri_cols$invalid))) %>% 
-      formatStyle(columns = "Run",valueColumns = "split_valid_Run",
-                  background = styleEqual(c(TRUE,FALSE),c(NA,tri_cols$invalid))) %>% 
+   
       
       
-      formatStyle(columns = "Time",valueColumns = "rank_pb_overall",
-                  background = styleEqual(c(1),c(tri_cols$record)))
     
     savepath = paste0(getwd(),"/",site_path_relative,"/tab_",k,"_",j,".html")
     
@@ -693,25 +627,26 @@ for(j in c("full", "int")) {
   
   dt_record_j <- dt_all_long[(started) & (isPB_overall) & course==j][order(rank_pb_overall)]
   
-  dt_record_j_wide <- dcast(dt_record_j, rank_pb_overall + Name + total_overall_hms + date_ymd + race_number  ~ part,
+  dt_record_j_wide <- dcast(dt_record_j, valid_overall + rank_pb_overall + Name + total_overall_hms + date_ymd + race_number  ~ part,
                             value.var = c("duration_hms","isPB_split", "split_valid","rank_pb_split",
                                           "cumulative_valid"))
   
+  dt_record_j_wide[, Rank := rank_pb_overall]
+  
+  
   setcolorder(dt_record_j_wide,
-              c("rank_pb_overall", "Name","total_overall_hms",
+              c("Rank", "Name","total_overall_hms",
                 "date_ymd","race_number",
                 "duration_hms_Swim", "duration_hms_Ride","duration_hms_Run"))
   
   setnames(dt_record_j_wide,
-           c("rank_pb_overall",
-             "total_overall_hms",
+           c("total_overall_hms",
              "date_ymd",
              "race_number",
              "duration_hms_Swim",
              "duration_hms_Ride",
              "duration_hms_Run"),
-           c("Rank",
-             "Time",
+           c("Time",
              "Date",
              "Race #",
              "Swim",
@@ -727,32 +662,7 @@ for(j in c("full", "int")) {
                                         paging=FALSE,
                                         dom = 'Brtp',
                                         buttons = c('copy', 'csv', 'excel'))) %>% 
-    
-    formatStyle(columns = "Swim",valueColumns = "isPB_split_Swim",
-                background = styleEqual(c(TRUE),c(tri_cols$pb))) %>% 
-    formatStyle(columns = "Ride",valueColumns = "isPB_split_Ride",
-                background = styleEqual(c(TRUE),c(tri_cols$pb))) %>% 
-    formatStyle(columns = "Run",valueColumns = "isPB_split_Run",
-                background = styleEqual(c(TRUE),c(tri_cols$pb))) %>% 
-    
-    formatStyle(columns = "Swim",valueColumns = "rank_pb_split_Swim",
-                background = styleEqual(c(1),c(tri_cols$record))) %>% 
-    formatStyle(columns = "Ride",valueColumns = "rank_pb_split_Ride",
-                background = styleEqual(c(1),c(tri_cols$record))) %>% 
-    formatStyle(columns = "Run",valueColumns = "rank_pb_split_Run",
-                background = styleEqual(c(1),c(tri_cols$record))) %>% 
-    
-    formatStyle(columns = "Time",valueColumns = "Rank",
-                background = styleEqual(c(1),c(tri_cols$record))) %>% 
-    
-    # formatStyle(columns = "Time",valueColumns = "valid_overall",
-    #             background = styleEqual(c(TRUE,FALSE),c(NA,col_invalid))) %>% 
-    formatStyle(columns = "Swim",valueColumns = "split_valid_Swim",
-                background = styleEqual(c(TRUE,FALSE),c(NA,tri_cols$invalid))) %>% 
-    formatStyle(columns = "Ride",valueColumns = "split_valid_Ride",
-                background = styleEqual(c(TRUE,FALSE),c(NA,tri_cols$invalid))) %>% 
-    formatStyle(columns = "Run",valueColumns = "split_valid_Run",
-                background = styleEqual(c(TRUE,FALSE),c(NA,tri_cols$invalid)))
+    apply_col(tri_cols)
   
   savepath = paste0(getwd(),"/",site_path_relative,"/tab_overall_",j,".html")
   
@@ -807,38 +717,14 @@ for(j in c("full", "int")) {
   g <- ggplot(dt_record_j,
               aes(x = duration_mins, y = - rank_pb_overall, fill = part, col = part, group = Name, text = tooltext)) +
     geom_col(orientation = "y", size = 0.3) +
-    scale_fill_manual("Part",
-                      values = c(Swim = tri_cols$swim,
-                                 Ride = tri_cols$ride,
-                                 Run = tri_cols$run,
-                                 # `Swim (PB)` = col_pb,
-                                 # `Ride (PB)` = col_pb,
-                                 # `Run (PB)` = col_pb,
-                                 `Swim (record)` = tri_cols$record,
-                                 `Ride (record)` = tri_cols$record,
-                                 `Run (record)` = tri_cols$record,
-                                 `Swim (invalid)` = tri_cols$invalid,
-                                 `Ride (invalid)` = tri_cols$invalid,
-                                 `Run (invalid)` = tri_cols$invalid)) +
-    scale_color_manual("Part",
-                       values = c(Swim = NA,
-                                  Ride = NA,
-                                  Run = NA,
-                                  # `Swim (PB)` = col_swim,
-                                  # `Ride (PB)` = col_ride,
-                                  # `Run (PB)` = col_run,
-                                  `Swim (record)` = tri_cols$swim,
-                                  `Ride (record)` = tri_cols$ride,
-                                  `Run (record)` = tri_cols$run,
-                                  `Swim (invalid)` = tri_cols$swim,
-                                  `Ride (invalid)` = tri_cols$ride,
-                                  `Run (invalid)` = tri_cols$run)) +
     scale_x_continuous("Time (mins)", breaks = seq(0,150, 10), minor_breaks = seq(0,150, 5),position = "top") +
     scale_y_continuous("", breaks = -dt_record_j$rank_pb_overall,
                        labels = dt_record_j$place_name, minor_breaks = NULL,
                        limits = range(c(0,min(-dt_record_j$rank_pb_overall)-1))) +
     theme_minimal() +
     theme(legend.position="top")
+  
+  g <- apply_col(g, tri_cols)
   
   n_athletes <- length(unique(dt_record_j$Name))
   
@@ -854,6 +740,8 @@ for(j in c("full", "int")) {
            toImageButtonOptions = list(height = 150 + 16*n_athletes, width = 700, scale = 2,
                                        format = "png",
                                        filename = paste0("season_record_",j)))
+  
+  
   
   # Clean up legend
   n_legend <- length(p$x$data)
