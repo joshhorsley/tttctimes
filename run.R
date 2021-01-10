@@ -9,13 +9,12 @@ source("req_packages.R")
 # Colours -----------------------------------------------------------------
 
 
-col_pb <- "pink"
-col_record <- "gold"
-col_invalid <- "grey"
-
-col_swim <- "#2E63BC"
-col_ride <- "#3B8544"
-col_run <- "#BF5324"
+tri_cols <- list(pb = "pink",
+                 record = "gold",
+                 invalid = "grey",
+                 swim = "#2E63BC",
+                 ride = "#3B8544",
+                 run = "#BF5324")
 
 
 # Races and files ---------------------------------------------------------
@@ -389,20 +388,20 @@ for(i in race_numbers) {
   
   g <- ggplot(dt_i,
               aes(x = duration_mins, y = - place_overall_recalc, fill = part, col = part, group = Name, text = tooltext)) +
-    geom_col(orientation = "y", width = 0.9, size = 0.1) +
+    geom_col(orientation = "y", width = 0.9, size = 0.3) +
     scale_fill_manual("Part",
-                      values = c(Swim = col_swim,
-                                 Ride = col_ride,
-                                 Run = col_run,
+                      values = c(Swim = tri_cols$swim,
+                                 Ride = tri_cols$ride,
+                                 Run = tri_cols$run,
                                  # `Swim (PB)` = col_pb,
                                  # `Ride (PB)` = col_pb,
                                  # `Run (PB)` = col_pb,
-                                 `Swim (record)` = col_record,
-                                 `Ride (record)` = col_record,
-                                 `Run (record)` = col_record,
-                                 `Swim (invalid)` = col_invalid,
-                                 `Ride (invalid)` = col_invalid,
-                                 `Run (invalid)` = col_invalid)) +
+                                 `Swim (record)` = tri_cols$record,
+                                 `Ride (record)` = tri_cols$record,
+                                 `Run (record)` = tri_cols$record,
+                                 `Swim (invalid)` = tri_cols$invalid,
+                                 `Ride (invalid)` = tri_cols$invalid,
+                                 `Run (invalid)` = tri_cols$invalid)) +
     scale_color_manual("Part",
                       values = c(Swim = NA,
                                  Ride = NA,
@@ -410,12 +409,12 @@ for(i in race_numbers) {
                                  # `Swim (PB)` = col_swim,
                                  # `Ride (PB)` = col_ride,
                                  # `Run (PB)` = col_run,
-                                 `Swim (record)` = col_swim,
-                                 `Ride (record)` = col_ride,
-                                 `Run (record)` = col_run,
-                                 `Swim (invalid)` = col_swim,
-                                 `Ride (invalid)` = col_ride,
-                                 `Run (invalid)` = col_run)) +
+                                 `Swim (record)` = tri_cols$swim,
+                                 `Ride (record)` = tri_cols$ride,
+                                 `Run (record)` = tri_cols$run,
+                                 `Swim (invalid)` = tri_cols$swim,
+                                 `Ride (invalid)` = tri_cols$ride,
+                                 `Run (invalid)` = tri_cols$run)) +
     scale_x_continuous("Time (mins)", breaks = seq(0,150, 10), minor_breaks = seq(0,150, 5),position = "top") +
     scale_y_continuous("", breaks = -dt_i$place_overall_recalc,
                        labels = dt_i$place_name, minor_breaks = NULL,
@@ -517,22 +516,22 @@ for(k in athletes_ordered) {
   n_courses <- length(unique(dt_all_long[Name==k, .(course)]$course))
   
   gk <- ggplot(dt_k,
-         aes(y = duration_mins, x = race_number, fill = part, group = race_number, text = tooltext)) +
-    geom_col(orientation = "x", width = 0.9) +
+         aes(y = duration_mins, x = race_number, fill = part, col = part, group = race_number, text = tooltext)) +
+    geom_col(orientation = "x", width = 0.9, size = 0.3) +
     facet_grid(rows = "course") +
     scale_fill_manual("Part",
-                      values = c(Swim = col_swim,
-                                 Ride = col_ride,
-                                 Run = col_run,
+                      values = c(Swim = tri_cols$swim,
+                                 Ride = tri_cols$ride,
+                                 Run = tri_cols$run,
                                  # `Swim (PB)` = col_pb,
                                  # `Ride (PB)` = col_pb,
                                  # `Run (PB)` = col_pb,
-                                 `Swim (record)` = col_record,
-                                 `Ride (record)` = col_record,
-                                 `Run (record)` = col_record,
-                                 `Swim (invalid)` = col_invalid,
-                                 `Ride (invalid)` = col_invalid,
-                                 `Run (invalid)` = col_invalid)) +
+                                 `Swim (record)` = tri_cols$record,
+                                 `Ride (record)` = tri_cols$record,
+                                 `Run (record)` = tri_cols$record,
+                                 `Swim (invalid)` = tri_cols$invalid,
+                                 `Ride (invalid)` = tri_cols$invalid,
+                                 `Run (invalid)` = tri_cols$invalid)) +
     scale_color_manual("Part",
                        values = c(Swim = NA,
                                   Ride = NA,
@@ -540,12 +539,12 @@ for(k in athletes_ordered) {
                                   # `Swim (PB)` = col_swim,
                                   # `Ride (PB)` = col_ride,
                                   # `Run (PB)` = col_run,
-                                  `Swim (record)` = col_swim,
-                                  `Ride (record)` = col_ride,
-                                  `Run (record)` = col_run,
-                                  `Swim (invalid)` = col_swim,
-                                  `Ride (invalid)` = col_ride,
-                                  `Run (invalid)` = col_run)) +
+                                  `Swim (record)` = tri_cols$swim,
+                                  `Ride (record)` = tri_cols$ride,
+                                  `Run (record)` = tri_cols$run,
+                                  `Swim (invalid)` = tri_cols$swim,
+                                  `Ride (invalid)` = tri_cols$ride,
+                                  `Run (invalid)` = tri_cols$run)) +
   scale_y_continuous("Time (mins)", breaks = seq(0,150, 10), minor_breaks = seq(0,150, 5),position = "left") +
     scale_x_continuous("Race (number)", breaks = 1:26, limits = c(0,27)) +
     theme_minimal() +
@@ -650,33 +649,33 @@ for(k in athletes_ordered) {
                                  buttons = c('copy', 'csv', 'excel'))) %>% 
       
       formatStyle(columns = "Swim",valueColumns = "isPB_split_Swim",
-                  background = styleEqual(c(TRUE,FALSE),c(col_pb,NA))) %>% 
+                  background = styleEqual(c(TRUE,FALSE),c(tri_cols$pb,NA))) %>% 
       formatStyle(columns = "Ride",valueColumns = "isPB_split_Ride",
-                  background = styleEqual(c(TRUE,FALSE),c(col_pb,NA))) %>% 
+                  background = styleEqual(c(TRUE,FALSE),c(tri_cols$pb,NA))) %>% 
       formatStyle(columns = "Run",valueColumns = "isPB_split_Run",
-                  background = styleEqual(c(TRUE,FALSE),c(col_pb,NA))) %>% 
+                  background = styleEqual(c(TRUE,FALSE),c(tri_cols$pb,NA))) %>% 
       formatStyle(columns = "Time",valueColumns = "isPB_overall",
-                  background = styleEqual(c(TRUE,FALSE),c(col_pb,NA))) %>% 
+                  background = styleEqual(c(TRUE,FALSE),c(tri_cols$pb,NA))) %>% 
       
       formatStyle(columns = "Swim",valueColumns = "rank_pb_split_Swim",
-                  background = styleEqual(c(1),c(col_record))) %>% 
+                  background = styleEqual(c(1),c(tri_cols$record))) %>% 
       formatStyle(columns = "Ride",valueColumns = "rank_pb_split_Ride",
-                  background = styleEqual(c(1),c(col_record))) %>% 
+                  background = styleEqual(c(1),c(tri_cols$record))) %>% 
       formatStyle(columns = "Run",valueColumns = "rank_pb_split_Run",
-                  background = styleEqual(c(1),c(col_record))) %>% 
+                  background = styleEqual(c(1),c(tri_cols$record))) %>% 
       
       formatStyle(columns = "Time",valueColumns = "valid_overall",
-                  background = styleEqual(c(TRUE,FALSE),c(NA,col_invalid))) %>% 
+                  background = styleEqual(c(TRUE,FALSE),c(NA,tri_cols$invalid))) %>% 
       formatStyle(columns = "Swim",valueColumns = "split_valid_Swim",
-                  background = styleEqual(c(TRUE,FALSE),c(NA,col_invalid))) %>% 
+                  background = styleEqual(c(TRUE,FALSE),c(NA,tri_cols$invalid))) %>% 
       formatStyle(columns = "Ride",valueColumns = "split_valid_Ride",
-                  background = styleEqual(c(TRUE,FALSE),c(NA,col_invalid))) %>% 
+                  background = styleEqual(c(TRUE,FALSE),c(NA,tri_cols$invalid))) %>% 
       formatStyle(columns = "Run",valueColumns = "split_valid_Run",
-                  background = styleEqual(c(TRUE,FALSE),c(NA,col_invalid))) %>% 
+                  background = styleEqual(c(TRUE,FALSE),c(NA,tri_cols$invalid))) %>% 
       
       
       formatStyle(columns = "Time",valueColumns = "rank_pb_overall",
-                  background = styleEqual(c(1),c(col_record)))
+                  background = styleEqual(c(1),c(tri_cols$record)))
     
     savepath = paste0(getwd(),"/",site_path_relative,"/tab_",k,"_",j,".html")
     
@@ -730,30 +729,30 @@ for(j in c("full", "int")) {
                                         buttons = c('copy', 'csv', 'excel'))) %>% 
     
     formatStyle(columns = "Swim",valueColumns = "isPB_split_Swim",
-                background = styleEqual(c(TRUE),c(col_pb))) %>% 
+                background = styleEqual(c(TRUE),c(tri_cols$pb))) %>% 
     formatStyle(columns = "Ride",valueColumns = "isPB_split_Ride",
-                background = styleEqual(c(TRUE),c(col_pb))) %>% 
+                background = styleEqual(c(TRUE),c(tri_cols$pb))) %>% 
     formatStyle(columns = "Run",valueColumns = "isPB_split_Run",
-                background = styleEqual(c(TRUE),c(col_pb))) %>% 
+                background = styleEqual(c(TRUE),c(tri_cols$pb))) %>% 
     
     formatStyle(columns = "Swim",valueColumns = "rank_pb_split_Swim",
-                background = styleEqual(c(1),c(col_record))) %>% 
+                background = styleEqual(c(1),c(tri_cols$record))) %>% 
     formatStyle(columns = "Ride",valueColumns = "rank_pb_split_Ride",
-                background = styleEqual(c(1),c(col_record))) %>% 
+                background = styleEqual(c(1),c(tri_cols$record))) %>% 
     formatStyle(columns = "Run",valueColumns = "rank_pb_split_Run",
-                background = styleEqual(c(1),c(col_record))) %>% 
+                background = styleEqual(c(1),c(tri_cols$record))) %>% 
     
     formatStyle(columns = "Time",valueColumns = "Rank",
-                background = styleEqual(c(1),c(col_record))) %>% 
+                background = styleEqual(c(1),c(tri_cols$record))) %>% 
     
     # formatStyle(columns = "Time",valueColumns = "valid_overall",
     #             background = styleEqual(c(TRUE,FALSE),c(NA,col_invalid))) %>% 
     formatStyle(columns = "Swim",valueColumns = "split_valid_Swim",
-                background = styleEqual(c(TRUE,FALSE),c(NA,col_invalid))) %>% 
+                background = styleEqual(c(TRUE,FALSE),c(NA,tri_cols$invalid))) %>% 
     formatStyle(columns = "Ride",valueColumns = "split_valid_Ride",
-                background = styleEqual(c(TRUE,FALSE),c(NA,col_invalid))) %>% 
+                background = styleEqual(c(TRUE,FALSE),c(NA,tri_cols$invalid))) %>% 
     formatStyle(columns = "Run",valueColumns = "split_valid_Run",
-                background = styleEqual(c(TRUE,FALSE),c(NA,col_invalid)))
+                background = styleEqual(c(TRUE,FALSE),c(NA,tri_cols$invalid)))
   
   savepath = paste0(getwd(),"/",site_path_relative,"/tab_overall_",j,".html")
   
@@ -806,21 +805,21 @@ for(j in c("full", "int")) {
                             )]
   
   g <- ggplot(dt_record_j,
-              aes(x = duration_mins, y = - rank_pb_overall, fill = part, group = Name, text = tooltext)) +
-    geom_col(orientation = "y") +
+              aes(x = duration_mins, y = - rank_pb_overall, fill = part, col = part, group = Name, text = tooltext)) +
+    geom_col(orientation = "y", size = 0.3) +
     scale_fill_manual("Part",
-                      values = c(Swim = col_swim,
-                                 Ride = col_ride,
-                                 Run = col_run,
+                      values = c(Swim = tri_cols$swim,
+                                 Ride = tri_cols$ride,
+                                 Run = tri_cols$run,
                                  # `Swim (PB)` = col_pb,
                                  # `Ride (PB)` = col_pb,
                                  # `Run (PB)` = col_pb,
-                                 `Swim (record)` = col_record,
-                                 `Ride (record)` = col_record,
-                                 `Run (record)` = col_record,
-                                 `Swim (invalid)` = col_invalid,
-                                 `Ride (invalid)` = col_invalid,
-                                 `Run (invalid)` = col_invalid)) +
+                                 `Swim (record)` = tri_cols$record,
+                                 `Ride (record)` = tri_cols$record,
+                                 `Run (record)` = tri_cols$record,
+                                 `Swim (invalid)` = tri_cols$invalid,
+                                 `Ride (invalid)` = tri_cols$invalid,
+                                 `Run (invalid)` = tri_cols$invalid)) +
     scale_color_manual("Part",
                        values = c(Swim = NA,
                                   Ride = NA,
@@ -828,12 +827,12 @@ for(j in c("full", "int")) {
                                   # `Swim (PB)` = col_swim,
                                   # `Ride (PB)` = col_ride,
                                   # `Run (PB)` = col_run,
-                                  `Swim (record)` = col_swim,
-                                  `Ride (record)` = col_ride,
-                                  `Run (record)` = col_run,
-                                  `Swim (invalid)` = col_swim,
-                                  `Ride (invalid)` = col_ride,
-                                  `Run (invalid)` = col_run)) +
+                                  `Swim (record)` = tri_cols$swim,
+                                  `Ride (record)` = tri_cols$ride,
+                                  `Run (record)` = tri_cols$run,
+                                  `Swim (invalid)` = tri_cols$swim,
+                                  `Ride (invalid)` = tri_cols$ride,
+                                  `Run (invalid)` = tri_cols$run)) +
     scale_x_continuous("Time (mins)", breaks = seq(0,150, 10), minor_breaks = seq(0,150, 5),position = "top") +
     scale_y_continuous("", breaks = -dt_record_j$rank_pb_overall,
                        labels = dt_record_j$place_name, minor_breaks = NULL,
