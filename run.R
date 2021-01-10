@@ -342,6 +342,7 @@ race_numbers <- sort(unique(dt_all_long$race_number))
 for(i in race_numbers) {
 
   i_courses <- dt_season[race_number==i]$course
+  
   for( j in i_courses) {
     
     
@@ -417,23 +418,12 @@ for(i in race_numbers) {
     config(displayModeBar = TRUE, modeBarButtons = list(list("toImage")), displaylogo=FALSE,
            toImageButtonOptions = list(height = 150 + 16*n_athletes, width = 700, scale = 2,
                                        format = "png",
-                                       filename = paste0(dt_i$date_ymd[1],"_",j)))
-  
-  #' Reference for plotly options
-  #' https://github.com/plotly/plotly.js/blob/master/src/plot_api/plot_config.js
-  #' https://github.com/plotly/plotly.js/blob/master/src/components/modebar/buttons.js
-  #' https://plotly.com/javascript/configuration-options/#customize-download-plot-options
-  
-  p$sizingPolicy$padding <- 0
-  
-  new_name <- "removed"
-  p$x$cur_data <- new_name
-  names(p$x$attrs) <- new_name
-  names(p$x$visdat) <- new_name
-  names(p$x$attrs) <- new_name
+                                       filename = paste0(dt_i$date_ymd[1],"_",j))) %>% 
+    set_names_plotly() %>% 
+    set_margin_plotly() %>% 
+    clean_legend_names_plotly()
   
   savepath = paste0(getwd(), "/",site_path_relative,"/",dt_i$date_ymd[1],"_",j,".html")
-  
   saveWidget(p, file = savepath ,selfcontained = FALSE,libdir = libpath)
     
   }
@@ -441,7 +431,6 @@ for(i in race_numbers) {
 
 
 # Athlete plots -----------------------------------------------------------
-
 
 
 for(k in athletes_ordered) {
@@ -521,28 +510,12 @@ for(k in athletes_ordered) {
     config(displayModeBar = TRUE, modeBarButtons = list(list("toImage")), displaylogo=FALSE,
            toImageButtonOptions = list(height = 500*n_courses, width = 700, scale = 2,
                                        format = "png",
-                                       filename = paste0(k)))
-  
-  
-  
-  # Clean up legend
-  n_legend <- length(p$x$data)
-  
-  for (i_legend in seq(n_legend)) {
-    p$x$data[[i_legend]]$name <- gsub(",1\\)$","",gsub("^\\(","",p$x$data[[i_legend]]$name))
-    
-  }
-  
-  p$sizingPolicy$padding <- 0
-  
-  new_name <- "removed"
-  p$x$cur_data <- new_name
-  names(p$x$attrs) <- new_name
-  names(p$x$visdat) <- new_name
-  names(p$x$attrs) <- new_name
+                                       filename = paste0(k))) %>% 
+    set_names_plotly() %>% 
+    set_margin_plotly() %>% 
+    clean_legend_names_plotly()
   
   savepath = paste0(getwd(),"/",site_path_relative,"/",k,".html")
-  
   saveWidget(p, file = savepath,selfcontained = FALSE,libdir = libpath)
   
 }
@@ -605,14 +578,9 @@ for(k in athletes_ordered) {
                                  dom = 'Brtp',
                                  buttons = c('copy', 'csv', 'excel'))) %>% 
       apply_col(tri_cols)
-    
-      
-   
-      
-      
+
     
     savepath = paste0(getwd(),"/",site_path_relative,"/tab_",k,"_",j,".html")
-    
     saveWidget(tab_k, file = savepath,selfcontained = FALSE,libdir = libpath)
 
   }
@@ -665,7 +633,6 @@ for(j in c("full", "int")) {
     apply_col(tri_cols)
   
   savepath = paste0(getwd(),"/",site_path_relative,"/tab_overall_",j,".html")
-  
   saveWidget(tab_j, file = savepath,selfcontained = FALSE,libdir = libpath)
   
   
@@ -739,28 +706,13 @@ for(j in c("full", "int")) {
     config(displayModeBar = TRUE, modeBarButtons = list(list("toImage")), displaylogo=FALSE,
            toImageButtonOptions = list(height = 150 + 16*n_athletes, width = 700, scale = 2,
                                        format = "png",
-                                       filename = paste0("season_record_",j)))
-  
-  
-  
-  # Clean up legend
-  n_legend <- length(p$x$data)
-  
-  for (i_legend in seq(n_legend)) {
-    p$x$data[[i_legend]]$name <- gsub(",1\\)$","",gsub("^\\(","",p$x$data[[i_legend]]$name))
-    
-  }
-  
-  p$sizingPolicy$padding <- 0
-  
-  new_name <- "removed"
-  p$x$cur_data <- new_name
-  names(p$x$attrs) <- new_name
-  names(p$x$visdat) <- new_name
-  names(p$x$attrs) <- new_name
+                                       filename = paste0("season_record_",j))) %>% 
+    set_names_plotly() %>% 
+    set_margin_plotly() %>% 
+    clean_legend_names_plotly()
+
   
   savepath = paste0(getwd(), "/",site_path_relative,"/plot_record_",j,".html")
-  
   saveWidget(p, file = savepath ,selfcontained = FALSE,libdir = libpath)
   
 }

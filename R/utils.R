@@ -58,3 +58,46 @@ apply_col.datatables <- function(tab, tri_cols){
                 background = styleEqual(FALSE, tri_cols$invalid))
 
 }
+
+
+
+# Plotly ------------------------------------------------------------------
+
+#' Reference for plotly options
+#' https://github.com/plotly/plotly.js/blob/master/src/plot_api/plot_config.js
+#' https://github.com/plotly/plotly.js/blob/master/src/components/modebar/buttons.js
+#' https://plotly.com/javascript/configuration-options/#customize-download-plot-options
+
+
+set_names_plotly <- function(p, new_name = "removed"){
+  
+  p$x$cur_data <- new_name
+  names(p$x$attrs) <- new_name
+  names(p$x$visdat) <- new_name
+  names(p$x$attrs) <- new_name
+  
+  p
+}
+
+set_margin_plotly <- function(p, pad = 0) {
+  
+  p$sizingPolicy$padding <- pad
+  
+  p
+}
+
+#' plotly legends had (Swim,1) etc formatting for athlete and record plots
+#' but not athelete
+
+clean_legend_names_plotly <- function(p) {
+  
+  n_legend <- length(p$x$data)
+  
+  for (i_legend in seq(n_legend)) {
+    p$x$data[[i_legend]]$name <- gsub(",1\\)$","",gsub("^\\(","",p$x$data[[i_legend]]$name))
+    
+  }
+  
+  p
+}
+
