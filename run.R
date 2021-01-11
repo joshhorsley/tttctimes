@@ -259,19 +259,9 @@ dt_all_long[(started), athlete_rank_overall := as.integer(rank(total_overall_sor
 dt_all_long[(started) & (split_valid), place_lap_display := place_lap]
 dt_all_long[(started) & !(split_valid), place_lap_display := NA]
 
-dt_all_long[(started),                               place_lap_nice := paste0(place_lap_display, "th")]
-dt_all_long[(started) & place_lap_display %% 10 ==1, place_lap_nice := paste0(place_lap_display, "st")]
-dt_all_long[(started) & place_lap_display %% 10 ==2, place_lap_nice := paste0(place_lap_display, "nd")]
-dt_all_long[(started) & place_lap_display %% 10 ==3, place_lap_nice := paste0(place_lap_display, "rd")]
-dt_all_long[(started) & place_lap_display %in% c(11,12,13), place_lap_nice := paste0(place_lap_display, "th")]
-dt_all_long[(started) & is.na(place_lap_display), place_lap_nice := "NA"]
 
-dt_all_long[(started),                              place_cum_nice := paste0(place_cum_recalc, "th")]
-dt_all_long[(started) & place_cum_recalc %% 10 ==1, place_cum_nice := paste0(place_cum_recalc, "st")]
-dt_all_long[(started) & place_cum_recalc %% 10 ==2, place_cum_nice := paste0(place_cum_recalc, "nd")]
-dt_all_long[(started) & place_cum_recalc %% 10 ==3, place_cum_nice := paste0(place_cum_recalc, "rd")]
-dt_all_long[(started) & place_cum_recalc %in% c(11,12,13), place_cum_nice := paste0(place_cum_recalc, "th")]
-
+dt_all_long[(started), place_lap_nice := format_place(place_lap_display)]
+dt_all_long[(started), place_cum_nice := format_place(place_cum_recalc)]
 
 
 # PBs ---------------------------------------------------------------------

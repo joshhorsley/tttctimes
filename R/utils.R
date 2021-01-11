@@ -101,3 +101,19 @@ clean_legend_names_plotly <- function(p) {
   p
 }
 
+
+format_place <- function(x, na_string = "NA") {
+  
+  x[is.na(x)] <- 0
+  y <- paste0(x, "th")
+
+  y[x %% 10 == 1 & x != 11] <- paste0(x[x %% 10 == 1 & x != 11], "st")
+  y[x %% 10 == 2 & x != 12] <- paste0(x[x %% 10 == 2 & x != 12], "nd")
+  y[x %% 10 == 3 & x != 13] <- paste0(x[x %% 10 == 3 & x != 13], "rd")
+  
+  y[x == 0 ] <- na_string
+  
+  y
+}
+
+
