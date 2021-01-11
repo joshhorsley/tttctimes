@@ -13,7 +13,7 @@ description: "TTTC Race Times"
 
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, fig.height = 6, fig.width = 7)
 
-source("req_packages.R")
+source("R/req_packages.R")
 
 dt_season <- readRDS("data_derived/dt_season.rds")
 dt_all_long <- readRDS("data_derived/dt_all_long.rds")
