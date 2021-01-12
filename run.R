@@ -517,13 +517,13 @@ for(k in athletes_ordered) {
 for(k in athletes_ordered) {
   
 
-  dt_k <- dt_all_long[Name==k]
+  dt_k <- dt_all_long[(started) & Name==k]
   
-  k_courses <- unique(dt_k[(started)]$course)
+  k_courses <- unique(dt_k$course)
   
   for(j in k_courses) {
   
-    dt_k_wide <- dcast(dt_k[(started) & course == j], rank_pb_overall + athlete_rank_overall + total_overall_hms + date_ymd + race_number + valid_overall + isPB_overall + rank_pb_overall ~ part,
+    dt_k_wide <- dcast(dt_k[course == j], rank_pb_overall + athlete_rank_overall + total_overall_hms + date_ymd + race_number + valid_overall + isPB_overall + rank_pb_overall ~ part,
                        value.var = c("duration_hms", "athlete_rank_split","isPB_split", "isPB_cumulative", "split_valid",
                                      "rank_pb_split","cumulative_valid"))[order(athlete_rank_overall)]
     
