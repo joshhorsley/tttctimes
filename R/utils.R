@@ -47,6 +47,12 @@ apply_col.datatables <- function(tab, tri_cols){
                 valueColumns = c("rank_pb_split_Swim","rank_pb_split_Ride","rank_pb_split_Run"),
                 background = styleEqual(1, tri_cols$record)) %>% 
     
+    {if("isPB_overall" %in% names(tab$x$data)){
+      formatStyle(table = ., columns = "Time", valueColumns = "isPB_overall",
+                background = styleEqual(c(1),c(tri_cols$pb)))
+      } else {.}
+      } %>% 
+    
     formatStyle(columns = "Time", valueColumns = "rank_pb_overall",
                 background = styleEqual(c(1),c(tri_cols$record))) %>% 
     
