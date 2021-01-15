@@ -136,3 +136,9 @@ race_number,date_ymd,Name,part,split_valid,cumulative_valid
 ,,,,,
 16,9/1/21,Glenn Payne,Swim,FALSE,FALSE
 16,9/1/21,Glenn Payne,Ride,FALSE,TRUE
+,,,,,
+,,,,,
+17,16/1/21,Tyler Gilbert,Ride,FALSE,FALSE
+17,16/1/21,Tyler Gilbert,Run,FALSE,FALSE
+,,,,,
+17,16/1/21,Des Gooda,Run,FALSE,FALSE

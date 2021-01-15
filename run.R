@@ -114,6 +114,7 @@ dt_all_long[Name %in% c("Valerie Lambard"), Name := "Val Lambard"]
 dt_all_long[Name %in% c("Amanda Hall"), Name := "Manda Hall"]
 dt_all_long[Name %in% c("Virginia Jones"), Name := "Ginny Jones"]
 dt_all_long[Name %in% c("Melanie DUFF"), Name := "Melanie Duff"]
+dt_all_long[Name %in% c("Jo COLJA"), Name := "Joanne Colja"]
 
 
 # Separate Names ----------------------------------------------------------

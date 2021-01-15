@@ -1,0 +1,72 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Time	Lap 1	Lap 2	Lap 3	Difference	% Back	% Winning	% Average	% Median
+1	157	Ben Courage	Ben	Courage	Full	52:06.0	8:17.1	26:27.6	17:21.3	-	-	100%	22.79%	21.82%
+2	62	Scott Thomson	Scott	Thomson	Full	56:55.8	7:55.0	26:09.6	22:51.1	+4:49.8	+9.27%	91.52%	15.63%	14.57%
+3	151	Craig Telling	Craig	Telling	Full	57:30.3	9:26.5	27:37.0	20:26.8	+5:24.3	+10.37%	90.60%	14.78%	13.71%
+4	14	Clive Pearce	Clive	Pearce	Full	58:14.9	10:51.9	26:13.7	21:09.3	+6:08.9	+11.80%	89.44%	13.68%	12.59%
+5	7	Alex Gilks	Alex	Gilks	Full	58:35.8	9:22.1	29:19.2	19:54.5	+6:29.8	+12.47%	88.91%	13.16%	12.07%
+6	2	Tracy Foyster	Tracy	Foyster	Full	59:12.2	8:51.1	29:40.3	20:40.7	+7:06.2	+13.63%	88.00%	12.26%	11.16%
+7	198	Aaron Neylan	Aaron	Neylan	Full	59:30.8	9:52.6	28:57.8	20:40.4	+7:24.8	+14.23%	87.54%	11.80%	10.69%
+8	139	Matthew Stanley	Matthew	Stanley	Full	1:00:48.2	10:02.5	29:48.8	20:56.9	+8:42.2	+16.71%	85.69%	9.89%	8.76%
+9	20	Gerard Robards	Gerard	Robards	Full	1:01:36.0	10:03.9	28:06.4	23:25.6	+9:30.0	+18.23%	84.58%	8.71%	7.56%
+10	99	Scott Styman	Scott	Styman	Full	1:02:50.1	9:36.8	31:43.0	21:30.4	+10:44.1	+20.60%	82.92%	6.88%	5.71%
+11	85	Terence Simpson	Terence	Simpson	Full	1:03:07.5	8:49.6	29:25.1	24:52.8	+11:01.5	+21.16%	82.53%	6.45%	5.27%
+12	8	Dave de Closey	Dave	de Closey	Full	1:03:38.9	9:29.8	30:36.3	23:32.8	+11:32.9	+22.17%	81.86%	5.67%	4.49%
+13	53	Joanne Colja	Joanne	Colja	Full	1:03:47.7	9:40.9	30:38.8	23:28.0	+11:41.7	+22.45%	81.67%	5.46%	4.27%
+14	105	Darren Jones	Darren	Jones	Full	1:03:56.2	10:07.1	29:42.5	24:06.5	+11:50.2	+22.72%	81.49%	5.25%	4.05%
+15	112	Kent Holmes	Kent	Holmes	Full	1:05:46.3	9:19.0	30:15.8	26:11.5	+13:40.3	+26.24%	79.21%	2.53%	1.30%
+16	267	Benjamin Austin	Benjamin	Austin	Full	1:05:50.8	9:55.7	34:45.5	21:09.7	+13:44.8	+26.39%	79.12%	2.42%	1.19%
+17	80	Mark Collinson	Mark	Collinson	Full	1:06:14.9	10:54.1	31:42.6	23:38.2	+14:08.9	+27.16%	78.64%	1.82%	0.59%
+18	278	Robert Townsend	Robert	Townsend	Full	1:06:38.3	11:42.5	28:54.7	26:01.1	+14:32.3	+27.90%	78.18%	1.24%	0.00%
+19	51	Sue Van Den Broek	Sue	Van Den Broek	Full	1:07:47.0	9:30.7	34:06.0	24:10.3	+15:41.0	+30.10%	76.86%	-0.45%	-1.72%
+20	4	Jim Collins	Jim	Collins	Full	1:09:09.2	10:10.7	33:08.9	25:49.6	+17:03.2	+32.73%	75.34%	-2.49%	-3.77%
+21	10	Virginia Jones	Virginia	Jones	Full	1:09:18.5	9:33.5	34:58.6	24:46.4	+17:12.5	+33.03%	75.17%	-2.71%	-4.01%
+22	259	Kylie Gibson	Kylie	Gibson	Full	1:09:32.1	10:22.0	35:47.2	23:22.9	+17:26.1	+33.46%	74.93%	-3.05%	-4.35%
+23	110	Rowena Smith	Rowena	Smith	Full	1:09:46.5	11:55.0	35:46.9	22:04.5	+17:40.5	+33.93%	74.67%	-3.41%	-4.71%
+24	182	Sharyn Klein	Sharyn	Klein	Full	1:09:50.5	9:17.1	40:03.1	20:30.3	+17:44.5	+34.05%	74.60%	-3.51%	-4.81%
+25	248	Philip Salter	Philip	Salter	Full	1:09:59.6	11:57.0	32:21.7	25:40.9	+17:53.6	+34.34%	74.44%	-3.73%	-5.03%
+26	37	Jeff Murray	Jeff	Murray	Full	1:10:04.6	11:34.3	32:09.7	26:20.6	+17:58.6	+34.50%	74.35%	-3.85%	-5.16%
+27	55	Mark Whiticker	Mark	Whiticker	Full	1:10:59.1	9:12.2	33:44.0	28:03.0	+18:53.1	+36.25%	73.40%	-5.20%	-6.52%
+28	130	Melanie Duff	Melanie	Duff	Full	1:11:38.4	11:45.9	35:28.3	24:24.2	+19:32.4	+37.50%	72.72%	-6.17%	-7.51%
+29	18	Hollie Robards	Hollie	Robards	Full	1:13:42.2	9:32.0	38:30.2	25:40.0	+21:36.2	+41.47%	70.69%	-9.23%	-10.60%
+30	86	Warren Copping	Warren	Copping	Full	1:17:54.3	12:35.9	37:45.4	27:33.1	+25:48.3	+49.53%	66.88%	-15.46%	-16.91%
+31	12	Peter Serone	Peter	Serone	Full	1:17:56.0	11:16.6	40:21.4	26:18.0	+25:50.0	+49.58%	66.85%	-15.50%	-16.95%
+32	32	Guy Davoren	Guy	Davoren	Full	1:18:15.9	12:29.6	39:43.9	26:02.4	+26:09.9	+50.22%	66.57%	-15.99%	-17.45%
+33	240	Sally Kingston	Sally	Kingston	Full	1:19:18.7	10:28.3	38:30.9	30:19.4	+27:12.7	+52.23%	65.69%	-17.54%	-19.02%
+34	70	Kev Bannerman	Kev	Bannerman	Full	1:23:18.4	9:11.4	35:30.6	38:36.4	+31:12.4	+59.90%	62.54%	-23.46%	-25.01%
+35	11	Rob Gillies	Rob	Gillies	Full	1:26:48.9	8:42.6	35:29.4	42:36.9	+34:42.9	+66.63%	60.01%	-28.66%	-30.28%
+-	279	Tyler Gilbert	Tyler	Gilbert	Full	DNF	11:26.1	22:30.0	-	-	-	-	-	-
+-	117	Des Gooda	Des	Gooda	Full	DNF	8:37.5	27:38.8	-	-	-	-	-	-
+-	-	Raul Ruiz	Raul	Ruiz	Full	DNS				-	-	-	-	-
+-	3	Val Lambard	Val	Lambard	Full	DNS				-	-	-	-	-
+-	5	Jenny Scaysbrook	Jenny	Scaysbrook	Full	DNS				-	-	-	-	-
+-	9	Stuart Crawford	Stuart	Crawford	Full	DNS				-	-	-	-	-
+-	17	Richard Mourant	Richard	Mourant	Full	DNS				-	-	-	-	-
+-	30	Alex Torrance	Alex	Torrance	Full	DNS				-	-	-	-	-
+-	39	Vaughan Skelly	Vaughan	Skelly	Full	DNS				-	-	-	-	-
+-	41	Colin Woodward	Colin	Woodward	Full	DNS				-	-	-	-	-
+-	42	Frank Adler	Frank	Adler	Full	DNS				-	-	-	-	-
+-	46	Kyle Mooney	Kyle	Mooney	Full	DNS				-	-	-	-	-
+-	47	Ben Hall	Ben	Hall	Full	DNS				-	-	-	-	-
+-	58	Debbie Davies	Debbie	Davies	Full	DNS				-	-	-	-	-
+-	60	Jonathan Davies	Jonathan	Davies	Full	DNS				-	-	-	-	-
+-	65	David Emery	David	Emery	Full	DNS				-	-	-	-	-
+-	71	Danny Warner	Danny	Warner	Full	DNS				-	-	-	-	-
+-	72	Rob Worth	Rob	Worth	Full	DNS				-	-	-	-	-
+-	75	Kipp Freeman	Kipp	Freeman	Full	DNS				-	-	-	-	-
+-	76	Gregory Freeman	Gregory	Freeman	Full	DNS				-	-	-	-	-
+-	88	John King	John	King	Full	DNS				-	-	-	-	-
+-	94	Danny Khazen	Danny	Khazen	Full	DNS				-	-	-	-	-
+-	97	Kaleb Robards	Kaleb	Robards	Full	DNS				-	-	-	-	-
+-	104	Viv Wright	Viv	Wright	Full	DNS				-	-	-	-	-
+-	107	Marcel Van Kampen	Marcel	Van Kampen	Full	DNS				-	-	-	-	-
+-	140	Glenn Payne	Glenn	Payne	Full	DNS				-	-	-	-	-
+-	156	Stephen Ring	Stephen	Ring	Full	DNS				-	-	-	-	-
+-	162	Peter Stowe	Peter	Stowe	Full	DNS				-	-	-	-	-
+-	195	Andrew Armstrong	Andrew	Armstrong	Full	DNS				-	-	-	-	-
+-	212	Dean Webb	Dean	Webb	Full	DNS				-	-	-	-	-
+-	218	Trudy Gadaleta	Trudy	Gadaleta	Full	DNS				-	-	-	-	-
+-	233	Kat Miller	Kat	Miller	Full	DNS				-	-	-	-	-
+-	234	Andrew Miller	Andrew	Miller	Full	DNS				-	-	-	-	-
+-	251	Dan Johnson	Dan	Johnson	Full	DNS				-	-	-	-	-
+-	252	Caroline Hogan	Caroline	Hogan	Full	DNS				-	-	-	-	-
+-	261	David Hogan	David	Hogan	Full	DNS				-	-	-	-	-
