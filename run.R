@@ -495,7 +495,7 @@ for(k in athletes_ordered) {
            yaxis = list(fixedrange = TRUE),
            dragmode = FALSE,
            autosize = TRUE,
-           margin = list(l=50, r=25, t=0,b=0, pad=0),
+           margin = list(l=75, r=25, t=0,b=0, pad=0),
            legend = list(orientation = "h", y = -0.1, x= 0.5, xanchor = "center",
                          itemclick = FALSE, itemdoubleclick  = FALSE)) %>% 
     config(displayModeBar = TRUE, modeBarButtons = list(list("toImage")), displaylogo=FALSE,
