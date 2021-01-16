@@ -311,6 +311,33 @@ dt_all_long[(started) & (isPB_overall), rank_pb_overall := rank(total_overall_mi
 dt_all_long[(started) & (isPB_split), rank_pb_split := rank(duration_mins, ties.method = "first"), by = .(course, part)]
 
 
+# Part naming -------------------------------------------------------------
+
+
+part_levels <- c("Swim",
+                 "Ride",
+                 "Run",
+                 "Swim (PB)",
+                 "Ride (PB)",
+                 "Run (PB)",
+                 "Swim (record)",
+                 "Ride (record)",
+                 "Run (record)",
+                 "Swim (invalid)",
+                 "Ride (invalid)",
+                 "Run (invalid)")
+
+
+dt_all_long[, part_plot := part]
+dt_all_long[!(split_valid), part_plot := paste0(part, " (invalid)")]
+dt_all_long[rank_pb_split==1, part_plot := paste0(part, " (record)")]
+
+dt_all_long[, part_plot_pb := part_plot]
+dt_all_long[(isPB_split) & rank_pb_split!=1, part_plot_pb := paste0(part, " (PB)")]
+dt_all_long[, part_plot := ordered(part_plot, levels = part_levels)]
+dt_all_long[, part_plot_pb := ordered(part_plot_pb, levels = part_levels)]
+
+
 # Plot prep ---------------------------------------------------------------
 
 
@@ -336,26 +363,7 @@ for(i in race_numbers) {
   
   for( j in i_courses) {
     
-    
   dt_i <- dt_all_long[race_number== i & course == j][(started)]
-  
-  dt_i[!(split_valid), part := paste0(part, " (invalid)")]
-  # dt_i[(isPB_overall) & rank_pb_split!=1, part := paste0(part, " (PB)")]
-  dt_i[rank_pb_split==1, part := paste0(part, " (record)")]
-  
-  dt_i[, part := ordered(part, levels = c("Swim",
-                                          "Ride",
-                                          "Run",
-                                          "Swim (PB)",
-                                          "Ride (PB)",
-                                          "Run (PB)",
-                                          "Swim (record)",
-                                          "Ride (record)",
-                                          "Run (record)",
-                                          "Swim (invalid)",
-                                          "Ride (invalid)",
-                                          "Run (invalid)"
-                                          ))]
 
   dt_i[(valid_overall), place_name := paste0(place_overall_recalc," ", Name)]
   dt_i[(valid_overall) & (isNewPB_overall), place_name := paste0(place_overall_recalc, " ", Name, " (New PB!)")]
@@ -366,7 +374,7 @@ for(i in race_numbers) {
   dt_i[, tooltext := paste0(Name,
                             ifelse((isFirstRace) & i !=1, " - First race this season",""),"\n",
                             
-                            part,
+                            part_plot,
                             ifelse(split_valid & !(cumulative_valid)," (valid)",""),
                             ": ", 
                             duration_hms_short,
@@ -385,7 +393,7 @@ for(i in race_numbers) {
                             ifelse((isNewPB_cum)," New PB!",""))]
   
   g <- ggplot(dt_i,
-              aes(x = duration_mins, y = - place_overall_recalc, fill = part, col = part, group = Name, text = tooltext)) +
+              aes(x = duration_mins, y = - place_overall_recalc, fill = part_plot, col = part_plot, group = Name, text = tooltext)) +
     geom_col(orientation = "y", width = 0.9, size = 0.3) +
     scale_x_continuous("Time (mins)", breaks = seq(0,150, 10), minor_breaks = seq(0,150, 5),position = "top") +
     scale_y_continuous("", breaks = -dt_i$place_overall_recalc,
@@ -428,24 +436,6 @@ for(k in athletes_ordered) {
   
   dt_k <- dt_all_long[(started) & Name==k][order(race_number)]
   
-  dt_k[!(split_valid), part := paste0(part, " (invalid)")]
-  # dt_k[(isPB_overall) & rank_pb_split!=1, part := paste0(part, " (PB)")]
-  dt_k[rank_pb_split==1, part := paste0(part, " (record)")]
-  
-  dt_k[, part := ordered(part, levels = c("Swim",
-                                          "Ride",
-                                          "Run",
-                                          # "Swim (PB)",
-                                          # "Ride (PB)",
-                                          # "Run (PB)",
-                                          "Swim (record)",
-                                          "Ride (record)",
-                                          "Run (record)",
-                                          "Swim (invalid)",
-                                          "Ride (invalid)",
-                                          "Run (invalid)"
-  ))]
-  
   dt_k[course == "int", course := "Intermediate"]
   dt_k[course == "full", course := "Full"]
   dt_k[course == "double", course := "Double Distance"]
@@ -457,7 +447,7 @@ for(k in athletes_ordered) {
   dt_k[, tooltext := paste0("Race #: ", race_number,"\n",
                             "Date: ", date_ymd, "\n",
                             
-                            part,
+                            part_plot_pb,
                             ifelse(split_valid & !(cumulative_valid)," (valid)",""),
                             ": ", 
                             duration_hms_short,
@@ -478,7 +468,7 @@ for(k in athletes_ordered) {
   n_courses <- length(unique(dt_all_long[Name==k, .(course)]$course))
   
   g <- ggplot(dt_k,
-         aes(y = duration_mins, x = race_number, fill = part, col = part, group = race_number, text = tooltext)) +
+         aes(y = duration_mins, x = race_number, fill = part_plot_pb, col = part_plot_pb, group = race_number, text = tooltext)) +
     geom_col(orientation = "x", width = 0.9, size = 0.3) +
     facet_grid(rows = "course") +
   scale_y_continuous("Time (mins)", breaks = seq(0,150, 10), minor_breaks = seq(0,150, 5),position = "left") +
@@ -628,25 +618,6 @@ for(j in c("full", "int")) {
   
   
   # Plot
-  
-
-  dt_record_j[!(split_valid), part := paste0(part, " (invalid)")]
-  dt_record_j[rank_pb_split==1, part := paste0(part, " (record)")]
-  
-  dt_record_j[, part := ordered(part, levels = c("Swim",
-                                          "Ride",
-                                          "Run",
-                                          # "Swim (PB)",
-                                          # "Ride (PB)",
-                                          # "Run (PB)",
-                                          "Swim (record)",
-                                          "Ride (record)",
-                                          "Run (record)",
-                                          "Swim (invalid)",
-                                          "Ride (invalid)",
-                                          "Run (invalid)"
-  ))]
-  
   dt_record_j[, place_name := paste0(rank_pb_overall, " ", Name)]
   dt_record_j[(isPB_overall) & rank_pb_overall==1, place_name := paste0(place_overall_recalc, " ", Name, " (Season Record!)")]
   
@@ -655,7 +626,7 @@ for(j in c("full", "int")) {
                             "Race #: ", race_number,"\n",
                             "Date: ", date_ymd, "\n",
 
-                            part,
+                            part_plot,
                             ifelse(split_valid & !(cumulative_valid)," (valid)",""),
                             ": ", 
                             duration_hms_short,
@@ -673,7 +644,7 @@ for(j in c("full", "int")) {
                             )]
   
   g <- ggplot(dt_record_j,
-              aes(x = duration_mins, y = - rank_pb_overall, fill = part, col = part, group = Name, text = tooltext)) +
+              aes(x = duration_mins, y = - rank_pb_overall, fill = part_plot, col = part_plot, group = Name, text = tooltext)) +
     geom_col(orientation = "y", size = 0.3) +
     scale_x_continuous("Time (mins)", breaks = seq(0,150, 10), minor_breaks = seq(0,150, 5),position = "top") +
     scale_y_continuous("", breaks = -dt_record_j$rank_pb_overall,
