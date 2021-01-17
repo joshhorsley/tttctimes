@@ -528,25 +528,32 @@ for(k in athletes_ordered) {
                   "athlete_rank_split_Ride",
                   "athlete_rank_split_Run"))
     
+    
+    cols_retain_old_names <- c("total_overall_hms",
+                               "date_ymd",
+                               "race_number",
+                               "duration_hms_Swim",
+                               "duration_hms_Ride",
+                               "duration_hms_Run",
+                               "athlete_rank_split_Swim",
+                               "athlete_rank_split_Ride",
+                               "athlete_rank_split_Run")
+    
+    cols_retain_new_names <- c("Time",
+                     "Date",
+                     "Race #",
+                     "Swim",
+                     "Ride",
+                     "Run",
+                     "Rank (Swim)",
+                     "Rank (Ride)",
+                     "Rank (Run)")
+    
     setnames(dt_k_wide,
-             c("total_overall_hms",
-               "date_ymd",
-               "race_number",
-               "duration_hms_Swim",
-               "duration_hms_Ride",
-               "duration_hms_Run",
-               "athlete_rank_split_Swim",
-               "athlete_rank_split_Ride",
-               "athlete_rank_split_Run"),
-             c("Time",
-               "Date",
-               "Race #",
-               "Swim",
-               "Ride",
-               "Run",
-               "Rank (Swim)",
-               "Rank (Ride)",
-               "Rank (Run)"))
+             cols_retain_old_names,
+             cols_retain_new_names)
+    
+    col_ref_hide <- which(!(names(dt_k_wide) %in% c("Rank",cols_retain_new_names)))-1 # columns are indexed from 0 - row name?
     
 
     tab_k <- DT::datatable(dt_k_wide,
@@ -557,7 +564,9 @@ for(k in athletes_ordered) {
                   options = list(autoWidth=FALSE,
                                  paging=FALSE,
                                  dom = 'Brtp',
-                                 buttons = c('copy', 'csv', 'excel'))) %>% 
+                                 buttons = c('copy', 'csv', 'excel'),
+                                 columnDefs = 
+                                   list(list(visible=FALSE, targets=col_ref_hide)))) %>% 
       apply_col(tri_cols)
 
     
@@ -588,19 +597,26 @@ for(j in c("full", "int")) {
                 "date_ymd","race_number",
                 "duration_hms_Swim", "duration_hms_Ride","duration_hms_Run"))
   
+  cols_train_old_names <- c("total_overall_hms",
+                            "date_ymd",
+                            "race_number",
+                            "duration_hms_Swim",
+                            "duration_hms_Ride",
+                            "duration_hms_Run")
+  
+  cols_retain_new_names <-  c("Time",
+                              "Date",
+                              "Race #",
+                              "Swim",
+                              "Ride",
+                              "Run")
+  
   setnames(dt_record_j_wide,
-           c("total_overall_hms",
-             "date_ymd",
-             "race_number",
-             "duration_hms_Swim",
-             "duration_hms_Ride",
-             "duration_hms_Run"),
-           c("Time",
-             "Date",
-             "Race #",
-             "Swim",
-             "Ride",
-             "Run"))
+           cols_train_old_names,
+           cols_retain_new_names)
+  
+  col_ref_hide <- which(!(names(dt_record_j_wide) %in% c("Rank",cols_retain_new_names)))-1 # columns are indexed from 0 - row name?
+  
   
   tab_j <- DT::datatable(dt_record_j_wide,
                          rownames = FALSE,
@@ -610,7 +626,9 @@ for(j in c("full", "int")) {
                          options = list(autoWidth=FALSE,
                                         paging=FALSE,
                                         dom = 'Brtp',
-                                        buttons = c('copy', 'csv', 'excel'))) %>% 
+                                        buttons = c('copy', 'csv', 'excel'),
+                                        columnDefs = 
+                                          list(list(visible=FALSE, targets=col_ref_hide)))) %>% 
     apply_col(tri_cols)
   
   savepath = paste0(getwd(),"/",site_path_relative,"/tab_overall_",j,".html")
