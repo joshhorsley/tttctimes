@@ -13,10 +13,10 @@ race_number,date_ymd,race_type,cancelled,cancelled_reason
 12,12/12/20,Standard,TRUE,weather
 13,19/12/20,Standard,FALSE,
 14,26/12/20,Standard,TRUE,pool closure
-15,2/1/21,Standard,,
-16,9/1/21,Standard,,
-17,16/1/21,Standard,,
-18,23/1/21,Standard,,
+15,2/1/21,Standard,FALSE,
+16,9/1/21,Standard,FALSE,
+17,16/1/21,Standard,FALSE,
+18,23/1/21,Super Teams,FALSE,
 19,30/1/21,Standard,,
 20,6/2/21,Standard,,
 21,13/2/21,Standard,,
