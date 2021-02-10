@@ -1,0 +1,21 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Time	Lap 1	Lap 2	Lap 3	Difference	% Back	% Winning	% Average	% Median
+1	202	Rod Sewell	Rod	Sewell	Intermediate	31:33.5	5:36.1	20:29.6	5:27.8	-	-	100%	30.60%	29.45%
+2	57	Michelle Jones	Michelle	Jones	Intermediate	39:47.8	6:55.6	20:47.0	12:05.3	+8:14.3	+26.11%	79.30%	12.49%	11.03%
+3	22	Julie Lowe	Julie	Lowe	Intermediate	39:51.4	6:00.1	23:40.9	10:10.4	+8:17.9	+26.30%	79.18%	12.36%	10.90%
+4	244	Lydia Kuschmirz	Lydia	Kuschmirz	Intermediate	40:13.6	6:50.1	17:30.0	15:53.5	+8:40.1	+27.47%	78.45%	11.54%	10.07%
+5	208	Ava Thomson	Ava	Thomson	Intermediate	40:20.9	6:38.5	21:49.9	11:52.4	+8:47.4	+27.85%	78.21%	11.28%	9.80%
+6	215	William Taylor	William	Taylor	Intermediate	41:04.2	7:51.9	24:01.8	9:10.5	+9:30.7	+30.14%	76.84%	9.69%	8.18%
+7	281	Carol Ririnui	Carol	Ririnui	Intermediate	42:08.2	6:55.1	22:00.6	13:12.5	+10:34.7	+33.52%	74.90%	7.34%	5.80%
+8	207	Jamie Brindley	Jamie	Brindley	Intermediate	44:38.4	6:34.8	25:10.5	12:53.1	+13:04.9	+41.45%	70.70%	1.84%	0.20%
+9	239	Glenn Hind	Glenn	Hind	Intermediate	44:49.3	8:21.2	24:56.2	11:31.8	+13:15.8	+42.03%	70.41%	1.44%	-0.20%
+10	249	Robyn Barry	Robyn	Barry	Intermediate	46:14.1	7:01.1	24:48.9	14:24.0	+14:40.6	+46.51%	68.26%	-1.67%	-3.36%
+11	214	Timothy Taylor	Timothy	Taylor	Intermediate	46:20.8	7:37.3	24:51.8	13:51.7	+14:47.3	+46.86%	68.09%	-1.91%	-3.61%
+12	35	Judy Murray	Judy	Murray	Intermediate	46:36.4	8:04.9	25:07.1	13:24.4	+15:02.9	+47.68%	67.71%	-2.49%	-4.19%
+13	204	Lucas Nixon-Hind	Lucas	Nixon-Hind	Intermediate	46:45.2	7:28.5	29:07.5	10:09.2	+15:11.7	+48.15%	67.50%	-2.81%	-4.52%
+14	272	Cheryl Atkinson	Cheryl	Atkinson	Intermediate	47:54.1	7:25.6	26:12.1	14:16.4	+16:20.6	+51.79%	65.88%	-5.33%	-7.09%
+15	205	Karen Nixon-Hind	Karen	Nixon-Hind	Intermediate	49:37.9	8:37.9	28:08.2	12:51.8	+18:04.4	+57.27%	63.59%	-9.14%	-10.96%
+16	200	Steve West	Steve	West	Intermediate	1:19:41.3	5:56.4	44:30.9	29:14.0	+48:07.8	+152.51%	39.60%	-75.23%	-78.15%
+-	-	Corey Swan	Corey	Swan	Intermediate	DNS				-	-	-	-	-
+-	64	Wendy Sanders	Wendy	Sanders	Intermediate	DNS				-	-	-	-	-
+-	147	Remy Hawkins	Remy	Hawkins	Intermediate	DNS				-	-	-	-	-
+-	254	Darren Murray	Darren	Murray	Intermediate	DNS				-	-	-	-	-
