@@ -31,6 +31,6 @@ some_weeks_missing_int <-length(weeks_missing_int) !=0
 
 This is a completely unofficial test of visualising race results for [TwinTowns Triathlon Club](http://www.twintownstriathlon.org.au).
 
-Results are presented for each race ([Example: January 16](#r-2021-01-16)) and each competitor ([Example](#a-Tracy-Foyster)).
+Results are presented for each race ([Example: February 13](#r-2021-02-13)) and each competitor ([Example](#a-Tracy-Foyster)).
 
 The results on this website are based on publicly available data from the [club's webscorer page](https://www.webscorer.com/33755) and some guesses (for now) in places where the webscorer data appears inaccurate (e.g. split times unrealistic or missing). This is still a work-in-progress, let me know if I've guessed something wrong.

@@ -115,6 +115,7 @@ dt_all_long[Name %in% c("Amanda Hall"), Name := "Manda Hall"]
 dt_all_long[Name %in% c("Virginia Jones"), Name := "Ginny Jones"]
 dt_all_long[Name %in% c("Melanie DUFF"), Name := "Melanie Duff"]
 dt_all_long[Name %in% c("Jo COLJA"), Name := "Joanne Colja"]
+dt_all_long[Name %in% c("ZOE TAYLOR-WEST"), Name := "Zoe Taylor-West"]
 
 
 # Separate Names ----------------------------------------------------------
@@ -223,11 +224,11 @@ dt_all_long[, total_overall_hms_short := gsub("^0:","",total_overall_hms)]
 dt_all_long[(started) & part == "Run", cumulative_seconds := overall_seconds]
 
 
-
 # Course entry errors -----------------------------------------------------
 
 
 dt_all_long[race_number==3 & Name == "Lydia Kuschmirz", course := "int"]
+dt_all_long[race_number==21 & Name == "Colin Woodward", course := "int"]
 
 
 # Order names -------------------------------------------------------------
