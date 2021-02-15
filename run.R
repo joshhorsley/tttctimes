@@ -313,6 +313,9 @@ dt_all_long[is.na(isPB_cumulative), isPB_cumulative := FALSE]
 dt_all_long[(started) & (isPB_overall), rank_pb_overall := rank(total_overall_mins, ties.method = "first"), by = .(course, part)]
 dt_all_long[(started) & (isPB_split), rank_pb_split := rank(duration_mins, ties.method = "first"), by = .(course, part)]
 
+dt_all_long[(started), includes_pb_split := any(isPB_split), by = .(Name, course, race_number)]
+# dt_all_long[(started) & Name == "Des Gooda" & course=="full" & (includes_pb_split)]
+
 
 # Part naming -------------------------------------------------------------
 
@@ -641,31 +644,59 @@ for(k in athletes_ordered) {
 # Season record tables and plots ------------------------------------------
 
 
+for(j in c("full", "int","double")) {
+  
+  for(l in c("overall","Swim","Ride","Run")) {
+    
+  
+    if(l=="overall"){
+      
+      dt_record_j <- dt_all_long[(started) & (isPB_overall) & course==j][order(rank_pb_overall)]
+      dt_record_j[, Rank := rank_pb_split]
+      
+      
+      dt_record_j_wide <- dcast(dt_record_j, valid_overall + isPB_overall + rank_pb_overall + Name + total_overall_hms + date_ymd + race_number  ~ part,
+                                value.var = c("duration_hms","isPB_split", "split_valid","rank_pb_split","Rank",
+                                              "cumulative_valid"))
+      
 
-for(j in c("full", "int")) {
-  
-  dt_record_j <- dt_all_long[(started) & (isPB_overall) & course==j][order(rank_pb_overall)]
-  
-  dt_record_j_wide <- dcast(dt_record_j, valid_overall + rank_pb_overall + Name + total_overall_hms + date_ymd + race_number  ~ part,
-                            value.var = c("duration_hms","isPB_split", "split_valid","rank_pb_split",
-                                          "cumulative_valid"))
-  
-  dt_record_j_wide[, Rank := rank_pb_overall]
-  
-  
+    }
+    
+    if(l!="overall"){
+      
+      dt_record_j <- dt_all_long[(started) & (includes_pb_split) & course==j][order(part, rank_pb_split)]
+      dt_record_j[, Rank := rank_pb_split]
+      
+      dt_record_j_wide <- dcast(dt_record_j, valid_overall + isPB_overall + rank_pb_overall + Name + total_overall_hms + date_ymd + race_number  ~ part,
+                                value.var = c("duration_hms","isPB_split", "split_valid","rank_pb_split","Rank",
+                                              "cumulative_valid"))
+    }
+    
+  dt_record_j_wide[, Rank_overall := rank_pb_overall]
+    
+
   setcolorder(dt_record_j_wide,
-              c("Rank", "Name","total_overall_hms",
+              c(paste0("Rank_",l), "Name","total_overall_hms",
                 "date_ymd","race_number",
                 "duration_hms_Swim", "duration_hms_Ride","duration_hms_Run"))
   
-  cols_train_old_names <- c("total_overall_hms",
+
+  cols_train_old_names <- c("Rank_overall",
+                            "Rank_Swim",
+                            "Rank_Ride",
+                            "Rank_Run",
+                            "total_overall_hms",
                             "date_ymd",
                             "race_number",
                             "duration_hms_Swim",
                             "duration_hms_Ride",
                             "duration_hms_Run")
   
-  cols_retain_new_names <-  c("Time",
+  cols_retain_new_names <-  c("Rank (Overall)",
+                              "Rank (Swim)",
+                              "Rank (Ride)",
+                              "Rank (Run)",
+                              "Time",
                               "Date",
                               "Race #",
                               "Swim",
@@ -674,12 +705,19 @@ for(j in c("full", "int")) {
   
   setnames(dt_record_j_wide,
            cols_train_old_names,
-           cols_retain_new_names)
+           cols_retain_new_names,
+           skip_absent = TRUE)
   
-  col_ref_hide <- which(!(names(dt_record_j_wide) %in% c("Rank","Name",cols_retain_new_names)))-1 # columns are indexed from 0 - row name?
+  col_ref_hide <- which(!(names(dt_record_j_wide) %in% c("Name",cols_retain_new_names)))-1 # columns are indexed from 0 - row name?
   
   
-  tab_j <- DT::datatable(dt_record_j_wide,
+  # tab_j <- DT::datatable(dt_record_j_wide[(isPB_split_Swim)][order(rank_pb_split_Swim)],
+  # tab_j <- DT::datatable(dt_record_j_wide[(eval(quote(paste0("isPB_split_",l))))][order(eval(quote(paste0("rank_pb_split_",l))))],
+  tab_j <- DT::datatable(data = if(l=="overall") {
+    dt_record_j_wide
+    } else {
+      dt_record_j_wide[(get(paste0("isPB_split_",l)))][order(get(paste0("rank_pb_split_",l)))]
+      },
                          rownames = FALSE,
                          elementId = paste0("tab_record_", j),
                          # extensions = c('Buttons', 'Responsive'),
@@ -692,15 +730,16 @@ for(j in c("full", "int")) {
                                           list(list(visible=FALSE, targets=col_ref_hide)))) %>% 
     apply_col(tri_cols)
   
-  savepath = paste0(getwd(),"/",site_path_relative,"/tab_overall_",j,".html")
+  savepath = paste0(getwd(),"/",site_path_relative,"/tab_record_",l,"_",j,".html")
   saveWidget(tab_j, file = savepath,selfcontained = FALSE,libdir = libpath)
   
   
+  if(l=="overall"){
+    
+  
   # Plot
   dt_record_j[, place_name := paste0(rank_pb_overall, " ", Name)]
-  # dt_record_j[(isPB_overall) & rank_pb_overall==1, place_name := paste0(place_overall_recalc, " ", Name, " (Season Record!)")]
-  
-  
+
   dt_record_j[, tooltext := paste0(Name, "\n",
                             "Race #: ", race_number,"\n",
                             "Date: ", date_ymd, "\n",
@@ -756,6 +795,8 @@ for(j in c("full", "int")) {
   savepath = paste0(getwd(), "/",site_path_relative,"/plot_record_",j,".html")
   saveWidget(p, file = savepath ,selfcontained = FALSE,libdir = libpath)
   
+  }
+  }
 }
 
 # Export for website ------------------------------------------------------
@@ -768,6 +809,7 @@ saveRDS(dt_all_long, "data_derived/dt_all_long.rds")
 # Update website ----------------------------------------------------------
 
 
+source("make_record_rmd.R")
 source("make_race_rmd.R")
 source("make_athlete_rmd.R")
 bookdown::render_book("index.Rmd",output_dir = site_path_relative)

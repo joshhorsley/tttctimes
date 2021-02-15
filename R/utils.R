@@ -49,12 +49,12 @@ apply_col.datatables <- function(tab, tri_cols){
     
     {if("isPB_overall" %in% names(tab$x$data)){
       formatStyle(table = ., columns = "Time", valueColumns = "isPB_overall",
-                background = styleEqual(c(1),c(tri_cols$pb)))
+                background = styleEqual(TRUE,tri_cols$pb))
       } else {.}
       } %>% 
     
     formatStyle(columns = "Time", valueColumns = "rank_pb_overall",
-                background = styleEqual(c(1),c(tri_cols$record))) %>% 
+                background = styleEqual(1,tri_cols$record)) %>% 
     
     formatStyle(columns = "Time", valueColumns = "valid_overall",
                 background = styleEqual(FALSE, tri_cols$invalid)) %>%

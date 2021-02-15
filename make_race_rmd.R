@@ -89,4 +89,4 @@ htmltools::tags$iframe(
   
 }
 
-write(paste0(header, races),file = "01-races_generated.Rmd")
+write(paste0(header, races),file = "02-races_generated.Rmd")
