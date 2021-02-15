@@ -370,9 +370,9 @@ for(i in race_numbers) {
 
   # Plot
   dt_i[(valid_overall), place_name := paste0(place_overall_recalc," ", Name)]
-  dt_i[(valid_overall) & (isNewPB_overall), place_name := paste0(place_overall_recalc, " ", Name, " (New PB!)")]
-  dt_i[(valid_overall) & (isPB_overall), place_name := paste0(place_overall_recalc, " ", Name, " (Season PB!)")]
-  dt_i[(isPB_overall) & rank_pb_overall==1, place_name := paste0(place_overall_recalc, " ", Name, " (Season Record!)")]
+  # dt_i[(valid_overall) & (isNewPB_overall), place_name := paste0(place_overall_recalc, " ", Name, " (New PB!)")]
+  # dt_i[(valid_overall) & (isPB_overall), place_name := paste0(place_overall_recalc, " ", Name, " (Season PB!)")]
+  # dt_i[(isPB_overall) & rank_pb_overall==1, place_name := paste0(place_overall_recalc, " ", Name, " (Season Record!)")]
   dt_i[!(valid_overall), place_name := paste0("TBC ", Name)]
   
   dt_i[, tooltext := paste0(Name,
@@ -698,7 +698,7 @@ for(j in c("full", "int")) {
   
   # Plot
   dt_record_j[, place_name := paste0(rank_pb_overall, " ", Name)]
-  dt_record_j[(isPB_overall) & rank_pb_overall==1, place_name := paste0(place_overall_recalc, " ", Name, " (Season Record!)")]
+  # dt_record_j[(isPB_overall) & rank_pb_overall==1, place_name := paste0(place_overall_recalc, " ", Name, " (Season Record!)")]
   
   
   dt_record_j[, tooltext := paste0(Name, "\n",
