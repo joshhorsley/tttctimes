@@ -66,7 +66,7 @@ htmltools::tags$iframe(
 
 ### Detailed results for ',i_courses_nice[which(j==i_courses)],' course
 
-Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
 htmltools::tags$iframe(
