@@ -449,8 +449,8 @@ for(i in race_numbers) {
                              "duration_hms_Swim",
                              "duration_hms_Ride",
                              "duration_hms_Run",
-                             "place_lap_Ride",
                              "place_lap_Swim",
+                             "place_lap_Ride",
                              "place_lap_Run")
   
   cols_retain_new_names <- c("Time",
