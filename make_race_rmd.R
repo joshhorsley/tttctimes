@@ -45,6 +45,7 @@ paste0(
 '
 ## ',i_courses_nice[which(j==i_courses)],'
 
+
 ',
 
 '```{r}
@@ -58,7 +59,27 @@ htmltools::tags$iframe(
 )
 ```
     
-    '
+    ',
+
+# tables
+  '
+
+### Detailed results for ',i_courses_nice[which(j==i_courses)],' course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "',paste0("tab_race_", i,"_",j,".html"),'", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "',n_athletes*50+200,'"
+)
+```
+
+'
 )
   
     

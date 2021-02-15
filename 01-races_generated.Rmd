@@ -9,6 +9,7 @@
     
 ## Full
 
+
 ```{r}
 htmltools::tags$iframe(
   src = "2021-02-13_full.html", 
@@ -21,7 +22,25 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Full course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_21_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "2900"
+)
+```
+
+
 ## Intermediate
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -35,10 +54,28 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Intermediate course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_21_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "900"
+)
+```
+
+
 # 20: Feb 06 {#r-2021-02-06}
     
     
 ## Full
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -52,7 +89,25 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Full course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_20_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "2650"
+)
+```
+
+
 ## Intermediate
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -66,10 +121,28 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Intermediate course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_20_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "1000"
+)
+```
+
+
 # 19: Jan 30 {#r-2021-01-30}
     
     
 ## Full
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -83,7 +156,25 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Full course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_19_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "3400"
+)
+```
+
+
 ## Intermediate
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -97,10 +188,28 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Intermediate course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_19_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "950"
+)
+```
+
+
 # 17: Jan 16 {#r-2021-01-16}
     
     
 ## Full
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -114,7 +223,25 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Full course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_17_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "2050"
+)
+```
+
+
 ## Intermediate
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -128,10 +255,28 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Intermediate course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_17_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "600"
+)
+```
+
+
 # 16: Jan 09 {#r-2021-01-09}
     
     
 ## Full
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -145,7 +290,25 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Full course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_16_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "1800"
+)
+```
+
+
 ## Intermediate
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -159,10 +322,28 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Intermediate course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_16_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "650"
+)
+```
+
+
 # 15: Jan 02 {#r-2021-01-02}
     
     
 ## Full
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -176,7 +357,25 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Full course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_15_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "3000"
+)
+```
+
+
 ## Intermediate
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -190,10 +389,28 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Intermediate course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_15_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "750"
+)
+```
+
+
 # 13: Dec 19 {#r-2020-12-19}
     
     
 ## Full
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -207,7 +424,25 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Full course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_13_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "2450"
+)
+```
+
+
 ## Intermediate
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -221,10 +456,28 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Intermediate course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_13_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "700"
+)
+```
+
+
 # 11: Dec 05 {#r-2020-12-05}
     
     
 ## Full
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -238,7 +491,25 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Full course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_11_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "2600"
+)
+```
+
+
 ## Intermediate
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -252,10 +523,28 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Intermediate course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_11_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "950"
+)
+```
+
+
 # 10: Nov 28 {#r-2020-11-28}
     
     
 ## Full
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -269,7 +558,25 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Full course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_10_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "2100"
+)
+```
+
+
 ## Intermediate
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -283,10 +590,28 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Intermediate course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_10_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "750"
+)
+```
+
+
 # 7: Nov 07 {#r-2020-11-07}
     
     
 ## Full
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -300,7 +625,25 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Full course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_7_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "2950"
+)
+```
+
+
 ## Intermediate
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -314,10 +657,28 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Intermediate course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_7_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "1050"
+)
+```
+
+
 # 6: Oct 31 {#r-2020-10-31}
     
     
 ## Full
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -331,7 +692,25 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Full course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_6_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "2750"
+)
+```
+
+
 ## Intermediate
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -345,10 +724,28 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Intermediate course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_6_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "750"
+)
+```
+
+
 # 5: Oct 24 {#r-2020-10-24}
     
     
 ## Full
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -362,7 +759,25 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Full course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_5_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "3350"
+)
+```
+
+
 ## Intermediate
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -376,10 +791,28 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Intermediate course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_5_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "1000"
+)
+```
+
+
 # 4: Oct 17 - Double Distance {#r-2020-10-17}
     
     
 ## Double Distance
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -393,7 +826,25 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Double Distance course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_4_double.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "1300"
+)
+```
+
+
 ## Full
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -407,7 +858,25 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Full course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_4_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "2150"
+)
+```
+
+
 ## Intermediate
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -421,10 +890,28 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Intermediate course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_4_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "800"
+)
+```
+
+
 # 3: Oct 10 {#r-2020-10-10}
     
     
 ## Full
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -438,7 +925,25 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Full course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_3_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "2650"
+)
+```
+
+
 ## Intermediate
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -452,10 +957,28 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Intermediate course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_3_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "1050"
+)
+```
+
+
 # 2: Oct 03 {#r-2020-10-03}
     
     
 ## Full
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -469,7 +992,25 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Full course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_2_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "2700"
+)
+```
+
+
 ## Intermediate
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -483,10 +1024,28 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Intermediate course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_2_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "950"
+)
+```
+
+
 # 1: Sep 26 {#r-2020-09-26}
     
     
 ## Full
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -500,7 +1059,25 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Full course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_1_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "2800"
+)
+```
+
+
 ## Intermediate
+
 
 ```{r}
 htmltools::tags$iframe(
@@ -514,3 +1091,20 @@ htmltools::tags$iframe(
 ```
     
     
+
+### Detailed results for Intermediate course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_1_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "850"
+)
+```
+
+

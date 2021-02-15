@@ -353,7 +353,7 @@ if(!dir.exists(site_path_relative)) dir.create(site_path_relative)
 libpath <- file.path(getwd(), "docs/libs")
 
 
-# Race plots --------------------------------------------------------------
+# Races -------------------------------------------------------------------
 
 
 race_numbers <- sort(unique(dt_all_long$race_number))
@@ -366,6 +366,7 @@ for(i in race_numbers) {
     
   dt_i <- dt_all_long[race_number== i & course == j][(started)]
 
+  # Plot
   dt_i[(valid_overall), place_name := paste0(place_overall_recalc," ", Name)]
   dt_i[(valid_overall) & (isNewPB_overall), place_name := paste0(place_overall_recalc, " ", Name, " (New PB!)")]
   dt_i[(valid_overall) & (isPB_overall), place_name := paste0(place_overall_recalc, " ", Name, " (Season PB!)")]
@@ -425,6 +426,63 @@ for(i in race_numbers) {
   
   savepath = paste0(getwd(), "/",site_path_relative,"/",dt_i$date_ymd[1],"_",j,".html")
   saveWidget(p, file = savepath ,selfcontained = FALSE,libdir = libpath)
+  
+  
+  # Table
+  dt_i_wide <- dcast(dt_i, rank_pb_overall + Name + place_overall_recalc + athlete_rank_overall + total_overall_hms + date_ymd + race_number + valid_overall + isPB_overall + rank_pb_overall ~ part,
+                     value.var = c("duration_hms", "athlete_rank_split","isPB_split", "isPB_cumulative", "split_valid","place_lap_nice","place_lap",
+                                   "rank_pb_split","cumulative_valid"))[order(athlete_rank_overall)]
+  
+  dt_i_wide[, Rank := place_overall_recalc]
+  
+  setcolorder(dt_i_wide,
+              c("Rank", "Name","total_overall_hms",
+                "date_ymd","race_number",
+                "duration_hms_Swim", "duration_hms_Ride","duration_hms_Run",
+                "athlete_rank_split_Swim",
+                "athlete_rank_split_Ride",
+                "athlete_rank_split_Run"))
+  
+  cols_retain_old_names <- c("total_overall_hms",
+                             "duration_hms_Swim",
+                             "duration_hms_Ride",
+                             "duration_hms_Run",
+                             "place_lap_Ride",
+                             "place_lap_Swim",
+                             "place_lap_Run")
+  
+  cols_retain_new_names <- c("Time",
+                             "Swim",
+                             "Ride",
+                             "Run",
+                             "Rank (Swim)",
+                             "Rank (Ride)",
+                             "Rank (Run)")
+  
+  setnames(dt_i_wide,
+           cols_retain_old_names,
+           cols_retain_new_names)
+  
+  col_ref_hide <- which(!(names(dt_i_wide) %in% c("Rank","Name", cols_retain_new_names)))-1 # columns are indexed from 0 - row name?
+  
+  
+  tab_i <- DT::datatable(dt_i_wide[order(Rank)],
+                         rownames = FALSE,
+                         elementId = paste0("tab_race_",i, "_", j),
+                         # extensions = c('Buttons', 'Responsive'),
+                         extensions = c('Buttons'),
+                         options = list(autoWidth=FALSE,
+                                        paging=FALSE,
+                                        dom = 'Brtp',
+                                        buttons = c('copy', 'csv', 'excel'),
+                                        columnDefs = 
+                                          list(list(visible=FALSE, targets=col_ref_hide)))) %>% 
+    apply_col(tri_cols)
+  
+  savepath = paste0(getwd(),"/",site_path_relative,"/tab_race_",i,"_",j,".html")
+  saveWidget(tab_i, file = savepath,selfcontained = FALSE,libdir = libpath)
+  
+  
     
   }
 }

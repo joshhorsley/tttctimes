@@ -1,8 +1,10 @@
 bookdown::gitbook:
-  toc_depth: 1
+  toc_depth: 2
   css: style.css
   number_sections: false
   config:
+    toc:
+     collapse: section
     sharing:
       facebook: true
       linkedin: false
