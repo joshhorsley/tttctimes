@@ -171,8 +171,8 @@ race_number,date_ymd,Name,part,split_valid,cumulative_valid
 21,13/02/21,Scott Thomson,Ride,FALSE,FALSE
 21,13/02/21,Scott Thomson,Run,TRUE,FALSE
 ,,,,,
-21,13/02/21,Wendy Saunders,Ride,FALSE,FALSE
-21,13/02/21,Wendy Saunders,Run,FALSE,FALSE
+21,13/02/21,Wendy Sanders,Ride,FALSE,FALSE
+21,13/02/21,Wendy Sanders,Run,FALSE,FALSE
 ,,,,,
 21,13/02/21,Colin Woodward,Swim,FALSE,FALSE
 21,13/02/21,Colin Woodward,Ride,TRUE,FALSE

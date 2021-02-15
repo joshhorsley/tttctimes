@@ -33,3 +33,10 @@ pre code {
   width: 100%;
 }
 
+.book .book-body .navigation.navigation-prev {
+  display: none;
+}
+
+.book .book-body .navigation.navigation-next {
+  display: none;
+}

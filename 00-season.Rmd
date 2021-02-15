@@ -24,6 +24,8 @@ knitr::kable(dt_season_show[, .(`Race #`,
 
 # Best Times - Full
 
+## Overall
+
 The best valid times for each competitor are ranked in the plot and table below.
 
 Disclaimer: These results are based on webscorer data but are completely unofficial. `r if(some_weeks_missing_full) paste0("Results are not available for the following weeks: ", paste0(weeks_missing_full, collapse= ", "))`.
@@ -57,7 +59,10 @@ htmltools::tags$iframe(
 )
 ```
 
+
 # Best Times - Intermediate
+
+## Overall
 
 The best valid times for each competitor are ranked in the plot and table below.
 

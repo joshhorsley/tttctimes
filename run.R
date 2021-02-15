@@ -116,6 +116,8 @@ dt_all_long[Name %in% c("Virginia Jones"), Name := "Ginny Jones"]
 dt_all_long[Name %in% c("Melanie DUFF"), Name := "Melanie Duff"]
 dt_all_long[Name %in% c("Jo COLJA"), Name := "Joanne Colja"]
 dt_all_long[Name %in% c("ZOE TAYLOR-WEST"), Name := "Zoe Taylor-West"]
+dt_all_long[Name %in% c("Wendy Saunders"), Name := "Wendy Sanders"]
+dt_all_long[Name %in% c("Karen Nixon-Hind"), Name := "Karen Nixon"]
 
 
 # Separate Names ----------------------------------------------------------
@@ -674,7 +676,7 @@ for(j in c("full", "int")) {
            cols_train_old_names,
            cols_retain_new_names)
   
-  col_ref_hide <- which(!(names(dt_record_j_wide) %in% c("Rank",cols_retain_new_names)))-1 # columns are indexed from 0 - row name?
+  col_ref_hide <- which(!(names(dt_record_j_wide) %in% c("Rank","Name",cols_retain_new_names)))-1 # columns are indexed from 0 - row name?
   
   
   tab_j <- DT::datatable(dt_record_j_wide,

@@ -4034,45 +4034,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "550"
-)
-```
-
-
-# Karen Nixon-Hind {#a-Karen-Nixon-Hind}
-
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
-
-```{r}
-htmltools::tags$iframe(
-  src = "Karen Nixon-Hind.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
-```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
-
-
-
-
-### Detailed results for Intermediate course
-
-Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
-
-```{r}
-htmltools::tags$iframe(
-  src = "tab_Karen Nixon-Hind_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
+  height = "600"
 )
 ```
 
@@ -4693,45 +4655,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "800"
-)
-```
-
-
-# Wendy Saunders {#a-Wendy-Saunders}
-
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
-
-```{r}
-htmltools::tags$iframe(
-  src = "Wendy Saunders.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
-```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
-
-
-
-
-### Detailed results for Intermediate course
-
-Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
-
-```{r}
-htmltools::tags$iframe(
-  src = "tab_Wendy Saunders_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
+  height = "850"
 )
 ```
 
