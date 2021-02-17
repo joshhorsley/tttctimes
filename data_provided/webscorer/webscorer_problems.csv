@@ -15,7 +15,7 @@ race_number,date_ymd,Name,part,split_valid,cumulative_valid
 ,,,,,
 2,3/10/20,Kent Holmes,Swim,FALSE,FALSE
 2,3/10/20,Kent Holmes,Ride,FALSE,FALSE
-2,3/10/20,Kent Holmes,Run,FALSE,TRUE
+2,3/10/20,Kent Holmes,Run,FALSE,FALSE
 ,,,,,
 2,3/10/20,Rob Gillies,Run,FALSE,TRUE
 ,,,,,
@@ -42,6 +42,7 @@ race_number,date_ymd,Name,part,split_valid,cumulative_valid
 3,10/10/20,Val Lambard,Run,FALSE,FALSE
 3,10/10/20,Val Lambard,Ride,FALSE,FALSE
 ,,,,,
+3,10/10/20,Kent Holmes,Run,FALSE,FALSE
 ,,,,,
 4,17/10/20,Ben Hall,Ride,FALSE,FALSE
 4,17/10/20,Ben Hall,Run,FALSE,TRUE
@@ -51,9 +52,14 @@ race_number,date_ymd,Name,part,split_valid,cumulative_valid
 4,17/10/20,Robyn Barry,Ride,FALSE,FALSE
 4,17/10/20,Robyn Barry,Run,FALSE,TRUE
 ,,,,,
+4,17/10/20,Kent Holmes,Run,FALSE,FALSE
+,,,,,
 ,,,,,
 5,24/10/20,Craig Telling,Run,FALSE,FALSE
 5,24/10/20,Rob Gillies,Swim,FALSE,FALSE
+,,,,,
+5,24/10/20,Kent Holmes,Run,FALSE,FALSE
+,,,,,
 ,,,,,
 6,31/10/20,Nadja Kundrus-Little,Run,FALSE,FALSE
 ,,,,,
@@ -86,6 +92,8 @@ race_number,date_ymd,Name,part,split_valid,cumulative_valid
 ,,,,,
 11,5/12/20,Val Lambard,Ride,FALSE,FALSE
 11,5/12/20,Val Lambard,Run,FALSE,TRUE
+,,,,,
+11,5/12/20,Kent Holmes,Run,FALSE,FALSE
 ,,,,,
 ,,,,,
 13,19/12/20,Des Gooda,Swim,FALSE,FALSE
