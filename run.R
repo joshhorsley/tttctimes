@@ -118,6 +118,8 @@ dt_all_long[Name %in% c("Jo COLJA"), Name := "Joanne Colja"]
 dt_all_long[Name %in% c("ZOE TAYLOR-WEST"), Name := "Zoe Taylor-West"]
 dt_all_long[Name %in% c("Wendy Saunders"), Name := "Wendy Sanders"]
 dt_all_long[Name %in% c("Karen Nixon-Hind"), Name := "Karen Nixon"]
+dt_all_long[Name %in% c("Terence SIMPSON"), Name := "Terence Simpson"]
+dt_all_long[Name %in% c("Cassie HEASLIP"), Name := "Cassandra Heaslip"]
 
 
 # Separate Names ----------------------------------------------------------

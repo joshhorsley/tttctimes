@@ -152,36 +152,55 @@ race_number,date_ymd,Name,part,split_valid,cumulative_valid
 17,16/1/21,Des Gooda,Run,FALSE,FALSE
 ,,,,,
 ,,,,,
-19,30/01/21,Val Lambard,Ride,FALSE,FALSE
-19,30/01/21,Val Lambard,Run,FALSE,TRUE
+19,30/1/21,Val Lambard,Ride,FALSE,FALSE
+19,30/1/21,Val Lambard,Run,FALSE,TRUE
 ,,,,,
-19,30/01/21,Carol Ririnui,Swim,FALSE,FALSE
-19,30/01/21,Carol Ririnui,Ride,FALSE,TRUE
+19,30/1/21,Carol Ririnui,Swim,FALSE,FALSE
+19,30/1/21,Carol Ririnui,Ride,FALSE,TRUE
 ,,,,,
-19,30/01/21,Kipp Freeman,Swim,FALSE,FALSE
-19,30/01/21,Kipp Freeman,Ride,FALSE,TRUE
-,,,,,
-,,,,,
-20,06/02/21,Alex Gilks,Ride,FALSE,FALSE
-20,06/02/21,Alex Gilks,Run,FALSE,FALSE
-,,,,,
-20,06/02/21,Simon Bradbery,Run,FALSE,FALSE
-,,,,,
-20,06/02/21,Sharyn Klein,Run,FALSE,FALSE
-,,,,,
-20,06/02/21,Warren Copping,Run,FALSE,FALSE
-,,,,,
-20,06/02/21,Rod Sewell,Run,FALSE,FALSE
+19,30/1/21,Kipp Freeman,Swim,FALSE,FALSE
+19,30/1/21,Kipp Freeman,Ride,FALSE,TRUE
 ,,,,,
 ,,,,,
-21,13/02/21,Ryan Bray,Run,FALSE,FALSE
+20,6/2/21,Alex Gilks,Ride,FALSE,FALSE
+20,6/2/21,Alex Gilks,Run,FALSE,FALSE
 ,,,,,
-21,13/02/21,Scott Thomson,Ride,FALSE,FALSE
-21,13/02/21,Scott Thomson,Run,TRUE,FALSE
+20,6/2/21,Simon Bradbery,Run,FALSE,FALSE
 ,,,,,
-21,13/02/21,Wendy Sanders,Ride,FALSE,FALSE
-21,13/02/21,Wendy Sanders,Run,FALSE,FALSE
+20,6/2/21,Sharyn Klein,Run,FALSE,FALSE
 ,,,,,
-21,13/02/21,Colin Woodward,Swim,FALSE,FALSE
-21,13/02/21,Colin Woodward,Ride,TRUE,FALSE
-21,13/02/21,Colin Woodward,Run,TRUE,FALSE
+20,6/2/21,Warren Copping,Run,FALSE,FALSE
+,,,,,
+20,6/2/21,Rod Sewell,Run,FALSE,FALSE
+,,,,,
+,,,,,
+21,13/2/21,Ryan Bray,Run,FALSE,FALSE
+,,,,,
+21,13/2/21,Scott Thomson,Ride,FALSE,FALSE
+21,13/2/21,Scott Thomson,Run,TRUE,FALSE
+,,,,,
+21,13/2/21,Wendy Sanders,Ride,FALSE,FALSE
+21,13/2/21,Wendy Sanders,Run,FALSE,FALSE
+,,,,,
+21,13/2/21,Colin Woodward,Swim,FALSE,FALSE
+21,13/2/21,Colin Woodward,Ride,TRUE,FALSE
+21,13/2/21,Colin Woodward,Run,TRUE,FALSE
+,,,,,
+,,,,,
+22,20/2/21,Guy Davoren,Swim,FALSE,FALSE
+22,20/2/21,Guy Davoren,Ride,FALSE,FALSE
+22,20/2/21,Guy Davoren,Run,FALSE,TRUE
+,,,,,
+22,20/2/21,Lydia Kuschmirz,Swim,FALSE,FALSE
+22,20/2/21,Lydia Kuschmirz,Ride,FALSE,FALSE
+22,20/2/21,Lydia Kuschmirz,Run,FALSE,FALSE
+,,,,,
+22,20/2/21,Sam Colman,Ride,FALSE,FALSE
+22,20/2/21,Sam Colman,Run,TRUE,FALSE
+,,,,,
+22,20/2/21,Jack Hall,Ride,FALSE,FALSE
+22,20/2/21,Jack Hall,Run,TRUE,FALSE
+,,,,,
+22,20/2/21,Remy Hawkins,Swim,FALSE,FALSE
+22,20/2/21,Remy Hawkins,Ride,FALSE,FALSE
+22,20/2/21,Remy Hawkins,Run,FALSE,FALSE
