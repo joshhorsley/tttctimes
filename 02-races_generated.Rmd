@@ -4,6 +4,105 @@
 <!-- This Rmd file is created using make_race_rmd.R -->
 
 
+# 23: Feb 27 - Double Distance {#r-2021-02-27}
+    
+    
+## Double Distance
+
+
+```{r}
+htmltools::tags$iframe(
+  src = "2021-02-27_double.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "454"
+)
+```
+    
+    
+
+### Detailed results for Double Distance course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_23_double.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "1150"
+)
+```
+
+
+## Full
+
+
+```{r}
+htmltools::tags$iframe(
+  src = "2021-02-27_full.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "550"
+)
+```
+    
+    
+
+### Detailed results for Full course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_23_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "1450"
+)
+```
+
+
+## Intermediate
+
+
+```{r}
+htmltools::tags$iframe(
+  src = "2021-02-27_int.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "342"
+)
+```
+    
+    
+
+### Detailed results for Intermediate course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_23_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "800"
+)
+```
+
+
 # 22: Feb 20 {#r-2021-02-20}
     
     

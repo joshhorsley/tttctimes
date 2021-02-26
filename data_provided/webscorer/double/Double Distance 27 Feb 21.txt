@@ -1,0 +1,24 @@
+﻿Bib	Name	First name	Last name	Time	Lap 1	Lap 2	Lap 3	Start	Split 1	Split 2	Split 3
+159	Simon Harradence	Simon	Harradence	1:40:19.0	16:19.2	48:17.9	35:41.9	0:00.0	16:19.2	1:04:37.1	1:40:19.0
+62	Scott Thomson	Scott	Thomson	1:41:32.9	15:03.4	49:11.2	37:18.3	0:00.0	15:03.4	1:04:14.6	1:41:32.9
+157	Ben Courage	Ben	Courage	1:42:37.9	16:24.5	50:51.5	35:21.9	0:00.0	16:24.5	1:07:16.0	1:42:37.9
+47	Ben Hall	Ben	Hall	1:47:43.7	16:20.7	50:16.1	41:06.9	0:00.0	16:20.7	1:06:36.8	1:47:43.7
+212	Dean Webb	Dean	Webb	1:49:13.0	18:19.8	51:11.1	39:42.1	0:00.0	18:19.8	1:09:30.9	1:49:13.0
+2	Tracy Foyster	Tracy	Foyster	1:50:35.8	17:29.9	53:53.7	39:12.3	0:00.0	17:29.9	1:11:23.6	1:50:35.8
+174	Sarah Buchanan	Sarah	Buchanan	1:52:56.9	16:51.0	55:12.3	40:53.7	0:00.0	16:51.0	1:12:03.3	1:52:56.9
+89	Matt Lance	Matt	Lance	1:55:24.6	14:53.6	53:00.2	47:30.8	0:00.0	14:53.6	1:07:53.8	1:55:24.6
+46	Kyle Mooney	Kyle	Mooney	1:55:26.8	16:30.8	51:23.8	47:32.3	0:00.0	16:30.8	1:07:54.6	1:55:26.8
+104	Viv Wright	Viv	Wright	1:57:28.2	18:58.1	55:42.1	42:47.9	0:00.0	18:58.1	1:14:40.2	1:57:28.2
+30	Alex Torrance	Alex	Torrance	1:57:48.9	17:46.5	54:19.6	45:42.7	0:00.0	17:46.5	1:12:06.1	1:57:48.9
+20	Gerard Robards	Gerard	Robards	1:58:52.4	20:23.2	52:38.4	45:50.8	0:00.0	20:23.2	1:13:01.6	1:58:52.4
+72	Rob Worth	Rob	Worth	1:59:03.4	19:48.8	56:44.1	42:30.5	0:00.0	19:48.8	1:16:32.9	1:59:03.4
+117	Des Gooda	Des	Gooda	2:04:54.4	16:51.8	59:35.7	48:26.8	0:00.0	16:51.8	1:16:27.5	2:04:54.4
+17	Richard Mourant	Richard	Mourant	2:06:14.5	20:29.8	58:50.5	46:54.1	0:00.0	20:29.8	1:19:20.4	2:06:14.5
+80	Mark Collinson	Mark	Collinson	2:11:45.0	20:54.5	1:01:15.4	49:35.2	0:00.0	20:54.5	1:22:09.8	2:11:45.0
+18	Hollie Robards	Hollie	Robards	2:21:27.6	17:43.3	1:11:09.1	52:35.2	0:00.0	17:43.3	1:28:52.4	2:21:27.6
+32	Guy Davoren	Guy	Davoren	2:25:08.4	22:47.9	1:15:37.6	46:42.9	0:00.0	22:47.9	1:38:25.5	2:25:08.4
+105	Darren Jones	Darren	Jones	DNF	21:33.6	58:15.4	-	0:00.0	21:33.6	1:19:48.9	-
+206	Sam Colman	Sam	Colman	DNS							
+233	Kat Miller	Kat	Miller	DNS							
+234	Andrew Miller	Andrew	Miller	DNS							
+261	David Hogan	David	Hogan	DNS							

@@ -204,3 +204,6 @@ race_number,date_ymd,Name,part,split_valid,cumulative_valid
 22,20/2/21,Remy Hawkins,Swim,FALSE,FALSE
 22,20/2/21,Remy Hawkins,Ride,FALSE,FALSE
 22,20/2/21,Remy Hawkins,Run,FALSE,FALSE
+,,,,,
+,,,,,
+23,27/2/21,Darren Jones,Run,FALSE,FALSE

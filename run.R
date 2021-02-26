@@ -46,7 +46,7 @@ dt_season[course=="int", course_nice := "Intermediate"]
 dt_season[course=="double", course_nice := "Double Distance"]
 
 # load data
-dt_season[race_type=="Double Distance" & course == "double", path_webscorer := paste0("data_provided/webscorer/",course,"/Double Distance ", mday(date_ymd), " ", format(date_ymd, "%b"), " ", substring(year(date_ymd), 1,2), ".txt")]
+dt_season[race_type=="Double Distance" & course == "double", path_webscorer := paste0("data_provided/webscorer/",course,"/Double Distance ", mday(date_ymd), " ", format(date_ymd, "%b"), " ", substring(year(date_ymd), 3,4), ".txt")]
 dt_season[!(race_type=="Double Distance" & course == "double"), path_webscorer := paste0("data_provided/webscorer/",course,"/TTTC ", mday(date_ymd), " ", format(date_ymd, "%b"), " ", year(date_ymd), ".txt")]
 dt_season[, path_webscorer := gsub("Sep","Sept",path_webscorer)]
 dt_season[, have_results := file.exists(path_webscorer)]
@@ -120,6 +120,8 @@ dt_all_long[Name %in% c("Wendy Saunders"), Name := "Wendy Sanders"]
 dt_all_long[Name %in% c("Karen Nixon-Hind"), Name := "Karen Nixon"]
 dt_all_long[Name %in% c("Terence SIMPSON"), Name := "Terence Simpson"]
 dt_all_long[Name %in% c("Cassie HEASLIP"), Name := "Cassandra Heaslip"]
+dt_all_long[Name %in% c("Vaughan SKELLY"), Name := "Vaughan Skelly"]
+dt_all_long[Name %in% c("Scott BORNHOLT"), Name := "Scott Bornholt"]
 
 
 # Separate Names ----------------------------------------------------------

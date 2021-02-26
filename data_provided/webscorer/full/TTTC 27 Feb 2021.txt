@@ -1,0 +1,31 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Time	Lap 1	Lap 2	Lap 3	Difference	% Back	% Winning	% Average	% Median
+1	88	John King	John	King	Full	54:17.4	8:50.6	27:14.7	18:12.2	-	-	100%	22.19%	18.59%
+2	198	Aaron Neylan	Aaron	Neylan	Full	57:41.5	9:53.8	28:05.9	19:41.8	+3:24.1	+6.27%	94.10%	17.31%	13.49%
+3	7	Alex Gilks	Alex	Gilks	Full	58:14.9	9:07.1	28:54.7	20:13.2	+3:57.5	+7.29%	93.20%	16.51%	12.65%
+4	14	Clive Pearce	Clive	Pearce	Full	59:15.3	10:38.5	26:52.2	21:44.7	+4:57.9	+9.15%	91.62%	15.07%	11.14%
+5	107	Marcel Van Kampen	Marcel	Van Kampen	Full	1:00:25.7	8:19.3	28:15.2	23:51.1	+6:08.3	+11.31%	89.84%	13.39%	9.38%
+6	39	Vaughan SKELLY	Vaughan	SKELLY	Full	1:01:00.2	9:31.6	29:52.1	21:36.5	+6:42.8	+12.37%	89.00%	12.56%	8.52%
+7	99	Scott Styman	Scott	Styman	Full	1:01:17.5	9:13.0	31:23.0	20:41.5	+7:00.1	+12.90%	88.58%	12.15%	8.09%
+8	201	Tracey Sewell	Tracey	Sewell	Full	1:02:48.4	7:56.3	33:30.3	21:21.8	+8:31.0	+15.69%	86.44%	9.98%	5.82%
+9	112	Kent Holmes	Kent	Holmes	Full	1:05:08.9	9:41.7	30:06.0	25:21.2	+10:51.5	+20.00%	83.33%	6.62%	2.30%
+10	4	Jim Collins	Jim	Collins	Full	1:05:17.5	10:32.6	29:53.9	24:51.1	+11:00.1	+20.26%	83.15%	6.42%	2.09%
+11	13	Chris Watt	Chris	Watt	Full	1:06:25.7	10:29.2	32:22.6	23:33.9	+12:08.3	+22.36%	81.73%	4.79%	0.38%
+12	81	Scott BORNHOLT	Scott	BORNHOLT	Full	1:06:37.9	10:04.9	33:48.6	22:44.4	+12:20.5	+22.73%	81.48%	4.50%	0.08%
+13	10	Ginny Jones	Ginny	Jones	Full	1:06:41.1	9:27.0	32:32.0	24:42.2	+12:23.7	+22.83%	81.41%	4.42%	0.00%
+14	248	Philip Salter	Philip	Salter	Full	1:08:13.9	11:55.8	31:20.4	24:57.7	+13:56.5	+25.68%	79.57%	2.20%	-2.32%
+15	53	Joanne Colja	Joanne	Colja	Full	1:09:29.4	10:17.8	32:46.8	26:24.7	+15:12.0	+28.00%	78.13%	0.40%	-4.21%
+16	162	Peter Stowe	Peter	Stowe	Full	1:10:04.5	10:14.9	36:41.4	23:08.3	+15:47.1	+29.08%	77.47%	-0.44%	-5.08%
+17	202	Rod Sewell	Rod	Sewell	Full	1:13:29.2	9:12.6	33:34.3	30:42.4	+19:11.8	+35.36%	73.88%	-5.33%	-10.20%
+18	57	Michelle Jones	Michelle	Jones	Full	1:14:24.4	11:27.5	33:24.4	29:32.5	+20:07.0	+37.05%	72.96%	-6.65%	-11.58%
+19	250	Helen Murphy	Helen	Murphy	Full	1:18:06.1	9:23.8	39:40.3	29:02.0	+23:48.7	+43.86%	69.51%	-11.94%	-17.12%
+20	86	Warren Copping	Warren	Copping	Full	1:18:11.5	12:37.1	37:45.9	27:48.4	+23:54.1	+44.03%	69.43%	-12.07%	-17.26%
+21	70	Kev Bannerman	Kev	Bannerman	Full	1:19:41.6	8:28.1	33:34.4	37:39.2	+25:24.2	+46.79%	68.12%	-14.22%	-19.51%
+22	84	Wendy Wise	Wendy	Wise	Full	1:20:57.8	12:35.5	40:36.0	27:46.3	+26:40.4	+49.13%	67.06%	-16.04%	-21.41%
+23	263	Katie Glynn	Katie	Glynn	Full	1:22:12.0	13:06.7	41:55.0	27:10.4	+27:54.6	+51.41%	66.05%	-17.82%	-23.27%
+24	11	Rob Gillies	Rob	Gillies	Full	1:29:28.8	8:51.6	36:46.8	43:50.4	+35:11.4	+64.82%	60.67%	-28.25%	-34.18%
+25	76	Greg Freeman	Greg	Freeman	Full	1:34:43.6	13:44.4	45:42.1	35:17.1	+40:26.2	+74.48%	57.31%	-35.77%	-42.05%
+-	51	Sue Van Den Broek	Sue	Van Den Broek	Full	DNS				-	-	-	-	-
+-	85	Terence Simpson	Terence	Simpson	Full	DNS				-	-	-	-	-
+-	97	Kaleb Robards	Kaleb	Robards	Full	DNS				-	-	-	-	-
+-	207	Jamie Brindley	Jamie	Brindley	Full	DNS				-	-	-	-	-
+-	252	Caroline Hogan	Caroline	Hogan	Full	DNS				-	-	-	-	-

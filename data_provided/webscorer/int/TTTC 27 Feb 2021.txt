@@ -1,0 +1,18 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Time	Lap 1	Lap 2	Lap 3	Difference	% Back	% Winning	% Average	% Median
+1	63	Sebastian Thomson	Sebastian	Thomson	Intermediate	34:43.5	5:53.1	18:49.3	10:01.2	-	-	100%	22.09%	19.81%
+2	215	William Taylor	William	Taylor	Intermediate	37:34.5	6:45.5	22:24.5	8:24.5	+2:51.0	+8.21%	92.42%	15.70%	13.22%
+3	274	Josh Horsley	Josh	Horsley	Intermediate	38:12.6	6:15.1	18:47.4	13:10.1	+3:29.1	+10.04%	90.88%	14.27%	11.76%
+4	208	Ava Thomson	Ava	Thomson	Intermediate	39:10.3	6:49.5	21:36.9	10:44.0	+4:26.8	+12.81%	88.65%	12.11%	9.54%
+5	204	Lucas Nixon-Hind	Lucas	Nixon-Hind	Intermediate	39:20.7	7:12.8	22:03.0	10:05.0	+4:37.2	+13.30%	88.26%	11.73%	9.14%
+6	93	ZOE TAYLOR-WEST	ZOE	TAYLOR-WEST	Intermediate	41:24.8	5:40.4	24:14.6	11:29.9	+6:41.3	+19.26%	83.85%	7.08%	4.36%
+7	239	Glenn Hind	Glenn	Hind	Intermediate	45:11.3	8:05.4	25:20.7	11:45.1	+10:27.8	+30.13%	76.85%	-1.38%	-4.36%
+8	214	Timothy Taylor	Timothy	Taylor	Intermediate	46:43.0	7:10.3	25:49.4	13:43.3	+11:59.5	+34.53%	74.33%	-4.81%	-7.89%
+9	205	Karen Nixon	Karen	Nixon	Intermediate	47:42.3	8:32.3	26:53.2	12:16.8	+12:58.8	+37.38%	72.79%	-7.03%	-10.17%
+10	280	Ashleigh Murphy	Ashleigh	Murphy	Intermediate	49:13.2	6:56.2	27:31.0	14:46.0	+14:29.7	+41.74%	70.55%	-10.43%	-13.67%
+11	64	Wendy Sanders	Wendy	Sanders	Intermediate	55:48.8	8:37.8	29:31.1	17:39.9	+21:05.3	+60.73%	62.22%	-25.22%	-28.90%
+12	238	Lorraine Bassett	Lorraine	Bassett	Intermediate	59:46.2	10:46.4	30:00.0	18:59.8	+25:02.7	+72.12%	58.10%	-34.10%	-38.03%
+-	-	Isaac Bloor	Isaac	Bloor	Intermediate	DNS				-	-	-	-	-
+-	22	Julie Lowe	Julie	Lowe	Intermediate	DNS				-	-	-	-	-
+-	147	Remy Hawkins	Remy	Hawkins	Intermediate	DNS				-	-	-	-	-
+-	200	Steve West	Steve	West	Intermediate	DNS				-	-	-	-	-
+-	249	Robyn Barry	Robyn	Barry	Intermediate	DNS				-	-	-	-	-
