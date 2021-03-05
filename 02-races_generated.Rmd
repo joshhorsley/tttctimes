@@ -4,6 +4,73 @@
 <!-- This Rmd file is created using make_race_rmd.R -->
 
 
+# 24: Mar 06 {#r-2021-03-06}
+    
+    
+## Full
+
+
+```{r}
+htmltools::tags$iframe(
+  src = "2021-03-06_full.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "614"
+)
+```
+    
+    
+
+### Detailed results for Full course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_24_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "1650"
+)
+```
+
+
+## Intermediate
+
+
+```{r}
+htmltools::tags$iframe(
+  src = "2021-03-06_int.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "214"
+)
+```
+    
+    
+
+### Detailed results for Intermediate course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_24_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "400"
+)
+```
+
+
 # 23: Feb 27 - Double Distance {#r-2021-02-27}
     
     

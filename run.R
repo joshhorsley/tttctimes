@@ -122,6 +122,9 @@ dt_all_long[Name %in% c("Terence SIMPSON"), Name := "Terence Simpson"]
 dt_all_long[Name %in% c("Cassie HEASLIP"), Name := "Cassandra Heaslip"]
 dt_all_long[Name %in% c("Vaughan SKELLY"), Name := "Vaughan Skelly"]
 dt_all_long[Name %in% c("Scott BORNHOLT"), Name := "Scott Bornholt"]
+dt_all_long[Name %in% c("Ginny JONES"), Name := "Ginny Jones"]
+dt_all_long[Name %in% c("Greg FREEMAN"), Name := "Gregory Freeman"]
+
 
 
 # Separate Names ----------------------------------------------------------
