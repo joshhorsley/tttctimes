@@ -207,3 +207,9 @@ race_number,date_ymd,Name,part,split_valid,cumulative_valid
 ,,,,,
 ,,,,,
 23,27/2/21,Darren Jones,Run,FALSE,FALSE
+,,,,,
+,,,,,
+25,13/3/21,Rob Gillies,Swim,FALSE,FALSE
+,,,,,
+25,13/3/21,Marcus Fox,Ride,FALSE,FALSE
+25,13/3/21,Marcus Fox,Run,FALSE,TRUE

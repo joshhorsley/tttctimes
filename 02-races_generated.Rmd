@@ -4,6 +4,73 @@
 <!-- This Rmd file is created using make_race_rmd.R -->
 
 
+# 25: Mar 13 {#r-2021-03-13}
+    
+    
+## Full
+
+
+```{r}
+htmltools::tags$iframe(
+  src = "2021-03-13_full.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "774"
+)
+```
+    
+    
+
+### Detailed results for Full course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_25_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "2150"
+)
+```
+
+
+## Intermediate
+
+
+```{r}
+htmltools::tags$iframe(
+  src = "2021-03-13_int.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "406"
+)
+```
+    
+    
+
+### Detailed results for Intermediate course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_25_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "1000"
+)
+```
+
+
 # 24: Mar 06 {#r-2021-03-06}
     
     
