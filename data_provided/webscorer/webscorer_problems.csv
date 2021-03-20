@@ -213,3 +213,16 @@ race_number,date_ymd,Name,part,split_valid,cumulative_valid
 ,,,,,
 25,13/3/21,Marcus Fox,Ride,FALSE,FALSE
 25,13/3/21,Marcus Fox,Run,FALSE,TRUE
+,,,,,
+,,,,,
+26,20/3/21,Rowena Smith,Ride,FALSE,FALSE
+26,20/3/21,Rowena Smith,Run,FALSE,FALSE
+,,,,,
+26,20/3/21,Stuart McGill,Swim,FALSE,FALSE
+,,,,,
+26,20/3/21,Craig Telling,Swim,FALSE,FALSE
+26,20/3/21,Craig Telling,Ride,FALSE,TRUE
+,,,,,
+26,20/3/21,Kev Bannerman,Run,FALSE,FALSE
+,,,,,
+26,20/3/21,Robyn Barry,Run,FALSE,FALSE

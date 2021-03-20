@@ -41,13 +41,24 @@ dt_double <- dt_season[race_type=="Double Distance" & course == "int"]
 dt_double[, course := "double"]
 dt_season <- rbind(dt_season, dt_double)
 
+# Add club champsionship
+dt_season[, is_champ := FALSE]
+dt_champ <- dt_season[race_type=="Club Championships" & course == "full"]
+dt_champ[, course := "full"]
+dt_champ[, is_champ := TRUE]
+dt_season <- rbind(dt_season, dt_champ)
+
 dt_season[course=="full", course_nice := "Full"]
+dt_season[course=="full" & (is_champ), course_nice := "Club Championships"]
 dt_season[course=="int", course_nice := "Intermediate"]
 dt_season[course=="double", course_nice := "Double Distance"]
 
 # load data
 dt_season[race_type=="Double Distance" & course == "double", path_webscorer := paste0("data_provided/webscorer/",course,"/Double Distance ", mday(date_ymd), " ", format(date_ymd, "%b"), " ", substring(year(date_ymd), 3,4), ".txt")]
 dt_season[!(race_type=="Double Distance" & course == "double"), path_webscorer := paste0("data_provided/webscorer/",course,"/TTTC ", mday(date_ymd), " ", format(date_ymd, "%b"), " ", year(date_ymd), ".txt")]
+dt_season[(is_champ), path_webscorer := paste0("data_provided/webscorer/","champ","/TTTC ", mday(date_ymd), " ", format(date_ymd, "%b"), " ", year(date_ymd), ".txt")]
+
+
 dt_season[, path_webscorer := gsub("Sep","Sept",path_webscorer)]
 dt_season[, have_results := file.exists(path_webscorer)]
 
@@ -65,7 +76,7 @@ dt_all <- foreach(i=id_results, .combine = function(x,y) rbind(x,y,fill=TRUE)) %
   dt_season[i, .(row_id, dt_race[[1]])]
 }
 
-new_cols <- c("race_number", "date_ymd", "race_type", "course")
+new_cols <- c("race_number", "date_ymd", "race_type", "course", "is_champ")
 dt_all[dt_season, on = .(row_id), (new_cols) := mget(new_cols)]
 setcolorder(dt_all, new_cols)
 
@@ -86,7 +97,7 @@ dt_all[Swim %in% c("","-"), started := FALSE]
 # Convert to long
 dt_all_long <- melt.data.table(dt_all,
                                id.vars = c("race_number", "date_ymd", "race_type", "course",
-                                           "Name","place_import","time_overall_import","started"),
+                                           "Name","place_import","time_overall_import","started","is_champ"),
                                measure.vars = c("Swim",
                                                   "Ride",
                                                   "Run"),
@@ -117,11 +128,15 @@ dt_all_long[Name %in% c("Virginia Jones", "Ginny JONES"), Name := "Ginny Jones"]
 dt_all_long[Name %in% c("Aaron NEYLAN"), Name := "Aaron Neylan"]
 dt_all_long[Name %in% c("Karen Nixon-Hind"), Name := "Karen Nixon"]
 dt_all_long[Name %in% c("Stephen RING"), Name := "Stephen Ring"]
+dt_all_long[Name %in% c("Hollie ROBARDS"), Name := "Hollie Robards"]
 dt_all_long[Name %in% c("Philip SALTER"), Name := "Philip Salter"]
 dt_all_long[Name %in% c("Wendy Saunders"), Name := "Wendy Sanders"]
 dt_all_long[Name %in% c("Vaughan SKELLY"), Name := "Vaughan Skelly"]
 dt_all_long[Name %in% c("Terence SIMPSON"), Name := "Terence Simpson"]
 dt_all_long[Name %in% c("ZOE TAYLOR-WEST"), Name := "Zoe Taylor-West"]
+dt_all_long[Name %in% c("Scott THOMSON"), Name := "Scott Thomson"]
+dt_all_long[Name %in% c("Sebastian THOMSON"), Name := "Sebastian Thomson"]
+dt_all_long[Name %in% c("Ava THOMSON"), Name := "Ava Thomson"]
 dt_all_long[Name %in% c("Jo Ward"), Name := "Jolyon Ward"]
 
 
@@ -257,9 +272,9 @@ dt_all_long[(valid_overall), total_overall_sort := total_overall_mins]
 dt_all_long[!(valid_overall), total_overall_sort := NA]
 
 
-dt_all_long[(started), place_lap := as.integer(rank(duration_mins_sort, ties.method = "first")), by = .(race_number, course, part)]
-dt_all_long[(started), place_cum_recalc := as.integer(rank(total_mins_sort, ties.method = "first")), by = .(race_number, course, part)]
-dt_all_long[(started), place_overall_recalc := as.integer(rank(total_overall_sort, ties.method = "first")), by = .(race_number, course, part)]
+dt_all_long[(started), place_lap := as.integer(rank(duration_mins_sort, ties.method = "first")), by = .(race_number, course, part, is_champ)]
+dt_all_long[(started), place_cum_recalc := as.integer(rank(total_mins_sort, ties.method = "first")), by = .(race_number, course, part, is_champ)]
+dt_all_long[(started), place_overall_recalc := as.integer(rank(total_overall_sort, ties.method = "first")), by = .(race_number, course, part, is_champ)]
 
 dt_all_long[(started), athlete_rank_split := as.integer(rank(duration_mins_sort, ties.method = "first")), by = .(Name, course, part)]
 dt_all_long[(started), athlete_rank_cumulative := as.integer(rank(total_mins_sort, ties.method = "first")), by = .(Name, course, part)]
@@ -371,10 +386,17 @@ race_numbers <- sort(unique(dt_all_long$race_number))
 for(i in race_numbers) {
 
   i_courses <- dt_season[race_number==i]$course
+  i_is_champ <- dt_season[race_number==i]$is_champ
   
-  for( j in i_courses) {
+  j_options <- seq(length(i_courses))
+  
+  for( j_counter in j_options) {
     
-  dt_i <- dt_all_long[race_number== i & course == j][(started)]
+    j <- i_courses[j_counter]
+    j_is_champ <- i_is_champ[j_counter]
+    
+    
+  dt_i <- dt_all_long[race_number== i & course == j & j_is_champ == (is_champ)][(started)]
 
   # Plot
   dt_i[(valid_overall), place_name := paste0(place_overall_recalc," ", Name)]
@@ -434,7 +456,7 @@ for(i in race_numbers) {
     set_margin_plotly() %>% 
     clean_legend_names_plotly()
   
-  savepath = paste0(getwd(), "/",site_path_relative,"/",dt_i$date_ymd[1],"_",j,".html")
+  savepath = paste0(getwd(), "/",site_path_relative,"/",dt_i$date_ymd[1],"_",j,ifelse(j_is_champ, "_champ",""),".html")
   saveWidget(p, file = savepath ,selfcontained = FALSE,libdir = libpath)
   
   
@@ -489,7 +511,7 @@ for(i in race_numbers) {
                                           list(list(visible=FALSE, targets=col_ref_hide)))) %>% 
     apply_col(tri_cols)
   
-  savepath = paste0(getwd(),"/",site_path_relative,"/tab_race_",i,"_",j,".html")
+  savepath = paste0(getwd(),"/",site_path_relative,"/tab_race_",i,"_",j,ifelse(j_is_champ, "_champ",""),".html")
   saveWidget(tab_i, file = savepath,selfcontained = FALSE,libdir = libpath)
   
   

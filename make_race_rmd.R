@@ -19,15 +19,15 @@ races <- foreach (i=rev(race_numbers), .combine = paste0 ) %do% {
   
   i_race_type <- dt_season[race_number == i]$race_type[1]
   
-  # Available course results - double first if available
-  i_courses <- dt_season[race_number==i]$course
-  i_courses_nice <- dt_season[race_number==i]$course_nice
+  # Available course results - place club championship or double-distance first
   
-  if("double" %in% i_courses) {
-    i_courses <- c("double","full","int")
-    i_courses_nice <- c("Double Distance","Full","Intermediate")
-    }
+  dt_season_i <- dt_season[race_number==i][order(-is_champ,course )]
   
+  i_courses <- dt_season_i$course
+  i_courses_nice <- dt_season_i$course_nice
+  i_is_champ <- dt_season_i$is_champ
+  
+  j_options <- seq(length(i_courses))
   
   paste0(
     "
@@ -35,22 +35,26 @@ races <- foreach (i=rev(race_numbers), .combine = paste0 ) %do% {
 "# ", i,": ", i_date, ifelse(i_race_type=="Standard", "", paste0(" - ",i_race_type))," {#r-", i_date_file, "}
     
     ",
-  foreach (j=i_courses, .combine = paste0 ) %do% {
+  foreach (j_counter=j_options, .combine = paste0 ) %do% {
     
-    dt_i <- dt_all_long[race_number== i & course == j][(started)]
+    j <- i_courses[j_counter]
+    j_is_champ <- i_is_champ[j_counter]
+    
+    dt_i <- dt_all_long[race_number== i & course == j & j_is_champ == (is_champ)][(started)]
+    
     n_athletes <- length(unique(dt_i$Name))
     
     
 paste0(
 '
-## ',i_courses_nice[which(j==i_courses)],'
+## ',i_courses_nice[j_counter],'
 
 
 ',
 
 '```{r}
 htmltools::tags$iframe(
-  src = "',paste0(i_date_file,"_",j,".html"),'", 
+  src = "',paste0(i_date_file,"_",j,ifelse(j_is_champ, "_champ",""),".html"),'", 
   scrolling = "no", 
   seamless = "seamless",
   frameBorder = "0",
@@ -64,13 +68,13 @@ htmltools::tags$iframe(
 # tables
   '
 
-### Detailed results for ',i_courses_nice[which(j==i_courses)],' course
+### Detailed results for ',i_courses_nice[j_counter],' course
 
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
 htmltools::tags$iframe(
-  src = "',paste0("tab_race_", i,"_",j,".html"),'", 
+  src = "',paste0("tab_race_", i,"_",j,ifelse(j_is_champ, "_champ",""),".html"),'", 
   scrolling = "yes", 
   seamless = "seamless",
   frameBorder = "0",

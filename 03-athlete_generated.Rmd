@@ -341,7 +341,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "1150"
+  height = "1200"
 )
 ```
 
@@ -379,7 +379,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "950"
+  height = "1000"
 )
 ```
 
@@ -417,7 +417,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "800"
+  height = "850"
 )
 ```
 
@@ -852,7 +852,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "900"
+  height = "950"
 )
 ```
 
@@ -890,7 +890,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "1150"
+  height = "1200"
 )
 ```
 
@@ -966,7 +966,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "1050"
+  height = "1100"
 )
 ```
 
@@ -1021,7 +1021,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "800"
+  height = "850"
 )
 ```
 
@@ -1093,7 +1093,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "1050"
+  height = "1100"
 )
 ```
 
@@ -1452,7 +1452,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "1100"
+  height = "1150"
 )
 ```
 
@@ -1655,7 +1655,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "650"
+  height = "700"
 )
 ```
 
@@ -1900,7 +1900,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "950"
+  height = "1000"
 )
 ```
 
@@ -1955,7 +1955,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "1200"
+  height = "1250"
 )
 ```
 
@@ -2086,7 +2086,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "600"
+  height = "650"
 )
 ```
 
@@ -2162,7 +2162,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "500"
+  height = "550"
 )
 ```
 
@@ -2255,7 +2255,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "1100"
+  height = "1150"
 )
 ```
 
@@ -2348,7 +2348,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "350"
+  height = "400"
 )
 ```
 
@@ -2441,7 +2441,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "950"
+  height = "1000"
 )
 ```
 
@@ -2534,7 +2534,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "450"
+  height = "500"
 )
 ```
 
@@ -2572,7 +2572,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "700"
+  height = "750"
 )
 ```
 
@@ -2665,7 +2665,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "1050"
+  height = "1100"
 )
 ```
 
@@ -2741,7 +2741,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "1050"
+  height = "1100"
 )
 ```
 
@@ -2779,7 +2779,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "600"
+  height = "650"
 )
 ```
 
@@ -2944,7 +2944,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "400"
+  height = "450"
 )
 ```
 
@@ -3113,7 +3113,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "1100"
+  height = "1150"
 )
 ```
 
@@ -3168,7 +3168,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "400"
+  height = "450"
 )
 ```
 
@@ -3206,7 +3206,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "750"
+  height = "800"
 )
 ```
 
@@ -3244,7 +3244,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "1000"
+  height = "1050"
 )
 ```
 
@@ -3299,7 +3299,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "350"
+  height = "400"
 )
 ```
 
@@ -3413,7 +3413,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "800"
+  height = "850"
 )
 ```
 
@@ -3451,7 +3451,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "1000"
+  height = "1050"
 )
 ```
 
@@ -3485,6 +3485,44 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 ```{r}
 htmltools::tags$iframe(
   src = "tab_Matt Lance_double.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
+
+
+# Sam Leonard {#a-Sam-Leonard}
+
+All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+
+```{r}
+htmltools::tags$iframe(
+  src = "Sam Leonard.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "500"
+)
+```
+
+
+
+Please let me know if any split times have been incorrectly flagged as invalid.
+
+
+
+
+### Detailed results for Full course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Sam Leonard_full.html", 
   scrolling = "yes", 
   seamless = "seamless",
   frameBorder = "0",
@@ -3752,6 +3790,44 @@ htmltools::tags$iframe(
 ```
 
 
+# Stuart McGill {#a-Stuart-McGill}
+
+All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+
+```{r}
+htmltools::tags$iframe(
+  src = "Stuart McGill.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "500"
+)
+```
+
+
+
+Please let me know if any split times have been incorrectly flagged as invalid.
+
+
+
+
+### Detailed results for Full course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Stuart McGill_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
+)
+```
+
+
 # Bec McLucas {#a-Bec-McLucas}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -3895,7 +3971,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "900"
+  height = "950"
 )
 ```
 
@@ -4005,7 +4081,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "750"
+  height = "800"
 )
 ```
 
@@ -4098,7 +4174,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "850"
+  height = "900"
 )
 ```
 
@@ -4153,7 +4229,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "650"
+  height = "700"
 )
 ```
 
@@ -4453,7 +4529,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "300"
+  height = "350"
 )
 ```
 
@@ -4491,7 +4567,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "800"
+  height = "850"
 )
 ```
 
@@ -4529,7 +4605,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "1050"
+  height = "1100"
 )
 ```
 
@@ -4774,7 +4850,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "1000"
+  height = "1050"
 )
 ```
 
@@ -4850,7 +4926,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "400"
+  height = "450"
 )
 ```
 
@@ -4905,7 +4981,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "1050"
+  height = "1100"
 )
 ```
 
@@ -4960,7 +5036,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "1050"
+  height = "1100"
 )
 ```
 
@@ -5015,7 +5091,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "1150"
+  height = "1200"
 )
 ```
 
@@ -5091,7 +5167,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "850"
+  height = "900"
 )
 ```
 
@@ -5129,7 +5205,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "1100"
+  height = "1150"
 )
 ```
 
@@ -5167,7 +5243,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "950"
+  height = "1000"
 )
 ```
 
@@ -5205,7 +5281,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "800"
+  height = "850"
 )
 ```
 
@@ -5391,7 +5467,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "900"
+  height = "950"
 )
 ```
 
@@ -5429,7 +5505,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "1050"
+  height = "1100"
 )
 ```
 
@@ -5560,7 +5636,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "750"
+  height = "800"
 )
 ```
 
@@ -5653,7 +5729,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "750"
+  height = "800"
 )
 ```
 
@@ -5691,7 +5767,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "1050"
+  height = "1100"
 )
 ```
 
@@ -6029,7 +6105,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "800"
+  height = "850"
 )
 ```
 
@@ -6067,7 +6143,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "1150"
+  height = "1200"
 )
 ```
 
@@ -6105,7 +6181,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "1000"
+  height = "1050"
 )
 ```
 
@@ -6177,7 +6253,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "1100"
+  height = "1150"
 )
 ```
 
@@ -6249,7 +6325,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "800"
+  height = "850"
 )
 ```
 
@@ -6342,7 +6418,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "850"
+  height = "900"
 )
 ```
 
@@ -6381,6 +6457,44 @@ htmltools::tags$iframe(
   frameBorder = "0",
   width = "100%",
   height = "1200"
+)
+```
+
+
+# Joe Ward {#a-Joe-Ward}
+
+All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+
+```{r}
+htmltools::tags$iframe(
+  src = "Joe Ward.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "500"
+)
+```
+
+
+
+Please let me know if any split times have been incorrectly flagged as invalid.
+
+
+
+
+### Detailed results for Full course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_Joe Ward_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "250"
 )
 ```
 
@@ -6456,7 +6570,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "1000"
+  height = "1050"
 )
 ```
 
@@ -6570,7 +6684,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "850"
+  height = "900"
 )
 ```
 
@@ -6663,7 +6777,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "650"
+  height = "700"
 )
 ```
 
@@ -6832,7 +6946,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "800"
+  height = "850"
 )
 ```
 
@@ -6925,7 +7039,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "850"
+  height = "900"
 )
 ```
 
@@ -6980,7 +7094,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "1050"
+  height = "1100"
 )
 ```
 

@@ -1,0 +1,28 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Time	Lap 1	Lap 2	Lap 3	Difference	% Back	% Winning	% Average	% Median
+1	46	Kyle Mooney	Kyle	Mooney	Full	53:32.5	8:35.7	26:36.5	18:20.3	-	-	100%	23.43%	21.90%
+2	94	Danny Khazen	Danny	Khazen	Full	54:37.4	9:10.4	26:18.3	19:08.7	+1:04.9	+2.02%	98.02%	21.88%	20.32%
+3	151	Craig Telling	Craig	Telling	Full	57:52.1	17:10.7	21:12.7	19:28.7	+4:19.6	+8.08%	92.52%	17.24%	15.59%
+4	72	Rob Worth	Rob	Worth	Full	1:04:30.7	9:40.8	31:49.3	23:00.6	+10:58.2	+20.49%	83.00%	7.74%	5.90%
+5	80	Mark Collinson	Mark	Collinson	Full	1:07:01.9	11:01.6	32:17.9	23:42.3	+13:29.4	+25.20%	79.88%	4.14%	2.22%
+6	85	Terence Simpson	Terence	Simpson	Full	1:08:05.3	8:32.7	32:54.5	26:38.1	+14:32.8	+27.17%	78.64%	2.62%	0.68%
+7	123	Stuart McGill	Stuart	McGill	Full	1:08:33.3	3:20.5	39:15.4	25:57.3	+15:00.8	+28.04%	78.10%	1.96%	0.00%
+8	55	Mark Whiticker	Mark	Whiticker	Full	1:10:16.3	9:38.7	34:54.0	25:43.6	+16:43.8	+31.25%	76.19%	-0.50%	-2.50%
+9	243	Sam Leonard			Full	1:10:21.2	12:02.2	35:57.9	22:21.1	+16:48.7	+31.40%	76.10%	-0.62%	-2.62%
+10	252	Caroline Hogan	Caroline	Hogan	Full	1:11:46.5	12:26.5	35:35.3	23:44.7	+18:14.0	+34.05%	74.60%	-2.65%	-4.70%
+11	32	Guy Davoren	Guy	Davoren	Full	1:17:39.3	11:55.9	40:44.2	24:59.2	+24:06.8	+45.04%	68.95%	-11.06%	-13.27%
+12	115	Ross Salmon	Ross	Salmon	Full	1:26:21.0	19:49.9	38:19.0	28:12.1	+32:48.5	+61.28%	62.01%	-23.49%	-25.96%
+13	40	Joe Ward	Joe	Ward	Full	1:38:22.6	18:10.4	49:53.9	30:18.3	+44:50.1	+83.74%	54.43%	-40.69%	-43.50%
+-	5	Jenny Scaysbrook	Jenny	Scaysbrook	Full	DNS				-	-	-	-	-
+-	70	Kev Bannerman	Kev	Bannerman	Full	DNS	9:37.8	37:44.3		-	-	-	-	-
+-	86	Warren Copping	Warren	Copping	Full	DNS				-	-	-	-	-
+-	97	Kaleb Robards	Kaleb	Robards	Full	DNS				-	-	-	-	-
+-	106	Tim Eade	Tim	Eade	Full	DNS				-	-	-	-	-
+-	110	Rowena Smith	Rowena	Smith	Full	DNS	22:05.1			-	-	-	-	-
+-	139	Matthew Stanley	Matthew	Stanley	Full	DNS				-	-	-	-	-
+-	162	Peter Stowe	Peter	Stowe	Full	DNS				-	-	-	-	-
+-	218	Trudy Gadaleta	Trudy	Gadaleta	Full	DNS				-	-	-	-	-
+-	240	Sally Kingston	Sally	Kingston	Full	DNS				-	-	-	-	-
+-	248	Philip Salter	Philip	Salter	Full	DNS				-	-	-	-	-
+-	263	Katie Glynn	Katie	Glynn	Full	DNS				-	-	-	-	-
+-	281	Carol Ririnui	Carol	Ririnui	Full	DNS				-	-	-	-	-
+-	285	Lynette Nisbet	Lynette	Nisbet	Full	DNS				-	-	-	-	-

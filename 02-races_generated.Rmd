@@ -4,6 +4,105 @@
 <!-- This Rmd file is created using make_race_rmd.R -->
 
 
+# 26: Mar 20 - Club Championships {#r-2021-03-20}
+    
+    
+## Club Championships
+
+
+```{r}
+htmltools::tags$iframe(
+  src = "2021-03-20_full_champ.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "502"
+)
+```
+    
+    
+
+### Detailed results for Club Championships course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_26_full_champ.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "1300"
+)
+```
+
+
+## Full
+
+
+```{r}
+htmltools::tags$iframe(
+  src = "2021-03-20_full.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "390"
+)
+```
+    
+    
+
+### Detailed results for Full course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_26_full.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "950"
+)
+```
+
+
+## Intermediate
+
+
+```{r}
+htmltools::tags$iframe(
+  src = "2021-03-20_int.html", 
+  scrolling = "no", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "246"
+)
+```
+    
+    
+
+### Detailed results for Intermediate course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+
+```{r}
+htmltools::tags$iframe(
+  src = "tab_race_26_int.html", 
+  scrolling = "yes", 
+  seamless = "seamless",
+  frameBorder = "0",
+  width = "100%",
+  height = "500"
+)
+```
+
+
 # 25: Mar 13 {#r-2021-03-13}
     
     

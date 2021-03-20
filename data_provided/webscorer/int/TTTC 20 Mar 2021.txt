@@ -1,0 +1,17 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Time	Lap 1	Lap 2	Lap 3	Difference	% Back	% Winning	% Average	% Median
+1	63	Sebastian THOMSON	Sebastian	THOMSON	Intermediate	33:32.8	5:45.6	19:13.7	8:33.6	-	-	100%	12.53%	9.85%
+2	147	Remy Hawkins	Remy	Hawkins	Intermediate	33:41.2	5:13.3	19:25.7	9:02.2	+0:08.4	+0.42%	99.58%	12.17%	9.47%
+3	244	Lydia Kuschmirz			Intermediate	37:12.7	6:52.3	18:33.7	11:46.7	+3:39.9	+10.93%	90.15%	2.98%	0.00%
+4	208	Ava THOMSON	Ava	THOMSON	Intermediate	41:02.3	6:48.1	23:00.6	11:13.6	+7:29.5	+22.33%	81.74%	-7.00%	-10.28%
+5	280	Ashleigh Murphy	Ashleigh	Murphy	Intermediate	46:17.0	7:43.4	25:20.1	13:13.5	+12:44.2	+37.97%	72.48%	-20.68%	-24.38%
+-	-	Louise Warner	Louise	Warner	Intermediate	DNS				-	-	-	-	-
+-	50	Amanda Hall	Amanda	Hall	Intermediate	DNS				-	-	-	-	-
+-	57	Michelle Jones	Michelle	Jones	Intermediate	DNS				-	-	-	-	-
+-	64	Wendy Sanders	Wendy	Sanders	Intermediate	DNS				-	-	-	-	-
+-	204	Lucas Nixon-Hind	Lucas	Nixon-Hind	Intermediate	DNS				-	-	-	-	-
+-	205	Karen Nixon	Karen	Nixon	Intermediate	DNS				-	-	-	-	-
+-	238	Lorraine Bassett	Lorraine	Bassett	Intermediate	DNS				-	-	-	-	-
+-	239	Glenn Hind	Glenn	Hind	Intermediate	DNS				-	-	-	-	-
+-	249	Robyn Barry	Robyn	Barry	Intermediate	DNS	8:09.3	35:47.2		-	-	-	-	-
+-	259	Kylie Gibson	Kylie	Gibson	Intermediate	DNS				-	-	-	-	-
+-	274	Joshua Horsley	Joshua	Horsley	Intermediate	DNS				-	-	-	-	-
