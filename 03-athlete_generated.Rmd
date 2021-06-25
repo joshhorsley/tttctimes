@@ -6461,44 +6461,6 @@ htmltools::tags$iframe(
 ```
 
 
-# Joe Ward {#a-Joe-Ward}
-
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
-
-```{r}
-htmltools::tags$iframe(
-  src = "Joe Ward.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
-```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
-
-
-
-
-### Detailed results for Full course
-
-Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
-
-```{r}
-htmltools::tags$iframe(
-  src = "tab_Joe Ward_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
-```
-
-
 # Jolyon Ward {#a-Jolyon-Ward}
 
 All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
@@ -6532,7 +6494,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "600"
+  height = "650"
 )
 ```
 
