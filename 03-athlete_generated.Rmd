@@ -6,7 +6,7 @@
 
 # Adrian {#a-Adrian}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Adrian has entered 1 race this season, full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -18,10 +18,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -44,7 +40,7 @@ htmltools::tags$iframe(
 
 # Frank Adler {#a-Frank-Adler}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Frank has entered 3 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -56,10 +52,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -82,7 +74,7 @@ htmltools::tags$iframe(
 
 # Christian Andrews {#a-Christian-Andrews}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Christian has entered 7 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -94,10 +86,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -120,7 +108,7 @@ htmltools::tags$iframe(
 
 # Brett Archibald {#a-Brett-Archibald}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Brett has entered 1 race this season, intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -132,10 +120,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -158,7 +142,7 @@ htmltools::tags$iframe(
 
 # Sienna Archibald {#a-Sienna-Archibald}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Sienna has entered 1 race this season, intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -170,10 +154,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -196,7 +176,7 @@ htmltools::tags$iframe(
 
 # Andrew Armstrong {#a-Andrew-Armstrong}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Andrew has entered 2 races this season, both full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -208,10 +188,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -234,7 +210,7 @@ htmltools::tags$iframe(
 
 # Cheryl Atkinson {#a-Cheryl-Atkinson}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Cheryl has entered 5 races this season, all intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -246,10 +222,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -272,7 +244,7 @@ htmltools::tags$iframe(
 
 # Benjamin Austin {#a-Benjamin-Austin}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Benjamin has entered 2 races this season, both full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -284,10 +256,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -310,7 +278,7 @@ htmltools::tags$iframe(
 
 # Kev Bannerman {#a-Kev-Bannerman}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Kev has entered 20 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -322,10 +290,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -348,7 +312,7 @@ htmltools::tags$iframe(
 
 # Robyn Barry {#a-Robyn-Barry}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Robyn has entered 13 races this season, all intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -360,10 +324,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -386,7 +346,7 @@ htmltools::tags$iframe(
 
 # Lorraine Bassett {#a-Lorraine-Bassett}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Lorraine has entered 6 races this season, all intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -398,10 +358,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -424,7 +380,7 @@ htmltools::tags$iframe(
 
 # Greg Bemet {#a-Greg-Bemet}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Greg has entered 7 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -436,10 +392,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -462,7 +414,7 @@ htmltools::tags$iframe(
 
 # Jo-Anne Borgas {#a-Jo-Anne-Borgas}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Jo-Anne has entered 2 races this season, both intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -474,10 +426,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -500,7 +448,7 @@ htmltools::tags$iframe(
 
 # Scott Bornholt {#a-Scott-Bornholt}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Scott has entered 6 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -512,10 +460,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -538,7 +482,7 @@ htmltools::tags$iframe(
 
 # Simon Bradbery {#a-Simon-Bradbery}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Simon has entered 4 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -550,10 +494,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -576,7 +516,7 @@ htmltools::tags$iframe(
 
 # Daniel Bray {#a-Daniel-Bray}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Daniel has entered 2 races this season, both full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -588,10 +528,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -614,7 +550,7 @@ htmltools::tags$iframe(
 
 # Ryan Bray {#a-Ryan-Bray}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Ryan has entered 3 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -626,10 +562,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -652,7 +584,7 @@ htmltools::tags$iframe(
 
 # Jamie Brindley {#a-Jamie-Brindley}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Jamie has entered 11 races this season, 10 intermediate distance and 1 full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -664,10 +596,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -707,7 +635,7 @@ htmltools::tags$iframe(
 
 # Craig Broadhurst {#a-Craig-Broadhurst}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Craig has entered 3 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -719,10 +647,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -745,7 +669,7 @@ htmltools::tags$iframe(
 
 # Sarah Buchanan {#a-Sarah-Buchanan}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Sarah has entered 2 races this season, both double distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -757,10 +681,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -783,7 +703,7 @@ htmltools::tags$iframe(
 
 # Andrew Carr {#a-Andrew-Carr}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Andrew has entered 3 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -795,10 +715,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -821,7 +737,7 @@ htmltools::tags$iframe(
 
 # Joanne Colja {#a-Joanne-Colja}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Joanne has entered 15 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -833,10 +749,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -859,7 +771,7 @@ htmltools::tags$iframe(
 
 # Jim Collins {#a-Jim-Collins}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Jim has entered 19 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -871,10 +783,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -897,7 +805,7 @@ htmltools::tags$iframe(
 
 # Scott Collins {#a-Scott-Collins}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Scott has entered 1 race this season, full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -909,10 +817,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -935,7 +839,7 @@ htmltools::tags$iframe(
 
 # Mark Collinson {#a-Mark-Collinson}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Mark has entered 19 races this season, 18 full distance and 1 double distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -947,10 +851,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -990,7 +890,7 @@ htmltools::tags$iframe(
 
 # Sam Colman {#a-Sam-Colman}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Sam has entered 14 races this season, 12 full distance, 1 double distance, and 1 intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1002,10 +902,6 @@ htmltools::tags$iframe(
   height = "1500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -1062,7 +958,7 @@ htmltools::tags$iframe(
 
 # Warren Copping {#a-Warren-Copping}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Warren has entered 16 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1074,10 +970,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -1100,7 +992,7 @@ htmltools::tags$iframe(
 
 # Jasmine Costanza {#a-Jasmine-Costanza}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Jasmine has entered 1 race this season, intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1112,10 +1004,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -1138,7 +1026,7 @@ htmltools::tags$iframe(
 
 # Andrew Costello {#a-Andrew-Costello}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Andrew has entered 2 races this season, both full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1150,10 +1038,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -1176,7 +1060,7 @@ htmltools::tags$iframe(
 
 # Ben Courage {#a-Ben-Courage}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Ben has entered 5 races this season, 4 full distance and 1 double distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1188,10 +1072,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -1231,7 +1111,7 @@ htmltools::tags$iframe(
 
 # Stuart Crawford {#a-Stuart-Crawford}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Stuart has entered 9 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1243,10 +1123,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -1269,7 +1145,7 @@ htmltools::tags$iframe(
 
 # Peter Crowe {#a-Peter-Crowe}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Peter has entered 6 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1281,10 +1157,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -1307,7 +1179,7 @@ htmltools::tags$iframe(
 
 # Debbie Davies {#a-Debbie-Davies}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Debbie has entered 6 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1319,10 +1191,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -1345,7 +1213,7 @@ htmltools::tags$iframe(
 
 # Jonathan Davies {#a-Jonathan-Davies}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Jonathan has entered 7 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1357,10 +1225,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -1383,7 +1247,7 @@ htmltools::tags$iframe(
 
 # Erin Davoren {#a-Erin-Davoren}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Erin has entered 5 races this season, all intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1395,10 +1259,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -1421,7 +1281,7 @@ htmltools::tags$iframe(
 
 # Guy Davoren {#a-Guy-Davoren}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Guy has entered 18 races this season, 16 full distance, 1 intermediate distance, and 1 double distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1433,10 +1293,6 @@ htmltools::tags$iframe(
   height = "1500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -1493,7 +1349,7 @@ htmltools::tags$iframe(
 
 # David De Closey {#a-David-De-Closey}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+David has entered 18 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1505,10 +1361,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -1531,7 +1383,7 @@ htmltools::tags$iframe(
 
 # Ian Driffill {#a-Ian-Driffill}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Ian has entered 2 races this season, both full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1543,10 +1395,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -1569,7 +1417,7 @@ htmltools::tags$iframe(
 
 # Melanie Duff {#a-Melanie-Duff}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Melanie has entered 6 races this season, 4 full distance and 2 intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1581,10 +1429,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -1624,7 +1468,7 @@ htmltools::tags$iframe(
 
 # Tim Eade {#a-Tim-Eade}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Tim has entered 4 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1636,10 +1480,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -1662,7 +1502,7 @@ htmltools::tags$iframe(
 
 # Peta Edge {#a-Peta-Edge}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Peta has entered 4 races this season, all intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1674,10 +1514,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -1700,7 +1536,7 @@ htmltools::tags$iframe(
 
 # Kirsten Ellis {#a-Kirsten-Ellis}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Kirsten has entered 2 races this season, both full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1712,10 +1548,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -1738,7 +1570,7 @@ htmltools::tags$iframe(
 
 # David Emery {#a-David-Emery}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+David has entered 4 races this season, 1 double distance and 3 full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1750,10 +1582,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -1793,7 +1621,7 @@ htmltools::tags$iframe(
 
 # Nicholas Fawaz {#a-Nicholas-Fawaz}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Nicholas has entered 1 race this season, full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1805,10 +1633,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -1831,7 +1655,7 @@ htmltools::tags$iframe(
 
 # Marcus Fox {#a-Marcus-Fox}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Marcus has entered 1 race this season, intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1843,10 +1667,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -1869,7 +1689,7 @@ htmltools::tags$iframe(
 
 # Tracy Foyster {#a-Tracy-Foyster}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Tracy has entered 18 races this season, 16 full distance and 2 double distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1881,10 +1701,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -1924,7 +1740,7 @@ htmltools::tags$iframe(
 
 # Gregory Freeman {#a-Gregory-Freeman}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Gregory has entered 16 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1936,10 +1752,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -1962,7 +1774,7 @@ htmltools::tags$iframe(
 
 # Kipp Freeman {#a-Kipp-Freeman}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Kipp has entered 5 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1974,10 +1786,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -2000,7 +1808,7 @@ htmltools::tags$iframe(
 
 # Matt Gabb {#a-Matt-Gabb}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Matt has entered 5 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2012,10 +1820,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -2038,7 +1842,7 @@ htmltools::tags$iframe(
 
 # Trudy Gadaleta {#a-Trudy-Gadaleta}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Trudy has entered 8 races this season, 1 intermediate distance and 7 full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2050,10 +1854,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -2093,7 +1893,7 @@ htmltools::tags$iframe(
 
 # Alycia Garriock {#a-Alycia-Garriock}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Alycia has entered 2 races this season, both full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2105,10 +1905,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -2131,7 +1927,7 @@ htmltools::tags$iframe(
 
 # Kylie Gibson {#a-Kylie-Gibson}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Kylie has entered 9 races this season, 4 intermediate distance and 5 full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2143,10 +1939,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -2186,7 +1978,7 @@ htmltools::tags$iframe(
 
 # Tyler Gilbert {#a-Tyler-Gilbert}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Tyler has entered 1 race this season, full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2198,10 +1990,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -2224,7 +2012,7 @@ htmltools::tags$iframe(
 
 # Alex Gilks {#a-Alex-Gilks}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Alex has entered 15 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2236,10 +2024,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -2262,7 +2046,7 @@ htmltools::tags$iframe(
 
 # Rob Gillies {#a-Rob-Gillies}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Rob has entered 13 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2274,10 +2058,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -2300,7 +2080,7 @@ htmltools::tags$iframe(
 
 # Katie Glynn {#a-Katie-Glynn}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Katie has entered 10 races this season, 8 intermediate distance and 2 full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2312,10 +2092,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -2355,7 +2131,7 @@ htmltools::tags$iframe(
 
 # Des Gooda {#a-Des-Gooda}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Des has entered 10 races this season, 8 full distance and 2 double distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2367,10 +2143,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -2410,7 +2182,7 @@ htmltools::tags$iframe(
 
 # Ben Hall {#a-Ben-Hall}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Ben has entered 17 races this season, 15 full distance and 2 double distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2422,10 +2194,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -2465,7 +2233,7 @@ htmltools::tags$iframe(
 
 # Jack Hall {#a-Jack-Hall}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Jack has entered 1 race this season, intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2477,10 +2245,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -2503,7 +2267,7 @@ htmltools::tags$iframe(
 
 # Manda Hall {#a-Manda-Hall}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Manda has entered 2 races this season, both intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2515,10 +2279,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -2541,7 +2301,7 @@ htmltools::tags$iframe(
 
 # Simon Harradence {#a-Simon-Harradence}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Simon has entered 11 races this season, 9 full distance and 2 double distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2553,10 +2313,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -2596,7 +2352,7 @@ htmltools::tags$iframe(
 
 # Peter Harrington {#a-Peter-Harrington}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Peter has entered 1 race this season, full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2608,10 +2364,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -2634,7 +2386,7 @@ htmltools::tags$iframe(
 
 # Remy Hawkins {#a-Remy-Hawkins}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Remy has entered 14 races this season, all intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2646,10 +2398,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -2672,7 +2420,7 @@ htmltools::tags$iframe(
 
 # Cassandra Heaslip {#a-Cassandra-Heaslip}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Cassandra has entered 2 races this season, both full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2684,10 +2432,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -2710,7 +2454,7 @@ htmltools::tags$iframe(
 
 # Glenn Hind {#a-Glenn-Hind}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Glenn has entered 9 races this season, all intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2722,10 +2466,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -2748,7 +2488,7 @@ htmltools::tags$iframe(
 
 # Caroline Hogan {#a-Caroline-Hogan}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Caroline has entered 9 races this season, 7 full distance and 2 intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2760,10 +2500,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -2803,7 +2539,7 @@ htmltools::tags$iframe(
 
 # David Hogan {#a-David-Hogan}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+David has entered 7 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2812,13 +2548,9 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "1000"
+  height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -2839,26 +2571,9 @@ htmltools::tags$iframe(
 ```
 
 
-
-### Detailed results for Double Distance course
-
-Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
-
-```{r}
-htmltools::tags$iframe(
-  src = "tab_David Hogan_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
-```
-
-
 # Kent Holmes {#a-Kent-Holmes}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Kent has entered 12 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2870,10 +2585,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -2896,7 +2607,7 @@ htmltools::tags$iframe(
 
 # Josh Horsley {#a-Josh-Horsley}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Josh has entered 6 races this season, 3 full distance and 3 intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2908,10 +2619,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -2951,7 +2658,7 @@ htmltools::tags$iframe(
 
 # Haydn Jenkins {#a-Haydn-Jenkins}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Haydn has entered 1 race this season, full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -2963,10 +2670,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -2989,7 +2692,7 @@ htmltools::tags$iframe(
 
 # Dan Johnson {#a-Dan-Johnson}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Dan has entered 5 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3001,10 +2704,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -3027,7 +2726,7 @@ htmltools::tags$iframe(
 
 # Darren Jones {#a-Darren-Jones}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Darren has entered 20 races this season, 18 full distance and 2 double distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3039,10 +2738,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -3082,7 +2777,7 @@ htmltools::tags$iframe(
 
 # Ginny Jones {#a-Ginny-Jones}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Ginny has entered 17 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3094,10 +2789,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -3120,7 +2811,7 @@ htmltools::tags$iframe(
 
 # Michelle Jones {#a-Michelle-Jones}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Michelle has entered 8 races this season, 4 full distance and 4 intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3132,10 +2823,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -3175,7 +2862,7 @@ htmltools::tags$iframe(
 
 # Danny Khazen {#a-Danny-Khazen}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Danny has entered 8 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3187,10 +2874,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -3213,7 +2896,7 @@ htmltools::tags$iframe(
 
 # John King {#a-John-King}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+John has entered 16 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3225,10 +2908,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -3251,7 +2930,7 @@ htmltools::tags$iframe(
 
 # Sally Kingston {#a-Sally-Kingston}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Sally has entered 5 races this season, 3 intermediate distance and 2 full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3263,10 +2942,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -3306,7 +2981,7 @@ htmltools::tags$iframe(
 
 # Sharyn Klein {#a-Sharyn-Klein}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Sharyn has entered 12 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3318,10 +2993,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -3344,7 +3015,7 @@ htmltools::tags$iframe(
 
 # Nadja Kundrus-Little {#a-Nadja-Kundrus-Little}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Nadja has entered 3 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3356,10 +3027,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -3382,7 +3049,7 @@ htmltools::tags$iframe(
 
 # Lydia Kuschmirz {#a-Lydia-Kuschmirz}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Lydia has entered 12 races this season, all intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3394,10 +3061,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -3420,7 +3083,7 @@ htmltools::tags$iframe(
 
 # Val Lambard {#a-Val-Lambard}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Val has entered 13 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3432,10 +3095,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -3458,7 +3117,7 @@ htmltools::tags$iframe(
 
 # Matt Lance {#a-Matt-Lance}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Matt has entered 1 race this season, double distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3470,10 +3129,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -3496,7 +3151,7 @@ htmltools::tags$iframe(
 
 # Sam Leonard {#a-Sam-Leonard}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Sam has entered 1 race this season, full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3508,10 +3163,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -3534,7 +3185,7 @@ htmltools::tags$iframe(
 
 # Samantha Leonard {#a-Samantha-Leonard}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Samantha has entered 12 races this season, 11 full distance and 1 double distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3546,10 +3197,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -3589,7 +3236,7 @@ htmltools::tags$iframe(
 
 # Jennifer Love {#a-Jennifer-Love}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Jennifer has entered 4 races this season, 3 full distance and 1 intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3601,10 +3248,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -3644,7 +3287,7 @@ htmltools::tags$iframe(
 
 # Julie Lowe {#a-Julie-Lowe}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Julie has entered 3 races this season, 1 full distance and 2 intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3656,10 +3299,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -3699,7 +3338,7 @@ htmltools::tags$iframe(
 
 # Stuart Mason {#a-Stuart-Mason}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Stuart has entered 3 races this season, 1 intermediate distance and 2 full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3711,10 +3350,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -3754,7 +3389,7 @@ htmltools::tags$iframe(
 
 # David McEwan {#a-David-McEwan}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+David has entered 1 race this season, full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3766,10 +3401,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -3792,7 +3423,7 @@ htmltools::tags$iframe(
 
 # Stuart McGill {#a-Stuart-McGill}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Stuart has entered 1 race this season, full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3804,10 +3435,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -3830,7 +3457,7 @@ htmltools::tags$iframe(
 
 # Bec McLucas {#a-Bec-McLucas}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Bec has entered 5 races this season, 4 full distance and 1 double distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3842,10 +3469,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -3885,7 +3508,7 @@ htmltools::tags$iframe(
 
 # Andrew Miller {#a-Andrew-Miller}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Andrew has entered 11 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3894,13 +3517,9 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "1000"
+  height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -3921,26 +3540,9 @@ htmltools::tags$iframe(
 ```
 
 
-
-### Detailed results for Double Distance course
-
-Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
-
-```{r}
-htmltools::tags$iframe(
-  src = "tab_Andrew Miller_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
-```
-
-
 # Kat Miller {#a-Kat-Miller}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Kat has entered 12 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3949,13 +3551,9 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "1000"
+  height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -3976,26 +3574,9 @@ htmltools::tags$iframe(
 ```
 
 
-
-### Detailed results for Double Distance course
-
-Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
-
-```{r}
-htmltools::tags$iframe(
-  src = "tab_Kat Miller_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
-```
-
-
 # Michelle Miller {#a-Michelle-Miller}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Michelle has entered 5 races this season, 4 full distance and 1 double distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4007,10 +3588,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -4050,7 +3627,7 @@ htmltools::tags$iframe(
 
 # Kyle Mooney {#a-Kyle-Mooney}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Kyle has entered 10 races this season, 8 full distance and 2 double distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4062,10 +3639,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -4105,7 +3678,7 @@ htmltools::tags$iframe(
 
 # James Mourant {#a-James-Mourant}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+James has entered 4 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4117,10 +3690,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -4143,7 +3712,7 @@ htmltools::tags$iframe(
 
 # Richard Mourant {#a-Richard-Mourant}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Richard has entered 15 races this season, 13 full distance and 2 double distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4155,10 +3724,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -4198,7 +3763,7 @@ htmltools::tags$iframe(
 
 # Ashleigh Murphy {#a-Ashleigh-Murphy}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Ashleigh has entered 8 races this season, all intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4210,10 +3775,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -4236,7 +3797,7 @@ htmltools::tags$iframe(
 
 # Ben Murphy {#a-Ben-Murphy}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Ben has entered 1 race this season, full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4248,10 +3809,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -4274,7 +3831,7 @@ htmltools::tags$iframe(
 
 # Helen Murphy {#a-Helen-Murphy}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Helen has entered 10 races this season, 4 intermediate distance and 6 full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4286,10 +3843,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -4329,7 +3882,7 @@ htmltools::tags$iframe(
 
 # Darren Murray {#a-Darren-Murray}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Darren has entered 5 races this season, all intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4341,10 +3894,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -4367,7 +3916,7 @@ htmltools::tags$iframe(
 
 # Jeff Murray {#a-Jeff-Murray}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Jeff has entered 14 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4379,10 +3928,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -4405,7 +3950,7 @@ htmltools::tags$iframe(
 
 # Judy Murray {#a-Judy-Murray}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Judy has entered 12 races this season, all intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4417,10 +3962,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -4443,7 +3984,7 @@ htmltools::tags$iframe(
 
 # Aaron Neylan {#a-Aaron-Neylan}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Aaron has entered 14 races this season, 13 full distance and 1 double distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4455,10 +3996,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -4498,7 +4035,7 @@ htmltools::tags$iframe(
 
 # Lynette Nisbet {#a-Lynette-Nisbet}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Lynette has entered 2 races this season, both full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4510,10 +4047,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -4536,7 +4069,7 @@ htmltools::tags$iframe(
 
 # Karen Nixon {#a-Karen-Nixon}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Karen has entered 6 races this season, all intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4548,10 +4081,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -4574,7 +4103,7 @@ htmltools::tags$iframe(
 
 # Lucas Nixon-Hind {#a-Lucas-Nixon-Hind}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Lucas has entered 10 races this season, all intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4586,10 +4115,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -4612,7 +4137,7 @@ htmltools::tags$iframe(
 
 # Andy O'Reilly {#a-Andy-OReilly}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Andy has entered 1 race this season, full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4624,10 +4149,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -4650,7 +4171,7 @@ htmltools::tags$iframe(
 
 # Nick O'Reilly {#a-Nick-OReilly}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Nick has entered 6 races this season, 5 full distance and 1 double distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4662,10 +4183,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -4705,7 +4222,7 @@ htmltools::tags$iframe(
 
 # Trent Ousby {#a-Trent-Ousby}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Trent has entered 1 race this season, full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4717,10 +4234,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -4743,7 +4256,7 @@ htmltools::tags$iframe(
 
 # Annika Parker {#a-Annika-Parker}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Annika has entered 1 race this season, intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4755,10 +4268,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -4781,7 +4290,7 @@ htmltools::tags$iframe(
 
 # Glenn Payne {#a-Glenn-Payne}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Glenn has entered 3 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4793,10 +4302,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -4819,7 +4324,7 @@ htmltools::tags$iframe(
 
 # Clive Pearce {#a-Clive-Pearce}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Clive has entered 10 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4831,10 +4336,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -4857,7 +4358,7 @@ htmltools::tags$iframe(
 
 # Stephen Ring {#a-Stephen-Ring}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Stephen has entered 6 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4869,10 +4370,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -4895,7 +4392,7 @@ htmltools::tags$iframe(
 
 # Carol Ririnui {#a-Carol-Ririnui}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Carol has entered 4 races this season, 3 full distance and 1 intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4907,10 +4404,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -4950,7 +4443,7 @@ htmltools::tags$iframe(
 
 # Gerard Robards {#a-Gerard-Robards}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Gerard has entered 14 races this season, 12 full distance and 2 double distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -4962,10 +4455,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -5005,7 +4494,7 @@ htmltools::tags$iframe(
 
 # Hollie Robards {#a-Hollie-Robards}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Hollie has entered 13 races this season, 12 full distance and 1 double distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5017,10 +4506,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -5060,7 +4545,7 @@ htmltools::tags$iframe(
 
 # Kaleb Robards {#a-Kaleb-Robards}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Kaleb has entered 7 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5072,10 +4557,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -5098,7 +4579,7 @@ htmltools::tags$iframe(
 
 # Anthony Rushton {#a-Anthony-Rushton}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Anthony has entered 7 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5110,10 +4591,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -5136,7 +4613,7 @@ htmltools::tags$iframe(
 
 # Ross Salmon {#a-Ross-Salmon}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Ross has entered 13 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5148,10 +4625,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -5174,7 +4647,7 @@ htmltools::tags$iframe(
 
 # Philip Salter {#a-Philip-Salter}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Philip has entered 16 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5186,10 +4659,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -5212,7 +4681,7 @@ htmltools::tags$iframe(
 
 # Wendy Sanders {#a-Wendy-Sanders}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Wendy has entered 8 races this season, all intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5224,10 +4693,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -5250,7 +4715,7 @@ htmltools::tags$iframe(
 
 # Jenny Scaysbrook {#a-Jenny-Scaysbrook}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Jenny has entered 10 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5262,10 +4727,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -5288,7 +4749,7 @@ htmltools::tags$iframe(
 
 # Peter Serone {#a-Peter-Serone}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Peter has entered 8 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5300,10 +4761,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -5326,7 +4783,7 @@ htmltools::tags$iframe(
 
 # Rod Sewell {#a-Rod-Sewell}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Rod has entered 14 races this season, 12 intermediate distance and 2 full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5338,10 +4795,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -5381,7 +4834,7 @@ htmltools::tags$iframe(
 
 # Tracey Sewell {#a-Tracey-Sewell}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Tracey has entered 6 races this season, 5 full distance and 1 intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5393,10 +4846,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -5436,7 +4885,7 @@ htmltools::tags$iframe(
 
 # Terence Simpson {#a-Terence-Simpson}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Terence has entered 14 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5448,10 +4897,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -5474,7 +4919,7 @@ htmltools::tags$iframe(
 
 # Vaughan Skelly {#a-Vaughan-Skelly}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Vaughan has entered 13 races this season, 12 full distance and 1 double distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5486,10 +4931,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -5529,7 +4970,7 @@ htmltools::tags$iframe(
 
 # Alex Smith {#a-Alex-Smith}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Alex has entered 1 race this season, intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5541,10 +4982,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -5567,7 +5004,7 @@ htmltools::tags$iframe(
 
 # Geoff Smith {#a-Geoff-Smith}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Geoff has entered 1 race this season, intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5579,10 +5016,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -5605,7 +5038,7 @@ htmltools::tags$iframe(
 
 # Rowena Smith {#a-Rowena-Smith}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Rowena has entered 12 races this season, 11 full distance and 1 double distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5617,10 +5050,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -5660,7 +5089,7 @@ htmltools::tags$iframe(
 
 # Heidi Sowerby {#a-Heidi-Sowerby}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Heidi has entered 2 races this season, both full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5672,10 +5101,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -5698,7 +5123,7 @@ htmltools::tags$iframe(
 
 # Matthew Stanley {#a-Matthew-Stanley}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Matthew has entered 10 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5710,10 +5135,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -5736,7 +5157,7 @@ htmltools::tags$iframe(
 
 # Peter Stowe {#a-Peter-Stowe}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Peter has entered 12 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5748,10 +5169,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -5774,7 +5191,7 @@ htmltools::tags$iframe(
 
 # Kelly Styman {#a-Kelly-Styman}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Kelly has entered 1 race this season, intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5786,10 +5203,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -5812,7 +5225,7 @@ htmltools::tags$iframe(
 
 # Scott Styman {#a-Scott-Styman}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Scott has entered 14 races this season, 13 full distance and 1 intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5824,10 +5237,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -5867,7 +5276,7 @@ htmltools::tags$iframe(
 
 # Will Styman {#a-Will-Styman}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Will has entered 1 race this season, full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5879,10 +5288,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -5905,7 +5310,7 @@ htmltools::tags$iframe(
 
 # Corey Swan {#a-Corey-Swan}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Corey has entered 2 races this season, both full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5914,31 +5319,10 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "1000"
+  height = "500"
 )
 ```
 
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
-
-
-
-
-### Detailed results for Intermediate course
-
-Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
-
-```{r}
-htmltools::tags$iframe(
-  src = "tab_Corey Swan_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "300"
-)
-```
 
 
 
@@ -5960,7 +5344,7 @@ htmltools::tags$iframe(
 
 # Timothy Taylor {#a-Timothy-Taylor}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Timothy has entered 8 races this season, all intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -5972,10 +5356,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -5998,7 +5378,7 @@ htmltools::tags$iframe(
 
 # William Taylor {#a-William-Taylor}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+William has entered 8 races this season, all intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -6010,10 +5390,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -6036,7 +5412,7 @@ htmltools::tags$iframe(
 
 # Zoe Taylor-West {#a-Zoe-Taylor-West}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Zoe has entered 2 races this season, both intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -6048,10 +5424,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -6074,7 +5446,7 @@ htmltools::tags$iframe(
 
 # Craig Telling {#a-Craig-Telling}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Craig has entered 10 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -6086,10 +5458,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -6112,7 +5480,7 @@ htmltools::tags$iframe(
 
 # Ava Thomson {#a-Ava-Thomson}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Ava has entered 17 races this season, all intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -6124,10 +5492,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -6150,7 +5514,7 @@ htmltools::tags$iframe(
 
 # Scott Thomson {#a-Scott-Thomson}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Scott has entered 19 races this season, 16 full distance, 2 double distance, and 1 intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -6162,10 +5526,6 @@ htmltools::tags$iframe(
   height = "1500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -6222,7 +5582,7 @@ htmltools::tags$iframe(
 
 # Sebastian Thomson {#a-Sebastian-Thomson}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Sebastian has entered 17 races this season, all intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -6231,13 +5591,9 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "1000"
+  height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -6258,26 +5614,9 @@ htmltools::tags$iframe(
 ```
 
 
-
-### Detailed results for Full course
-
-Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
-
-```{r}
-htmltools::tags$iframe(
-  src = "tab_Sebastian Thomson_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
-```
-
-
 # Alex Torrance {#a-Alex-Torrance}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Alex has entered 13 races this season, 2 double distance and 11 full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -6289,10 +5628,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -6332,7 +5667,7 @@ htmltools::tags$iframe(
 
 # Robert Townsend {#a-Robert-Townsend}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Robert has entered 2 races this season, 1 intermediate distance and 1 full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -6344,10 +5679,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -6387,7 +5718,7 @@ htmltools::tags$iframe(
 
 # Sue Van Den Broek {#a-Sue-Van-Den-Broek}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Sue has entered 11 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -6399,10 +5730,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -6425,7 +5752,7 @@ htmltools::tags$iframe(
 
 # Marcel Van Kampen {#a-Marcel-Van-Kampen}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Marcel has entered 18 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -6437,10 +5764,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -6463,7 +5786,7 @@ htmltools::tags$iframe(
 
 # Jolyon Ward {#a-Jolyon-Ward}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Jolyon has entered 9 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -6475,10 +5798,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -6501,7 +5820,7 @@ htmltools::tags$iframe(
 
 # Danny Warner {#a-Danny-Warner}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Danny has entered 12 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -6513,10 +5832,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -6539,7 +5854,7 @@ htmltools::tags$iframe(
 
 # Lisa Warner {#a-Lisa-Warner}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Lisa has entered 7 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -6551,10 +5866,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -6577,7 +5888,7 @@ htmltools::tags$iframe(
 
 # Chris Watt {#a-Chris-Watt}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Chris has entered 5 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -6589,10 +5900,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -6615,7 +5922,7 @@ htmltools::tags$iframe(
 
 # Dean Webb {#a-Dean-Webb}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Dean has entered 12 races this season, 10 full distance and 2 double distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -6627,10 +5934,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -6670,7 +5973,7 @@ htmltools::tags$iframe(
 
 # Steve West {#a-Steve-West}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Steve has entered 7 races this season, all intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -6682,10 +5985,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -6708,7 +6007,7 @@ htmltools::tags$iframe(
 
 # Mark Whiticker {#a-Mark-Whiticker}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Mark has entered 9 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -6720,10 +6019,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -6746,7 +6041,7 @@ htmltools::tags$iframe(
 
 # Scott Wildin {#a-Scott-Wildin}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Scott has entered 4 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -6758,10 +6053,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -6784,7 +6075,7 @@ htmltools::tags$iframe(
 
 # Greg Williamson {#a-Greg-Williamson}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Greg has entered 3 races this season, 1 full distance and 2 intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -6796,10 +6087,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -6839,7 +6126,7 @@ htmltools::tags$iframe(
 
 # Marcus Williamson {#a-Marcus-Williamson}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Marcus has entered 2 races this season, both intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -6851,10 +6138,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -6877,7 +6160,7 @@ htmltools::tags$iframe(
 
 # Wendy Wise {#a-Wendy-Wise}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Wendy has entered 13 races this season, all full distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -6889,10 +6172,6 @@ htmltools::tags$iframe(
   height = "500"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -6915,7 +6194,7 @@ htmltools::tags$iframe(
 
 # Colin Woodward {#a-Colin-Woodward}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Colin has entered 4 races this season, 3 full distance and 1 intermediate distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -6927,10 +6206,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -6970,7 +6245,7 @@ htmltools::tags$iframe(
 
 # Rob Worth {#a-Rob-Worth}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Rob has entered 11 races this season, 9 full distance and 2 double distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -6982,10 +6257,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 
@@ -7025,7 +6296,7 @@ htmltools::tags$iframe(
 
 # Viv Wright {#a-Viv-Wright}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+Viv has entered 18 races this season, 17 full distance and 1 double distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -7037,10 +6308,6 @@ htmltools::tags$iframe(
   height = "1000"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 

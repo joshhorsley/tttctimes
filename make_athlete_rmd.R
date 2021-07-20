@@ -18,19 +18,64 @@ repeated <- foreach (k=athletes_ordered, .combine = paste0 ) %do% {
   
   k_ref <- gsub(pattern = " ", "-", k)  
   k_ref <- gsub(pattern = "'", "", k_ref) 
-
-  k_courses <- unique(dt_all_long[Name==k, .(course)]$course)
+  
+  dt_all_long_athlete <- dt_all_long[Name==k & (started)]
+  
+  name_first <- dt_all_long_athlete$name_first[1]
+  
+  k_courses <- unique(dt_all_long_athlete$course)
   n_courses <- length(k_courses)
+  
+  n_entries <- length(unique(dt_all_long_athlete$race_number))
+  
+  
+  dt_entry_type <- dt_all_long_athlete[part=="Swim", .N, by = course]
+  
+  dt_entry_type[course!="int", course_nice := course]
+  dt_entry_type[course=="int", course_nice :="intermediate"]
+  
+  dt_entry_type[, sentence := paste0(N, " ", course_nice, " distance")]
+  
+  type_summary <- if(nrow(dt_entry_type)==3) {
+    
+    paste0(paste0(dt_entry_type$sentence[1:2], collapse = ", "), ", and ", dt_entry_type$sentence[3])
+    } else {
+      if(nrow(dt_entry_type)==2) {
+        paste0(dt_entry_type$sentence, collapse = " and ")
+      } else {
+        if(n_entries==1) {
+          paste0(dt_entry_type$course_nice, " distance")
+        } else {
+          if(n_entries==2){
+            paste0("both ", dt_entry_type$course_nice, " distance")
+          } else {
+            paste0("all ", dt_entry_type$course_nice, " distance")
+          }
+        }
+      }
+    }
+  
+  
+  
+  
 
   
-  
+  summary_sentence <- paste0(name_first,
+                             " has entered ",
+                             n_entries,
+                             " ",
+                             ifelse(n_entries==1, "race", "races"),
+                             " this season, ",
+                             type_summary,
+                             "."
+                             )
   
   paste0(
     "
 ",
 "# ", k, " {#a-", k_ref, "}
 
-All races in the season are shown below, if more than one type of course (Full, Intermediate, or Double Distance) has been entered then separate plots are shown.
+",summary_sentence,"
 
 ",
 
@@ -44,10 +89,6 @@ htmltools::tags$iframe(
   height = "',500*n_courses,'"
 )
 ```
-
-
-
-Please let me know if any split times have been incorrectly flagged as invalid.
 
 
 ',
