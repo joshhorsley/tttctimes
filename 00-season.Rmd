@@ -4,7 +4,7 @@
 
 ```{r}
 
-dt_season_show <- dt_season[course=='full', .(`Race #` = race_number,
+dt_season_show <- dt_season[course=='full' & !(is_champ), .(`Race #` = race_number,
                             Date = date_ymd,
                             `Event type` = race_type,
                             cancelled,
