@@ -9,6 +9,7 @@
     
 ## Club Championships
 
+22 competitors entered the course, achieving 10 new overall PBs and 21 new split PBs: 5 in the pool, 8 on the bike, and 8 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -41,6 +42,7 @@ htmltools::tags$iframe(
 
 ## Full
 
+15 competitors entered the course, achieving 1 new split PBs: 1 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -73,6 +75,7 @@ htmltools::tags$iframe(
 
 ## Intermediate
 
+6 competitors entered the course, achieving 1 new overall PBs and 3 new split PBs: 3 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -108,6 +111,7 @@ htmltools::tags$iframe(
     
 ## Full
 
+39 competitors entered the course, achieving 11 new overall PBs and 29 new split PBs: 9 in the pool, 11 on the bike, and 9 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -140,6 +144,7 @@ htmltools::tags$iframe(
 
 ## Intermediate
 
+16 competitors entered the course, achieving 3 new overall PBs and 7 new split PBs: 3 in the pool, 2 on the bike, and 2 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -175,6 +180,7 @@ htmltools::tags$iframe(
     
 ## Full
 
+29 competitors entered the course, achieving 4 new overall PBs and 12 new split PBs: 4 in the pool, 3 on the bike, and 5 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -207,6 +213,7 @@ htmltools::tags$iframe(
 
 ## Intermediate
 
+4 competitors entered the course, achieving 1 new overall PBs and 1 new split PBs: 1 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -242,6 +249,7 @@ htmltools::tags$iframe(
     
 ## Double Distance
 
+19 competitors entered the course, achieving 6 new overall PBs and 22 new split PBs: 8 in the pool, 8 on the bike, and 6 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -274,6 +282,7 @@ htmltools::tags$iframe(
 
 ## Full
 
+25 competitors entered the course, achieving 5 new overall PBs and 11 new split PBs: 3 in the pool, 3 on the bike, and 5 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -306,6 +315,7 @@ htmltools::tags$iframe(
 
 ## Intermediate
 
+12 competitors entered the course, achieving 3 new overall PBs and 9 new split PBs: 1 in the pool, 6 on the bike, and 2 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -341,6 +351,7 @@ htmltools::tags$iframe(
     
 ## Full
 
+43 competitors entered the course, achieving 2 new overall PBs and 11 new split PBs: 4 in the pool, 2 on the bike, and 5 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -373,6 +384,7 @@ htmltools::tags$iframe(
 
 ## Intermediate
 
+10 competitors entered the course, achieving 2 new overall PBs and 7 new split PBs: 2 in the pool, 2 on the bike, and 3 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -408,6 +420,7 @@ htmltools::tags$iframe(
     
 ## Full
 
+54 competitors entered the course, achieving 14 new overall PBs and 35 new split PBs: 11 in the pool, 17 on the bike, and 7 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -440,6 +453,7 @@ htmltools::tags$iframe(
 
 ## Intermediate
 
+14 competitors entered the course, achieving 5 new overall PBs and 8 new split PBs: 2 in the pool, 3 on the bike, and 3 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -475,6 +489,7 @@ htmltools::tags$iframe(
     
 ## Full
 
+49 competitors entered the course, achieving 15 new overall PBs and 35 new split PBs: 3 in the pool, 14 on the bike, and 18 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -507,6 +522,7 @@ htmltools::tags$iframe(
 
 ## Intermediate
 
+16 competitors entered the course, achieving 4 new overall PBs and 9 new split PBs: 2 in the pool, 3 on the bike, and 4 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -542,6 +558,7 @@ htmltools::tags$iframe(
     
 ## Full
 
+64 competitors entered the course, achieving 21 new overall PBs and 51 new split PBs: 19 in the pool, 20 on the bike, and 12 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -574,6 +591,7 @@ htmltools::tags$iframe(
 
 ## Intermediate
 
+15 competitors entered the course, achieving 7 new overall PBs and 13 new split PBs: 4 in the pool, 7 on the bike, and 2 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -609,6 +627,7 @@ htmltools::tags$iframe(
     
 ## Full
 
+37 competitors entered the course, achieving 5 new overall PBs and 25 new split PBs: 10 in the pool, 8 on the bike, and 7 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -641,6 +660,7 @@ htmltools::tags$iframe(
 
 ## Intermediate
 
+8 competitors entered the course, achieving 4 new split PBs: 2 in the pool and 2 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -676,6 +696,7 @@ htmltools::tags$iframe(
     
 ## Full
 
+32 competitors entered the course, achieving 2 new overall PBs and 14 new split PBs: 4 in the pool, 1 on the bike, and 9 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -708,6 +729,7 @@ htmltools::tags$iframe(
 
 ## Intermediate
 
+9 competitors entered the course, achieving 1 new overall PBs and 4 new split PBs: 2 in the pool and 2 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -743,6 +765,7 @@ htmltools::tags$iframe(
     
 ## Full
 
+56 competitors entered the course, achieving 16 new overall PBs and 37 new split PBs: 13 in the pool, 14 on the bike, and 10 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -775,6 +798,7 @@ htmltools::tags$iframe(
 
 ## Intermediate
 
+11 competitors entered the course, achieving 1 new overall PBs and 3 new split PBs: 1 on the bike and 2 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -810,6 +834,7 @@ htmltools::tags$iframe(
     
 ## Full
 
+45 competitors entered the course, achieving 12 new overall PBs and 35 new split PBs: 14 in the pool, 13 on the bike, and 8 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -842,6 +867,7 @@ htmltools::tags$iframe(
 
 ## Intermediate
 
+10 competitors entered the course, achieving 1 new overall PBs and 5 new split PBs: 2 in the pool, 2 on the bike, and 1 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -877,6 +903,7 @@ htmltools::tags$iframe(
     
 ## Full
 
+48 competitors entered the course, achieving 13 new overall PBs and 36 new split PBs: 15 in the pool, 14 on the bike, and 7 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -909,6 +936,7 @@ htmltools::tags$iframe(
 
 ## Intermediate
 
+15 competitors entered the course, achieving 6 new overall PBs and 18 new split PBs: 6 in the pool, 7 on the bike, and 5 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -944,6 +972,7 @@ htmltools::tags$iframe(
     
 ## Full
 
+38 competitors entered the course, achieving 8 new overall PBs and 26 new split PBs: 7 in the pool, 12 on the bike, and 7 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -976,6 +1005,7 @@ htmltools::tags$iframe(
 
 ## Intermediate
 
+11 competitors entered the course, achieving 8 new overall PBs and 21 new split PBs: 7 in the pool, 9 on the bike, and 5 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1011,6 +1041,7 @@ htmltools::tags$iframe(
     
 ## Full
 
+55 competitors entered the course, achieving 20 new overall PBs and 69 new split PBs: 26 in the pool, 17 on the bike, and 26 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1043,6 +1074,7 @@ htmltools::tags$iframe(
 
 ## Intermediate
 
+17 competitors entered the course, achieving 8 new overall PBs and 22 new split PBs: 10 in the pool, 5 on the bike, and 7 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1078,6 +1110,7 @@ htmltools::tags$iframe(
     
 ## Full
 
+51 competitors entered the course, achieving 16 new overall PBs and 57 new split PBs: 24 in the pool, 19 on the bike, and 14 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1110,6 +1143,7 @@ htmltools::tags$iframe(
 
 ## Intermediate
 
+11 competitors entered the course, achieving 5 new overall PBs and 14 new split PBs: 7 in the pool and 7 on the bike.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1145,6 +1179,7 @@ htmltools::tags$iframe(
     
 ## Full
 
+63 competitors entered the course, achieving 34 new overall PBs and 81 new split PBs: 23 in the pool, 37 on the bike, and 21 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1177,6 +1212,7 @@ htmltools::tags$iframe(
 
 ## Intermediate
 
+16 competitors entered the course, achieving 8 new overall PBs and 22 new split PBs: 8 in the pool, 7 on the bike, and 7 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1212,6 +1248,7 @@ htmltools::tags$iframe(
     
 ## Double Distance
 
+22 competitors entered the course.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1244,6 +1281,7 @@ htmltools::tags$iframe(
 
 ## Full
 
+39 competitors entered the course, achieving 16 new overall PBs and 42 new split PBs: 11 in the pool, 14 on the bike, and 17 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1276,6 +1314,7 @@ htmltools::tags$iframe(
 
 ## Intermediate
 
+12 competitors entered the course, achieving 9 new overall PBs and 17 new split PBs: 3 in the pool, 7 on the bike, and 7 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1311,6 +1350,7 @@ htmltools::tags$iframe(
     
 ## Full
 
+49 competitors entered the course, achieving 15 new overall PBs and 52 new split PBs: 16 in the pool, 15 on the bike, and 21 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1343,6 +1383,7 @@ htmltools::tags$iframe(
 
 ## Intermediate
 
+17 competitors entered the course, achieving 8 new overall PBs and 19 new split PBs: 4 in the pool, 7 on the bike, and 8 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1378,6 +1419,7 @@ htmltools::tags$iframe(
     
 ## Full
 
+50 competitors entered the course, achieving 20 new overall PBs and 54 new split PBs: 18 in the pool, 19 on the bike, and 17 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1410,6 +1452,7 @@ htmltools::tags$iframe(
 
 ## Intermediate
 
+15 competitors entered the course, achieving 5 new overall PBs and 12 new split PBs: 3 in the pool, 5 on the bike, and 4 on the run.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1445,6 +1488,7 @@ htmltools::tags$iframe(
     
 ## Full
 
+52 competitors entered the course.
 
 ```{r}
 htmltools::tags$iframe(
@@ -1477,6 +1521,7 @@ htmltools::tags$iframe(
 
 ## Intermediate
 
+13 competitors entered the course.
 
 ```{r}
 htmltools::tags$iframe(

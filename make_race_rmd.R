@@ -42,15 +42,39 @@ races <- foreach (i=rev(race_numbers), .combine = paste0 ) %do% {
     
     dt_i <- dt_all_long[race_number== i & course == j & j_is_champ == (is_champ)][(started)]
     
-    n_athletes <- length(unique(dt_i$Name))
+    n_athletes <- length(unique(dt_i[part=="Swim"]$Name))
+    
+    dt_pb_split_new <- dt_i[(isNewPB_split), .(.N), by = part]
+    
+    dt_pb_split_new[part=="Swim", `:=`(where="in the pool", ord=1)]
+    dt_pb_split_new[part=="Ride", `:=`(where="on the bike", ord=2)]
+    dt_pb_split_new[part=="Run", `:=`(where="on the run", ord=3)]
+    
+    dt_pb_split_new[, phrase := paste0(N, " ", where)]
+    
+    setorder(dt_pb_split_new, ord)
+    
+    pb_split_sentence <- list_with_and(dt_pb_split_new$phrase)
+    
+    n_pb_splits_new <- sum(dt_pb_split_new$N)
+    pb_overall_new <- nrow(dt_i[(isNewPB_overall) & part=="Swim"])
+    
     
     
 paste0(
 '
-## ',i_courses_nice[j_counter],'
+## ',i_courses_nice[j_counter],'\n\n',
 
+n_athletes,' competitors entered the course',
+if(pb_overall_new!=0 | n_pb_splits_new !=0) ", achieving ",
+list_with_and(
+c(if(pb_overall_new!=0) {paste0(pb_overall_new,' new overall PBs')},
+if(n_pb_splits_new!=0) {
+  paste0( n_pb_splits_new, ' new split PBs: ', pb_split_sentence)
+  })),
+'.',
 
-',
+'\n\n',
 
 '```{r}
 htmltools::tags$iframe(

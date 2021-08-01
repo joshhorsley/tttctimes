@@ -123,3 +123,18 @@ format_place <- function(x, na_string = "NA") {
 }
 
 
+
+# Grammar -----------------------------------------------------------------
+
+
+list_with_and <- function(parts) {
+  n_parts <- length(parts !="")
+  
+  if(n_parts==0L) return("")
+  if(n_parts==1L) return(parts)
+  if(n_parts==2L) return(paste0(parts[1], " and ", parts[2]))
+  
+  paste0(paste0(parts[1:(n_parts-1)],collapse = ", "), ", and ",parts[n_parts])
+  
+  
+}
