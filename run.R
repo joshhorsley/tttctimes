@@ -337,6 +337,18 @@ dt_all_long[(started), includes_pb_split := any(isPB_split), by = .(Name, course
 # dt_all_long[(started) & Name == "Des Gooda" & course=="full" & (includes_pb_split)]
 
 
+
+
+# Participation -----------------------------------------------------------
+
+
+dt_all_long[(started), entries_cumulative := cumsum(started), by = .(Name, part)]
+dt_all_long[(started), entries_total := max(entries_cumulative), by = Name]
+dt_all_long[(started), is_last_entry := entries_total == entries_cumulative]
+
+dt_all_long[(started) & (is_last_entry), entries_total_rank := rank(-entries_total, ties.method = "min"), by = part]
+
+
 # Part naming -------------------------------------------------------------
 
 
@@ -755,7 +767,7 @@ for(j in c("full", "int","double")) {
                                         dom = 'Brtp',
                                         buttons = c('copy', 'csv', 'excel'),
                                         columnDefs = 
-                                          list(list(visible=FALSE, targets=col_ref_hide)))) %>% 
+                                          list(list(visible=FALSE, targets=col_ref_hide)))) %>%
     apply_col(tri_cols)
   
   savepath = paste0(getwd(),"/",site_path_relative,"/tab_record_",l,"_",j,".html")
@@ -831,7 +843,6 @@ for(j in c("full", "int","double")) {
 # Participation plot ------------------------------------------------------
 
 
-dt_all_long[ (started), entries_cumulative := cumsum(started), by = .(Name, part)]
 
 dt_entries <- dt_all_long[part=="Swim" & (started)]
 
@@ -886,6 +897,83 @@ p <- ggplotly(g, width = NULL, tooltip = "text",layerData = TRUE, style = "mobil
 savepath = paste0(getwd(), "/",site_path_relative,"/plot_participation.html")
 saveWidget(p, file = savepath ,selfcontained = FALSE,libdir = libpath)
 
+
+# Participation table -----------------------------------------------------
+
+
+dt_entries_tab <- dt_all_long[(started) & part == "Swim" & (is_last_entry)]
+setorder(dt_entries_tab, -entries_total, name_last)
+
+setcolorder(dt_entries_tab,
+           c("entries_total_rank", "entries_total", "Name" ))
+
+setnames(dt_entries_tab,
+         c("entries_total_rank", "entries_total" ),
+         c("Rank","Entries"),
+         skip_absent = TRUE)
+
+col_ref_hide <- which(!(names(dt_entries_tab) %in% c("Rank","Entries","Name")))-1 # columns are indexed from 0 - row name?
+
+
+tab_part <- DT::datatable(dt_entries_tab,
+                       rownames = FALSE,
+                       elementId = "tab_participation",
+                       extensions = c('Buttons'),
+                       options = list(autoWidth=FALSE,
+                                      paging=FALSE,
+                                      dom = 'Brtp',
+                                      buttons = c('copy', 'csv', 'excel'),
+                                      columnDefs = 
+                                        list(list(visible=FALSE, targets=col_ref_hide)))) %>%
+  formatStyle(columns = "Rank", valueColumns = "Rank",
+              background = styleEqual(1,tri_cols$record))
+
+
+savepath = paste0(getwd(),"/",site_path_relative,"/tab_participation.html")
+saveWidget(tab_part, file = savepath,selfcontained = FALSE,libdir = libpath)
+
+
+
+# Participation histogram -------------------------------------------------
+
+
+dt_entries_hist <- dt_all_long[order(name_last)][(started) & part == "Swim" & (is_last_entry),
+                               .(name_list = list(Name), count = .N),
+                               by = entries_total]
+
+setorder(dt_entries_hist, -entries_total)
+
+dt_entries_hist[,tooltext :=paste0(count, " entered ",entries_total, " ", ifelse(entries_total==1, "race", "races"),":\n",
+                                   paste0(name_list[[1]], collapse = "\n")),
+                by = entries_total]
+
+g <- ggplot(dt_entries_hist,
+       aes(y = count, x = entries_total, text = tooltext)) +
+       # aes(y = count, x = entries_total)) +
+  geom_col(orientation = "x", width = 0.9, size = 0.3) +
+scale_y_continuous("Number of atheletes") +
+  scale_x_continuous("Total Entries", breaks = 1:26, limits = c(0,27)) +
+  theme_minimal() +
+  theme(legend.position="top",
+        strip.background = element_rect(colour="black",
+                                        fill="white"))
+
+p <- ggplotly(g, width = NULL, tooltip = "text",layerData = TRUE, style = "mobile") %>% 
+  layout(xaxis = list(fixedrange = TRUE),
+         yaxis = list(fixedrange = TRUE, tickfont = list(size = 10)),
+         dragmode = FALSE,
+         autosize = TRUE,
+         margin = list(l=15, r=0, t=0,b=0, pad=0),
+         legend = list(orientation = "h", y = 0, x= 0.5, xanchor = "center",
+                       itemclick = FALSE, itemdoubleclick  = FALSE)) %>% 
+  config(displayModeBar = TRUE, modeBarButtons = list(list("toImage")), displaylogo=FALSE,
+         toImageButtonOptions = list(height = 500, width = 700, scale = 2,
+                                     format = "png",
+                                     filename = "participation_hist")) %>% 
+  set_margin_plotly()
+
+savepath = paste0(getwd(), "/",site_path_relative,"/plot_participation_hist.html")
+saveWidget(p, file = savepath ,selfcontained = FALSE,libdir = libpath)
 
 
 # Export for website ------------------------------------------------------
