@@ -42,7 +42,7 @@ htmltools::tags$iframe(
 
 ## Full
 
-15 competitors entered the course, achieving 1 new split PBs: 1 on the run.
+15 competitors entered the course, achieving 2 new split PBs: 2 on the run.
 
 ```{r}
 htmltools::tags$iframe(

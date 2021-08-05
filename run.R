@@ -123,7 +123,7 @@ dt_all_long[Name %in% c("Joshua Horsley"), Name := "Josh Horsley"]
 dt_all_long[Name %in% c("Sally KINGSTON"), Name := "Sally Kingston"]
 dt_all_long[Name %in% c("Lydia Kuschnirz"), Name := "Lydia Kuschmirz"]
 dt_all_long[Name %in% c("Valerie Lambard"), Name := "Val Lambard"]
-dt_all_long[Name %in% c("Samatha Leonard"), Name := "Samantha Leonard"]
+dt_all_long[Name %in% c("Samatha Leonard", "Sam Leonard"), Name := "Samantha Leonard"]
 dt_all_long[Name %in% c("Virginia Jones", "Ginny JONES"), Name := "Ginny Jones"]
 dt_all_long[Name %in% c("Aaron NEYLAN"), Name := "Aaron Neylan"]
 dt_all_long[Name %in% c("Karen Nixon-Hind"), Name := "Karen Nixon"]
@@ -376,6 +376,7 @@ setWidgetIdSeed(100)
 site_path_relative <- "docs"
 if(!dir.exists(site_path_relative)) dir.create(site_path_relative)
 libpath <- file.path(getwd(), "docs/libs")
+
 
 
 # Races -------------------------------------------------------------------
@@ -825,6 +826,67 @@ for(j in c("full", "int","double")) {
   }
   }
 }
+
+
+# Participation plot ------------------------------------------------------
+
+
+dt_all_long[ (started), entries_cumulative := cumsum(started), by = .(Name, part)]
+
+dt_entries <- dt_all_long[part=="Swim" & (started)]
+
+# dt_entries[, name_init := paste0(substr(name_first,1,1), substr(name_last,1,1))]
+
+dt_entries[, tooltext := paste0(Name, "\n",
+                                "Race #: ", race_number, "\n",
+                                "Date: ", date_ymd, "\n",
+                                "Entries so far: ", entries_cumulative)]
+
+setorder(dt_entries, name_last)
+
+dt_entries[, name_plot := ordered(factor(Name), levels = unique(Name))]
+
+n_athletes_season <- length(unique(dt_entries$Name))
+
+cols_athlete <- rainbow(n_athletes_season)[order(runif(n_athletes_season))]
+shapes_athlete <- order(runif(n_athletes_season)) %% 5 + 1
+
+g <- ggplot(data = dt_entries,
+            aes(x = race_number, y = entries_cumulative,
+                col = name_plot, group = name_plot, linetype = name_plot, shape = name_plot,
+                text = tooltext) ) +
+  geom_point() +
+  geom_line() +
+  
+  scale_x_continuous("Race (number)", breaks = 1:26, limits = c(0,27)) +
+  scale_y_continuous("Entries", breaks = seq(0,26,5), limits = c(0,26),position = "left") +
+  scale_color_manual("Name", values = cols_athlete) +
+  scale_shape_manual("Name", values = shapes_athlete) +
+  theme_minimal() +
+  theme(legend.position = "bottom",
+        strip.background = element_rect(colour="black",
+                                        fill="white"))
+
+
+p <- ggplotly(g, width = NULL, tooltip = "text",layerData = TRUE, style = "mobile") %>% 
+  layout(xaxis = list(fixedrange = TRUE, side = "top"),
+         yaxis = list(fixedrange = TRUE, tickfont = list(size = 10)),
+         dragmode = FALSE,
+         autosize = TRUE,
+         margin = list(l=10, r=0, t=0,b=0, pad=0),
+         legend = list(orientation = "h", y = 0, x= 0.5, xanchor = "center",
+                       itemclick = TRUE, itemdoubleclick  = TRUE)) %>% 
+  config(displayModeBar = TRUE, modeBarButtons = list(list("toImage")), displaylogo=FALSE,
+         toImageButtonOptions = list(height = 500, width = 700, scale = 2,
+                                     format = "png",
+                                     filename = "participation_")) %>% 
+  set_margin_plotly()
+
+
+savepath = paste0(getwd(), "/",site_path_relative,"/plot_participation.html")
+saveWidget(p, file = savepath ,selfcontained = FALSE,libdir = libpath)
+
+
 
 # Export for website ------------------------------------------------------
 

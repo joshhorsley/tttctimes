@@ -21,3 +21,17 @@ knitr::kable(dt_season_show[, .(`Race #`,
                                 Note
                                 )])
 ```
+
+
+# Participation
+
+```{r}
+
+htmltools::tags$iframe(
+  src = "plot_participation.html", 
+  scrolling = "yes",
+  frameBorder = "0",
+  width = "100%",
+  height = 1000
+)
+```

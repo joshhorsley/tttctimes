@@ -3149,43 +3149,9 @@ htmltools::tags$iframe(
 ```
 
 
-# Sam Leonard {#a-Sam-Leonard}
-
-Sam has entered 1 race this season, full distance.
-
-```{r}
-htmltools::tags$iframe(
-  src = "Sam Leonard.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
-```
-
-
-
-
-### Detailed results for Full course
-
-Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
-
-```{r}
-htmltools::tags$iframe(
-  src = "tab_Sam Leonard_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
-```
-
-
 # Samantha Leonard {#a-Samantha-Leonard}
 
-Samantha has entered 12 races this season, 11 full distance and 1 double distance.
+Samantha has entered 13 races this season, 12 full distance and 1 double distance.
 
 ```{r}
 htmltools::tags$iframe(
@@ -3212,7 +3178,7 @@ htmltools::tags$iframe(
   seamless = "seamless",
   frameBorder = "0",
   width = "100%",
-  height = "750"
+  height = "800"
 )
 ```
 
