@@ -30,7 +30,7 @@ n_entries_all_season <- nrow(dt_all_long[(started) & part == "Swim"])
 ```
 
 
-There have been `r n_entries_all_season` entries this season from `r n_athletes_season` athletes. 
+There have been `r prettyNum(n_entries_all_season, big.mark = ",")` entries this season from `r n_athletes_season` athletes. 
 
 ```{r}
 
@@ -56,6 +56,7 @@ htmltools::tags$iframe(
 
 # Participation - Trends
 
+This plot shows the cumulative number of races entered by each athlete over the season. It's a bit crowded showing everyone, each athlete's entries can be toggled by clicking (or double-clicking) their names in the legend.
 
 ```{r}
 

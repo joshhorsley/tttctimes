@@ -840,8 +840,7 @@ for(j in c("full", "int","double")) {
 }
 
 
-# Participation plot ------------------------------------------------------
-
+# Participation time series -----------------------------------------------
 
 
 dt_entries <- dt_all_long[part=="Swim" & (started)]
@@ -860,7 +859,7 @@ dt_entries[, name_plot := ordered(factor(Name), levels = unique(Name))]
 n_athletes_season <- length(unique(dt_entries$Name))
 
 cols_athlete <- rainbow(n_athletes_season)[order(runif(n_athletes_season))]
-shapes_athlete <- order(runif(n_athletes_season)) %% 5 + 1
+style_athlete <- rep(1:6, (n_athletes_season %/% 6)+1)[1:n_athletes_season]
 
 g <- ggplot(data = dt_entries,
             aes(x = race_number, y = entries_cumulative,
@@ -872,7 +871,8 @@ g <- ggplot(data = dt_entries,
   scale_x_continuous("Race (number)", breaks = 1:26, limits = c(0,27)) +
   scale_y_continuous("Entries", breaks = seq(0,26,5), limits = c(0,26),position = "left") +
   scale_color_manual("Name", values = cols_athlete) +
-  scale_shape_manual("Name", values = shapes_athlete) +
+  scale_shape_manual("Name", values = style_athlete) +
+  scale_linetype_manual("Name", values = style_athlete) +
   theme_minimal() +
   theme(legend.position = "bottom",
         strip.background = element_rect(colour="black",
