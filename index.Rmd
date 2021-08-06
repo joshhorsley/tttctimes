@@ -1,7 +1,7 @@
 --- 
 title: "Twinnies Times (unofficial)"
 author: "Josh Horsley"
-date: "Updated: `r format(Sys.time(),'%Y-%m-%d %H:%M %Z')`"
+date: "Updated: `r as.integer(format(Sys.time(),'%d'))` `r format(Sys.time(),'%b %Y')`"
 site: bookdown::bookdown_site
 documentclass: book
 link-citations: yes
