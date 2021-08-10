@@ -99,8 +99,6 @@ plotly_part_hist <- function(dt_all_long){
                                        filename = "participation_hist")) %>% 
     set_margin_plotly()
   
-  p$height <- 50 + 16*n_athletes
-  
   
   return(p)
 }
