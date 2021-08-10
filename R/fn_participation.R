@@ -99,6 +99,9 @@ plotly_part_hist <- function(dt_all_long){
                                        filename = "participation_hist")) %>% 
     set_margin_plotly()
   
+  p$height <- 50 + 16*n_athletes
+  
+  
   return(p)
 }
 
@@ -131,6 +134,7 @@ table_part_total <- function(dt_all_long, tri_cols) {
                             options = list(autoWidth=FALSE,
                                            paging=FALSE,
                                            dom = 'Brtp',
+                                           scrollY = "500px",
                                            buttons = c('copy', 'csv', 'excel'),
                                            columnDefs = 
                                              list(list(visible=FALSE, targets=col_ref_hide)))) %>%

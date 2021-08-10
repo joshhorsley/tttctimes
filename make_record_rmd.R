@@ -21,19 +21,10 @@ body <- foreach(j = c("full", "int","double"), .combine = paste0 ) %do% {
   paste0("\n# Best Times - ", j_course_nice,"
 \n## Overall\n\n",
 "The best valid times for each competitor are ranked in the plot and table below.\n",
-'Disclaimer: These results are based on webscorer data but are completely unofficial. `r if(some_weeks_missing_full) paste0("Results are not available for the following weeks: ", paste0(weeks_missing_int, collapse= ", "))`.\n',
+'Disclaimer: Unofficial. `r if(some_weeks_missing_full) paste0("Results are not available for the following weeks: ", paste0(weeks_missing_int, collapse= ", "))`.\n',
 '
 ```{r}
-n_athletes <- nrow(dt_all_long[course=="',j,'" & (isPB_overall) & part=="Swim"])
-
-htmltools::tags$iframe(
-  src = "plot_record_',j,'.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = 150 + 16*n_athletes
-)
+plotly_record(dt_all_long, tri_cols, "',j,'")
 ```
 \n',
   
@@ -47,14 +38,7 @@ htmltools::tags$iframe(
 '
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_record_',l,'_',j,'.html", 
-  scrolling = "yes", 
-  #seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "700"
-)
+table_record(dt_all_long, tri_cols, "',j,'", "',l,'")
 ```
 \n')
     

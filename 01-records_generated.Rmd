@@ -9,19 +9,10 @@
 ## Overall
 
 The best valid times for each competitor are ranked in the plot and table below.
-Disclaimer: These results are based on webscorer data but are completely unofficial. `r if(some_weeks_missing_full) paste0("Results are not available for the following weeks: ", paste0(weeks_missing_int, collapse= ", "))`.
+Disclaimer: Unofficial. `r if(some_weeks_missing_full) paste0("Results are not available for the following weeks: ", paste0(weeks_missing_int, collapse= ", "))`.
 
 ```{r}
-n_athletes <- nrow(dt_all_long[course=="full" & (isPB_overall) & part=="Swim"])
-
-htmltools::tags$iframe(
-  src = "plot_record_full.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = 150 + 16*n_athletes
-)
+plotly_record(dt_all_long, tri_cols, "full")
 ```
 
 
@@ -29,14 +20,7 @@ htmltools::tags$iframe(
 Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for individual parts are provided only for PBs.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_record_overall_full.html", 
-  scrolling = "yes", 
-  #seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "700"
-)
+table_record(dt_all_long, tri_cols, "full", "overall")
 ```
 
 ## Swim
@@ -44,14 +28,7 @@ htmltools::tags$iframe(
 Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for other parts and overall are provided only for PBs.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_record_Swim_full.html", 
-  scrolling = "yes", 
-  #seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "700"
-)
+table_record(dt_all_long, tri_cols, "full", "Swim")
 ```
 
 ## Ride
@@ -59,14 +36,7 @@ htmltools::tags$iframe(
 Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for other parts and overall are provided only for PBs.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_record_Ride_full.html", 
-  scrolling = "yes", 
-  #seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "700"
-)
+table_record(dt_all_long, tri_cols, "full", "Ride")
 ```
 
 ## Run
@@ -74,14 +44,7 @@ htmltools::tags$iframe(
 Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for other parts and overall are provided only for PBs.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_record_Run_full.html", 
-  scrolling = "yes", 
-  #seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "700"
-)
+table_record(dt_all_long, tri_cols, "full", "Run")
 ```
 
 
@@ -90,19 +53,10 @@ htmltools::tags$iframe(
 ## Overall
 
 The best valid times for each competitor are ranked in the plot and table below.
-Disclaimer: These results are based on webscorer data but are completely unofficial. `r if(some_weeks_missing_full) paste0("Results are not available for the following weeks: ", paste0(weeks_missing_int, collapse= ", "))`.
+Disclaimer: Unofficial. `r if(some_weeks_missing_full) paste0("Results are not available for the following weeks: ", paste0(weeks_missing_int, collapse= ", "))`.
 
 ```{r}
-n_athletes <- nrow(dt_all_long[course=="int" & (isPB_overall) & part=="Swim"])
-
-htmltools::tags$iframe(
-  src = "plot_record_int.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = 150 + 16*n_athletes
-)
+plotly_record(dt_all_long, tri_cols, "int")
 ```
 
 
@@ -110,14 +64,7 @@ htmltools::tags$iframe(
 Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for individual parts are provided only for PBs.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_record_overall_int.html", 
-  scrolling = "yes", 
-  #seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "700"
-)
+table_record(dt_all_long, tri_cols, "int", "overall")
 ```
 
 ## Swim
@@ -125,14 +72,7 @@ htmltools::tags$iframe(
 Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for other parts and overall are provided only for PBs.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_record_Swim_int.html", 
-  scrolling = "yes", 
-  #seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "700"
-)
+table_record(dt_all_long, tri_cols, "int", "Swim")
 ```
 
 ## Ride
@@ -140,14 +80,7 @@ htmltools::tags$iframe(
 Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for other parts and overall are provided only for PBs.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_record_Ride_int.html", 
-  scrolling = "yes", 
-  #seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "700"
-)
+table_record(dt_all_long, tri_cols, "int", "Ride")
 ```
 
 ## Run
@@ -155,14 +88,7 @@ htmltools::tags$iframe(
 Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for other parts and overall are provided only for PBs.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_record_Run_int.html", 
-  scrolling = "yes", 
-  #seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "700"
-)
+table_record(dt_all_long, tri_cols, "int", "Run")
 ```
 
 
@@ -171,19 +97,10 @@ htmltools::tags$iframe(
 ## Overall
 
 The best valid times for each competitor are ranked in the plot and table below.
-Disclaimer: These results are based on webscorer data but are completely unofficial. `r if(some_weeks_missing_full) paste0("Results are not available for the following weeks: ", paste0(weeks_missing_int, collapse= ", "))`.
+Disclaimer: Unofficial. `r if(some_weeks_missing_full) paste0("Results are not available for the following weeks: ", paste0(weeks_missing_int, collapse= ", "))`.
 
 ```{r}
-n_athletes <- nrow(dt_all_long[course=="double" & (isPB_overall) & part=="Swim"])
-
-htmltools::tags$iframe(
-  src = "plot_record_double.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = 150 + 16*n_athletes
-)
+plotly_record(dt_all_long, tri_cols, "double")
 ```
 
 
@@ -191,14 +108,7 @@ htmltools::tags$iframe(
 Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for individual parts are provided only for PBs.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_record_overall_double.html", 
-  scrolling = "yes", 
-  #seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "700"
-)
+table_record(dt_all_long, tri_cols, "double", "overall")
 ```
 
 ## Swim
@@ -206,14 +116,7 @@ htmltools::tags$iframe(
 Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for other parts and overall are provided only for PBs.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_record_Swim_double.html", 
-  scrolling = "yes", 
-  #seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "700"
-)
+table_record(dt_all_long, tri_cols, "double", "Swim")
 ```
 
 ## Ride
@@ -221,14 +124,7 @@ htmltools::tags$iframe(
 Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for other parts and overall are provided only for PBs.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_record_Ride_double.html", 
-  scrolling = "yes", 
-  #seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "700"
-)
+table_record(dt_all_long, tri_cols, "double", "Ride")
 ```
 
 ## Run
@@ -236,14 +132,7 @@ htmltools::tags$iframe(
 Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for other parts and overall are provided only for PBs.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_record_Run_double.html", 
-  scrolling = "yes", 
-  #seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "700"
-)
+table_record(dt_all_long, tri_cols, "double", "Run")
 ```
 
 

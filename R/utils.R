@@ -90,7 +90,7 @@ set_margin_plotly <- function(p, pad = 0) {
   p$sizingPolicy$padding <- pad
   
   p$sizingPolicy$browser$defaultWidth <- "100%"	
-  p$sizingPolicy$browser$external
+  p$sizingPolicy$browser$fill <- TRUE
   
   p$width <- "100%"
   
