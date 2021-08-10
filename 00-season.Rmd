@@ -33,25 +33,20 @@ n_entries_all_season <- nrow(dt_all_long[(started) & part == "Swim"])
 There have been `r prettyNum(n_entries_all_season, big.mark = ",")` entries this season from `r n_athletes_season` athletes. 
 
 ```{r}
-
-htmltools::tags$iframe(
-  src = "plot_participation_hist.html", 
-  scrolling = "yes",
-  frameBorder = "0",
-  width = "100%",
-  height = 500
-)
+plotly_part_hist(dt_all_long)
 ```
 
 ```{r}
 
-htmltools::tags$iframe(
-  src = "tab_participation.html", 
-  scrolling = "yes",
-  frameBorder = "0",
-  width = "100%",
-  height = 1000
-)
+table_part_total(dt_all_long, tri_cols)
+
+# htmltools::tags$iframe(
+#   src = "tab_participation.html", 
+#   scrolling = "yes",
+#   frameBorder = "0",
+#   width = "100%",
+#   height = 1000
+# )
 ```
 
 # Participation - Trends
@@ -60,11 +55,6 @@ This plot shows the cumulative number of races entered by each athlete over the 
 
 ```{r}
 
-htmltools::tags$iframe(
-  src = "plot_participation.html", 
-  scrolling = "yes",
-  frameBorder = "0",
-  width = "100%",
-  height = 1000
-)
+plotly_time_series(dt_all_long)
+
 ```
