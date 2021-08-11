@@ -36,7 +36,7 @@ plotly_athlete <- function(dt_all_long, tri_cols, k) {
                             cumulative_hms_short,
                             ifelse((isNewPB_cum)," New PB!",""))]
   
-  n_courses <- length(unique(dt_all_long[Name==k, .(course)]$course))
+  n_courses <- length(unique(dt_all_long[(started) & Name==k, .(course)]$course))
   
   g <- ggplot(dt_k,
               aes(y = duration_mins, x = race_number, fill = part_plot_pb, col = part_plot_pb, group = race_number, text = tooltext)) +
