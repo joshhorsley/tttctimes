@@ -14,14 +14,7 @@ A total of 43 competitors entered, 1 for the first time this season.
 22 competitors entered the course, achieving 10 new overall PBs and 21 new split PBs: 5 in the pool, 8 on the bike, and 8 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2021-03-20_full_champ.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "502"
-)
+plotly_race(dt_all_long, tri_cols, 26, "full",TRUE)
 ```
     
     
@@ -31,14 +24,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_26_full_champ.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1300"
-)
+table_race(dt_all_long, tri_cols, 26, "full",TRUE)
 ```
 
 
@@ -47,14 +33,7 @@ htmltools::tags$iframe(
 15 competitors entered the course, achieving 2 new split PBs: 2 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2021-03-20_full.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "390"
-)
+plotly_race(dt_all_long, tri_cols, 26, "full",FALSE)
 ```
     
     
@@ -64,14 +43,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_26_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "950"
-)
+table_race(dt_all_long, tri_cols, 26, "full",FALSE)
 ```
 
 
@@ -80,14 +52,7 @@ htmltools::tags$iframe(
 6 competitors entered the course, achieving 1 new overall PBs and 3 new split PBs: 3 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2021-03-20_int.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "246"
-)
+plotly_race(dt_all_long, tri_cols, 26, "int",FALSE)
 ```
     
     
@@ -97,14 +62,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_26_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+table_race(dt_all_long, tri_cols, 26, "int",FALSE)
 ```
 
 
@@ -118,14 +76,7 @@ A total of 55 competitors entered, 6 for the first time this season.
 39 competitors entered the course, achieving 11 new overall PBs and 29 new split PBs: 9 in the pool, 11 on the bike, and 9 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2021-03-13_full.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "774"
-)
+plotly_race(dt_all_long, tri_cols, 25, "full",FALSE)
 ```
     
     
@@ -135,14 +86,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_25_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "2150"
-)
+table_race(dt_all_long, tri_cols, 25, "full",FALSE)
 ```
 
 
@@ -151,14 +95,7 @@ htmltools::tags$iframe(
 16 competitors entered the course, achieving 3 new overall PBs and 7 new split PBs: 3 in the pool, 2 on the bike, and 2 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2021-03-13_int.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "406"
-)
+plotly_race(dt_all_long, tri_cols, 25, "int",FALSE)
 ```
     
     
@@ -168,14 +105,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_25_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+table_race(dt_all_long, tri_cols, 25, "int",FALSE)
 ```
 
 
@@ -189,14 +119,7 @@ A total of 33 competitors entered, 1 for the first time this season.
 29 competitors entered the course, achieving 4 new overall PBs and 12 new split PBs: 4 in the pool, 3 on the bike, and 5 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2021-03-06_full.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "614"
-)
+plotly_race(dt_all_long, tri_cols, 24, "full",FALSE)
 ```
     
     
@@ -206,14 +129,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_24_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1650"
-)
+table_race(dt_all_long, tri_cols, 24, "full",FALSE)
 ```
 
 
@@ -222,14 +138,7 @@ htmltools::tags$iframe(
 4 competitors entered the course, achieving 1 new overall PBs and 1 new split PBs: 1 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2021-03-06_int.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "214"
-)
+plotly_race(dt_all_long, tri_cols, 24, "int",FALSE)
 ```
     
     
@@ -239,14 +148,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_24_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "400"
-)
+table_race(dt_all_long, tri_cols, 24, "int",FALSE)
 ```
 
 
@@ -260,14 +162,7 @@ A total of 56 competitors entered, 1 for the first time this season.
 19 competitors entered the course, achieving 6 new overall PBs and 22 new split PBs: 8 in the pool, 8 on the bike, and 6 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2021-02-27_double.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "454"
-)
+plotly_race(dt_all_long, tri_cols, 23, "double",FALSE)
 ```
     
     
@@ -277,14 +172,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_23_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1150"
-)
+table_race(dt_all_long, tri_cols, 23, "double",FALSE)
 ```
 
 
@@ -293,14 +181,7 @@ htmltools::tags$iframe(
 25 competitors entered the course, achieving 5 new overall PBs and 11 new split PBs: 3 in the pool, 3 on the bike, and 5 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2021-02-27_full.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "550"
-)
+plotly_race(dt_all_long, tri_cols, 23, "full",FALSE)
 ```
     
     
@@ -310,14 +191,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_23_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1450"
-)
+table_race(dt_all_long, tri_cols, 23, "full",FALSE)
 ```
 
 
@@ -326,14 +200,7 @@ htmltools::tags$iframe(
 12 competitors entered the course, achieving 3 new overall PBs and 9 new split PBs: 1 in the pool, 6 on the bike, and 2 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2021-02-27_int.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "342"
-)
+plotly_race(dt_all_long, tri_cols, 23, "int",FALSE)
 ```
     
     
@@ -343,14 +210,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_23_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "800"
-)
+table_race(dt_all_long, tri_cols, 23, "int",FALSE)
 ```
 
 
@@ -364,14 +224,7 @@ A total of 53 competitors entered, 3 for the first time this season.
 43 competitors entered the course, achieving 2 new overall PBs and 11 new split PBs: 4 in the pool, 2 on the bike, and 5 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2021-02-20_full.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "838"
-)
+plotly_race(dt_all_long, tri_cols, 22, "full",FALSE)
 ```
     
     
@@ -381,14 +234,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_22_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "2350"
-)
+table_race(dt_all_long, tri_cols, 22, "full",FALSE)
 ```
 
 
@@ -397,14 +243,7 @@ htmltools::tags$iframe(
 10 competitors entered the course, achieving 2 new overall PBs and 7 new split PBs: 2 in the pool, 2 on the bike, and 3 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2021-02-20_int.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "310"
-)
+plotly_race(dt_all_long, tri_cols, 22, "int",FALSE)
 ```
     
     
@@ -414,14 +253,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_22_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "700"
-)
+table_race(dt_all_long, tri_cols, 22, "int",FALSE)
 ```
 
 
@@ -435,14 +267,7 @@ A total of 68 competitors entered, 2 for the first time this season.
 54 competitors entered the course, achieving 14 new overall PBs and 35 new split PBs: 11 in the pool, 17 on the bike, and 7 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2021-02-13_full.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1014"
-)
+plotly_race(dt_all_long, tri_cols, 21, "full",FALSE)
 ```
     
     
@@ -452,14 +277,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_21_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "2900"
-)
+table_race(dt_all_long, tri_cols, 21, "full",FALSE)
 ```
 
 
@@ -468,14 +286,7 @@ htmltools::tags$iframe(
 14 competitors entered the course, achieving 5 new overall PBs and 8 new split PBs: 2 in the pool, 3 on the bike, and 3 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2021-02-13_int.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "374"
-)
+plotly_race(dt_all_long, tri_cols, 21, "int",FALSE)
 ```
     
     
@@ -485,14 +296,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_21_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "900"
-)
+table_race(dt_all_long, tri_cols, 21, "int",FALSE)
 ```
 
 
@@ -506,14 +310,7 @@ A total of 65 competitors entered.
 49 competitors entered the course, achieving 15 new overall PBs and 35 new split PBs: 3 in the pool, 14 on the bike, and 18 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2021-02-06_full.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "934"
-)
+plotly_race(dt_all_long, tri_cols, 20, "full",FALSE)
 ```
     
     
@@ -523,14 +320,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_20_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "2650"
-)
+table_race(dt_all_long, tri_cols, 20, "full",FALSE)
 ```
 
 
@@ -539,14 +329,7 @@ htmltools::tags$iframe(
 16 competitors entered the course, achieving 4 new overall PBs and 9 new split PBs: 2 in the pool, 3 on the bike, and 4 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2021-02-06_int.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "406"
-)
+plotly_race(dt_all_long, tri_cols, 20, "int",FALSE)
 ```
     
     
@@ -556,14 +339,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_20_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+table_race(dt_all_long, tri_cols, 20, "int",FALSE)
 ```
 
 
@@ -577,14 +353,7 @@ A total of 79 competitors entered, 5 for the first time this season.
 64 competitors entered the course, achieving 21 new overall PBs and 51 new split PBs: 19 in the pool, 20 on the bike, and 12 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2021-01-30_full.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1174"
-)
+plotly_race(dt_all_long, tri_cols, 19, "full",FALSE)
 ```
     
     
@@ -594,14 +363,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_19_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "3400"
-)
+table_race(dt_all_long, tri_cols, 19, "full",FALSE)
 ```
 
 
@@ -610,14 +372,7 @@ htmltools::tags$iframe(
 15 competitors entered the course, achieving 7 new overall PBs and 13 new split PBs: 4 in the pool, 7 on the bike, and 2 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2021-01-30_int.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "390"
-)
+plotly_race(dt_all_long, tri_cols, 19, "int",FALSE)
 ```
     
     
@@ -627,14 +382,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_19_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "950"
-)
+table_race(dt_all_long, tri_cols, 19, "int",FALSE)
 ```
 
 
@@ -648,14 +396,7 @@ A total of 45 competitors entered, 1 for the first time this season.
 37 competitors entered the course, achieving 5 new overall PBs and 25 new split PBs: 10 in the pool, 8 on the bike, and 7 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2021-01-16_full.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "742"
-)
+plotly_race(dt_all_long, tri_cols, 17, "full",FALSE)
 ```
     
     
@@ -665,14 +406,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_17_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "2050"
-)
+table_race(dt_all_long, tri_cols, 17, "full",FALSE)
 ```
 
 
@@ -681,14 +415,7 @@ htmltools::tags$iframe(
 8 competitors entered the course, achieving 4 new split PBs: 2 in the pool and 2 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2021-01-16_int.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "278"
-)
+plotly_race(dt_all_long, tri_cols, 17, "int",FALSE)
 ```
     
     
@@ -698,14 +425,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_17_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "600"
-)
+table_race(dt_all_long, tri_cols, 17, "int",FALSE)
 ```
 
 
@@ -719,14 +439,7 @@ A total of 41 competitors entered, 1 for the first time this season.
 32 competitors entered the course, achieving 2 new overall PBs and 14 new split PBs: 4 in the pool, 1 on the bike, and 9 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2021-01-09_full.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "662"
-)
+plotly_race(dt_all_long, tri_cols, 16, "full",FALSE)
 ```
     
     
@@ -736,14 +449,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_16_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1800"
-)
+table_race(dt_all_long, tri_cols, 16, "full",FALSE)
 ```
 
 
@@ -752,14 +458,7 @@ htmltools::tags$iframe(
 9 competitors entered the course, achieving 1 new overall PBs and 4 new split PBs: 2 in the pool and 2 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2021-01-09_int.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "294"
-)
+plotly_race(dt_all_long, tri_cols, 16, "int",FALSE)
 ```
     
     
@@ -769,14 +468,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_16_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "650"
-)
+table_race(dt_all_long, tri_cols, 16, "int",FALSE)
 ```
 
 
@@ -790,14 +482,7 @@ A total of 67 competitors entered, 4 for the first time this season.
 56 competitors entered the course, achieving 16 new overall PBs and 37 new split PBs: 13 in the pool, 14 on the bike, and 10 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2021-01-02_full.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1046"
-)
+plotly_race(dt_all_long, tri_cols, 15, "full",FALSE)
 ```
     
     
@@ -807,14 +492,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_15_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "3000"
-)
+table_race(dt_all_long, tri_cols, 15, "full",FALSE)
 ```
 
 
@@ -823,14 +501,7 @@ htmltools::tags$iframe(
 11 competitors entered the course, achieving 1 new overall PBs and 3 new split PBs: 1 on the bike and 2 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2021-01-02_int.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "326"
-)
+plotly_race(dt_all_long, tri_cols, 15, "int",FALSE)
 ```
     
     
@@ -840,14 +511,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_15_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "750"
-)
+table_race(dt_all_long, tri_cols, 15, "int",FALSE)
 ```
 
 
@@ -861,14 +525,7 @@ A total of 55 competitors entered.
 45 competitors entered the course, achieving 12 new overall PBs and 35 new split PBs: 14 in the pool, 13 on the bike, and 8 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2020-12-19_full.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "870"
-)
+plotly_race(dt_all_long, tri_cols, 13, "full",FALSE)
 ```
     
     
@@ -878,14 +535,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_13_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "2450"
-)
+table_race(dt_all_long, tri_cols, 13, "full",FALSE)
 ```
 
 
@@ -894,14 +544,7 @@ htmltools::tags$iframe(
 10 competitors entered the course, achieving 1 new overall PBs and 5 new split PBs: 2 in the pool, 2 on the bike, and 1 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2020-12-19_int.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "310"
-)
+plotly_race(dt_all_long, tri_cols, 13, "int",FALSE)
 ```
     
     
@@ -911,14 +554,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_13_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "700"
-)
+table_race(dt_all_long, tri_cols, 13, "int",FALSE)
 ```
 
 
@@ -932,14 +568,7 @@ A total of 63 competitors entered, 4 for the first time this season.
 48 competitors entered the course, achieving 13 new overall PBs and 36 new split PBs: 15 in the pool, 14 on the bike, and 7 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2020-12-05_full.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "918"
-)
+plotly_race(dt_all_long, tri_cols, 11, "full",FALSE)
 ```
     
     
@@ -949,14 +578,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_11_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "2600"
-)
+table_race(dt_all_long, tri_cols, 11, "full",FALSE)
 ```
 
 
@@ -965,14 +587,7 @@ htmltools::tags$iframe(
 15 competitors entered the course, achieving 6 new overall PBs and 18 new split PBs: 6 in the pool, 7 on the bike, and 5 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2020-12-05_int.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "390"
-)
+plotly_race(dt_all_long, tri_cols, 11, "int",FALSE)
 ```
     
     
@@ -982,14 +597,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_11_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "950"
-)
+table_race(dt_all_long, tri_cols, 11, "int",FALSE)
 ```
 
 
@@ -1003,14 +611,7 @@ A total of 49 competitors entered, 4 for the first time this season.
 38 competitors entered the course, achieving 8 new overall PBs and 26 new split PBs: 7 in the pool, 12 on the bike, and 7 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2020-11-28_full.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "758"
-)
+plotly_race(dt_all_long, tri_cols, 10, "full",FALSE)
 ```
     
     
@@ -1020,14 +621,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_10_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "2100"
-)
+table_race(dt_all_long, tri_cols, 10, "full",FALSE)
 ```
 
 
@@ -1036,14 +630,7 @@ htmltools::tags$iframe(
 11 competitors entered the course, achieving 8 new overall PBs and 21 new split PBs: 7 in the pool, 9 on the bike, and 5 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2020-11-28_int.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "326"
-)
+plotly_race(dt_all_long, tri_cols, 10, "int",FALSE)
 ```
     
     
@@ -1053,14 +640,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_10_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "750"
-)
+table_race(dt_all_long, tri_cols, 10, "int",FALSE)
 ```
 
 
@@ -1074,14 +654,7 @@ A total of 72 competitors entered, 4 for the first time this season.
 55 competitors entered the course, achieving 20 new overall PBs and 69 new split PBs: 26 in the pool, 17 on the bike, and 26 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2020-11-07_full.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1030"
-)
+plotly_race(dt_all_long, tri_cols, 7, "full",FALSE)
 ```
     
     
@@ -1091,14 +664,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_7_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "2950"
-)
+table_race(dt_all_long, tri_cols, 7, "full",FALSE)
 ```
 
 
@@ -1107,14 +673,7 @@ htmltools::tags$iframe(
 17 competitors entered the course, achieving 8 new overall PBs and 22 new split PBs: 10 in the pool, 5 on the bike, and 7 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2020-11-07_int.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "422"
-)
+plotly_race(dt_all_long, tri_cols, 7, "int",FALSE)
 ```
     
     
@@ -1124,14 +683,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_7_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1050"
-)
+table_race(dt_all_long, tri_cols, 7, "int",FALSE)
 ```
 
 
@@ -1145,14 +697,7 @@ A total of 62 competitors entered, 8 for the first time this season.
 51 competitors entered the course, achieving 16 new overall PBs and 57 new split PBs: 24 in the pool, 19 on the bike, and 14 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2020-10-31_full.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "966"
-)
+plotly_race(dt_all_long, tri_cols, 6, "full",FALSE)
 ```
     
     
@@ -1162,14 +707,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_6_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "2750"
-)
+table_race(dt_all_long, tri_cols, 6, "full",FALSE)
 ```
 
 
@@ -1178,14 +716,7 @@ htmltools::tags$iframe(
 11 competitors entered the course, achieving 5 new overall PBs and 14 new split PBs: 7 in the pool and 7 on the bike.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2020-10-31_int.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "326"
-)
+plotly_race(dt_all_long, tri_cols, 6, "int",FALSE)
 ```
     
     
@@ -1195,14 +726,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_6_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "750"
-)
+table_race(dt_all_long, tri_cols, 6, "int",FALSE)
 ```
 
 
@@ -1216,14 +740,7 @@ A total of 79 competitors entered, 4 for the first time this season.
 63 competitors entered the course, achieving 34 new overall PBs and 81 new split PBs: 23 in the pool, 37 on the bike, and 21 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2020-10-24_full.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1158"
-)
+plotly_race(dt_all_long, tri_cols, 5, "full",FALSE)
 ```
     
     
@@ -1233,14 +750,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_5_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "3350"
-)
+table_race(dt_all_long, tri_cols, 5, "full",FALSE)
 ```
 
 
@@ -1249,14 +759,7 @@ htmltools::tags$iframe(
 16 competitors entered the course, achieving 8 new overall PBs and 22 new split PBs: 8 in the pool, 7 on the bike, and 7 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2020-10-24_int.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "406"
-)
+plotly_race(dt_all_long, tri_cols, 5, "int",FALSE)
 ```
     
     
@@ -1266,14 +769,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_5_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+table_race(dt_all_long, tri_cols, 5, "int",FALSE)
 ```
 
 
@@ -1287,14 +783,7 @@ A total of 73 competitors entered, 11 for the first time this season.
 22 competitors entered the course.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2020-10-17_double.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "502"
-)
+plotly_race(dt_all_long, tri_cols, 4, "double",FALSE)
 ```
     
     
@@ -1304,14 +793,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_4_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1300"
-)
+table_race(dt_all_long, tri_cols, 4, "double",FALSE)
 ```
 
 
@@ -1320,14 +802,7 @@ htmltools::tags$iframe(
 39 competitors entered the course, achieving 16 new overall PBs and 42 new split PBs: 11 in the pool, 14 on the bike, and 17 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2020-10-17_full.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "774"
-)
+plotly_race(dt_all_long, tri_cols, 4, "full",FALSE)
 ```
     
     
@@ -1337,14 +812,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_4_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "2150"
-)
+table_race(dt_all_long, tri_cols, 4, "full",FALSE)
 ```
 
 
@@ -1353,14 +821,7 @@ htmltools::tags$iframe(
 12 competitors entered the course, achieving 9 new overall PBs and 17 new split PBs: 3 in the pool, 7 on the bike, and 7 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2020-10-17_int.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "342"
-)
+plotly_race(dt_all_long, tri_cols, 4, "int",FALSE)
 ```
     
     
@@ -1370,14 +831,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_4_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "800"
-)
+table_race(dt_all_long, tri_cols, 4, "int",FALSE)
 ```
 
 
@@ -1391,14 +845,7 @@ A total of 66 competitors entered, 13 for the first time this season.
 49 competitors entered the course, achieving 15 new overall PBs and 52 new split PBs: 16 in the pool, 15 on the bike, and 21 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2020-10-10_full.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "934"
-)
+plotly_race(dt_all_long, tri_cols, 3, "full",FALSE)
 ```
     
     
@@ -1408,14 +855,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_3_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "2650"
-)
+table_race(dt_all_long, tri_cols, 3, "full",FALSE)
 ```
 
 
@@ -1424,14 +864,7 @@ htmltools::tags$iframe(
 17 competitors entered the course, achieving 8 new overall PBs and 19 new split PBs: 4 in the pool, 7 on the bike, and 8 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2020-10-10_int.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "422"
-)
+plotly_race(dt_all_long, tri_cols, 3, "int",FALSE)
 ```
     
     
@@ -1441,14 +874,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_3_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1050"
-)
+table_race(dt_all_long, tri_cols, 3, "int",FALSE)
 ```
 
 
@@ -1462,14 +888,7 @@ A total of 65 competitors entered, 23 for the first time this season.
 50 competitors entered the course, achieving 20 new overall PBs and 54 new split PBs: 18 in the pool, 19 on the bike, and 17 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2020-10-03_full.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "950"
-)
+plotly_race(dt_all_long, tri_cols, 2, "full",FALSE)
 ```
     
     
@@ -1479,14 +898,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_2_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "2700"
-)
+table_race(dt_all_long, tri_cols, 2, "full",FALSE)
 ```
 
 
@@ -1495,14 +907,7 @@ htmltools::tags$iframe(
 15 competitors entered the course, achieving 5 new overall PBs and 12 new split PBs: 3 in the pool, 5 on the bike, and 4 on the run.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2020-10-03_int.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "390"
-)
+plotly_race(dt_all_long, tri_cols, 2, "int",FALSE)
 ```
     
     
@@ -1512,14 +917,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_2_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "950"
-)
+table_race(dt_all_long, tri_cols, 2, "int",FALSE)
 ```
 
 
@@ -1533,14 +931,7 @@ A total of 65 competitors entered.
 52 competitors entered the course.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2020-09-26_full.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "982"
-)
+plotly_race(dt_all_long, tri_cols, 1, "full",FALSE)
 ```
     
     
@@ -1550,14 +941,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_1_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "2800"
-)
+table_race(dt_all_long, tri_cols, 1, "full",FALSE)
 ```
 
 
@@ -1566,14 +950,7 @@ htmltools::tags$iframe(
 13 competitors entered the course.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "2020-09-26_int.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "358"
-)
+plotly_race(dt_all_long, tri_cols, 1, "int",FALSE)
 ```
     
     
@@ -1583,14 +960,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_race_1_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "850"
-)
+table_race(dt_all_long, tri_cols, 1, "int",FALSE)
 ```
 
 

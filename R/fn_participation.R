@@ -188,6 +188,7 @@ table_part_total <- function(dt_all_long, tri_cols) {
                                            paging=FALSE,
                                            dom = 'Brtp',
                                            scrollY = "500px",
+                                           scrollX = "500px",
                                            buttons = c('copy', 'csv', 'excel'),
                                            columnDefs = 
                                              list(list(visible=FALSE, targets=col_ref_hide)))) %>%

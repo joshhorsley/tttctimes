@@ -1,6 +1,6 @@
 # (PART) Season
 
-# Schedule
+# Schedule 
 
 ```{r}
 
@@ -23,7 +23,7 @@ knitr::kable(dt_season_show[, .(`Race #`,
 ```
 
 
-# Participation - Total
+# Participation - Total {#participation-total}
 
 ```{r}
 n_entries_all_season <- nrow(dt_all_long[(started) & part == "Swim"])

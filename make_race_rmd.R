@@ -88,14 +88,7 @@ if(n_pb_splits_new!=0) {
 '\n\n',
 
 '```{r}
-htmltools::tags$iframe(
-  src = "',paste0(i_date_file,"_",j,ifelse(j_is_champ, "_champ",""),".html"),'", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "',150 + 16*n_athletes,'"
-)
+plotly_race(dt_all_long, tri_cols, ',i,', "',j,'",',j_is_champ,')
 ```
     
     ',
@@ -108,14 +101,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "',paste0("tab_race_", i,"_",j,ifelse(j_is_champ, "_champ",""),".html"),'", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "',n_athletes*50+200,'"
-)
+table_race(dt_all_long, tri_cols, ',i,', "',j,'",',j_is_champ,')
 ```
 
 '

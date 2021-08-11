@@ -1,7 +1,6 @@
 --- 
 title: "Twinnies Times (unofficial)"
-author: "Josh Horsley"
-date: "Updated: `r as.integer(format(Sys.time(),'%d'))` `r format(Sys.time(),'%b %Y')`"
+author: "Created by Josh Horsley, updated `r as.integer(format(Sys.time(),'%d'))` `r format(Sys.time(),'%b %Y')`"
 site: bookdown::bookdown_site
 documentclass: book
 link-citations: yes
@@ -27,10 +26,8 @@ some_weeks_missing_int <-length(weeks_missing_int) !=0
 ```
 
 
-# Welcome
+# Home
 
-This is a completely unofficial collection of the 2020/2021 race results for [TwinTowns Triathlon Club](http://www.twintownstriathlon.org.au).
+This is a unofficial collection of the 2020/2021 race results for [TwinTowns Triathlon Club](http://www.twintownstriathlon.org.au){target="_blank"} based on the [club's webscorer page](https://www.webscorer.com/33755){target="_blank"}.
 
-Results are presented for each race ([Example: February 13](#r-2021-02-13)) and each competitor ([Example](#a-Tracy-Foyster)).
-
-The results on this website are based on publicly available data from the [club's webscorer page](https://www.webscorer.com/33755) and some guesses (for now) in places where the webscorer data appears inaccurate (e.g. split times unrealistic or missing).
+Results are presented in terms of overall participation and records ([example](#participation-total)), for each race ([example](#r-2021-02-13)), and for each competitor ([example](#a-Tracy-Foyster)).
