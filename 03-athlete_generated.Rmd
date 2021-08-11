@@ -9,14 +9,7 @@
 Adrian has entered 1 race this season, full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Adrian.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Adrian")
 ```
 
 
@@ -27,14 +20,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Adrian_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Adrian", "full")
 ```
 
 
@@ -43,14 +29,7 @@ htmltools::tags$iframe(
 Frank has entered 3 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Frank Adler.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Frank Adler")
 ```
 
 
@@ -61,14 +40,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Frank Adler_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "400"
-)
+table_athlete_course(dt_all_long, tri_cols, "Frank Adler", "full")
 ```
 
 
@@ -77,14 +49,7 @@ htmltools::tags$iframe(
 Christian has entered 7 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Christian Andrews.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Christian Andrews")
 ```
 
 
@@ -95,14 +60,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Christian Andrews_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "750"
-)
+table_athlete_course(dt_all_long, tri_cols, "Christian Andrews", "full")
 ```
 
 
@@ -111,14 +69,7 @@ htmltools::tags$iframe(
 Brett has entered 1 race this season, intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Brett Archibald.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Brett Archibald")
 ```
 
 
@@ -129,14 +80,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Brett Archibald_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Brett Archibald", "int")
 ```
 
 
@@ -145,14 +89,7 @@ htmltools::tags$iframe(
 Sienna has entered 1 race this season, intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Sienna Archibald.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Sienna Archibald")
 ```
 
 
@@ -163,14 +100,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Sienna Archibald_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Sienna Archibald", "int")
 ```
 
 
@@ -179,14 +109,7 @@ htmltools::tags$iframe(
 Andrew has entered 2 races this season, both full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Andrew Armstrong.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Andrew Armstrong")
 ```
 
 
@@ -197,14 +120,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Andrew Armstrong_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "400"
-)
+table_athlete_course(dt_all_long, tri_cols, "Andrew Armstrong", "full")
 ```
 
 
@@ -213,14 +129,7 @@ htmltools::tags$iframe(
 Cheryl has entered 5 races this season, all intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Cheryl Atkinson.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Cheryl Atkinson")
 ```
 
 
@@ -231,14 +140,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Cheryl Atkinson_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "600"
-)
+table_athlete_course(dt_all_long, tri_cols, "Cheryl Atkinson", "int")
 ```
 
 
@@ -247,14 +149,7 @@ htmltools::tags$iframe(
 Benjamin has entered 2 races this season, both full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Benjamin Austin.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Benjamin Austin")
 ```
 
 
@@ -265,14 +160,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Benjamin Austin_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "300"
-)
+table_athlete_course(dt_all_long, tri_cols, "Benjamin Austin", "full")
 ```
 
 
@@ -281,14 +169,7 @@ htmltools::tags$iframe(
 Kev has entered 20 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Kev Bannerman.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Kev Bannerman")
 ```
 
 
@@ -299,14 +180,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Kev Bannerman_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1200"
-)
+table_athlete_course(dt_all_long, tri_cols, "Kev Bannerman", "full")
 ```
 
 
@@ -315,14 +189,7 @@ htmltools::tags$iframe(
 Robyn has entered 13 races this season, all intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Robyn Barry.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Robyn Barry")
 ```
 
 
@@ -333,14 +200,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Robyn Barry_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+table_athlete_course(dt_all_long, tri_cols, "Robyn Barry", "int")
 ```
 
 
@@ -349,14 +209,7 @@ htmltools::tags$iframe(
 Lorraine has entered 6 races this season, all intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Lorraine Bassett.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Lorraine Bassett")
 ```
 
 
@@ -367,14 +220,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Lorraine Bassett_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "850"
-)
+table_athlete_course(dt_all_long, tri_cols, "Lorraine Bassett", "int")
 ```
 
 
@@ -383,14 +229,7 @@ htmltools::tags$iframe(
 Greg has entered 7 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Greg Bemet.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Greg Bemet")
 ```
 
 
@@ -401,14 +240,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Greg Bemet_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "550"
-)
+table_athlete_course(dt_all_long, tri_cols, "Greg Bemet", "full")
 ```
 
 
@@ -417,14 +249,7 @@ htmltools::tags$iframe(
 Jo-Anne has entered 2 races this season, both intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Jo-Anne Borgas.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Jo-Anne Borgas")
 ```
 
 
@@ -435,14 +260,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Jo-Anne Borgas_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "300"
-)
+table_athlete_course(dt_all_long, tri_cols, "Jo-Anne Borgas", "int")
 ```
 
 
@@ -451,14 +269,7 @@ htmltools::tags$iframe(
 Scott has entered 6 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Scott Bornholt.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Scott Bornholt")
 ```
 
 
@@ -469,14 +280,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Scott Bornholt_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "650"
-)
+table_athlete_course(dt_all_long, tri_cols, "Scott Bornholt", "full")
 ```
 
 
@@ -485,14 +289,7 @@ htmltools::tags$iframe(
 Simon has entered 4 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Simon Bradbery.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Simon Bradbery")
 ```
 
 
@@ -503,14 +300,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Simon Bradbery_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "600"
-)
+table_athlete_course(dt_all_long, tri_cols, "Simon Bradbery", "full")
 ```
 
 
@@ -519,14 +309,7 @@ htmltools::tags$iframe(
 Daniel has entered 2 races this season, both full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Daniel Bray.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Daniel Bray")
 ```
 
 
@@ -537,14 +320,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Daniel Bray_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "300"
-)
+table_athlete_course(dt_all_long, tri_cols, "Daniel Bray", "full")
 ```
 
 
@@ -553,14 +329,7 @@ htmltools::tags$iframe(
 Ryan has entered 3 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Ryan Bray.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Ryan Bray")
 ```
 
 
@@ -571,14 +340,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Ryan Bray_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "350"
-)
+table_athlete_course(dt_all_long, tri_cols, "Ryan Bray", "full")
 ```
 
 
@@ -587,14 +349,7 @@ htmltools::tags$iframe(
 Jamie has entered 11 races this season, 10 intermediate distance and 1 full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Jamie Brindley.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Jamie Brindley")
 ```
 
 
@@ -605,14 +360,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Jamie Brindley_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "750"
-)
+table_athlete_course(dt_all_long, tri_cols, "Jamie Brindley", "int")
 ```
 
 
@@ -622,14 +370,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Jamie Brindley_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "350"
-)
+table_athlete_course(dt_all_long, tri_cols, "Jamie Brindley", "full")
 ```
 
 
@@ -638,14 +379,7 @@ htmltools::tags$iframe(
 Craig has entered 3 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Craig Broadhurst.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Craig Broadhurst")
 ```
 
 
@@ -656,14 +390,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Craig Broadhurst_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+table_athlete_course(dt_all_long, tri_cols, "Craig Broadhurst", "full")
 ```
 
 
@@ -672,14 +399,7 @@ htmltools::tags$iframe(
 Sarah has entered 2 races this season, both double distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Sarah Buchanan.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Sarah Buchanan")
 ```
 
 
@@ -690,14 +410,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Sarah Buchanan_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "300"
-)
+table_athlete_course(dt_all_long, tri_cols, "Sarah Buchanan", "double")
 ```
 
 
@@ -706,14 +419,7 @@ htmltools::tags$iframe(
 Andrew has entered 3 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Andrew Carr.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Andrew Carr")
 ```
 
 
@@ -724,14 +430,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Andrew Carr_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "350"
-)
+table_athlete_course(dt_all_long, tri_cols, "Andrew Carr", "full")
 ```
 
 
@@ -740,14 +439,7 @@ htmltools::tags$iframe(
 Joanne has entered 15 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Joanne Colja.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Joanne Colja")
 ```
 
 
@@ -758,14 +450,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Joanne Colja_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "950"
-)
+table_athlete_course(dt_all_long, tri_cols, "Joanne Colja", "full")
 ```
 
 
@@ -774,14 +459,7 @@ htmltools::tags$iframe(
 Jim has entered 19 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Jim Collins.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Jim Collins")
 ```
 
 
@@ -792,14 +470,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Jim Collins_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1200"
-)
+table_athlete_course(dt_all_long, tri_cols, "Jim Collins", "full")
 ```
 
 
@@ -808,14 +479,7 @@ htmltools::tags$iframe(
 Scott has entered 1 race this season, full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Scott Collins.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Scott Collins")
 ```
 
 
@@ -826,14 +490,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Scott Collins_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Scott Collins", "full")
 ```
 
 
@@ -842,14 +499,7 @@ htmltools::tags$iframe(
 Mark has entered 19 races this season, 18 full distance and 1 double distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Mark Collinson.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Mark Collinson")
 ```
 
 
@@ -860,14 +510,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Mark Collinson_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1100"
-)
+table_athlete_course(dt_all_long, tri_cols, "Mark Collinson", "full")
 ```
 
 
@@ -877,14 +520,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Mark Collinson_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Mark Collinson", "double")
 ```
 
 
@@ -893,14 +529,7 @@ htmltools::tags$iframe(
 Sam has entered 14 races this season, 12 full distance, 1 double distance, and 1 intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Sam Colman.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Sam Colman")
 ```
 
 
@@ -911,14 +540,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Sam Colman_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "850"
-)
+table_athlete_course(dt_all_long, tri_cols, "Sam Colman", "full")
 ```
 
 
@@ -928,14 +550,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Sam Colman_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "300"
-)
+table_athlete_course(dt_all_long, tri_cols, "Sam Colman", "double")
 ```
 
 
@@ -945,14 +560,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Sam Colman_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Sam Colman", "int")
 ```
 
 
@@ -961,14 +569,7 @@ htmltools::tags$iframe(
 Warren has entered 16 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Warren Copping.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Warren Copping")
 ```
 
 
@@ -979,14 +580,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Warren Copping_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1100"
-)
+table_athlete_course(dt_all_long, tri_cols, "Warren Copping", "full")
 ```
 
 
@@ -995,14 +589,7 @@ htmltools::tags$iframe(
 Jasmine has entered 1 race this season, intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Jasmine Costanza.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Jasmine Costanza")
 ```
 
 
@@ -1013,14 +600,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Jasmine Costanza_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Jasmine Costanza", "int")
 ```
 
 
@@ -1029,14 +609,7 @@ htmltools::tags$iframe(
 Andrew has entered 2 races this season, both full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Andrew Costello.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Andrew Costello")
 ```
 
 
@@ -1047,14 +620,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Andrew Costello_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "550"
-)
+table_athlete_course(dt_all_long, tri_cols, "Andrew Costello", "full")
 ```
 
 
@@ -1063,14 +629,7 @@ htmltools::tags$iframe(
 Ben has entered 5 races this season, 4 full distance and 1 double distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Ben Courage.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Ben Courage")
 ```
 
 
@@ -1081,14 +640,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Ben Courage_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "450"
-)
+table_athlete_course(dt_all_long, tri_cols, "Ben Courage", "full")
 ```
 
 
@@ -1098,14 +650,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Ben Courage_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Ben Courage", "double")
 ```
 
 
@@ -1114,14 +659,7 @@ htmltools::tags$iframe(
 Stuart has entered 9 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Stuart Crawford.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Stuart Crawford")
 ```
 
 
@@ -1132,14 +670,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Stuart Crawford_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1050"
-)
+table_athlete_course(dt_all_long, tri_cols, "Stuart Crawford", "full")
 ```
 
 
@@ -1148,14 +679,7 @@ htmltools::tags$iframe(
 Peter has entered 6 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Peter Crowe.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Peter Crowe")
 ```
 
 
@@ -1166,14 +690,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Peter Crowe_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "550"
-)
+table_athlete_course(dt_all_long, tri_cols, "Peter Crowe", "full")
 ```
 
 
@@ -1182,14 +699,7 @@ htmltools::tags$iframe(
 Debbie has entered 6 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Debbie Davies.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Debbie Davies")
 ```
 
 
@@ -1200,14 +710,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Debbie Davies_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "650"
-)
+table_athlete_course(dt_all_long, tri_cols, "Debbie Davies", "full")
 ```
 
 
@@ -1216,14 +719,7 @@ htmltools::tags$iframe(
 Jonathan has entered 7 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Jonathan Davies.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Jonathan Davies")
 ```
 
 
@@ -1234,14 +730,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Jonathan Davies_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "700"
-)
+table_athlete_course(dt_all_long, tri_cols, "Jonathan Davies", "full")
 ```
 
 
@@ -1250,14 +739,7 @@ htmltools::tags$iframe(
 Erin has entered 5 races this season, all intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Erin Davoren.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Erin Davoren")
 ```
 
 
@@ -1268,14 +750,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Erin Davoren_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "600"
-)
+table_athlete_course(dt_all_long, tri_cols, "Erin Davoren", "int")
 ```
 
 
@@ -1284,14 +759,7 @@ htmltools::tags$iframe(
 Guy has entered 18 races this season, 16 full distance, 1 intermediate distance, and 1 double distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Guy Davoren.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Guy Davoren")
 ```
 
 
@@ -1302,14 +770,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Guy Davoren_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1150"
-)
+table_athlete_course(dt_all_long, tri_cols, "Guy Davoren", "full")
 ```
 
 
@@ -1319,14 +780,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Guy Davoren_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Guy Davoren", "int")
 ```
 
 
@@ -1336,14 +790,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Guy Davoren_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Guy Davoren", "double")
 ```
 
 
@@ -1352,14 +799,7 @@ htmltools::tags$iframe(
 David has entered 18 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "David De Closey.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "David De Closey")
 ```
 
 
@@ -1370,14 +810,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_David De Closey_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1100"
-)
+table_athlete_course(dt_all_long, tri_cols, "David De Closey", "full")
 ```
 
 
@@ -1386,14 +819,7 @@ htmltools::tags$iframe(
 Ian has entered 2 races this season, both full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Ian Driffill.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Ian Driffill")
 ```
 
 
@@ -1404,14 +830,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Ian Driffill_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "300"
-)
+table_athlete_course(dt_all_long, tri_cols, "Ian Driffill", "full")
 ```
 
 
@@ -1420,14 +839,7 @@ htmltools::tags$iframe(
 Melanie has entered 6 races this season, 4 full distance and 2 intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Melanie Duff.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Melanie Duff")
 ```
 
 
@@ -1438,14 +850,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Melanie Duff_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "450"
-)
+table_athlete_course(dt_all_long, tri_cols, "Melanie Duff", "full")
 ```
 
 
@@ -1455,14 +860,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Melanie Duff_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "350"
-)
+table_athlete_course(dt_all_long, tri_cols, "Melanie Duff", "int")
 ```
 
 
@@ -1471,14 +869,7 @@ htmltools::tags$iframe(
 Tim has entered 4 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Tim Eade.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Tim Eade")
 ```
 
 
@@ -1489,14 +880,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Tim Eade_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "700"
-)
+table_athlete_course(dt_all_long, tri_cols, "Tim Eade", "full")
 ```
 
 
@@ -1505,14 +889,7 @@ htmltools::tags$iframe(
 Peta has entered 4 races this season, all intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Peta Edge.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Peta Edge")
 ```
 
 
@@ -1523,14 +900,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Peta Edge_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "400"
-)
+table_athlete_course(dt_all_long, tri_cols, "Peta Edge", "int")
 ```
 
 
@@ -1539,14 +909,7 @@ htmltools::tags$iframe(
 Kirsten has entered 2 races this season, both full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Kirsten Ellis.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Kirsten Ellis")
 ```
 
 
@@ -1557,14 +920,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Kirsten Ellis_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "300"
-)
+table_athlete_course(dt_all_long, tri_cols, "Kirsten Ellis", "full")
 ```
 
 
@@ -1573,14 +929,7 @@ htmltools::tags$iframe(
 David has entered 4 races this season, 1 double distance and 3 full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "David Emery.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "David Emery")
 ```
 
 
@@ -1591,14 +940,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_David Emery_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "David Emery", "double")
 ```
 
 
@@ -1608,14 +950,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_David Emery_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+table_athlete_course(dt_all_long, tri_cols, "David Emery", "full")
 ```
 
 
@@ -1624,14 +959,7 @@ htmltools::tags$iframe(
 Nicholas has entered 1 race this season, full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Nicholas Fawaz.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Nicholas Fawaz")
 ```
 
 
@@ -1642,14 +970,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Nicholas Fawaz_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Nicholas Fawaz", "full")
 ```
 
 
@@ -1658,14 +979,7 @@ htmltools::tags$iframe(
 Marcus has entered 1 race this season, intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Marcus Fox.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Marcus Fox")
 ```
 
 
@@ -1676,14 +990,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Marcus Fox_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Marcus Fox", "int")
 ```
 
 
@@ -1692,14 +999,7 @@ htmltools::tags$iframe(
 Tracy has entered 18 races this season, 16 full distance and 2 double distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Tracy Foyster.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Tracy Foyster")
 ```
 
 
@@ -1710,14 +1010,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Tracy Foyster_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+table_athlete_course(dt_all_long, tri_cols, "Tracy Foyster", "full")
 ```
 
 
@@ -1727,14 +1020,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Tracy Foyster_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "300"
-)
+table_athlete_course(dt_all_long, tri_cols, "Tracy Foyster", "double")
 ```
 
 
@@ -1743,14 +1029,7 @@ htmltools::tags$iframe(
 Gregory has entered 16 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Gregory Freeman.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Gregory Freeman")
 ```
 
 
@@ -1761,14 +1040,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Gregory Freeman_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Gregory Freeman", "full")
 ```
 
 
@@ -1777,14 +1049,7 @@ htmltools::tags$iframe(
 Kipp has entered 5 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Kipp Freeman.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Kipp Freeman")
 ```
 
 
@@ -1795,14 +1060,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Kipp Freeman_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "600"
-)
+table_athlete_course(dt_all_long, tri_cols, "Kipp Freeman", "full")
 ```
 
 
@@ -1811,14 +1069,7 @@ htmltools::tags$iframe(
 Matt has entered 5 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Matt Gabb.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Matt Gabb")
 ```
 
 
@@ -1829,14 +1080,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Matt Gabb_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+table_athlete_course(dt_all_long, tri_cols, "Matt Gabb", "full")
 ```
 
 
@@ -1845,14 +1089,7 @@ htmltools::tags$iframe(
 Trudy has entered 8 races this season, 1 intermediate distance and 7 full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Trudy Gadaleta.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Trudy Gadaleta")
 ```
 
 
@@ -1863,14 +1100,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Trudy Gadaleta_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Trudy Gadaleta", "int")
 ```
 
 
@@ -1880,14 +1110,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Trudy Gadaleta_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "650"
-)
+table_athlete_course(dt_all_long, tri_cols, "Trudy Gadaleta", "full")
 ```
 
 
@@ -1896,14 +1119,7 @@ htmltools::tags$iframe(
 Alycia has entered 2 races this season, both full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Alycia Garriock.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Alycia Garriock")
 ```
 
 
@@ -1914,14 +1130,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Alycia Garriock_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "350"
-)
+table_athlete_course(dt_all_long, tri_cols, "Alycia Garriock", "full")
 ```
 
 
@@ -1930,14 +1139,7 @@ htmltools::tags$iframe(
 Kylie has entered 9 races this season, 4 intermediate distance and 5 full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Kylie Gibson.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Kylie Gibson")
 ```
 
 
@@ -1948,14 +1150,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Kylie Gibson_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "550"
-)
+table_athlete_course(dt_all_long, tri_cols, "Kylie Gibson", "int")
 ```
 
 
@@ -1965,14 +1160,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Kylie Gibson_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "450"
-)
+table_athlete_course(dt_all_long, tri_cols, "Kylie Gibson", "full")
 ```
 
 
@@ -1981,14 +1169,7 @@ htmltools::tags$iframe(
 Tyler has entered 1 race this season, full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Tyler Gilbert.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Tyler Gilbert")
 ```
 
 
@@ -1999,14 +1180,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Tyler Gilbert_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "300"
-)
+table_athlete_course(dt_all_long, tri_cols, "Tyler Gilbert", "full")
 ```
 
 
@@ -2015,14 +1189,7 @@ htmltools::tags$iframe(
 Alex has entered 15 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Alex Gilks.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Alex Gilks")
 ```
 
 
@@ -2033,14 +1200,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Alex Gilks_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1150"
-)
+table_athlete_course(dt_all_long, tri_cols, "Alex Gilks", "full")
 ```
 
 
@@ -2049,14 +1209,7 @@ htmltools::tags$iframe(
 Rob has entered 13 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Rob Gillies.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Rob Gillies")
 ```
 
 
@@ -2067,14 +1220,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Rob Gillies_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "900"
-)
+table_athlete_course(dt_all_long, tri_cols, "Rob Gillies", "full")
 ```
 
 
@@ -2083,14 +1229,7 @@ htmltools::tags$iframe(
 Katie has entered 10 races this season, 8 intermediate distance and 2 full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Katie Glynn.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Katie Glynn")
 ```
 
 
@@ -2101,14 +1240,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Katie Glynn_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "700"
-)
+table_athlete_course(dt_all_long, tri_cols, "Katie Glynn", "int")
 ```
 
 
@@ -2118,14 +1250,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Katie Glynn_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "400"
-)
+table_athlete_course(dt_all_long, tri_cols, "Katie Glynn", "full")
 ```
 
 
@@ -2134,14 +1259,7 @@ htmltools::tags$iframe(
 Des has entered 10 races this season, 8 full distance and 2 double distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Des Gooda.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Des Gooda")
 ```
 
 
@@ -2152,14 +1270,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Des Gooda_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "650"
-)
+table_athlete_course(dt_all_long, tri_cols, "Des Gooda", "full")
 ```
 
 
@@ -2169,14 +1280,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Des Gooda_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "300"
-)
+table_athlete_course(dt_all_long, tri_cols, "Des Gooda", "double")
 ```
 
 
@@ -2185,14 +1289,7 @@ htmltools::tags$iframe(
 Ben has entered 17 races this season, 15 full distance and 2 double distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Ben Hall.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Ben Hall")
 ```
 
 
@@ -2203,14 +1300,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Ben Hall_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+table_athlete_course(dt_all_long, tri_cols, "Ben Hall", "full")
 ```
 
 
@@ -2220,14 +1310,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Ben Hall_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "300"
-)
+table_athlete_course(dt_all_long, tri_cols, "Ben Hall", "double")
 ```
 
 
@@ -2236,14 +1319,7 @@ htmltools::tags$iframe(
 Jack has entered 1 race this season, intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Jack Hall.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Jack Hall")
 ```
 
 
@@ -2254,14 +1330,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Jack Hall_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Jack Hall", "int")
 ```
 
 
@@ -2270,14 +1339,7 @@ htmltools::tags$iframe(
 Manda has entered 2 races this season, both intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Manda Hall.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Manda Hall")
 ```
 
 
@@ -2288,14 +1350,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Manda Hall_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+table_athlete_course(dt_all_long, tri_cols, "Manda Hall", "int")
 ```
 
 
@@ -2304,14 +1359,7 @@ htmltools::tags$iframe(
 Simon has entered 11 races this season, 9 full distance and 2 double distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Simon Harradence.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Simon Harradence")
 ```
 
 
@@ -2322,14 +1370,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Simon Harradence_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "750"
-)
+table_athlete_course(dt_all_long, tri_cols, "Simon Harradence", "full")
 ```
 
 
@@ -2339,14 +1380,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Simon Harradence_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "300"
-)
+table_athlete_course(dt_all_long, tri_cols, "Simon Harradence", "double")
 ```
 
 
@@ -2355,14 +1389,7 @@ htmltools::tags$iframe(
 Peter has entered 1 race this season, full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Peter Harrington.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Peter Harrington")
 ```
 
 
@@ -2373,14 +1400,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Peter Harrington_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "300"
-)
+table_athlete_course(dt_all_long, tri_cols, "Peter Harrington", "full")
 ```
 
 
@@ -2389,14 +1409,7 @@ htmltools::tags$iframe(
 Remy has entered 14 races this season, all intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Remy Hawkins.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Remy Hawkins")
 ```
 
 
@@ -2407,14 +1420,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Remy Hawkins_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1100"
-)
+table_athlete_course(dt_all_long, tri_cols, "Remy Hawkins", "int")
 ```
 
 
@@ -2423,14 +1429,7 @@ htmltools::tags$iframe(
 Cassandra has entered 2 races this season, both full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Cassandra Heaslip.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Cassandra Heaslip")
 ```
 
 
@@ -2441,14 +1440,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Cassandra Heaslip_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "300"
-)
+table_athlete_course(dt_all_long, tri_cols, "Cassandra Heaslip", "full")
 ```
 
 
@@ -2457,14 +1449,7 @@ htmltools::tags$iframe(
 Glenn has entered 9 races this season, all intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Glenn Hind.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Glenn Hind")
 ```
 
 
@@ -2475,14 +1460,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Glenn Hind_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1100"
-)
+table_athlete_course(dt_all_long, tri_cols, "Glenn Hind", "int")
 ```
 
 
@@ -2491,14 +1469,7 @@ htmltools::tags$iframe(
 Caroline has entered 9 races this season, 7 full distance and 2 intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Caroline Hogan.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Caroline Hogan")
 ```
 
 
@@ -2509,14 +1480,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Caroline Hogan_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "650"
-)
+table_athlete_course(dt_all_long, tri_cols, "Caroline Hogan", "full")
 ```
 
 
@@ -2526,14 +1490,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Caroline Hogan_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "300"
-)
+table_athlete_course(dt_all_long, tri_cols, "Caroline Hogan", "int")
 ```
 
 
@@ -2542,14 +1499,7 @@ htmltools::tags$iframe(
 David has entered 7 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "David Hogan.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "David Hogan")
 ```
 
 
@@ -2560,14 +1510,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_David Hogan_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "650"
-)
+table_athlete_course(dt_all_long, tri_cols, "David Hogan", "full")
 ```
 
 
@@ -2576,14 +1519,7 @@ htmltools::tags$iframe(
 Kent has entered 12 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Kent Holmes.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Kent Holmes")
 ```
 
 
@@ -2594,14 +1530,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Kent Holmes_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+table_athlete_course(dt_all_long, tri_cols, "Kent Holmes", "full")
 ```
 
 
@@ -2610,14 +1539,7 @@ htmltools::tags$iframe(
 Josh has entered 6 races this season, 3 full distance and 3 intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Josh Horsley.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Josh Horsley")
 ```
 
 
@@ -2628,14 +1550,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Josh Horsley_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "400"
-)
+table_athlete_course(dt_all_long, tri_cols, "Josh Horsley", "full")
 ```
 
 
@@ -2645,14 +1560,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Josh Horsley_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "450"
-)
+table_athlete_course(dt_all_long, tri_cols, "Josh Horsley", "int")
 ```
 
 
@@ -2661,14 +1569,7 @@ htmltools::tags$iframe(
 Haydn has entered 1 race this season, full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Haydn Jenkins.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Haydn Jenkins")
 ```
 
 
@@ -2679,14 +1580,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Haydn Jenkins_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "300"
-)
+table_athlete_course(dt_all_long, tri_cols, "Haydn Jenkins", "full")
 ```
 
 
@@ -2695,14 +1589,7 @@ htmltools::tags$iframe(
 Dan has entered 5 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Dan Johnson.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Dan Johnson")
 ```
 
 
@@ -2713,14 +1600,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Dan Johnson_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "550"
-)
+table_athlete_course(dt_all_long, tri_cols, "Dan Johnson", "full")
 ```
 
 
@@ -2729,14 +1609,7 @@ htmltools::tags$iframe(
 Darren has entered 20 races this season, 18 full distance and 2 double distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Darren Jones.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Darren Jones")
 ```
 
 
@@ -2747,14 +1620,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Darren Jones_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1100"
-)
+table_athlete_course(dt_all_long, tri_cols, "Darren Jones", "full")
 ```
 
 
@@ -2764,14 +1630,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Darren Jones_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "300"
-)
+table_athlete_course(dt_all_long, tri_cols, "Darren Jones", "double")
 ```
 
 
@@ -2780,14 +1639,7 @@ htmltools::tags$iframe(
 Ginny has entered 17 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Ginny Jones.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Ginny Jones")
 ```
 
 
@@ -2798,14 +1650,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Ginny Jones_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1150"
-)
+table_athlete_course(dt_all_long, tri_cols, "Ginny Jones", "full")
 ```
 
 
@@ -2814,14 +1659,7 @@ htmltools::tags$iframe(
 Michelle has entered 8 races this season, 4 full distance and 4 intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Michelle Jones.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Michelle Jones")
 ```
 
 
@@ -2832,14 +1670,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Michelle Jones_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+table_athlete_course(dt_all_long, tri_cols, "Michelle Jones", "full")
 ```
 
 
@@ -2849,14 +1680,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Michelle Jones_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "450"
-)
+table_athlete_course(dt_all_long, tri_cols, "Michelle Jones", "int")
 ```
 
 
@@ -2865,14 +1689,7 @@ htmltools::tags$iframe(
 Danny has entered 8 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Danny Khazen.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Danny Khazen")
 ```
 
 
@@ -2883,14 +1700,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Danny Khazen_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "800"
-)
+table_athlete_course(dt_all_long, tri_cols, "Danny Khazen", "full")
 ```
 
 
@@ -2899,14 +1709,7 @@ htmltools::tags$iframe(
 John has entered 16 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "John King.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "John King")
 ```
 
 
@@ -2917,14 +1720,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_John King_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1050"
-)
+table_athlete_course(dt_all_long, tri_cols, "John King", "full")
 ```
 
 
@@ -2933,14 +1729,7 @@ htmltools::tags$iframe(
 Sally has entered 5 races this season, 3 intermediate distance and 2 full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Sally Kingston.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Sally Kingston")
 ```
 
 
@@ -2951,14 +1740,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Sally Kingston_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "400"
-)
+table_athlete_course(dt_all_long, tri_cols, "Sally Kingston", "int")
 ```
 
 
@@ -2968,14 +1750,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Sally Kingston_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "400"
-)
+table_athlete_course(dt_all_long, tri_cols, "Sally Kingston", "full")
 ```
 
 
@@ -2984,14 +1759,7 @@ htmltools::tags$iframe(
 Sharyn has entered 12 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Sharyn Klein.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Sharyn Klein")
 ```
 
 
@@ -3002,14 +1770,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Sharyn Klein_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "850"
-)
+table_athlete_course(dt_all_long, tri_cols, "Sharyn Klein", "full")
 ```
 
 
@@ -3018,14 +1779,7 @@ htmltools::tags$iframe(
 Nadja has entered 3 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Nadja Kundrus-Little.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Nadja Kundrus-Little")
 ```
 
 
@@ -3036,14 +1790,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Nadja Kundrus-Little_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "400"
-)
+table_athlete_course(dt_all_long, tri_cols, "Nadja Kundrus-Little", "full")
 ```
 
 
@@ -3052,14 +1799,7 @@ htmltools::tags$iframe(
 Lydia has entered 12 races this season, all intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Lydia Kuschmirz.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Lydia Kuschmirz")
 ```
 
 
@@ -3070,14 +1810,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Lydia Kuschmirz_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "850"
-)
+table_athlete_course(dt_all_long, tri_cols, "Lydia Kuschmirz", "int")
 ```
 
 
@@ -3086,14 +1819,7 @@ htmltools::tags$iframe(
 Val has entered 13 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Val Lambard.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Val Lambard")
 ```
 
 
@@ -3104,14 +1830,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Val Lambard_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1050"
-)
+table_athlete_course(dt_all_long, tri_cols, "Val Lambard", "full")
 ```
 
 
@@ -3120,14 +1839,7 @@ htmltools::tags$iframe(
 Matt has entered 1 race this season, double distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Matt Lance.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Matt Lance")
 ```
 
 
@@ -3138,14 +1850,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Matt Lance_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Matt Lance", "double")
 ```
 
 
@@ -3154,14 +1859,7 @@ htmltools::tags$iframe(
 Samantha has entered 13 races this season, 12 full distance and 1 double distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Samantha Leonard.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Samantha Leonard")
 ```
 
 
@@ -3172,14 +1870,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Samantha Leonard_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "800"
-)
+table_athlete_course(dt_all_long, tri_cols, "Samantha Leonard", "full")
 ```
 
 
@@ -3189,14 +1880,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Samantha Leonard_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Samantha Leonard", "double")
 ```
 
 
@@ -3205,14 +1889,7 @@ htmltools::tags$iframe(
 Jennifer has entered 4 races this season, 3 full distance and 1 intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Jennifer Love.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Jennifer Love")
 ```
 
 
@@ -3223,14 +1900,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Jennifer Love_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "400"
-)
+table_athlete_course(dt_all_long, tri_cols, "Jennifer Love", "full")
 ```
 
 
@@ -3240,14 +1910,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Jennifer Love_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Jennifer Love", "int")
 ```
 
 
@@ -3256,14 +1919,7 @@ htmltools::tags$iframe(
 Julie has entered 3 races this season, 1 full distance and 2 intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Julie Lowe.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Julie Lowe")
 ```
 
 
@@ -3274,14 +1930,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Julie Lowe_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Julie Lowe", "full")
 ```
 
 
@@ -3291,14 +1940,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Julie Lowe_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "550"
-)
+table_athlete_course(dt_all_long, tri_cols, "Julie Lowe", "int")
 ```
 
 
@@ -3307,14 +1949,7 @@ htmltools::tags$iframe(
 Stuart has entered 3 races this season, 1 intermediate distance and 2 full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Stuart Mason.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Stuart Mason")
 ```
 
 
@@ -3325,14 +1960,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Stuart Mason_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Stuart Mason", "int")
 ```
 
 
@@ -3342,14 +1970,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Stuart Mason_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "300"
-)
+table_athlete_course(dt_all_long, tri_cols, "Stuart Mason", "full")
 ```
 
 
@@ -3358,14 +1979,7 @@ htmltools::tags$iframe(
 David has entered 1 race this season, full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "David McEwan.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "David McEwan")
 ```
 
 
@@ -3376,14 +1990,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_David McEwan_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "David McEwan", "full")
 ```
 
 
@@ -3392,14 +1999,7 @@ htmltools::tags$iframe(
 Stuart has entered 1 race this season, full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Stuart McGill.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Stuart McGill")
 ```
 
 
@@ -3410,14 +2010,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Stuart McGill_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Stuart McGill", "full")
 ```
 
 
@@ -3426,14 +2019,7 @@ htmltools::tags$iframe(
 Bec has entered 5 races this season, 4 full distance and 1 double distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Bec McLucas.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Bec McLucas")
 ```
 
 
@@ -3444,14 +2030,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Bec McLucas_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "400"
-)
+table_athlete_course(dt_all_long, tri_cols, "Bec McLucas", "full")
 ```
 
 
@@ -3461,14 +2040,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Bec McLucas_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Bec McLucas", "double")
 ```
 
 
@@ -3477,14 +2049,7 @@ htmltools::tags$iframe(
 Andrew has entered 11 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Andrew Miller.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Andrew Miller")
 ```
 
 
@@ -3495,14 +2060,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Andrew Miller_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "950"
-)
+table_athlete_course(dt_all_long, tri_cols, "Andrew Miller", "full")
 ```
 
 
@@ -3511,14 +2069,7 @@ htmltools::tags$iframe(
 Kat has entered 12 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Kat Miller.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Kat Miller")
 ```
 
 
@@ -3529,14 +2080,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Kat Miller_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "950"
-)
+table_athlete_course(dt_all_long, tri_cols, "Kat Miller", "full")
 ```
 
 
@@ -3545,14 +2089,7 @@ htmltools::tags$iframe(
 Michelle has entered 5 races this season, 4 full distance and 1 double distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Michelle Miller.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Michelle Miller")
 ```
 
 
@@ -3563,14 +2100,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Michelle Miller_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "400"
-)
+table_athlete_course(dt_all_long, tri_cols, "Michelle Miller", "full")
 ```
 
 
@@ -3580,14 +2110,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Michelle Miller_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Michelle Miller", "double")
 ```
 
 
@@ -3596,14 +2119,7 @@ htmltools::tags$iframe(
 Kyle has entered 10 races this season, 8 full distance and 2 double distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Kyle Mooney.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Kyle Mooney")
 ```
 
 
@@ -3614,14 +2130,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Kyle Mooney_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "800"
-)
+table_athlete_course(dt_all_long, tri_cols, "Kyle Mooney", "full")
 ```
 
 
@@ -3631,14 +2140,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Kyle Mooney_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "300"
-)
+table_athlete_course(dt_all_long, tri_cols, "Kyle Mooney", "double")
 ```
 
 
@@ -3647,14 +2149,7 @@ htmltools::tags$iframe(
 James has entered 4 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "James Mourant.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "James Mourant")
 ```
 
 
@@ -3665,14 +2160,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_James Mourant_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "450"
-)
+table_athlete_course(dt_all_long, tri_cols, "James Mourant", "full")
 ```
 
 
@@ -3681,14 +2169,7 @@ htmltools::tags$iframe(
 Richard has entered 15 races this season, 13 full distance and 2 double distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Richard Mourant.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Richard Mourant")
 ```
 
 
@@ -3699,14 +2180,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Richard Mourant_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "900"
-)
+table_athlete_course(dt_all_long, tri_cols, "Richard Mourant", "full")
 ```
 
 
@@ -3716,14 +2190,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Richard Mourant_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "300"
-)
+table_athlete_course(dt_all_long, tri_cols, "Richard Mourant", "double")
 ```
 
 
@@ -3732,14 +2199,7 @@ htmltools::tags$iframe(
 Ashleigh has entered 8 races this season, all intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Ashleigh Murphy.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Ashleigh Murphy")
 ```
 
 
@@ -3750,14 +2210,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Ashleigh Murphy_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "700"
-)
+table_athlete_course(dt_all_long, tri_cols, "Ashleigh Murphy", "int")
 ```
 
 
@@ -3766,14 +2219,7 @@ htmltools::tags$iframe(
 Ben has entered 1 race this season, full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Ben Murphy.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Ben Murphy")
 ```
 
 
@@ -3784,14 +2230,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Ben Murphy_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Ben Murphy", "full")
 ```
 
 
@@ -3800,14 +2239,7 @@ htmltools::tags$iframe(
 Helen has entered 10 races this season, 4 intermediate distance and 6 full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Helen Murphy.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Helen Murphy")
 ```
 
 
@@ -3818,14 +2250,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Helen Murphy_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "550"
-)
+table_athlete_course(dt_all_long, tri_cols, "Helen Murphy", "int")
 ```
 
 
@@ -3835,14 +2260,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Helen Murphy_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "650"
-)
+table_athlete_course(dt_all_long, tri_cols, "Helen Murphy", "full")
 ```
 
 
@@ -3851,14 +2269,7 @@ htmltools::tags$iframe(
 Darren has entered 5 races this season, all intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Darren Murray.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Darren Murray")
 ```
 
 
@@ -3869,14 +2280,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Darren Murray_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "750"
-)
+table_athlete_course(dt_all_long, tri_cols, "Darren Murray", "int")
 ```
 
 
@@ -3885,14 +2289,7 @@ htmltools::tags$iframe(
 Jeff has entered 14 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Jeff Murray.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Jeff Murray")
 ```
 
 
@@ -3903,14 +2300,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Jeff Murray_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "950"
-)
+table_athlete_course(dt_all_long, tri_cols, "Jeff Murray", "full")
 ```
 
 
@@ -3919,14 +2309,7 @@ htmltools::tags$iframe(
 Judy has entered 12 races this season, all intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Judy Murray.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Judy Murray")
 ```
 
 
@@ -3937,14 +2320,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Judy Murray_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "850"
-)
+table_athlete_course(dt_all_long, tri_cols, "Judy Murray", "int")
 ```
 
 
@@ -3953,14 +2329,7 @@ htmltools::tags$iframe(
 Aaron has entered 14 races this season, 13 full distance and 1 double distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Aaron Neylan.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Aaron Neylan")
 ```
 
 
@@ -3971,14 +2340,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Aaron Neylan_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "850"
-)
+table_athlete_course(dt_all_long, tri_cols, "Aaron Neylan", "full")
 ```
 
 
@@ -3988,14 +2350,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Aaron Neylan_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Aaron Neylan", "double")
 ```
 
 
@@ -4004,14 +2359,7 @@ htmltools::tags$iframe(
 Lynette has entered 2 races this season, both full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Lynette Nisbet.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Lynette Nisbet")
 ```
 
 
@@ -4022,14 +2370,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Lynette Nisbet_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "350"
-)
+table_athlete_course(dt_all_long, tri_cols, "Lynette Nisbet", "full")
 ```
 
 
@@ -4038,14 +2379,7 @@ htmltools::tags$iframe(
 Karen has entered 6 races this season, all intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Karen Nixon.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Karen Nixon")
 ```
 
 
@@ -4056,14 +2390,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Karen Nixon_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "850"
-)
+table_athlete_course(dt_all_long, tri_cols, "Karen Nixon", "int")
 ```
 
 
@@ -4072,14 +2399,7 @@ htmltools::tags$iframe(
 Lucas has entered 10 races this season, all intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Lucas Nixon-Hind.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Lucas Nixon-Hind")
 ```
 
 
@@ -4090,14 +2410,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Lucas Nixon-Hind_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1100"
-)
+table_athlete_course(dt_all_long, tri_cols, "Lucas Nixon-Hind", "int")
 ```
 
 
@@ -4106,14 +2419,7 @@ htmltools::tags$iframe(
 Andy has entered 1 race this season, full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Andy O'Reilly.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Andy O'Reilly")
 ```
 
 
@@ -4124,14 +2430,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Andy O'Reilly_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Andy O'Reilly", "full")
 ```
 
 
@@ -4140,14 +2439,7 @@ htmltools::tags$iframe(
 Nick has entered 6 races this season, 5 full distance and 1 double distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Nick O'Reilly.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Nick O'Reilly")
 ```
 
 
@@ -4158,14 +2450,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Nick O'Reilly_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "600"
-)
+table_athlete_course(dt_all_long, tri_cols, "Nick O'Reilly", "full")
 ```
 
 
@@ -4175,14 +2460,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Nick O'Reilly_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Nick O'Reilly", "double")
 ```
 
 
@@ -4191,14 +2469,7 @@ htmltools::tags$iframe(
 Trent has entered 1 race this season, full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Trent Ousby.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Trent Ousby")
 ```
 
 
@@ -4209,14 +2480,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Trent Ousby_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Trent Ousby", "full")
 ```
 
 
@@ -4225,14 +2489,7 @@ htmltools::tags$iframe(
 Annika has entered 1 race this season, intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Annika Parker.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Annika Parker")
 ```
 
 
@@ -4243,14 +2500,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Annika Parker_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Annika Parker", "int")
 ```
 
 
@@ -4259,14 +2509,7 @@ htmltools::tags$iframe(
 Glenn has entered 3 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Glenn Payne.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Glenn Payne")
 ```
 
 
@@ -4277,14 +2520,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Glenn Payne_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "400"
-)
+table_athlete_course(dt_all_long, tri_cols, "Glenn Payne", "full")
 ```
 
 
@@ -4293,14 +2529,7 @@ htmltools::tags$iframe(
 Clive has entered 10 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Clive Pearce.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Clive Pearce")
 ```
 
 
@@ -4311,14 +2540,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Clive Pearce_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1050"
-)
+table_athlete_course(dt_all_long, tri_cols, "Clive Pearce", "full")
 ```
 
 
@@ -4327,14 +2549,7 @@ htmltools::tags$iframe(
 Stephen has entered 6 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Stephen Ring.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Stephen Ring")
 ```
 
 
@@ -4345,14 +2560,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Stephen Ring_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "600"
-)
+table_athlete_course(dt_all_long, tri_cols, "Stephen Ring", "full")
 ```
 
 
@@ -4361,14 +2569,7 @@ htmltools::tags$iframe(
 Carol has entered 4 races this season, 3 full distance and 1 intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Carol Ririnui.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Carol Ririnui")
 ```
 
 
@@ -4379,14 +2580,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Carol Ririnui_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "450"
-)
+table_athlete_course(dt_all_long, tri_cols, "Carol Ririnui", "full")
 ```
 
 
@@ -4396,14 +2590,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Carol Ririnui_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Carol Ririnui", "int")
 ```
 
 
@@ -4412,14 +2599,7 @@ htmltools::tags$iframe(
 Gerard has entered 14 races this season, 12 full distance and 2 double distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Gerard Robards.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Gerard Robards")
 ```
 
 
@@ -4430,14 +2610,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Gerard Robards_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1100"
-)
+table_athlete_course(dt_all_long, tri_cols, "Gerard Robards", "full")
 ```
 
 
@@ -4447,14 +2620,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Gerard Robards_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "300"
-)
+table_athlete_course(dt_all_long, tri_cols, "Gerard Robards", "double")
 ```
 
 
@@ -4463,14 +2629,7 @@ htmltools::tags$iframe(
 Hollie has entered 13 races this season, 12 full distance and 1 double distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Hollie Robards.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Hollie Robards")
 ```
 
 
@@ -4481,14 +2640,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Hollie Robards_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1100"
-)
+table_athlete_course(dt_all_long, tri_cols, "Hollie Robards", "full")
 ```
 
 
@@ -4498,14 +2650,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Hollie Robards_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Hollie Robards", "double")
 ```
 
 
@@ -4514,14 +2659,7 @@ htmltools::tags$iframe(
 Kaleb has entered 7 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Kaleb Robards.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Kaleb Robards")
 ```
 
 
@@ -4532,14 +2670,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Kaleb Robards_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1200"
-)
+table_athlete_course(dt_all_long, tri_cols, "Kaleb Robards", "full")
 ```
 
 
@@ -4548,14 +2679,7 @@ htmltools::tags$iframe(
 Anthony has entered 7 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Anthony Rushton.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Anthony Rushton")
 ```
 
 
@@ -4566,14 +2690,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Anthony Rushton_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "550"
-)
+table_athlete_course(dt_all_long, tri_cols, "Anthony Rushton", "full")
 ```
 
 
@@ -4582,14 +2699,7 @@ htmltools::tags$iframe(
 Ross has entered 13 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Ross Salmon.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Ross Salmon")
 ```
 
 
@@ -4600,14 +2710,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Ross Salmon_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "900"
-)
+table_athlete_course(dt_all_long, tri_cols, "Ross Salmon", "full")
 ```
 
 
@@ -4616,14 +2719,7 @@ htmltools::tags$iframe(
 Philip has entered 16 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Philip Salter.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Philip Salter")
 ```
 
 
@@ -4634,14 +2730,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Philip Salter_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1150"
-)
+table_athlete_course(dt_all_long, tri_cols, "Philip Salter", "full")
 ```
 
 
@@ -4650,14 +2739,7 @@ htmltools::tags$iframe(
 Wendy has entered 8 races this season, all intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Wendy Sanders.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Wendy Sanders")
 ```
 
 
@@ -4668,14 +2750,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Wendy Sanders_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+table_athlete_course(dt_all_long, tri_cols, "Wendy Sanders", "int")
 ```
 
 
@@ -4684,14 +2759,7 @@ htmltools::tags$iframe(
 Jenny has entered 10 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Jenny Scaysbrook.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Jenny Scaysbrook")
 ```
 
 
@@ -4702,14 +2770,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Jenny Scaysbrook_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "850"
-)
+table_athlete_course(dt_all_long, tri_cols, "Jenny Scaysbrook", "full")
 ```
 
 
@@ -4718,14 +2779,7 @@ htmltools::tags$iframe(
 Peter has entered 8 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Peter Serone.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Peter Serone")
 ```
 
 
@@ -4736,14 +2790,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Peter Serone_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "750"
-)
+table_athlete_course(dt_all_long, tri_cols, "Peter Serone", "full")
 ```
 
 
@@ -4752,14 +2799,7 @@ htmltools::tags$iframe(
 Rod has entered 14 races this season, 12 intermediate distance and 2 full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Rod Sewell.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Rod Sewell")
 ```
 
 
@@ -4770,14 +2810,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Rod Sewell_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "850"
-)
+table_athlete_course(dt_all_long, tri_cols, "Rod Sewell", "int")
 ```
 
 
@@ -4787,14 +2820,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Rod Sewell_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "350"
-)
+table_athlete_course(dt_all_long, tri_cols, "Rod Sewell", "full")
 ```
 
 
@@ -4803,14 +2829,7 @@ htmltools::tags$iframe(
 Tracey has entered 6 races this season, 5 full distance and 1 intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Tracey Sewell.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Tracey Sewell")
 ```
 
 
@@ -4821,14 +2840,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Tracey Sewell_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "550"
-)
+table_athlete_course(dt_all_long, tri_cols, "Tracey Sewell", "full")
 ```
 
 
@@ -4838,14 +2850,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Tracey Sewell_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Tracey Sewell", "int")
 ```
 
 
@@ -4854,14 +2859,7 @@ htmltools::tags$iframe(
 Terence has entered 14 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Terence Simpson.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Terence Simpson")
 ```
 
 
@@ -4872,14 +2870,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Terence Simpson_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "950"
-)
+table_athlete_course(dt_all_long, tri_cols, "Terence Simpson", "full")
 ```
 
 
@@ -4888,14 +2879,7 @@ htmltools::tags$iframe(
 Vaughan has entered 13 races this season, 12 full distance and 1 double distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Vaughan Skelly.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Vaughan Skelly")
 ```
 
 
@@ -4906,14 +2890,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Vaughan Skelly_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1100"
-)
+table_athlete_course(dt_all_long, tri_cols, "Vaughan Skelly", "full")
 ```
 
 
@@ -4923,14 +2900,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Vaughan Skelly_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Vaughan Skelly", "double")
 ```
 
 
@@ -4939,14 +2909,7 @@ htmltools::tags$iframe(
 Alex has entered 1 race this season, intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Alex Smith.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Alex Smith")
 ```
 
 
@@ -4957,14 +2920,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Alex Smith_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "300"
-)
+table_athlete_course(dt_all_long, tri_cols, "Alex Smith", "int")
 ```
 
 
@@ -4973,14 +2929,7 @@ htmltools::tags$iframe(
 Geoff has entered 1 race this season, intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Geoff Smith.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Geoff Smith")
 ```
 
 
@@ -4991,14 +2940,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Geoff Smith_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "300"
-)
+table_athlete_course(dt_all_long, tri_cols, "Geoff Smith", "int")
 ```
 
 
@@ -5007,14 +2949,7 @@ htmltools::tags$iframe(
 Rowena has entered 12 races this season, 11 full distance and 1 double distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Rowena Smith.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Rowena Smith")
 ```
 
 
@@ -5025,14 +2960,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Rowena Smith_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "800"
-)
+table_athlete_course(dt_all_long, tri_cols, "Rowena Smith", "full")
 ```
 
 
@@ -5042,14 +2970,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Rowena Smith_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Rowena Smith", "double")
 ```
 
 
@@ -5058,14 +2979,7 @@ htmltools::tags$iframe(
 Heidi has entered 2 races this season, both full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Heidi Sowerby.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Heidi Sowerby")
 ```
 
 
@@ -5076,14 +2990,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Heidi Sowerby_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "400"
-)
+table_athlete_course(dt_all_long, tri_cols, "Heidi Sowerby", "full")
 ```
 
 
@@ -5092,14 +2999,7 @@ htmltools::tags$iframe(
 Matthew has entered 10 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Matthew Stanley.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Matthew Stanley")
 ```
 
 
@@ -5110,14 +3010,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Matthew Stanley_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "800"
-)
+table_athlete_course(dt_all_long, tri_cols, "Matthew Stanley", "full")
 ```
 
 
@@ -5126,14 +3019,7 @@ htmltools::tags$iframe(
 Peter has entered 12 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Peter Stowe.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Peter Stowe")
 ```
 
 
@@ -5144,14 +3030,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Peter Stowe_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1100"
-)
+table_athlete_course(dt_all_long, tri_cols, "Peter Stowe", "full")
 ```
 
 
@@ -5160,14 +3039,7 @@ htmltools::tags$iframe(
 Kelly has entered 1 race this season, intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Kelly Styman.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Kelly Styman")
 ```
 
 
@@ -5178,14 +3050,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Kelly Styman_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Kelly Styman", "int")
 ```
 
 
@@ -5194,14 +3059,7 @@ htmltools::tags$iframe(
 Scott has entered 14 races this season, 13 full distance and 1 intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Scott Styman.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Scott Styman")
 ```
 
 
@@ -5212,14 +3070,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Scott Styman_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+table_athlete_course(dt_all_long, tri_cols, "Scott Styman", "full")
 ```
 
 
@@ -5229,14 +3080,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Scott Styman_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Scott Styman", "int")
 ```
 
 
@@ -5245,14 +3089,7 @@ htmltools::tags$iframe(
 Will has entered 1 race this season, full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Will Styman.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Will Styman")
 ```
 
 
@@ -5263,14 +3100,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Will Styman_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "300"
-)
+table_athlete_course(dt_all_long, tri_cols, "Will Styman", "full")
 ```
 
 
@@ -5279,14 +3109,7 @@ htmltools::tags$iframe(
 Corey has entered 2 races this season, both full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Corey Swan.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Corey Swan")
 ```
 
 
@@ -5297,14 +3120,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Corey Swan_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "350"
-)
+table_athlete_course(dt_all_long, tri_cols, "Corey Swan", "full")
 ```
 
 
@@ -5313,14 +3129,7 @@ htmltools::tags$iframe(
 Timothy has entered 8 races this season, all intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Timothy Taylor.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Timothy Taylor")
 ```
 
 
@@ -5331,14 +3140,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Timothy Taylor_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "950"
-)
+table_athlete_course(dt_all_long, tri_cols, "Timothy Taylor", "int")
 ```
 
 
@@ -5347,14 +3149,7 @@ htmltools::tags$iframe(
 William has entered 8 races this season, all intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "William Taylor.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "William Taylor")
 ```
 
 
@@ -5365,14 +3160,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_William Taylor_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "900"
-)
+table_athlete_course(dt_all_long, tri_cols, "William Taylor", "int")
 ```
 
 
@@ -5381,14 +3169,7 @@ htmltools::tags$iframe(
 Zoe has entered 2 races this season, both intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Zoe Taylor-West.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Zoe Taylor-West")
 ```
 
 
@@ -5399,14 +3180,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Zoe Taylor-West_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "350"
-)
+table_athlete_course(dt_all_long, tri_cols, "Zoe Taylor-West", "int")
 ```
 
 
@@ -5415,14 +3189,7 @@ htmltools::tags$iframe(
 Craig has entered 10 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Craig Telling.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Craig Telling")
 ```
 
 
@@ -5433,14 +3200,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Craig Telling_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "850"
-)
+table_athlete_course(dt_all_long, tri_cols, "Craig Telling", "full")
 ```
 
 
@@ -5449,14 +3209,7 @@ htmltools::tags$iframe(
 Ava has entered 17 races this season, all intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Ava Thomson.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Ava Thomson")
 ```
 
 
@@ -5467,14 +3220,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Ava Thomson_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1200"
-)
+table_athlete_course(dt_all_long, tri_cols, "Ava Thomson", "int")
 ```
 
 
@@ -5483,14 +3229,7 @@ htmltools::tags$iframe(
 Scott has entered 19 races this season, 16 full distance, 2 double distance, and 1 intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Scott Thomson.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Scott Thomson")
 ```
 
 
@@ -5501,14 +3240,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Scott Thomson_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1050"
-)
+table_athlete_course(dt_all_long, tri_cols, "Scott Thomson", "full")
 ```
 
 
@@ -5518,14 +3250,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Scott Thomson_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "300"
-)
+table_athlete_course(dt_all_long, tri_cols, "Scott Thomson", "double")
 ```
 
 
@@ -5535,14 +3260,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Scott Thomson_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Scott Thomson", "int")
 ```
 
 
@@ -5551,14 +3269,7 @@ htmltools::tags$iframe(
 Sebastian has entered 17 races this season, all intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Sebastian Thomson.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Sebastian Thomson")
 ```
 
 
@@ -5569,14 +3280,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Sebastian Thomson_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1150"
-)
+table_athlete_course(dt_all_long, tri_cols, "Sebastian Thomson", "int")
 ```
 
 
@@ -5585,14 +3289,7 @@ htmltools::tags$iframe(
 Alex has entered 13 races this season, 2 double distance and 11 full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Alex Torrance.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Alex Torrance")
 ```
 
 
@@ -5603,14 +3300,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Alex Torrance_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "300"
-)
+table_athlete_course(dt_all_long, tri_cols, "Alex Torrance", "double")
 ```
 
 
@@ -5620,14 +3310,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Alex Torrance_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "850"
-)
+table_athlete_course(dt_all_long, tri_cols, "Alex Torrance", "full")
 ```
 
 
@@ -5636,14 +3319,7 @@ htmltools::tags$iframe(
 Robert has entered 2 races this season, 1 intermediate distance and 1 full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Robert Townsend.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Robert Townsend")
 ```
 
 
@@ -5654,14 +3330,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Robert Townsend_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Robert Townsend", "int")
 ```
 
 
@@ -5671,14 +3340,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Robert Townsend_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Robert Townsend", "full")
 ```
 
 
@@ -5687,14 +3349,7 @@ htmltools::tags$iframe(
 Sue has entered 11 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Sue Van Den Broek.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Sue Van Den Broek")
 ```
 
 
@@ -5705,14 +3360,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Sue Van Den Broek_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "900"
-)
+table_athlete_course(dt_all_long, tri_cols, "Sue Van Den Broek", "full")
 ```
 
 
@@ -5721,14 +3369,7 @@ htmltools::tags$iframe(
 Marcel has entered 18 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Marcel Van Kampen.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Marcel Van Kampen")
 ```
 
 
@@ -5739,14 +3380,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Marcel Van Kampen_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1200"
-)
+table_athlete_course(dt_all_long, tri_cols, "Marcel Van Kampen", "full")
 ```
 
 
@@ -5755,14 +3389,7 @@ htmltools::tags$iframe(
 Jolyon has entered 9 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Jolyon Ward.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Jolyon Ward")
 ```
 
 
@@ -5773,14 +3400,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Jolyon Ward_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "650"
-)
+table_athlete_course(dt_all_long, tri_cols, "Jolyon Ward", "full")
 ```
 
 
@@ -5789,14 +3409,7 @@ htmltools::tags$iframe(
 Danny has entered 12 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Danny Warner.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Danny Warner")
 ```
 
 
@@ -5807,14 +3420,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Danny Warner_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1050"
-)
+table_athlete_course(dt_all_long, tri_cols, "Danny Warner", "full")
 ```
 
 
@@ -5823,14 +3429,7 @@ htmltools::tags$iframe(
 Lisa has entered 7 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Lisa Warner.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Lisa Warner")
 ```
 
 
@@ -5841,14 +3440,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Lisa Warner_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "600"
-)
+table_athlete_course(dt_all_long, tri_cols, "Lisa Warner", "full")
 ```
 
 
@@ -5857,14 +3449,7 @@ htmltools::tags$iframe(
 Chris has entered 5 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Chris Watt.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Chris Watt")
 ```
 
 
@@ -5875,14 +3460,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Chris Watt_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "550"
-)
+table_athlete_course(dt_all_long, tri_cols, "Chris Watt", "full")
 ```
 
 
@@ -5891,14 +3469,7 @@ htmltools::tags$iframe(
 Dean has entered 12 races this season, 10 full distance and 2 double distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Dean Webb.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Dean Webb")
 ```
 
 
@@ -5909,14 +3480,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Dean Webb_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "900"
-)
+table_athlete_course(dt_all_long, tri_cols, "Dean Webb", "full")
 ```
 
 
@@ -5926,14 +3490,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Dean Webb_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "300"
-)
+table_athlete_course(dt_all_long, tri_cols, "Dean Webb", "double")
 ```
 
 
@@ -5942,14 +3499,7 @@ htmltools::tags$iframe(
 Steve has entered 7 races this season, all intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Steve West.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Steve West")
 ```
 
 
@@ -5960,14 +3510,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Steve West_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "850"
-)
+table_athlete_course(dt_all_long, tri_cols, "Steve West", "int")
 ```
 
 
@@ -5976,14 +3519,7 @@ htmltools::tags$iframe(
 Mark has entered 9 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Mark Whiticker.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Mark Whiticker")
 ```
 
 
@@ -5994,14 +3530,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Mark Whiticker_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "700"
-)
+table_athlete_course(dt_all_long, tri_cols, "Mark Whiticker", "full")
 ```
 
 
@@ -6010,14 +3539,7 @@ htmltools::tags$iframe(
 Scott has entered 4 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Scott Wildin.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Scott Wildin")
 ```
 
 
@@ -6028,14 +3550,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Scott Wildin_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "450"
-)
+table_athlete_course(dt_all_long, tri_cols, "Scott Wildin", "full")
 ```
 
 
@@ -6044,14 +3559,7 @@ htmltools::tags$iframe(
 Greg has entered 3 races this season, 1 full distance and 2 intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Greg Williamson.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Greg Williamson")
 ```
 
 
@@ -6062,14 +3570,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Greg Williamson_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Greg Williamson", "full")
 ```
 
 
@@ -6079,14 +3580,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Greg Williamson_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "300"
-)
+table_athlete_course(dt_all_long, tri_cols, "Greg Williamson", "int")
 ```
 
 
@@ -6095,14 +3589,7 @@ htmltools::tags$iframe(
 Marcus has entered 2 races this season, both intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Marcus Williamson.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Marcus Williamson")
 ```
 
 
@@ -6113,14 +3600,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Marcus Williamson_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "300"
-)
+table_athlete_course(dt_all_long, tri_cols, "Marcus Williamson", "int")
 ```
 
 
@@ -6129,14 +3609,7 @@ htmltools::tags$iframe(
 Wendy has entered 13 races this season, all full distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Wendy Wise.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "500"
-)
+plotly_athlete(dt_all_long, tri_cols, "Wendy Wise")
 ```
 
 
@@ -6147,14 +3620,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Wendy Wise_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "850"
-)
+table_athlete_course(dt_all_long, tri_cols, "Wendy Wise", "full")
 ```
 
 
@@ -6163,14 +3629,7 @@ htmltools::tags$iframe(
 Colin has entered 4 races this season, 3 full distance and 1 intermediate distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Colin Woodward.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Colin Woodward")
 ```
 
 
@@ -6181,14 +3640,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Colin Woodward_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "450"
-)
+table_athlete_course(dt_all_long, tri_cols, "Colin Woodward", "full")
 ```
 
 
@@ -6198,14 +3650,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Colin Woodward_int.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Colin Woodward", "int")
 ```
 
 
@@ -6214,14 +3659,7 @@ htmltools::tags$iframe(
 Rob has entered 11 races this season, 9 full distance and 2 double distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Rob Worth.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Rob Worth")
 ```
 
 
@@ -6232,14 +3670,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Rob Worth_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "900"
-)
+table_athlete_course(dt_all_long, tri_cols, "Rob Worth", "full")
 ```
 
 
@@ -6249,14 +3680,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Rob Worth_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "300"
-)
+table_athlete_course(dt_all_long, tri_cols, "Rob Worth", "double")
 ```
 
 
@@ -6265,14 +3689,7 @@ htmltools::tags$iframe(
 Viv has entered 18 races this season, 17 full distance and 1 double distance.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "Viv Wright.html", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1000"
-)
+plotly_athlete(dt_all_long, tri_cols, "Viv Wright")
 ```
 
 
@@ -6283,14 +3700,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Viv Wright_full.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "1100"
-)
+table_athlete_course(dt_all_long, tri_cols, "Viv Wright", "full")
 ```
 
 
@@ -6300,14 +3710,7 @@ htmltools::tags$iframe(
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "tab_Viv Wright_double.html", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "250"
-)
+table_athlete_course(dt_all_long, tri_cols, "Viv Wright", "double")
 ```
 
 

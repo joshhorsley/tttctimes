@@ -103,19 +103,21 @@ table_race <- function(dt_all_long, tri_cols, i, j,j_is_champ) {
   col_ref_hide <- which(!(names(dt_i_wide) %in% c("Rank","Name", cols_retain_new_names)))-1 # columns are indexed from 0 - row name?
   
   
-  tab_i <- DT::datatable(dt_i_wide[order(Rank)],
-                         rownames = FALSE,
-                         elementId = paste0("tab_race_",i, "_", j),
-                         # extensions = c('Buttons', 'Responsive'),
-                         extensions = c('Buttons'),
-                         options = list(autoWidth=FALSE,
-                                        paging=FALSE,
-                                        dom = 'Brtp',
-                                        scrollY = "500px",
-                                        scrollX = "500px",
-                                        buttons = c('copy', 'csv', 'excel'),
-                                        columnDefs = 
-                                          list(list(visible=FALSE, targets=col_ref_hide)))) %>% 
+  tab_i <- datatable_std(dt_i_wide[order(Rank)], col_ref_hide) %>% 
+  
+  # DT::datatable(dt_i_wide[order(Rank)],
+  #                        rownames = FALSE,
+  #                        elementId = paste0("tab_race_",i, "_", j),
+  #                        # extensions = c('Buttons', 'Responsive'),
+  #                        extensions = c('Buttons'),
+  #                        options = list(autoWidth=FALSE,
+  #                                       paging=FALSE,
+  #                                       dom = 'Brtp',
+  #                                       scrollY = "500px",
+  #                                       scrollX = "500px",
+  #                                       buttons = c('copy', 'csv', 'excel'),
+  #                                       columnDefs = 
+  #                                         list(list(visible=FALSE, targets=col_ref_hide)))) %>% 
     apply_col(tri_cols)
   
   tab_i$sizingPolicy$browser$fill <- TRUE

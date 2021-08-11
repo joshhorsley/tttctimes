@@ -80,14 +80,7 @@ repeated <- foreach (k=athletes_ordered, .combine = paste0 ) %do% {
 ",
 
 '```{r}
-htmltools::tags$iframe(
-  src = "',paste0(k,".html"),'", 
-  scrolling = "no", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "',500*n_courses,'"
-)
+plotly_athlete(dt_all_long, tri_cols, "',k,'")
 ```
 
 
@@ -108,14 +101,7 @@ foreach(j=k_courses, .combine=paste0) %do% {
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
 ```{r}
-htmltools::tags$iframe(
-  src = "',paste0("tab_", k,"_",j,".html"),'", 
-  scrolling = "yes", 
-  seamless = "seamless",
-  frameBorder = "0",
-  width = "100%",
-  height = "',n_entries*50+200,'"
-)
+table_athlete_course(dt_all_long, tri_cols, "',k,'", "',j,'")
 ```
 
 '

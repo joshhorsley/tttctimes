@@ -66,6 +66,25 @@ apply_col.datatables <- function(tab, tri_cols){
 }
 
 
+# Table formatting --------------------------------------------------------
+
+
+datatable_std <- function(df, col_ref_hide, scrollY_override = FALSE) {
+  DT::datatable(df,
+                rownames = FALSE,
+                extensions = c('Buttons'),
+                options = list(autoWidth=FALSE,
+                               paging=FALSE,
+                               dom = 'rtBp',
+                               scrollY = if(!scrollY_override & (nrow(df) > 12)) { "500px"} else {NULL},
+                               scrollX = "500px",
+                               buttons = c('copy', 'csv', 'excel'),
+                               columnDefs = 
+                                 list(list(visible=FALSE, targets=col_ref_hide))))
+    
+}
+
+
 
 # Plotly ------------------------------------------------------------------
 

@@ -15,11 +15,16 @@ dt_season_show[(cancelled), Note:= paste0("Cancelled due to ", cancelled_reason)
 dt_season_show[!(cancelled) & !(have_results), Note := "webscorer data not available"]
 dt_season_show[is.na(Note), Note := ""]
 
-knitr::kable(dt_season_show[, .(`Race #`,
-                                Date,
-                                `Event type`,
-                                Note
-                                )])
+col_ref_hide <- which(!(names(dt_season_show) %in% c("Race #","Date","Event type","Note")))-1 # columns are indexed from 0 - row name?
+
+
+# knitr::kable(dt_season_show[, .(`Race #`,
+#                                 Date,
+#                                 `Event type`,
+#                                 Note
+#                                 )])
+
+datatable_std(dt_season_show,col_ref_hide)
 ```
 
 

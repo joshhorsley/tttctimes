@@ -180,18 +180,19 @@ table_part_total <- function(dt_all_long, tri_cols) {
   col_ref_hide <- which(!(names(dt_entries_tab) %in% c("Rank","Entries","Name")))-1 # columns are indexed from 0 - row name?
   
   
-  tab_part <- DT::datatable(dt_entries_tab,
-                            rownames = FALSE,
-                            elementId = "tab_participation",
-                            extensions = c('Buttons'),
-                            options = list(autoWidth=FALSE,
-                                           paging=FALSE,
-                                           dom = 'Brtp',
-                                           scrollY = "500px",
-                                           scrollX = "500px",
-                                           buttons = c('copy', 'csv', 'excel'),
-                                           columnDefs = 
-                                             list(list(visible=FALSE, targets=col_ref_hide)))) %>%
+  tab_part <- datatable_std(dt_entries_tab, col_ref_hide) %>% 
+    # DT::datatable(dt_entries_tab,
+    #                         rownames = FALSE,
+    #                         elementId = "tab_participation",
+    #                         extensions = c('Buttons'),
+    #                         options = list(autoWidth=FALSE,
+    #                                        paging=FALSE,
+    #                                        dom = 'Brtp',
+    #                                        scrollY = "500px",
+    #                                        scrollX = "500px",
+    #                                        buttons = c('copy', 'csv', 'excel'),
+    #                                        columnDefs = 
+    #                                          list(list(visible=FALSE, targets=col_ref_hide)))) %>%
     formatStyle(columns = "Rank", valueColumns = "Rank",
                 background = styleEqual(1,tri_cols$record))
   

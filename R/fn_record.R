@@ -107,26 +107,27 @@ table_record <- function(dt_all_long, tri_cols, j, l ) {
   col_ref_hide <- which(!(names(dt_record_j_wide) %in% c("Name",cols_retain_new_names)))-1 # columns are indexed from 0 - row name?
   
   
-  tab_j <- DT::datatable(data = if(l=="overall") {
+  # tab_j <- DT::datatable(data = ,
+  # rownames = FALSE,
+  # # elementId = paste0("tab_record_", j,"_",l),
+  # extensions = c('Buttons'),
+  # options = list(autoWidth=FALSE,
+  #                paging=FALSE,
+  #                dom = 'Brtp',
+  #                scrollY = "500px",
+  #                scrollX = "500px",
+  #                buttons = c('copy', 'csv', 'excel'),
+  #                columnDefs = 
+  #                  list(list(visible=FALSE, targets=col_ref_hide)))) 
+  
+  dt_record_use <- if(l=="overall") {
     dt_record_j_wide
   } else {
     dt_record_j_wide[(get(paste0("isPB_split_",l)))][order(get(paste0("rank_pb_split_",l)))]
-  },
-  rownames = FALSE,
-  # elementId = paste0("tab_record_", j,"_",l),
-  extensions = c('Buttons'),
-  options = list(autoWidth=FALSE,
-                 paging=FALSE,
-                 dom = 'Brtp',
-                 scrollY = "500px",
-                 scrollX = "500px",
-                 buttons = c('copy', 'csv', 'excel'),
-                 columnDefs = 
-                   list(list(visible=FALSE, targets=col_ref_hide)))) %>%
-    apply_col(tri_cols)
+  }
   
-  # savepath = paste0(getwd(),"/",site_path_relative,"/tab_record_",l,"_",j,".html")
-  # saveWidget(tab_j, file = savepath,selfcontained = FALSE,libdir = libpath)
+  tab_j <- datatable_std(dt_record_use, col_ref_hide) %>%
+    apply_col(tri_cols)
   
   return(tab_j)
 
