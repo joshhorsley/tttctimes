@@ -5,8 +5,10 @@
 
 
 # 26: Mar 20 - Club Championships {#r-2021-03-20}
-    
-    
+
+A total of 43 competitors entered, 1 for the first time this season.
+
+
 ## Club Championships
 
 22 competitors entered the course, achieving 10 new overall PBs and 21 new split PBs: 5 in the pool, 8 on the bike, and 8 on the run.
@@ -107,8 +109,10 @@ htmltools::tags$iframe(
 
 
 # 25: Mar 13 {#r-2021-03-13}
-    
-    
+
+A total of 55 competitors entered, 6 for the first time this season.
+
+
 ## Full
 
 39 competitors entered the course, achieving 11 new overall PBs and 29 new split PBs: 9 in the pool, 11 on the bike, and 9 on the run.
@@ -176,8 +180,10 @@ htmltools::tags$iframe(
 
 
 # 24: Mar 06 {#r-2021-03-06}
-    
-    
+
+A total of 33 competitors entered, 1 for the first time this season.
+
+
 ## Full
 
 29 competitors entered the course, achieving 4 new overall PBs and 12 new split PBs: 4 in the pool, 3 on the bike, and 5 on the run.
@@ -245,8 +251,10 @@ htmltools::tags$iframe(
 
 
 # 23: Feb 27 - Double Distance {#r-2021-02-27}
-    
-    
+
+A total of 56 competitors entered, 1 for the first time this season.
+
+
 ## Double Distance
 
 19 competitors entered the course, achieving 6 new overall PBs and 22 new split PBs: 8 in the pool, 8 on the bike, and 6 on the run.
@@ -347,8 +355,10 @@ htmltools::tags$iframe(
 
 
 # 22: Feb 20 {#r-2021-02-20}
-    
-    
+
+A total of 53 competitors entered, 3 for the first time this season.
+
+
 ## Full
 
 43 competitors entered the course, achieving 2 new overall PBs and 11 new split PBs: 4 in the pool, 2 on the bike, and 5 on the run.
@@ -416,8 +426,10 @@ htmltools::tags$iframe(
 
 
 # 21: Feb 13 {#r-2021-02-13}
-    
-    
+
+A total of 68 competitors entered, 2 for the first time this season.
+
+
 ## Full
 
 54 competitors entered the course, achieving 14 new overall PBs and 35 new split PBs: 11 in the pool, 17 on the bike, and 7 on the run.
@@ -485,8 +497,10 @@ htmltools::tags$iframe(
 
 
 # 20: Feb 06 {#r-2021-02-06}
-    
-    
+
+A total of 65 competitors entered.
+
+
 ## Full
 
 49 competitors entered the course, achieving 15 new overall PBs and 35 new split PBs: 3 in the pool, 14 on the bike, and 18 on the run.
@@ -554,8 +568,10 @@ htmltools::tags$iframe(
 
 
 # 19: Jan 30 {#r-2021-01-30}
-    
-    
+
+A total of 79 competitors entered, 5 for the first time this season.
+
+
 ## Full
 
 64 competitors entered the course, achieving 21 new overall PBs and 51 new split PBs: 19 in the pool, 20 on the bike, and 12 on the run.
@@ -623,8 +639,10 @@ htmltools::tags$iframe(
 
 
 # 17: Jan 16 {#r-2021-01-16}
-    
-    
+
+A total of 45 competitors entered, 1 for the first time this season.
+
+
 ## Full
 
 37 competitors entered the course, achieving 5 new overall PBs and 25 new split PBs: 10 in the pool, 8 on the bike, and 7 on the run.
@@ -692,8 +710,10 @@ htmltools::tags$iframe(
 
 
 # 16: Jan 09 {#r-2021-01-09}
-    
-    
+
+A total of 41 competitors entered, 1 for the first time this season.
+
+
 ## Full
 
 32 competitors entered the course, achieving 2 new overall PBs and 14 new split PBs: 4 in the pool, 1 on the bike, and 9 on the run.
@@ -761,8 +781,10 @@ htmltools::tags$iframe(
 
 
 # 15: Jan 02 {#r-2021-01-02}
-    
-    
+
+A total of 67 competitors entered, 4 for the first time this season.
+
+
 ## Full
 
 56 competitors entered the course, achieving 16 new overall PBs and 37 new split PBs: 13 in the pool, 14 on the bike, and 10 on the run.
@@ -830,8 +852,10 @@ htmltools::tags$iframe(
 
 
 # 13: Dec 19 {#r-2020-12-19}
-    
-    
+
+A total of 55 competitors entered.
+
+
 ## Full
 
 45 competitors entered the course, achieving 12 new overall PBs and 35 new split PBs: 14 in the pool, 13 on the bike, and 8 on the run.
@@ -899,8 +923,10 @@ htmltools::tags$iframe(
 
 
 # 11: Dec 05 {#r-2020-12-05}
-    
-    
+
+A total of 63 competitors entered, 4 for the first time this season.
+
+
 ## Full
 
 48 competitors entered the course, achieving 13 new overall PBs and 36 new split PBs: 15 in the pool, 14 on the bike, and 7 on the run.
@@ -968,8 +994,10 @@ htmltools::tags$iframe(
 
 
 # 10: Nov 28 {#r-2020-11-28}
-    
-    
+
+A total of 49 competitors entered, 4 for the first time this season.
+
+
 ## Full
 
 38 competitors entered the course, achieving 8 new overall PBs and 26 new split PBs: 7 in the pool, 12 on the bike, and 7 on the run.
@@ -1037,8 +1065,10 @@ htmltools::tags$iframe(
 
 
 # 7: Nov 07 {#r-2020-11-07}
-    
-    
+
+A total of 72 competitors entered, 4 for the first time this season.
+
+
 ## Full
 
 55 competitors entered the course, achieving 20 new overall PBs and 69 new split PBs: 26 in the pool, 17 on the bike, and 26 on the run.
@@ -1106,8 +1136,10 @@ htmltools::tags$iframe(
 
 
 # 6: Oct 31 {#r-2020-10-31}
-    
-    
+
+A total of 62 competitors entered, 8 for the first time this season.
+
+
 ## Full
 
 51 competitors entered the course, achieving 16 new overall PBs and 57 new split PBs: 24 in the pool, 19 on the bike, and 14 on the run.
@@ -1175,8 +1207,10 @@ htmltools::tags$iframe(
 
 
 # 5: Oct 24 {#r-2020-10-24}
-    
-    
+
+A total of 79 competitors entered, 4 for the first time this season.
+
+
 ## Full
 
 63 competitors entered the course, achieving 34 new overall PBs and 81 new split PBs: 23 in the pool, 37 on the bike, and 21 on the run.
@@ -1244,8 +1278,10 @@ htmltools::tags$iframe(
 
 
 # 4: Oct 17 - Double Distance {#r-2020-10-17}
-    
-    
+
+A total of 73 competitors entered, 11 for the first time this season.
+
+
 ## Double Distance
 
 22 competitors entered the course.
@@ -1346,8 +1382,10 @@ htmltools::tags$iframe(
 
 
 # 3: Oct 10 {#r-2020-10-10}
-    
-    
+
+A total of 66 competitors entered, 13 for the first time this season.
+
+
 ## Full
 
 49 competitors entered the course, achieving 15 new overall PBs and 52 new split PBs: 16 in the pool, 15 on the bike, and 21 on the run.
@@ -1415,8 +1453,10 @@ htmltools::tags$iframe(
 
 
 # 2: Oct 03 {#r-2020-10-03}
-    
-    
+
+A total of 65 competitors entered, 23 for the first time this season.
+
+
 ## Full
 
 50 competitors entered the course, achieving 20 new overall PBs and 54 new split PBs: 18 in the pool, 19 on the bike, and 17 on the run.
@@ -1484,8 +1524,10 @@ htmltools::tags$iframe(
 
 
 # 1: Sep 26 {#r-2020-09-26}
-    
-    
+
+A total of 65 competitors entered.
+
+
 ## Full
 
 52 competitors entered the course.

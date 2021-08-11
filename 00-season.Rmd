@@ -51,7 +51,7 @@ setorder(dt_entry_type, course_nice)
 dt_entry_type[, text := paste0(count, " for ", course_nice)]
 ```
 
-The total number of entries by course are `r list_with_and(dt_entry_type$text)`.The plot below shows the number of entries by course over the season.
+The total number of entries by course are `r list_with_and(dt_entry_type$text)`. The plot below shows the number of entries by course over the season.
 
 ```{r}
 plot_race_count(dt_all_long)

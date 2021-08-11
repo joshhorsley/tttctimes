@@ -14,6 +14,16 @@ header <- paste0({
 
 races <- foreach (i=rev(race_numbers), .combine = paste0 ) %do% {
   
+  
+  n_athletes <- nrow(dt_all_long[(started) & part == "Swim" & race_number == i])
+  
+  n_new_athletes <- nrow(dt_all_long[(started) & part == "Swim" & entries_cumulative==1 & race_number == i])
+  text_new_athletes <- if(i==1 | n_new_athletes == 0) {
+    ""
+  } else {
+    paste0(", ", n_new_athletes, " for the first time this season")
+  }
+  
   i_date_file <- format(dt_season[race_number == i]$date_ymd[1], "%Y-%m-%d")
   i_date <- format(dt_season[race_number == i]$date_ymd[1], "%b %d")
   
@@ -32,9 +42,10 @@ races <- foreach (i=rev(race_numbers), .combine = paste0 ) %do% {
   paste0(
     "
 ",
-"# ", i,": ", i_date, ifelse(i_race_type=="Standard", "", paste0(" - ",i_race_type))," {#r-", i_date_file, "}
-    
-    ",
+"# ", i,": ", i_date, ifelse(i_race_type=="Standard", "", paste0(" - ",i_race_type))," {#r-", i_date_file, "}\n\n",
+
+"A total of ", n_athletes,  " competitors entered", text_new_athletes, ".\n\n",
+
   foreach (j_counter=j_options, .combine = paste0 ) %do% {
     
     j <- i_courses[j_counter]
