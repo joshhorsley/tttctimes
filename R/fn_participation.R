@@ -58,6 +58,61 @@ plotly_time_series <- function(dt_all_long){
 }
 
 
+
+# Plot by race ------------------------------------------------------------
+
+
+plot_race_count <- function(dt_all_long){
+
+  dt_entries_race <- dt_all_long[part=="Swim" & (started),
+                            .(count = .N,
+                              date_ymd = date_ymd[1]),
+                            by = .(race_number, course_nice)]
+  
+  dt_entries_race[, count_all_course := sum(count), by = race_number]
+  
+
+  
+  
+  dt_entries_race[, tooltext := paste0("Race #: ", race_number, "\n",
+                                       "Date: ", date_ymd, "\n",
+                                       count, " entered the ", course_nice, " course\n",
+                                       count_all_course, " entered all courses")]
+  
+  setorder(dt_entries_race, race_number, course_nice)
+  
+  
+  g <- ggplot(dt_entries_race,
+         aes(y = count, x = race_number, text = tooltext, col = course_nice, fill = course_nice, group = race_number)) +
+    geom_col(orientation = "x", width = 0.9, size = 0.3) +
+    scale_y_continuous("Number of atheletes") +
+    scale_x_continuous("Race", breaks = 1:26, limits = c(0,27)) +
+    theme_minimal() +
+    theme(legend.position="top",
+          strip.background = element_rect(colour="black",
+                                          fill="white"))
+  
+  p <- ggplotly(g, width = NULL, tooltip = "text",layerData = TRUE, style = "mobile") %>% 
+    layout(xaxis = list(fixedrange = TRUE, side = "top"),
+           yaxis = list(fixedrange = TRUE, tickfont = list(size = 10)),
+           dragmode = FALSE,
+           autosize = TRUE,
+           margin = list(l=15, r=0, t=0,b=0, pad=0),
+           legend = list(orientation = "h", y = 0, x= 0.5, xanchor = "center",
+                         itemclick = FALSE, itemdoubleclick  = FALSE)) %>% 
+    config(displayModeBar = TRUE, modeBarButtons = list(list("toImage")), displaylogo=FALSE,
+           toImageButtonOptions = list(height = 500, width = 700, scale = 2,
+                                       format = "png",
+                                       filename = "participation_by_race")) %>% 
+    set_margin_plotly()
+  
+  
+  return(p)
+
+}
+
+
+
 # Total histogram ---------------------------------------------------------
 
 

@@ -380,6 +380,13 @@ dt_all_long[, part_plot := ordered(part_plot, levels = part_levels)]
 dt_all_long[, part_plot_pb := ordered(part_plot_pb, levels = part_levels)]
 
 
+dt_all_long[course=="double", course_nice := "Double Distance"]
+dt_all_long[course=="full", course_nice := "Full"]
+dt_all_long[course=="int", course_nice := "Intermediate"]
+
+dt_all_long[, course_nice := ordered(course_nice, levels = c("Intermediate", "Full", "Double Distance"))]
+
+
 # Plot prep ---------------------------------------------------------------
 
 
@@ -393,12 +400,12 @@ site_path_relative <- "docs"
 if(!dir.exists(site_path_relative)) dir.create(site_path_relative)
 libpath <- file.path(getwd(), "docs/libs")
 
+race_numbers <- sort(unique(dt_all_long$race_number))
 
 
 # Races -------------------------------------------------------------------
 
 
-race_numbers <- sort(unique(dt_all_long$race_number))
 
 for(i in race_numbers) {
 
