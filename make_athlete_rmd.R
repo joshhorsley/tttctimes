@@ -2,6 +2,8 @@
 # Create Athlete results Rmd -------------------------------------------------
 
 
+seasons <- rev(unique(dt_season$season))
+
 
 header <- paste0({
 "# (PART) Competitor Results {#athletes}
@@ -13,7 +15,7 @@ header <- paste0({
 })
 
 
-repeated <- foreach (k=athletes_ordered, .combine = paste0 ) %do% {
+repeated <- foreach(k=athletes_ordered, .combine = paste0 ) %do% {
   
   
   k_ref <- gsub(pattern = " ", "-", k)  
@@ -23,42 +25,66 @@ repeated <- foreach (k=athletes_ordered, .combine = paste0 ) %do% {
   
   name_first <- dt_all_long_athlete$name_first[1]
   
-  k_courses <- unique(dt_all_long_athlete$course)
-  n_courses <- length(k_courses)
+  k_seasons <- unique(dt_all_long_athlete$season)
   
-  n_entries <- length(unique(dt_all_long_athlete$race_number))
+  n_seasons <- length(k_seasons)
   
   
-  dt_entry_type <- dt_all_long_athlete[part=="Swim", .N, by = course]
-  
-  dt_entry_type[course!="int", course_nice := course]
-  dt_entry_type[course=="int", course_nice :="intermediate"]
-  
-  dt_entry_type[, sentence := paste0(N, " ", course_nice, " distance")]
-  
-  type_summary <- if(nrow(dt_entry_type)==3) {
+  paste0("# ", k, " {#a-", k_ref, "}",
+         "\n\n", name_first, " has results for ", n_seasons, ifelse(n_seasons==1,"season", "seasons"),".",
+         
+         foreach(i_season = seasons, .combine = paste0) %do% {
+           
+           season_heading <- paste0("\n\n## ", i_season, "\n\n")
+           
     
-    paste0(paste0(dt_entry_type$sentence[1:2], collapse = ", "), ", and ", dt_entry_type$sentence[3])
-    } else {
-      if(nrow(dt_entry_type)==2) {
-        paste0(dt_entry_type$sentence, collapse = " and ")
+    any_entries <- i_season %in% k_seasons
+    
+    # if(!any_entries) {
+    #   
+    #   paste0(season_heading,
+    #          name_first, " has no results for this season. ")
+    #   
+    # }
+    
+    if(any_entries){
+      
+    
+    
+    
+  
+    k_courses <- unique(dt_all_long_athlete[season==i_season]$course)
+    n_courses <- length(k_courses)
+    
+    n_entries <- length(unique(dt_all_long_athlete[season==i_season]$race_number))
+    
+    
+    dt_entry_type <- dt_all_long_athlete[season==i_season & part=="Swim", .N, by = course]
+    
+    dt_entry_type[course!="int", course_nice := course]
+    dt_entry_type[course=="int", course_nice :="intermediate"]
+    
+    dt_entry_type[, sentence := paste0(N, " ", course_nice, " distance")]
+    
+    type_summary <- if(nrow(dt_entry_type)==3) {
+      
+      paste0(paste0(dt_entry_type$sentence[1:2], collapse = ", "), ", and ", dt_entry_type$sentence[3])
       } else {
-        if(n_entries==1) {
-          paste0(dt_entry_type$course_nice, " distance")
+        if(nrow(dt_entry_type)==2) {
+          paste0(dt_entry_type$sentence, collapse = " and ")
         } else {
-          if(n_entries==2){
-            paste0("both ", dt_entry_type$course_nice, " distance")
+          if(n_entries==1) {
+            paste0(dt_entry_type$course_nice, " distance")
           } else {
-            paste0("all ", dt_entry_type$course_nice, " distance")
+            if(n_entries==2){
+              paste0("both ", dt_entry_type$course_nice, " distance")
+            } else {
+              paste0("all ", dt_entry_type$course_nice, " distance")
+            }
           }
         }
       }
-    }
-  
-  
-  
-  
-
+    
   
   summary_sentence <- paste0(name_first,
                              " has entered ",
@@ -71,16 +97,12 @@ repeated <- foreach (k=athletes_ordered, .combine = paste0 ) %do% {
                              )
   
   paste0(
-    "
-",
-"# ", k, " {#a-", k_ref, "}
+    season_heading,
 
-",summary_sentence,"
+summary_sentence,"\n\n",
 
-",
-
-'```{r}
-plotly_athlete(dt_all_long, tri_cols, "',k,'")
+'```{r ',k_ref,'-plot-',i_season,'}
+plotly_athlete(dt_all_long[season=="',i_season,'"], tri_cols, "',k,'")
 ```
 
 
@@ -88,30 +110,29 @@ plotly_athlete(dt_all_long, tri_cols, "',k,'")
   
 foreach(j=k_courses, .combine=paste0) %do% {
   
-  n_entries <- nrow(dt_all_long[Name==k & course ==j & part =="Swim"])
+  n_entries <- nrow(dt_all_long[season==i_season & Name==k & course ==j & part =="Swim"])
   
   
   j_course_nice <- c("Double Distance","Full","Intermediate")[which(j==c("double","full","int"))]
 
   paste0(
-'
-
-### Detailed results for ',j_course_nice,' course
+'\n### Detailed results for ',j_course_nice,' course
 
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
-```{r}
-table_athlete_course(dt_all_long, tri_cols, "',k,'", "',j,'")
+```{r ',k_ref,'-table-',i_season,'-',j,'}
+table_athlete_course(dt_all_long[season=="',i_season,'"], tri_cols, "',k,'", "',j,'")
 ```
 
 '
   )
 
 }
+)}
+  
+         }
 )
-  
-  
 }
 
 
-write(paste0(header, repeated),file = "03-athlete_generated.Rmd")
+write(paste0(header, repeated),file = "01-athlete_generated.Rmd")

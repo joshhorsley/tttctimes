@@ -133,6 +133,17 @@ clean_legend_names_plotly <- function(p) {
 }
 
 
+# Time --------------------------------------------------------------------
+
+
+to_hms <- function(x, nsmall_seconds = 1L) {
+  paste0(hour(x), ":",
+         format(minute(x), width=2),
+         ":",
+         format(round(second(x),nsmall_seconds),nsmall = nsmall_seconds, width=4)
+  )
+}
+
 format_place <- function(x, na_string = "NA") {
   
   x[is.na(x)] <- 0

@@ -165,6 +165,8 @@ plotly_part_hist <- function(dt_all_long){
 
 table_part_total <- function(dt_all_long, tri_cols) {
   
+  if(nrow(dt_all_long)==0) return("no data")
+  
 
   dt_entries_tab <- dt_all_long[(started) & part == "Swim" & (is_last_entry)]
   setorder(dt_entries_tab, -entries_total, name_last)
@@ -181,18 +183,6 @@ table_part_total <- function(dt_all_long, tri_cols) {
   
   
   tab_part <- datatable_std(dt_entries_tab, col_ref_hide) %>% 
-    # DT::datatable(dt_entries_tab,
-    #                         rownames = FALSE,
-    #                         elementId = "tab_participation",
-    #                         extensions = c('Buttons'),
-    #                         options = list(autoWidth=FALSE,
-    #                                        paging=FALSE,
-    #                                        dom = 'Brtp',
-    #                                        scrollY = "500px",
-    #                                        scrollX = "500px",
-    #                                        buttons = c('copy', 'csv', 'excel'),
-    #                                        columnDefs = 
-    #                                          list(list(visible=FALSE, targets=col_ref_hide)))) %>%
     formatStyle(columns = "Rank", valueColumns = "Rank",
                 background = styleEqual(1,tri_cols$record))
   

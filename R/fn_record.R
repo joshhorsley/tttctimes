@@ -82,6 +82,8 @@ table_record <- function(dt_all_long, tri_cols, j, l ) {
     dt_record_j <- dt_all_long[(started) & (includes_pb_split) & course==j][order(part, rank_pb_split)]
   }
   
+  if(nrow(dt_record_j)==0) return("no data")
+  
   dt_record_j[, Rank := rank_pb_split]
   dt_record_j_wide <- dcast(dt_record_j, valid_overall + isPB_overall + rank_pb_overall + Name + total_overall_hms + date_ymd + race_number  ~ part,
                             value.var = c("duration_hms","isPB_split", "split_valid","rank_pb_split","Rank","cumulative_valid"))
@@ -105,20 +107,6 @@ table_record <- function(dt_all_long, tri_cols, j, l ) {
   setnames(dt_record_j_wide, cols_train_old_names, cols_retain_new_names, skip_absent = TRUE)
   
   col_ref_hide <- which(!(names(dt_record_j_wide) %in% c("Name",cols_retain_new_names)))-1 # columns are indexed from 0 - row name?
-  
-  
-  # tab_j <- DT::datatable(data = ,
-  # rownames = FALSE,
-  # # elementId = paste0("tab_record_", j,"_",l),
-  # extensions = c('Buttons'),
-  # options = list(autoWidth=FALSE,
-  #                paging=FALSE,
-  #                dom = 'Brtp',
-  #                scrollY = "500px",
-  #                scrollX = "500px",
-  #                buttons = c('copy', 'csv', 'excel'),
-  #                columnDefs = 
-  #                  list(list(visible=FALSE, targets=col_ref_hide)))) 
   
   dt_record_use <- if(l=="overall") {
     dt_record_j_wide

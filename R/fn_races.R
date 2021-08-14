@@ -104,20 +104,6 @@ table_race <- function(dt_all_long, tri_cols, i, j,j_is_champ) {
   
   
   tab_i <- datatable_std(dt_i_wide[order(Rank)], col_ref_hide) %>% 
-  
-  # DT::datatable(dt_i_wide[order(Rank)],
-  #                        rownames = FALSE,
-  #                        elementId = paste0("tab_race_",i, "_", j),
-  #                        # extensions = c('Buttons', 'Responsive'),
-  #                        extensions = c('Buttons'),
-  #                        options = list(autoWidth=FALSE,
-  #                                       paging=FALSE,
-  #                                       dom = 'Brtp',
-  #                                       scrollY = "500px",
-  #                                       scrollX = "500px",
-  #                                       buttons = c('copy', 'csv', 'excel'),
-  #                                       columnDefs = 
-  #                                         list(list(visible=FALSE, targets=col_ref_hide)))) %>% 
     apply_col(tri_cols)
   
   tab_i$sizingPolicy$browser$fill <- TRUE

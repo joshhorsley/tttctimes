@@ -12,22 +12,22 @@ description: "Twinnies Times"
 
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, fig.height = 6, fig.width = 7)
 
-source("R/req_packages.R")
+dummy <- lapply(list.files("R", full.names = TRUE), source)
 
 dt_season <- readRDS("data_derived/dt_season.rds")
 dt_all_long <- readRDS("data_derived/dt_all_long.rds")
 
 
-weeks_missing_full <- unique(dt_season[(missing_results) & course =="full"]$race_number)
-weeks_missing_int <- unique(dt_season[(missing_results) & course =="int"]$race_number)
-some_weeks_missing_full <-length(weeks_missing_full) !=0
-some_weeks_missing_int <-length(weeks_missing_int) !=0
+# weeks_missing_full <- unique(dt_season[(missing_results) & course =="full"]$race_number)
+# weeks_missing_int <- unique(dt_season[(missing_results) & course =="int"]$race_number)
+# some_weeks_missing_full <-length(weeks_missing_full) !=0
+# some_weeks_missing_int <-length(weeks_missing_int) !=0
 
 ```
 
 
 # Home
 
-This is a unofficial collection of the 2020/2021 race results for [TwinTowns Triathlon Club](http://www.twintownstriathlon.org.au){target="_blank"} based on the [club's webscorer page](https://www.webscorer.com/33755){target="_blank"}.
+This is a unofficial collection [TwinTowns Triathlon Club](http://www.twintownstriathlon.org.au){target="_blank"} race results based on the [club's webscorer page](https://www.webscorer.com/33755){target="_blank"}.
 
-Results are presented in terms of overall participation and records ([example](#participation-total)), for each race ([example](#r-2021-02-13)), and for each competitor ([example](#a-Tracy-Foyster)).
+Results are presented in terms of overall participation and records ([example](#participation-total-2020-2021)), for each race ([example](#r-2021-02-13)), and for each competitor ([example](#a-Tracy-Foyster)).

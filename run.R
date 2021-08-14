@@ -17,50 +17,67 @@ tri_cols <- list(pb = "pink",
                  run = "#BF5324")
 
 
-# Races and files ---------------------------------------------------------
+# Season ------------------------------------------------------------------
 
 
-dt_season_import <- fread("data_provided/season_definition/2020-2021.csv")
+dt_season_import <- fread("data_provided/season_definitions.csv")
 dt_season_import[, date_ymd := as.IDate(date_ymd, format = "%d/%m/%y")]
 
-n_weeks <- nrow(dt_season_import)
 
-dt_season <- dt_season_import[rep(seq(.N),2)]
+# Add multiple courses per race
+dt_season_import[race_type %in% c("Standard", "Club Championships"), course_list := list(list("full","int"))]
+dt_season_import[race_type == "Double Distance", course_list := list(list("double","full","int"))]
+dt_season_import[race_type == "Super Teams", course_list := list(list("teams"))]
 
-dt_season[, course := "int"]
-dt_season[1:n_weeks, course := "full"]
+dt_season_import2 <- dt_season_import[, .(season,
+                     race_number,
+                     race_type,
+                     cancelled,
+                     cancelled_reason,
+                     course = unlist(course_list)),
+                     by = date_ymd][order(season, race_number)]
 
-# Add double-distance
-dt_double <- dt_season[race_type=="Double Distance" & course == "int"]
-dt_double[, course := "double"]
-dt_season <- rbind(dt_season, dt_double)
 
-# Add club champsionship
-dt_season[, is_champ := FALSE]
-dt_champ <- dt_season[race_type=="Club Championships" & course == "full"]
-dt_champ[, course := "full"]
-dt_champ[, is_champ := TRUE]
-dt_season <- rbind(dt_season, dt_champ)
+# Add champtionship to full course
+dt_season_import2[, is_champ := list(list(list(FALSE)))]
+dt_season_import2[race_type == "Club Championships" & course == "full", 
+                  is_champ := list(list(list(TRUE,FALSE)))]
+
+dt_season <- dt_season_import2[, .(season,
+                                          race_number,
+                                          date_ymd,
+                                          race_type,
+                                          cancelled,
+                                          cancelled_reason,
+                                          is_champ = unlist(is_champ)),
+                                       by =.(date_ymd, course)][order(season, race_number)]
+
 
 dt_season[course=="full", course_nice := "Full"]
 dt_season[course=="full" & (is_champ), course_nice := "Club Championships"]
 dt_season[course=="int", course_nice := "Intermediate"]
 dt_season[course=="double", course_nice := "Double Distance"]
 
-# load data
-dt_season[race_type=="Double Distance" & course == "double", path_webscorer := paste0("data_provided/webscorer/",course,"/Double Distance ", mday(date_ymd), " ", format(date_ymd, "%b"), " ", substring(year(date_ymd), 3,4), ".txt")]
-dt_season[!(race_type=="Double Distance" & course == "double"), path_webscorer := paste0("data_provided/webscorer/",course,"/TTTC ", mday(date_ymd), " ", format(date_ymd, "%b"), " ", year(date_ymd), ".txt")]
-dt_season[(is_champ), path_webscorer := paste0("data_provided/webscorer/","champ","/TTTC ", mday(date_ymd), " ", format(date_ymd, "%b"), " ", year(date_ymd), ".txt")]
+# race data paths
+path_base <- "data_provided/webscorer"
 
+dt_season[!(is_champ), dir_webscorer := file.path(path_base, season, date_ymd, course)]
+dt_season[(is_champ), dir_webscorer := file.path(path_base, season, date_ymd, "champ")]
 
-dt_season[, path_webscorer := gsub("Sep","Sept",path_webscorer)]
+dummy <- dt_season[, if(!dir.exists(dir_webscorer)) dir.create(dir_webscorer,recursive = TRUE), by = dir_webscorer]
+
+dt_season[, path_webscorer := list.files(dir_webscorer,full.names = TRUE, pattern = "txt$"), by = dir_webscorer]
+
 dt_season[, have_results := file.exists(path_webscorer)]
 
 dt_season[, missing_results := !cancelled & !have_results]
 
 dt_season[, row_id := seq(.N)]
 
-# Load race results
+
+# Load race results -------------------------------------------------------
+
+
 dt_season[(have_results), dt_race := .(list(fread(path_webscorer))), by = row_id]
 
 # Flatten available results
@@ -70,7 +87,7 @@ dt_all <- foreach(i=id_results, .combine = function(x,y) rbind(x,y,fill=TRUE)) %
   dt_season[i, .(row_id, dt_race[[1]])]
 }
 
-new_cols <- c("race_number", "date_ymd", "race_type", "course", "is_champ")
+new_cols <- c("season","race_number", "date_ymd", "race_type", "course", "is_champ")
 dt_all[dt_season, on = .(row_id), (new_cols) := mget(new_cols)]
 setcolorder(dt_all, new_cols)
 
@@ -90,7 +107,7 @@ dt_all[Swim %in% c("","-"), started := FALSE]
 
 # Convert to long
 dt_all_long <- melt.data.table(dt_all,
-                               id.vars = c("race_number", "date_ymd", "race_type", "course",
+                               id.vars = c("season","race_number", "date_ymd", "race_type", "course",
                                            "Name","place_import","time_overall_import","started","is_champ"),
                                measure.vars = c("Swim",
                                                   "Ride",
@@ -156,7 +173,7 @@ dt_all_long[is.na(cumulative_valid), cumulative_valid := TRUE]
 
 
 # overall_invalid if cumulative time at end of run is invalid
-dt_all_long[, valid_overall := cumulative_valid[which(part=="Run")], by = .(race_number, Name)]
+dt_all_long[, valid_overall := cumulative_valid[which(part=="Run")], by = .(season, race_number, Name)]
 dt_all_long[is.na(valid_overall), valid_overall := TRUE]
 
 
@@ -191,11 +208,11 @@ dt_all_long[,total_disagree := any(total_disagree,na.rm = TRUE),by = .(Name, rac
 
 dt_all_long[(total_disagree) & part=="Run" & (cumulative_valid), total_resolve := "cumulative"]
 dt_all_long[(total_disagree) & part=="Run" & !(cumulative_valid), total_resolve := "imported"]
-dt_all_long[(total_disagree),total_resolve := total_resolve[which(part=="Run")],by = .(Name, race_number)]
+dt_all_long[(total_disagree),total_resolve := total_resolve[which(part=="Run")],by = .(Name, season, race_number)]
 
 dt_all_long[(total_disagree) & total_resolve =="cumulative",
             `:=`(total_resolved = TRUE,
-                 overall_seconds = cumulative_seconds[which(part=="Run")]), by = .(Name, race_number)]
+                 overall_seconds = cumulative_seconds[which(part=="Run")]), by = .(Name, season, race_number)]
 
 dt_all_long[(total_disagree) & total_resolve =="imported" & part=="Run", cumulative_seconds := overall_seconds]
 dt_all_long[(total_disagree) & total_resolve =="imported", total_resolved := TRUE]
@@ -206,21 +223,12 @@ stopifnot(n_total_resolve_errors==0)
 
 
 # Catch cases where overall time is invalid but a run time has been recorded
-dt_all_long[(started) & is.na(overall_seconds), overall_seconds := max(cumulative_seconds), by = .(Name, race_number)]
+dt_all_long[(started) & is.na(overall_seconds), overall_seconds := max(cumulative_seconds), by = .(Name, season, race_number)]
 
 
 dt_all_long[, duration_mins := duration_seconds/60]
 dt_all_long[, cumulative_mins := cumulative_seconds/60]
 dt_all_long[, total_overall_mins := overall_seconds/60]
-
-
-to_hms <- function(x, nsmall_seconds = 1L) {
-  paste0(hour(x), ":",
-         format(minute(x), width=2),
-         ":",
-         format(round(second(x),nsmall_seconds),nsmall = nsmall_seconds, width=4)
-         )
-}
 
 dt_all_long[, duration_hms_short := to_hms(seconds_to_period(duration_seconds))]
 dt_all_long[, duration_hms_short := gsub("^0:","",duration_hms_short)]
@@ -266,13 +274,13 @@ dt_all_long[(valid_overall), total_overall_sort := total_overall_mins]
 dt_all_long[!(valid_overall), total_overall_sort := NA]
 
 
-dt_all_long[(started), place_lap := as.integer(rank(duration_mins_sort, ties.method = "first")), by = .(race_number, course, part, is_champ)]
-dt_all_long[(started), place_cum_recalc := as.integer(rank(total_mins_sort, ties.method = "first")), by = .(race_number, course, part, is_champ)]
-dt_all_long[(started), place_overall_recalc := as.integer(rank(total_overall_sort, ties.method = "first")), by = .(race_number, course, part, is_champ)]
+dt_all_long[(started), place_lap := as.integer(rank(duration_mins_sort, ties.method = "first")), by = .(season, race_number, course, part, is_champ)]
+dt_all_long[(started), place_cum_recalc := as.integer(rank(total_mins_sort, ties.method = "first")), by = .(season, race_number, course, part, is_champ)]
+dt_all_long[(started), place_overall_recalc := as.integer(rank(total_overall_sort, ties.method = "first")), by = .(season, race_number, course, part, is_champ)]
 
-dt_all_long[(started), athlete_rank_split := as.integer(rank(duration_mins_sort, ties.method = "first")), by = .(Name, course, part)]
-dt_all_long[(started), athlete_rank_cumulative := as.integer(rank(total_mins_sort, ties.method = "first")), by = .(Name, course, part)]
-dt_all_long[(started), athlete_rank_overall := as.integer(rank(total_overall_sort, ties.method = "first")), by = .(Name, course, part)]
+dt_all_long[(started), athlete_rank_split := as.integer(rank(duration_mins_sort, ties.method = "first")), by = .(Name, season, course, part)]
+dt_all_long[(started), athlete_rank_cumulative := as.integer(rank(total_mins_sort, ties.method = "first")), by = .(Name, season, course, part)]
+dt_all_long[(started), athlete_rank_overall := as.integer(rank(total_overall_sort, ties.method = "first")), by = .(Name, season, course, part)]
 
 dt_all_long[(started) & (split_valid), place_lap_display := place_lap]
 dt_all_long[(started) & !(split_valid), place_lap_display := NA]
@@ -285,61 +293,61 @@ dt_all_long[(started), place_cum_nice := format_place(place_cum_recalc)]
 # PBs ---------------------------------------------------------------------
 
 
-dt_all_long[(started), isFirstRace := race_number == min(race_number), by = .(Name, part, course) ]
+dt_all_long[(started), isFirstRace := race_number == min(race_number), by = .(Name, season, part, course) ]
 
 
 # PB change over seasons
-dt_all_long[(started) & (split_valid), pb_split_running := cummin(duration_mins), by = .(Name, part, course) ]
-dt_all_long[(started) & (split_valid), isNewPB_split := duration_mins == pb_split_running, by = .(Name, part, course) ]
+dt_all_long[(started) & (split_valid), pb_split_running := cummin(duration_mins), by = .(Name, season, part, course) ]
+dt_all_long[(started) & (split_valid), isNewPB_split := duration_mins == pb_split_running, by = .(Name, season, part, course) ]
 
 dt_all_long[is.na(isNewPB_split), isNewPB_split := FALSE]
 dt_all_long[(isFirstRace), isNewPB_split := FALSE]
 
-dt_all_long[(started) & (cumulative_valid), pb_cum_running := cummin(cumulative_mins), by = .(Name, part, course) ]
-dt_all_long[(started) & (cumulative_valid), isNewPB_cum := cumulative_mins == pb_cum_running, by = .(Name, part, course) ]
+dt_all_long[(started) & (cumulative_valid), pb_cum_running := cummin(cumulative_mins), by = .(Name, season, part, course) ]
+dt_all_long[(started) & (cumulative_valid), isNewPB_cum := cumulative_mins == pb_cum_running, by = .(Name, season, part, course) ]
 
 dt_all_long[is.na(isNewPB_cum), isNewPB_cum := FALSE]
 dt_all_long[(isFirstRace), isNewPB_cum := FALSE]
 
-dt_all_long[(started) & (valid_overall), pb_overall_running := cummin(total_overall_mins), by = .(Name, course) ]
-dt_all_long[(started) & (valid_overall), isNewPB_overall := total_overall_mins == pb_overall_running, by = .(Name, course) ]
+dt_all_long[(started) & (valid_overall), pb_overall_running := cummin(total_overall_mins), by = .(Name, season, course) ]
+dt_all_long[(started) & (valid_overall), isNewPB_overall := total_overall_mins == pb_overall_running, by = .(Name, season, course) ]
 
 dt_all_long[is.na(isNewPB_overall), isNewPB_overall := FALSE]
 dt_all_long[(isFirstRace), isNewPB_overall := FALSE]
 
-# season pB
-dt_all_long[(started) & (valid_overall), pb_overall := min(total_overall_mins), by = .(Name, course) ]
-dt_all_long[(started) & (valid_overall), isPB_overall := total_overall_mins == pb_overall, by = .(Name, course) ]
+# season PB
+dt_all_long[(started) & (valid_overall), pb_overall := min(total_overall_mins), by = .(Name, season, course) ]
+dt_all_long[(started) & (valid_overall), isPB_overall := total_overall_mins == pb_overall, by = .(Name, season, course) ]
 dt_all_long[is.na(isPB_overall), isPB_overall := FALSE]
 
-dt_all_long[(started) & (split_valid), pb_split := min(duration_mins), by = .(Name, part, course) ]
-dt_all_long[(started) & (split_valid), isPB_split := duration_mins == pb_split, by = .(Name, part, course) ]
+dt_all_long[(started) & (split_valid), pb_split := min(duration_mins), by = .(Name, season, part, course) ]
+dt_all_long[(started) & (split_valid), isPB_split := duration_mins == pb_split, by = .(Name, season, part, course) ]
 dt_all_long[is.na(isPB_split), isPB_split := FALSE]
 
-dt_all_long[(started) & (cumulative_valid), pb_cumulative := min(cumulative_mins), by = .(Name, part, course) ]
-dt_all_long[(started) & (cumulative_valid), isPB_cumulative := cumulative_mins == pb_cumulative, by = .(Name, part, course) ]
+dt_all_long[(started) & (cumulative_valid), pb_cumulative := min(cumulative_mins), by = .(Name, season, part, course) ]
+dt_all_long[(started) & (cumulative_valid), isPB_cumulative := cumulative_mins == pb_cumulative, by = .(Name, season, part, course) ]
 dt_all_long[is.na(isPB_cumulative), isPB_cumulative := FALSE]
 
 
 # Records -----------------------------------------------------------------
 
 
-dt_all_long[(started) & (isPB_overall), rank_pb_overall := rank(total_overall_mins, ties.method = "first"), by = .(course, part)]
-dt_all_long[(started) & (isPB_split), rank_pb_split := rank(duration_mins, ties.method = "first"), by = .(course, part)]
+dt_all_long[(started) & (isPB_overall), rank_pb_overall := rank(total_overall_mins, ties.method = "first"), by = .(course, season, part)]
+dt_all_long[(started) & (isPB_split), rank_pb_split := rank(duration_mins, ties.method = "first"), by = .(course, season, part)]
 
-dt_all_long[(started), includes_pb_split := any(isPB_split), by = .(Name, course, race_number)]
+dt_all_long[(started), includes_pb_split := any(isPB_split), by = .(Name, season, course, race_number)]
 
 
 # Participation -----------------------------------------------------------
 
 
-dt_all_long[(started), entries_cumulative := cumsum(started), by = .(Name, part)]
-dt_all_long[(started), entries_total := max(entries_cumulative), by = Name]
+dt_all_long[(started), entries_cumulative := cumsum(started), by = .(Name, season, part)]
+dt_all_long[(started), entries_total := max(entries_cumulative), by = .(Name, season)]
 dt_all_long[(started), is_last_entry := entries_total == entries_cumulative]
 
-dt_all_long[(started) & (is_last_entry), entries_total_rank := rank(-entries_total, ties.method = "min"), by = part]
+dt_all_long[(started) & (is_last_entry), entries_total_rank := rank(-entries_total, ties.method = "min"), by = .(season,part)]
 
-n_athletes_season <- length(unique(dt_all_long[(started)]$Name))
+# n_athletes_season <- length(unique(dt_all_long[(started)]$Name))
 
 
 # Part naming -------------------------------------------------------------
@@ -389,7 +397,7 @@ site_path_relative <- "docs"
 if(!dir.exists(site_path_relative)) dir.create(site_path_relative)
 libpath <- file.path(getwd(), "docs/libs")
 
-race_numbers <- sort(unique(dt_all_long$race_number))
+# race_numbers <- sort(unique(dt_all_long$race_number))
 
 
 # Export for website ------------------------------------------------------
@@ -402,7 +410,6 @@ saveRDS(dt_all_long, "data_derived/dt_all_long.rds")
 # Update website ----------------------------------------------------------
 
 
-source("make_record_rmd.R")
-source("make_race_rmd.R")
+source("make_seasons_rmd.R")
 source("make_athlete_rmd.R")
 bookdown::render_book("index.Rmd",output_dir = site_path_relative)
