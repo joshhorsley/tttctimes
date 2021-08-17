@@ -1,5 +1,31 @@
 race_number,date_ymd,Name,part,split_valid,cumulative_valid
 ,,,,,
+4,19/10/19,Jenny Scaysbrook,Swim,FALSE,FALSE
+4,19/10/19,Jenny Scaysbrook,Ride,TRUE,FALSE
+4,19/10/19,Jenny Scaysbrook,Run,TRUE,FALSE
+,,,,,
+4,19/10/19,Craig Telling,Run,FALSE,FALSE
+,,,,,
+4,19/10/19,Guy Davoren,Run,FALSE,FALSE
+,,,,,
+4,19/10/19,Michelle Miller,Ride,FALSE,FALSE
+4,19/10/19,Michelle Miller,Run,FALSE,TRUE
+,,,,,
+4,19/10/19,Simon Bradbery,Ride,FALSE,FALSE
+4,19/10/19,Simon Bradbery,Run,FALSE,FALSE
+,,,,,
+,,,,,
+14,28/12/19,Rob Gillies,Swim,FALSE,FALSE
+,,,,,
+,,,,,
+25,14/3/20,Adrian Rota,Run,FALSE,FALSE
+,,,,,
+,,,,,
+26,21/3/20,Mark Whiticker,Run,FALSE,FALSE
+26,21/3/20,Liam Foyster,Ride,FALSE,FALSE
+26,21/3/20,Liam Foyster,Run,FALSE,TRUE
+,,,,,
+,,,,,
 1,26/9/20,Hollie Robards,Run,FALSE,FALSE
 ,,,,,
 1,26/9/20,Rob Gillies,Swim,FALSE,FALSE

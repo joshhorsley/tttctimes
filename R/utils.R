@@ -174,3 +174,27 @@ list_with_and <- function(parts) {
   
   
 }
+
+cap_first <- function(x) paste0( toupper(substring(x,1,1)), tolower(substring(x, 2)))
+
+standardise_names <- function(name){
+  name <- paste0(unlist(
+    lapply(strsplit(name, c(" ")),
+           cap_first )
+  ), collapse = " ")
+  
+  name_list <- strsplit(name, c("-"))
+  
+  if(length(name_list[[1]])==1) {
+    return(name)
+  } else {
+    return(
+      paste0(name_list[[1]][1],
+             "-",
+             cap_first(name_list[[1]][2]))
+    )
+  }
+  
+ 
+
+}

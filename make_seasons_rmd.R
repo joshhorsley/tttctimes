@@ -2,8 +2,8 @@
 # Create record pages -----------------------------------------------------
 
 
-seasons <- rev(unique(dt_all_long[(started)]$season))
-seasons <- rev(unique(dt_season$season))
+# seasons <- rev(unique(dt_season$season))
+seasons <- "2019-2020"; print("HARD CODED FOR ONE SEASON ONLY")
 
 
 header <- paste0({

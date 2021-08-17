@@ -31,7 +31,7 @@ repeated <- foreach(k=athletes_ordered, .combine = paste0 ) %do% {
   
   
   paste0("# ", k, " {#a-", k_ref, "}",
-         "\n\n", name_first, " has results for ", n_seasons, ifelse(n_seasons==1,"season", "seasons"),".",
+         "\n\n", name_first, " has results for ", n_seasons, " ",ifelse(n_seasons==1,"season", "seasons"),".",
          
          foreach(i_season = seasons, .combine = paste0) %do% {
            

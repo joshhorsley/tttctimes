@@ -1,0 +1,14 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Adjusted time	Time	Lap 1	Lap 2	Lap 3	Handicap	Difference	% Back	% Winning	% Average	% Median
+1	190	Lloyd MAUNDER	Lloyd	MAUNDER	Intermediate	42:36.4	42:36.4	6:37.6	22:57.2	13:01.6	+0:00.0	-	-	100%	28.13%	29.60%
+2	208	Ava THOMSON	Ava	THOMSON	Intermediate	29:23.2	44:23.2	22:34.3	0:03.8	21:45.1	-15:00.0	+1:46.8	+4.18%	95.99%	25.12%	26.66%
+3	233	Kat MILLER	Kat	MILLER	Intermediate	39:18.1	54:18.1	22:09.8	22:35.1	9:33.2	-15:00.0	+11:41.7	+27.45%	78.46%	8.40%	10.28%
+4	63	Sebastian THOMSON	Sebastian	THOMSON	Intermediate	39:41.6	54:41.6	20:59.2	23:12.9	10:29.5	-15:00.0	+12:05.2	+28.37%	77.90%	7.74%	9.63%
+5	147	Remy HAWKINS	Remy	HAWKINS	Intermediate	42:10.1	57:10.1	21:19.1	24:18.7	11:32.3	-15:00.0	+14:33.7	+34.18%	74.53%	3.56%	5.54%
+6	26	Deb ANDERSON	Deb	ANDERSON	Intermediate	44:02.8	59:02.8	22:41.8	24:53.0	11:28.0	-15:00.0	+16:26.4	+38.59%	72.16%	0.39%	2.44%
+7	237	Christin MCINTOSH	Christin	MCINTOSH	Intermediate	45:31.3	1:00:31.3	21:33.2	25:50.2	13:07.9	-15:00.0	+17:54.9	+42.05%	70.40%	-2.10%	0.00%
+8	204	Lucas NIXON-HIND	Lucas	NIXON-HIND	Intermediate	46:33.5	1:01:33.5	24:30.0	25:57.2	11:06.3	-15:00.0	+18:57.1	+44.48%	69.21%	-3.84%	-1.71%
+9	35	Judy MURRAY	Judy	MURRAY	Intermediate	48:27.7	1:03:27.7	22:34.0	26:47.6	14:06.2	-15:00.0	+20:51.3	+48.95%	67.14%	-7.06%	-4.86%
+10	200	Steve WEST	Steve	WEST	Intermediate	50:33.4	1:05:33.4	21:29.1	26:11.9	17:52.4	-15:00.0	+22:57.0	+53.86%	64.99%	-10.59%	-8.32%
+11	64	Wendy SANDERS	Wendy	SANDERS	Intermediate	51:57.6	1:06:57.6	24:18.8	27:39.3	14:59.5	-15:00.0	+24:21.2	+57.16%	63.63%	-12.96%	-10.64%
+12	238	Lorraine BASSETT	Lorraine	BASSETT	Intermediate	53:29.4	1:08:29.4	25:47.0	27:35.9	15:06.5	-15:00.0	+25:53.0	+60.75%	62.21%	-15.54%	-13.17%
+13	239	Glenn HIND	Glenn	HIND	Intermediate	56:52.7	1:11:52.7	24:35.3	28:19.6	18:57.7	-15:00.0	+29:16.3	+68.70%	59.28%	-21.25%	-18.76%

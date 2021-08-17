@@ -1,0 +1,65 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Adjusted time	Time	Lap 1	Lap 2	Lap 3	Handicap	Difference	% Back	% Winning	% Average	% Median
+1	190	Lloyd MAUNDER	Lloyd	MAUNDER	Intermediate	44:28.2	44:28.2	6:57.5	24:05.7	13:25.0	+0:00.0	-	-	100%	27.23%	25.44%
+2	195	Andrew ARMSTRONG	Andrew	ARMSTRONG	Intermediate	29:29.3	44:29.3	7:25.3	23:37.8	13:26.2	-15:00.0	+0:01.1	+0.04%	99.96%	27.20%	25.41%
+3	122	Bede CURNOW	Bede	CURNOW	Intermediate	31:15.0	50:24.0	20:02.3	20:48.8	9:32.9	-19:09.0	+5:55.8	+13.33%	88.23%	17.52%	15.49%
+4	63	Sebastian THOMSON	Sebastian	THOMSON	Intermediate	35:24.1	52:45.1	21:01.4	21:41.8	10:01.9	-17:21.0	+8:16.9	+18.62%	84.30%	13.67%	11.55%
+5	147	Remy HAWKINS	Remy	HAWKINS	Intermediate	26:37.6	54:52.6	21:16.6	22:40.3	10:55.7	-28:15.0	+10:24.4	+23.40%	81.04%	10.20%	7.99%
+6	233	Kat MILLER	Kat	MILLER	Intermediate	41:15.8	56:15.8	22:03.2	24:15.9	9:56.7	-15:00.0	+11:47.6	+26.52%	79.04%	7.93%	5.66%
+7	208	Ava THOMSON	Ava	THOMSON	Intermediate	42:54.3	57:54.3	22:20.5	22:10.0	13:23.7	-15:00.0	+13:26.1	+30.21%	76.80%	5.24%	2.91%
+8	26	Deb ANDERSON	Deb	ANDERSON	Intermediate	35:56.3	58:59.3	22:13.2	25:17.3	11:28.8	-23:03.0	+14:31.1	+32.65%	75.39%	3.47%	1.09%
+9	130	Mel DUFF	Mel	DUFF	Intermediate	45:17.6	1:00:17.6	22:10.8	24:51.9	13:15.0	-15:00.0	+15:49.4	+35.58%	73.76%	1.33%	-1.09%
+10	240	Sally			Intermediate	45:19.0	1:00:19.0	22:08.0	24:55.9	13:15.2	-15:00.0	+15:50.8	+35.63%	73.73%	1.29%	-1.13%
+11	25	Susan BAXTER	Susan	BAXTER	Intermediate	24:20.7	1:01:12.7	21:41.3	25:34.3	13:57.2	-36:52.0	+16:44.5	+37.65%	72.65%	-0.17%	-2.63%
+12	237	Christin MCINTOSH	Christin	MCINTOSH	Intermediate	48:03.3	1:03:03.3	21:41.7	27:46.6	13:34.9	-15:00.0	+18:35.1	+41.79%	70.53%	-3.19%	-5.72%
+13	200	Steve WEST	Steve	WEST	Intermediate	50:17.1	1:05:17.1	21:18.0	25:56.4	18:02.7	-15:00.0	+20:48.9	+46.81%	68.12%	-6.84%	-9.46%
+14	238	Lorraine BASSETT	Lorraine	BASSETT	Intermediate	53:00.0	1:08:00.0	25:43.0	27:30.2	14:46.9	-15:00.0	+23:31.8	+52.91%	65.40%	-11.28%	-14.02%
+15	160	Jeff STELLA	Jeff	STELLA	Intermediate	1:14:01.4	1:29:01.4	32:44.0	34:56.8	21:20.5	-15:00.0	+44:33.2	+100.19%	49.95%	-45.68%	-49.27%
+16	40	Joe WARD	Joe	WARD	Intermediate	1:17:55.5	1:30:23.5	17:33.6	41:35.9	31:14.0	-12:28.0	+45:55.3	+103.26%	49.20%	-47.92%	-51.56%
+-	21	Ross FERGUSON	Ross	FERGUSON	Intermediate	DNS	DNS				-20:04.0	-	-	-	-	-
+-	22	Julie LOWE	Julie	LOWE	Intermediate	DNS	DNS				-47:19.0	-	-	-	-	-
+-	24	Scott CUMMINGS	Scott	CUMMINGS	Intermediate	DNS	DNS				-25:20.0	-	-	-	-	-
+-	29	Kristen ELLIS	Kristen	ELLIS	Intermediate	DNS	DNS				-22:11.0	-	-	-	-	-
+-	35	Judy MURRAY	Judy	MURRAY	Intermediate	DNS	DNS				-36:34.0	-	-	-	-	-
+-	38	Noel COLEMAN	Noel	COLEMAN	Intermediate	DNS	DNS				-12:34.0	-	-	-	-	-
+-	41	Colin WOODWARD	Colin	WOODWARD	Intermediate	DNS	DNS				-27:05.0	-	-	-	-	-
+-	42	Frank ADLER	Frank	ADLER	Intermediate	DNS	DNS				-13:00.0	-	-	-	-	-
+-	43	Pete McFIE	Pete	MCFIE	Intermediate	DNS	DNS				-16:51.0	-	-	-	-	-
+-	55	Mark WHITICKER	Mark	WHITICKER	Intermediate	DNS	DNS				-6:00.0	-	-	-	-	-
+-	64	Wendy SANDERS	Wendy	SANDERS	Intermediate	DNS	DNS				-25:26.0	-	-	-	-	-
+-	79	Tim WHITBURN	Tim	WHITBURN	Intermediate	DNS	DNS				-24:37.0	-	-	-	-	-
+-	83	Peter TOWNSEND	Peter	TOWNSEND	Intermediate	DNS	DNS				-27:02.0	-	-	-	-	-
+-	93	Zoe TAYLOR-WEST	Zoe	TAYLOR-WEST	Intermediate	DNS	DNS				-20:04.0	-	-	-	-	-
+-	101	Liam FOYSTER	Liam	FOYSTER	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	108	Deidre STEIN	Deidre	STEIN	Intermediate	DNS	DNS				-26:00.0	-	-	-	-	-
+-	109	Joseph COSTELLO	Joseph	COSTELLO	Intermediate	DNS	DNS				-26:00.0	-	-	-	-	-
+-	113	Garry McKENZIE	Garry	MCKENZIE	Intermediate	DNS	DNS				-6:02.0	-	-	-	-	-
+-	124	Daniel BRAY	Daniel	BRAY	Intermediate	DNS	DNS				-12:18.0	-	-	-	-	-
+-	128	Geoffrey TAPPING	Geoffrey	TAPPING	Intermediate	DNS	DNS				-21:36.0	-	-	-	-	-
+-	136	Hippolyte LANCHOU	Hippolyte	LANCHOU	Intermediate	DNS	DNS				-22:01.0	-	-	-	-	-
+-	138	Mark BIRTWISTLE	Mark	BIRTWISTLE	Intermediate	DNS	DNS				-34:13.0	-	-	-	-	-
+-	143	Nina HOFFMAN	Nina	HOFFMAN	Intermediate	DNS	DNS				-17:47.0	-	-	-	-	-
+-	150	Bella PIDCOCK	Bella	PIDDOCK	Intermediate	DNS	DNS				+0:00.0	-	-	-	-	-
+-	158	Sally CAMPBELL	Sally	CAMPBELL	Intermediate	DNS	DNS				-37:31.0	-	-	-	-	-
+-	161	Timothy STELLA	Timothy	STELLA	Intermediate	DNS	DNS				-28:44.0	-	-	-	-	-
+-	167	Rebecca WALDREN	Rebecca	WALDREN	Intermediate	DNS	DNS				-33:40.0	-	-	-	-	-
+-	173	Sheridan BOSWORTH	Sheridan	BOSWORTH	Intermediate	DNS	DNS				-29:52.0	-	-	-	-	-
+-	181	Alan HEAD	Alan	HEAD	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	193	Gabrielle STELLA	Gabrielle	STELLA	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	194	Olivia COPELAND	Olivia	COPELAND	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	197	Kai WALDRON	Kai	WALDRON	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	204	Lucas NIXON-HIND	Lucas	NIXON-HIND	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	205	Karen NIXON	Karen	NIXON	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	210	Steve COPELAND	Steve	Copeland	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	214	Tim TAYLOR	Tim	TAYLOR	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	215	Will TAYLOR	Will	TAYLOR	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	218	Trudy GADALETA	Trudy	GADALETA	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	221	Michaela DOOLEY	Michaela	DOOLEY	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	223	Austin CARROLL	Austin	CARROLL	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	224	Stephanie ESPARZA	Stephanie	ESPARZA	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	228	Amy CHAPMAN	Amy	CHAPMAN	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	229	Billie MURPHY	Billie	MURPHY	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	230	Adrian ROTA	Adrian	ROTA	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	231	Shaun OLDBURY	Shaun	OLDBURY	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	232	Andrew HUTCHINSON	Andrew	HUTCHINSON	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	235	Beau SMITH	Beau	SMITH	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	236	Mick CORCORAN	Mick	CORCORAN	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
