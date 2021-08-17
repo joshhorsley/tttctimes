@@ -27,7 +27,7 @@ header <- paste0({
 
 ```{r schedule-',i_season,'}
 
-dt_season_show <- dt_season[season=="',i_season,'"][course=="full" & !(is_champ), .(`Race #` = race_number,
+dt_season_show <- dt_season[season=="',i_season,'"][(course=="full" | race_type == "Super Teams") & !(is_champ), .(`Race #` = race_number,
                             Date = date_ymd,
                             `Event type` = race_type,
                             cancelled,

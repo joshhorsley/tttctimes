@@ -7,7 +7,7 @@
 
 ```{r schedule-2021-2022}
 
-dt_season_show <- dt_season[season=="2021-2022"][course=="full" & !(is_champ), .(`Race #` = race_number,
+dt_season_show <- dt_season[season=="2021-2022"][(course=="full" | race_type == "Super Teams") & !(is_champ), .(`Race #` = race_number,
                             Date = date_ymd,
                             `Event type` = race_type,
                             cancelled,
@@ -29,7 +29,7 @@ datatable_std(dt_season_show,col_ref_hide)
 
 ```{r schedule-2020-2021}
 
-dt_season_show <- dt_season[season=="2020-2021"][course=="full" & !(is_champ), .(`Race #` = race_number,
+dt_season_show <- dt_season[season=="2020-2021"][(course=="full" | race_type == "Super Teams") & !(is_champ), .(`Race #` = race_number,
                             Date = date_ymd,
                             `Event type` = race_type,
                             cancelled,

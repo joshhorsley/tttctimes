@@ -5,7 +5,7 @@
 
 # Adrian {#a-Adrian}
 
-Adrian has results for 1season.
+Adrian has results for 1 season.
 
 ## 2020-2021
 
@@ -27,7 +27,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Adrian", "full
 
 # Frank Adler {#a-Frank-Adler}
 
-Frank has results for 1season.
+Frank has results for 1 season.
 
 ## 2020-2021
 
@@ -49,7 +49,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Frank Adler", 
 
 # Christian Andrews {#a-Christian-Andrews}
 
-Christian has results for 1season.
+Christian has results for 1 season.
 
 ## 2020-2021
 
@@ -71,7 +71,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Christian Andr
 
 # Brett Archibald {#a-Brett-Archibald}
 
-Brett has results for 1season.
+Brett has results for 1 season.
 
 ## 2020-2021
 
@@ -93,7 +93,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Brett Archibal
 
 # Sienna Archibald {#a-Sienna-Archibald}
 
-Sienna has results for 1season.
+Sienna has results for 1 season.
 
 ## 2020-2021
 
@@ -115,7 +115,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Sienna Archiba
 
 # Andrew Armstrong {#a-Andrew-Armstrong}
 
-Andrew has results for 1season.
+Andrew has results for 1 season.
 
 ## 2020-2021
 
@@ -137,7 +137,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Andrew Armstro
 
 # Cheryl Atkinson {#a-Cheryl-Atkinson}
 
-Cheryl has results for 1season.
+Cheryl has results for 1 season.
 
 ## 2020-2021
 
@@ -159,7 +159,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Cheryl Atkinso
 
 # Benjamin Austin {#a-Benjamin-Austin}
 
-Benjamin has results for 1season.
+Benjamin has results for 1 season.
 
 ## 2020-2021
 
@@ -181,7 +181,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Benjamin Austi
 
 # Kev Bannerman {#a-Kev-Bannerman}
 
-Kev has results for 1season.
+Kev has results for 1 season.
 
 ## 2020-2021
 
@@ -203,7 +203,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Kev Bannerman"
 
 # Robyn Barry {#a-Robyn-Barry}
 
-Robyn has results for 1season.
+Robyn has results for 1 season.
 
 ## 2020-2021
 
@@ -225,7 +225,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Robyn Barry", 
 
 # Lorraine Bassett {#a-Lorraine-Bassett}
 
-Lorraine has results for 1season.
+Lorraine has results for 1 season.
 
 ## 2020-2021
 
@@ -247,7 +247,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Lorraine Basse
 
 # Greg Bemet {#a-Greg-Bemet}
 
-Greg has results for 1season.
+Greg has results for 1 season.
 
 ## 2020-2021
 
@@ -269,7 +269,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Greg Bemet", "
 
 # Jo-Anne Borgas {#a-Jo-Anne-Borgas}
 
-Jo-Anne has results for 1season.
+Jo-Anne has results for 1 season.
 
 ## 2020-2021
 
@@ -291,7 +291,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Jo-Anne Borgas
 
 # Scott Bornholt {#a-Scott-Bornholt}
 
-Scott has results for 1season.
+Scott has results for 1 season.
 
 ## 2020-2021
 
@@ -313,7 +313,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Scott Bornholt
 
 # Simon Bradbery {#a-Simon-Bradbery}
 
-Simon has results for 1season.
+Simon has results for 1 season.
 
 ## 2020-2021
 
@@ -335,7 +335,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Simon Bradbery
 
 # Daniel Bray {#a-Daniel-Bray}
 
-Daniel has results for 1season.
+Daniel has results for 1 season.
 
 ## 2020-2021
 
@@ -357,7 +357,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Daniel Bray", 
 
 # Ryan Bray {#a-Ryan-Bray}
 
-Ryan has results for 1season.
+Ryan has results for 1 season.
 
 ## 2020-2021
 
@@ -379,7 +379,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Ryan Bray", "f
 
 # Jamie Brindley {#a-Jamie-Brindley}
 
-Jamie has results for 1season.
+Jamie has results for 1 season.
 
 ## 2020-2021
 
@@ -410,7 +410,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Jamie Brindley
 
 # Craig Broadhurst {#a-Craig-Broadhurst}
 
-Craig has results for 1season.
+Craig has results for 1 season.
 
 ## 2020-2021
 
@@ -432,7 +432,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Craig Broadhur
 
 # Sarah Buchanan {#a-Sarah-Buchanan}
 
-Sarah has results for 1season.
+Sarah has results for 1 season.
 
 ## 2020-2021
 
@@ -454,7 +454,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Sarah Buchanan
 
 # Andrew Carr {#a-Andrew-Carr}
 
-Andrew has results for 1season.
+Andrew has results for 1 season.
 
 ## 2020-2021
 
@@ -476,7 +476,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Andrew Carr", 
 
 # Joanne Colja {#a-Joanne-Colja}
 
-Joanne has results for 1season.
+Joanne has results for 1 season.
 
 ## 2020-2021
 
@@ -498,7 +498,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Joanne Colja",
 
 # Jim Collins {#a-Jim-Collins}
 
-Jim has results for 1season.
+Jim has results for 1 season.
 
 ## 2020-2021
 
@@ -520,7 +520,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Jim Collins", 
 
 # Scott Collins {#a-Scott-Collins}
 
-Scott has results for 1season.
+Scott has results for 1 season.
 
 ## 2020-2021
 
@@ -542,7 +542,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Scott Collins"
 
 # Mark Collinson {#a-Mark-Collinson}
 
-Mark has results for 1season.
+Mark has results for 1 season.
 
 ## 2020-2021
 
@@ -573,7 +573,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Mark Collinson
 
 # Sam Colman {#a-Sam-Colman}
 
-Sam has results for 1season.
+Sam has results for 1 season.
 
 ## 2020-2021
 
@@ -613,7 +613,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Sam Colman", "
 
 # Warren Copping {#a-Warren-Copping}
 
-Warren has results for 1season.
+Warren has results for 1 season.
 
 ## 2020-2021
 
@@ -635,7 +635,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Warren Copping
 
 # Jasmine Costanza {#a-Jasmine-Costanza}
 
-Jasmine has results for 1season.
+Jasmine has results for 1 season.
 
 ## 2020-2021
 
@@ -657,7 +657,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Jasmine Costan
 
 # Andrew Costello {#a-Andrew-Costello}
 
-Andrew has results for 1season.
+Andrew has results for 1 season.
 
 ## 2020-2021
 
@@ -679,7 +679,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Andrew Costell
 
 # Ben Courage {#a-Ben-Courage}
 
-Ben has results for 1season.
+Ben has results for 1 season.
 
 ## 2020-2021
 
@@ -710,7 +710,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Ben Courage", 
 
 # Stuart Crawford {#a-Stuart-Crawford}
 
-Stuart has results for 1season.
+Stuart has results for 1 season.
 
 ## 2020-2021
 
@@ -732,7 +732,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Stuart Crawfor
 
 # Peter Crowe {#a-Peter-Crowe}
 
-Peter has results for 1season.
+Peter has results for 1 season.
 
 ## 2020-2021
 
@@ -754,7 +754,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Peter Crowe", 
 
 # Debbie Davies {#a-Debbie-Davies}
 
-Debbie has results for 1season.
+Debbie has results for 1 season.
 
 ## 2020-2021
 
@@ -776,7 +776,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Debbie Davies"
 
 # Jonathan Davies {#a-Jonathan-Davies}
 
-Jonathan has results for 1season.
+Jonathan has results for 1 season.
 
 ## 2020-2021
 
@@ -798,7 +798,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Jonathan Davie
 
 # Erin Davoren {#a-Erin-Davoren}
 
-Erin has results for 1season.
+Erin has results for 1 season.
 
 ## 2020-2021
 
@@ -820,7 +820,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Erin Davoren",
 
 # Guy Davoren {#a-Guy-Davoren}
 
-Guy has results for 1season.
+Guy has results for 1 season.
 
 ## 2020-2021
 
@@ -860,7 +860,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Guy Davoren", 
 
 # David De Closey {#a-David-De-Closey}
 
-David has results for 1season.
+David has results for 1 season.
 
 ## 2020-2021
 
@@ -882,7 +882,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "David De Close
 
 # Ian Driffill {#a-Ian-Driffill}
 
-Ian has results for 1season.
+Ian has results for 1 season.
 
 ## 2020-2021
 
@@ -904,7 +904,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Ian Driffill",
 
 # Melanie Duff {#a-Melanie-Duff}
 
-Melanie has results for 1season.
+Melanie has results for 1 season.
 
 ## 2020-2021
 
@@ -935,7 +935,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Melanie Duff",
 
 # Tim Eade {#a-Tim-Eade}
 
-Tim has results for 1season.
+Tim has results for 1 season.
 
 ## 2020-2021
 
@@ -957,7 +957,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Tim Eade", "fu
 
 # Peta Edge {#a-Peta-Edge}
 
-Peta has results for 1season.
+Peta has results for 1 season.
 
 ## 2020-2021
 
@@ -979,7 +979,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Peta Edge", "i
 
 # Kirsten Ellis {#a-Kirsten-Ellis}
 
-Kirsten has results for 1season.
+Kirsten has results for 1 season.
 
 ## 2020-2021
 
@@ -1001,7 +1001,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Kirsten Ellis"
 
 # David Emery {#a-David-Emery}
 
-David has results for 1season.
+David has results for 1 season.
 
 ## 2020-2021
 
@@ -1032,7 +1032,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "David Emery", 
 
 # Nicholas Fawaz {#a-Nicholas-Fawaz}
 
-Nicholas has results for 1season.
+Nicholas has results for 1 season.
 
 ## 2020-2021
 
@@ -1054,7 +1054,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Nicholas Fawaz
 
 # Marcus Fox {#a-Marcus-Fox}
 
-Marcus has results for 1season.
+Marcus has results for 1 season.
 
 ## 2020-2021
 
@@ -1076,7 +1076,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Marcus Fox", "
 
 # Tracy Foyster {#a-Tracy-Foyster}
 
-Tracy has results for 1season.
+Tracy has results for 1 season.
 
 ## 2020-2021
 
@@ -1107,7 +1107,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Tracy Foyster"
 
 # Gregory Freeman {#a-Gregory-Freeman}
 
-Gregory has results for 1season.
+Gregory has results for 1 season.
 
 ## 2020-2021
 
@@ -1129,7 +1129,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Gregory Freema
 
 # Kipp Freeman {#a-Kipp-Freeman}
 
-Kipp has results for 1season.
+Kipp has results for 1 season.
 
 ## 2020-2021
 
@@ -1151,7 +1151,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Kipp Freeman",
 
 # Matt Gabb {#a-Matt-Gabb}
 
-Matt has results for 1season.
+Matt has results for 1 season.
 
 ## 2020-2021
 
@@ -1173,7 +1173,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Matt Gabb", "f
 
 # Trudy Gadaleta {#a-Trudy-Gadaleta}
 
-Trudy has results for 1season.
+Trudy has results for 1 season.
 
 ## 2020-2021
 
@@ -1204,7 +1204,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Trudy Gadaleta
 
 # Alycia Garriock {#a-Alycia-Garriock}
 
-Alycia has results for 1season.
+Alycia has results for 1 season.
 
 ## 2020-2021
 
@@ -1226,7 +1226,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Alycia Garrioc
 
 # Kylie Gibson {#a-Kylie-Gibson}
 
-Kylie has results for 1season.
+Kylie has results for 1 season.
 
 ## 2020-2021
 
@@ -1257,7 +1257,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Kylie Gibson",
 
 # Tyler Gilbert {#a-Tyler-Gilbert}
 
-Tyler has results for 1season.
+Tyler has results for 1 season.
 
 ## 2020-2021
 
@@ -1279,7 +1279,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Tyler Gilbert"
 
 # Alex Gilks {#a-Alex-Gilks}
 
-Alex has results for 1season.
+Alex has results for 1 season.
 
 ## 2020-2021
 
@@ -1301,7 +1301,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Alex Gilks", "
 
 # Rob Gillies {#a-Rob-Gillies}
 
-Rob has results for 1season.
+Rob has results for 1 season.
 
 ## 2020-2021
 
@@ -1323,7 +1323,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Rob Gillies", 
 
 # Katie Glynn {#a-Katie-Glynn}
 
-Katie has results for 1season.
+Katie has results for 1 season.
 
 ## 2020-2021
 
@@ -1354,7 +1354,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Katie Glynn", 
 
 # Des Gooda {#a-Des-Gooda}
 
-Des has results for 1season.
+Des has results for 1 season.
 
 ## 2020-2021
 
@@ -1385,7 +1385,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Des Gooda", "d
 
 # Ben Hall {#a-Ben-Hall}
 
-Ben has results for 1season.
+Ben has results for 1 season.
 
 ## 2020-2021
 
@@ -1416,7 +1416,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Ben Hall", "do
 
 # Jack Hall {#a-Jack-Hall}
 
-Jack has results for 1season.
+Jack has results for 1 season.
 
 ## 2020-2021
 
@@ -1438,7 +1438,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Jack Hall", "i
 
 # Manda Hall {#a-Manda-Hall}
 
-Manda has results for 1season.
+Manda has results for 1 season.
 
 ## 2020-2021
 
@@ -1460,7 +1460,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Manda Hall", "
 
 # Simon Harradence {#a-Simon-Harradence}
 
-Simon has results for 1season.
+Simon has results for 1 season.
 
 ## 2020-2021
 
@@ -1491,7 +1491,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Simon Harraden
 
 # Peter Harrington {#a-Peter-Harrington}
 
-Peter has results for 1season.
+Peter has results for 1 season.
 
 ## 2020-2021
 
@@ -1513,7 +1513,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Peter Harringt
 
 # Remy Hawkins {#a-Remy-Hawkins}
 
-Remy has results for 1season.
+Remy has results for 1 season.
 
 ## 2020-2021
 
@@ -1535,7 +1535,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Remy Hawkins",
 
 # Cassandra Heaslip {#a-Cassandra-Heaslip}
 
-Cassandra has results for 1season.
+Cassandra has results for 1 season.
 
 ## 2020-2021
 
@@ -1557,7 +1557,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Cassandra Heas
 
 # Glenn Hind {#a-Glenn-Hind}
 
-Glenn has results for 1season.
+Glenn has results for 1 season.
 
 ## 2020-2021
 
@@ -1579,7 +1579,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Glenn Hind", "
 
 # Caroline Hogan {#a-Caroline-Hogan}
 
-Caroline has results for 1season.
+Caroline has results for 1 season.
 
 ## 2020-2021
 
@@ -1610,7 +1610,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Caroline Hogan
 
 # David Hogan {#a-David-Hogan}
 
-David has results for 1season.
+David has results for 1 season.
 
 ## 2020-2021
 
@@ -1632,7 +1632,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "David Hogan", 
 
 # Kent Holmes {#a-Kent-Holmes}
 
-Kent has results for 1season.
+Kent has results for 1 season.
 
 ## 2020-2021
 
@@ -1654,7 +1654,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Kent Holmes", 
 
 # Josh Horsley {#a-Josh-Horsley}
 
-Josh has results for 1season.
+Josh has results for 1 season.
 
 ## 2020-2021
 
@@ -1685,7 +1685,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Josh Horsley",
 
 # Haydn Jenkins {#a-Haydn-Jenkins}
 
-Haydn has results for 1season.
+Haydn has results for 1 season.
 
 ## 2020-2021
 
@@ -1707,7 +1707,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Haydn Jenkins"
 
 # Dan Johnson {#a-Dan-Johnson}
 
-Dan has results for 1season.
+Dan has results for 1 season.
 
 ## 2020-2021
 
@@ -1729,7 +1729,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Dan Johnson", 
 
 # Darren Jones {#a-Darren-Jones}
 
-Darren has results for 1season.
+Darren has results for 1 season.
 
 ## 2020-2021
 
@@ -1760,7 +1760,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Darren Jones",
 
 # Ginny Jones {#a-Ginny-Jones}
 
-Ginny has results for 1season.
+Ginny has results for 1 season.
 
 ## 2020-2021
 
@@ -1782,7 +1782,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Ginny Jones", 
 
 # Michelle Jones {#a-Michelle-Jones}
 
-Michelle has results for 1season.
+Michelle has results for 1 season.
 
 ## 2020-2021
 
@@ -1813,7 +1813,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Michelle Jones
 
 # Danny Khazen {#a-Danny-Khazen}
 
-Danny has results for 1season.
+Danny has results for 1 season.
 
 ## 2020-2021
 
@@ -1835,7 +1835,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Danny Khazen",
 
 # John King {#a-John-King}
 
-John has results for 1season.
+John has results for 1 season.
 
 ## 2020-2021
 
@@ -1857,7 +1857,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "John King", "f
 
 # Sally Kingston {#a-Sally-Kingston}
 
-Sally has results for 1season.
+Sally has results for 1 season.
 
 ## 2020-2021
 
@@ -1888,7 +1888,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Sally Kingston
 
 # Sharyn Klein {#a-Sharyn-Klein}
 
-Sharyn has results for 1season.
+Sharyn has results for 1 season.
 
 ## 2020-2021
 
@@ -1910,7 +1910,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Sharyn Klein",
 
 # Nadja Kundrus-Little {#a-Nadja-Kundrus-Little}
 
-Nadja has results for 1season.
+Nadja has results for 1 season.
 
 ## 2020-2021
 
@@ -1932,7 +1932,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Nadja Kundrus-
 
 # Lydia Kuschmirz {#a-Lydia-Kuschmirz}
 
-Lydia has results for 1season.
+Lydia has results for 1 season.
 
 ## 2020-2021
 
@@ -1954,7 +1954,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Lydia Kuschmir
 
 # Val Lambard {#a-Val-Lambard}
 
-Val has results for 1season.
+Val has results for 1 season.
 
 ## 2020-2021
 
@@ -1976,7 +1976,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Val Lambard", 
 
 # Matt Lance {#a-Matt-Lance}
 
-Matt has results for 1season.
+Matt has results for 1 season.
 
 ## 2020-2021
 
@@ -1998,7 +1998,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Matt Lance", "
 
 # Samantha Leonard {#a-Samantha-Leonard}
 
-Samantha has results for 1season.
+Samantha has results for 1 season.
 
 ## 2020-2021
 
@@ -2029,7 +2029,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Samantha Leona
 
 # Jennifer Love {#a-Jennifer-Love}
 
-Jennifer has results for 1season.
+Jennifer has results for 1 season.
 
 ## 2020-2021
 
@@ -2060,7 +2060,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Jennifer Love"
 
 # Julie Lowe {#a-Julie-Lowe}
 
-Julie has results for 1season.
+Julie has results for 1 season.
 
 ## 2020-2021
 
@@ -2091,7 +2091,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Julie Lowe", "
 
 # Stuart Mason {#a-Stuart-Mason}
 
-Stuart has results for 1season.
+Stuart has results for 1 season.
 
 ## 2020-2021
 
@@ -2122,7 +2122,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Stuart Mason",
 
 # David McEwan {#a-David-McEwan}
 
-David has results for 1season.
+David has results for 1 season.
 
 ## 2020-2021
 
@@ -2144,7 +2144,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "David McEwan",
 
 # Stuart McGill {#a-Stuart-McGill}
 
-Stuart has results for 1season.
+Stuart has results for 1 season.
 
 ## 2020-2021
 
@@ -2166,7 +2166,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Stuart McGill"
 
 # Bec McLucas {#a-Bec-McLucas}
 
-Bec has results for 1season.
+Bec has results for 1 season.
 
 ## 2020-2021
 
@@ -2197,7 +2197,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Bec McLucas", 
 
 # Andrew Miller {#a-Andrew-Miller}
 
-Andrew has results for 1season.
+Andrew has results for 1 season.
 
 ## 2020-2021
 
@@ -2219,7 +2219,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Andrew Miller"
 
 # Kat Miller {#a-Kat-Miller}
 
-Kat has results for 1season.
+Kat has results for 1 season.
 
 ## 2020-2021
 
@@ -2241,7 +2241,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Kat Miller", "
 
 # Michelle Miller {#a-Michelle-Miller}
 
-Michelle has results for 1season.
+Michelle has results for 1 season.
 
 ## 2020-2021
 
@@ -2272,7 +2272,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Michelle Mille
 
 # Kyle Mooney {#a-Kyle-Mooney}
 
-Kyle has results for 1season.
+Kyle has results for 1 season.
 
 ## 2020-2021
 
@@ -2303,7 +2303,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Kyle Mooney", 
 
 # James Mourant {#a-James-Mourant}
 
-James has results for 1season.
+James has results for 1 season.
 
 ## 2020-2021
 
@@ -2325,7 +2325,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "James Mourant"
 
 # Richard Mourant {#a-Richard-Mourant}
 
-Richard has results for 1season.
+Richard has results for 1 season.
 
 ## 2020-2021
 
@@ -2356,7 +2356,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Richard Mouran
 
 # Ashleigh Murphy {#a-Ashleigh-Murphy}
 
-Ashleigh has results for 1season.
+Ashleigh has results for 1 season.
 
 ## 2020-2021
 
@@ -2378,7 +2378,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Ashleigh Murph
 
 # Ben Murphy {#a-Ben-Murphy}
 
-Ben has results for 1season.
+Ben has results for 1 season.
 
 ## 2020-2021
 
@@ -2400,7 +2400,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Ben Murphy", "
 
 # Helen Murphy {#a-Helen-Murphy}
 
-Helen has results for 1season.
+Helen has results for 1 season.
 
 ## 2020-2021
 
@@ -2431,7 +2431,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Helen Murphy",
 
 # Darren Murray {#a-Darren-Murray}
 
-Darren has results for 1season.
+Darren has results for 1 season.
 
 ## 2020-2021
 
@@ -2453,7 +2453,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Darren Murray"
 
 # Jeff Murray {#a-Jeff-Murray}
 
-Jeff has results for 1season.
+Jeff has results for 1 season.
 
 ## 2020-2021
 
@@ -2475,7 +2475,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Jeff Murray", 
 
 # Judy Murray {#a-Judy-Murray}
 
-Judy has results for 1season.
+Judy has results for 1 season.
 
 ## 2020-2021
 
@@ -2497,7 +2497,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Judy Murray", 
 
 # Aaron Neylan {#a-Aaron-Neylan}
 
-Aaron has results for 1season.
+Aaron has results for 1 season.
 
 ## 2020-2021
 
@@ -2528,7 +2528,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Aaron Neylan",
 
 # Lynette Nisbet {#a-Lynette-Nisbet}
 
-Lynette has results for 1season.
+Lynette has results for 1 season.
 
 ## 2020-2021
 
@@ -2550,7 +2550,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Lynette Nisbet
 
 # Karen Nixon {#a-Karen-Nixon}
 
-Karen has results for 1season.
+Karen has results for 1 season.
 
 ## 2020-2021
 
@@ -2572,7 +2572,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Karen Nixon", 
 
 # Lucas Nixon-Hind {#a-Lucas-Nixon-Hind}
 
-Lucas has results for 1season.
+Lucas has results for 1 season.
 
 ## 2020-2021
 
@@ -2594,7 +2594,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Lucas Nixon-Hi
 
 # Andy O'Reilly {#a-Andy-OReilly}
 
-Andy has results for 1season.
+Andy has results for 1 season.
 
 ## 2020-2021
 
@@ -2616,7 +2616,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Andy O'Reilly"
 
 # Nick O'Reilly {#a-Nick-OReilly}
 
-Nick has results for 1season.
+Nick has results for 1 season.
 
 ## 2020-2021
 
@@ -2647,7 +2647,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Nick O'Reilly"
 
 # Trent Ousby {#a-Trent-Ousby}
 
-Trent has results for 1season.
+Trent has results for 1 season.
 
 ## 2020-2021
 
@@ -2669,7 +2669,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Trent Ousby", 
 
 # Annika Parker {#a-Annika-Parker}
 
-Annika has results for 1season.
+Annika has results for 1 season.
 
 ## 2020-2021
 
@@ -2691,7 +2691,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Annika Parker"
 
 # Glenn Payne {#a-Glenn-Payne}
 
-Glenn has results for 1season.
+Glenn has results for 1 season.
 
 ## 2020-2021
 
@@ -2713,7 +2713,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Glenn Payne", 
 
 # Clive Pearce {#a-Clive-Pearce}
 
-Clive has results for 1season.
+Clive has results for 1 season.
 
 ## 2020-2021
 
@@ -2735,7 +2735,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Clive Pearce",
 
 # Stephen Ring {#a-Stephen-Ring}
 
-Stephen has results for 1season.
+Stephen has results for 1 season.
 
 ## 2020-2021
 
@@ -2757,7 +2757,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Stephen Ring",
 
 # Carol Ririnui {#a-Carol-Ririnui}
 
-Carol has results for 1season.
+Carol has results for 1 season.
 
 ## 2020-2021
 
@@ -2788,7 +2788,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Carol Ririnui"
 
 # Gerard Robards {#a-Gerard-Robards}
 
-Gerard has results for 1season.
+Gerard has results for 1 season.
 
 ## 2020-2021
 
@@ -2819,7 +2819,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Gerard Robards
 
 # Hollie Robards {#a-Hollie-Robards}
 
-Hollie has results for 1season.
+Hollie has results for 1 season.
 
 ## 2020-2021
 
@@ -2850,7 +2850,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Hollie Robards
 
 # Kaleb Robards {#a-Kaleb-Robards}
 
-Kaleb has results for 1season.
+Kaleb has results for 1 season.
 
 ## 2020-2021
 
@@ -2872,7 +2872,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Kaleb Robards"
 
 # Anthony Rushton {#a-Anthony-Rushton}
 
-Anthony has results for 1season.
+Anthony has results for 1 season.
 
 ## 2020-2021
 
@@ -2894,7 +2894,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Anthony Rushto
 
 # Ross Salmon {#a-Ross-Salmon}
 
-Ross has results for 1season.
+Ross has results for 1 season.
 
 ## 2020-2021
 
@@ -2916,7 +2916,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Ross Salmon", 
 
 # Philip Salter {#a-Philip-Salter}
 
-Philip has results for 1season.
+Philip has results for 1 season.
 
 ## 2020-2021
 
@@ -2938,7 +2938,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Philip Salter"
 
 # Wendy Sanders {#a-Wendy-Sanders}
 
-Wendy has results for 1season.
+Wendy has results for 1 season.
 
 ## 2020-2021
 
@@ -2960,7 +2960,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Wendy Sanders"
 
 # Jenny Scaysbrook {#a-Jenny-Scaysbrook}
 
-Jenny has results for 1season.
+Jenny has results for 1 season.
 
 ## 2020-2021
 
@@ -2982,7 +2982,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Jenny Scaysbro
 
 # Peter Serone {#a-Peter-Serone}
 
-Peter has results for 1season.
+Peter has results for 1 season.
 
 ## 2020-2021
 
@@ -3004,7 +3004,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Peter Serone",
 
 # Rod Sewell {#a-Rod-Sewell}
 
-Rod has results for 1season.
+Rod has results for 1 season.
 
 ## 2020-2021
 
@@ -3035,7 +3035,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Rod Sewell", "
 
 # Tracey Sewell {#a-Tracey-Sewell}
 
-Tracey has results for 1season.
+Tracey has results for 1 season.
 
 ## 2020-2021
 
@@ -3066,7 +3066,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Tracey Sewell"
 
 # Terence Simpson {#a-Terence-Simpson}
 
-Terence has results for 1season.
+Terence has results for 1 season.
 
 ## 2020-2021
 
@@ -3088,7 +3088,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Terence Simpso
 
 # Vaughan Skelly {#a-Vaughan-Skelly}
 
-Vaughan has results for 1season.
+Vaughan has results for 1 season.
 
 ## 2020-2021
 
@@ -3119,7 +3119,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Vaughan Skelly
 
 # Alex Smith {#a-Alex-Smith}
 
-Alex has results for 1season.
+Alex has results for 1 season.
 
 ## 2020-2021
 
@@ -3141,7 +3141,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Alex Smith", "
 
 # Geoff Smith {#a-Geoff-Smith}
 
-Geoff has results for 1season.
+Geoff has results for 1 season.
 
 ## 2020-2021
 
@@ -3163,7 +3163,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Geoff Smith", 
 
 # Rowena Smith {#a-Rowena-Smith}
 
-Rowena has results for 1season.
+Rowena has results for 1 season.
 
 ## 2020-2021
 
@@ -3194,7 +3194,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Rowena Smith",
 
 # Heidi Sowerby {#a-Heidi-Sowerby}
 
-Heidi has results for 1season.
+Heidi has results for 1 season.
 
 ## 2020-2021
 
@@ -3216,7 +3216,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Heidi Sowerby"
 
 # Matthew Stanley {#a-Matthew-Stanley}
 
-Matthew has results for 1season.
+Matthew has results for 1 season.
 
 ## 2020-2021
 
@@ -3238,7 +3238,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Matthew Stanle
 
 # Peter Stowe {#a-Peter-Stowe}
 
-Peter has results for 1season.
+Peter has results for 1 season.
 
 ## 2020-2021
 
@@ -3260,7 +3260,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Peter Stowe", 
 
 # Kelly Styman {#a-Kelly-Styman}
 
-Kelly has results for 1season.
+Kelly has results for 1 season.
 
 ## 2020-2021
 
@@ -3282,7 +3282,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Kelly Styman",
 
 # Scott Styman {#a-Scott-Styman}
 
-Scott has results for 1season.
+Scott has results for 1 season.
 
 ## 2020-2021
 
@@ -3313,7 +3313,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Scott Styman",
 
 # Will Styman {#a-Will-Styman}
 
-Will has results for 1season.
+Will has results for 1 season.
 
 ## 2020-2021
 
@@ -3335,7 +3335,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Will Styman", 
 
 # Corey Swan {#a-Corey-Swan}
 
-Corey has results for 1season.
+Corey has results for 1 season.
 
 ## 2020-2021
 
@@ -3357,7 +3357,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Corey Swan", "
 
 # Timothy Taylor {#a-Timothy-Taylor}
 
-Timothy has results for 1season.
+Timothy has results for 1 season.
 
 ## 2020-2021
 
@@ -3379,7 +3379,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Timothy Taylor
 
 # William Taylor {#a-William-Taylor}
 
-William has results for 1season.
+William has results for 1 season.
 
 ## 2020-2021
 
@@ -3401,7 +3401,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "William Taylor
 
 # Zoe Taylor-West {#a-Zoe-Taylor-West}
 
-Zoe has results for 1season.
+Zoe has results for 1 season.
 
 ## 2020-2021
 
@@ -3423,7 +3423,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Zoe Taylor-Wes
 
 # Craig Telling {#a-Craig-Telling}
 
-Craig has results for 1season.
+Craig has results for 1 season.
 
 ## 2020-2021
 
@@ -3445,7 +3445,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Craig Telling"
 
 # Ava Thomson {#a-Ava-Thomson}
 
-Ava has results for 1season.
+Ava has results for 1 season.
 
 ## 2020-2021
 
@@ -3467,7 +3467,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Ava Thomson", 
 
 # Scott Thomson {#a-Scott-Thomson}
 
-Scott has results for 1season.
+Scott has results for 1 season.
 
 ## 2020-2021
 
@@ -3507,7 +3507,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Scott Thomson"
 
 # Sebastian Thomson {#a-Sebastian-Thomson}
 
-Sebastian has results for 1season.
+Sebastian has results for 1 season.
 
 ## 2020-2021
 
@@ -3529,7 +3529,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Sebastian Thom
 
 # Alex Torrance {#a-Alex-Torrance}
 
-Alex has results for 1season.
+Alex has results for 1 season.
 
 ## 2020-2021
 
@@ -3560,7 +3560,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Alex Torrance"
 
 # Robert Townsend {#a-Robert-Townsend}
 
-Robert has results for 1season.
+Robert has results for 1 season.
 
 ## 2020-2021
 
@@ -3591,7 +3591,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Robert Townsen
 
 # Sue Van Den Broek {#a-Sue-Van-Den-Broek}
 
-Sue has results for 1season.
+Sue has results for 1 season.
 
 ## 2020-2021
 
@@ -3613,7 +3613,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Sue Van Den Br
 
 # Marcel Van Kampen {#a-Marcel-Van-Kampen}
 
-Marcel has results for 1season.
+Marcel has results for 1 season.
 
 ## 2020-2021
 
@@ -3635,7 +3635,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Marcel Van Kam
 
 # Jolyon Ward {#a-Jolyon-Ward}
 
-Jolyon has results for 1season.
+Jolyon has results for 1 season.
 
 ## 2020-2021
 
@@ -3657,7 +3657,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Jolyon Ward", 
 
 # Danny Warner {#a-Danny-Warner}
 
-Danny has results for 1season.
+Danny has results for 1 season.
 
 ## 2020-2021
 
@@ -3679,7 +3679,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Danny Warner",
 
 # Lisa Warner {#a-Lisa-Warner}
 
-Lisa has results for 1season.
+Lisa has results for 1 season.
 
 ## 2020-2021
 
@@ -3701,7 +3701,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Lisa Warner", 
 
 # Chris Watt {#a-Chris-Watt}
 
-Chris has results for 1season.
+Chris has results for 1 season.
 
 ## 2020-2021
 
@@ -3723,7 +3723,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Chris Watt", "
 
 # Dean Webb {#a-Dean-Webb}
 
-Dean has results for 1season.
+Dean has results for 1 season.
 
 ## 2020-2021
 
@@ -3754,7 +3754,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Dean Webb", "d
 
 # Steve West {#a-Steve-West}
 
-Steve has results for 1season.
+Steve has results for 1 season.
 
 ## 2020-2021
 
@@ -3776,7 +3776,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Steve West", "
 
 # Mark Whiticker {#a-Mark-Whiticker}
 
-Mark has results for 1season.
+Mark has results for 1 season.
 
 ## 2020-2021
 
@@ -3798,7 +3798,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Mark Whiticker
 
 # Scott Wildin {#a-Scott-Wildin}
 
-Scott has results for 1season.
+Scott has results for 1 season.
 
 ## 2020-2021
 
@@ -3820,7 +3820,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Scott Wildin",
 
 # Greg Williamson {#a-Greg-Williamson}
 
-Greg has results for 1season.
+Greg has results for 1 season.
 
 ## 2020-2021
 
@@ -3851,7 +3851,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Greg Williamso
 
 # Marcus Williamson {#a-Marcus-Williamson}
 
-Marcus has results for 1season.
+Marcus has results for 1 season.
 
 ## 2020-2021
 
@@ -3873,7 +3873,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Marcus William
 
 # Wendy Wise {#a-Wendy-Wise}
 
-Wendy has results for 1season.
+Wendy has results for 1 season.
 
 ## 2020-2021
 
@@ -3895,7 +3895,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Wendy Wise", "
 
 # Colin Woodward {#a-Colin-Woodward}
 
-Colin has results for 1season.
+Colin has results for 1 season.
 
 ## 2020-2021
 
@@ -3926,7 +3926,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Colin Woodward
 
 # Rob Worth {#a-Rob-Worth}
 
-Rob has results for 1season.
+Rob has results for 1 season.
 
 ## 2020-2021
 
@@ -3957,7 +3957,7 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Rob Worth", "d
 
 # Viv Wright {#a-Viv-Wright}
 
-Viv has results for 1season.
+Viv has results for 1 season.
 
 ## 2020-2021
 
