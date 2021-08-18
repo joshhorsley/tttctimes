@@ -1,0 +1,62 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Time	Lap 1	Lap 2	Lap 3	Difference	% Back	% Winning	% Average	% Median
+1	62	Scott Thomson	Scott	Thomson	Full	50:12.5	7:47.8	24:50.1	17:34.6	-	-	100%	23.68%	20.78%
+2	88	John King	John	King	Full	52:07.7	8:38.1	25:23.2	18:06.4	+1:55.2	+3.82%	96.32%	20.76%	17.75%
+3	47	Ben Hall	Ben	Hall	Full	53:32.5	8:31.7	25:25.8	19:35.1	+3:20.0	+6.64%	93.77%	18.61%	15.52%
+4	206	Sam Colman	Sam	Colman	Full	54:45.6	8:58.1	26:15.9	19:31.6	+4:33.1	+9.07%	91.69%	16.76%	13.60%
+5	145	Nick O'Reilly	Nick	O'Reilly	Full	55:15.4	9:12.1	27:18.0	18:45.4	+5:02.9	+10.05%	90.86%	16.01%	12.81%
+6	60	Jonathan Davies	Jonathan	Davies	Full	55:25.7	8:25.5	28:15.0	18:45.3	+5:13.2	+10.40%	90.58%	15.75%	12.54%
+7	31	Christian Andrews	Christian	Andrews	Full	55:38.0	8:01.1	27:06.5	20:30.4	+5:25.5	+10.80%	90.25%	15.43%	12.22%
+8	46	Kyle Mooney	Kyle	Mooney	Full	56:02.1	8:30.6	29:11.0	18:20.5	+5:49.6	+11.60%	89.60%	14.82%	11.58%
+9	2	Tracy Foyster	Tracy	Foyster	Full	56:49.0	8:54.7	27:36.8	20:17.5	+6:36.5	+13.16%	88.37%	13.64%	10.35%
+10	212	Dean Webb	Dean	Webb	Full	57:00.9	9:11.4	27:11.9	20:37.6	+6:48.4	+13.56%	88.06%	13.33%	10.04%
+11	58	Debbie Davies	Debbie	Davies	Full	57:15.3	7:51.4	28:48.7	20:35.2	+7:02.8	+14.03%	87.69%	12.97%	9.66%
+12	265	Anthony Rushton	Anthony	Rushton	Full	58:42.6	9:00.7	30:39.3	19:02.6	+8:30.1	+16.93%	85.52%	10.76%	7.36%
+13	17	Richard Mourant	Richard	Mourant	Full	59:00.7	10:04.8	27:22.3	21:33.7	+8:48.2	+17.53%	85.08%	10.30%	6.89%
+14	14	Clive Pearce	Clive	Pearce	Full	59:02.7	10:49.0	27:14.8	20:58.9	+8:50.2	+17.60%	85.03%	10.25%	6.83%
+15	39	Vaughan Skelly	Vaughan	Skelly	Full	59:14.3	9:19.4	28:43.4	21:11.6	+9:01.8	+17.99%	84.76%	9.96%	6.53%
+16	104	Viv Wright	Viv	Wright	Full	59:16.1	9:15.9	29:11.4	20:48.8	+9:03.6	+18.04%	84.71%	9.91%	6.48%
+17	234	Andrew Miller	Andrew	Miller	Full	59:21.6	7:48.6	30:45.6	20:47.4	+9:09.1	+18.23%	84.58%	9.77%	6.34%
+18	137	Peter Crowe	Peter	Crowe	Full	59:32.6	8:53.8	29:48.1	20:50.8	+9:20.1	+18.59%	84.32%	9.49%	6.05%
+19	72	Rob Worth	Rob	Worth	Full	1:00:44.0	9:53.0	29:36.3	21:14.8	+10:31.5	+20.96%	82.67%	7.68%	4.17%
+20	8	Dave de Closey	Dave	de Closey	Full	1:00:59.4	9:19.2	28:16.2	23:24.1	+10:46.9	+21.47%	82.32%	7.29%	3.77%
+21	251	Dan Johnson	Dan	Johnson	Full	1:01:17.0	8:15.5	31:07.1	21:54.4	+11:04.5	+22.06%	81.93%	6.85%	3.30%
+22	261	David Hogan	David	Hogan	Full	1:01:25.8	10:31.0	30:11.2	20:43.6	+11:13.3	+22.35%	81.73%	6.62%	3.07%
+23	105	Darren Jones	Darren	Jones	Full	1:02:42.3	10:23.2	29:07.6	23:11.6	+12:29.8	+24.89%	80.07%	4.69%	1.06%
+24	99	Scott Styman	Scott	Styman	Full	1:02:48.5	9:35.2	32:01.0	21:12.3	+12:36.0	+25.10%	79.94%	4.53%	0.90%
+25	71	Danny Warner	Danny	Warner	Full	1:03:22.6	10:43.5	29:25.3	23:13.7	+13:10.1	+26.23%	79.22%	3.66%	0.00%
+26	65	David Emery	David	Emery	Full	1:03:42.0	10:30.9	30:42.7	22:28.4	+13:29.5	+26.87%	78.82%	3.17%	-0.51%
+27	85	Terence Simpson	Terence	Simpson	Full	1:04:21.5	8:38.8	30:36.8	25:05.9	+14:09.0	+28.18%	78.01%	2.17%	-1.55%
+28	75	Kipp Freeman	Kipp	Freeman	Full	1:05:07.7	9:15.0	36:48.0	19:04.8	+14:55.2	+29.72%	77.09%	1.00%	-2.76%
+29	80	Mark Collinson	Mark	Collinson	Full	1:06:11.3	11:01.2	31:29.4	23:40.8	+15:58.8	+31.83%	75.86%	-0.61%	-4.44%
+30	139	Matthew Stanley	Matthew	Stanley	Full	1:07:25.0	10:33.3	33:00.7	23:51.1	+17:12.5	+34.27%	74.47%	-2.48%	-6.37%
+31	32	Guy Davoren	Guy	Davoren	Full	1:08:10.4	11:07.8	35:24.5	21:38.1	+17:57.9	+35.78%	73.65%	-3.63%	-7.57%
+32	10	Virginia Jones	Virginia	Jones	Full	1:08:10.5	9:30.4	34:56.0	23:44.1	+17:58.0	+35.78%	73.65%	-3.63%	-7.57%
+33	107	Marcel Van Kampen	Marcel	Van Kampen	Full	1:08:48.5	8:18.2	28:31.0	31:59.3	+18:36.0	+37.05%	72.97%	-4.59%	-8.57%
+34	67	Lisa Warner	Lisa	Warner	Full	1:08:55.6	10:49.7	32:03.8	26:02.1	+18:43.1	+37.28%	72.84%	-4.77%	-8.76%
+35	233	Kat Miller	Kat	Miller	Full	1:09:36.3	11:15.6	33:50.0	24:30.7	+19:23.8	+38.63%	72.13%	-5.80%	-9.83%
+36	243	Samantha Leonard	Samantha	Leonard	Full	1:09:37.9	10:42.6	35:34.3	23:20.9	+19:25.4	+38.69%	72.11%	-5.84%	-9.87%
+37	9	Stuart Crawford	Stuart	Crawford	Full	1:10:02.5	12:03.5	32:39.9	25:19.1	+19:50.0	+39.50%	71.68%	-6.47%	-10.52%
+38	37	Jeff Murray	Jeff	Murray	Full	1:10:14.4	12:08.4	35:39.9	22:26.1	+20:01.9	+39.90%	71.48%	-6.77%	-10.83%
+39	182	Sharyn Klein	Sharyn	Klein	Full	1:10:28.9	9:37.8	37:16.8	23:34.3	+20:16.4	+40.38%	71.24%	-7.14%	-11.21%
+40	252	Caroline Hogan	Caroline	Hogan	Full	1:11:25.1	12:41.7	34:06.0	24:37.5	+21:12.6	+42.24%	70.30%	-8.56%	-12.69%
+41	248	Philip Salter	Philip	Salter	Full	1:12:24.6	12:23.8	34:06.1	25:54.7	+22:12.1	+44.22%	69.34%	-10.07%	-14.25%
+42	86	Warren Copping	Warren	Copping	Full	1:13:57.3	12:05.1	35:35.7	26:16.6	+23:44.8	+47.30%	67.89%	-12.42%	-16.69%
+43	115	Ross Salmon	Ross	Salmon	Full	1:19:54.2	17:23.2	35:37.7	26:53.4	+29:41.7	+59.14%	62.84%	-21.46%	-26.08%
+44	84	Wendy Wise	Wendy	Wise	Full	1:21:28.0	12:46.2	39:27.8	29:14.0	+31:15.5	+62.26%	61.63%	-23.83%	-28.54%
+45	70	Kev Bannerman	Kev	Bannerman	Full	1:21:30.6	8:21.7	33:35.8	39:33.2	+31:18.1	+62.34%	61.60%	-23.90%	-28.61%
+46	11	Rob Gillies	Rob	Gillies	Full	1:27:05.7	0:47.9	43:00.1	43:17.7	+36:53.2	+73.47%	57.65%	-32.39%	-37.42%
+47	250	Helen Murphy	Helen	Murphy	Full	1:27:11.3	9:17.1	36:25.8	41:28.4	+36:58.8	+73.65%	57.59%	-32.53%	-37.57%
+48	76	Gregory Freeman	Gregory	Freeman	Full	1:27:14.6	13:13.2	44:45.0	29:16.4	+37:02.1	+73.76%	57.55%	-32.61%	-37.66%
+49	40	Jolyon Ward	Jolyon	Ward	Full	1:38:56.4	21:01.3	43:18.2	34:37.0	+48:43.9	+97.06%	50.75%	-50.39%	-56.11%
+-	18	Hollie Robards	Hollie	Robards	Full	DNS				-	-	-	-	-
+-	20	Gerard Robards	Gerard	Robards	Full	DNS				-	-	-	-	-
+-	36	Scott Collins	Scott	Collins	Full	DNS				-	-	-	-	-
+-	81	Scott Bornholt	Scott	Bornholt	Full	DNS				-	-	-	-	-
+-	97	Kaleb Robards	Kaleb	Robards	Full	DNS				-	-	-	-	-
+-	106	Tim Eade	Tim	Eade	Full	DNS				-	-	-	-	-
+-	151	Craig Telling	Craig	Telling	Full	DNS				-	-	-	-	-
+-	160	Jeffrey Stella	Jeffrey	Stella	Full	DNS				-	-	-	-	-
+-	166	Craig Broadhurst	Craig	Broadhurst	Full	DNS				-	-	-	-	-
+-	260	Heidi Sowerby	Heidi	Sowerby	Full	DNS				-	-	-	-	-
+-	269	Nadja Kundrus-Little	Nadja	Kundrus-Little	Full	DNS				-	-	-	-	-
+-	271	Alycia Garriock	Alycia	Garriock	Full	DNS				-	-	-	-	-

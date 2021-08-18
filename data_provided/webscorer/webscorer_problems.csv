@@ -79,6 +79,9 @@ race_number,date_ymd,Name,part,split_valid,cumulative_valid
 7,7/11/20,Michelle Miller,Run,TRUE,FALSE
 ,,,,,
 ,,,,,
+9,21/11/20,Rob Gillies,Swim,FALSE,FALSE
+,,,,,
+,,,,,
 10,28/11/20,Aaron Neylan,Swim,FALSE,FALSE
 10,28/11/20,Aaron Neylan,Ride,FALSE,TRUE
 ,,,,,
