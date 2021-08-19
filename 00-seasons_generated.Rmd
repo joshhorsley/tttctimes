@@ -3,17 +3,19 @@
 
 # (PART\*) Season 2021-2022
 
-# Schedule 
+# Schedule {#schedule-2021-2022}
 
 ```{r schedule-2021-2022}
 
-dt_season_show <- dt_season[season=="2021-2022"][(course=="full" | race_type == "Super Teams") & !(is_champ), .(`Race #` = race_number,
-                            Date = date_ymd,
+dt_season_show <- dt_season[season=="2021-2022"][(course=="full" | race_type == "Super Teams") & !(is_champ),
+                          .(`#` = race_number,
+                            # Date = date_ymd,
                             `Event type` = race_type,
                             cancelled,
                             cancelled_reason,
                             have_results,
                             has_report,
+                            Date = race_link,
                             `Club Report` = report_link)]
 
 
@@ -22,24 +24,26 @@ dt_season_show[`Event type` != "Standard", Note := `Event type`]
 dt_season_show[(cancelled), Note:= paste0(Note, ifelse(Note=="",""," -"),"Cancelled due to ", cancelled_reason)]
 dt_season_show[!(cancelled) & !(have_results), Note := paste0(Note,ifelse(Note=="",""," - "), "Webscorer data not available")]
 
-col_ref_hide <- which(!(names(dt_season_show) %in% c("Race #","Date","Note","Club Report")))-1 # columns are indexed from 0 - row name?
+col_ref_hide <- which(!(names(dt_season_show) %in% c("#","Date","Note","Club Report")))-1 # columns are indexed from 0 - row name?
 
-datatable_std(dt_season_show,col_ref_hide,escape = FALSE)
+datatable_std(dt_season_show,col_ref_hide,escape = FALSE,ordering = FALSE)
 ```
 
 # (PART\*) Season 2020-2021
 
-# Schedule 
+# Schedule {#schedule-2020-2021}
 
 ```{r schedule-2020-2021}
 
-dt_season_show <- dt_season[season=="2020-2021"][(course=="full" | race_type == "Super Teams") & !(is_champ), .(`Race #` = race_number,
-                            Date = date_ymd,
+dt_season_show <- dt_season[season=="2020-2021"][(course=="full" | race_type == "Super Teams") & !(is_champ),
+                          .(`#` = race_number,
+                            # Date = date_ymd,
                             `Event type` = race_type,
                             cancelled,
                             cancelled_reason,
                             have_results,
                             has_report,
+                            Date = race_link,
                             `Club Report` = report_link)]
 
 
@@ -48,9 +52,9 @@ dt_season_show[`Event type` != "Standard", Note := `Event type`]
 dt_season_show[(cancelled), Note:= paste0(Note, ifelse(Note=="",""," -"),"Cancelled due to ", cancelled_reason)]
 dt_season_show[!(cancelled) & !(have_results), Note := paste0(Note,ifelse(Note=="",""," - "), "Webscorer data not available")]
 
-col_ref_hide <- which(!(names(dt_season_show) %in% c("Race #","Date","Note","Club Report")))-1 # columns are indexed from 0 - row name?
+col_ref_hide <- which(!(names(dt_season_show) %in% c("#","Date","Note","Club Report")))-1 # columns are indexed from 0 - row name?
 
-datatable_std(dt_season_show,col_ref_hide,escape = FALSE)
+datatable_std(dt_season_show,col_ref_hide,escape = FALSE,ordering = FALSE)
 ```
 
 # Participation - Total {#participation-total-2020-2021}
@@ -71,7 +75,7 @@ plotly_part_hist(dt_all_long[season=="2020-2021"])
 table_part_total(dt_all_long[season=="2020-2021"], tri_cols)
 ```
 
-# Participation - Trends
+# Participation - Trends {#participation-trends-2020-2021}
 
 
 ## By Race
@@ -100,7 +104,7 @@ plotly_time_series(dt_all_long[season=="2020-2021"])
 ```
 
 
-# Best Times - Full
+# Best Times - Full {#best-times-full-2020-2021}
   
 ## Overall
 
@@ -143,7 +147,7 @@ table_record(dt_all_long[season=="2020-2021"], tri_cols, "full", "Run")
 ```
 
 
-# Best Times - Intermediate
+# Best Times - Intermediate {#best-times-int-2020-2021}
   
 ## Overall
 
@@ -186,7 +190,7 @@ table_record(dt_all_long[season=="2020-2021"], tri_cols, "int", "Run")
 ```
 
 
-# Best Times - Double Distance
+# Best Times - Double Distance {#best-times-double-2020-2021}
   
 ## Overall
 
@@ -293,7 +297,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 26, "int",FALSE)
 
 # Race 25: Mar 13 {#r-2021-03-13}
 
-A total of 55 competitors entered, 6 for the first time this season.
+A total of 55 competitors entered, 6 for the first time this season. 
 
 
 ## Full

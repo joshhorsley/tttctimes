@@ -172,17 +172,18 @@ table_part_total <- function(dt_all_long, tri_cols) {
   setorder(dt_entries_tab, -entries_total, name_last)
   
   setcolorder(dt_entries_tab,
-              c("entries_total_rank", "entries_total", "Name" ))
+              c("entries_total_rank", "entries_total", "athlete_link" ))
   
+  setnames(dt_entries_tab, "Name", "Name_old")
   setnames(dt_entries_tab,
-           c("entries_total_rank", "entries_total" ),
-           c("Rank","Entries"),
+           c("entries_total_rank", "entries_total", "athlete_link" ),
+           c("Rank","Entries", "Name"),
            skip_absent = TRUE)
   
   col_ref_hide <- which(!(names(dt_entries_tab) %in% c("Rank","Entries","Name")))-1 # columns are indexed from 0 - row name?
   
   
-  tab_part <- datatable_std(dt_entries_tab, col_ref_hide) %>% 
+  tab_part <- datatable_std(dt_entries_tab, col_ref_hide, escape=FALSE) %>% 
     formatStyle(columns = "Rank", valueColumns = "Rank",
                 background = styleEqual(1,tri_cols$record))
   

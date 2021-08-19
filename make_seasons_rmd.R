@@ -23,17 +23,19 @@ header <- paste0({
   
   paste0('# (PART\\*) Season ', i_season,'\n\n',
          
-'# Schedule 
+'# Schedule {#schedule-',i_season,'}
 
 ```{r schedule-',i_season,'}
 
-dt_season_show <- dt_season[season=="',i_season,'"][(course=="full" | race_type == "Super Teams") & !(is_champ), .(`Race #` = race_number,
-                            Date = date_ymd,
+dt_season_show <- dt_season[season=="',i_season,'"][(course=="full" | race_type == "Super Teams") & !(is_champ),
+                          .(`#` = race_number,
+                            # Date = date_ymd,
                             `Event type` = race_type,
                             cancelled,
                             cancelled_reason,
                             have_results,
                             has_report,
+                            Date = race_link,
                             `Club Report` = report_link)]
 
 
@@ -42,9 +44,9 @@ dt_season_show[`Event type` != "Standard", Note := `Event type`]
 dt_season_show[(cancelled), Note:= paste0(Note, ifelse(Note=="",""," -"),"Cancelled due to ", cancelled_reason)]
 dt_season_show[!(cancelled) & !(have_results), Note := paste0(Note,ifelse(Note=="",""," - "), "Webscorer data not available")]
 
-col_ref_hide <- which(!(names(dt_season_show) %in% c("Race #","Date","Note","Club Report")))-1 # columns are indexed from 0 - row name?
+col_ref_hide <- which(!(names(dt_season_show) %in% c("#","Date","Note","Club Report")))-1 # columns are indexed from 0 - row name?
 
-datatable_std(dt_season_show,col_ref_hide,escape = FALSE)
+datatable_std(dt_season_show,col_ref_hide,escape = FALSE,ordering = FALSE)
 ```
 
 ', {if(any_entries) {paste0('# Participation - Total {#participation-total-',i_season,'}
@@ -65,7 +67,7 @@ plotly_part_hist(dt_all_long[season=="',i_season,'"])
 table_part_total(dt_all_long[season=="',i_season,'"], tri_cols)
 ```
 
-# Participation - Trends
+# Participation - Trends {#participation-trends-',i_season,'}
 
 
 ## By Race
@@ -105,7 +107,7 @@ plotly_time_series(dt_all_long[season=="',i_season,'"])
     
     
     
-    paste0("\n# Best Times - ", j_course_nice,"
+    paste0("\n# Best Times - ", j_course_nice,' {#best-times-',j,'-',i_season,"}
   \n## Overall\n\n",
   "The best valid times for each competitor are ranked in the plot and table below.\n",
   # 'Disclaimer: Unofficial. `r if(some_weeks_missing_full) paste0("Results are not available for the following weeks: ", paste0(weeks_missing_int, collapse= ", "))`.\n',
@@ -172,12 +174,12 @@ foreach (i=rev(race_numbers), .combine = paste0 ) %do% {
     race_report_link <- paste0(race_report_link, ".")
   }
   
-  
+  race_ref <- dt_season[season==i_season  & race_number == i]$race_ref[1]
   
   paste0(
     "
 ",
-"# Race ", i,": ", i_date, ifelse(i_race_type=="Standard", "", paste0(" - ",i_race_type))," {#r-", i_date_file, "}\n\n",
+"# Race ", i,": ", i_date, ifelse(i_race_type=="Standard", "", paste0(" - ",i_race_type))," {#", race_ref, "}\n\n",
 
 "A total of ", n_athletes,  " competitors entered", text_new_athletes, ". ",race_report_link,"\n\n",
 

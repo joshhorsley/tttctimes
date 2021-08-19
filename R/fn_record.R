@@ -85,24 +85,26 @@ table_record <- function(dt_all_long, tri_cols, j, l ) {
   if(nrow(dt_record_j)==0) return("no data")
   
   dt_record_j[, Rank := rank_pb_split]
-  dt_record_j_wide <- dcast(dt_record_j, valid_overall + isPB_overall + rank_pb_overall + Name + total_overall_hms + date_ymd + race_number  ~ part,
+  dt_record_j_wide <- dcast(dt_record_j, valid_overall + isPB_overall + rank_pb_overall + athlete_link + total_overall_hms + race_link + race_number  ~ part,
                             value.var = c("duration_hms","isPB_split", "split_valid","rank_pb_split","Rank","cumulative_valid"))
   dt_record_j_wide[, Rank_overall := rank_pb_overall]
   
   
   setcolorder(dt_record_j_wide,
-              c(paste0("Rank_",l), "Name","total_overall_hms",
-                "date_ymd","race_number",
+              c(paste0("Rank_",l), "athlete_link","total_overall_hms",
+                "race_link","race_number",
                 "duration_hms_Swim", "duration_hms_Ride","duration_hms_Run"))
   
   
   cols_train_old_names <- c("Rank_overall","Rank_Swim","Rank_Ride","Rank_Run",
-                            "total_overall_hms","date_ymd","race_number",
-                            "duration_hms_Swim","duration_hms_Ride","duration_hms_Run")
+                            "total_overall_hms","race_link","race_number",
+                            "duration_hms_Swim","duration_hms_Ride","duration_hms_Run",
+                            "athlete_link")
   
   cols_retain_new_names <-  c("Rank (Overall)","Rank (Swim)","Rank (Ride)","Rank (Run)",
                               "Time","Date","Race #",
-                              "Swim","Ride","Run")
+                              "Swim","Ride","Run",
+                              "Name")
   
   setnames(dt_record_j_wide, cols_train_old_names, cols_retain_new_names, skip_absent = TRUE)
   
@@ -114,7 +116,7 @@ table_record <- function(dt_all_long, tri_cols, j, l ) {
     dt_record_j_wide[(get(paste0("isPB_split_",l)))][order(get(paste0("rank_pb_split_",l)))]
   }
   
-  tab_j <- datatable_std(dt_record_use, col_ref_hide) %>%
+  tab_j <- datatable_std(dt_record_use, col_ref_hide, escape = FALSE) %>%
     apply_col(tri_cols)
   
   return(tab_j)

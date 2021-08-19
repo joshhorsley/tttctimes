@@ -76,13 +76,16 @@ plotly_race <- function(dt_all_long, tri_cols, i, j,j_is_champ) {
 
 table_race <- function(dt_all_long, tri_cols, i, j,j_is_champ) {
   
-  dt_i <- dt_all_long[race_number== i & course == j & j_is_champ == (is_champ)][(started)]
+  dt_i <- dt_all_long[race_number== i & course == j & j_is_champ == (is_champ) & (started)]
   
-  dt_i_wide <- dcast(dt_i, rank_pb_overall + Name + place_overall_recalc + athlete_rank_overall + total_overall_hms + date_ymd + race_number + valid_overall + isPB_overall + rank_pb_overall ~ part,
+  dt_i_wide <- dcast(dt_i, rank_pb_overall + athlete_link+ place_overall_recalc + athlete_rank_overall + total_overall_hms + date_ymd + race_number + valid_overall + isPB_overall + rank_pb_overall ~ part,
                      value.var = c("duration_hms", "athlete_rank_split","isPB_split", "isPB_cumulative", "split_valid","place_lap_nice","place_lap",
                                    "rank_pb_split","cumulative_valid"))[order(athlete_rank_overall)]
   
   dt_i_wide[, Rank := place_overall_recalc]
+  
+  setnames(dt_i_wide,"athlete_link","Name")
+  
   
   setcolorder(dt_i_wide,
               c("Rank", "Name","total_overall_hms",
@@ -103,7 +106,7 @@ table_race <- function(dt_all_long, tri_cols, i, j,j_is_champ) {
   col_ref_hide <- which(!(names(dt_i_wide) %in% c("Rank","Name", cols_retain_new_names)))-1 # columns are indexed from 0 - row name?
   
   
-  tab_i <- datatable_std(dt_i_wide[order(Rank)], col_ref_hide) %>% 
+  tab_i <- datatable_std(dt_i_wide[order(Rank)], col_ref_hide, escape = FALSE) %>% 
     apply_col(tri_cols)
   
   tab_i$sizingPolicy$browser$fill <- TRUE

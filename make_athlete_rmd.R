@@ -18,8 +18,9 @@ header <- paste0({
 repeated <- foreach(k=athletes_ordered, .combine = paste0 ) %do% {
   
   
-  k_ref <- gsub(pattern = " ", "-", k)  
-  k_ref <- gsub(pattern = "'", "", k_ref) 
+  # k_ref <- gsub(pattern = " ", "-", k)  
+  # k_ref <- gsub(pattern = "'", "", k_ref) 
+  k_ref <- dt_all_long[Name==k]$athlete_ref[1]
   
   dt_all_long_athlete <- dt_all_long[Name==k & (started)]
   
@@ -30,7 +31,7 @@ repeated <- foreach(k=athletes_ordered, .combine = paste0 ) %do% {
   n_seasons <- length(k_seasons)
   
   
-  paste0("# ", k, " {#a-", k_ref, "}",
+  paste0("# ", k, " {#", k_ref, "}",
          "\n\n", name_first, " has results for ", n_seasons, " ", ifelse(n_seasons==1,"season", "seasons"),".",
          
          foreach(i_season = seasons, .combine = paste0) %do% {

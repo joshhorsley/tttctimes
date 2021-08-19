@@ -80,7 +80,7 @@ plotly_athlete <- function(dt_all_long, tri_cols, k) {
 table_athlete_course  <- function(dt_all_long, tri_cols, k, j) {
   
   
-  dt_k_wide <- dcast(dt_all_long[(started) & Name==k & course == j], rank_pb_overall + athlete_rank_overall + total_overall_hms + date_ymd + race_number + valid_overall + isPB_overall + rank_pb_overall ~ part,
+  dt_k_wide <- dcast(dt_all_long[(started) & Name==k & course == j], rank_pb_overall + athlete_rank_overall + total_overall_hms + race_link + race_number + valid_overall + isPB_overall + rank_pb_overall ~ part,
                      value.var = c("duration_hms", "athlete_rank_split","isPB_split", "isPB_cumulative", "split_valid",
                                    "rank_pb_split","cumulative_valid"))[order(athlete_rank_overall)]
   
@@ -88,13 +88,13 @@ table_athlete_course  <- function(dt_all_long, tri_cols, k, j) {
   
   setcolorder(dt_k_wide,
               c("Rank", "total_overall_hms",
-                "date_ymd","race_number",
+                "race_link","race_number",
                 "duration_hms_Swim", "duration_hms_Ride","duration_hms_Run",
                 "athlete_rank_split_Swim","athlete_rank_split_Ride","athlete_rank_split_Run"))
   
   
   cols_retain_old_names <- c("total_overall_hms",
-                             "date_ymd","race_number",
+                             "race_link","race_number",
                              "duration_hms_Swim","duration_hms_Ride","duration_hms_Run",
                              "athlete_rank_split_Swim","athlete_rank_split_Ride","athlete_rank_split_Run")
   
@@ -108,7 +108,7 @@ table_athlete_course  <- function(dt_all_long, tri_cols, k, j) {
   col_ref_hide <- which(!(names(dt_k_wide) %in% c("Rank",cols_retain_new_names)))-1 # columns are indexed from 0 - row name?
   
   
-  tab_k <- datatable_std(dt_k_wide, col_ref_hide) %>%
+  tab_k <- datatable_std(dt_k_wide, col_ref_hide, escape = FALSE) %>%
     apply_col(tri_cols)
 
   

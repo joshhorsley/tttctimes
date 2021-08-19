@@ -81,6 +81,11 @@ dt_season[, missing_results := !cancelled & !have_results]
 
 dt_season[, row_id := seq(.N)]
 
+# add race page links
+dt_season[, race_ref := paste0('r-', date_ymd)]
+dt_season[(have_results), race_link := paste0('<a href="', race_ref,'.html#',race_ref, '">',date_ymd,'</a>')]
+dt_season[!(have_results), race_link := format(date_ymd, "%Y-%m-%d")]
+
 
 # Load race results -------------------------------------------------------
 
@@ -94,7 +99,7 @@ dt_all <- foreach(i=id_results, .combine = function(x,y) rbind(x,y,fill=TRUE)) %
   dt_season[i, .(row_id, dt_race[[1]])]
 }
 
-new_cols <- c("season","race_number", "date_ymd", "race_type", "course", "is_champ")
+new_cols <- c("season","race_number", "date_ymd", "race_type", "course", "is_champ","race_ref", "race_link")
 dt_all[dt_season, on = .(row_id), (new_cols) := mget(new_cols)]
 setcolorder(dt_all, new_cols)
 
@@ -115,7 +120,7 @@ dt_all[Swim %in% c("","-"), started := FALSE]
 # Convert to long
 dt_all_long <- melt.data.table(dt_all,
                                id.vars = c("season","race_number", "date_ymd", "race_type", "course",
-                                           "Name","place_import","time_overall_import","started","is_champ"),
+                                           "Name","place_import","time_overall_import","started","is_champ", "race_ref", "race_link"),
                                measure.vars = c("Swim",
                                                   "Ride",
                                                   "Run"),
@@ -167,6 +172,13 @@ dt_all_long[, name_first := strsplit(Name, " ")[[1]][1],  by = row_id]
 
 dt_all_long[, name_last := gsub(paste0(name_first, " "), "", Name), by = row_id]
 dt_all_long[name_first == Name, name_last := ""] # Catch any people with only a first name
+
+
+# Athlete refs and links
+dt_all_long[, athlete_ref := gsub(pattern = " ", "-", Name)]  
+dt_all_long[, athlete_ref := gsub(pattern = "'", "", athlete_ref)]
+dt_all_long[, athlete_ref := paste0("a-",athlete_ref)]
+dt_all_long[, athlete_link := paste0('<a href="', athlete_ref,'.html#',athlete_ref, '">',Name,'</a>')]
 
 
 # Timing errors -----------------------------------------------------------
@@ -405,12 +417,11 @@ site_path_relative <- "docs"
 if(!dir.exists(site_path_relative)) dir.create(site_path_relative)
 libpath <- file.path(getwd(), "docs/libs")
 
-# race_numbers <- sort(unique(dt_all_long$race_number))
-
 
 # Export for website ------------------------------------------------------
 
 
+if(!dir.exists("data_derived")) dir.create("data_derived")
 saveRDS(dt_season, "data_derived/dt_season.rds")
 saveRDS(dt_all_long, "data_derived/dt_all_long.rds")
 
