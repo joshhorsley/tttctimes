@@ -69,7 +69,7 @@ apply_col.datatables <- function(tab, tri_cols){
 # Table formatting --------------------------------------------------------
 
 
-datatable_std <- function(df, col_ref_hide, scrollY_override = FALSE) {
+datatable_std <- function(df, col_ref_hide, scrollY_override = FALSE, ...) {
   DT::datatable(df,
                 rownames = FALSE,
                 extensions = c('Buttons'),
@@ -80,7 +80,7 @@ datatable_std <- function(df, col_ref_hide, scrollY_override = FALSE) {
                                scrollX = "500px",
                                buttons = c('copy', 'csv', 'excel'),
                                columnDefs = 
-                                 list(list(visible=FALSE, targets=col_ref_hide))))
+                                 list(list(visible=FALSE, targets=col_ref_hide))),...)
     
 }
 

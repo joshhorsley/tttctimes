@@ -21,7 +21,7 @@ header <- paste0({
     any_entries <- i_season %in% unique(dt_all_long[(started)]$season)
   
   
-  paste0('# (PART) Season ', i_season,'\n\n',
+  paste0('# (PART\\*) Season ', i_season,'\n\n',
          
 '# Schedule 
 
@@ -32,15 +32,19 @@ dt_season_show <- dt_season[season=="',i_season,'"][(course=="full" | race_type 
                             `Event type` = race_type,
                             cancelled,
                             cancelled_reason,
-                            have_results)]
+                            have_results,
+                            has_report,
+                            `Club Report` = report_link)]
 
-dt_season_show[(cancelled), Note:= paste0("Cancelled due to ", cancelled_reason)]
-dt_season_show[!(cancelled) & !(have_results), Note := "webscorer data not available"]
-dt_season_show[is.na(Note), Note := ""]
 
-col_ref_hide <- which(!(names(dt_season_show) %in% c("Race #","Date","Event type","Note")))-1 # columns are indexed from 0 - row name?
+dt_season_show[, Note := ""]
+dt_season_show[`Event type` != "Standard", Note := `Event type`]
+dt_season_show[(cancelled), Note:= paste0(Note, ifelse(Note=="",""," -"),"Cancelled due to ", cancelled_reason)]
+dt_season_show[!(cancelled) & !(have_results), Note := paste0(Note,ifelse(Note=="",""," - "), "Webscorer data not available")]
 
-datatable_std(dt_season_show,col_ref_hide)
+col_ref_hide <- which(!(names(dt_season_show) %in% c("Race #","Date","Note","Club Report")))-1 # columns are indexed from 0 - row name?
+
+datatable_std(dt_season_show,col_ref_hide,escape = FALSE)
 ```
 
 ', {if(any_entries) {paste0('# Participation - Total {#participation-total-',i_season,'}
@@ -161,12 +165,17 @@ foreach (i=rev(race_numbers), .combine = paste0 ) %do% {
   
   j_options <- seq(length(i_courses))
   
+  race_report_link <- dt_season[season==i_season  & race_number == i]$report_link_md[1]
+  
+  
+  
+  
   paste0(
     "
 ",
 "# Race ", i,": ", i_date, ifelse(i_race_type=="Standard", "", paste0(" - ",i_race_type))," {#r-", i_date_file, "}\n\n",
 
-"A total of ", n_athletes,  " competitors entered", text_new_athletes, ".\n\n",
+"A total of ", n_athletes,  " competitors entered", text_new_athletes, ". ",race_report_link,".\n\n",
 
 foreach (j_counter=j_options, .combine = paste0 ) %do% {
   

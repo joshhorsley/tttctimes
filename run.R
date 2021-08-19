@@ -34,6 +34,7 @@ dt_season_import2 <- dt_season_import[, .(season,
                      race_type,
                      cancelled,
                      cancelled_reason,
+                     report_id,
                      course = unlist(course_list)),
                      by = date_ymd][order(season, race_number)]
 
@@ -44,19 +45,25 @@ dt_season_import2[race_type == "Club Championships" & course == "full",
                   is_champ := list(list(list(TRUE,FALSE)))]
 
 dt_season <- dt_season_import2[, .(season,
-                                          race_number,
-                                          date_ymd,
-                                          race_type,
-                                          cancelled,
-                                          cancelled_reason,
-                                          is_champ = unlist(is_champ)),
-                                       by =.(date_ymd, course)][order(season, race_number)]
+                                   race_number,
+                                   date_ymd,
+                                   race_type,
+                                   cancelled,
+                                   cancelled_reason,
+                                   report_id,
+                                   is_champ = unlist(is_champ)),
+                               by =.(date_ymd, course)][order(season, race_number)]
 
 
 dt_season[course=="full", course_nice := "Full"]
 dt_season[course=="full" & (is_champ), course_nice := "Club Championships"]
 dt_season[course=="int", course_nice := "Intermediate"]
 dt_season[course=="double", course_nice := "Double Distance"]
+
+# Race report links
+dt_season[, has_report := report_id !=""]
+dt_season[(has_report), report_link := paste0('<a href = "http://www.twintownstriathlon.org.au/?p=',report_id,'" target="_blank">link</a>')]
+dt_season[(has_report), report_link_md := paste0('[Club Report](http://www.twintownstriathlon.org.au/?p=',report_id,'){target="_blank"}')]
 
 # race data paths
 path_base <- "data_provided/webscorer"
