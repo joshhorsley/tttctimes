@@ -166,7 +166,11 @@ foreach (i=rev(race_numbers), .combine = paste0 ) %do% {
   j_options <- seq(length(i_courses))
   
   race_report_link <- dt_season[season==i_season  & race_number == i]$report_link_md[1]
-  
+  if(is.na(race_report_link)) {
+    race_report_link <- ""
+  } else {
+    race_report_link <- paste0(race_report_link, ".")
+  }
   
   
   
@@ -175,7 +179,7 @@ foreach (i=rev(race_numbers), .combine = paste0 ) %do% {
 ",
 "# Race ", i,": ", i_date, ifelse(i_race_type=="Standard", "", paste0(" - ",i_race_type))," {#r-", i_date_file, "}\n\n",
 
-"A total of ", n_athletes,  " competitors entered", text_new_athletes, ". ",race_report_link,".\n\n",
+"A total of ", n_athletes,  " competitors entered", text_new_athletes, ". ",race_report_link,"\n\n",
 
 foreach (j_counter=j_options, .combine = paste0 ) %do% {
   

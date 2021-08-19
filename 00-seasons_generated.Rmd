@@ -293,7 +293,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 26, "int",FALSE)
 
 # Race 25: Mar 13 {#r-2021-03-13}
 
-A total of 55 competitors entered, 6 for the first time this season. NA.
+A total of 55 competitors entered, 6 for the first time this season.
 
 
 ## Full
