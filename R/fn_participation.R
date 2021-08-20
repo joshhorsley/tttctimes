@@ -3,7 +3,7 @@
 # Time series -------------------------------------------------------------
 
 
-plotly_time_series <- function(dt_all_long){
+plotly_time_series <- function(dt_all_long, len_season){
   
   dt_entries <- dt_all_long[part=="Swim" & (started)]
   
@@ -28,8 +28,8 @@ plotly_time_series <- function(dt_all_long){
     geom_point() +
     geom_line() +
     
-    scale_x_continuous("Race (number)", breaks = 1:26, limits = c(0,27)) +
-    scale_y_continuous("Entries", breaks = seq(0,26,5), limits = c(0,26),position = "left") +
+    scale_x_continuous("Race", breaks = 1:len_season, limits = c(0,len_season+1)) +
+    scale_y_continuous("Entries", breaks = seq(0,len_season,5), limits = c(0,len_season),position = "left") +
     scale_color_manual("Name", values = cols_athlete) +
     scale_shape_manual("Name", values = style_athlete) +
     scale_linetype_manual("Name", values = style_athlete) +
@@ -62,7 +62,7 @@ plotly_time_series <- function(dt_all_long){
 # Plot by race ------------------------------------------------------------
 
 
-plot_race_count <- function(dt_all_long){
+plot_race_count <- function(dt_all_long, len_season){
 
   dt_entries_race <- dt_all_long[part=="Swim" & (started),
                             .(count = .N,
@@ -86,7 +86,7 @@ plot_race_count <- function(dt_all_long){
          aes(y = count, x = race_number, text = tooltext, col = course_nice, fill = course_nice, group = race_number)) +
     geom_col(orientation = "x", width = 0.9, size = 0.3) +
     scale_y_continuous("Number of atheletes") +
-    scale_x_continuous("Race", breaks = 1:26, limits = c(0,27)) +
+    scale_x_continuous("Race", breaks = 1:len_season, limits = c(0,len_season+1)) +
     theme_minimal() +
     theme(legend.position="top",
           strip.background = element_rect(colour="black",
@@ -116,7 +116,7 @@ plot_race_count <- function(dt_all_long){
 # Total histogram ---------------------------------------------------------
 
 
-plotly_part_hist <- function(dt_all_long){
+plotly_part_hist <- function(dt_all_long, len_season){
   
   
   dt_entries_hist <- dt_all_long[order(name_last)][(started) & part == "Swim" & (is_last_entry),
@@ -134,7 +134,7 @@ plotly_part_hist <- function(dt_all_long){
     # aes(y = count, x = entries_total)) +
     geom_col(orientation = "x", width = 0.9, size = 0.3) +
     scale_y_continuous("Number of atheletes") +
-    scale_x_continuous("Total Entries", breaks = 1:26, limits = c(0,27)) +
+    scale_x_continuous("Total Entries", breaks = 1:len_season, limits = c(0,len_season+1)) +
     theme_minimal() +
     theme(legend.position="top",
           strip.background = element_rect(colour="black",

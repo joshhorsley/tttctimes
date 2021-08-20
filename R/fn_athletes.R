@@ -3,7 +3,7 @@
 
 
 
-plotly_athlete <- function(dt_all_long, tri_cols, k) {
+plotly_athlete <- function(dt_all_long, tri_cols, k, len_season) {
   
   dt_k <- dt_all_long[(started) & Name==k][order(race_number)]
   
@@ -43,7 +43,7 @@ plotly_athlete <- function(dt_all_long, tri_cols, k) {
     geom_col(orientation = "x", width = 0.9, size = 0.3) +
     facet_grid(rows = "course") +
     scale_y_continuous("Time (mins)", breaks = seq(0,150, 10), minor_breaks = seq(0,150, 5),position = "left") +
-    scale_x_continuous("Race (number)", breaks = 1:26, limits = c(0,27)) +
+    scale_x_continuous("Race", breaks = 1:len_season, limits = c(0,len_season+1)) +
     theme_minimal() +
     theme(legend.position="top",
           strip.background = element_rect(colour="black",
@@ -52,7 +52,7 @@ plotly_athlete <- function(dt_all_long, tri_cols, k) {
   g <- apply_col(g, tri_cols)
   
   p <- ggplotly(g, width = NULL, tooltip = "text",layerData = TRUE, style = "mobile") %>% 
-    layout(xaxis = list(fixedrange = TRUE),
+    layout(xaxis = list(fixedrange = TRUE), # axis put at bottom because plotly can't do this well with ggplot2 faceting
            yaxis = list(fixedrange = TRUE),
            dragmode = FALSE,
            autosize = TRUE,

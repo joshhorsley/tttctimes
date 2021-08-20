@@ -12,7 +12,7 @@ Adrian has results for 1 season.
 Adrian has entered 1 race this season, full distance.
 
 ```{r a-Adrian-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Adrian")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Adrian", len_season=26)
 ```
 
 
@@ -34,7 +34,7 @@ Frank has results for 1 season.
 Frank has entered 3 races this season, all full distance.
 
 ```{r a-Frank-Adler-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Frank Adler")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Frank Adler", len_season=26)
 ```
 
 
@@ -56,7 +56,7 @@ Christian has results for 1 season.
 Christian has entered 8 races this season, all full distance.
 
 ```{r a-Christian-Andrews-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Christian Andrews")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Christian Andrews", len_season=26)
 ```
 
 
@@ -78,7 +78,7 @@ Brett has results for 1 season.
 Brett has entered 1 race this season, intermediate distance.
 
 ```{r a-Brett-Archibald-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Brett Archibald")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Brett Archibald", len_season=26)
 ```
 
 
@@ -100,7 +100,7 @@ Sienna has results for 1 season.
 Sienna has entered 1 race this season, intermediate distance.
 
 ```{r a-Sienna-Archibald-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Sienna Archibald")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Sienna Archibald", len_season=26)
 ```
 
 
@@ -122,7 +122,7 @@ Andrew has results for 1 season.
 Andrew has entered 2 races this season, both full distance.
 
 ```{r a-Andrew-Armstrong-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Andrew Armstrong")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Andrew Armstrong", len_season=26)
 ```
 
 
@@ -144,7 +144,7 @@ Cheryl has results for 1 season.
 Cheryl has entered 5 races this season, all intermediate distance.
 
 ```{r a-Cheryl-Atkinson-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Cheryl Atkinson")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Cheryl Atkinson", len_season=26)
 ```
 
 
@@ -166,7 +166,7 @@ Benjamin has results for 1 season.
 Benjamin has entered 2 races this season, both full distance.
 
 ```{r a-Benjamin-Austin-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Benjamin Austin")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Benjamin Austin", len_season=26)
 ```
 
 
@@ -188,7 +188,7 @@ Kev has results for 1 season.
 Kev has entered 21 races this season, all full distance.
 
 ```{r a-Kev-Bannerman-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Kev Bannerman")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Kev Bannerman", len_season=26)
 ```
 
 
@@ -210,7 +210,7 @@ Robyn has results for 1 season.
 Robyn has entered 13 races this season, all intermediate distance.
 
 ```{r a-Robyn-Barry-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Robyn Barry")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Robyn Barry", len_season=26)
 ```
 
 
@@ -232,7 +232,7 @@ Lorraine has results for 1 season.
 Lorraine has entered 7 races this season, all intermediate distance.
 
 ```{r a-Lorraine-Bassett-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Lorraine Bassett")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Lorraine Bassett", len_season=26)
 ```
 
 
@@ -254,7 +254,7 @@ Greg has results for 1 season.
 Greg has entered 7 races this season, all full distance.
 
 ```{r a-Greg-Bemet-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Greg Bemet")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Greg Bemet", len_season=26)
 ```
 
 
@@ -276,7 +276,7 @@ Jo-Anne has results for 1 season.
 Jo-Anne has entered 2 races this season, both intermediate distance.
 
 ```{r a-Jo-Anne-Borgas-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jo-Anne Borgas")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jo-Anne Borgas", len_season=26)
 ```
 
 
@@ -298,7 +298,7 @@ Scott has results for 1 season.
 Scott has entered 6 races this season, all full distance.
 
 ```{r a-Scott-Bornholt-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Scott Bornholt")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Scott Bornholt", len_season=26)
 ```
 
 
@@ -320,7 +320,7 @@ Simon has results for 1 season.
 Simon has entered 4 races this season, all full distance.
 
 ```{r a-Simon-Bradbery-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Simon Bradbery")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Simon Bradbery", len_season=26)
 ```
 
 
@@ -342,7 +342,7 @@ Daniel has results for 1 season.
 Daniel has entered 2 races this season, both full distance.
 
 ```{r a-Daniel-Bray-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Daniel Bray")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Daniel Bray", len_season=26)
 ```
 
 
@@ -364,7 +364,7 @@ Ryan has results for 1 season.
 Ryan has entered 3 races this season, all full distance.
 
 ```{r a-Ryan-Bray-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Ryan Bray")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Ryan Bray", len_season=26)
 ```
 
 
@@ -386,7 +386,7 @@ Jamie has results for 1 season.
 Jamie has entered 12 races this season, 11 intermediate distance and 1 full distance.
 
 ```{r a-Jamie-Brindley-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jamie Brindley")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jamie Brindley", len_season=26)
 ```
 
 
@@ -417,7 +417,7 @@ Craig has results for 1 season.
 Craig has entered 3 races this season, all full distance.
 
 ```{r a-Craig-Broadhurst-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Craig Broadhurst")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Craig Broadhurst", len_season=26)
 ```
 
 
@@ -439,7 +439,7 @@ Sarah has results for 1 season.
 Sarah has entered 2 races this season, both double distance.
 
 ```{r a-Sarah-Buchanan-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Sarah Buchanan")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Sarah Buchanan", len_season=26)
 ```
 
 
@@ -461,7 +461,7 @@ Andrew has results for 1 season.
 Andrew has entered 3 races this season, all full distance.
 
 ```{r a-Andrew-Carr-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Andrew Carr")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Andrew Carr", len_season=26)
 ```
 
 
@@ -483,7 +483,7 @@ Joanne has results for 1 season.
 Joanne has entered 15 races this season, all full distance.
 
 ```{r a-Joanne-Colja-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Joanne Colja")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Joanne Colja", len_season=26)
 ```
 
 
@@ -505,7 +505,7 @@ Jim has results for 1 season.
 Jim has entered 19 races this season, all full distance.
 
 ```{r a-Jim-Collins-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jim Collins")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jim Collins", len_season=26)
 ```
 
 
@@ -527,7 +527,7 @@ Scott has results for 1 season.
 Scott has entered 1 race this season, full distance.
 
 ```{r a-Scott-Collins-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Scott Collins")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Scott Collins", len_season=26)
 ```
 
 
@@ -549,7 +549,7 @@ Mark has results for 1 season.
 Mark has entered 20 races this season, 19 full distance and 1 double distance.
 
 ```{r a-Mark-Collinson-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Mark Collinson")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Mark Collinson", len_season=26)
 ```
 
 
@@ -580,7 +580,7 @@ Sam has results for 1 season.
 Sam has entered 15 races this season, 13 full distance, 1 double distance, and 1 intermediate distance.
 
 ```{r a-Sam-Colman-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Sam Colman")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Sam Colman", len_season=26)
 ```
 
 
@@ -620,7 +620,7 @@ Warren has results for 1 season.
 Warren has entered 17 races this season, all full distance.
 
 ```{r a-Warren-Copping-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Warren Copping")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Warren Copping", len_season=26)
 ```
 
 
@@ -642,7 +642,7 @@ Jasmine has results for 1 season.
 Jasmine has entered 1 race this season, intermediate distance.
 
 ```{r a-Jasmine-Costanza-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jasmine Costanza")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jasmine Costanza", len_season=26)
 ```
 
 
@@ -664,7 +664,7 @@ Andrew has results for 1 season.
 Andrew has entered 2 races this season, both full distance.
 
 ```{r a-Andrew-Costello-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Andrew Costello")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Andrew Costello", len_season=26)
 ```
 
 
@@ -686,7 +686,7 @@ Ben has results for 1 season.
 Ben has entered 5 races this season, 4 full distance and 1 double distance.
 
 ```{r a-Ben-Courage-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Ben Courage")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Ben Courage", len_season=26)
 ```
 
 
@@ -717,7 +717,7 @@ Stuart has results for 1 season.
 Stuart has entered 10 races this season, all full distance.
 
 ```{r a-Stuart-Crawford-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Stuart Crawford")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Stuart Crawford", len_season=26)
 ```
 
 
@@ -739,7 +739,7 @@ Peter has results for 1 season.
 Peter has entered 7 races this season, all full distance.
 
 ```{r a-Peter-Crowe-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Peter Crowe")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Peter Crowe", len_season=26)
 ```
 
 
@@ -761,7 +761,7 @@ Debbie has results for 1 season.
 Debbie has entered 7 races this season, all full distance.
 
 ```{r a-Debbie-Davies-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Debbie Davies")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Debbie Davies", len_season=26)
 ```
 
 
@@ -783,7 +783,7 @@ Jonathan has results for 1 season.
 Jonathan has entered 8 races this season, all full distance.
 
 ```{r a-Jonathan-Davies-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jonathan Davies")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jonathan Davies", len_season=26)
 ```
 
 
@@ -805,7 +805,7 @@ Erin has results for 1 season.
 Erin has entered 5 races this season, all intermediate distance.
 
 ```{r a-Erin-Davoren-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Erin Davoren")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Erin Davoren", len_season=26)
 ```
 
 
@@ -827,7 +827,7 @@ Guy has results for 1 season.
 Guy has entered 19 races this season, 17 full distance, 1 intermediate distance, and 1 double distance.
 
 ```{r a-Guy-Davoren-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Guy Davoren")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Guy Davoren", len_season=26)
 ```
 
 
@@ -867,7 +867,7 @@ David has results for 1 season.
 David has entered 19 races this season, all full distance.
 
 ```{r a-David-De-Closey-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "David De Closey")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "David De Closey", len_season=26)
 ```
 
 
@@ -889,7 +889,7 @@ Ian has results for 1 season.
 Ian has entered 2 races this season, both full distance.
 
 ```{r a-Ian-Driffill-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Ian Driffill")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Ian Driffill", len_season=26)
 ```
 
 
@@ -911,7 +911,7 @@ Melanie has results for 1 season.
 Melanie has entered 6 races this season, 4 full distance and 2 intermediate distance.
 
 ```{r a-Melanie-Duff-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Melanie Duff")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Melanie Duff", len_season=26)
 ```
 
 
@@ -942,7 +942,7 @@ Tim has results for 1 season.
 Tim has entered 4 races this season, all full distance.
 
 ```{r a-Tim-Eade-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Tim Eade")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Tim Eade", len_season=26)
 ```
 
 
@@ -964,7 +964,7 @@ Peta has results for 1 season.
 Peta has entered 4 races this season, all intermediate distance.
 
 ```{r a-Peta-Edge-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Peta Edge")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Peta Edge", len_season=26)
 ```
 
 
@@ -986,7 +986,7 @@ Kirsten has results for 1 season.
 Kirsten has entered 2 races this season, both full distance.
 
 ```{r a-Kirsten-Ellis-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Kirsten Ellis")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Kirsten Ellis", len_season=26)
 ```
 
 
@@ -1008,7 +1008,7 @@ David has results for 1 season.
 David has entered 5 races this season, 1 double distance and 4 full distance.
 
 ```{r a-David-Emery-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "David Emery")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "David Emery", len_season=26)
 ```
 
 
@@ -1039,7 +1039,7 @@ Nicholas has results for 1 season.
 Nicholas has entered 1 race this season, full distance.
 
 ```{r a-Nicholas-Fawaz-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Nicholas Fawaz")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Nicholas Fawaz", len_season=26)
 ```
 
 
@@ -1061,7 +1061,7 @@ Marcus has results for 1 season.
 Marcus has entered 1 race this season, intermediate distance.
 
 ```{r a-Marcus-Fox-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Marcus Fox")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Marcus Fox", len_season=26)
 ```
 
 
@@ -1083,7 +1083,7 @@ Tracy has results for 1 season.
 Tracy has entered 19 races this season, 17 full distance and 2 double distance.
 
 ```{r a-Tracy-Foyster-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Tracy Foyster")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Tracy Foyster", len_season=26)
 ```
 
 
@@ -1114,7 +1114,7 @@ Gregory has results for 1 season.
 Gregory has entered 17 races this season, all full distance.
 
 ```{r a-Gregory-Freeman-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Gregory Freeman")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Gregory Freeman", len_season=26)
 ```
 
 
@@ -1136,7 +1136,7 @@ Kipp has results for 1 season.
 Kipp has entered 6 races this season, all full distance.
 
 ```{r a-Kipp-Freeman-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Kipp Freeman")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Kipp Freeman", len_season=26)
 ```
 
 
@@ -1158,7 +1158,7 @@ Matt has results for 1 season.
 Matt has entered 5 races this season, all full distance.
 
 ```{r a-Matt-Gabb-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Matt Gabb")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Matt Gabb", len_season=26)
 ```
 
 
@@ -1180,7 +1180,7 @@ Trudy has results for 1 season.
 Trudy has entered 8 races this season, 1 intermediate distance and 7 full distance.
 
 ```{r a-Trudy-Gadaleta-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Trudy Gadaleta")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Trudy Gadaleta", len_season=26)
 ```
 
 
@@ -1211,7 +1211,7 @@ Alycia has results for 1 season.
 Alycia has entered 2 races this season, both full distance.
 
 ```{r a-Alycia-Garriock-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Alycia Garriock")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Alycia Garriock", len_season=26)
 ```
 
 
@@ -1233,7 +1233,7 @@ Kylie has results for 1 season.
 Kylie has entered 10 races this season, 5 intermediate distance and 5 full distance.
 
 ```{r a-Kylie-Gibson-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Kylie Gibson")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Kylie Gibson", len_season=26)
 ```
 
 
@@ -1264,7 +1264,7 @@ Tyler has results for 1 season.
 Tyler has entered 1 race this season, full distance.
 
 ```{r a-Tyler-Gilbert-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Tyler Gilbert")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Tyler Gilbert", len_season=26)
 ```
 
 
@@ -1286,7 +1286,7 @@ Alex has results for 1 season.
 Alex has entered 15 races this season, all full distance.
 
 ```{r a-Alex-Gilks-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Alex Gilks")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Alex Gilks", len_season=26)
 ```
 
 
@@ -1308,7 +1308,7 @@ Rob has results for 1 season.
 Rob has entered 14 races this season, all full distance.
 
 ```{r a-Rob-Gillies-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Rob Gillies")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Rob Gillies", len_season=26)
 ```
 
 
@@ -1330,7 +1330,7 @@ Katie has results for 1 season.
 Katie has entered 11 races this season, 9 intermediate distance and 2 full distance.
 
 ```{r a-Katie-Glynn-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Katie Glynn")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Katie Glynn", len_season=26)
 ```
 
 
@@ -1361,7 +1361,7 @@ Des has results for 1 season.
 Des has entered 10 races this season, 8 full distance and 2 double distance.
 
 ```{r a-Des-Gooda-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Des Gooda")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Des Gooda", len_season=26)
 ```
 
 
@@ -1392,7 +1392,7 @@ Ben has results for 1 season.
 Ben has entered 18 races this season, 16 full distance and 2 double distance.
 
 ```{r a-Ben-Hall-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Ben Hall")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Ben Hall", len_season=26)
 ```
 
 
@@ -1423,7 +1423,7 @@ Jack has results for 1 season.
 Jack has entered 1 race this season, intermediate distance.
 
 ```{r a-Jack-Hall-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jack Hall")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jack Hall", len_season=26)
 ```
 
 
@@ -1445,7 +1445,7 @@ Manda has results for 1 season.
 Manda has entered 2 races this season, both intermediate distance.
 
 ```{r a-Manda-Hall-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Manda Hall")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Manda Hall", len_season=26)
 ```
 
 
@@ -1467,7 +1467,7 @@ Simon has results for 1 season.
 Simon has entered 11 races this season, 9 full distance and 2 double distance.
 
 ```{r a-Simon-Harradence-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Simon Harradence")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Simon Harradence", len_season=26)
 ```
 
 
@@ -1498,7 +1498,7 @@ Peter has results for 1 season.
 Peter has entered 1 race this season, full distance.
 
 ```{r a-Peter-Harrington-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Peter Harrington")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Peter Harrington", len_season=26)
 ```
 
 
@@ -1520,7 +1520,7 @@ Remy has results for 1 season.
 Remy has entered 15 races this season, all intermediate distance.
 
 ```{r a-Remy-Hawkins-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Remy Hawkins")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Remy Hawkins", len_season=26)
 ```
 
 
@@ -1542,7 +1542,7 @@ Cassandra has results for 1 season.
 Cassandra has entered 2 races this season, both full distance.
 
 ```{r a-Cassandra-Heaslip-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Cassandra Heaslip")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Cassandra Heaslip", len_season=26)
 ```
 
 
@@ -1564,7 +1564,7 @@ Glenn has results for 1 season.
 Glenn has entered 10 races this season, all intermediate distance.
 
 ```{r a-Glenn-Hind-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Glenn Hind")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Glenn Hind", len_season=26)
 ```
 
 
@@ -1586,7 +1586,7 @@ Caroline has results for 1 season.
 Caroline has entered 10 races this season, 8 full distance and 2 intermediate distance.
 
 ```{r a-Caroline-Hogan-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Caroline Hogan")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Caroline Hogan", len_season=26)
 ```
 
 
@@ -1617,7 +1617,7 @@ David has results for 1 season.
 David has entered 8 races this season, all full distance.
 
 ```{r a-David-Hogan-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "David Hogan")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "David Hogan", len_season=26)
 ```
 
 
@@ -1639,7 +1639,7 @@ Kent has results for 1 season.
 Kent has entered 12 races this season, all full distance.
 
 ```{r a-Kent-Holmes-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Kent Holmes")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Kent Holmes", len_season=26)
 ```
 
 
@@ -1661,7 +1661,7 @@ Josh has results for 1 season.
 Josh has entered 6 races this season, 3 full distance and 3 intermediate distance.
 
 ```{r a-Josh-Horsley-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Josh Horsley")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Josh Horsley", len_season=26)
 ```
 
 
@@ -1692,7 +1692,7 @@ Haydn has results for 1 season.
 Haydn has entered 1 race this season, full distance.
 
 ```{r a-Haydn-Jenkins-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Haydn Jenkins")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Haydn Jenkins", len_season=26)
 ```
 
 
@@ -1714,7 +1714,7 @@ Dan has results for 1 season.
 Dan has entered 6 races this season, all full distance.
 
 ```{r a-Dan-Johnson-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Dan Johnson")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Dan Johnson", len_season=26)
 ```
 
 
@@ -1736,7 +1736,7 @@ Darren has results for 1 season.
 Darren has entered 21 races this season, 19 full distance and 2 double distance.
 
 ```{r a-Darren-Jones-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Darren Jones")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Darren Jones", len_season=26)
 ```
 
 
@@ -1767,7 +1767,7 @@ Ginny has results for 1 season.
 Ginny has entered 18 races this season, all full distance.
 
 ```{r a-Ginny-Jones-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Ginny Jones")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Ginny Jones", len_season=26)
 ```
 
 
@@ -1789,7 +1789,7 @@ Michelle has results for 1 season.
 Michelle has entered 8 races this season, 4 full distance and 4 intermediate distance.
 
 ```{r a-Michelle-Jones-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Michelle Jones")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Michelle Jones", len_season=26)
 ```
 
 
@@ -1820,7 +1820,7 @@ Danny has results for 1 season.
 Danny has entered 8 races this season, all full distance.
 
 ```{r a-Danny-Khazen-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Danny Khazen")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Danny Khazen", len_season=26)
 ```
 
 
@@ -1842,7 +1842,7 @@ John has results for 1 season.
 John has entered 17 races this season, all full distance.
 
 ```{r a-John-King-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "John King")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "John King", len_season=26)
 ```
 
 
@@ -1864,7 +1864,7 @@ Sally has results for 1 season.
 Sally has entered 5 races this season, 3 intermediate distance and 2 full distance.
 
 ```{r a-Sally-Kingston-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Sally Kingston")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Sally Kingston", len_season=26)
 ```
 
 
@@ -1895,7 +1895,7 @@ Sharyn has results for 1 season.
 Sharyn has entered 13 races this season, all full distance.
 
 ```{r a-Sharyn-Klein-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Sharyn Klein")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Sharyn Klein", len_season=26)
 ```
 
 
@@ -1917,7 +1917,7 @@ Nadja has results for 1 season.
 Nadja has entered 3 races this season, all full distance.
 
 ```{r a-Nadja-Kundrus-Little-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Nadja Kundrus-Little")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Nadja Kundrus-Little", len_season=26)
 ```
 
 
@@ -1939,7 +1939,7 @@ Lydia has results for 1 season.
 Lydia has entered 12 races this season, all intermediate distance.
 
 ```{r a-Lydia-Kuschmirz-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Lydia Kuschmirz")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Lydia Kuschmirz", len_season=26)
 ```
 
 
@@ -1961,7 +1961,7 @@ Val has results for 1 season.
 Val has entered 13 races this season, all full distance.
 
 ```{r a-Val-Lambard-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Val Lambard")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Val Lambard", len_season=26)
 ```
 
 
@@ -1983,7 +1983,7 @@ Matt has results for 1 season.
 Matt has entered 1 race this season, double distance.
 
 ```{r a-Matt-Lance-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Matt Lance")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Matt Lance", len_season=26)
 ```
 
 
@@ -2005,7 +2005,7 @@ Samantha has results for 1 season.
 Samantha has entered 14 races this season, 13 full distance and 1 double distance.
 
 ```{r a-Samantha-Leonard-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Samantha Leonard")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Samantha Leonard", len_season=26)
 ```
 
 
@@ -2036,7 +2036,7 @@ Jennifer has results for 1 season.
 Jennifer has entered 4 races this season, 3 full distance and 1 intermediate distance.
 
 ```{r a-Jennifer-Love-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jennifer Love")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jennifer Love", len_season=26)
 ```
 
 
@@ -2067,7 +2067,7 @@ Julie has results for 1 season.
 Julie has entered 3 races this season, 1 full distance and 2 intermediate distance.
 
 ```{r a-Julie-Lowe-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Julie Lowe")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Julie Lowe", len_season=26)
 ```
 
 
@@ -2098,7 +2098,7 @@ Stuart has results for 1 season.
 Stuart has entered 3 races this season, 1 intermediate distance and 2 full distance.
 
 ```{r a-Stuart-Mason-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Stuart Mason")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Stuart Mason", len_season=26)
 ```
 
 
@@ -2129,7 +2129,7 @@ David has results for 1 season.
 David has entered 1 race this season, full distance.
 
 ```{r a-David-McEwan-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "David McEwan")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "David McEwan", len_season=26)
 ```
 
 
@@ -2151,7 +2151,7 @@ Stuart has results for 1 season.
 Stuart has entered 1 race this season, full distance.
 
 ```{r a-Stuart-McGill-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Stuart McGill")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Stuart McGill", len_season=26)
 ```
 
 
@@ -2173,7 +2173,7 @@ Bec has results for 1 season.
 Bec has entered 5 races this season, 4 full distance and 1 double distance.
 
 ```{r a-Bec-McLucas-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Bec McLucas")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Bec McLucas", len_season=26)
 ```
 
 
@@ -2204,7 +2204,7 @@ Andrew has results for 1 season.
 Andrew has entered 12 races this season, all full distance.
 
 ```{r a-Andrew-Miller-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Andrew Miller")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Andrew Miller", len_season=26)
 ```
 
 
@@ -2226,7 +2226,7 @@ Kat has results for 1 season.
 Kat has entered 13 races this season, all full distance.
 
 ```{r a-Kat-Miller-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Kat Miller")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Kat Miller", len_season=26)
 ```
 
 
@@ -2248,7 +2248,7 @@ Michelle has results for 1 season.
 Michelle has entered 5 races this season, 4 full distance and 1 double distance.
 
 ```{r a-Michelle-Miller-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Michelle Miller")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Michelle Miller", len_season=26)
 ```
 
 
@@ -2279,7 +2279,7 @@ Kyle has results for 1 season.
 Kyle has entered 11 races this season, 9 full distance and 2 double distance.
 
 ```{r a-Kyle-Mooney-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Kyle Mooney")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Kyle Mooney", len_season=26)
 ```
 
 
@@ -2310,7 +2310,7 @@ James has results for 1 season.
 James has entered 4 races this season, all full distance.
 
 ```{r a-James-Mourant-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "James Mourant")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "James Mourant", len_season=26)
 ```
 
 
@@ -2332,7 +2332,7 @@ Richard has results for 1 season.
 Richard has entered 16 races this season, 14 full distance and 2 double distance.
 
 ```{r a-Richard-Mourant-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Richard Mourant")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Richard Mourant", len_season=26)
 ```
 
 
@@ -2363,7 +2363,7 @@ Ashleigh has results for 1 season.
 Ashleigh has entered 8 races this season, all intermediate distance.
 
 ```{r a-Ashleigh-Murphy-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Ashleigh Murphy")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Ashleigh Murphy", len_season=26)
 ```
 
 
@@ -2385,7 +2385,7 @@ Ben has results for 1 season.
 Ben has entered 1 race this season, full distance.
 
 ```{r a-Ben-Murphy-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Ben Murphy")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Ben Murphy", len_season=26)
 ```
 
 
@@ -2407,7 +2407,7 @@ Helen has results for 1 season.
 Helen has entered 11 races this season, 4 intermediate distance and 7 full distance.
 
 ```{r a-Helen-Murphy-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Helen Murphy")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Helen Murphy", len_season=26)
 ```
 
 
@@ -2438,7 +2438,7 @@ Darren has results for 1 season.
 Darren has entered 5 races this season, all intermediate distance.
 
 ```{r a-Darren-Murray-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Darren Murray")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Darren Murray", len_season=26)
 ```
 
 
@@ -2460,7 +2460,7 @@ Jeff has results for 1 season.
 Jeff has entered 15 races this season, all full distance.
 
 ```{r a-Jeff-Murray-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jeff Murray")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jeff Murray", len_season=26)
 ```
 
 
@@ -2482,7 +2482,7 @@ Judy has results for 1 season.
 Judy has entered 13 races this season, all intermediate distance.
 
 ```{r a-Judy-Murray-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Judy Murray")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Judy Murray", len_season=26)
 ```
 
 
@@ -2504,7 +2504,7 @@ Aaron has results for 1 season.
 Aaron has entered 14 races this season, 13 full distance and 1 double distance.
 
 ```{r a-Aaron-Neylan-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Aaron Neylan")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Aaron Neylan", len_season=26)
 ```
 
 
@@ -2535,7 +2535,7 @@ Lynette has results for 1 season.
 Lynette has entered 2 races this season, both full distance.
 
 ```{r a-Lynette-Nisbet-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Lynette Nisbet")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Lynette Nisbet", len_season=26)
 ```
 
 
@@ -2557,7 +2557,7 @@ Karen has results for 1 season.
 Karen has entered 7 races this season, all intermediate distance.
 
 ```{r a-Karen-Nixon-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Karen Nixon")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Karen Nixon", len_season=26)
 ```
 
 
@@ -2579,7 +2579,7 @@ Lucas has results for 1 season.
 Lucas has entered 11 races this season, all intermediate distance.
 
 ```{r a-Lucas-Nixon-Hind-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Lucas Nixon-Hind")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Lucas Nixon-Hind", len_season=26)
 ```
 
 
@@ -2601,7 +2601,7 @@ Andy has results for 1 season.
 Andy has entered 1 race this season, full distance.
 
 ```{r a-Andy-OReilly-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Andy O'Reilly")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Andy O'Reilly", len_season=26)
 ```
 
 
@@ -2623,7 +2623,7 @@ Nick has results for 1 season.
 Nick has entered 7 races this season, 6 full distance and 1 double distance.
 
 ```{r a-Nick-OReilly-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Nick O'Reilly")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Nick O'Reilly", len_season=26)
 ```
 
 
@@ -2654,7 +2654,7 @@ Trent has results for 1 season.
 Trent has entered 1 race this season, full distance.
 
 ```{r a-Trent-Ousby-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Trent Ousby")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Trent Ousby", len_season=26)
 ```
 
 
@@ -2676,7 +2676,7 @@ Annika has results for 1 season.
 Annika has entered 1 race this season, intermediate distance.
 
 ```{r a-Annika-Parker-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Annika Parker")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Annika Parker", len_season=26)
 ```
 
 
@@ -2698,7 +2698,7 @@ Glenn has results for 1 season.
 Glenn has entered 3 races this season, all full distance.
 
 ```{r a-Glenn-Payne-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Glenn Payne")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Glenn Payne", len_season=26)
 ```
 
 
@@ -2720,7 +2720,7 @@ Clive has results for 1 season.
 Clive has entered 11 races this season, all full distance.
 
 ```{r a-Clive-Pearce-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Clive Pearce")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Clive Pearce", len_season=26)
 ```
 
 
@@ -2742,7 +2742,7 @@ Stephen has results for 1 season.
 Stephen has entered 6 races this season, all full distance.
 
 ```{r a-Stephen-Ring-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Stephen Ring")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Stephen Ring", len_season=26)
 ```
 
 
@@ -2764,7 +2764,7 @@ Carol has results for 1 season.
 Carol has entered 4 races this season, 3 full distance and 1 intermediate distance.
 
 ```{r a-Carol-Ririnui-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Carol Ririnui")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Carol Ririnui", len_season=26)
 ```
 
 
@@ -2795,7 +2795,7 @@ Gerard has results for 1 season.
 Gerard has entered 14 races this season, 12 full distance and 2 double distance.
 
 ```{r a-Gerard-Robards-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Gerard Robards")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Gerard Robards", len_season=26)
 ```
 
 
@@ -2826,7 +2826,7 @@ Hollie has results for 1 season.
 Hollie has entered 13 races this season, 12 full distance and 1 double distance.
 
 ```{r a-Hollie-Robards-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Hollie Robards")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Hollie Robards", len_season=26)
 ```
 
 
@@ -2857,7 +2857,7 @@ Kaleb has results for 1 season.
 Kaleb has entered 7 races this season, all full distance.
 
 ```{r a-Kaleb-Robards-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Kaleb Robards")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Kaleb Robards", len_season=26)
 ```
 
 
@@ -2879,7 +2879,7 @@ Anthony has results for 1 season.
 Anthony has entered 8 races this season, all full distance.
 
 ```{r a-Anthony-Rushton-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Anthony Rushton")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Anthony Rushton", len_season=26)
 ```
 
 
@@ -2901,7 +2901,7 @@ Ross has results for 1 season.
 Ross has entered 14 races this season, all full distance.
 
 ```{r a-Ross-Salmon-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Ross Salmon")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Ross Salmon", len_season=26)
 ```
 
 
@@ -2923,7 +2923,7 @@ Philip has results for 1 season.
 Philip has entered 17 races this season, all full distance.
 
 ```{r a-Philip-Salter-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Philip Salter")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Philip Salter", len_season=26)
 ```
 
 
@@ -2945,7 +2945,7 @@ Wendy has results for 1 season.
 Wendy has entered 9 races this season, all intermediate distance.
 
 ```{r a-Wendy-Sanders-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Wendy Sanders")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Wendy Sanders", len_season=26)
 ```
 
 
@@ -2967,7 +2967,7 @@ Jenny has results for 1 season.
 Jenny has entered 10 races this season, all full distance.
 
 ```{r a-Jenny-Scaysbrook-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jenny Scaysbrook")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jenny Scaysbrook", len_season=26)
 ```
 
 
@@ -2989,7 +2989,7 @@ Peter has results for 1 season.
 Peter has entered 8 races this season, all full distance.
 
 ```{r a-Peter-Serone-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Peter Serone")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Peter Serone", len_season=26)
 ```
 
 
@@ -3011,7 +3011,7 @@ Rod has results for 1 season.
 Rod has entered 15 races this season, 13 intermediate distance and 2 full distance.
 
 ```{r a-Rod-Sewell-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Rod Sewell")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Rod Sewell", len_season=26)
 ```
 
 
@@ -3042,7 +3042,7 @@ Tracey has results for 1 season.
 Tracey has entered 6 races this season, 5 full distance and 1 intermediate distance.
 
 ```{r a-Tracey-Sewell-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Tracey Sewell")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Tracey Sewell", len_season=26)
 ```
 
 
@@ -3073,7 +3073,7 @@ Terence has results for 1 season.
 Terence has entered 15 races this season, all full distance.
 
 ```{r a-Terence-Simpson-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Terence Simpson")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Terence Simpson", len_season=26)
 ```
 
 
@@ -3095,7 +3095,7 @@ Vaughan has results for 1 season.
 Vaughan has entered 14 races this season, 13 full distance and 1 double distance.
 
 ```{r a-Vaughan-Skelly-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Vaughan Skelly")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Vaughan Skelly", len_season=26)
 ```
 
 
@@ -3126,7 +3126,7 @@ Alex has results for 1 season.
 Alex has entered 1 race this season, intermediate distance.
 
 ```{r a-Alex-Smith-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Alex Smith")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Alex Smith", len_season=26)
 ```
 
 
@@ -3148,7 +3148,7 @@ Geoff has results for 1 season.
 Geoff has entered 1 race this season, intermediate distance.
 
 ```{r a-Geoff-Smith-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Geoff Smith")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Geoff Smith", len_season=26)
 ```
 
 
@@ -3170,7 +3170,7 @@ Rowena has results for 1 season.
 Rowena has entered 12 races this season, 11 full distance and 1 double distance.
 
 ```{r a-Rowena-Smith-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Rowena Smith")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Rowena Smith", len_season=26)
 ```
 
 
@@ -3201,7 +3201,7 @@ Heidi has results for 1 season.
 Heidi has entered 2 races this season, both full distance.
 
 ```{r a-Heidi-Sowerby-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Heidi Sowerby")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Heidi Sowerby", len_season=26)
 ```
 
 
@@ -3223,7 +3223,7 @@ Matthew has results for 1 season.
 Matthew has entered 11 races this season, all full distance.
 
 ```{r a-Matthew-Stanley-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Matthew Stanley")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Matthew Stanley", len_season=26)
 ```
 
 
@@ -3245,7 +3245,7 @@ Peter has results for 1 season.
 Peter has entered 12 races this season, all full distance.
 
 ```{r a-Peter-Stowe-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Peter Stowe")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Peter Stowe", len_season=26)
 ```
 
 
@@ -3267,7 +3267,7 @@ Kelly has results for 1 season.
 Kelly has entered 1 race this season, intermediate distance.
 
 ```{r a-Kelly-Styman-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Kelly Styman")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Kelly Styman", len_season=26)
 ```
 
 
@@ -3289,7 +3289,7 @@ Scott has results for 1 season.
 Scott has entered 15 races this season, 14 full distance and 1 intermediate distance.
 
 ```{r a-Scott-Styman-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Scott Styman")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Scott Styman", len_season=26)
 ```
 
 
@@ -3320,7 +3320,7 @@ Will has results for 1 season.
 Will has entered 1 race this season, full distance.
 
 ```{r a-Will-Styman-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Will Styman")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Will Styman", len_season=26)
 ```
 
 
@@ -3342,7 +3342,7 @@ Corey has results for 1 season.
 Corey has entered 2 races this season, both full distance.
 
 ```{r a-Corey-Swan-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Corey Swan")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Corey Swan", len_season=26)
 ```
 
 
@@ -3364,7 +3364,7 @@ Timothy has results for 1 season.
 Timothy has entered 9 races this season, all intermediate distance.
 
 ```{r a-Timothy-Taylor-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Timothy Taylor")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Timothy Taylor", len_season=26)
 ```
 
 
@@ -3386,7 +3386,7 @@ William has results for 1 season.
 William has entered 9 races this season, all intermediate distance.
 
 ```{r a-William-Taylor-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "William Taylor")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "William Taylor", len_season=26)
 ```
 
 
@@ -3408,7 +3408,7 @@ Zoe has results for 1 season.
 Zoe has entered 2 races this season, both intermediate distance.
 
 ```{r a-Zoe-Taylor-West-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Zoe Taylor-West")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Zoe Taylor-West", len_season=26)
 ```
 
 
@@ -3430,7 +3430,7 @@ Craig has results for 1 season.
 Craig has entered 10 races this season, all full distance.
 
 ```{r a-Craig-Telling-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Craig Telling")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Craig Telling", len_season=26)
 ```
 
 
@@ -3452,7 +3452,7 @@ Ava has results for 1 season.
 Ava has entered 18 races this season, all intermediate distance.
 
 ```{r a-Ava-Thomson-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Ava Thomson")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Ava Thomson", len_season=26)
 ```
 
 
@@ -3474,7 +3474,7 @@ Scott has results for 1 season.
 Scott has entered 20 races this season, 17 full distance, 2 double distance, and 1 intermediate distance.
 
 ```{r a-Scott-Thomson-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Scott Thomson")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Scott Thomson", len_season=26)
 ```
 
 
@@ -3514,7 +3514,7 @@ Sebastian has results for 1 season.
 Sebastian has entered 18 races this season, all intermediate distance.
 
 ```{r a-Sebastian-Thomson-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Sebastian Thomson")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Sebastian Thomson", len_season=26)
 ```
 
 
@@ -3536,7 +3536,7 @@ Alex has results for 1 season.
 Alex has entered 13 races this season, 2 double distance and 11 full distance.
 
 ```{r a-Alex-Torrance-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Alex Torrance")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Alex Torrance", len_season=26)
 ```
 
 
@@ -3567,7 +3567,7 @@ Robert has results for 1 season.
 Robert has entered 2 races this season, 1 intermediate distance and 1 full distance.
 
 ```{r a-Robert-Townsend-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Robert Townsend")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Robert Townsend", len_season=26)
 ```
 
 
@@ -3598,7 +3598,7 @@ Sue has results for 1 season.
 Sue has entered 11 races this season, all full distance.
 
 ```{r a-Sue-Van-Den-Broek-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Sue Van Den Broek")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Sue Van Den Broek", len_season=26)
 ```
 
 
@@ -3620,7 +3620,7 @@ Marcel has results for 1 season.
 Marcel has entered 19 races this season, all full distance.
 
 ```{r a-Marcel-Van-Kampen-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Marcel Van Kampen")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Marcel Van Kampen", len_season=26)
 ```
 
 
@@ -3642,7 +3642,7 @@ Jolyon has results for 1 season.
 Jolyon has entered 10 races this season, all full distance.
 
 ```{r a-Jolyon-Ward-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jolyon Ward")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jolyon Ward", len_season=26)
 ```
 
 
@@ -3664,7 +3664,7 @@ Danny has results for 1 season.
 Danny has entered 13 races this season, all full distance.
 
 ```{r a-Danny-Warner-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Danny Warner")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Danny Warner", len_season=26)
 ```
 
 
@@ -3686,7 +3686,7 @@ Lisa has results for 1 season.
 Lisa has entered 8 races this season, all full distance.
 
 ```{r a-Lisa-Warner-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Lisa Warner")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Lisa Warner", len_season=26)
 ```
 
 
@@ -3708,7 +3708,7 @@ Chris has results for 1 season.
 Chris has entered 5 races this season, all full distance.
 
 ```{r a-Chris-Watt-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Chris Watt")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Chris Watt", len_season=26)
 ```
 
 
@@ -3730,7 +3730,7 @@ Dean has results for 1 season.
 Dean has entered 13 races this season, 11 full distance and 2 double distance.
 
 ```{r a-Dean-Webb-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Dean Webb")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Dean Webb", len_season=26)
 ```
 
 
@@ -3761,7 +3761,7 @@ Steve has results for 1 season.
 Steve has entered 8 races this season, all intermediate distance.
 
 ```{r a-Steve-West-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Steve West")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Steve West", len_season=26)
 ```
 
 
@@ -3783,7 +3783,7 @@ Mark has results for 1 season.
 Mark has entered 9 races this season, all full distance.
 
 ```{r a-Mark-Whiticker-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Mark Whiticker")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Mark Whiticker", len_season=26)
 ```
 
 
@@ -3805,7 +3805,7 @@ Scott has results for 1 season.
 Scott has entered 4 races this season, all full distance.
 
 ```{r a-Scott-Wildin-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Scott Wildin")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Scott Wildin", len_season=26)
 ```
 
 
@@ -3827,7 +3827,7 @@ Greg has results for 1 season.
 Greg has entered 3 races this season, 1 full distance and 2 intermediate distance.
 
 ```{r a-Greg-Williamson-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Greg Williamson")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Greg Williamson", len_season=26)
 ```
 
 
@@ -3858,7 +3858,7 @@ Marcus has results for 1 season.
 Marcus has entered 2 races this season, both intermediate distance.
 
 ```{r a-Marcus-Williamson-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Marcus Williamson")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Marcus Williamson", len_season=26)
 ```
 
 
@@ -3880,7 +3880,7 @@ Wendy has results for 1 season.
 Wendy has entered 14 races this season, all full distance.
 
 ```{r a-Wendy-Wise-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Wendy Wise")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Wendy Wise", len_season=26)
 ```
 
 
@@ -3902,7 +3902,7 @@ Colin has results for 1 season.
 Colin has entered 4 races this season, 3 full distance and 1 intermediate distance.
 
 ```{r a-Colin-Woodward-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Colin Woodward")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Colin Woodward", len_season=26)
 ```
 
 
@@ -3933,7 +3933,7 @@ Rob has results for 1 season.
 Rob has entered 12 races this season, 10 full distance and 2 double distance.
 
 ```{r a-Rob-Worth-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Rob Worth")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Rob Worth", len_season=26)
 ```
 
 
@@ -3964,7 +3964,7 @@ Viv has results for 1 season.
 Viv has entered 19 races this season, 18 full distance and 1 double distance.
 
 ```{r a-Viv-Wright-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Viv Wright")
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Viv Wright", len_season=26)
 ```
 
 

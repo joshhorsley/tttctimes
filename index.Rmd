@@ -28,6 +28,6 @@ dt_all_long <- readRDS("data_derived/dt_all_long.rds")
 
 # Home
 
-This is an unofficial collection [TwinTowns Triathlon Club](http://www.twintownstriathlon.org.au){target="_blank"} race results based on the [club's webscorer page](https://www.webscorer.com/33755){target="_blank"}.
+This is an unofficial collection of [TwinTowns Triathlon Club](http://www.twintownstriathlon.org.au){target="_blank"} race results based on the [club's webscorer page](https://www.webscorer.com/33755){target="_blank"}.
 
 Results are presented in terms of overall participation and records ([example](#participation-total-2020-2021)), for each race ([example](#r-2021-02-13)), and for each competitor ([example](#a-Tracy-Foyster)).

@@ -68,7 +68,7 @@ n_athletes_season <- length(unique(dt_all_long[season=="2020-2021"][(started) & 
 There have been `r prettyNum(n_entries_all_season, big.mark = ",")` entries by `r n_athletes_season` athletes in the 2020-2021 season
 
 ```{r part_hist-2020-2021}
-plotly_part_hist(dt_all_long[season=="2020-2021"])
+plotly_part_hist(dt_all_long[season=="2020-2021"],len_season=26)
 ```
 
 ```{r part-total-table-2020-2021}
@@ -89,7 +89,7 @@ dt_entry_type[, text := paste0(count, " for ", course_nice)]
 The total number of entries by course are `r list_with_and(dt_entry_type$text)`. The plot below shows the number of entries by course over the 2020-2021 season.
 
 ```{r plot-raace-count-2020-2021}
-plot_race_count(dt_all_long[season=="2020-2021"])
+plot_race_count(dt_all_long[season=="2020-2021"],len_season=26)
 ```
 
 
@@ -100,7 +100,7 @@ plot_race_count(dt_all_long[season=="2020-2021"])
 This plot shows the cumulative number of races entered by each athlete over the 2020-2021 season. It's a bit crowded showing everyone, each athlete's entries can be toggled by clicking (or double-clicking) their names in the legend.
 
 ```{r plot-race-series-2020-2021}
-plotly_time_series(dt_all_long[season=="2020-2021"])
+plotly_time_series(dt_all_long[season=="2020-2021"],len_season=26)
 ```
 
 
@@ -321,7 +321,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 25, "full",FALSE)
 
 ## Intermediate
 
-16 competitors entered the course, achieving 3 new overall PBs and 7 new split PBs: 3 in the pool, 2 on the bike, and 2 on the run.
+16 competitors entered the course, achieving 5 new overall PBs and 13 new split PBs: 5 in the pool, 4 on the bike, and 4 on the run.
 
 ```{r plot-race-25-int-FALSE-2020-2021}
 plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 25, "int",FALSE)
@@ -388,7 +388,7 @@ A total of 56 competitors entered, 1 for the first time this season. [Club Repor
 
 ## Double Distance
 
-19 competitors entered the course, achieving 6 new overall PBs and 22 new split PBs: 8 in the pool, 8 on the bike, and 6 on the run.
+19 competitors entered the course, achieving 11 new overall PBs and 37 new split PBs: 13 in the pool, 13 on the bike, and 11 on the run.
 
 ```{r plot-race-23-double-FALSE-2020-2021}
 plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 23, "double",FALSE)
@@ -407,7 +407,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 23, "double",FALSE)
 
 ## Full
 
-25 competitors entered the course, achieving 5 new overall PBs and 10 new split PBs: 2 in the pool, 3 on the bike, and 5 on the run.
+25 competitors entered the course, achieving 7 new overall PBs and 16 new split PBs: 4 in the pool, 5 on the bike, and 7 on the run.
 
 ```{r plot-race-23-full-FALSE-2020-2021}
 plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 23, "full",FALSE)
@@ -450,7 +450,7 @@ A total of 53 competitors entered, 3 for the first time this season. [Club Repor
 
 ## Full
 
-43 competitors entered the course, achieving 2 new overall PBs and 11 new split PBs: 4 in the pool, 2 on the bike, and 5 on the run.
+43 competitors entered the course, achieving 3 new overall PBs and 14 new split PBs: 5 in the pool, 3 on the bike, and 6 on the run.
 
 ```{r plot-race-22-full-FALSE-2020-2021}
 plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 22, "full",FALSE)
@@ -469,7 +469,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 22, "full",FALSE)
 
 ## Intermediate
 
-10 competitors entered the course, achieving 2 new overall PBs and 7 new split PBs: 2 in the pool, 2 on the bike, and 3 on the run.
+10 competitors entered the course, achieving 2 new overall PBs and 9 new split PBs: 3 in the pool, 2 on the bike, and 4 on the run.
 
 ```{r plot-race-22-int-FALSE-2020-2021}
 plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 22, "int",FALSE)
@@ -512,7 +512,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 21, "full",FALSE)
 
 ## Intermediate
 
-14 competitors entered the course, achieving 5 new overall PBs and 8 new split PBs: 2 in the pool, 3 on the bike, and 3 on the run.
+14 competitors entered the course, achieving 6 new overall PBs and 13 new split PBs: 3 in the pool, 5 on the bike, and 5 on the run.
 
 ```{r plot-race-21-int-FALSE-2020-2021}
 plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 21, "int",FALSE)
@@ -555,7 +555,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 20, "full",FALSE)
 
 ## Intermediate
 
-16 competitors entered the course, achieving 4 new overall PBs and 8 new split PBs: 2 in the pool, 2 on the bike, and 4 on the run.
+16 competitors entered the course, achieving 5 new overall PBs and 11 new split PBs: 3 in the pool, 3 on the bike, and 5 on the run.
 
 ```{r plot-race-20-int-FALSE-2020-2021}
 plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 20, "int",FALSE)
@@ -598,7 +598,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 19, "full",FALSE)
 
 ## Intermediate
 
-15 competitors entered the course, achieving 5 new overall PBs and 13 new split PBs: 4 in the pool, 7 on the bike, and 2 on the run.
+15 competitors entered the course, achieving 7 new overall PBs and 19 new split PBs: 6 in the pool, 9 on the bike, and 4 on the run.
 
 ```{r plot-race-19-int-FALSE-2020-2021}
 plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 19, "int",FALSE)
@@ -622,7 +622,7 @@ A total of 45 competitors entered, 1 for the first time this season. [Club Repor
 
 ## Full
 
-37 competitors entered the course, achieving 5 new overall PBs and 25 new split PBs: 10 in the pool, 8 on the bike, and 7 on the run.
+37 competitors entered the course, achieving 7 new overall PBs and 31 new split PBs: 12 in the pool, 10 on the bike, and 9 on the run.
 
 ```{r plot-race-17-full-FALSE-2020-2021}
 plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 17, "full",FALSE)
@@ -770,7 +770,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 13, "full",FALSE)
 
 ## Intermediate
 
-10 competitors entered the course, achieving 1 new overall PBs and 5 new split PBs: 2 in the pool, 2 on the bike, and 1 on the run.
+10 competitors entered the course, achieving 2 new overall PBs and 8 new split PBs: 3 in the pool, 3 on the bike, and 2 on the run.
 
 ```{r plot-race-13-int-FALSE-2020-2021}
 plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 13, "int",FALSE)
@@ -813,7 +813,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 11, "full",FALSE)
 
 ## Intermediate
 
-15 competitors entered the course, achieving 6 new overall PBs and 17 new split PBs: 6 in the pool, 6 on the bike, and 5 on the run.
+15 competitors entered the course, achieving 7 new overall PBs and 20 new split PBs: 7 in the pool, 7 on the bike, and 6 on the run.
 
 ```{r plot-race-11-int-FALSE-2020-2021}
 plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 11, "int",FALSE)
@@ -837,7 +837,7 @@ A total of 49 competitors entered, 2 for the first time this season. [Club Repor
 
 ## Full
 
-38 competitors entered the course, achieving 7 new overall PBs and 27 new split PBs: 9 in the pool, 11 on the bike, and 7 on the run.
+38 competitors entered the course, achieving 8 new overall PBs and 30 new split PBs: 10 in the pool, 12 on the bike, and 8 on the run.
 
 ```{r plot-race-10-full-FALSE-2020-2021}
 plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 10, "full",FALSE)
@@ -880,7 +880,7 @@ A total of 65 competitors entered, 3 for the first time this season. [Club Repor
 
 ## Full
 
-49 competitors entered the course, achieving 20 new overall PBs and 43 new split PBs: 14 in the pool, 15 on the bike, and 14 on the run.
+49 competitors entered the course, achieving 21 new overall PBs and 46 new split PBs: 15 in the pool, 16 on the bike, and 15 on the run.
 
 ```{r plot-race-9-full-FALSE-2020-2021}
 plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 9, "full",FALSE)
@@ -942,7 +942,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 7, "full",FALSE)
 
 ## Intermediate
 
-17 competitors entered the course, achieving 8 new overall PBs and 22 new split PBs: 10 in the pool, 5 on the bike, and 7 on the run.
+17 competitors entered the course, achieving 9 new overall PBs and 25 new split PBs: 11 in the pool, 6 on the bike, and 8 on the run.
 
 ```{r plot-race-7-int-FALSE-2020-2021}
 plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 7, "int",FALSE)
@@ -966,7 +966,7 @@ A total of 62 competitors entered, 8 for the first time this season. [Club Repor
 
 ## Full
 
-51 competitors entered the course, achieving 16 new overall PBs and 57 new split PBs: 24 in the pool, 19 on the bike, and 14 on the run.
+51 competitors entered the course, achieving 17 new overall PBs and 60 new split PBs: 25 in the pool, 20 on the bike, and 15 on the run.
 
 ```{r plot-race-6-full-FALSE-2020-2021}
 plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 6, "full",FALSE)
@@ -1009,7 +1009,7 @@ A total of 79 competitors entered, 4 for the first time this season. [Club Repor
 
 ## Full
 
-63 competitors entered the course, achieving 34 new overall PBs and 81 new split PBs: 23 in the pool, 37 on the bike, and 21 on the run.
+63 competitors entered the course, achieving 36 new overall PBs and 87 new split PBs: 25 in the pool, 39 on the bike, and 23 on the run.
 
 ```{r plot-race-5-full-FALSE-2020-2021}
 plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 5, "full",FALSE)
@@ -1052,7 +1052,7 @@ A total of 73 competitors entered, 11 for the first time this season. [Club Repo
 
 ## Double Distance
 
-22 competitors entered the course.
+22 competitors entered the course, achieving 19 new overall PBs and 55 new split PBs: 19 in the pool, 18 on the bike, and 18 on the run.
 
 ```{r plot-race-4-double-FALSE-2020-2021}
 plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 4, "double",FALSE)
@@ -1090,7 +1090,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 4, "full",FALSE)
 
 ## Intermediate
 
-12 competitors entered the course, achieving 9 new overall PBs and 17 new split PBs: 3 in the pool, 7 on the bike, and 7 on the run.
+12 competitors entered the course, achieving 10 new overall PBs and 20 new split PBs: 4 in the pool, 8 on the bike, and 8 on the run.
 
 ```{r plot-race-4-int-FALSE-2020-2021}
 plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 4, "int",FALSE)
@@ -1133,7 +1133,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 3, "full",FALSE)
 
 ## Intermediate
 
-17 competitors entered the course, achieving 8 new overall PBs and 19 new split PBs: 4 in the pool, 7 on the bike, and 8 on the run.
+17 competitors entered the course, achieving 9 new overall PBs and 22 new split PBs: 5 in the pool, 8 on the bike, and 9 on the run.
 
 ```{r plot-race-3-int-FALSE-2020-2021}
 plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 3, "int",FALSE)
@@ -1157,7 +1157,7 @@ A total of 65 competitors entered, 23 for the first time this season. [Club Repo
 
 ## Full
 
-50 competitors entered the course, achieving 20 new overall PBs and 54 new split PBs: 18 in the pool, 19 on the bike, and 17 on the run.
+50 competitors entered the course, achieving 21 new overall PBs and 57 new split PBs: 19 in the pool, 20 on the bike, and 18 on the run.
 
 ```{r plot-race-2-full-FALSE-2020-2021}
 plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 2, "full",FALSE)
@@ -1176,7 +1176,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 2, "full",FALSE)
 
 ## Intermediate
 
-15 competitors entered the course, achieving 5 new overall PBs and 12 new split PBs: 3 in the pool, 5 on the bike, and 4 on the run.
+15 competitors entered the course, achieving 6 new overall PBs and 15 new split PBs: 4 in the pool, 6 on the bike, and 5 on the run.
 
 ```{r plot-race-2-int-FALSE-2020-2021}
 plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 2, "int",FALSE)

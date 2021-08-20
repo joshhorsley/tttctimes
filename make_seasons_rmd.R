@@ -19,6 +19,9 @@ header <- paste0({
     race_numbers <- sort(unique(dt_all_long[season==i_season]$race_number))
     
     any_entries <- i_season %in% unique(dt_all_long[(started)]$season)
+    
+    len_season <- max(dt_season[season==i_season]$race_number)
+    
   
   
   paste0('# (PART\\*) Season ', i_season,'\n\n',
@@ -60,7 +63,7 @@ n_athletes_season <- length(unique(dt_all_long[season=="',i_season,'"][(started)
 There have been `r prettyNum(n_entries_all_season, big.mark = ",")` entries by `r n_athletes_season` athletes in the ',i_season,' season
 
 ```{r part_hist-',i_season,'}
-plotly_part_hist(dt_all_long[season=="',i_season,'"])
+plotly_part_hist(dt_all_long[season=="',i_season,'"],len_season=',len_season,')
 ```
 
 ```{r part-total-table-',i_season,'}
@@ -81,7 +84,7 @@ dt_entry_type[, text := paste0(count, " for ", course_nice)]
 The total number of entries by course are `r list_with_and(dt_entry_type$text)`. The plot below shows the number of entries by course over the ',i_season,' season.
 
 ```{r plot-raace-count-',i_season,'}
-plot_race_count(dt_all_long[season=="',i_season,'"])
+plot_race_count(dt_all_long[season=="',i_season,'"],len_season=',len_season,')
 ```
 
 
@@ -92,7 +95,7 @@ plot_race_count(dt_all_long[season=="',i_season,'"])
 This plot shows the cumulative number of races entered by each athlete over the ',i_season,' season. It\'s a bit crowded showing everyone, each athlete\'s entries can be toggled by clicking (or double-clicking) their names in the legend.
 
 ```{r plot-race-series-',i_season,'}
-plotly_time_series(dt_all_long[season=="',i_season,'"])
+plotly_time_series(dt_all_long[season=="',i_season,'"],len_season=',len_season,')
 ```
 
 ',
@@ -145,7 +148,7 @@ foreach (i=rev(race_numbers), .combine = paste0 ) %do% {
   
   n_athletes <- nrow(dt_all_long[(started) & season==i_season & part == "Swim" & race_number == i])
   
-  n_new_athletes <- nrow(dt_all_long[(started)  & season==i_season& part == "Swim" & entries_cumulative==1 & race_number == i])
+  n_new_athletes <- nrow(dt_all_long[(started) & (isFirstRace )& season == i_season & part == "Swim" & race_number == i])
   text_new_athletes <- if(i==1 | n_new_athletes == 0) {
     ""
   } else {

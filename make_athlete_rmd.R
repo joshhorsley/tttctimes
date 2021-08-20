@@ -38,6 +38,8 @@ repeated <- foreach(k=athletes_ordered, .combine = paste0 ) %do% {
            
            season_heading <- paste0("\n\n## ", i_season, "\n\n")
            
+           len_season <- max(dt_season[season==i_season]$race_number)
+           
     
     any_entries <- i_season %in% k_seasons
     
@@ -103,7 +105,7 @@ repeated <- foreach(k=athletes_ordered, .combine = paste0 ) %do% {
 summary_sentence,"\n\n",
 
 '```{r ',k_ref,'-plot-',i_season,'}
-plotly_athlete(dt_all_long[season=="',i_season,'"], tri_cols, "',k,'")
+plotly_athlete(dt_all_long[season=="',i_season,'"], tri_cols, "',k,'", len_season=',len_season,')
 ```
 
 

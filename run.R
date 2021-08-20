@@ -310,10 +310,21 @@ dt_all_long[(started), place_lap_nice := format_place(place_lap_display)]
 dt_all_long[(started), place_cum_nice := format_place(place_cum_recalc)]
 
 
+
+# Participation -----------------------------------------------------------
+
+
+dt_all_long[(started), entries_cumulative := cumsum(started), by = .(Name, season, part)]
+dt_all_long[(started), entries_total := max(entries_cumulative), by = .(Name, season)]
+dt_all_long[(started), is_last_entry := entries_total == entries_cumulative]
+
+dt_all_long[(started) & (is_last_entry), entries_total_rank := rank(-entries_total, ties.method = "min"), by = .(season,part)]
+
+
 # PBs ---------------------------------------------------------------------
 
 
-dt_all_long[(started), isFirstRace := race_number == min(race_number), by = .(Name, season, part, course) ]
+dt_all_long[(started), isFirstRace := entries_cumulative == 1, by = .(Name, season, part) ]
 
 
 # PB change over seasons
@@ -356,19 +367,6 @@ dt_all_long[(started) & (isPB_overall), rank_pb_overall := rank(total_overall_mi
 dt_all_long[(started) & (isPB_split), rank_pb_split := rank(duration_mins, ties.method = "first"), by = .(course, season, part)]
 
 dt_all_long[(started), includes_pb_split := any(isPB_split), by = .(Name, season, course, race_number)]
-
-
-# Participation -----------------------------------------------------------
-
-
-dt_all_long[(started), entries_cumulative := cumsum(started), by = .(Name, season, part)]
-dt_all_long[(started), entries_total := max(entries_cumulative), by = .(Name, season)]
-dt_all_long[(started), is_last_entry := entries_total == entries_cumulative]
-
-dt_all_long[(started) & (is_last_entry), entries_total_rank := rank(-entries_total, ties.method = "min"), by = .(season,part)]
-
-# n_athletes_season <- length(unique(dt_all_long[(started)]$Name))
-
 
 # Part naming -------------------------------------------------------------
 
