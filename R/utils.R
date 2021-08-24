@@ -66,6 +66,21 @@ apply_col.datatables <- function(tab, tri_cols){
 }
 
 
+
+# Plots -------------------------------------------------------------------
+
+
+myscale_x_racetime <- function(g) {
+  break_step <- ifelse( max(g$data$total_overall_mins) > 100, 20, 10)
+  
+  g + scale_x_continuous("Time (mins)", breaks = seq(0,150, break_step), minor_breaks = seq(0,150, 5),position = "top")
+}
+
+myscale_x_racenumber <- function(g,len_season, name = "Race") {
+  g + scale_x_continuous(name, breaks = seq(1,len_season,2), limits = c(0,len_season+1))
+}
+
+
 # Table formatting --------------------------------------------------------
 
 

@@ -28,7 +28,6 @@ plotly_time_series <- function(dt_all_long, len_season){
     geom_point() +
     geom_line() +
     
-    scale_x_continuous("Race", breaks = 1:len_season, limits = c(0,len_season+1)) +
     scale_y_continuous("Entries", breaks = seq(0,len_season,5), limits = c(0,len_season),position = "left") +
     scale_color_manual("Name", values = cols_athlete) +
     scale_shape_manual("Name", values = style_athlete) +
@@ -38,6 +37,7 @@ plotly_time_series <- function(dt_all_long, len_season){
           strip.background = element_rect(colour="black",
                                           fill="white"))
   
+  g <- myscale_x_racenumber(g, len_season)
   
   p <- ggplotly(g, width = NULL, tooltip = "text",layerData = TRUE, style = "mobile") %>% 
     layout(xaxis = list(fixedrange = TRUE, side = "top"),
@@ -86,11 +86,12 @@ plot_race_count <- function(dt_all_long, len_season){
          aes(y = count, x = race_number, text = tooltext, col = course_nice, fill = course_nice, group = race_number)) +
     geom_col(orientation = "x", width = 0.9, size = 0.3) +
     scale_y_continuous("Number of atheletes") +
-    scale_x_continuous("Race", breaks = 1:len_season, limits = c(0,len_season+1)) +
     theme_minimal() +
     theme(legend.position="top",
           strip.background = element_rect(colour="black",
                                           fill="white"))
+  
+  g <- myscale_x_racenumber(g, len_season)
   
   p <- ggplotly(g, width = NULL, tooltip = "text",layerData = TRUE, style = "mobile") %>% 
     layout(xaxis = list(fixedrange = TRUE, side = "top"),
@@ -131,14 +132,14 @@ plotly_part_hist <- function(dt_all_long, len_season){
   
   g <- ggplot(dt_entries_hist,
               aes(y = count, x = entries_total, text = tooltext)) +
-    # aes(y = count, x = entries_total)) +
     geom_col(orientation = "x", width = 0.9, size = 0.3) +
     scale_y_continuous("Number of atheletes") +
-    scale_x_continuous("Total Entries", breaks = 1:len_season, limits = c(0,len_season+1)) +
     theme_minimal() +
     theme(legend.position="top",
           strip.background = element_rect(colour="black",
                                           fill="white"))
+  
+  g <- myscale_x_racenumber(g, len_season, "Total Entries")
   
   p <- ggplotly(g, width = NULL, tooltip = "text",layerData = TRUE, style = "mobile") %>% 
     layout(xaxis = list(fixedrange = TRUE),

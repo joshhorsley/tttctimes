@@ -35,13 +35,13 @@ plotly_record <- function(dt_all_long, tri_cols, j) {
   g <- ggplot(dt_record_j,
               aes(x = duration_mins, y = - rank_pb_overall, fill = part_plot, col = part_plot, group = Name, text = tooltext)) +
     geom_col(orientation = "y", size = 0.3) +
-    scale_x_continuous("Time (mins)", breaks = seq(0,150, 10), minor_breaks = seq(0,150, 5),position = "top") +
     scale_y_continuous("", breaks = -dt_record_j$rank_pb_overall,
                        labels = dt_record_j$place_name, minor_breaks = NULL,
                        limits = range(c(0,min(-dt_record_j$rank_pb_overall)-1))) +
     theme_minimal() +
     theme(legend.position="top")
   
+  g <- myscale_x_racetime(g)
   g <- apply_col(g, tri_cols)
   
   n_athletes <- length(unique(dt_record_j$Name))

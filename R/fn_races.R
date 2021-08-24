@@ -37,13 +37,14 @@ plotly_race <- function(dt_all_long, tri_cols, i, j,j_is_champ) {
   g <- ggplot(dt_i,
               aes(x = duration_mins, y = - place_overall_recalc, fill = part_plot, col = part_plot, group = Name, text = tooltext)) +
     geom_col(orientation = "y", width = 0.9, size = 0.3) +
-    scale_x_continuous("Time (mins)", breaks = seq(0,150, 10), minor_breaks = seq(0,150, 5),position = "top") +
     scale_y_continuous("", breaks = -dt_i$place_overall_recalc,
                        labels = dt_i$place_name, minor_breaks = NULL,
                        limits = range(c(0,min(-dt_i$place_overall_recalc)-1))) +
     theme_minimal() +
     theme(legend.position="top")
   
+ 
+  g <- myscale_x_racetime(g)
   g <- apply_col(g, tri_cols)
   
   n_athletes <- length(unique(dt_i$Name))
