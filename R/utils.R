@@ -192,6 +192,7 @@ list_with_and <- function(parts) {
 }
 
 cap_first <- function(x) paste0( toupper(substring(x,1,1)), tolower(substring(x, 2)))
+cap_first_only <- function(x) paste0( toupper(substring(x,1,1)), substring(x, 2))
 
 standardise_names <- function(name){
   name <- paste0(unlist(
@@ -207,7 +208,7 @@ standardise_names <- function(name){
     return(
       paste0(name_list[[1]][1],
              "-",
-             cap_first(name_list[[1]][2]))
+             cap_first_only(name_list[[1]][2]))
     )
   }
   

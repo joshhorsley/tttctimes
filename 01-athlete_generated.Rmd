@@ -294,7 +294,7 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Greg Bemet", "full")
 ```
 
-# Jo-Anne borgas {#a-Jo-Anne-borgas}
+# Jo-Anne Borgas {#a-Jo-Anne-Borgas}
 
 Jo-Anne has results for 1 season.
 
@@ -302,8 +302,8 @@ Jo-Anne has results for 1 season.
 
 Jo-Anne has entered 3 races this season, 2 Intermediate and 1 Super Teams.
 
-```{r a-Jo-Anne-borgas-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jo-Anne borgas", len_season=26)
+```{r a-Jo-Anne-Borgas-plot-2020-2021}
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jo-Anne Borgas", len_season=26)
 ```
 
 
@@ -312,8 +312,8 @@ plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jo-Anne borgas", len
 
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
-```{r a-Jo-Anne-borgas-table-2020-2021-int}
-table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Jo-Anne borgas", "int")
+```{r a-Jo-Anne-Borgas-table-2020-2021-int}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Jo-Anne Borgas", "int")
 ```
 
 
@@ -321,8 +321,8 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Jo-Anne borgas
 
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
-```{r a-Jo-Anne-borgas-table-2020-2021-teams}
-table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Jo-Anne borgas", "teams")
+```{r a-Jo-Anne-Borgas-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Jo-Anne Borgas", "teams")
 ```
 
 # Scott Bornholt {#a-Scott-Bornholt}

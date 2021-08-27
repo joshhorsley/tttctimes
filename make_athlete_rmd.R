@@ -115,7 +115,4 @@ table_athlete_course(dt_all_long[season=="',i_season,'"], tri_cols, "',k,'", "',
 )
 }
 
-
-write(paste0(repeated[1]),file = "1.txt")
-write(paste0(repeated[2]),file = "2.txt")
 write(paste0(header, repeated),file = "01-athlete_generated.Rmd")
