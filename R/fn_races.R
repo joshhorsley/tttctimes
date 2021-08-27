@@ -115,3 +115,31 @@ table_race <- function(dt_all_long, tri_cols, i, j,j_is_champ) {
 
   return(tab_i)
 }
+
+
+table_race_teams <- function(dt_all_long, tri_cols, i, j,j_is_champ) {
+  
+  dt_i <- dt_all_long[race_number== i & course == j & j_is_champ == (is_champ) & (started)]
+  
+  dt_i_wide <- dcast.data.table(dt_i[part=="Swim"], team_number ~ racer_ref, value.var = "athlete_link")
+  
+  setnames(dt_i_wide,
+           c("team_number"),
+           c("Team #"))
+  
+  
+  cols_retain_new_names <- c("Time","Swim","Ride","Run",
+                             "Rank (Swim)","Rank (Ride)","Rank (Run)")
+  
+
+  col_ref_hide <- which(!(names(dt_i_wide) %in% names(dt_i_wide)))-1 # columns are indexed from 0 - row name?
+  
+  
+  tab_i <- datatable_std(dt_i_wide[order(`Team #`)], col_ref_hide, escape = FALSE)# %>% 
+    # apply_col(tri_cols)
+  
+  tab_i$sizingPolicy$browser$fill <- TRUE
+  
+  
+  return(tab_i)
+}

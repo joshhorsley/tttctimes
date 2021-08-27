@@ -9,7 +9,7 @@ Adrian has results for 1 season.
 
 ## 2020-2021
 
-Adrian has entered 1 race this season, full distance.
+Adrian has entered 1 race this season, 1 Full.
 
 ```{r a-Adrian-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Adrian", len_season=26)
@@ -31,7 +31,7 @@ Frank has results for 1 season.
 
 ## 2020-2021
 
-Frank has entered 3 races this season, all full distance.
+Frank has entered 3 races this season, 3 Full.
 
 ```{r a-Frank-Adler-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Frank Adler", len_season=26)
@@ -53,7 +53,7 @@ Christian has results for 1 season.
 
 ## 2020-2021
 
-Christian has entered 8 races this season, all full distance.
+Christian has entered 9 races this season, 8 Full and 1 Super Teams.
 
 ```{r a-Christian-Andrews-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Christian Andrews", len_season=26)
@@ -69,13 +69,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Christian Andrews", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Christian-Andrews-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Christian Andrews", "teams")
+```
+
 # Brett Archibald {#a-Brett-Archibald}
 
 Brett has results for 1 season.
 
 ## 2020-2021
 
-Brett has entered 1 race this season, intermediate distance.
+Brett has entered 1 race this season, 1 Intermediate.
 
 ```{r a-Brett-Archibald-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Brett Archibald", len_season=26)
@@ -97,7 +106,7 @@ Sienna has results for 1 season.
 
 ## 2020-2021
 
-Sienna has entered 1 race this season, intermediate distance.
+Sienna has entered 1 race this season, 1 Intermediate.
 
 ```{r a-Sienna-Archibald-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Sienna Archibald", len_season=26)
@@ -119,7 +128,7 @@ Andrew has results for 1 season.
 
 ## 2020-2021
 
-Andrew has entered 2 races this season, both full distance.
+Andrew has entered 2 races this season, 2 Full.
 
 ```{r a-Andrew-Armstrong-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Andrew Armstrong", len_season=26)
@@ -141,7 +150,7 @@ Cheryl has results for 1 season.
 
 ## 2020-2021
 
-Cheryl has entered 5 races this season, all intermediate distance.
+Cheryl has entered 6 races this season, 5 Intermediate and 1 Super Teams.
 
 ```{r a-Cheryl-Atkinson-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Cheryl Atkinson", len_season=26)
@@ -157,13 +166,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Cheryl Atkinson", "int")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Cheryl-Atkinson-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Cheryl Atkinson", "teams")
+```
+
 # Benjamin Austin {#a-Benjamin-Austin}
 
 Benjamin has results for 1 season.
 
 ## 2020-2021
 
-Benjamin has entered 2 races this season, both full distance.
+Benjamin has entered 2 races this season, 2 Full.
 
 ```{r a-Benjamin-Austin-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Benjamin Austin", len_season=26)
@@ -185,7 +203,7 @@ Kev has results for 1 season.
 
 ## 2020-2021
 
-Kev has entered 21 races this season, all full distance.
+Kev has entered 21 races this season, 21 Full.
 
 ```{r a-Kev-Bannerman-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Kev Bannerman", len_season=26)
@@ -207,7 +225,7 @@ Robyn has results for 1 season.
 
 ## 2020-2021
 
-Robyn has entered 13 races this season, all intermediate distance.
+Robyn has entered 14 races this season, 13 Intermediate and 1 Super Teams.
 
 ```{r a-Robyn-Barry-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Robyn Barry", len_season=26)
@@ -223,13 +241,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Robyn Barry", "int")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Robyn-Barry-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Robyn Barry", "teams")
+```
+
 # Lorraine Bassett {#a-Lorraine-Bassett}
 
 Lorraine has results for 1 season.
 
 ## 2020-2021
 
-Lorraine has entered 7 races this season, all intermediate distance.
+Lorraine has entered 7 races this season, 7 Intermediate.
 
 ```{r a-Lorraine-Bassett-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Lorraine Bassett", len_season=26)
@@ -251,7 +278,7 @@ Greg has results for 1 season.
 
 ## 2020-2021
 
-Greg has entered 7 races this season, all full distance.
+Greg has entered 7 races this season, 7 Full.
 
 ```{r a-Greg-Bemet-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Greg Bemet", len_season=26)
@@ -267,16 +294,16 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Greg Bemet", "full")
 ```
 
-# Jo-Anne Borgas {#a-Jo-Anne-Borgas}
+# Jo-Anne borgas {#a-Jo-Anne-borgas}
 
 Jo-Anne has results for 1 season.
 
 ## 2020-2021
 
-Jo-Anne has entered 2 races this season, both intermediate distance.
+Jo-Anne has entered 3 races this season, 2 Intermediate and 1 Super Teams.
 
-```{r a-Jo-Anne-Borgas-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jo-Anne Borgas", len_season=26)
+```{r a-Jo-Anne-borgas-plot-2020-2021}
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jo-Anne borgas", len_season=26)
 ```
 
 
@@ -285,8 +312,17 @@ plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jo-Anne Borgas", len
 
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
-```{r a-Jo-Anne-Borgas-table-2020-2021-int}
-table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Jo-Anne Borgas", "int")
+```{r a-Jo-Anne-borgas-table-2020-2021-int}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Jo-Anne borgas", "int")
+```
+
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Jo-Anne-borgas-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Jo-Anne borgas", "teams")
 ```
 
 # Scott Bornholt {#a-Scott-Bornholt}
@@ -295,7 +331,7 @@ Scott has results for 1 season.
 
 ## 2020-2021
 
-Scott has entered 6 races this season, all full distance.
+Scott has entered 7 races this season, 6 Full and 1 Super Teams.
 
 ```{r a-Scott-Bornholt-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Scott Bornholt", len_season=26)
@@ -311,13 +347,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Scott Bornholt", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Scott-Bornholt-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Scott Bornholt", "teams")
+```
+
 # Simon Bradbery {#a-Simon-Bradbery}
 
 Simon has results for 1 season.
 
 ## 2020-2021
 
-Simon has entered 4 races this season, all full distance.
+Simon has entered 5 races this season, 4 Full and 1 Super Teams.
 
 ```{r a-Simon-Bradbery-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Simon Bradbery", len_season=26)
@@ -333,13 +378,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Simon Bradbery", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Simon-Bradbery-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Simon Bradbery", "teams")
+```
+
 # Daniel Bray {#a-Daniel-Bray}
 
 Daniel has results for 1 season.
 
 ## 2020-2021
 
-Daniel has entered 2 races this season, both full distance.
+Daniel has entered 2 races this season, 2 Full.
 
 ```{r a-Daniel-Bray-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Daniel Bray", len_season=26)
@@ -361,7 +415,7 @@ Ryan has results for 1 season.
 
 ## 2020-2021
 
-Ryan has entered 3 races this season, all full distance.
+Ryan has entered 3 races this season, 3 Full.
 
 ```{r a-Ryan-Bray-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Ryan Bray", len_season=26)
@@ -383,7 +437,7 @@ Jamie has results for 1 season.
 
 ## 2020-2021
 
-Jamie has entered 12 races this season, 11 intermediate distance and 1 full distance.
+Jamie has entered 13 races this season, 11 Intermediate, 1 Super Teams, and 1 Full.
 
 ```{r a-Jamie-Brindley-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jamie Brindley", len_season=26)
@@ -397,6 +451,15 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 
 ```{r a-Jamie-Brindley-table-2020-2021-int}
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Jamie Brindley", "int")
+```
+
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Jamie-Brindley-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Jamie Brindley", "teams")
 ```
 
 
@@ -414,7 +477,7 @@ Craig has results for 1 season.
 
 ## 2020-2021
 
-Craig has entered 3 races this season, all full distance.
+Craig has entered 4 races this season, 3 Full and 1 Super Teams.
 
 ```{r a-Craig-Broadhurst-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Craig Broadhurst", len_season=26)
@@ -430,13 +493,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Craig Broadhurst", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Craig-Broadhurst-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Craig Broadhurst", "teams")
+```
+
 # Sarah Buchanan {#a-Sarah-Buchanan}
 
 Sarah has results for 1 season.
 
 ## 2020-2021
 
-Sarah has entered 2 races this season, both double distance.
+Sarah has entered 2 races this season, 2 Double Distance.
 
 ```{r a-Sarah-Buchanan-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Sarah Buchanan", len_season=26)
@@ -458,7 +530,7 @@ Andrew has results for 1 season.
 
 ## 2020-2021
 
-Andrew has entered 3 races this season, all full distance.
+Andrew has entered 3 races this season, 3 Full.
 
 ```{r a-Andrew-Carr-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Andrew Carr", len_season=26)
@@ -480,7 +552,7 @@ Joanne has results for 1 season.
 
 ## 2020-2021
 
-Joanne has entered 15 races this season, all full distance.
+Joanne has entered 16 races this season, 15 Full and 1 Super Teams.
 
 ```{r a-Joanne-Colja-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Joanne Colja", len_season=26)
@@ -496,13 +568,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Joanne Colja", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Joanne-Colja-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Joanne Colja", "teams")
+```
+
 # Jim Collins {#a-Jim-Collins}
 
 Jim has results for 1 season.
 
 ## 2020-2021
 
-Jim has entered 19 races this season, all full distance.
+Jim has entered 21 races this season, 19 Full and 2 Super Teams.
 
 ```{r a-Jim-Collins-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jim Collins", len_season=26)
@@ -518,13 +599,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Jim Collins", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Jim-Collins-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Jim Collins", "teams")
+```
+
 # Scott Collins {#a-Scott-Collins}
 
 Scott has results for 1 season.
 
 ## 2020-2021
 
-Scott has entered 1 race this season, full distance.
+Scott has entered 1 race this season, 1 Full.
 
 ```{r a-Scott-Collins-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Scott Collins", len_season=26)
@@ -546,7 +636,7 @@ Mark has results for 1 season.
 
 ## 2020-2021
 
-Mark has entered 20 races this season, 19 full distance and 1 double distance.
+Mark has entered 22 races this season, 19 Full, 2 Super Teams, and 1 Double Distance.
 
 ```{r a-Mark-Collinson-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Mark Collinson", len_season=26)
@@ -560,6 +650,15 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 
 ```{r a-Mark-Collinson-table-2020-2021-full}
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Mark Collinson", "full")
+```
+
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Mark-Collinson-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Mark Collinson", "teams")
 ```
 
 
@@ -577,7 +676,7 @@ Sam has results for 1 season.
 
 ## 2020-2021
 
-Sam has entered 15 races this season, 13 full distance, 1 double distance, and 1 intermediate distance.
+Sam has entered 15 races this season, 13 Full, 1 Double Distance, and 1 Intermediate.
 
 ```{r a-Sam-Colman-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Sam Colman", len_season=26)
@@ -617,7 +716,7 @@ Warren has results for 1 season.
 
 ## 2020-2021
 
-Warren has entered 17 races this season, all full distance.
+Warren has entered 19 races this season, 17 Full and 2 Super Teams.
 
 ```{r a-Warren-Copping-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Warren Copping", len_season=26)
@@ -633,13 +732,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Warren Copping", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Warren-Copping-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Warren Copping", "teams")
+```
+
 # Jasmine Costanza {#a-Jasmine-Costanza}
 
 Jasmine has results for 1 season.
 
 ## 2020-2021
 
-Jasmine has entered 1 race this season, intermediate distance.
+Jasmine has entered 1 race this season, 1 Intermediate.
 
 ```{r a-Jasmine-Costanza-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jasmine Costanza", len_season=26)
@@ -661,7 +769,7 @@ Andrew has results for 1 season.
 
 ## 2020-2021
 
-Andrew has entered 2 races this season, both full distance.
+Andrew has entered 2 races this season, 2 Full.
 
 ```{r a-Andrew-Costello-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Andrew Costello", len_season=26)
@@ -683,7 +791,7 @@ Ben has results for 1 season.
 
 ## 2020-2021
 
-Ben has entered 5 races this season, 4 full distance and 1 double distance.
+Ben has entered 5 races this season, 4 Full and 1 Double Distance.
 
 ```{r a-Ben-Courage-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Ben Courage", len_season=26)
@@ -714,7 +822,7 @@ Stuart has results for 1 season.
 
 ## 2020-2021
 
-Stuart has entered 10 races this season, all full distance.
+Stuart has entered 11 races this season, 10 Full and 1 Super Teams.
 
 ```{r a-Stuart-Crawford-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Stuart Crawford", len_season=26)
@@ -730,13 +838,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Stuart Crawford", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Stuart-Crawford-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Stuart Crawford", "teams")
+```
+
 # Peter Crowe {#a-Peter-Crowe}
 
 Peter has results for 1 season.
 
 ## 2020-2021
 
-Peter has entered 7 races this season, all full distance.
+Peter has entered 8 races this season, 7 Full and 1 Super Teams.
 
 ```{r a-Peter-Crowe-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Peter Crowe", len_season=26)
@@ -752,26 +869,13 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Peter Crowe", "full")
 ```
 
-# Debbie Davies {#a-Debbie-Davies}
 
-Debbie has results for 1 season.
-
-## 2020-2021
-
-Debbie has entered 7 races this season, all full distance.
-
-```{r a-Debbie-Davies-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Debbie Davies", len_season=26)
-```
-
-
-
-### Detailed results for Full course
+### Detailed results for Super Teams course
 
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
-```{r a-Debbie-Davies-table-2020-2021-full}
-table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Debbie Davies", "full")
+```{r a-Peter-Crowe-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Peter Crowe", "teams")
 ```
 
 # Jonathan Davies {#a-Jonathan-Davies}
@@ -780,7 +884,7 @@ Jonathan has results for 1 season.
 
 ## 2020-2021
 
-Jonathan has entered 8 races this season, all full distance.
+Jonathan has entered 8 races this season, 8 Full.
 
 ```{r a-Jonathan-Davies-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jonathan Davies", len_season=26)
@@ -796,26 +900,35 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Jonathan Davies", "full")
 ```
 
-# Erin Davoren {#a-Erin-Davoren}
+# Debbie Davies {#a-Debbie-Davies}
 
-Erin has results for 1 season.
+Debbie has results for 1 season.
 
 ## 2020-2021
 
-Erin has entered 5 races this season, all intermediate distance.
+Debbie has entered 8 races this season, 7 Full and 1 Super Teams.
 
-```{r a-Erin-Davoren-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Erin Davoren", len_season=26)
+```{r a-Debbie-Davies-plot-2020-2021}
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Debbie Davies", len_season=26)
 ```
 
 
 
-### Detailed results for Intermediate course
+### Detailed results for Full course
 
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
-```{r a-Erin-Davoren-table-2020-2021-int}
-table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Erin Davoren", "int")
+```{r a-Debbie-Davies-table-2020-2021-full}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Debbie Davies", "full")
+```
+
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Debbie-Davies-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Debbie Davies", "teams")
 ```
 
 # Guy Davoren {#a-Guy-Davoren}
@@ -824,7 +937,7 @@ Guy has results for 1 season.
 
 ## 2020-2021
 
-Guy has entered 19 races this season, 17 full distance, 1 intermediate distance, and 1 double distance.
+Guy has entered 21 races this season, 17 Full, 1 Intermediate, 2 Super Teams, and 1 Double Distance.
 
 ```{r a-Guy-Davoren-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Guy Davoren", len_season=26)
@@ -850,6 +963,15 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Guy Davoren", 
 ```
 
 
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Guy-Davoren-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Guy Davoren", "teams")
+```
+
+
 ### Detailed results for Double Distance course
 
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
@@ -858,13 +980,35 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Guy Davoren", "double")
 ```
 
+# Erin Davoren {#a-Erin-Davoren}
+
+Erin has results for 1 season.
+
+## 2020-2021
+
+Erin has entered 5 races this season, 5 Intermediate.
+
+```{r a-Erin-Davoren-plot-2020-2021}
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Erin Davoren", len_season=26)
+```
+
+
+
+### Detailed results for Intermediate course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Erin-Davoren-table-2020-2021-int}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Erin Davoren", "int")
+```
+
 # David De Closey {#a-David-De-Closey}
 
 David has results for 1 season.
 
 ## 2020-2021
 
-David has entered 19 races this season, all full distance.
+David has entered 20 races this season, 19 Full and 1 Super Teams.
 
 ```{r a-David-De-Closey-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "David De Closey", len_season=26)
@@ -880,13 +1024,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "David De Closey", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-David-De-Closey-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "David De Closey", "teams")
+```
+
 # Ian Driffill {#a-Ian-Driffill}
 
 Ian has results for 1 season.
 
 ## 2020-2021
 
-Ian has entered 2 races this season, both full distance.
+Ian has entered 2 races this season, 2 Full.
 
 ```{r a-Ian-Driffill-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Ian Driffill", len_season=26)
@@ -908,7 +1061,7 @@ Melanie has results for 1 season.
 
 ## 2020-2021
 
-Melanie has entered 6 races this season, 4 full distance and 2 intermediate distance.
+Melanie has entered 7 races this season, 4 Full, 1 Super Teams, and 2 Intermediate.
 
 ```{r a-Melanie-Duff-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Melanie Duff", len_season=26)
@@ -922,6 +1075,15 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 
 ```{r a-Melanie-Duff-table-2020-2021-full}
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Melanie Duff", "full")
+```
+
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Melanie-Duff-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Melanie Duff", "teams")
 ```
 
 
@@ -939,7 +1101,7 @@ Tim has results for 1 season.
 
 ## 2020-2021
 
-Tim has entered 4 races this season, all full distance.
+Tim has entered 4 races this season, 4 Full.
 
 ```{r a-Tim-Eade-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Tim Eade", len_season=26)
@@ -961,7 +1123,7 @@ Peta has results for 1 season.
 
 ## 2020-2021
 
-Peta has entered 4 races this season, all intermediate distance.
+Peta has entered 4 races this season, 4 Intermediate.
 
 ```{r a-Peta-Edge-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Peta Edge", len_season=26)
@@ -983,7 +1145,7 @@ Kirsten has results for 1 season.
 
 ## 2020-2021
 
-Kirsten has entered 2 races this season, both full distance.
+Kirsten has entered 2 races this season, 2 Full.
 
 ```{r a-Kirsten-Ellis-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Kirsten Ellis", len_season=26)
@@ -1005,7 +1167,7 @@ David has results for 1 season.
 
 ## 2020-2021
 
-David has entered 5 races this season, 1 double distance and 4 full distance.
+David has entered 6 races this season, 1 Double Distance, 4 Full, and 1 Super Teams.
 
 ```{r a-David-Emery-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "David Emery", len_season=26)
@@ -1030,13 +1192,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "David Emery", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-David-Emery-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "David Emery", "teams")
+```
+
 # Nicholas Fawaz {#a-Nicholas-Fawaz}
 
 Nicholas has results for 1 season.
 
 ## 2020-2021
 
-Nicholas has entered 1 race this season, full distance.
+Nicholas has entered 1 race this season, 1 Full.
 
 ```{r a-Nicholas-Fawaz-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Nicholas Fawaz", len_season=26)
@@ -1058,7 +1229,7 @@ Marcus has results for 1 season.
 
 ## 2020-2021
 
-Marcus has entered 1 race this season, intermediate distance.
+Marcus has entered 1 race this season, 1 Intermediate.
 
 ```{r a-Marcus-Fox-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Marcus Fox", len_season=26)
@@ -1080,7 +1251,7 @@ Tracy has results for 1 season.
 
 ## 2020-2021
 
-Tracy has entered 19 races this season, 17 full distance and 2 double distance.
+Tracy has entered 21 races this season, 17 Full, 2 Double Distance, and 2 Super Teams.
 
 ```{r a-Tracy-Foyster-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Tracy Foyster", len_season=26)
@@ -1105,13 +1276,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Tracy Foyster", "double")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Tracy-Foyster-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Tracy Foyster", "teams")
+```
+
 # Gregory Freeman {#a-Gregory-Freeman}
 
 Gregory has results for 1 season.
 
 ## 2020-2021
 
-Gregory has entered 17 races this season, all full distance.
+Gregory has entered 18 races this season, 17 Full and 1 Super Teams.
 
 ```{r a-Gregory-Freeman-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Gregory Freeman", len_season=26)
@@ -1127,18 +1307,36 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Gregory Freeman", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Gregory-Freeman-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Gregory Freeman", "teams")
+```
+
 # Kipp Freeman {#a-Kipp-Freeman}
 
 Kipp has results for 1 season.
 
 ## 2020-2021
 
-Kipp has entered 6 races this season, all full distance.
+Kipp has entered 8 races this season, 2 Super Teams and 6 Full.
 
 ```{r a-Kipp-Freeman-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Kipp Freeman", len_season=26)
 ```
 
+
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Kipp-Freeman-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Kipp Freeman", "teams")
+```
 
 
 ### Detailed results for Full course
@@ -1155,7 +1353,7 @@ Matt has results for 1 season.
 
 ## 2020-2021
 
-Matt has entered 5 races this season, all full distance.
+Matt has entered 5 races this season, 5 Full.
 
 ```{r a-Matt-Gabb-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Matt Gabb", len_season=26)
@@ -1177,7 +1375,7 @@ Trudy has results for 1 season.
 
 ## 2020-2021
 
-Trudy has entered 8 races this season, 1 intermediate distance and 7 full distance.
+Trudy has entered 9 races this season, 1 Intermediate, 7 Full, and 1 Super Teams.
 
 ```{r a-Trudy-Gadaleta-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Trudy Gadaleta", len_season=26)
@@ -1202,13 +1400,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Trudy Gadaleta", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Trudy-Gadaleta-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Trudy Gadaleta", "teams")
+```
+
 # Alycia Garriock {#a-Alycia-Garriock}
 
 Alycia has results for 1 season.
 
 ## 2020-2021
 
-Alycia has entered 2 races this season, both full distance.
+Alycia has entered 3 races this season, 2 Full and 1 Super Teams.
 
 ```{r a-Alycia-Garriock-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Alycia Garriock", len_season=26)
@@ -1224,13 +1431,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Alycia Garriock", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Alycia-Garriock-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Alycia Garriock", "teams")
+```
+
 # Kylie Gibson {#a-Kylie-Gibson}
 
 Kylie has results for 1 season.
 
 ## 2020-2021
 
-Kylie has entered 10 races this season, 5 intermediate distance and 5 full distance.
+Kylie has entered 12 races this season, 5 Intermediate, 2 Super Teams, and 5 Full.
 
 ```{r a-Kylie-Gibson-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Kylie Gibson", len_season=26)
@@ -1244,6 +1460,15 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 
 ```{r a-Kylie-Gibson-table-2020-2021-int}
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Kylie Gibson", "int")
+```
+
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Kylie-Gibson-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Kylie Gibson", "teams")
 ```
 
 
@@ -1261,7 +1486,7 @@ Tyler has results for 1 season.
 
 ## 2020-2021
 
-Tyler has entered 1 race this season, full distance.
+Tyler has entered 2 races this season, 1 Full and 1 Super Teams.
 
 ```{r a-Tyler-Gilbert-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Tyler Gilbert", len_season=26)
@@ -1277,13 +1502,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Tyler Gilbert", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Tyler-Gilbert-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Tyler Gilbert", "teams")
+```
+
 # Alex Gilks {#a-Alex-Gilks}
 
 Alex has results for 1 season.
 
 ## 2020-2021
 
-Alex has entered 15 races this season, all full distance.
+Alex has entered 17 races this season, 15 Full and 2 Super Teams.
 
 ```{r a-Alex-Gilks-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Alex Gilks", len_season=26)
@@ -1299,13 +1533,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Alex Gilks", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Alex-Gilks-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Alex Gilks", "teams")
+```
+
 # Rob Gillies {#a-Rob-Gillies}
 
 Rob has results for 1 season.
 
 ## 2020-2021
 
-Rob has entered 14 races this season, all full distance.
+Rob has entered 14 races this season, 14 Full.
 
 ```{r a-Rob-Gillies-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Rob Gillies", len_season=26)
@@ -1327,7 +1570,7 @@ Katie has results for 1 season.
 
 ## 2020-2021
 
-Katie has entered 11 races this season, 9 intermediate distance and 2 full distance.
+Katie has entered 12 races this season, 9 Intermediate, 1 Super Teams, and 2 Full.
 
 ```{r a-Katie-Glynn-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Katie Glynn", len_season=26)
@@ -1341,6 +1584,15 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 
 ```{r a-Katie-Glynn-table-2020-2021-int}
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Katie Glynn", "int")
+```
+
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Katie-Glynn-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Katie Glynn", "teams")
 ```
 
 
@@ -1358,7 +1610,7 @@ Des has results for 1 season.
 
 ## 2020-2021
 
-Des has entered 10 races this season, 8 full distance and 2 double distance.
+Des has entered 10 races this season, 8 Full and 2 Double Distance.
 
 ```{r a-Des-Gooda-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Des Gooda", len_season=26)
@@ -1389,7 +1641,7 @@ Ben has results for 1 season.
 
 ## 2020-2021
 
-Ben has entered 18 races this season, 16 full distance and 2 double distance.
+Ben has entered 20 races this season, 16 Full, 2 Double Distance, and 2 Super Teams.
 
 ```{r a-Ben-Hall-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Ben Hall", len_season=26)
@@ -1414,26 +1666,13 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Ben Hall", "double")
 ```
 
-# Jack Hall {#a-Jack-Hall}
 
-Jack has results for 1 season.
-
-## 2020-2021
-
-Jack has entered 1 race this season, intermediate distance.
-
-```{r a-Jack-Hall-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jack Hall", len_season=26)
-```
-
-
-
-### Detailed results for Intermediate course
+### Detailed results for Super Teams course
 
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
-```{r a-Jack-Hall-table-2020-2021-int}
-table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Jack Hall", "int")
+```{r a-Ben-Hall-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Ben Hall", "teams")
 ```
 
 # Manda Hall {#a-Manda-Hall}
@@ -1442,7 +1681,7 @@ Manda has results for 1 season.
 
 ## 2020-2021
 
-Manda has entered 2 races this season, both intermediate distance.
+Manda has entered 2 races this season, 2 Intermediate.
 
 ```{r a-Manda-Hall-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Manda Hall", len_season=26)
@@ -1458,13 +1697,35 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Manda Hall", "int")
 ```
 
+# Jack Hall {#a-Jack-Hall}
+
+Jack has results for 1 season.
+
+## 2020-2021
+
+Jack has entered 1 race this season, 1 Intermediate.
+
+```{r a-Jack-Hall-plot-2020-2021}
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jack Hall", len_season=26)
+```
+
+
+
+### Detailed results for Intermediate course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Jack-Hall-table-2020-2021-int}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Jack Hall", "int")
+```
+
 # Simon Harradence {#a-Simon-Harradence}
 
 Simon has results for 1 season.
 
 ## 2020-2021
 
-Simon has entered 11 races this season, 9 full distance and 2 double distance.
+Simon has entered 12 races this season, 9 Full, 2 Double Distance, and 1 Super Teams.
 
 ```{r a-Simon-Harradence-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Simon Harradence", len_season=26)
@@ -1489,13 +1750,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Simon Harradence", "double")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Simon-Harradence-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Simon Harradence", "teams")
+```
+
 # Peter Harrington {#a-Peter-Harrington}
 
 Peter has results for 1 season.
 
 ## 2020-2021
 
-Peter has entered 1 race this season, full distance.
+Peter has entered 1 race this season, 1 Full.
 
 ```{r a-Peter-Harrington-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Peter Harrington", len_season=26)
@@ -1517,7 +1787,7 @@ Remy has results for 1 season.
 
 ## 2020-2021
 
-Remy has entered 15 races this season, all intermediate distance.
+Remy has entered 17 races this season, 15 Intermediate and 2 Super Teams.
 
 ```{r a-Remy-Hawkins-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Remy Hawkins", len_season=26)
@@ -1533,13 +1803,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Remy Hawkins", "int")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Remy-Hawkins-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Remy Hawkins", "teams")
+```
+
 # Cassandra Heaslip {#a-Cassandra-Heaslip}
 
 Cassandra has results for 1 season.
 
 ## 2020-2021
 
-Cassandra has entered 2 races this season, both full distance.
+Cassandra has entered 2 races this season, 2 Full.
 
 ```{r a-Cassandra-Heaslip-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Cassandra Heaslip", len_season=26)
@@ -1561,7 +1840,7 @@ Glenn has results for 1 season.
 
 ## 2020-2021
 
-Glenn has entered 10 races this season, all intermediate distance.
+Glenn has entered 10 races this season, 10 Intermediate.
 
 ```{r a-Glenn-Hind-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Glenn Hind", len_season=26)
@@ -1583,7 +1862,7 @@ Caroline has results for 1 season.
 
 ## 2020-2021
 
-Caroline has entered 10 races this season, 8 full distance and 2 intermediate distance.
+Caroline has entered 10 races this season, 8 Full and 2 Intermediate.
 
 ```{r a-Caroline-Hogan-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Caroline Hogan", len_season=26)
@@ -1614,7 +1893,7 @@ David has results for 1 season.
 
 ## 2020-2021
 
-David has entered 8 races this season, all full distance.
+David has entered 9 races this season, 8 Full and 1 Super Teams.
 
 ```{r a-David-Hogan-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "David Hogan", len_season=26)
@@ -1630,13 +1909,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "David Hogan", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-David-Hogan-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "David Hogan", "teams")
+```
+
 # Kent Holmes {#a-Kent-Holmes}
 
 Kent has results for 1 season.
 
 ## 2020-2021
 
-Kent has entered 12 races this season, all full distance.
+Kent has entered 12 races this season, 12 Full.
 
 ```{r a-Kent-Holmes-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Kent Holmes", len_season=26)
@@ -1658,7 +1946,7 @@ Josh has results for 1 season.
 
 ## 2020-2021
 
-Josh has entered 6 races this season, 3 full distance and 3 intermediate distance.
+Josh has entered 6 races this season, 3 Full and 3 Intermediate.
 
 ```{r a-Josh-Horsley-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Josh Horsley", len_season=26)
@@ -1689,7 +1977,7 @@ Haydn has results for 1 season.
 
 ## 2020-2021
 
-Haydn has entered 1 race this season, full distance.
+Haydn has entered 1 race this season, 1 Full.
 
 ```{r a-Haydn-Jenkins-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Haydn Jenkins", len_season=26)
@@ -1711,7 +1999,7 @@ Dan has results for 1 season.
 
 ## 2020-2021
 
-Dan has entered 6 races this season, all full distance.
+Dan has entered 7 races this season, 6 Full and 1 Super Teams.
 
 ```{r a-Dan-Johnson-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Dan Johnson", len_season=26)
@@ -1727,13 +2015,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Dan Johnson", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Dan-Johnson-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Dan Johnson", "teams")
+```
+
 # Darren Jones {#a-Darren-Jones}
 
 Darren has results for 1 season.
 
 ## 2020-2021
 
-Darren has entered 21 races this season, 19 full distance and 2 double distance.
+Darren has entered 22 races this season, 19 Full, 2 Double Distance, and 1 Super Teams.
 
 ```{r a-Darren-Jones-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Darren Jones", len_season=26)
@@ -1758,13 +2055,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Darren Jones", "double")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Darren-Jones-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Darren Jones", "teams")
+```
+
 # Ginny Jones {#a-Ginny-Jones}
 
 Ginny has results for 1 season.
 
 ## 2020-2021
 
-Ginny has entered 18 races this season, all full distance.
+Ginny has entered 20 races this season, 18 Full and 2 Super Teams.
 
 ```{r a-Ginny-Jones-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Ginny Jones", len_season=26)
@@ -1780,13 +2086,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Ginny Jones", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Ginny-Jones-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Ginny Jones", "teams")
+```
+
 # Michelle Jones {#a-Michelle-Jones}
 
 Michelle has results for 1 season.
 
 ## 2020-2021
 
-Michelle has entered 8 races this season, 4 full distance and 4 intermediate distance.
+Michelle has entered 9 races this season, 4 Full, 1 Super Teams, and 4 Intermediate.
 
 ```{r a-Michelle-Jones-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Michelle Jones", len_season=26)
@@ -1800,6 +2115,15 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 
 ```{r a-Michelle-Jones-table-2020-2021-full}
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Michelle Jones", "full")
+```
+
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Michelle-Jones-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Michelle Jones", "teams")
 ```
 
 
@@ -1817,7 +2141,7 @@ Danny has results for 1 season.
 
 ## 2020-2021
 
-Danny has entered 8 races this season, all full distance.
+Danny has entered 9 races this season, 8 Full and 1 Super Teams.
 
 ```{r a-Danny-Khazen-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Danny Khazen", len_season=26)
@@ -1833,13 +2157,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Danny Khazen", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Danny-Khazen-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Danny Khazen", "teams")
+```
+
 # John King {#a-John-King}
 
 John has results for 1 season.
 
 ## 2020-2021
 
-John has entered 17 races this season, all full distance.
+John has entered 17 races this season, 17 Full.
 
 ```{r a-John-King-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "John King", len_season=26)
@@ -1861,7 +2194,7 @@ Sally has results for 1 season.
 
 ## 2020-2021
 
-Sally has entered 5 races this season, 3 intermediate distance and 2 full distance.
+Sally has entered 5 races this season, 3 Intermediate and 2 Full.
 
 ```{r a-Sally-Kingston-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Sally Kingston", len_season=26)
@@ -1892,7 +2225,7 @@ Sharyn has results for 1 season.
 
 ## 2020-2021
 
-Sharyn has entered 13 races this season, all full distance.
+Sharyn has entered 14 races this season, 13 Full and 1 Super Teams.
 
 ```{r a-Sharyn-Klein-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Sharyn Klein", len_season=26)
@@ -1908,13 +2241,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Sharyn Klein", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Sharyn-Klein-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Sharyn Klein", "teams")
+```
+
 # Nadja Kundrus-Little {#a-Nadja-Kundrus-Little}
 
 Nadja has results for 1 season.
 
 ## 2020-2021
 
-Nadja has entered 3 races this season, all full distance.
+Nadja has entered 4 races this season, 3 Full and 1 Super Teams.
 
 ```{r a-Nadja-Kundrus-Little-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Nadja Kundrus-Little", len_season=26)
@@ -1930,13 +2272,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Nadja Kundrus-Little", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Nadja-Kundrus-Little-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Nadja Kundrus-Little", "teams")
+```
+
 # Lydia Kuschmirz {#a-Lydia-Kuschmirz}
 
 Lydia has results for 1 season.
 
 ## 2020-2021
 
-Lydia has entered 12 races this season, all intermediate distance.
+Lydia has entered 13 races this season, 12 Intermediate and 1 Super Teams.
 
 ```{r a-Lydia-Kuschmirz-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Lydia Kuschmirz", len_season=26)
@@ -1952,13 +2303,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Lydia Kuschmirz", "int")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Lydia-Kuschmirz-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Lydia Kuschmirz", "teams")
+```
+
 # Val Lambard {#a-Val-Lambard}
 
 Val has results for 1 season.
 
 ## 2020-2021
 
-Val has entered 13 races this season, all full distance.
+Val has entered 15 races this season, 13 Full and 2 Super Teams.
 
 ```{r a-Val-Lambard-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Val Lambard", len_season=26)
@@ -1974,13 +2334,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Val Lambard", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Val-Lambard-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Val Lambard", "teams")
+```
+
 # Matt Lance {#a-Matt-Lance}
 
 Matt has results for 1 season.
 
 ## 2020-2021
 
-Matt has entered 1 race this season, double distance.
+Matt has entered 1 race this season, 1 Double Distance.
 
 ```{r a-Matt-Lance-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Matt Lance", len_season=26)
@@ -1996,13 +2365,35 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Matt Lance", "double")
 ```
 
+# Glenn Lance {#a-Glenn-Lance}
+
+Glenn has results for 1 season.
+
+## 2020-2021
+
+Glenn has entered 1 race this season, 1 Super Teams.
+
+```{r a-Glenn-Lance-plot-2020-2021}
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Glenn Lance", len_season=26)
+```
+
+
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Glenn-Lance-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Glenn Lance", "teams")
+```
+
 # Samantha Leonard {#a-Samantha-Leonard}
 
 Samantha has results for 1 season.
 
 ## 2020-2021
 
-Samantha has entered 14 races this season, 13 full distance and 1 double distance.
+Samantha has entered 16 races this season, 13 Full, 1 Double Distance, and 2 Super Teams.
 
 ```{r a-Samantha-Leonard-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Samantha Leonard", len_season=26)
@@ -2027,13 +2418,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Samantha Leonard", "double")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Samantha-Leonard-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Samantha Leonard", "teams")
+```
+
 # Jennifer Love {#a-Jennifer-Love}
 
 Jennifer has results for 1 season.
 
 ## 2020-2021
 
-Jennifer has entered 4 races this season, 3 full distance and 1 intermediate distance.
+Jennifer has entered 4 races this season, 3 Full and 1 Intermediate.
 
 ```{r a-Jennifer-Love-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jennifer Love", len_season=26)
@@ -2064,7 +2464,7 @@ Julie has results for 1 season.
 
 ## 2020-2021
 
-Julie has entered 3 races this season, 1 full distance and 2 intermediate distance.
+Julie has entered 4 races this season, 1 Full, 1 Super Teams, and 2 Intermediate.
 
 ```{r a-Julie-Lowe-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Julie Lowe", len_season=26)
@@ -2078,6 +2478,15 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 
 ```{r a-Julie-Lowe-table-2020-2021-full}
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Julie Lowe", "full")
+```
+
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Julie-Lowe-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Julie Lowe", "teams")
 ```
 
 
@@ -2095,7 +2504,7 @@ Stuart has results for 1 season.
 
 ## 2020-2021
 
-Stuart has entered 3 races this season, 1 intermediate distance and 2 full distance.
+Stuart has entered 4 races this season, 1 Intermediate, 2 Full, and 1 Super Teams.
 
 ```{r a-Stuart-Mason-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Stuart Mason", len_season=26)
@@ -2120,16 +2529,25 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Stuart Mason", "full")
 ```
 
-# David McEwan {#a-David-McEwan}
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Stuart-Mason-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Stuart Mason", "teams")
+```
+
+# David Mcewan {#a-David-Mcewan}
 
 David has results for 1 season.
 
 ## 2020-2021
 
-David has entered 1 race this season, full distance.
+David has entered 2 races this season, 1 Full and 1 Super Teams.
 
-```{r a-David-McEwan-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "David McEwan", len_season=26)
+```{r a-David-Mcewan-plot-2020-2021}
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "David Mcewan", len_season=26)
 ```
 
 
@@ -2138,20 +2556,29 @@ plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "David McEwan", len_s
 
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
-```{r a-David-McEwan-table-2020-2021-full}
-table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "David McEwan", "full")
+```{r a-David-Mcewan-table-2020-2021-full}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "David Mcewan", "full")
 ```
 
-# Stuart McGill {#a-Stuart-McGill}
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-David-Mcewan-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "David Mcewan", "teams")
+```
+
+# Stuart Mcgill {#a-Stuart-Mcgill}
 
 Stuart has results for 1 season.
 
 ## 2020-2021
 
-Stuart has entered 1 race this season, full distance.
+Stuart has entered 1 race this season, 1 Full.
 
-```{r a-Stuart-McGill-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Stuart McGill", len_season=26)
+```{r a-Stuart-Mcgill-plot-2020-2021}
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Stuart Mcgill", len_season=26)
 ```
 
 
@@ -2160,20 +2587,20 @@ plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Stuart McGill", len_
 
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
-```{r a-Stuart-McGill-table-2020-2021-full}
-table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Stuart McGill", "full")
+```{r a-Stuart-Mcgill-table-2020-2021-full}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Stuart Mcgill", "full")
 ```
 
-# Bec McLucas {#a-Bec-McLucas}
+# Bec Mclucas {#a-Bec-Mclucas}
 
 Bec has results for 1 season.
 
 ## 2020-2021
 
-Bec has entered 5 races this season, 4 full distance and 1 double distance.
+Bec has entered 5 races this season, 4 Full and 1 Double Distance.
 
-```{r a-Bec-McLucas-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Bec McLucas", len_season=26)
+```{r a-Bec-Mclucas-plot-2020-2021}
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Bec Mclucas", len_season=26)
 ```
 
 
@@ -2182,8 +2609,8 @@ plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Bec McLucas", len_se
 
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
-```{r a-Bec-McLucas-table-2020-2021-full}
-table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Bec McLucas", "full")
+```{r a-Bec-Mclucas-table-2020-2021-full}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Bec Mclucas", "full")
 ```
 
 
@@ -2191,52 +2618,8 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Bec McLucas", 
 
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
-```{r a-Bec-McLucas-table-2020-2021-double}
-table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Bec McLucas", "double")
-```
-
-# Andrew Miller {#a-Andrew-Miller}
-
-Andrew has results for 1 season.
-
-## 2020-2021
-
-Andrew has entered 12 races this season, all full distance.
-
-```{r a-Andrew-Miller-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Andrew Miller", len_season=26)
-```
-
-
-
-### Detailed results for Full course
-
-Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
-
-```{r a-Andrew-Miller-table-2020-2021-full}
-table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Andrew Miller", "full")
-```
-
-# Kat Miller {#a-Kat-Miller}
-
-Kat has results for 1 season.
-
-## 2020-2021
-
-Kat has entered 13 races this season, all full distance.
-
-```{r a-Kat-Miller-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Kat Miller", len_season=26)
-```
-
-
-
-### Detailed results for Full course
-
-Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
-
-```{r a-Kat-Miller-table-2020-2021-full}
-table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Kat Miller", "full")
+```{r a-Bec-Mclucas-table-2020-2021-double}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Bec Mclucas", "double")
 ```
 
 # Michelle Miller {#a-Michelle-Miller}
@@ -2245,7 +2628,7 @@ Michelle has results for 1 season.
 
 ## 2020-2021
 
-Michelle has entered 5 races this season, 4 full distance and 1 double distance.
+Michelle has entered 5 races this season, 4 Full and 1 Double Distance.
 
 ```{r a-Michelle-Miller-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Michelle Miller", len_season=26)
@@ -2270,13 +2653,75 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Michelle Miller", "double")
 ```
 
+# Andrew Miller {#a-Andrew-Miller}
+
+Andrew has results for 1 season.
+
+## 2020-2021
+
+Andrew has entered 14 races this season, 12 Full and 2 Super Teams.
+
+```{r a-Andrew-Miller-plot-2020-2021}
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Andrew Miller", len_season=26)
+```
+
+
+
+### Detailed results for Full course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Andrew-Miller-table-2020-2021-full}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Andrew Miller", "full")
+```
+
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Andrew-Miller-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Andrew Miller", "teams")
+```
+
+# Kat Miller {#a-Kat-Miller}
+
+Kat has results for 1 season.
+
+## 2020-2021
+
+Kat has entered 14 races this season, 13 Full and 1 Super Teams.
+
+```{r a-Kat-Miller-plot-2020-2021}
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Kat Miller", len_season=26)
+```
+
+
+
+### Detailed results for Full course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Kat-Miller-table-2020-2021-full}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Kat Miller", "full")
+```
+
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Kat-Miller-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Kat Miller", "teams")
+```
+
 # Kyle Mooney {#a-Kyle-Mooney}
 
 Kyle has results for 1 season.
 
 ## 2020-2021
 
-Kyle has entered 11 races this season, 9 full distance and 2 double distance.
+Kyle has entered 12 races this season, 9 Full, 2 Double Distance, and 1 Super Teams.
 
 ```{r a-Kyle-Mooney-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Kyle Mooney", len_season=26)
@@ -2301,26 +2746,13 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Kyle Mooney", "double")
 ```
 
-# James Mourant {#a-James-Mourant}
 
-James has results for 1 season.
-
-## 2020-2021
-
-James has entered 4 races this season, all full distance.
-
-```{r a-James-Mourant-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "James Mourant", len_season=26)
-```
-
-
-
-### Detailed results for Full course
+### Detailed results for Super Teams course
 
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
-```{r a-James-Mourant-table-2020-2021-full}
-table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "James Mourant", "full")
+```{r a-Kyle-Mooney-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Kyle Mooney", "teams")
 ```
 
 # Richard Mourant {#a-Richard-Mourant}
@@ -2329,7 +2761,7 @@ Richard has results for 1 season.
 
 ## 2020-2021
 
-Richard has entered 16 races this season, 14 full distance and 2 double distance.
+Richard has entered 17 races this season, 14 Full, 2 Double Distance, and 1 Super Teams.
 
 ```{r a-Richard-Mourant-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Richard Mourant", len_season=26)
@@ -2354,38 +2786,25 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Richard Mourant", "double")
 ```
 
-# Ashleigh Murphy {#a-Ashleigh-Murphy}
 
-Ashleigh has results for 1 season.
-
-## 2020-2021
-
-Ashleigh has entered 8 races this season, all intermediate distance.
-
-```{r a-Ashleigh-Murphy-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Ashleigh Murphy", len_season=26)
-```
-
-
-
-### Detailed results for Intermediate course
+### Detailed results for Super Teams course
 
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
-```{r a-Ashleigh-Murphy-table-2020-2021-int}
-table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Ashleigh Murphy", "int")
+```{r a-Richard-Mourant-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Richard Mourant", "teams")
 ```
 
-# Ben Murphy {#a-Ben-Murphy}
+# James Mourant {#a-James-Mourant}
 
-Ben has results for 1 season.
+James has results for 1 season.
 
 ## 2020-2021
 
-Ben has entered 1 race this season, full distance.
+James has entered 5 races this season, 4 Full and 1 Super Teams.
 
-```{r a-Ben-Murphy-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Ben Murphy", len_season=26)
+```{r a-James-Mourant-plot-2020-2021}
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "James Mourant", len_season=26)
 ```
 
 
@@ -2394,8 +2813,17 @@ plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Ben Murphy", len_sea
 
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
-```{r a-Ben-Murphy-table-2020-2021-full}
-table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Ben Murphy", "full")
+```{r a-James-Mourant-table-2020-2021-full}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "James Mourant", "full")
+```
+
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-James-Mourant-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "James Mourant", "teams")
 ```
 
 # Helen Murphy {#a-Helen-Murphy}
@@ -2404,7 +2832,7 @@ Helen has results for 1 season.
 
 ## 2020-2021
 
-Helen has entered 11 races this season, 4 intermediate distance and 7 full distance.
+Helen has entered 13 races this season, 4 Intermediate, 2 Super Teams, and 7 Full.
 
 ```{r a-Helen-Murphy-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Helen Murphy", len_season=26)
@@ -2421,6 +2849,15 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Helen Murphy",
 ```
 
 
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Helen-Murphy-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Helen Murphy", "teams")
+```
+
+
 ### Detailed results for Full course
 
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
@@ -2429,16 +2866,38 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Helen Murphy", "full")
 ```
 
-# Darren Murray {#a-Darren-Murray}
+# Ben Murphy {#a-Ben-Murphy}
 
-Darren has results for 1 season.
+Ben has results for 1 season.
 
 ## 2020-2021
 
-Darren has entered 5 races this season, all intermediate distance.
+Ben has entered 1 race this season, 1 Full.
 
-```{r a-Darren-Murray-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Darren Murray", len_season=26)
+```{r a-Ben-Murphy-plot-2020-2021}
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Ben Murphy", len_season=26)
+```
+
+
+
+### Detailed results for Full course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Ben-Murphy-table-2020-2021-full}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Ben Murphy", "full")
+```
+
+# Ashleigh Murphy {#a-Ashleigh-Murphy}
+
+Ashleigh has results for 1 season.
+
+## 2020-2021
+
+Ashleigh has entered 8 races this season, 8 Intermediate.
+
+```{r a-Ashleigh-Murphy-plot-2020-2021}
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Ashleigh Murphy", len_season=26)
 ```
 
 
@@ -2447,8 +2906,8 @@ plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Darren Murray", len_
 
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
-```{r a-Darren-Murray-table-2020-2021-int}
-table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Darren Murray", "int")
+```{r a-Ashleigh-Murphy-table-2020-2021-int}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Ashleigh Murphy", "int")
 ```
 
 # Jeff Murray {#a-Jeff-Murray}
@@ -2457,7 +2916,7 @@ Jeff has results for 1 season.
 
 ## 2020-2021
 
-Jeff has entered 15 races this season, all full distance.
+Jeff has entered 15 races this season, 15 Full.
 
 ```{r a-Jeff-Murray-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jeff Murray", len_season=26)
@@ -2479,7 +2938,7 @@ Judy has results for 1 season.
 
 ## 2020-2021
 
-Judy has entered 13 races this season, all intermediate distance.
+Judy has entered 13 races this season, 13 Intermediate.
 
 ```{r a-Judy-Murray-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Judy Murray", len_season=26)
@@ -2495,13 +2954,35 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Judy Murray", "int")
 ```
 
+# Darren Murray {#a-Darren-Murray}
+
+Darren has results for 1 season.
+
+## 2020-2021
+
+Darren has entered 5 races this season, 5 Intermediate.
+
+```{r a-Darren-Murray-plot-2020-2021}
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Darren Murray", len_season=26)
+```
+
+
+
+### Detailed results for Intermediate course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Darren-Murray-table-2020-2021-int}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Darren Murray", "int")
+```
+
 # Aaron Neylan {#a-Aaron-Neylan}
 
 Aaron has results for 1 season.
 
 ## 2020-2021
 
-Aaron has entered 14 races this season, 13 full distance and 1 double distance.
+Aaron has entered 15 races this season, 13 Full, 1 Double Distance, and 1 Super Teams.
 
 ```{r a-Aaron-Neylan-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Aaron Neylan", len_season=26)
@@ -2526,13 +3007,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Aaron Neylan", "double")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Aaron-Neylan-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Aaron Neylan", "teams")
+```
+
 # Lynette Nisbet {#a-Lynette-Nisbet}
 
 Lynette has results for 1 season.
 
 ## 2020-2021
 
-Lynette has entered 2 races this season, both full distance.
+Lynette has entered 2 races this season, 2 Full.
 
 ```{r a-Lynette-Nisbet-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Lynette Nisbet", len_season=26)
@@ -2554,7 +3044,7 @@ Karen has results for 1 season.
 
 ## 2020-2021
 
-Karen has entered 7 races this season, all intermediate distance.
+Karen has entered 8 races this season, 7 Intermediate and 1 Super Teams.
 
 ```{r a-Karen-Nixon-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Karen Nixon", len_season=26)
@@ -2570,13 +3060,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Karen Nixon", "int")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Karen-Nixon-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Karen Nixon", "teams")
+```
+
 # Lucas Nixon-Hind {#a-Lucas-Nixon-Hind}
 
 Lucas has results for 1 season.
 
 ## 2020-2021
 
-Lucas has entered 11 races this season, all intermediate distance.
+Lucas has entered 12 races this season, 11 Intermediate and 1 Super Teams.
 
 ```{r a-Lucas-Nixon-Hind-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Lucas Nixon-Hind", len_season=26)
@@ -2592,38 +3091,25 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Lucas Nixon-Hind", "int")
 ```
 
-# Andy O'Reilly {#a-Andy-OReilly}
 
-Andy has results for 1 season.
-
-## 2020-2021
-
-Andy has entered 1 race this season, full distance.
-
-```{r a-Andy-OReilly-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Andy O'Reilly", len_season=26)
-```
-
-
-
-### Detailed results for Full course
+### Detailed results for Super Teams course
 
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
-```{r a-Andy-OReilly-table-2020-2021-full}
-table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Andy O'Reilly", "full")
+```{r a-Lucas-Nixon-Hind-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Lucas Nixon-Hind", "teams")
 ```
 
-# Nick O'Reilly {#a-Nick-OReilly}
+# Nick O'reilly {#a-Nick-Oreilly}
 
 Nick has results for 1 season.
 
 ## 2020-2021
 
-Nick has entered 7 races this season, 6 full distance and 1 double distance.
+Nick has entered 7 races this season, 6 Full and 1 Double Distance.
 
-```{r a-Nick-OReilly-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Nick O'Reilly", len_season=26)
+```{r a-Nick-Oreilly-plot-2020-2021}
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Nick O'reilly", len_season=26)
 ```
 
 
@@ -2632,8 +3118,8 @@ plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Nick O'Reilly", len_
 
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
-```{r a-Nick-OReilly-table-2020-2021-full}
-table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Nick O'Reilly", "full")
+```{r a-Nick-Oreilly-table-2020-2021-full}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Nick O'reilly", "full")
 ```
 
 
@@ -2641,8 +3127,30 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Nick O'Reilly"
 
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
-```{r a-Nick-OReilly-table-2020-2021-double}
-table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Nick O'Reilly", "double")
+```{r a-Nick-Oreilly-table-2020-2021-double}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Nick O'reilly", "double")
+```
+
+# Andy O'reilly {#a-Andy-Oreilly}
+
+Andy has results for 1 season.
+
+## 2020-2021
+
+Andy has entered 1 race this season, 1 Full.
+
+```{r a-Andy-Oreilly-plot-2020-2021}
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Andy O'reilly", len_season=26)
+```
+
+
+
+### Detailed results for Full course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Andy-Oreilly-table-2020-2021-full}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Andy O'reilly", "full")
 ```
 
 # Trent Ousby {#a-Trent-Ousby}
@@ -2651,7 +3159,7 @@ Trent has results for 1 season.
 
 ## 2020-2021
 
-Trent has entered 1 race this season, full distance.
+Trent has entered 1 race this season, 1 Full.
 
 ```{r a-Trent-Ousby-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Trent Ousby", len_season=26)
@@ -2673,7 +3181,7 @@ Annika has results for 1 season.
 
 ## 2020-2021
 
-Annika has entered 1 race this season, intermediate distance.
+Annika has entered 1 race this season, 1 Intermediate.
 
 ```{r a-Annika-Parker-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Annika Parker", len_season=26)
@@ -2695,7 +3203,7 @@ Glenn has results for 1 season.
 
 ## 2020-2021
 
-Glenn has entered 3 races this season, all full distance.
+Glenn has entered 3 races this season, 3 Full.
 
 ```{r a-Glenn-Payne-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Glenn Payne", len_season=26)
@@ -2717,7 +3225,7 @@ Clive has results for 1 season.
 
 ## 2020-2021
 
-Clive has entered 11 races this season, all full distance.
+Clive has entered 13 races this season, 11 Full and 2 Super Teams.
 
 ```{r a-Clive-Pearce-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Clive Pearce", len_season=26)
@@ -2733,13 +3241,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Clive Pearce", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Clive-Pearce-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Clive Pearce", "teams")
+```
+
 # Stephen Ring {#a-Stephen-Ring}
 
 Stephen has results for 1 season.
 
 ## 2020-2021
 
-Stephen has entered 6 races this season, all full distance.
+Stephen has entered 6 races this season, 6 Full.
 
 ```{r a-Stephen-Ring-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Stephen Ring", len_season=26)
@@ -2761,7 +3278,7 @@ Carol has results for 1 season.
 
 ## 2020-2021
 
-Carol has entered 4 races this season, 3 full distance and 1 intermediate distance.
+Carol has entered 4 races this season, 3 Full and 1 Intermediate.
 
 ```{r a-Carol-Ririnui-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Carol Ririnui", len_season=26)
@@ -2786,13 +3303,44 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Carol Ririnui", "int")
 ```
 
+# Kaleb Robards {#a-Kaleb-Robards}
+
+Kaleb has results for 1 season.
+
+## 2020-2021
+
+Kaleb has entered 9 races this season, 7 Full and 2 Super Teams.
+
+```{r a-Kaleb-Robards-plot-2020-2021}
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Kaleb Robards", len_season=26)
+```
+
+
+
+### Detailed results for Full course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Kaleb-Robards-table-2020-2021-full}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Kaleb Robards", "full")
+```
+
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Kaleb-Robards-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Kaleb Robards", "teams")
+```
+
 # Gerard Robards {#a-Gerard-Robards}
 
 Gerard has results for 1 season.
 
 ## 2020-2021
 
-Gerard has entered 14 races this season, 12 full distance and 2 double distance.
+Gerard has entered 15 races this season, 12 Full, 2 Double Distance, and 1 Super Teams.
 
 ```{r a-Gerard-Robards-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Gerard Robards", len_season=26)
@@ -2817,13 +3365,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Gerard Robards", "double")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Gerard-Robards-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Gerard Robards", "teams")
+```
+
 # Hollie Robards {#a-Hollie-Robards}
 
 Hollie has results for 1 season.
 
 ## 2020-2021
 
-Hollie has entered 13 races this season, 12 full distance and 1 double distance.
+Hollie has entered 15 races this season, 12 Full, 2 Super Teams, and 1 Double Distance.
 
 ```{r a-Hollie-Robards-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Hollie Robards", len_season=26)
@@ -2840,6 +3397,15 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Hollie Robards
 ```
 
 
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Hollie-Robards-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Hollie Robards", "teams")
+```
+
+
 ### Detailed results for Double Distance course
 
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
@@ -2848,35 +3414,13 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Hollie Robards", "double")
 ```
 
-# Kaleb Robards {#a-Kaleb-Robards}
-
-Kaleb has results for 1 season.
-
-## 2020-2021
-
-Kaleb has entered 7 races this season, all full distance.
-
-```{r a-Kaleb-Robards-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Kaleb Robards", len_season=26)
-```
-
-
-
-### Detailed results for Full course
-
-Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
-
-```{r a-Kaleb-Robards-table-2020-2021-full}
-table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Kaleb Robards", "full")
-```
-
 # Anthony Rushton {#a-Anthony-Rushton}
 
 Anthony has results for 1 season.
 
 ## 2020-2021
 
-Anthony has entered 8 races this season, all full distance.
+Anthony has entered 9 races this season, 8 Full and 1 Super Teams.
 
 ```{r a-Anthony-Rushton-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Anthony Rushton", len_season=26)
@@ -2892,13 +3436,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Anthony Rushton", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Anthony-Rushton-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Anthony Rushton", "teams")
+```
+
 # Ross Salmon {#a-Ross-Salmon}
 
 Ross has results for 1 season.
 
 ## 2020-2021
 
-Ross has entered 14 races this season, all full distance.
+Ross has entered 15 races this season, 14 Full and 1 Super Teams.
 
 ```{r a-Ross-Salmon-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Ross Salmon", len_season=26)
@@ -2914,13 +3467,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Ross Salmon", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Ross-Salmon-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Ross Salmon", "teams")
+```
+
 # Philip Salter {#a-Philip-Salter}
 
 Philip has results for 1 season.
 
 ## 2020-2021
 
-Philip has entered 17 races this season, all full distance.
+Philip has entered 17 races this season, 17 Full.
 
 ```{r a-Philip-Salter-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Philip Salter", len_season=26)
@@ -2942,7 +3504,7 @@ Wendy has results for 1 season.
 
 ## 2020-2021
 
-Wendy has entered 9 races this season, all intermediate distance.
+Wendy has entered 10 races this season, 9 Intermediate and 1 Super Teams.
 
 ```{r a-Wendy-Sanders-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Wendy Sanders", len_season=26)
@@ -2958,13 +3520,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Wendy Sanders", "int")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Wendy-Sanders-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Wendy Sanders", "teams")
+```
+
 # Jenny Scaysbrook {#a-Jenny-Scaysbrook}
 
 Jenny has results for 1 season.
 
 ## 2020-2021
 
-Jenny has entered 10 races this season, all full distance.
+Jenny has entered 11 races this season, 10 Full and 1 Super Teams.
 
 ```{r a-Jenny-Scaysbrook-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jenny Scaysbrook", len_season=26)
@@ -2980,13 +3551,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Jenny Scaysbrook", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Jenny-Scaysbrook-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Jenny Scaysbrook", "teams")
+```
+
 # Peter Serone {#a-Peter-Serone}
 
 Peter has results for 1 season.
 
 ## 2020-2021
 
-Peter has entered 8 races this season, all full distance.
+Peter has entered 8 races this season, 8 Full.
 
 ```{r a-Peter-Serone-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Peter Serone", len_season=26)
@@ -3002,44 +3582,13 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Peter Serone", "full")
 ```
 
-# Rod Sewell {#a-Rod-Sewell}
-
-Rod has results for 1 season.
-
-## 2020-2021
-
-Rod has entered 15 races this season, 13 intermediate distance and 2 full distance.
-
-```{r a-Rod-Sewell-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Rod Sewell", len_season=26)
-```
-
-
-
-### Detailed results for Intermediate course
-
-Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
-
-```{r a-Rod-Sewell-table-2020-2021-int}
-table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Rod Sewell", "int")
-```
-
-
-### Detailed results for Full course
-
-Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
-
-```{r a-Rod-Sewell-table-2020-2021-full}
-table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Rod Sewell", "full")
-```
-
 # Tracey Sewell {#a-Tracey-Sewell}
 
 Tracey has results for 1 season.
 
 ## 2020-2021
 
-Tracey has entered 6 races this season, 5 full distance and 1 intermediate distance.
+Tracey has entered 6 races this season, 5 Full and 1 Intermediate.
 
 ```{r a-Tracey-Sewell-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Tracey Sewell", len_season=26)
@@ -3064,13 +3613,53 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Tracey Sewell", "int")
 ```
 
+# Rod Sewell {#a-Rod-Sewell}
+
+Rod has results for 1 season.
+
+## 2020-2021
+
+Rod has entered 17 races this season, 13 Intermediate, 2 Super Teams, and 2 Full.
+
+```{r a-Rod-Sewell-plot-2020-2021}
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Rod Sewell", len_season=26)
+```
+
+
+
+### Detailed results for Intermediate course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Rod-Sewell-table-2020-2021-int}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Rod Sewell", "int")
+```
+
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Rod-Sewell-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Rod Sewell", "teams")
+```
+
+
+### Detailed results for Full course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Rod-Sewell-table-2020-2021-full}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Rod Sewell", "full")
+```
+
 # Terence Simpson {#a-Terence-Simpson}
 
 Terence has results for 1 season.
 
 ## 2020-2021
 
-Terence has entered 15 races this season, all full distance.
+Terence has entered 17 races this season, 15 Full and 2 Super Teams.
 
 ```{r a-Terence-Simpson-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Terence Simpson", len_season=26)
@@ -3086,13 +3675,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Terence Simpson", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Terence-Simpson-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Terence Simpson", "teams")
+```
+
 # Vaughan Skelly {#a-Vaughan-Skelly}
 
 Vaughan has results for 1 season.
 
 ## 2020-2021
 
-Vaughan has entered 14 races this season, 13 full distance and 1 double distance.
+Vaughan has entered 16 races this season, 13 Full, 1 Double Distance, and 2 Super Teams.
 
 ```{r a-Vaughan-Skelly-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Vaughan Skelly", len_season=26)
@@ -3117,48 +3715,13 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Vaughan Skelly", "double")
 ```
 
-# Alex Smith {#a-Alex-Smith}
 
-Alex has results for 1 season.
-
-## 2020-2021
-
-Alex has entered 1 race this season, intermediate distance.
-
-```{r a-Alex-Smith-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Alex Smith", len_season=26)
-```
-
-
-
-### Detailed results for Intermediate course
+### Detailed results for Super Teams course
 
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
-```{r a-Alex-Smith-table-2020-2021-int}
-table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Alex Smith", "int")
-```
-
-# Geoff Smith {#a-Geoff-Smith}
-
-Geoff has results for 1 season.
-
-## 2020-2021
-
-Geoff has entered 1 race this season, intermediate distance.
-
-```{r a-Geoff-Smith-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Geoff Smith", len_season=26)
-```
-
-
-
-### Detailed results for Intermediate course
-
-Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
-
-```{r a-Geoff-Smith-table-2020-2021-int}
-table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Geoff Smith", "int")
+```{r a-Vaughan-Skelly-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Vaughan Skelly", "teams")
 ```
 
 # Rowena Smith {#a-Rowena-Smith}
@@ -3167,7 +3730,7 @@ Rowena has results for 1 season.
 
 ## 2020-2021
 
-Rowena has entered 12 races this season, 11 full distance and 1 double distance.
+Rowena has entered 14 races this season, 11 Full, 1 Double Distance, and 2 Super Teams.
 
 ```{r a-Rowena-Smith-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Rowena Smith", len_season=26)
@@ -3192,13 +3755,84 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Rowena Smith", "double")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Rowena-Smith-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Rowena Smith", "teams")
+```
+
+# Alex Smith {#a-Alex-Smith}
+
+Alex has results for 1 season.
+
+## 2020-2021
+
+Alex has entered 2 races this season, 1 Intermediate and 1 Super Teams.
+
+```{r a-Alex-Smith-plot-2020-2021}
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Alex Smith", len_season=26)
+```
+
+
+
+### Detailed results for Intermediate course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Alex-Smith-table-2020-2021-int}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Alex Smith", "int")
+```
+
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Alex-Smith-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Alex Smith", "teams")
+```
+
+# Geoff Smith {#a-Geoff-Smith}
+
+Geoff has results for 1 season.
+
+## 2020-2021
+
+Geoff has entered 2 races this season, 1 Intermediate and 1 Super Teams.
+
+```{r a-Geoff-Smith-plot-2020-2021}
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Geoff Smith", len_season=26)
+```
+
+
+
+### Detailed results for Intermediate course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Geoff-Smith-table-2020-2021-int}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Geoff Smith", "int")
+```
+
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Geoff-Smith-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Geoff Smith", "teams")
+```
+
 # Heidi Sowerby {#a-Heidi-Sowerby}
 
 Heidi has results for 1 season.
 
 ## 2020-2021
 
-Heidi has entered 2 races this season, both full distance.
+Heidi has entered 2 races this season, 2 Full.
 
 ```{r a-Heidi-Sowerby-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Heidi Sowerby", len_season=26)
@@ -3220,7 +3854,7 @@ Matthew has results for 1 season.
 
 ## 2020-2021
 
-Matthew has entered 11 races this season, all full distance.
+Matthew has entered 12 races this season, 11 Full and 1 Super Teams.
 
 ```{r a-Matthew-Stanley-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Matthew Stanley", len_season=26)
@@ -3236,13 +3870,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Matthew Stanley", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Matthew-Stanley-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Matthew Stanley", "teams")
+```
+
 # Peter Stowe {#a-Peter-Stowe}
 
 Peter has results for 1 season.
 
 ## 2020-2021
 
-Peter has entered 12 races this season, all full distance.
+Peter has entered 13 races this season, 12 Full and 1 Super Teams.
 
 ```{r a-Peter-Stowe-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Peter Stowe", len_season=26)
@@ -3258,26 +3901,13 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Peter Stowe", "full")
 ```
 
-# Kelly Styman {#a-Kelly-Styman}
 
-Kelly has results for 1 season.
-
-## 2020-2021
-
-Kelly has entered 1 race this season, intermediate distance.
-
-```{r a-Kelly-Styman-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Kelly Styman", len_season=26)
-```
-
-
-
-### Detailed results for Intermediate course
+### Detailed results for Super Teams course
 
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
-```{r a-Kelly-Styman-table-2020-2021-int}
-table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Kelly Styman", "int")
+```{r a-Peter-Stowe-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Peter Stowe", "teams")
 ```
 
 # Scott Styman {#a-Scott-Styman}
@@ -3286,7 +3916,7 @@ Scott has results for 1 season.
 
 ## 2020-2021
 
-Scott has entered 15 races this season, 14 full distance and 1 intermediate distance.
+Scott has entered 15 races this season, 14 Full and 1 Intermediate.
 
 ```{r a-Scott-Styman-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Scott Styman", len_season=26)
@@ -3317,7 +3947,7 @@ Will has results for 1 season.
 
 ## 2020-2021
 
-Will has entered 1 race this season, full distance.
+Will has entered 1 race this season, 1 Full.
 
 ```{r a-Will-Styman-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Will Styman", len_season=26)
@@ -3333,13 +3963,35 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Will Styman", "full")
 ```
 
+# Kelly Styman {#a-Kelly-Styman}
+
+Kelly has results for 1 season.
+
+## 2020-2021
+
+Kelly has entered 1 race this season, 1 Intermediate.
+
+```{r a-Kelly-Styman-plot-2020-2021}
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Kelly Styman", len_season=26)
+```
+
+
+
+### Detailed results for Intermediate course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Kelly-Styman-table-2020-2021-int}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Kelly Styman", "int")
+```
+
 # Corey Swan {#a-Corey-Swan}
 
 Corey has results for 1 season.
 
 ## 2020-2021
 
-Corey has entered 2 races this season, both full distance.
+Corey has entered 2 races this season, 2 Full.
 
 ```{r a-Corey-Swan-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Corey Swan", len_season=26)
@@ -3355,35 +4007,13 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Corey Swan", "full")
 ```
 
-# Timothy Taylor {#a-Timothy-Taylor}
-
-Timothy has results for 1 season.
-
-## 2020-2021
-
-Timothy has entered 9 races this season, all intermediate distance.
-
-```{r a-Timothy-Taylor-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Timothy Taylor", len_season=26)
-```
-
-
-
-### Detailed results for Intermediate course
-
-Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
-
-```{r a-Timothy-Taylor-table-2020-2021-int}
-table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Timothy Taylor", "int")
-```
-
 # William Taylor {#a-William-Taylor}
 
 William has results for 1 season.
 
 ## 2020-2021
 
-William has entered 9 races this season, all intermediate distance.
+William has entered 10 races this season, 9 Intermediate and 1 Super Teams.
 
 ```{r a-William-Taylor-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "William Taylor", len_season=26)
@@ -3399,13 +4029,53 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "William Taylor", "int")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-William-Taylor-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "William Taylor", "teams")
+```
+
+# Timothy Taylor {#a-Timothy-Taylor}
+
+Timothy has results for 1 season.
+
+## 2020-2021
+
+Timothy has entered 10 races this season, 9 Intermediate and 1 Super Teams.
+
+```{r a-Timothy-Taylor-plot-2020-2021}
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Timothy Taylor", len_season=26)
+```
+
+
+
+### Detailed results for Intermediate course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Timothy-Taylor-table-2020-2021-int}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Timothy Taylor", "int")
+```
+
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Timothy-Taylor-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Timothy Taylor", "teams")
+```
+
 # Zoe Taylor-West {#a-Zoe-Taylor-West}
 
 Zoe has results for 1 season.
 
 ## 2020-2021
 
-Zoe has entered 2 races this season, both intermediate distance.
+Zoe has entered 2 races this season, 2 Intermediate.
 
 ```{r a-Zoe-Taylor-West-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Zoe Taylor-West", len_season=26)
@@ -3427,7 +4097,7 @@ Craig has results for 1 season.
 
 ## 2020-2021
 
-Craig has entered 10 races this season, all full distance.
+Craig has entered 11 races this season, 10 Full and 1 Super Teams.
 
 ```{r a-Craig-Telling-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Craig Telling", len_season=26)
@@ -3443,26 +4113,13 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Craig Telling", "full")
 ```
 
-# Ava Thomson {#a-Ava-Thomson}
 
-Ava has results for 1 season.
-
-## 2020-2021
-
-Ava has entered 18 races this season, all intermediate distance.
-
-```{r a-Ava-Thomson-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Ava Thomson", len_season=26)
-```
-
-
-
-### Detailed results for Intermediate course
+### Detailed results for Super Teams course
 
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
 
-```{r a-Ava-Thomson-table-2020-2021-int}
-table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Ava Thomson", "int")
+```{r a-Craig-Telling-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Craig Telling", "teams")
 ```
 
 # Scott Thomson {#a-Scott-Thomson}
@@ -3471,7 +4128,7 @@ Scott has results for 1 season.
 
 ## 2020-2021
 
-Scott has entered 20 races this season, 17 full distance, 2 double distance, and 1 intermediate distance.
+Scott has entered 22 races this season, 17 Full, 2 Double Distance, 2 Super Teams, and 1 Intermediate.
 
 ```{r a-Scott-Thomson-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Scott Thomson", len_season=26)
@@ -3497,6 +4154,15 @@ table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Scott Thomson"
 ```
 
 
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Scott-Thomson-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Scott Thomson", "teams")
+```
+
+
 ### Detailed results for Intermediate course
 
 Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
@@ -3505,13 +4171,44 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Scott Thomson", "int")
 ```
 
+# Ava Thomson {#a-Ava-Thomson}
+
+Ava has results for 1 season.
+
+## 2020-2021
+
+Ava has entered 20 races this season, 18 Intermediate and 2 Super Teams.
+
+```{r a-Ava-Thomson-plot-2020-2021}
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Ava Thomson", len_season=26)
+```
+
+
+
+### Detailed results for Intermediate course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Ava-Thomson-table-2020-2021-int}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Ava Thomson", "int")
+```
+
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Ava-Thomson-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Ava Thomson", "teams")
+```
+
 # Sebastian Thomson {#a-Sebastian-Thomson}
 
 Sebastian has results for 1 season.
 
 ## 2020-2021
 
-Sebastian has entered 18 races this season, all intermediate distance.
+Sebastian has entered 20 races this season, 18 Intermediate and 2 Super Teams.
 
 ```{r a-Sebastian-Thomson-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Sebastian Thomson", len_season=26)
@@ -3527,13 +4224,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Sebastian Thomson", "int")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Sebastian-Thomson-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Sebastian Thomson", "teams")
+```
+
 # Alex Torrance {#a-Alex-Torrance}
 
 Alex has results for 1 season.
 
 ## 2020-2021
 
-Alex has entered 13 races this season, 2 double distance and 11 full distance.
+Alex has entered 15 races this season, 2 Double Distance, 11 Full, and 2 Super Teams.
 
 ```{r a-Alex-Torrance-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Alex Torrance", len_season=26)
@@ -3558,13 +4264,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Alex Torrance", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Alex-Torrance-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Alex Torrance", "teams")
+```
+
 # Robert Townsend {#a-Robert-Townsend}
 
 Robert has results for 1 season.
 
 ## 2020-2021
 
-Robert has entered 2 races this season, 1 intermediate distance and 1 full distance.
+Robert has entered 3 races this season, 1 Intermediate, 1 Full, and 1 Super Teams.
 
 ```{r a-Robert-Townsend-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Robert Townsend", len_season=26)
@@ -3589,13 +4304,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Robert Townsend", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Robert-Townsend-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Robert Townsend", "teams")
+```
+
 # Sue Van Den Broek {#a-Sue-Van-Den-Broek}
 
 Sue has results for 1 season.
 
 ## 2020-2021
 
-Sue has entered 11 races this season, all full distance.
+Sue has entered 13 races this season, 11 Full and 2 Super Teams.
 
 ```{r a-Sue-Van-Den-Broek-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Sue Van Den Broek", len_season=26)
@@ -3611,13 +4335,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Sue Van Den Broek", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Sue-Van-Den-Broek-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Sue Van Den Broek", "teams")
+```
+
 # Marcel Van Kampen {#a-Marcel-Van-Kampen}
 
 Marcel has results for 1 season.
 
 ## 2020-2021
 
-Marcel has entered 19 races this season, all full distance.
+Marcel has entered 19 races this season, 19 Full.
 
 ```{r a-Marcel-Van-Kampen-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Marcel Van Kampen", len_season=26)
@@ -3639,7 +4372,7 @@ Jolyon has results for 1 season.
 
 ## 2020-2021
 
-Jolyon has entered 10 races this season, all full distance.
+Jolyon has entered 10 races this season, 10 Full.
 
 ```{r a-Jolyon-Ward-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Jolyon Ward", len_season=26)
@@ -3655,35 +4388,13 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Jolyon Ward", "full")
 ```
 
-# Danny Warner {#a-Danny-Warner}
-
-Danny has results for 1 season.
-
-## 2020-2021
-
-Danny has entered 13 races this season, all full distance.
-
-```{r a-Danny-Warner-plot-2020-2021}
-plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Danny Warner", len_season=26)
-```
-
-
-
-### Detailed results for Full course
-
-Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
-
-```{r a-Danny-Warner-table-2020-2021-full}
-table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Danny Warner", "full")
-```
-
 # Lisa Warner {#a-Lisa-Warner}
 
 Lisa has results for 1 season.
 
 ## 2020-2021
 
-Lisa has entered 8 races this season, all full distance.
+Lisa has entered 9 races this season, 8 Full and 1 Super Teams.
 
 ```{r a-Lisa-Warner-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Lisa Warner", len_season=26)
@@ -3699,13 +4410,53 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Lisa Warner", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Lisa-Warner-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Lisa Warner", "teams")
+```
+
+# Danny Warner {#a-Danny-Warner}
+
+Danny has results for 1 season.
+
+## 2020-2021
+
+Danny has entered 14 races this season, 13 Full and 1 Super Teams.
+
+```{r a-Danny-Warner-plot-2020-2021}
+plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Danny Warner", len_season=26)
+```
+
+
+
+### Detailed results for Full course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Danny-Warner-table-2020-2021-full}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Danny Warner", "full")
+```
+
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Danny-Warner-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Danny Warner", "teams")
+```
+
 # Chris Watt {#a-Chris-Watt}
 
 Chris has results for 1 season.
 
 ## 2020-2021
 
-Chris has entered 5 races this season, all full distance.
+Chris has entered 5 races this season, 5 Full.
 
 ```{r a-Chris-Watt-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Chris Watt", len_season=26)
@@ -3727,7 +4478,7 @@ Dean has results for 1 season.
 
 ## 2020-2021
 
-Dean has entered 13 races this season, 11 full distance and 2 double distance.
+Dean has entered 14 races this season, 11 Full, 2 Double Distance, and 1 Super Teams.
 
 ```{r a-Dean-Webb-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Dean Webb", len_season=26)
@@ -3752,13 +4503,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Dean Webb", "double")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Dean-Webb-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Dean Webb", "teams")
+```
+
 # Steve West {#a-Steve-West}
 
 Steve has results for 1 season.
 
 ## 2020-2021
 
-Steve has entered 8 races this season, all intermediate distance.
+Steve has entered 8 races this season, 8 Intermediate.
 
 ```{r a-Steve-West-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Steve West", len_season=26)
@@ -3780,7 +4540,7 @@ Mark has results for 1 season.
 
 ## 2020-2021
 
-Mark has entered 9 races this season, all full distance.
+Mark has entered 11 races this season, 9 Full and 2 Super Teams.
 
 ```{r a-Mark-Whiticker-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Mark Whiticker", len_season=26)
@@ -3796,13 +4556,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Mark Whiticker", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Mark-Whiticker-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Mark Whiticker", "teams")
+```
+
 # Scott Wildin {#a-Scott-Wildin}
 
 Scott has results for 1 season.
 
 ## 2020-2021
 
-Scott has entered 4 races this season, all full distance.
+Scott has entered 4 races this season, 4 Full.
 
 ```{r a-Scott-Wildin-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Scott Wildin", len_season=26)
@@ -3824,7 +4593,7 @@ Greg has results for 1 season.
 
 ## 2020-2021
 
-Greg has entered 3 races this season, 1 full distance and 2 intermediate distance.
+Greg has entered 4 races this season, 1 Full, 2 Intermediate, and 1 Super Teams.
 
 ```{r a-Greg-Williamson-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Greg Williamson", len_season=26)
@@ -3849,13 +4618,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Greg Williamson", "int")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Greg-Williamson-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Greg Williamson", "teams")
+```
+
 # Marcus Williamson {#a-Marcus-Williamson}
 
 Marcus has results for 1 season.
 
 ## 2020-2021
 
-Marcus has entered 2 races this season, both intermediate distance.
+Marcus has entered 3 races this season, 2 Intermediate and 1 Super Teams.
 
 ```{r a-Marcus-Williamson-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Marcus Williamson", len_season=26)
@@ -3871,13 +4649,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Marcus Williamson", "int")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Marcus-Williamson-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Marcus Williamson", "teams")
+```
+
 # Wendy Wise {#a-Wendy-Wise}
 
 Wendy has results for 1 season.
 
 ## 2020-2021
 
-Wendy has entered 14 races this season, all full distance.
+Wendy has entered 16 races this season, 14 Full and 2 Super Teams.
 
 ```{r a-Wendy-Wise-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Wendy Wise", len_season=26)
@@ -3893,13 +4680,22 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Wendy Wise", "full")
 ```
 
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Wendy-Wise-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Wendy Wise", "teams")
+```
+
 # Colin Woodward {#a-Colin-Woodward}
 
 Colin has results for 1 season.
 
 ## 2020-2021
 
-Colin has entered 4 races this season, 3 full distance and 1 intermediate distance.
+Colin has entered 4 races this season, 3 Full and 1 Intermediate.
 
 ```{r a-Colin-Woodward-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Colin Woodward", len_season=26)
@@ -3930,7 +4726,7 @@ Rob has results for 1 season.
 
 ## 2020-2021
 
-Rob has entered 12 races this season, 10 full distance and 2 double distance.
+Rob has entered 12 races this season, 10 Full and 2 Double Distance.
 
 ```{r a-Rob-Worth-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Rob Worth", len_season=26)
@@ -3961,7 +4757,7 @@ Viv has results for 1 season.
 
 ## 2020-2021
 
-Viv has entered 19 races this season, 18 full distance and 1 double distance.
+Viv has entered 20 races this season, 18 Full, 1 Super Teams, and 1 Double Distance.
 
 ```{r a-Viv-Wright-plot-2020-2021}
 plotly_athlete(dt_all_long[season=="2020-2021"], tri_cols, "Viv Wright", len_season=26)
@@ -3975,6 +4771,15 @@ Season records are show in gold, season PBs are shown in pink, and invalid times
 
 ```{r a-Viv-Wright-table-2020-2021-full}
 table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Viv Wright", "full")
+```
+
+
+### Detailed results for Super Teams course
+
+Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
+
+```{r a-Viv-Wright-table-2020-2021-teams}
+table_athlete_course(dt_all_long[season=="2020-2021"], tri_cols, "Viv Wright", "teams")
 ```
 
 

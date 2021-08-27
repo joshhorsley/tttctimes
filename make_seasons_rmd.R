@@ -38,14 +38,16 @@ dt_season_show <- dt_season[season=="',i_season,'"][(course=="full" | race_type 
                             cancelled_reason,
                             have_results,
                             has_report,
+                            participation_only,
                             Date = race_link,
                             `Club Report` = report_link)]
 
 
 dt_season_show[, Note := ""]
 dt_season_show[`Event type` != "Standard", Note := `Event type`]
-dt_season_show[(cancelled), Note:= paste0(Note, ifelse(Note=="",""," -"),"Cancelled due to ", cancelled_reason)]
-dt_season_show[!(cancelled) & !(have_results), Note := paste0(Note,ifelse(Note=="",""," - "), "Webscorer data not available")]
+dt_season_show[(participation_only), Note:= paste0(Note, ifelse(Note=="",""," - "),"Participation results only ")]
+dt_season_show[(cancelled), Note:= paste0(Note, ifelse(Note=="",""," - "),"Cancelled due to ", cancelled_reason)]
+dt_season_show[!(cancelled) & !(have_results), Note := paste0(Note,ifelse(Note=="",""," - "), "Results not available")]
 
 col_ref_hide <- which(!(names(dt_season_show) %in% c("#","Date","Note","Club Report")))-1 # columns are indexed from 0 - row name?
 
@@ -192,7 +194,7 @@ foreach (j_counter=j_options, .combine = paste0 ) %do% {
   
   dt_i <- dt_all_long[season==i_season & race_number== i & course == j & j_is_champ == (is_champ)][(started)]
   
-  n_athletes <- length(unique(dt_i[part=="Swim"]$Name))
+  n_athletes_j <- length(unique(dt_i[part=="Swim"]$Name))
   
   dt_pb_split_new <- dt_i[(isNewPB_split), .(.N), by = part]
   
@@ -209,13 +211,18 @@ foreach (j_counter=j_options, .combine = paste0 ) %do% {
   n_pb_splits_new <- sum(dt_pb_split_new$N)
   pb_overall_new <- nrow(dt_i[(isNewPB_overall) & part=="Swim"])
   
+  if(j=="teams"){
+    n_pb_splits_new=0
+    pb_overall_new=0
+  }
+  
   
   
   paste0(
     '
 ## ',i_courses_nice[j_counter],'\n\n',
     
-    n_athletes,' competitors entered the course',
+    n_athletes_j,' competitors entered the course',
     if(pb_overall_new!=0 | n_pb_splits_new !=0) ", achieving ",
     list_with_and(
       c(if(pb_overall_new!=0) {paste0(pb_overall_new,' new overall PBs')},
@@ -225,12 +232,14 @@ foreach (j_counter=j_options, .combine = paste0 ) %do% {
     '.',
     
     '\n\n',
-    
-'```{r plot-race-',i,'-',j,'-',j_is_champ,'-',i_season,'}
+    {if(j!="teams"){
+      
+paste0('```{r plot-race-',i,'-',j,'-',j_is_champ,'-',i_season,'}
 plotly_race(dt_all_long[season=="',i_season,'"], tri_cols, ',i,', "',j,'",',j_is_champ,')
 ```
     
-    ',
+    ')
+    }},    
     
     # tables
     '
@@ -238,12 +247,24 @@ plotly_race(dt_all_long[season=="',i_season,'"], tri_cols, ',i,', "',j,'",',j_is
 ### Detailed results for ',i_courses_nice[j_counter],' course
 
 ',i_season ,' season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
-```{r tab-race-',i,'-',j,'-',j_is_champ,'-',i_season,'}
+',
+{if(j!="teams"){
+  
+  paste0(
+'```{r tab-race-',i,'-',j,'-',j_is_champ,'-',i_season,'}
 table_race(dt_all_long[season=="',i_season,'"], tri_cols, ',i,', "',j,'",',j_is_champ,')
 ```
 
-'
+')} else {
+  # team membership only
+  paste0(
+    '```{r tab-race-',i,'-',j,'-',j_is_champ,'-',i_season,'}
+table_race_teams(dt_all_long[season=="',i_season,'"], tri_cols, ',i,', "',j,'",',j_is_champ,')
+```
+
+')
+  
+}}
   )
   
   

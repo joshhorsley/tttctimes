@@ -15,14 +15,16 @@ dt_season_show <- dt_season[season=="2021-2022"][(course=="full" | race_type == 
                             cancelled_reason,
                             have_results,
                             has_report,
+                            participation_only,
                             Date = race_link,
                             `Club Report` = report_link)]
 
 
 dt_season_show[, Note := ""]
 dt_season_show[`Event type` != "Standard", Note := `Event type`]
-dt_season_show[(cancelled), Note:= paste0(Note, ifelse(Note=="",""," -"),"Cancelled due to ", cancelled_reason)]
-dt_season_show[!(cancelled) & !(have_results), Note := paste0(Note,ifelse(Note=="",""," - "), "Webscorer data not available")]
+dt_season_show[(participation_only), Note:= paste0(Note, ifelse(Note=="",""," - "),"Participation results only ")]
+dt_season_show[(cancelled), Note:= paste0(Note, ifelse(Note=="",""," - "),"Cancelled due to ", cancelled_reason)]
+dt_season_show[!(cancelled) & !(have_results), Note := paste0(Note,ifelse(Note=="",""," - "), "Results not available")]
 
 col_ref_hide <- which(!(names(dt_season_show) %in% c("#","Date","Note","Club Report")))-1 # columns are indexed from 0 - row name?
 
@@ -43,14 +45,16 @@ dt_season_show <- dt_season[season=="2020-2021"][(course=="full" | race_type == 
                             cancelled_reason,
                             have_results,
                             has_report,
+                            participation_only,
                             Date = race_link,
                             `Club Report` = report_link)]
 
 
 dt_season_show[, Note := ""]
 dt_season_show[`Event type` != "Standard", Note := `Event type`]
-dt_season_show[(cancelled), Note:= paste0(Note, ifelse(Note=="",""," -"),"Cancelled due to ", cancelled_reason)]
-dt_season_show[!(cancelled) & !(have_results), Note := paste0(Note,ifelse(Note=="",""," - "), "Webscorer data not available")]
+dt_season_show[(participation_only), Note:= paste0(Note, ifelse(Note=="",""," - "),"Participation results only ")]
+dt_season_show[(cancelled), Note:= paste0(Note, ifelse(Note=="",""," - "),"Cancelled due to ", cancelled_reason)]
+dt_season_show[!(cancelled) & !(have_results), Note := paste0(Note,ifelse(Note=="",""," - "), "Results not available")]
 
 col_ref_hide <- which(!(names(dt_season_show) %in% c("#","Date","Note","Club Report")))-1 # columns are indexed from 0 - row name?
 
@@ -251,7 +255,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 26, "full",TRUE)
 ### Detailed results for Club Championships course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-26-full-TRUE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 26, "full",TRUE)
 ```
@@ -270,7 +273,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 26, "full",FALSE)
 ### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-26-full-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 26, "full",FALSE)
 ```
@@ -289,7 +291,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 26, "int",FALSE)
 ### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-26-int-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 26, "int",FALSE)
 ```
@@ -313,7 +314,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 25, "full",FALSE)
 ### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-25-full-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 25, "full",FALSE)
 ```
@@ -332,7 +332,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 25, "int",FALSE)
 ### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-25-int-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 25, "int",FALSE)
 ```
@@ -356,7 +355,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 24, "full",FALSE)
 ### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-24-full-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 24, "full",FALSE)
 ```
@@ -375,7 +373,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 24, "int",FALSE)
 ### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-24-int-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 24, "int",FALSE)
 ```
@@ -399,7 +396,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 23, "double",FALSE)
 ### Detailed results for Double Distance course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-23-double-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 23, "double",FALSE)
 ```
@@ -418,7 +414,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 23, "full",FALSE)
 ### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-23-full-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 23, "full",FALSE)
 ```
@@ -437,7 +432,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 23, "int",FALSE)
 ### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-23-int-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 23, "int",FALSE)
 ```
@@ -461,7 +455,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 22, "full",FALSE)
 ### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-22-full-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 22, "full",FALSE)
 ```
@@ -480,7 +473,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 22, "int",FALSE)
 ### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-22-int-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 22, "int",FALSE)
 ```
@@ -504,7 +496,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 21, "full",FALSE)
 ### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-21-full-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 21, "full",FALSE)
 ```
@@ -523,7 +514,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 21, "int",FALSE)
 ### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-21-int-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 21, "int",FALSE)
 ```
@@ -547,7 +537,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 20, "full",FALSE)
 ### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-20-full-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 20, "full",FALSE)
 ```
@@ -566,7 +555,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 20, "int",FALSE)
 ### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-20-int-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 20, "int",FALSE)
 ```
@@ -590,7 +578,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 19, "full",FALSE)
 ### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-19-full-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 19, "full",FALSE)
 ```
@@ -609,9 +596,27 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 19, "int",FALSE)
 ### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-19-int-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 19, "int",FALSE)
+```
+
+
+# Race 18: Jan 23 - Super Teams {#r-2021-01-23}
+
+A total of 60 competitors entered, 1 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=5886){target="_blank"}.
+
+
+## Super Teams
+
+60 competitors entered the course.
+
+
+
+### Detailed results for Super Teams course
+
+2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-18-teams-FALSE-2020-2021}
+table_race_teams(dt_all_long[season=="2020-2021"], tri_cols, 18, "teams",FALSE)
 ```
 
 
@@ -633,7 +638,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 17, "full",FALSE)
 ### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-17-full-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 17, "full",FALSE)
 ```
@@ -652,7 +656,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 17, "int",FALSE)
 ### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-17-int-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 17, "int",FALSE)
 ```
@@ -676,7 +679,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 16, "full",FALSE)
 ### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-16-full-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 16, "full",FALSE)
 ```
@@ -695,7 +697,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 16, "int",FALSE)
 ### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-16-int-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 16, "int",FALSE)
 ```
@@ -719,7 +720,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 15, "full",FALSE)
 ### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-15-full-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 15, "full",FALSE)
 ```
@@ -738,7 +738,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 15, "int",FALSE)
 ### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-15-int-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 15, "int",FALSE)
 ```
@@ -762,7 +761,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 13, "full",FALSE)
 ### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-13-full-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 13, "full",FALSE)
 ```
@@ -781,7 +779,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 13, "int",FALSE)
 ### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-13-int-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 13, "int",FALSE)
 ```
@@ -805,7 +802,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 11, "full",FALSE)
 ### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-11-full-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 11, "full",FALSE)
 ```
@@ -824,7 +820,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 11, "int",FALSE)
 ### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-11-int-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 11, "int",FALSE)
 ```
@@ -848,7 +843,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 10, "full",FALSE)
 ### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-10-full-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 10, "full",FALSE)
 ```
@@ -867,7 +861,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 10, "int",FALSE)
 ### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-10-int-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 10, "int",FALSE)
 ```
@@ -875,12 +868,12 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 10, "int",FALSE)
 
 # Race 9: Nov 21 {#r-2020-11-21}
 
-A total of 65 competitors entered, 3 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=5789){target="_blank"}.
+A total of 65 competitors entered, 2 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=5789){target="_blank"}.
 
 
 ## Full
 
-49 competitors entered the course, achieving 21 new overall PBs and 46 new split PBs: 15 in the pool, 16 on the bike, and 15 on the run.
+49 competitors entered the course, achieving 22 new overall PBs and 49 new split PBs: 16 in the pool, 17 on the bike, and 16 on the run.
 
 ```{r plot-race-9-full-FALSE-2020-2021}
 plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 9, "full",FALSE)
@@ -891,7 +884,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 9, "full",FALSE)
 ### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-9-full-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 9, "full",FALSE)
 ```
@@ -910,9 +902,27 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 9, "int",FALSE)
 ### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-9-int-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 9, "int",FALSE)
+```
+
+
+# Race 8: Nov 14 - Super Teams {#r-2020-11-14}
+
+A total of 57 competitors entered, 1 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=5773){target="_blank"}.
+
+
+## Super Teams
+
+57 competitors entered the course.
+
+
+
+### Detailed results for Super Teams course
+
+2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-8-teams-FALSE-2020-2021}
+table_race_teams(dt_all_long[season=="2020-2021"], tri_cols, 8, "teams",FALSE)
 ```
 
 
@@ -934,7 +944,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 7, "full",FALSE)
 ### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-7-full-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 7, "full",FALSE)
 ```
@@ -953,7 +962,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 7, "int",FALSE)
 ### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-7-int-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 7, "int",FALSE)
 ```
@@ -977,7 +985,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 6, "full",FALSE)
 ### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-6-full-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 6, "full",FALSE)
 ```
@@ -996,7 +1003,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 6, "int",FALSE)
 ### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-6-int-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 6, "int",FALSE)
 ```
@@ -1020,7 +1026,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 5, "full",FALSE)
 ### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-5-full-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 5, "full",FALSE)
 ```
@@ -1039,7 +1044,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 5, "int",FALSE)
 ### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-5-int-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 5, "int",FALSE)
 ```
@@ -1063,7 +1067,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 4, "double",FALSE)
 ### Detailed results for Double Distance course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-4-double-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 4, "double",FALSE)
 ```
@@ -1082,7 +1085,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 4, "full",FALSE)
 ### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-4-full-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 4, "full",FALSE)
 ```
@@ -1101,7 +1103,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 4, "int",FALSE)
 ### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-4-int-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 4, "int",FALSE)
 ```
@@ -1125,7 +1126,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 3, "full",FALSE)
 ### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-3-full-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 3, "full",FALSE)
 ```
@@ -1144,7 +1144,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 3, "int",FALSE)
 ### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-3-int-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 3, "int",FALSE)
 ```
@@ -1168,7 +1167,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 2, "full",FALSE)
 ### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-2-full-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 2, "full",FALSE)
 ```
@@ -1187,7 +1185,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 2, "int",FALSE)
 ### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-2-int-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 2, "int",FALSE)
 ```
@@ -1211,7 +1208,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 1, "full",FALSE)
 ### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-1-full-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 1, "full",FALSE)
 ```
@@ -1230,7 +1226,6 @@ plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 1, "int",FALSE)
 ### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-
 ```{r tab-race-1-int-FALSE-2020-2021}
 table_race(dt_all_long[season=="2020-2021"], tri_cols, 1, "int",FALSE)
 ```

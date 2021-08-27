@@ -7,10 +7,11 @@ plotly_athlete <- function(dt_all_long, tri_cols, k, len_season) {
   
   dt_k <- dt_all_long[(started) & Name==k][order(race_number)]
   
-  dt_k[course == "int", course := "Intermediate"]
-  dt_k[course == "full", course := "Full"]
-  dt_k[course == "double", course := "Double Distance"]
-  dt_k[, course := ordered(course, levels = c("Full", "Intermediate","Double Distance"))]
+  dt_k[, course := course_nice]
+  # dt_k[course == "int", course := "Intermediate"]
+  # dt_k[course == "full", course := "Full"]
+  # dt_k[course == "double", course := "Double Distance"]
+  # dt_k[, course := ordered(course, levels = c("Full", "Intermediate","Double Distance"))]
   
   dt_k[(valid_overall), place_name := paste0(place_overall_recalc, " ", Name)]
   dt_k[!(valid_overall), place_name := paste0("TBC ", Name)]

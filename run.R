@@ -59,6 +59,7 @@ dt_season[course=="full", course_nice := "Full"]
 dt_season[course=="full" & (is_champ), course_nice := "Club Championships"]
 dt_season[course=="int", course_nice := "Intermediate"]
 dt_season[course=="double", course_nice := "Double Distance"]
+dt_season[course=="teams", course_nice := "Super Teams"]
 
 # Race report links
 dt_season[, has_report := report_id !=""]
@@ -75,7 +76,19 @@ dummy <- dt_season[, if(!dir.exists(dir_webscorer)) dir.create(dir_webscorer,rec
 
 dt_season[, path_webscorer := list.files(dir_webscorer,full.names = TRUE, pattern = "txt$"), by = dir_webscorer]
 
-dt_season[, have_results := file.exists(path_webscorer)]
+
+dt_teams_manual <- fread("data_provided/teams_manual/teams.csv")
+dt_teams_manual[, date_ymd := as.IDate(date_ymd, format = "%d/%m/%y")]
+
+teams_manual_dates <- unique(dt_teams_manual$date_ymd)
+
+# have results
+
+dt_season[, have_results_webscorer := file.exists(path_webscorer)]
+dt_season[, have_results_manual := date_ymd %in% teams_manual_dates]
+dt_season[, have_results := (have_results_webscorer) | (have_results_manual)]
+
+dt_season[, participation_only := have_results_manual]
 
 dt_season[, missing_results := !cancelled & !have_results]
 
@@ -87,13 +100,46 @@ dt_season[(have_results), race_link := paste0('<a href="', race_ref,'.html#',rac
 dt_season[!(have_results), race_link := format(date_ymd, "%Y-%m-%d")]
 
 
-# Load race results -------------------------------------------------------
+# Prep manual teams results -----------------------------------------------
 
 
-dt_season[(have_results), dt_race := .(list(fread(path_webscorer))), by = row_id]
+dt_teams_manual_long1 <- melt.data.table(dt_teams_manual,
+                id.vars = c("season","race_number","date_ymd", "Team No"),
+                measure.vars = c("Racer 1", "Racer 2", "Racer 3"),
+                variable.name = "racer_ref",
+                value.name = "Name")
 
-# Flatten available results
-id_results <- which(dt_season$have_results)
+dt_teams_manual_long1[, Swim := "0:00:00"]
+dt_teams_manual_long1[, Ride := "0:00:00"]
+dt_teams_manual_long1[, Run := "0:00:00"]
+
+dt_teams_manual_long <- melt.data.table(dt_teams_manual_long1,
+                id.vars = c("season","race_number","date_ymd", "Team No","racer_ref", "Name"),
+                measure.vars = c("Swim","Ride","Run"),
+                variable.name = c("part"),
+                value.name = c("duration_import"))
+                
+
+# dt_teams_manual_long[, racer_ref := as.integer(substr(as.character(racer_ref),7,7))]
+dt_teams_manual_long[, course := "teams"]
+# dt_teams_manual_long[, course_nice := "Super Teams"]
+dt_teams_manual_long[, started := TRUE]
+dt_teams_manual_long[, is_champ := FALSE]
+dt_teams_manual_long[, participation_only := TRUE]
+
+new_cols <- c("course_nice","race_type","race_ref", "race_link")
+dt_teams_manual_long[dt_season, on = .(date_ymd, course, is_champ), (new_cols) := mget(new_cols)]
+
+setnames(dt_teams_manual_long, "Team No", "team_number")
+
+
+# Load webscorer results --------------------------------------------------
+
+
+dt_season[(have_results_webscorer), dt_race := .(list(fread(path_webscorer))), by = row_id]
+
+# Flatten available webscorer results
+id_results <- which(dt_season$have_results_webscorer)
 
 dt_all <- foreach(i=id_results, .combine = function(x,y) rbind(x,y,fill=TRUE)) %do% {
   dt_season[i, .(row_id, dt_race[[1]])]
@@ -128,46 +174,55 @@ dt_all_long <- melt.data.table(dt_all,
                                value.name = c("duration_import"))
 
 
+dt_all_long <- rbindlist(list(dt_all_long, dt_teams_manual_long), fill=TRUE)
+
+
 # Name inconsistencies ----------------------------------------------------
 
+dt_all_long[, row_id := seq(.N)]
 
-dt_all_long[Name %in% c("Andrew CARR"), Name := "Andrew Carr"]
-dt_all_long[Name %in% c("Robyn BARRY"), Name := "Robyn Barry"]
-dt_all_long[Name %in% c("Scott BORNHOLT"), Name := "Scott Bornholt"]
-dt_all_long[Name %in% c("Jo COLJA"), Name := "Joanne Colja"]
-dt_all_long[Name %in% c("Dave de Closey","Dave De Closey","Dave DE CLOSEY","David De Closey"), Name := "David De Closey"]
-dt_all_long[Name %in% c("Ian Driffil"), Name := "Ian Driffill"]
-dt_all_long[Name %in% c("Melanie DUFF"), Name := "Melanie Duff"]
-dt_all_long[Name %in% c("Peta EDGE"), Name := "Peta Edge"]
-dt_all_long[Name %in% c("Greg FREEMAN", "Greg Freeman"), Name := "Gregory Freeman"]
-dt_all_long[Name %in% c("Amanda Hall"), Name := "Manda Hall"]
-dt_all_long[Name %in% c("Cassie HEASLIP"), Name := "Cassandra Heaslip"]
-dt_all_long[Name %in% c("Joshua Horsley"), Name := "Josh Horsley"]
-dt_all_long[Name %in% c("Sally KINGSTON"), Name := "Sally Kingston"]
-dt_all_long[Name %in% c("Lydia Kuschnirz"), Name := "Lydia Kuschmirz"]
-dt_all_long[Name %in% c("Valerie Lambard"), Name := "Val Lambard"]
-dt_all_long[Name %in% c("Samatha Leonard", "Sam Leonard"), Name := "Samantha Leonard"]
-dt_all_long[Name %in% c("Virginia Jones", "Ginny JONES"), Name := "Ginny Jones"]
-dt_all_long[Name %in% c("Aaron NEYLAN"), Name := "Aaron Neylan"]
-dt_all_long[Name %in% c("Karen Nixon-Hind"), Name := "Karen Nixon"]
-dt_all_long[Name %in% c("Stephen RING"), Name := "Stephen Ring"]
-dt_all_long[Name %in% c("Hollie ROBARDS"), Name := "Hollie Robards"]
-dt_all_long[Name %in% c("Philip SALTER"), Name := "Philip Salter"]
-dt_all_long[Name %in% c("Wendy Saunders"), Name := "Wendy Sanders"]
-dt_all_long[Name %in% c("Vaughan SKELLY"), Name := "Vaughan Skelly"]
-dt_all_long[Name %in% c("Terence SIMPSON"), Name := "Terence Simpson"]
-dt_all_long[Name %in% c("STEVE WEST"), Name := "Steve West"]
-dt_all_long[Name %in% c("ZOE TAYLOR-WEST"), Name := "Zoe Taylor-West"]
-dt_all_long[Name %in% c("Scott THOMSON"), Name := "Scott Thomson"]
-dt_all_long[Name %in% c("Sebastian THOMSON"), Name := "Sebastian Thomson"]
-dt_all_long[Name %in% c("Ava THOMSON"), Name := "Ava Thomson"]
-dt_all_long[Name %in% c("Jo Ward", "Joe Ward"), Name := "Jolyon Ward"]
+
+dt_all_long[, Name_import := Name]
+dt_all_long[, Name := standardise_names(Name), by = row_id ]
+
+# dt_all_long[Name %in% c("Andrew CARR"), Name := "Andrew Carr"]
+# dt_all_long[Name %in% c("Robyn BARRY"), Name := "Robyn Barry"]
+# dt_all_long[Name %in% c("Scott BORNHOLT"), Name := "Scott Bornholt"]
+dt_all_long[tolower(Name) %in% c("jo colja"), Name := "Joanne Colja"]
+dt_all_long[tolower(Name) %in% c("dave de closey"), Name := "David De Closey"]
+dt_all_long[tolower(Name) %in% c("ian driffil"), Name := "Ian Driffill"]
+# dt_all_long[Name %in% c("Melanie DUFF"), Name := "Melanie Duff"]
+# dt_all_long[Name %in% c("Peta EDGE"), Name := "Peta Edge"]
+dt_all_long[tolower(Name) %in% c("greg freeman"), Name := "Gregory Freeman"]
+dt_all_long[tolower(Name) %in% c("amanda hall"), Name := "Manda Hall"]
+dt_all_long[tolower(Name) %in% c("cassie heaslip"), Name := "Cassandra Heaslip"]
+dt_all_long[tolower(Name) %in% c("joshua horsley"), Name := "Josh Horsley"]
+# dt_all_long[Name %in% c("Sally KINGSTON"), Name := "Sally Kingston"]
+dt_all_long[tolower(Name) %in% c("lydia kuschnirz"), Name := "Lydia Kuschmirz"]
+dt_all_long[tolower(Name) %in% c("valerie lambard"), Name := "Val Lambard"]
+dt_all_long[tolower(Name) %in% c("samatha leonard", "sam leonard"), Name := "Samantha Leonard"]
+dt_all_long[tolower(Name) %in% c("virginia jones", "ginny jones"), Name := "Ginny Jones"]
+# dt_all_long[Name %in% c("Aaron NEYLAN"), Name := "Aaron Neylan"]
+dt_all_long[tolower(Name) %in% c("karen nixon-hind"), Name := "Karen Nixon"]
+# dt_all_long[Name %in% c("Stephen RING"), Name := "Stephen Ring"]
+# dt_all_long[Name %in% c("Hollie ROBARDS"), Name := "Hollie Robards"]
+dt_all_long[tolower(Name) %in% c("kaleb robarda"), Name := "Kaleb Robards"]
+# dt_all_long[Name %in% c("Philip SALTER"), Name := "Philip Salter"]
+dt_all_long[tolower(Name) %in% c("wendy saunders"), Name := "Wendy Sanders"]
+# dt_all_long[Name %in% c("Vaughan SKELLY"), Name := "Vaughan Skelly"]
+# dt_all_long[Name %in% c("Terence SIMPSON"), Name := "Terence Simpson"]
+# dt_all_long[Name %in% c("ZOE TAYLOR-WEST"), Name := "Zoe Taylor-West"]
+# dt_all_long[Name %in% c("Scott THOMSON"), Name := "Scott Thomson"]
+# dt_all_long[Name %in% c("Sebastian THOMSON"), Name := "Sebastian Thomson"]
+# dt_all_long[Name %in% c("Ava THOMSON"), Name := "Ava Thomson"]
+dt_all_long[tolower(Name) %in% c("jo ward", "joe ward"), Name := "Jolyon Ward"]
+dt_all_long[tolower(Name) %in% c("196"), Name := "Shelly Winder"]
+
 
 
 # Separate Names ----------------------------------------------------------
 
 
-dt_all_long[, row_id := seq(.N)]
 dt_all_long[, name_first := strsplit(Name, " ")[[1]][1],  by = row_id]
 
 dt_all_long[, name_last := gsub(paste0(name_first, " "), "", Name), by = row_id]
@@ -179,6 +234,12 @@ dt_all_long[, athlete_ref := gsub(pattern = " ", "-", Name)]
 dt_all_long[, athlete_ref := gsub(pattern = "'", "", athlete_ref)]
 dt_all_long[, athlete_ref := paste0("a-",athlete_ref)]
 dt_all_long[, athlete_link := paste0('<a href="', athlete_ref,'.html#',athlete_ref, '">',Name,'</a>')]
+
+
+# Ordered names -----------------------------------------------------------
+
+
+athletes_ordered <- unique(dt_all_long[(started)][order(tolower(name_last))]$Name)
 
 
 # Timing errors -----------------------------------------------------------
@@ -196,6 +257,9 @@ dt_all_long[is.na(cumulative_valid), cumulative_valid := TRUE]
 dt_all_long[, valid_overall := cumulative_valid[which(part=="Run")], by = .(season, race_number, Name)]
 dt_all_long[is.na(valid_overall), valid_overall := TRUE]
 
+# times that only have participation invalid
+dt_all_long[(participation_only), split_valid := FALSE]
+dt_all_long[(participation_only), valid_overall := FALSE]
 
 # Cleaning ----------------------------------------------------------------
 
@@ -274,11 +338,6 @@ dt_all_long[(started) & part == "Run", cumulative_seconds := overall_seconds]
 dt_all_long[race_number==3 & Name == "Lydia Kuschmirz", course := "int"]
 dt_all_long[race_number==21 & Name == "Colin Woodward", course := "int"]
 
-
-# Order names -------------------------------------------------------------
-
-
-athletes_ordered <- unique(dt_all_long[(started)][order(tolower(name_last))]$Name)
 
 
 # Recalculate places ------------------------------------------------------
@@ -399,7 +458,7 @@ dt_all_long[course=="double", course_nice := "Double Distance"]
 dt_all_long[course=="full", course_nice := "Full"]
 dt_all_long[course=="int", course_nice := "Intermediate"]
 
-dt_all_long[, course_nice := ordered(course_nice, levels = c("Intermediate", "Full", "Double Distance"))]
+dt_all_long[, course_nice := ordered(course_nice, levels = c("Intermediate", "Full", "Double Distance", "Super Teams"))]
 
 
 # Plot prep ---------------------------------------------------------------
