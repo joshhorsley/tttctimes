@@ -278,4 +278,4 @@ table_race_teams(dt_all_long[season=="',i_season,'"], tri_cols, ',i,', "',j,'",'
 )
 }
 
-write(paste0(header, body),file = "00-seasons_generated.Rmd")
+write(paste0(header, body),file = "01-seasons_generated.Rmd")

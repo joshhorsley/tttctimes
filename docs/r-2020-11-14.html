@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Race 8: Nov 14 - Super Teams | Twinnies Times (unofficial)</title>
   <meta name="description" content="Twinnies Times" />
-  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Race 8: Nov 14 - Super Teams | Twinnies Times (unofficial)" />
   <meta property="og:type" content="book" />
@@ -21,7 +21,7 @@
   <meta name="twitter:description" content="Twinnies Times" />
   
 
-<meta name="author" content="Created by Josh Horsley, updated 28 Aug 2021" />
+<meta name="author" content="Created by Josh Horsley, updated 10 Sep 2021" />
 
 
 
@@ -34,6 +34,7 @@
 <link rel="next" href="r-2020-11-07.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,12 +50,22 @@
 
 
 
-
 <link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
-<script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.4.1/leaflet.js"></script>
+<script src="libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
+<script src="libs/leaflet-providers-plugin-2.0.4.1/leaflet-providers-plugin.js"></script>
+<link href="libs/lfx-fullscreen-1.0.2/lfx-fullscreen-prod.css" rel="stylesheet" />
+<script src="libs/lfx-fullscreen-1.0.2/lfx-fullscreen-prod.js"></script>
 <link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
-<script src="libs/datatables-binding-0.18/datatables.js"></script>
+<script src="libs/datatables-binding-0.19/datatables.js"></script>
 <link href="libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
 <link href="libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
 <script src="libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
@@ -71,15 +82,6 @@
 <script src="libs/typedarray-0.1/typedarray.min.js"></script>
 <link href="libs/plotly-htmlwidgets-css-1.57.1/plotly-htmlwidgets.css" rel="stylesheet" />
 <script src="libs/plotly-main-1.57.1/plotly-latest.min.js"></script>
-<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
-<script src="libs/leaflet-1.3.1/leaflet.js"></script>
-<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
-<script src="libs/proj4-2.6.2/proj4.min.js"></script>
-<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
-<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
-<script src="libs/leaflet-binding-2.0.4.1/leaflet.js"></script>
-<link href="libs/lfx-fullscreen-1.0.2/lfx-fullscreen-prod.css" rel="stylesheet" />
-<script src="libs/lfx-fullscreen-1.0.2/lfx-fullscreen-prod.js"></script>
 
 
 <style type="text/css">
@@ -162,6 +164,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <ul class="summary">
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Home</a></li>
+<li class="chapter" data-level="" data-path="courses.html"><a href="courses.html"><i class="fa fa-check"></i>Courses</a></li>
 <li class="part"><span><b>Season 2021-2022</b></span></li>
 <li class="chapter" data-level="" data-path="schedule-2021-2022.html"><a href="schedule-2021-2022.html"><i class="fa fa-check"></i>Schedule</a></li>
 <li class="part"><span><b>Season 2020-2021</b></span></li>
@@ -963,9 +966,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="" data-path="a-Viv-Wright.html"><a href="a-Viv-Wright.html#section-161"><i class="fa fa-check"></i>2020-2021</a></li>
 </ul></li>
-<li class="part"><span><b>Course</b></span></li>
-<li class="chapter" data-level="" data-path="full-22.html"><a href="full-22.html"><i class="fa fa-check"></i>Full</a></li>
-<li class="chapter" data-level="" data-path="intermediate-22.html"><a href="intermediate-22.html"><i class="fa fa-check"></i>Intermediate</a></li>
 </ul>
 
       </nav>
@@ -992,8 +992,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="detailed-results-for-super-teams-course-1" class="section level3">
 <h3>Detailed results for Super Teams course</h3>
 <p>2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.</p>
-<div id="htmlwidget-1b9cbf5f85a2bfd35f4c" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1b9cbf5f85a2bfd35f4c">{"x":{"filter":"none","extensions":["Buttons"],"data":[[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],["<a href=\"a-Scott-Thomson.html#a-Scott-Thomson\">Scott Thomson<\/a>","<a href=\"a-Kyle-Mooney.html#a-Kyle-Mooney\">Kyle Mooney<\/a>","<a href=\"a-Ben-Hall.html#a-Ben-Hall\">Ben Hall<\/a>","<a href=\"a-Christian-Andrews.html#a-Christian-Andrews\">Christian Andrews<\/a>","<a href=\"a-Tracy-Foyster.html#a-Tracy-Foyster\">Tracy Foyster<\/a>","<a href=\"a-Alex-Gilks.html#a-Alex-Gilks\">Alex Gilks<\/a>","<a href=\"a-Andrew-Miller.html#a-Andrew-Miller\">Andrew Miller<\/a>","<a href=\"a-Dean-Webb.html#a-Dean-Webb\">Dean Webb<\/a>","<a href=\"a-Richard-Mourant.html#a-Richard-Mourant\">Richard Mourant<\/a>","<a href=\"a-Clive-Pearce.html#a-Clive-Pearce\">Clive Pearce<\/a>","<a href=\"a-Peter-Crowe.html#a-Peter-Crowe\">Peter Crowe<\/a>","<a href=\"a-Vaughan-Skelly.html#a-Vaughan-Skelly\">Vaughan Skelly<\/a>","<a href=\"a-Alex-Torrance.html#a-Alex-Torrance\">Alex Torrance<\/a>","<a href=\"a-Simon-Harradence.html#a-Simon-Harradence\">Simon Harradence<\/a>","<a href=\"a-Simon-Bradbery.html#a-Simon-Bradbery\">Simon Bradbery<\/a>","<a href=\"a-Kaleb-Robards.html#a-Kaleb-Robards\">Kaleb Robards<\/a>","<a href=\"a-Kipp-Freeman.html#a-Kipp-Freeman\">Kipp Freeman<\/a>","<a href=\"a-Alycia-Garriock.html#a-Alycia-Garriock\">Alycia Garriock<\/a>","<a href=\"a-Nadja-Kundrus-Little.html#a-Nadja-Kundrus-Little\">Nadja Kundrus-Little<\/a>"],["<a href=\"a-Remy-Hawkins.html#a-Remy-Hawkins\">Remy Hawkins<\/a>","<a href=\"a-David-Hogan.html#a-David-Hogan\">David Hogan<\/a>","<a href=\"a-Scott-Bornholt.html#a-Scott-Bornholt\">Scott Bornholt<\/a>","<a href=\"a-Mark-Collinson.html#a-Mark-Collinson\">Mark Collinson<\/a>","<a href=\"a-Danny-Warner.html#a-Danny-Warner\">Danny Warner<\/a>","<a href=\"a-Sue-Van-Den-Broek.html#a-Sue-Van-Den-Broek\">Sue Van Den Broek<\/a>","<a href=\"a-Sebastian-Thomson.html#a-Sebastian-Thomson\">Sebastian Thomson<\/a>","<a href=\"a-Terence-Simpson.html#a-Terence-Simpson\">Terence Simpson<\/a>","<a href=\"a-Greg-Williamson.html#a-Greg-Williamson\">Greg Williamson<\/a>","<a href=\"a-Jim-Collins.html#a-Jim-Collins\">Jim Collins<\/a>","<a href=\"a-Kylie-Gibson.html#a-Kylie-Gibson\">Kylie Gibson<\/a>","<a href=\"a-Rod-Sewell.html#a-Rod-Sewell\">Rod Sewell<\/a>","<a href=\"a-Ginny-Jones.html#a-Ginny-Jones\">Ginny Jones<\/a>","<a href=\"a-Rowena-Smith.html#a-Rowena-Smith\">Rowena Smith<\/a>","<a href=\"a-Samantha-Leonard.html#a-Samantha-Leonard\">Samantha Leonard<\/a>","<a href=\"a-Lisa-Warner.html#a-Lisa-Warner\">Lisa Warner<\/a>","<a href=\"a-Craig-Broadhurst.html#a-Craig-Broadhurst\">Craig Broadhurst<\/a>","<a href=\"a-Guy-Davoren.html#a-Guy-Davoren\">Guy Davoren<\/a>","<a href=\"a-William-Taylor.html#a-William-Taylor\">William Taylor<\/a>"],["<a href=\"a-Cheryl-Atkinson.html#a-Cheryl-Atkinson\">Cheryl Atkinson<\/a>","<a href=\"a-Katie-Glynn.html#a-Katie-Glynn\">Katie Glynn<\/a>","<a href=\"a-Jo-Anne-Borgas.html#a-Jo-Anne-Borgas\">Jo-Anne Borgas<\/a>","<a href=\"a-Wendy-Wise.html#a-Wendy-Wise\">Wendy Wise<\/a>","<a href=\"a-Timothy-Taylor.html#a-Timothy-Taylor\">Timothy Taylor<\/a>","<a href=\"a-Val-Lambard.html#a-Val-Lambard\">Val Lambard<\/a>","<a href=\"a-Marcus-Williamson.html#a-Marcus-Williamson\">Marcus Williamson<\/a>","<a href=\"a-David-Mcewan.html#a-David-Mcewan\">David Mcewan<\/a>","<a href=\"a-Helen-Murphy.html#a-Helen-Murphy\">Helen Murphy<\/a>","<a href=\"a-Jamie-Brindley.html#a-Jamie-Brindley\">Jamie Brindley<\/a>","<a href=\"a-Melanie-Duff.html#a-Melanie-Duff\">Melanie Duff<\/a>","<a href=\"a-Hollie-Robards.html#a-Hollie-Robards\">Hollie Robards<\/a>","<a href=\"a-Warren-Copping.html#a-Warren-Copping\">Warren Copping<\/a>","<a href=\"a-David-De-Closey.html#a-David-De-Closey\">David De Closey<\/a>","<a href=\"a-Mark-Whiticker.html#a-Mark-Whiticker\">Mark Whiticker<\/a>","<a href=\"a-Stuart-Mason.html#a-Stuart-Mason\">Stuart Mason<\/a>","<a href=\"a-Jenny-Scaysbrook.html#a-Jenny-Scaysbrook\">Jenny Scaysbrook<\/a>","<a href=\"a-Michelle-Jones.html#a-Michelle-Jones\">Michelle Jones<\/a>","<a href=\"a-Ava-Thomson.html#a-Ava-Thomson\">Ava Thomson<\/a>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Team #<\/th>\n      <th>Racer 1<\/th>\n      <th>Racer 2<\/th>\n      <th>Racer 3<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"autoWidth":false,"ordering":true,"paging":false,"dom":"rtBp","scrollY":"500px","scrollX":"500px","buttons":["copy","csv","excel"],"columnDefs":[{"visible":false,"targets":[]},{"className":"dt-right","targets":0}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-a5fd40afea528ae0117b" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a5fd40afea528ae0117b">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],["<a href=\"a-Scott-Thomson.html#a-Scott-Thomson\">Scott Thomson<\/a>","<a href=\"a-Kyle-Mooney.html#a-Kyle-Mooney\">Kyle Mooney<\/a>","<a href=\"a-Ben-Hall.html#a-Ben-Hall\">Ben Hall<\/a>","<a href=\"a-Christian-Andrews.html#a-Christian-Andrews\">Christian Andrews<\/a>","<a href=\"a-Tracy-Foyster.html#a-Tracy-Foyster\">Tracy Foyster<\/a>","<a href=\"a-Alex-Gilks.html#a-Alex-Gilks\">Alex Gilks<\/a>","<a href=\"a-Andrew-Miller.html#a-Andrew-Miller\">Andrew Miller<\/a>","<a href=\"a-Dean-Webb.html#a-Dean-Webb\">Dean Webb<\/a>","<a href=\"a-Richard-Mourant.html#a-Richard-Mourant\">Richard Mourant<\/a>","<a href=\"a-Clive-Pearce.html#a-Clive-Pearce\">Clive Pearce<\/a>","<a href=\"a-Peter-Crowe.html#a-Peter-Crowe\">Peter Crowe<\/a>","<a href=\"a-Vaughan-Skelly.html#a-Vaughan-Skelly\">Vaughan Skelly<\/a>","<a href=\"a-Alex-Torrance.html#a-Alex-Torrance\">Alex Torrance<\/a>","<a href=\"a-Simon-Harradence.html#a-Simon-Harradence\">Simon Harradence<\/a>","<a href=\"a-Simon-Bradbery.html#a-Simon-Bradbery\">Simon Bradbery<\/a>","<a href=\"a-Kaleb-Robards.html#a-Kaleb-Robards\">Kaleb Robards<\/a>","<a href=\"a-Kipp-Freeman.html#a-Kipp-Freeman\">Kipp Freeman<\/a>","<a href=\"a-Alycia-Garriock.html#a-Alycia-Garriock\">Alycia Garriock<\/a>","<a href=\"a-Nadja-Kundrus-Little.html#a-Nadja-Kundrus-Little\">Nadja Kundrus-Little<\/a>"],["<a href=\"a-Remy-Hawkins.html#a-Remy-Hawkins\">Remy Hawkins<\/a>","<a href=\"a-David-Hogan.html#a-David-Hogan\">David Hogan<\/a>","<a href=\"a-Scott-Bornholt.html#a-Scott-Bornholt\">Scott Bornholt<\/a>","<a href=\"a-Mark-Collinson.html#a-Mark-Collinson\">Mark Collinson<\/a>","<a href=\"a-Danny-Warner.html#a-Danny-Warner\">Danny Warner<\/a>","<a href=\"a-Sue-Van-Den-Broek.html#a-Sue-Van-Den-Broek\">Sue Van Den Broek<\/a>","<a href=\"a-Sebastian-Thomson.html#a-Sebastian-Thomson\">Sebastian Thomson<\/a>","<a href=\"a-Terence-Simpson.html#a-Terence-Simpson\">Terence Simpson<\/a>","<a href=\"a-Greg-Williamson.html#a-Greg-Williamson\">Greg Williamson<\/a>","<a href=\"a-Jim-Collins.html#a-Jim-Collins\">Jim Collins<\/a>","<a href=\"a-Kylie-Gibson.html#a-Kylie-Gibson\">Kylie Gibson<\/a>","<a href=\"a-Rod-Sewell.html#a-Rod-Sewell\">Rod Sewell<\/a>","<a href=\"a-Ginny-Jones.html#a-Ginny-Jones\">Ginny Jones<\/a>","<a href=\"a-Rowena-Smith.html#a-Rowena-Smith\">Rowena Smith<\/a>","<a href=\"a-Samantha-Leonard.html#a-Samantha-Leonard\">Samantha Leonard<\/a>","<a href=\"a-Lisa-Warner.html#a-Lisa-Warner\">Lisa Warner<\/a>","<a href=\"a-Craig-Broadhurst.html#a-Craig-Broadhurst\">Craig Broadhurst<\/a>","<a href=\"a-Guy-Davoren.html#a-Guy-Davoren\">Guy Davoren<\/a>","<a href=\"a-William-Taylor.html#a-William-Taylor\">William Taylor<\/a>"],["<a href=\"a-Cheryl-Atkinson.html#a-Cheryl-Atkinson\">Cheryl Atkinson<\/a>","<a href=\"a-Katie-Glynn.html#a-Katie-Glynn\">Katie Glynn<\/a>","<a href=\"a-Jo-Anne-Borgas.html#a-Jo-Anne-Borgas\">Jo-Anne Borgas<\/a>","<a href=\"a-Wendy-Wise.html#a-Wendy-Wise\">Wendy Wise<\/a>","<a href=\"a-Timothy-Taylor.html#a-Timothy-Taylor\">Timothy Taylor<\/a>","<a href=\"a-Val-Lambard.html#a-Val-Lambard\">Val Lambard<\/a>","<a href=\"a-Marcus-Williamson.html#a-Marcus-Williamson\">Marcus Williamson<\/a>","<a href=\"a-David-Mcewan.html#a-David-Mcewan\">David Mcewan<\/a>","<a href=\"a-Helen-Murphy.html#a-Helen-Murphy\">Helen Murphy<\/a>","<a href=\"a-Jamie-Brindley.html#a-Jamie-Brindley\">Jamie Brindley<\/a>","<a href=\"a-Melanie-Duff.html#a-Melanie-Duff\">Melanie Duff<\/a>","<a href=\"a-Hollie-Robards.html#a-Hollie-Robards\">Hollie Robards<\/a>","<a href=\"a-Warren-Copping.html#a-Warren-Copping\">Warren Copping<\/a>","<a href=\"a-David-De-Closey.html#a-David-De-Closey\">David De Closey<\/a>","<a href=\"a-Mark-Whiticker.html#a-Mark-Whiticker\">Mark Whiticker<\/a>","<a href=\"a-Stuart-Mason.html#a-Stuart-Mason\">Stuart Mason<\/a>","<a href=\"a-Jenny-Scaysbrook.html#a-Jenny-Scaysbrook\">Jenny Scaysbrook<\/a>","<a href=\"a-Michelle-Jones.html#a-Michelle-Jones\">Michelle Jones<\/a>","<a href=\"a-Ava-Thomson.html#a-Ava-Thomson\">Ava Thomson<\/a>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Team #<\/th>\n      <th>Racer 1<\/th>\n      <th>Racer 2<\/th>\n      <th>Racer 3<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"autoWidth":false,"ordering":true,"paging":false,"dom":"rtBp","scrollY":"500px","scrollX":"500px","buttons":["copy","csv","excel"],"columnDefs":[{"visible":false,"targets":[]},{"className":"dt-right","targets":0}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -1007,7 +1007,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -1048,7 +1047,7 @@ gitbook.start({
 },
 "download": null,
 "search": {
-"engine": "lunr",
+"engine": "fuse",
 "options": null
 },
 "toc": {

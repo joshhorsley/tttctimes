@@ -10,4 +10,6 @@ library(foreach)
 library(htmlwidgets)
 library(lubridate)
 library(DT)
+library(xml2)
+library(sf)
 

@@ -1,0 +1,57 @@
+<!-- # (PART\*) Courses -->
+
+# Courses
+
+Work in progress.
+
+```{r}
+
+
+unpack_points <- function(gpx_list, ord_name = c("lat","lon")[1]) {
+  
+  as.numeric(unlist(unname(lapply(gpx_list$gpx$trk$trkseg, function(x) attr(x, ord_name)))))
+}
+
+import_gpx <- function(path_gpx) {
+  gpx_list <- as_list(xml2::read_xml(path_gpx))
+  
+  lats <- unpack_points(gpx_list, "lat")
+  lons <- unpack_points(gpx_list, "lon")
+
+  return(st_linestring(x = matrix(c(lons, lats),ncol=2),dim = "XY"))
+}
+
+
+dt_courses <- data.table(course = "full", part = "ride",
+                         path_gpx = "data_provided/courses/full_ride.gpx")
+
+dt_courses[, row_id := seq(.N)]
+dt_courses[, sf_poly := list(list(import_gpx(path_gpx))), by = row_id]
+dt_courses[, c("xmin", "ymin","xmax","ymax") := as.list(st_bbox(sf_poly[[1]])), by = row_id]
+
+dt_courses_range <- dt_courses[, .(xmin = min(xmin),
+               ymin = min(ymin),
+               xmax = max(xmax),
+               ymax = max(ymax))]
+
+
+leaflet(width = "100%", height = 700) %>% 
+  addTiles(group = "Open Street") %>% 
+  addProviderTiles(providers$CartoDB.Positron, group = "Simple") %>% 
+  addProviderTiles("Esri.WorldImagery", group = "Satellite") %>% 
+  fitBounds(lng1 = dt_courses_range$xmin,
+            lng2 =dt_courses_range$xmax,
+            lat1 = dt_courses_range$ymin,
+            lat2 = dt_courses_range$ymax) %>% 
+  addMarkers(lng = 153.537275, lat = -28.214789) %>% 
+  addPolylines(data = dt_courses[1]$sf_poly[[1]], color = tri_cols$ride, group = "Full") %>% 
+  addLayersControl(baseGroups = c("Simple","Open Street", "Satellite"),
+                   # overlayGroups = c("Full", "Intermediate"),
+                   overlayGroups = c("Full"),
+                   options = layersControlOptions(collapsed = FALSE)) %>% 
+  addFullscreenControl() %>% 
+  addScaleBar(position = "bottomleft") %>% 
+  addLegend(position = "bottomright",colors = c(tri_cols$ride),labels = c("Ride")) #%>% 
+  #hideGroup("Full") #use this to choose set which layers are initially visible
+
+```
