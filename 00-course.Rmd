@@ -6,6 +6,16 @@ Work in progress.
 
 ```{r}
 
+library(fontawesome)
+
+# icon example https://github.com/rstudio/leaflet/issues/691
+
+list_icons <- awesomeIconList(
+  swimmer = makeAwesomeIcon(text = fa("swimmer"),markerColor = "blue"),
+  traffic = makeAwesomeIcon(text = fa("traffic-light"), markerColor = "black"),
+  marshall = makeAwesomeIcon(text = fa("user-circle"), markerColor = "pink"),
+  timer = makeAwesomeIcon(text = fa("stopwatch"), markerColor = "black")
+)
 
 unpack_points <- function(gpx_list, ord_name = c("lat","lon")[1]) {
   
@@ -22,8 +32,9 @@ import_gpx <- function(path_gpx) {
 }
 
 
-dt_courses <- data.table(course = "full", part = "ride",
-                         path_gpx = "data_provided/courses/full_ride.gpx")
+dt_courses <- data.table(course = "full", part = c("ride","run"),
+                         path_gpx = c("data_provided/courses/TT_Tri_Ride.gpx",
+                                      "data_provided/courses/TT_Tri_Run.gpx"))
 
 dt_courses[, row_id := seq(.N)]
 dt_courses[, sf_poly := list(list(import_gpx(path_gpx))), by = row_id]
@@ -35,23 +46,52 @@ dt_courses_range <- dt_courses[, .(xmin = min(xmin),
                ymax = max(ymax))]
 
 
+dt_markers <- data.table(lat = c(-28.214021, -28.214762,
+                                 -28.231228, -28.214127, -28.227960, -28.216583,
+                                 -28.214749),
+                         lng = c(153.540331, 153.525837,
+                                 153.526104, 153.528090, 153.538349, 153.541749,
+                                 153.537454),
+                         popup = c(rep("Traffic lights",2),
+                                   "Marshall: Fraser Dr Roundabout",
+                                   "Marshall: Woodlands Dr Roundabout",
+                                   "Marshall: Lochlomond Dr Roundabout",
+                                   "Marshall: Toolona Ave Roundabout",
+                                   "Timer and Finish"
+                                   ),
+                         icon = c(rep("traffic",2),
+                                  rep("marshall",4),
+                                  "timer"))
+
+
 leaflet(width = "100%", height = 700) %>% 
-  addTiles(group = "Open Street") %>% 
+  addTiles(group = "Detailed") %>% 
   addProviderTiles(providers$CartoDB.Positron, group = "Simple") %>% 
   addProviderTiles("Esri.WorldImagery", group = "Satellite") %>% 
   fitBounds(lng1 = dt_courses_range$xmin,
             lng2 =dt_courses_range$xmax,
             lat1 = dt_courses_range$ymin,
             lat2 = dt_courses_range$ymax) %>% 
-  addMarkers(lng = 153.537275, lat = -28.214789) %>% 
-  addPolylines(data = dt_courses[1]$sf_poly[[1]], color = tri_cols$ride, group = "Full") %>% 
-  addLayersControl(baseGroups = c("Simple","Open Street", "Satellite"),
+  # Add general markers
+  addAwesomeMarkers(data = dt_markers,
+                    lng = ~lng, lat =~lat,
+                    icon = ~list_icons[icon],popup = ~popup, group = "Info") %>% 
+  
+# Add swimming marker -28.215316, 
+  addAwesomeMarkers(lat = -28.215370, lng = 153.537490,
+                    icon = list_icons["swimmer"], # fixed list, can't accept hex
+                    popup = "10 laps", # popup = "Full:10 laps<br>Int: 5 laps",
+                   group = "Full") %>%
+  # Add courses
+  addPolylines(data = dt_courses[course=="full" & part=="ride"]$sf_poly[[1]], color = tri_cols$ride, group = "Full") %>% 
+  addPolylines(data = dt_courses[course=="full" & part=="run"]$sf_poly[[1]], color = tri_cols$run, group = "Full") %>% 
+  addLayersControl(baseGroups = c("Simple","Detailed", "Satellite"),
                    # overlayGroups = c("Full", "Intermediate"),
-                   overlayGroups = c("Full"),
+                   overlayGroups = c("Full","Info"),
                    options = layersControlOptions(collapsed = FALSE)) %>% 
   addFullscreenControl() %>% 
   addScaleBar(position = "bottomleft") %>% 
-  addLegend(position = "bottomright",colors = c(tri_cols$ride),labels = c("Ride")) #%>% 
-  #hideGroup("Full") #use this to choose set which layers are initially visible
+  addLegend(position = "bottomright",colors = c(tri_cols$ride, tri_cols$run),labels = c("Ride","Run"))# %>%
+  # hideGroup(c("Intermediate")) #use this to choose set which layers are initially visible
 
 ```
