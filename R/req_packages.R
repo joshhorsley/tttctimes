@@ -12,4 +12,4 @@ library(lubridate)
 library(DT)
 library(xml2)
 library(sf)
-
+library(fontawesome)
