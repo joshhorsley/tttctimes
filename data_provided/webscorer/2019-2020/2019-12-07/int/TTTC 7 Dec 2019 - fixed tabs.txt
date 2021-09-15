@@ -1,0 +1,19 @@
+Place	Bib	Name	First	Last	Distance	Adjusted	Time	Lap 1	Lap 2	Lap 3	Handicap	Difference	% Back	% Winning	% Average	% Median
+1	17	Richard MOURANT	Richard	MOURANT	Intermediate	33:12.1	48:12.1	20:58.5	17:49.2	09:24.4	-15:00.0	-	-	100%	18.11%	15.64%
+2	63	Sebastian		THOMSON	Intermediate	35:34.7	50:34.7	20:42.4	20:15.7	09:36.6	-15:00.0	+2:22.6	4.93%	95.30%	14.07%	11.48%
+3	234	Adndrew MILLER	Andrew	MILLER	Intermediate	36:04.0	51:04.0	20:40.3	20:56.7	09:27.0	-15:00.0	+2:51.9	5.94%	94.39%	13.24%	10.62%
+4	122	Bede CURNOW	Bede	CURNOW	Intermediate	36:04.2	51:04.2	20:07.2	20:47.8	10:09.2	-15:00.0	+2:52.1	5.95%	94.38%	13.23%	10.62%
+5	147	Remy HAWKINS	Remy	HAWKINS	Intermediate	39:57.1	54:57.1	21:16.8	22:46.4	10:53.9	-15:00.0	+6:45.0	14.00%	87.72%	6.64%	3.83%
+6	214	Tim TAYLOR	Tim	TAYLOR	Intermediate	41:00.3	56:00.3	22:11.9	23:06.9	10:41.5	-15:00.0	+7:48.2	16.19%	86.07%	4.85%	1.98%
+7	233	Kat MILLER	Kat	MILLER	Intermediate	41:19.9	56:19.9	22:16.8	23:51.0	10:12.2	-15:00.0	+8:07.8	16.87%	85.57%	4.29%	1.41%
+8	215	Will TAYLOR	Will	TAYLOR	Intermediate	41:41.1	56:41.1	21:42.5	26:12.3	08:46.4	-15:00.0	+8:29.0	17.60%	85.03%	3.69%	0.79%
+9	230	Adrian ROTA	Adrian	ROTA	Intermediate	41:51.0	56:51.0	22:07.3	21:56.8	12:46.9	-15:00.0	+8:38.9	17.94%	84.79%	3.41%	0.50%
+10	196	Shelley WINDER	Shelley	WINDER	Intermediate	42:25.5	57:25.5	23:07.7	22:08.8	12:09.0	-15:00.0	+9:13.4	19.13%	83.94%	2.44%	-0.50%
+11	190	Lloyd MAUNDER	Lloyd	MAUNDER	Intermediate	43:02.0	58:02.0	21:32.6	22:49.9	13:39.5	-15:00.0	+9:49.9	20.40%	83.06%	1.40%	-1.57%
+12	208	Ava THOMSON	Ava	THOMSON	Intermediate	43:17.3	58:17.3	22:57.1	23:41.0	11:39.2	-15:00.0	+10:05.2	20.93%	82.70%	0.97%	-2.01%
+13	156	Stephen RING	Stephen	RING	Intermediate	44:06.1	59:06.1	22:24.2	22:50.5	13:51.4	-15:00.0	+10:54.0	22.61%	81.56%	-0.41%	-3.44%
+14	204	Lucas N	Lucas	NIXON-HIND	Intermediate	45:09.9	00:09.9	24:08.2	24:52.3	11:09.3	-15:00.0	+11:57.8	24.82%	80.12%	-2.22%	-5.30%
+15	241	John Delbridge			Intermediate	46:13.1	01:13.1	21:44.7	28:12.6	11:15.8	-15:00.0	+13:01.0	27.00%	78.74%	-4.01%	-7.14%
+16	25	Susan BAXTER	Susan	BAXTER	Intermediate	46:45.4	01:45.4	21:41.0	25:58.8	14:05.6	-15:00.0	+13:33.3	28.12%	78.05%	-4.92%	-8.08%
+17	64	Wendy SANDERS	Wendy	SANDERS	Intermediate	06:45.1	04:42.1	23:02.1	27:14.9	14:25.2	-57:57.0	+16:30.0	34.23%	74.50%	-9.93%	-13.24%
+18	242	Dan Delbridge			Intermediate	22:01.7	37:01.7	22:57.3	46:17.7	27:46.7	-15:00.0	+48:49.6	101.30%	49.68%	-64.85%	-69.82%

@@ -1,0 +1,11 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Adjusted time	Time	Lap 1	Lap 2	Lap 3	Handicap	Difference	% Back	% Winning	% Average	% Median
+1	63	Sebastian THOMSON	Sebastian	THOMSON	Intermediate	37:42.1	52:42.1	20:51.4	22:18.9	9:31.8	-15:00.0	-	-	100%	13.79%	8.71%
+2	147	Remy HAWKINS	Remy	HAWKINS	Intermediate	41:08.3	56:08.3	21:05.2	23:31.1	11:32.0	-15:00.0	+3:26.2	+6.52%	93.88%	8.16%	2.75%
+3	231	Shaun OLDBURY	Shaun	OLDBURY	Intermediate	41:37.7	56:37.7	21:02.4	26:05.7	9:29.6	-15:00.0	+3:55.6	+7.45%	93.07%	7.36%	1.91%
+4	215	Will TAYLOR	Will	TAYLOR	Intermediate	42:15.8	57:15.8	21:40.7	27:00.8	8:34.3	-15:00.0	+4:33.7	+8.66%	92.03%	6.32%	0.81%
+5	230	Adrian ROTA	Adrian	ROTA	Intermediate	42:40.7	57:40.7	21:36.6	21:32.6	14:31.5	-15:00.0	+4:58.6	+9.44%	91.37%	5.65%	0.09%
+6	214	Tim TAYLOR	Tim	TAYLOR	Intermediate	42:46.7	57:46.7	22:08.7	24:39.1	10:58.9	-15:00.0	+5:04.6	+9.63%	91.21%	5.48%	-0.09%
+7	196	Shelley WINDER	Shelley	WINDER	Intermediate	42:46.8	57:46.8	22:59.8	22:52.0	11:55.0	-15:00.0	+5:04.7	+9.64%	91.21%	5.48%	-0.09%
+8	204	Lucas NIXON-HIND	Lucas	NIXON-HIND	Intermediate	46:28.8	1:01:28.8	23:25.3	27:19.8	10:43.7	-15:00.0	+8:46.7	+16.66%	85.72%	-0.57%	-6.50%
+9	167	Rebecca WALDREN	Rebecca	WALDREN	Intermediate	22:34.2	1:01:48.2	21:50.2	27:18.3	12:39.7	-39:14.0	+9:06.1	+17.27%	85.27%	-1.10%	-7.06%
+10	160	Jeff STELLA	Jeff	STELLA	Intermediate	1:11:51.5	1:32:02.5	37:09.9	32:10.9	22:41.7	-20:11.0	+39:20.4	+74.65%	57.26%	-50.57%	-59.44%

@@ -1,0 +1,9 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Time	Lap 1	Lap 2	Lap 3	Difference	% Back	% Winning	% Average	% Median
+1	63	Sebastian THOMSON	Sebastian	THOMSON	Intermediate	52:53.3	21:06.3	22:22.3	9:24.7	-	-	100%	10.90%	9.79%
+2	215	Will TAYLOR	Will	TAYLOR	Intermediate	53:44.9	21:26.9	23:23.1	8:54.8	+0:51.6	+1.63%	98.40%	9.46%	8.32%
+3	208	Ava THOMSON	Ava	THOMSON	Intermediate	55:03.4	22:00.5	22:35.8	10:27.1	+2:10.1	+4.10%	96.06%	7.25%	6.09%
+4	214	Tim TAYLOR	Tim	TAYLOR	Intermediate	57:15.7	21:22.5	24:00.3	11:52.9	+4:22.4	+8.27%	92.36%	3.54%	2.33%
+5	238	Lorraine BASSETT	Lorraine	BASSETT	Intermediate	59:59.6	25:34.9	19:02.4	15:22.3	+7:06.3	+13.43%	88.16%	-1.07%	-2.33%
+6	204	Lucas NIXON-HIND	Lucas	NIXON-HIND	Intermediate	1:02:40.6	23:06.1	28:06.9	11:27.5	+9:47.3	+18.51%	84.38%	-5.59%	-6.91%
+7	244	Lydia KUSCHMIRZ	Lydia	KUSCHMIRZ	Intermediate	1:05:11.1	8:24.0	40:04.3	16:42.8	+12:17.8	+23.25%	81.14%	-9.81%	-11.19%
+8	239	Glenn HIND	Glenn	HIND	Intermediate	1:08:04.7	23:51.3	31:08.3	13:05.1	+15:11.4	+28.72%	77.69%	-14.69%	-16.12%

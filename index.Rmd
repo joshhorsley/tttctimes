@@ -8,7 +8,7 @@ description: "Twinnies Times"
 ---
 
 
-```{r}
+```{r prep}
 
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, fig.height = 6, fig.width = 7)
 

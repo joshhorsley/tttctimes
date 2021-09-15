@@ -1,5 +1,279 @@
 race_number,date_ymd,Name,part,split_valid,cumulative_valid
 ,,,,,
+1,28/9/19,Peter Crowe,Swim,FALSE,FALSE
+1,28/9/19,Peter Crowe,Ride,FALSE,FALSE
+1,28/9/19,Peter Crowe,Run,FALSE,TRUE
+,,,,,
+1,28/9/19,Timothy Eade,Ride,FALSE,FALSE
+1,28/9/19,Timothy Eade,Run,FALSE,TRUE
+,,,,,
+1,28/9/19,Carl Patterson,Run,FALSE,FALSE
+,,,,,
+1,28/9/19,Marcel Van Kampen,Swim,FALSE,FALSE
+1,28/9/19,Marcel Van Kampen,Ride,FALSE,FALSE
+1,28/9/19,Marcel Van Kampen,Run,FALSE,FALSE
+,,,,,
+1,28/9/19,Tom Boswell,Swim,FALSE,FALSE
+1,28/9/19,Tom Boswell,Ride,FALSE,FALSE
+1,28/9/19,Tom Boswell,Run,FALSE,TRUE
+,,,,,
+1,28/9/19,Ian Curnow,Swim,FALSE,FALSE
+1,28/9/19,Ian Curnow,Ride,FALSE,FALSE
+1,28/9/19,Ian Curnow,Run,FALSE,TRUE
+,,,,,
+1,28/9/19,Simon Harradence,Swim,FALSE,FALSE
+1,28/9/19,Simon Harradence,Ride,FALSE,FALSE
+1,28/9/19,Simon Harradence,Run,FALSE,TRUE
+,,,,,
+1,28/9/19,Bredan Brooks,Swim,TRUE,TRUE
+1,28/9/19,Bredan Brooks,Ride,FALSE,FALSE
+1,28/9/19,Bredan Brooks,Run,FALSE,TRUE
+,,,,,
+1,28/9/19,Tracy Foysyer,Swim,TRUE,TRUE
+1,28/9/19,Tracy Foysyer,Ride,FALSE,FALSE
+1,28/9/19,Tracy Foysyer,Run,FALSE,TRUE
+,,,,,
+1,28/9/19,Viv Wright,Swim,FALSE,FALSE
+1,28/9/19,Viv Wright,Ride,FALSE,FALSE
+1,28/9/19,Viv Wright,Run,FALSE,TRUE
+,,,,,
+1,28/9/19,Kipp Freeman,Swim,FALSE,FALSE
+1,28/9/19,Kipp Freeman,Ride,FALSE,FALSE
+1,28/9/19,Kipp Freeman,Run,FALSE,TRUE
+,,,,,
+1,28/9/19,Sera Graham,Swim,TRUE,TRUE
+1,28/9/19,Sera Graham,Ride,FALSE,FALSE
+1,28/9/19,Sera Graham,Run,FALSE,TRUE
+,,,,,
+1,28/9/19,Glenn Forbes,Swim,TRUE,TRUE
+1,28/9/19,Glenn Forbes,Ride,FALSE,FALSE
+1,28/9/19,Glenn Forbes,Run,FALSE,TRUE
+,,,,,
+1,28/9/19,Matthew Stanley,Swim,FALSE,FALSE
+1,28/9/19,Matthew Stanley,Ride,FALSE,FALSE
+1,28/9/19,Matthew Stanley,Run,FALSE,TRUE
+,,,,,
+1,28/9/19,Jim Collins,Swim,FALSE,FALSE
+1,28/9/19,Jim Collins,Ride,FALSE,FALSE
+1,28/9/19,Jim Collins,Run,FALSE,TRUE
+,,,,,
+1,28/9/19,Craig Broadhurst,Swim,FALSE,FALSE
+1,28/9/19,Craig Broadhurst,Ride,FALSE,FALSE
+1,28/9/19,Craig Broadhurst,Run,FALSE,TRUE
+,,,,,
+1,28/9/19,Aaron Duel,Swim,FALSE,FALSE
+1,28/9/19,Aaron Duel,Ride,FALSE,FALSE
+1,28/9/19,Aaron Duel,Run,FALSE,TRUE
+,,,,,
+1,28/9/19,Jeff Stella,Swim,TRUE,TRUE
+1,28/9/19,Jeff Stella,Ride,FALSE,FALSE
+1,28/9/19,Jeff Stella,Run,FALSE,TRUE
+,,,,,
+1,28/9/19,Jessie Smith,Swim,FALSE,FALSE
+1,28/9/19,Jessie Smith,Ride,FALSE,FALSE
+1,28/9/19,Jessie Smith,Run,FALSE,TRUE
+,,,,,
+1,28/9/19,Gerard Robards,Swim,TRUE,TRUE
+1,28/9/19,Gerard Robards,Ride,FALSE,FALSE
+1,28/9/19,Gerard Robards,Run,FALSE,TRUE
+,,,,,
+,,,,,
+3,12/10/19,Christian Andrews,Ride,FALSE,FALSE
+3,12/10/19,Christian Andrews,Run,FALSE,FALSE
+,,,,,
+3,12/10/19,Sam Colman,Ride,FALSE,FALSE
+3,12/10/19,Sam Colman,Run,FALSE,TRUE
+,,,,,
+3,12/10/19,Wendy Wise,Swim,FALSE,FALSE
+3,12/10/19,Wendy Wise,Ride,TRUE,FALSE
+3,12/10/19,Wendy Wise,Run,TRUE,TRUE
+,,,,,
+3,12/10/19,Bobby Smith,Ride,FALSE,FALSE
+3,12/10/19,Bobby Smith,Ride,FALSE,TRUE
+,,,,,
+4,19/10/19,Val Lambard,Swim,FALSE,FALSE
+4,19/10/19,Val Lambard,Ride,TRUE,FALSE
+4,19/10/19,Val Lambard,Run,TRUE,FALSE
+,,,,,
+4,19/10/19,Jenny Scaysbrook,Swim,FALSE,FALSE
+4,19/10/19,Jenny Scaysbrook,Ride,TRUE,FALSE
+4,19/10/19,Jenny Scaysbrook,Run,TRUE,FALSE
+,,,,,
+4,19/10/19,Craig Telling,Run,FALSE,FALSE
+,,,,,
+4,19/10/19,Guy Davoren,Run,FALSE,FALSE
+,,,,,
+4,19/10/19,Michelle Miller,Ride,FALSE,FALSE
+4,19/10/19,Michelle Miller,Run,FALSE,TRUE
+,,,,,
+4,19/10/19,Simon Bradbery,Ride,FALSE,FALSE
+4,19/10/19,Simon Bradbery,Run,FALSE,FALSE
+,,,,,
+,,,,,
+5,26/10/19,Scott Thomson,Run,FALSE,FALSE
+,,,,,
+5,26/10/19,Rachael Meakes,Swim,FALSE,FALSE
+5,26/10/19,Rachael Meakes,Ride,TRUE,FALSE
+5,26/10/19,Rachael Meakes,Run,TRUE,FALSE
+,,,,,
+5,26/10/19,Sebastian Thomson,Ride,FALSE,FALSE
+5,26/10/19,Sebastian Thomson,Run,FALSE,FALSE
+,,,,,
+5,26/10/19,Stephanie Esparza,Swim,FALSE,FALSE
+5,26/10/19,Stephanie Esparza,Ride,TRUE,FALSE
+5,26/10/19,Stephanie Esparza,Run,TRUE,FALSE
+,,,,,
+5,26/10/19,Ava Thomson,Ride,FALSE,FALSE
+5,26/10/19,Ava Thomson,Run,FALSE,FALSE
+,,,,,
+6,2/11/19,Sam Colman,Swim,FALSE,FALSE
+6,2/11/19,Sam Colman,Ride,FALSE,FALSE
+6,2/11/19,Sam Colman,Run,FALSE,TRUE
+,,,,,
+6,2/11/19,Aaron Neylan,Swim,FALSE,FALSE
+6,2/11/19,Aaron Neylan,Ride,FALSE,FALSE
+6,2/11/19,Aaron Neylan,Run,FALSE,TRUE
+,,,,,
+,,,,,
+8,16/11/19,Craig Telling,Swim,FALSE,FALSE
+8,16/11/19,Craig Telling,Ride,TRUE,FALSE
+8,16/11/19,Craig Telling,Run,TRUE,FALSE
+,,,,,
+8,16/11/19,Terry Kneller,Swim,FALSE,FALSE
+8,16/11/19,Terry Kneller,Ride,TRUE,FALSE
+8,16/11/19,Terry Kneller,Run,TRUE,FALSE
+,,,,,
+,,,,,
+9,23/11/19,Kai Waldron,Swim,FALSE,FALSE
+9,23/11/19,Kai Waldron,Ride,TRUE,FALSE
+9,23/11/19,Kai Waldron,Run,TRUE,FALSE
+,,,,,
+10,30/11/19,Lisa Warner,Run,FALSE,FALSE
+,,,,,
+10,30/11/19,Nick Fawaz,Swim,FALSE,FALSE
+10,30/11/19,Nick Fawaz,Ride,TRUE,FALSE
+10,30/11/19,Nick Fawaz,Run,TRUE,FALSE
+,,,,,
+10,30/11/19,Roger Campbell,Run,FALSE,FALSE
+,,,,,
+,,,,,
+11,7/12/19,Trent Ousby,Swim,FALSE,FALSE
+11,7/12/19,Trent Ousby,Ride,TRUE,FALSE
+11,7/12/19,Trent Ousby,Run,TRUE,FALSE
+,,,,,
+12,14/12/19,Ross Salmon,Swim,FALSE,FALSE
+12,14/12/19,Ross Salmon,Ride,TRUE,FALSE
+12,14/12/19,Ross Salmon,Run,TRUE,FALSE
+,,,,,
+12,14/12/19,Rob Gilles,Swim,FALSE,FALSE
+,,,,,
+12,14/12/19,Joylon Ward,Swim,FALSE,FALSE
+,,,,,
+,,,,,
+13,21/12/19,Joylon Ward,Swim,FALSE,FALSE
+,,,,,
+,,,,,
+14,28/12/19,Craig Telling,Swim,FALSE,FALSE
+14,28/12/19,Craig Telling,Ride,TRUE,FALSE
+14,28/12/19,Craig Telling,Run,TRUE,FALSE
+,,,,,
+14,28/12/19,Rob Gillies,Swim,FALSE,FALSE
+,,,,,
+,,,,,
+15,4/1/20,Ian Curnow,Swim,FALSE,FALSE
+15,4/1/20,Ian Curnow,Ride,TRUE,FALSE
+15,4/1/20,Ian Curnow,Run,TRUE,FALSE
+,,,,,
+15,4/1/20,Scott Styman,Swim,FALSE,FALSE
+15,4/1/20,Scott Styman,Ride,TRUE,FALSE
+15,4/1/20,Scott Styman,Run,TRUE,FALSE
+,,,,,
+15,4/1/20,Rob Gillies,Swim,FALSE,FALSE
+,,,,,
+15,4/1/20,Bede Curnow,Swim,FALSE,FALSE
+15,4/1/20,Bede Curnow,Ride,TRUE,FALSE
+15,4/1/20,Bede Curnow,Run,TRUE,FALSE
+,,,,,
+19,1/2/20,Danny Warner,Run,FALSE,FALSE
+,,,,,
+19,1/2/20,James Mourant,Swim,FALSE,FALSE
+19,1/2/20,James Mourant,Ride,FALSE,FALSE
+19,1/2/20,James Mourant,Run,FALSE,TRUE
+,,,,,
+19,1/2/20,Ross Salmon,Swim,FALSE,FALSE
+19,1/2/20,Ross Salmon,Ride,TRUE,FALSE
+19,1/2/20,Ross Salmon,Run,TRUE,FALSE
+,,,,,
+19,1/2/20,Scott Collins,Ride,FALSE,FALSE
+19,1/2/20,Scott Collins,Run,FALSE,TRUE
+,,,,,
+19,1/2/20,Sharyn Klein,Run,FALSE,FALSE
+,,,,,
+,,,,,
+,,,,,
+20,8/2/20,Marcel Van Kampen,Ride,FALSE,FALSE
+20,8/2/20,Marcel Van Kampen,Run,TRUE,FALSE
+,,,,,
+20,8/2/20,Warren Copping,Run,FALSE,FALSE
+,,,,,
+,,,,,
+21,15/2/20,Rob Gillies,Swim,FALSE,FALSE
+,,,,,
+,,,,,
+22,22/2/20,Matthew Stanley,Run,FALSE,FALSE
+,,,,,
+22,22/2/20,Craig Telling,Swim,FALSE,FALSE
+22,22/2/20,Craig Telling,Ride,TRUE,FALSE
+22,22/2/20,Craig Telling,Run,TRUE,FALSE
+,,,,,
+22,22/2/20,Ross Salom,Swim,FALSE,FALSE
+22,22/2/20,Ross Salom,Ride,TRUE,FALSE
+22,22/2/20,Ross Salom,Run,TRUE,FALSE
+,,,,,
+22,22/2/20,Dawn Courage,Ride,FALSE,FALSE
+22,22/2/20,Dawn Courage,Run,FALSE,TRUE
+,,,,,
+22,22/2/20,Rob Gillies,Swim,FALSE,FALSE
+,,,,,
+,,,,,
+23,29/2/20,Danny Warner,Ride,FALSE,FALSE
+23,29/2/20,Danny Warner,Run,FALSE,FALSE
+,,,,,
+23,29/2/20,Scott Thompson,Ride,FALSE,FALSE
+23,29/2/20,Scott Thompson,Run,TRUE,FALSE
+,,,,,
+23,29/2/20,Darren Jones,Run,FALSE,FALSE
+,,,,,
+23,29/2/20,Michelle Jones,Run,FALSE,FALSE
+,,,,,
+23,29/2/20,Craig Telling,Run,FALSE,FALSE
+,,,,,
+,,,,,
+24,7/3/20,Ross Salmon,Swim,FALSE,FALSE
+24,7/3/20,Ross Salmon,Ride,TRUE,FALSE
+24,7/3/20,Ross Salmon,Run,TRUE,FALSE
+,,,,,
+24,7/3/20,Jolyon Ward,Swim,FALSE,FALSE
+24,7/3/20,Jolyon Ward,Ride,TRUE,FALSE
+24,7/3/20,Jolyon Ward,Run,TRUE,FALSE
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+25,14/3/20,Adrian Rota,Run,FALSE,FALSE
+,,,,,
+,,,,,
+26,21/3/20,Mark Whiticker,Run,FALSE,FALSE
+,,,,,
+26,21/3/20,Liam Foyster,Ride,FALSE,FALSE
+26,21/3/20,Liam Foyster,Run,FALSE,TRUE
+,,,,,
+26,21/3/20,Ross Salmon,Swim,FALSE,FALSE
+26,21/3/20,Ross Salmon,Ride,TRUE,FALSE
+26,21/3/20,Ross Salmon,Run,TRUE,FALSE
+,,,,,
+,,,,,
+,,,,,
 1,26/9/20,Hollie Robards,Run,FALSE,FALSE
 ,,,,,
 1,26/9/20,Rob Gillies,Swim,FALSE,FALSE

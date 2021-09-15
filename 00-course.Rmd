@@ -4,7 +4,7 @@
 
 Work in progress.
 
-```{r}
+```{r course-map}
 
 
 # icon example https://github.com/rstudio/leaflet/issues/691

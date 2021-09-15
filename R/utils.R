@@ -71,7 +71,8 @@ apply_col.datatables <- function(tab, tri_cols){
 
 
 myscale_x_racetime <- function(g) {
-  break_step <- ifelse( max(g$data$total_overall_mins) > 100, 20, 10)
+  break_step <- ifelse( max(g$data$total_overall_mins, na.rm=TRUE) > 100, 20, 10)
+  # break_step <- ifelse( max(g$data$total_overall_mins) > 100, 20, 10)
   
   g + scale_x_continuous("Time (mins)", breaks = seq(0,150, break_step), minor_breaks = seq(0,150, 5),position = "top")
 }
