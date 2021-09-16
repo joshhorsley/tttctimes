@@ -114,9 +114,9 @@ datatable_std <- function(df, col_ref_hide, scrollY_override = FALSE, ordering =
 set_names_plotly <- function(p, new_name = "removed"){
   
   p$x$cur_data <- new_name
-  names(p$x$attrs) <- new_name
-  names(p$x$visdat) <- new_name
-  names(p$x$attrs) <- new_name
+  names(p$x$attrs) <- rep(new_name, length(names(p$x$attrs)))
+  names(p$x$visdat) <- rep(new_name, length(names(p$x$visdat)))
+  names(p$x$attrs) <- rep(new_name, length(names(p$x$attrs)))
   
   p
 }
@@ -203,16 +203,22 @@ standardise_names <- function(name){
   
   name_list <- strsplit(name, c("-"))
   
-  if(length(name_list[[1]])==1) {
-    return(name)
-  } else {
-    return(
-      paste0(name_list[[1]][1],
-             "-",
-             cap_first_only(name_list[[1]][2]))
-    )
+  if(length(name_list[[1]])>1) {
+    name =  paste0(name_list[[1]][1],
+                   "-",
+                   cap_first_only(name_list[[1]][2]))
+  }
+  
+  name_list <- strsplit(name, c("'"))
+  
+  if(length(name_list[[1]])>1) {
+    name =  paste0(name_list[[1]][1],
+                   "'",
+                   cap_first_only(name_list[[1]][2]))
   }
   
   
+  return(name)
+
   
 }

@@ -1,5 +1,239 @@
 race_number,date_ymd,Name,part,split_valid,cumulative_valid
 ,,,,,
+2,29/9/18,Alex Torrance,Run,FALSE,FALSE
+,,,,,
+2,29/9/18,Guy Davoren,Swim,FALSE,FALSE
+2,29/9/18,Guy Davoren,Ride,TRUE,FALSE
+2,29/9/18,Guy Davoren,Run,TRUE,FALSE
+,,,,,
+2,29/9/18,Garrett Thompson,Ride,FALSE,FALSE
+2,29/9/18,Garrett Thompson,Run,TRUE,FALSE
+,,,,,
+2,29/9/18,Des Gooda,Run,FALSE,TRUE
+,,,,,
+2,29/9/18,Michelle Jones,Ride,FALSE,FALSE
+2,29/9/18,Michelle Jones,Run,FALSE,FALSE
+,,,,,
+2,29/9/18,Kara Pease,Swim,FALSE,FALSE
+2,29/9/18,Kara Pease,Ride,TRUE,FALSE
+2,29/9/18,Kara Pease,Run,TRUE,FALSE
+,,,,,
+2,29/9/18,Hippolyte Lanchou,Run,FALSE,FALSE
+,,,,,
+2,29/9/18,Mattew Tapping,Run,FALSE,FALSE
+,,,,,
+2,29/9/18,Sue Van Den Broek,Run,FALSE,FALSE
+,,,,,
+,,,,,
+4,13/10/18,Matt Lance,Ride,FALSE,FALSE
+4,13/10/18,Matt Lance,Run,FALSE,FALSE
+,,,,,
+,,,,,
+5,20/10/18,Nick O'Reilly,Run,FALSE,FALSE
+,,,,,
+5,20/10/18,Deb Anderson,Run,FALSE,FALSE
+,,,,,
+,,,,,
+6,27/10/18,Paul Woodger,Swim,FALSE,FALSE
+6,27/10/18,Paul Woodger,Ride,TRUE,FALSE
+6,27/10/18,Paul Woodger,Run,TRUE,FALSE
+,,,,,
+,,,,,
+7,3/11/18,Kirsten Ellis,Swim,FALSE,FALSE
+7,3/11/18,Kirsten Ellis,Ride,FALSE,FALSE
+7,3/11/18,Kirsten Ellis,Run,FALSE,FALSE
+,,,,,
+7,3/11/18,Hippolyte Lanchou,Ride,FALSE,FALSE
+7,3/11/18,Hippolyte Lanchou,Run,FALSE,TRUE
+,,,,,
+7,3/11/18,David Emery,Ride,FALSE,FALSE
+7,3/11/18,David Emery,Run,TRUE,FALSE
+,,,,,
+7,3/11/18,Alex Torrance,Swim,FALSE,FALSE
+7,3/11/18,Alex Torrance,Ride,FALSE,FALSE
+7,3/11/18,Alex Torrance,Run,FALSE,TRUE
+,,,,,
+7,3/11/18,Paul Woodger,Run,FALSE,FALSE
+,,,,,
+7,3/11/18,Wendy Wise,Swim,FALSE,FALSE
+7,3/11/18,Wendy Wise,Ride,FALSE,FALSE
+7,3/11/18,Wendy Wise,Run,FALSE,TRUE
+,,,,,
+7,3/11/18,Zoe Taylor-West,Swim,FALSE,FALSE
+7,3/11/18,Zoe Taylor-West,Ride,TRUE,FALSE
+7,3/11/18,Zoe Taylor-West,Run,TRUE,FALSE
+,,,,,
+8,10/11/18,Des Gooda,Swim,FALSE,FALSE
+8,10/11/18,Des Gooda,Ride,TRUE,FALSE
+8,10/11/18,Des Gooda,Run,TRUE,FALSE
+,,,,,
+9,17/11/18,Carl Patterson,Swim,FALSE,FALSE
+9,17/11/18,Carl Patterson,Ride,FALSE,FALSE
+9,17/11/18,Carl Patterson,Run,FALSE,FALSE
+,,,,,
+9,17/11/18,Scott Thomson,Swim,FALSE,FALSE
+9,17/11/18,Scott Thomson,Ride,TRUE,FALSE
+9,17/11/18,Scott Thomson,Run,TRUE,FALSE
+,,,,,
+9,17/11/18,Craig Broadhurst,Swim,FALSE,FALSE
+9,17/11/18,Craig Broadhurst,Ride,TRUE,FALSE
+9,17/11/18,Craig Broadhurst,Run,TRUE,FALSE
+,,,,,
+9,17/11/18,Andrew Costello,Run,FALSE,FALSE
+,,,,,
+9,17/11/18,Kara Pease,Swim,FALSE,FALSE
+9,17/11/18,Kara Pease,Ride,TRUE,FALSE
+9,17/11/18,Kara Pease,Run,TRUE,FALSE
+,,,,,
+,,,,,
+10,24/11/18,Tim Whitburn,Run,FALSE,FALSE
+,,,,,
+10,24/11/18,Julie West,Swim,FALSE,FALSE
+10,24/11/18,Julie West,Ride,TRUE,FALSE
+10,24/11/18,Julie West,Run,TRUE,FALSE
+,,,,,
+10,24/11/18,Marcel Van Kampen,Run,FALSE,FALSE
+,,,,,
+,,,,,
+11,1/12/18,Stuart Crawford,Swim,FALSE,FALSE
+11,1/12/18,Stuart Crawford,Ride,FALSE,FALSE
+11,1/12/18,Stuart Crawford,Run,FALSE,FALSE
+,,,,,
+11,1/12/18,Mark Collinson,Run,FALSE,FALSE
+,,,,,
+11,1/12/18,Rob Gillies,Swim,FALSE,FALSE
+,,,,,
+11,1/12/18,Ethan Birtwistle,Swim,FALSE,FALSE
+11,1/12/18,Ethan Birtwistle,Ride,TRUE,FALSE
+11,1/12/18,Ethan Birtwistle,Run,TRUE,FALSE
+,,,,,
+11,1/12/18,Bede Curnow,Swim,FALSE,FALSE
+11,1/12/18,Bede Curnow,Ride,TRUE,FALSE
+11,1/12/18,Bede Curnow,Run,TRUE,FALSE
+,,,,,
+,,,,,
+12,8/12/18,Tim Whitburn,Run,FALSE,FALSE
+,,,,,
+12,8/12/18,Jim Collins,Run,FALSE,FALSE
+,,,,,
+12,8/12/18,Kev Bannerman,Swim,FALSE,FALSE
+12,8/12/18,Kev Bannerman,Ride,TRUE,FALSE
+12,8/12/18,Kev Bannerman,Run,TRUE,FALSE
+,,,,,
+12,8/12/18,Lisa Warner,Swim,FALSE,FALSE
+12,8/12/18,Lisa Warner,Ride,TRUE,FALSE
+12,8/12/18,Lisa Warner,Run,TRUE,FALSE
+,,,,,
+12,8/12/18,Rob Gillies,Swim,FALSE,FALSE
+,,,,,
+,,,,,
+13,15/12/18,Matt Lance,Swim,FALSE,FALSE
+13,15/12/18,Matt Lance,Ride,TRUE,FALSE
+13,15/12/18,Matt Lance,Run,TRUE,FALSE
+,,,,,
+13,15/12/18,David De Closey,Swim,FALSE,FALSE
+13,15/12/18,David De Closey,Ride,FALSE,FALSE
+13,15/12/18,David De Closey,Run,FALSE,TRUE
+,,,,,
+13,15/12/18,Rob Gillies,Swim,FALSE,FALSE
+,,,,,
+,,,,,
+14,22/12/18,Tim Whitburn,Run,FALSE,FALSE
+,,,,,
+14,22/12/18,Rob Gillies,Swim,FALSE,FALSE
+,,,,,
+,,,,,
+15,29/12/18,Glenn Lance,Swim,FALSE,FALSE
+15,29/12/18,Glenn Lance,Ride,TRUE,FALSE
+15,29/12/18,Glenn Lance,Run,TRUE,FALSE
+,,,,,
+,,,,,
+16,5/1/19,Rob Gillies,Swim,FALSE,FALSE
+,,,,,
+16,5/1/19,Glenn Lance,Swim,FALSE,FALSE
+16,5/1/19,Glenn Lance,Ride,TRUE,FALSE
+16,5/1/19,Glenn Lance,Run,TRUE,FALSE
+,,,,,
+17,12/1/19,David De Closey,Swim,FALSE,FALSE
+17,12/1/19,David De Closey,Ride,TRUE,FALSE
+17,12/1/19,David De Closey,Run,TRUE,TRUE
+,,,,,
+,,,,,
+18,19/1/19,Glenn Lance,Swim,FALSE,FALSE
+18,19/1/19,Glenn Lance,Ride,TRUE,FALSE
+18,19/1/19,Glenn Lance,Run,TRUE,FALSE
+,,,,,
+,,,,,
+20,2/2/19,Terence Simpson,Ride,FALSE,FALSE
+20,2/2/19,Terence Simpson,Run,FALSE,FALSE
+,,,,,
+20,2/2/19,Michelle Jones,Swim,FALSE,FALSE
+20,2/2/19,Michelle Jones,Ride,FALSE,FALSE
+20,2/2/19,Michelle Jones,Run,FALSE,TRUE
+,,,,,
+,,,,,
+,,,,,
+20,2/2/19,Glenn Lance,Swim,FALSE,FALSE
+20,2/2/19,Glenn Lance,Ride,TRUE,FALSE
+20,2/2/19,Glenn Lance,Run,TRUE,FALSE
+,,,,,
+20,2/2/19,David De Closey,Swim,FALSE,FALSE
+20,2/2/19,David De Closey,Ride,TRUE,FALSE
+20,2/2/19,David De Closey,Run,TRUE,TRUE
+,,,,,
+20,2/2/19,Rob Gillies,Swim,FALSE,FALSE
+,,,,,
+20,2/2/19,Ross Salmon,Swim,FALSE,FALSE
+20,2/2/19,Ross Salmon,Ride,TRUE,FALSE
+20,2/2/19,Ross Salmon,Run,TRUE,FALSE
+,,,,,
+,,,,,
+21,9/2/19,Mitchell Coombs,Run,FALSE,FALSE
+,,,,,
+21,9/2/19,Rhys Campbell,Run,FALSE,FALSE
+,,,,,
+21,9/2/19,Ross Salmon,Swim,FALSE,FALSE
+21,9/2/19,Ross Salmon,Ride,TRUE,FALSE
+21,9/2/19,Ross Salmon,Run,TRUE,TRUE
+,,,,,
+,,,,,
+22,16/2/19,Michelle Jones,Ride,FALSE,FALSE
+22,16/2/19,Michelle Jones,Run,FALSE,FALSE
+,,,,,
+22,16/2/19,Kent Holmes,Swim,FALSE,FALSE
+22,16/2/19,Kent Holmes,Ride,FALSE,FALSE
+22,16/2/19,Kent Holmes,Run,FALSE,TRUE
+,,,,,
+22,16/2/19,Kipp Freeman,Swim,FALSE,FALSE
+22,16/2/19,Kipp Freeman,Ride,FALSE,FALSE
+22,16/2/19,Kipp Freeman,Run,TRUE,TRUE
+,,,,,
+22,16/2/19,Julie West,Swim,FALSE,FALSE
+22,16/2/19,Julie West,Ride,FALSE,FALSE
+22,16/2/19,Julie West,Run,TRUE,TRUE
+,,,,,
+,,,,,
+23,23/2/19,Ben Courage,Ride,FALSE,FALSE
+23,23/2/19,Ben Courage,Run,FALSE,FALSE
+,,,,,
+23,23/2/19,Ross Salmon,Swim,FALSE,FALSE
+23,23/2/19,Ross Salmon,Ride,TRUE,FALSE
+23,23/2/19,Ross Salmon,Run,TRUE,FALSE
+,,,,,
+23,23/2/19,Paul Woodger,Swim,FALSE,FALSE
+23,23/2/19,Paul Woodger,Ride,TRUE,FALSE
+23,23/2/19,Paul Woodger,Run,TRUE,FALSE
+,,,,,
+,,,,,
+25,9/3/19,Danny Warner,Run,FALSE,FALSE
+,,,,,
+25,9/3/19,Clive Pearce,Run,FALSE,FALSE
+,,,,,
+25,9/3/19,Hippolyte Lanchou,Swim,FALSE,FALSE
+25,9/3/19,Hippolyte Lanchou,Ride,TRUE,FALSE
+25,9/3/19,Hippolyte Lanchou,Run,TRUE,FALSE
+,,,,,
+,,,,,
 1,28/9/19,Peter Crowe,Swim,FALSE,FALSE
 1,28/9/19,Peter Crowe,Ride,FALSE,FALSE
 1,28/9/19,Peter Crowe,Run,FALSE,TRUE
@@ -133,6 +367,9 @@ race_number,date_ymd,Name,part,split_valid,cumulative_valid
 6,2/11/19,Aaron Neylan,Swim,FALSE,FALSE
 6,2/11/19,Aaron Neylan,Ride,FALSE,FALSE
 6,2/11/19,Aaron Neylan,Run,FALSE,TRUE
+,,,,,
+6,2/11/19,Amy Chapman,Ride,FALSE,FALSE
+6,2/11/19,Amy Chapman,Run,FALSE,FALSE
 ,,,,,
 ,,,,,
 8,16/11/19,Craig Telling,Swim,FALSE,FALSE

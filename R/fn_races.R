@@ -1,10 +1,11 @@
 
 # Plots -------------------------------------------------------------------
 
-plotly_race <- function(dt_all_long, tri_cols, i, j,j_is_champ) {
+
+plotly_race <- function(dt_all_long, tri_cols, i_season, i, j,j_is_champ) {
   
   
-  dt_i <- dt_all_long[race_number== i & course == j & j_is_champ == (is_champ)][(started)]
+  dt_i <- dt_all_long[season==i_season & race_number== i & course == j & j_is_champ == (is_champ)][(started)]
   
   # Plot
   dt_i[(valid_overall), place_name := paste0(place_overall_recalc," ", Name)]

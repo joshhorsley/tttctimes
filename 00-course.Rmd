@@ -1,6 +1,6 @@
 <!-- # (PART\*) Courses -->
 
-# Courses
+# Courses {#courses}
 
 Work in progress.
 

@@ -69,7 +69,7 @@ n_athletes_season <- length(unique(dt_all_long[season=="2020-2021"][(started) & 
 
 ```
 
-There have been `r prettyNum(n_entries_all_season, big.mark = ",")` entries by `r n_athletes_season` athletes in the 2020-2021 season
+There have been `r prettyNum(n_entries_all_season, big.mark = ",")` entries by `r n_athletes_season` competitors in the 2020-2021 season
 
 ```{r part_hist-2020-2021}
 plotly_part_hist(dt_all_long[season=="2020-2021"],len_season=26)
@@ -90,18 +90,18 @@ setorder(dt_entry_type, course_nice)
 dt_entry_type[, text := paste0(count, " for ", course_nice)]
 ```
 
-The total number of entries by course are `r list_with_and(dt_entry_type$text)`. The plot below shows the number of entries by course over the 2020-2021 season.
+The total number of entries by course are `r list_with_and(dt_entry_type$text)`. The plot below shows the number of entries by course over the 2020-2021 season. Race cancellations are shown on the plot with the letter "C". 
 
 ```{r plot-raace-count-2020-2021}
-plot_race_count(dt_all_long[season=="2020-2021"],len_season=26)
+plot_race_count(dt_all_long,"2020-2021",len_season=26)
 ```
 
 
 
-## By Athlete
+## By Competitor
 
 
-This plot shows the cumulative number of races entered by each athlete over the 2020-2021 season. It's a bit crowded showing everyone, each athlete's entries can be toggled by clicking (or double-clicking) their names in the legend.
+This plot shows the cumulative number of races entered by each competitor over the 2020-2021 season. It's a bit crowded showing everyone, each competitor's entries can be toggled by clicking (or double-clicking) their names in the legend.
 
 ```{r plot-race-series-2020-2021}
 plotly_time_series(dt_all_long[season=="2020-2021"],len_season=26)
@@ -247,7 +247,7 @@ A total of 43 competitors entered, 1 for the first time this season. [Club Repor
 22 competitors entered the course, achieving 10 new overall PBs and 20 new split PBs: 5 in the pool, 8 on the bike, and 7 on the run.
 
 ```{r plot-race-26-full-TRUE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 26, "full",TRUE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",26, "full",TRUE)
 ```
     
     
@@ -265,7 +265,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 26, "full",TRUE)
 15 competitors entered the course, achieving 2 new split PBs: 2 on the run.
 
 ```{r plot-race-26-full-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 26, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",26, "full",FALSE)
 ```
     
     
@@ -283,7 +283,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 26, "full",FALSE)
 6 competitors entered the course, achieving 1 new overall PBs and 3 new split PBs: 3 on the run.
 
 ```{r plot-race-26-int-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 26, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",26, "int",FALSE)
 ```
     
     
@@ -306,7 +306,7 @@ A total of 55 competitors entered, 6 for the first time this season.
 39 competitors entered the course, achieving 11 new overall PBs and 29 new split PBs: 9 in the pool, 11 on the bike, and 9 on the run.
 
 ```{r plot-race-25-full-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 25, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",25, "full",FALSE)
 ```
     
     
@@ -324,7 +324,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 25, "full",FALSE)
 16 competitors entered the course, achieving 5 new overall PBs and 13 new split PBs: 5 in the pool, 4 on the bike, and 4 on the run.
 
 ```{r plot-race-25-int-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 25, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",25, "int",FALSE)
 ```
     
     
@@ -347,7 +347,7 @@ A total of 33 competitors entered, 1 for the first time this season. [Club Repor
 29 competitors entered the course, achieving 3 new overall PBs and 12 new split PBs: 4 in the pool, 3 on the bike, and 5 on the run.
 
 ```{r plot-race-24-full-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 24, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",24, "full",FALSE)
 ```
     
     
@@ -365,7 +365,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 24, "full",FALSE)
 4 competitors entered the course, achieving 1 new overall PBs and 1 new split PBs: 1 on the run.
 
 ```{r plot-race-24-int-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 24, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",24, "int",FALSE)
 ```
     
     
@@ -388,7 +388,7 @@ A total of 56 competitors entered, 1 for the first time this season. [Club Repor
 19 competitors entered the course, achieving 11 new overall PBs and 37 new split PBs: 13 in the pool, 13 on the bike, and 11 on the run.
 
 ```{r plot-race-23-double-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 23, "double",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",23, "double",FALSE)
 ```
     
     
@@ -406,7 +406,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 23, "double",FALSE)
 25 competitors entered the course, achieving 7 new overall PBs and 16 new split PBs: 4 in the pool, 5 on the bike, and 7 on the run.
 
 ```{r plot-race-23-full-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 23, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",23, "full",FALSE)
 ```
     
     
@@ -424,7 +424,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 23, "full",FALSE)
 12 competitors entered the course, achieving 3 new overall PBs and 9 new split PBs: 1 in the pool, 6 on the bike, and 2 on the run.
 
 ```{r plot-race-23-int-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 23, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",23, "int",FALSE)
 ```
     
     
@@ -447,7 +447,7 @@ A total of 53 competitors entered, 3 for the first time this season. [Club Repor
 43 competitors entered the course, achieving 3 new overall PBs and 14 new split PBs: 5 in the pool, 3 on the bike, and 6 on the run.
 
 ```{r plot-race-22-full-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 22, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",22, "full",FALSE)
 ```
     
     
@@ -465,7 +465,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 22, "full",FALSE)
 10 competitors entered the course, achieving 2 new overall PBs and 9 new split PBs: 3 in the pool, 2 on the bike, and 4 on the run.
 
 ```{r plot-race-22-int-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 22, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",22, "int",FALSE)
 ```
     
     
@@ -488,7 +488,7 @@ A total of 68 competitors entered, 2 for the first time this season. [Club Repor
 54 competitors entered the course, achieving 13 new overall PBs and 34 new split PBs: 11 in the pool, 16 on the bike, and 7 on the run.
 
 ```{r plot-race-21-full-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 21, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",21, "full",FALSE)
 ```
     
     
@@ -506,7 +506,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 21, "full",FALSE)
 14 competitors entered the course, achieving 6 new overall PBs and 13 new split PBs: 3 in the pool, 5 on the bike, and 5 on the run.
 
 ```{r plot-race-21-int-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 21, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",21, "int",FALSE)
 ```
     
     
@@ -529,7 +529,7 @@ A total of 65 competitors entered. [Club Report](http://www.twintownstriathlon.o
 49 competitors entered the course, achieving 15 new overall PBs and 35 new split PBs: 3 in the pool, 14 on the bike, and 18 on the run.
 
 ```{r plot-race-20-full-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 20, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",20, "full",FALSE)
 ```
     
     
@@ -547,7 +547,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 20, "full",FALSE)
 16 competitors entered the course, achieving 5 new overall PBs and 11 new split PBs: 3 in the pool, 3 on the bike, and 5 on the run.
 
 ```{r plot-race-20-int-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 20, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",20, "int",FALSE)
 ```
     
     
@@ -570,7 +570,7 @@ A total of 79 competitors entered, 5 for the first time this season. [Club Repor
 64 competitors entered the course, achieving 19 new overall PBs and 48 new split PBs: 19 in the pool, 19 on the bike, and 10 on the run.
 
 ```{r plot-race-19-full-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 19, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",19, "full",FALSE)
 ```
     
     
@@ -588,7 +588,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 19, "full",FALSE)
 15 competitors entered the course, achieving 7 new overall PBs and 19 new split PBs: 6 in the pool, 9 on the bike, and 4 on the run.
 
 ```{r plot-race-19-int-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 19, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",19, "int",FALSE)
 ```
     
     
@@ -630,7 +630,7 @@ A total of 45 competitors entered, 1 for the first time this season. [Club Repor
 37 competitors entered the course, achieving 7 new overall PBs and 31 new split PBs: 12 in the pool, 10 on the bike, and 9 on the run.
 
 ```{r plot-race-17-full-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 17, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",17, "full",FALSE)
 ```
     
     
@@ -648,7 +648,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 17, "full",FALSE)
 8 competitors entered the course, achieving 4 new split PBs: 2 in the pool and 2 on the run.
 
 ```{r plot-race-17-int-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 17, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",17, "int",FALSE)
 ```
     
     
@@ -671,7 +671,7 @@ A total of 41 competitors entered, 1 for the first time this season. [Club Repor
 32 competitors entered the course, achieving 2 new overall PBs and 13 new split PBs: 4 in the pool, 1 on the bike, and 8 on the run.
 
 ```{r plot-race-16-full-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 16, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",16, "full",FALSE)
 ```
     
     
@@ -689,7 +689,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 16, "full",FALSE)
 9 competitors entered the course, achieving 1 new overall PBs and 4 new split PBs: 2 in the pool and 2 on the run.
 
 ```{r plot-race-16-int-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 16, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",16, "int",FALSE)
 ```
     
     
@@ -712,7 +712,7 @@ A total of 67 competitors entered, 4 for the first time this season. [Club Repor
 56 competitors entered the course, achieving 14 new overall PBs and 36 new split PBs: 13 in the pool, 14 on the bike, and 9 on the run.
 
 ```{r plot-race-15-full-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 15, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",15, "full",FALSE)
 ```
     
     
@@ -730,7 +730,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 15, "full",FALSE)
 11 competitors entered the course, achieving 1 new overall PBs and 3 new split PBs: 1 on the bike and 2 on the run.
 
 ```{r plot-race-15-int-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 15, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",15, "int",FALSE)
 ```
     
     
@@ -753,7 +753,7 @@ A total of 55 competitors entered. [Club Report](http://www.twintownstriathlon.o
 45 competitors entered the course, achieving 10 new overall PBs and 29 new split PBs: 11 in the pool, 12 on the bike, and 6 on the run.
 
 ```{r plot-race-13-full-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 13, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",13, "full",FALSE)
 ```
     
     
@@ -771,7 +771,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 13, "full",FALSE)
 10 competitors entered the course, achieving 2 new overall PBs and 8 new split PBs: 3 in the pool, 3 on the bike, and 2 on the run.
 
 ```{r plot-race-13-int-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 13, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",13, "int",FALSE)
 ```
     
     
@@ -794,7 +794,7 @@ A total of 63 competitors entered, 3 for the first time this season. [Club Repor
 48 competitors entered the course, achieving 10 new overall PBs and 30 new split PBs: 13 in the pool, 11 on the bike, and 6 on the run.
 
 ```{r plot-race-11-full-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 11, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",11, "full",FALSE)
 ```
     
     
@@ -812,7 +812,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 11, "full",FALSE)
 15 competitors entered the course, achieving 7 new overall PBs and 20 new split PBs: 7 in the pool, 7 on the bike, and 6 on the run.
 
 ```{r plot-race-11-int-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 11, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",11, "int",FALSE)
 ```
     
     
@@ -835,7 +835,7 @@ A total of 49 competitors entered, 2 for the first time this season. [Club Repor
 38 competitors entered the course, achieving 8 new overall PBs and 30 new split PBs: 10 in the pool, 12 on the bike, and 8 on the run.
 
 ```{r plot-race-10-full-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 10, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",10, "full",FALSE)
 ```
     
     
@@ -853,7 +853,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 10, "full",FALSE)
 11 competitors entered the course, achieving 5 new overall PBs and 14 new split PBs: 5 in the pool, 6 on the bike, and 3 on the run.
 
 ```{r plot-race-10-int-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 10, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",10, "int",FALSE)
 ```
     
     
@@ -876,7 +876,7 @@ A total of 65 competitors entered, 2 for the first time this season. [Club Repor
 49 competitors entered the course, achieving 22 new overall PBs and 49 new split PBs: 16 in the pool, 17 on the bike, and 16 on the run.
 
 ```{r plot-race-9-full-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 9, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",9, "full",FALSE)
 ```
     
     
@@ -894,7 +894,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 9, "full",FALSE)
 16 competitors entered the course, achieving 9 new overall PBs and 24 new split PBs: 10 in the pool, 9 on the bike, and 5 on the run.
 
 ```{r plot-race-9-int-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 9, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",9, "int",FALSE)
 ```
     
     
@@ -936,7 +936,7 @@ A total of 72 competitors entered, 4 for the first time this season. [Club Repor
 55 competitors entered the course, achieving 20 new overall PBs and 69 new split PBs: 26 in the pool, 17 on the bike, and 26 on the run.
 
 ```{r plot-race-7-full-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 7, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",7, "full",FALSE)
 ```
     
     
@@ -954,7 +954,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 7, "full",FALSE)
 17 competitors entered the course, achieving 9 new overall PBs and 25 new split PBs: 11 in the pool, 6 on the bike, and 8 on the run.
 
 ```{r plot-race-7-int-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 7, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",7, "int",FALSE)
 ```
     
     
@@ -977,7 +977,7 @@ A total of 62 competitors entered, 8 for the first time this season. [Club Repor
 51 competitors entered the course, achieving 17 new overall PBs and 60 new split PBs: 25 in the pool, 20 on the bike, and 15 on the run.
 
 ```{r plot-race-6-full-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 6, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",6, "full",FALSE)
 ```
     
     
@@ -995,7 +995,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 6, "full",FALSE)
 11 competitors entered the course, achieving 5 new overall PBs and 14 new split PBs: 7 in the pool and 7 on the bike.
 
 ```{r plot-race-6-int-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 6, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",6, "int",FALSE)
 ```
     
     
@@ -1018,7 +1018,7 @@ A total of 79 competitors entered, 4 for the first time this season. [Club Repor
 63 competitors entered the course, achieving 36 new overall PBs and 87 new split PBs: 25 in the pool, 39 on the bike, and 23 on the run.
 
 ```{r plot-race-5-full-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 5, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",5, "full",FALSE)
 ```
     
     
@@ -1036,7 +1036,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 5, "full",FALSE)
 16 competitors entered the course, achieving 8 new overall PBs and 22 new split PBs: 8 in the pool, 7 on the bike, and 7 on the run.
 
 ```{r plot-race-5-int-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 5, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",5, "int",FALSE)
 ```
     
     
@@ -1059,7 +1059,7 @@ A total of 73 competitors entered, 11 for the first time this season. [Club Repo
 22 competitors entered the course, achieving 19 new overall PBs and 55 new split PBs: 19 in the pool, 18 on the bike, and 18 on the run.
 
 ```{r plot-race-4-double-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 4, "double",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",4, "double",FALSE)
 ```
     
     
@@ -1077,7 +1077,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 4, "double",FALSE)
 39 competitors entered the course, achieving 16 new overall PBs and 42 new split PBs: 11 in the pool, 14 on the bike, and 17 on the run.
 
 ```{r plot-race-4-full-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 4, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",4, "full",FALSE)
 ```
     
     
@@ -1095,7 +1095,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 4, "full",FALSE)
 12 competitors entered the course, achieving 10 new overall PBs and 20 new split PBs: 4 in the pool, 8 on the bike, and 8 on the run.
 
 ```{r plot-race-4-int-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 4, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",4, "int",FALSE)
 ```
     
     
@@ -1118,7 +1118,7 @@ A total of 66 competitors entered, 13 for the first time this season. [Club Repo
 49 competitors entered the course, achieving 15 new overall PBs and 52 new split PBs: 16 in the pool, 15 on the bike, and 21 on the run.
 
 ```{r plot-race-3-full-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 3, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",3, "full",FALSE)
 ```
     
     
@@ -1136,7 +1136,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 3, "full",FALSE)
 17 competitors entered the course, achieving 9 new overall PBs and 22 new split PBs: 5 in the pool, 8 on the bike, and 9 on the run.
 
 ```{r plot-race-3-int-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 3, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",3, "int",FALSE)
 ```
     
     
@@ -1159,7 +1159,7 @@ A total of 65 competitors entered, 23 for the first time this season. [Club Repo
 50 competitors entered the course, achieving 21 new overall PBs and 57 new split PBs: 19 in the pool, 20 on the bike, and 18 on the run.
 
 ```{r plot-race-2-full-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 2, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",2, "full",FALSE)
 ```
     
     
@@ -1177,7 +1177,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 2, "full",FALSE)
 15 competitors entered the course, achieving 6 new overall PBs and 15 new split PBs: 4 in the pool, 6 on the bike, and 5 on the run.
 
 ```{r plot-race-2-int-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 2, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",2, "int",FALSE)
 ```
     
     
@@ -1200,7 +1200,7 @@ A total of 65 competitors entered. [Club Report](http://www.twintownstriathlon.o
 52 competitors entered the course.
 
 ```{r plot-race-1-full-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 1, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",1, "full",FALSE)
 ```
     
     
@@ -1218,7 +1218,7 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 1, "full",FALSE)
 13 competitors entered the course.
 
 ```{r plot-race-1-int-FALSE-2020-2021}
-plotly_race(dt_all_long[season=="2020-2021"], tri_cols, 1, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2020-2021",1, "int",FALSE)
 ```
     
     
@@ -1268,7 +1268,7 @@ n_athletes_season <- length(unique(dt_all_long[season=="2019-2020"][(started) & 
 
 ```
 
-There have been `r prettyNum(n_entries_all_season, big.mark = ",")` entries by `r n_athletes_season` athletes in the 2019-2020 season
+There have been `r prettyNum(n_entries_all_season, big.mark = ",")` entries by `r n_athletes_season` competitors in the 2019-2020 season
 
 ```{r part_hist-2019-2020}
 plotly_part_hist(dt_all_long[season=="2019-2020"],len_season=27)
@@ -1289,18 +1289,18 @@ setorder(dt_entry_type, course_nice)
 dt_entry_type[, text := paste0(count, " for ", course_nice)]
 ```
 
-The total number of entries by course are `r list_with_and(dt_entry_type$text)`. The plot below shows the number of entries by course over the 2019-2020 season.
+The total number of entries by course are `r list_with_and(dt_entry_type$text)`. The plot below shows the number of entries by course over the 2019-2020 season. Race cancellations are shown on the plot with the letter "C". 
 
 ```{r plot-raace-count-2019-2020}
-plot_race_count(dt_all_long[season=="2019-2020"],len_season=27)
+plot_race_count(dt_all_long,"2019-2020",len_season=27)
 ```
 
 
 
-## By Athlete
+## By Competitor
 
 
-This plot shows the cumulative number of races entered by each athlete over the 2019-2020 season. It's a bit crowded showing everyone, each athlete's entries can be toggled by clicking (or double-clicking) their names in the legend.
+This plot shows the cumulative number of races entered by each competitor over the 2019-2020 season. It's a bit crowded showing everyone, each competitor's entries can be toggled by clicking (or double-clicking) their names in the legend.
 
 ```{r plot-race-series-2019-2020}
 plotly_time_series(dt_all_long[season=="2019-2020"],len_season=27)
@@ -1446,7 +1446,7 @@ A total of 46 competitors entered, 3 for the first time this season. [Club Repor
 38 competitors entered the course, achieving 10 new overall PBs and 20 new split PBs: 7 in the pool, 9 on the bike, and 4 on the run.
 
 ```{r plot-race-26-full-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 26, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",26, "full",FALSE)
 ```
     
     
@@ -1464,7 +1464,7 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 26, "full",FALSE)
 8 competitors entered the course, achieving 2 new split PBs: 1 in the pool and 1 on the run.
 
 ```{r plot-race-26-int-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 26, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",26, "int",FALSE)
 ```
     
     
@@ -1487,7 +1487,7 @@ A total of 60 competitors entered. [Club Report](http://www.twintownstriathlon.o
 52 competitors entered the course, achieving 3 new overall PBs and 27 new split PBs: 6 in the pool, 3 on the bike, and 18 on the run.
 
 ```{r plot-race-25-full-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 25, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",25, "full",FALSE)
 ```
     
     
@@ -1505,7 +1505,7 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 25, "full",FALSE)
 8 competitors entered the course, achieving 2 new split PBs: 1 in the pool and 1 on the run.
 
 ```{r plot-race-25-int-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 25, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",25, "int",FALSE)
 ```
     
     
@@ -1528,7 +1528,7 @@ A total of 41 competitors entered. [Club Report](http://www.twintownstriathlon.o
 33 competitors entered the course, achieving 2 new overall PBs and 5 new split PBs: 2 in the pool, 2 on the bike, and 1 on the run.
 
 ```{r plot-race-24-full-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 24, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",24, "full",FALSE)
 ```
     
     
@@ -1546,7 +1546,7 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 24, "full",FALSE)
 8 competitors entered the course, achieving 3 new overall PBs and 7 new split PBs: 2 in the pool, 3 on the bike, and 2 on the run.
 
 ```{r plot-race-24-int-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 24, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",24, "int",FALSE)
 ```
     
     
@@ -1569,7 +1569,7 @@ A total of 68 competitors entered, 2 for the first time this season. [Club Repor
 30 competitors entered the course, achieving 17 new overall PBs and 53 new split PBs: 20 in the pool, 18 on the bike, and 15 on the run.
 
 ```{r plot-race-23-double-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 23, "double",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",23, "double",FALSE)
 ```
     
     
@@ -1587,7 +1587,7 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 23, "double",FALSE)
 23 competitors entered the course, achieving 3 new overall PBs and 10 new split PBs: 2 in the pool, 5 on the bike, and 3 on the run.
 
 ```{r plot-race-23-full-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 23, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",23, "full",FALSE)
 ```
     
     
@@ -1605,7 +1605,7 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 23, "full",FALSE)
 15 competitors entered the course, achieving 5 new overall PBs and 10 new split PBs: 2 in the pool, 4 on the bike, and 4 on the run.
 
 ```{r plot-race-23-int-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 23, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",23, "int",FALSE)
 ```
     
     
@@ -1628,7 +1628,7 @@ A total of 61 competitors entered, 2 for the first time this season. [Club Repor
 50 competitors entered the course, achieving 4 new overall PBs and 19 new split PBs: 12 in the pool, 1 on the bike, and 6 on the run.
 
 ```{r plot-race-22-full-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 22, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",22, "full",FALSE)
 ```
     
     
@@ -1646,7 +1646,7 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 22, "full",FALSE)
 11 competitors entered the course, achieving 2 new overall PBs and 6 new split PBs: 2 in the pool and 4 on the run.
 
 ```{r plot-race-22-int-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 22, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",22, "int",FALSE)
 ```
     
     
@@ -1669,7 +1669,7 @@ A total of 62 competitors entered, 2 for the first time this season. [Club Repor
 48 competitors entered the course, achieving 11 new overall PBs and 22 new split PBs: 10 in the pool, 7 on the bike, and 5 on the run.
 
 ```{r plot-race-21-full-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 21, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",21, "full",FALSE)
 ```
     
     
@@ -1687,7 +1687,7 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 21, "full",FALSE)
 14 competitors entered the course, achieving 3 new overall PBs and 10 new split PBs: 5 in the pool, 1 on the bike, and 4 on the run.
 
 ```{r plot-race-21-int-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 21, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",21, "int",FALSE)
 ```
     
     
@@ -1710,7 +1710,7 @@ A total of 35 competitors entered. [Club Report](http://www.twintownstriathlon.o
 29 competitors entered the course, achieving 1 new overall PBs and 10 new split PBs: 4 in the pool, 3 on the bike, and 3 on the run.
 
 ```{r plot-race-20-full-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 20, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",20, "full",FALSE)
 ```
     
     
@@ -1728,7 +1728,7 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 20, "full",FALSE)
 6 competitors entered the course, achieving 1 new overall PBs and 6 new split PBs: 2 in the pool, 2 on the bike, and 2 on the run.
 
 ```{r plot-race-20-int-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 20, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",20, "int",FALSE)
 ```
     
     
@@ -1751,7 +1751,7 @@ A total of 60 competitors entered, 2 for the first time this season. [Club Repor
 49 competitors entered the course, achieving 8 new overall PBs and 25 new split PBs: 11 in the pool, 12 on the bike, and 2 on the run.
 
 ```{r plot-race-19-full-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 19, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",19, "full",FALSE)
 ```
     
     
@@ -1769,7 +1769,7 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 19, "full",FALSE)
 11 competitors entered the course, achieving 4 new overall PBs and 9 new split PBs: 3 in the pool, 2 on the bike, and 4 on the run.
 
 ```{r plot-race-19-int-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 19, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",19, "int",FALSE)
 ```
     
     
@@ -1792,7 +1792,7 @@ A total of 59 competitors entered, 1 for the first time this season. [Club Repor
 51 competitors entered the course, achieving 9 new overall PBs and 17 new split PBs: 5 in the pool, 8 on the bike, and 4 on the run.
 
 ```{r plot-race-16-full-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 16, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",16, "full",FALSE)
 ```
     
     
@@ -1810,7 +1810,7 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 16, "full",FALSE)
 8 competitors entered the course, achieving 4 new overall PBs and 6 new split PBs: 3 in the pool and 3 on the bike.
 
 ```{r plot-race-16-int-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 16, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",16, "int",FALSE)
 ```
     
     
@@ -1833,7 +1833,7 @@ A total of 70 competitors entered, 2 for the first time this season. [Club Repor
 54 competitors entered the course, achieving 6 new overall PBs and 36 new split PBs: 8 in the pool, 18 on the bike, and 10 on the run.
 
 ```{r plot-race-15-full-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 15, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",15, "full",FALSE)
 ```
     
     
@@ -1851,7 +1851,7 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 15, "full",FALSE)
 16 competitors entered the course, achieving 4 new overall PBs and 11 new split PBs: 4 in the pool, 4 on the bike, and 3 on the run.
 
 ```{r plot-race-15-int-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 15, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",15, "int",FALSE)
 ```
     
     
@@ -1874,7 +1874,7 @@ A total of 60 competitors entered, 1 for the first time this season. [Club Repor
 47 competitors entered the course, achieving 13 new overall PBs and 34 new split PBs: 10 in the pool, 14 on the bike, and 10 on the run.
 
 ```{r plot-race-14-full-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 14, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",14, "full",FALSE)
 ```
     
     
@@ -1892,7 +1892,7 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 14, "full",FALSE)
 13 competitors entered the course, achieving 6 new overall PBs and 11 new split PBs: 2 in the pool, 5 on the bike, and 4 on the run.
 
 ```{r plot-race-14-int-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 14, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",14, "int",FALSE)
 ```
     
     
@@ -1915,7 +1915,7 @@ A total of 51 competitors entered, 3 for the first time this season. [Club Repor
 45 competitors entered the course, achieving 11 new overall PBs and 35 new split PBs: 13 in the pool, 12 on the bike, and 10 on the run.
 
 ```{r plot-race-13-full-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 13, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",13, "full",FALSE)
 ```
     
     
@@ -1933,7 +1933,7 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 13, "full",FALSE)
 6 competitors entered the course, achieving 3 new overall PBs and 5 new split PBs: 2 in the pool, 1 on the bike, and 2 on the run.
 
 ```{r plot-race-13-int-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 13, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",13, "int",FALSE)
 ```
     
     
@@ -1956,7 +1956,7 @@ A total of 60 competitors entered, 1 for the first time this season. [Club Repor
 41 competitors entered the course, achieving 14 new overall PBs and 37 new split PBs: 12 in the pool, 11 on the bike, and 14 on the run.
 
 ```{r plot-race-12-full-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 12, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",12, "full",FALSE)
 ```
     
     
@@ -1974,7 +1974,7 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 12, "full",FALSE)
 19 competitors entered the course, achieving 9 new overall PBs and 26 new split PBs: 10 in the pool, 6 on the bike, and 10 on the run.
 
 ```{r plot-race-12-int-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 12, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",12, "int",FALSE)
 ```
     
     
@@ -1997,7 +1997,7 @@ A total of 66 competitors entered, 5 for the first time this season. [Club Repor
 48 competitors entered the course, achieving 17 new overall PBs and 38 new split PBs: 12 in the pool, 15 on the bike, and 11 on the run.
 
 ```{r plot-race-11-full-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 11, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",11, "full",FALSE)
 ```
     
     
@@ -2015,7 +2015,7 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 11, "full",FALSE)
 18 competitors entered the course, achieving 12 new overall PBs and 24 new split PBs: 7 in the pool, 10 on the bike, and 7 on the run.
 
 ```{r plot-race-11-int-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 11, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",11, "int",FALSE)
 ```
     
     
@@ -2038,7 +2038,7 @@ A total of 67 competitors entered, 4 for the first time this season. [Club Repor
 56 competitors entered the course, achieving 13 new overall PBs and 45 new split PBs: 14 in the pool, 21 on the bike, and 10 on the run.
 
 ```{r plot-race-10-full-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 10, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",10, "full",FALSE)
 ```
     
     
@@ -2056,7 +2056,7 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 10, "full",FALSE)
 11 competitors entered the course, achieving 6 new overall PBs and 16 new split PBs: 6 in the pool, 5 on the bike, and 5 on the run.
 
 ```{r plot-race-10-int-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 10, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",10, "int",FALSE)
 ```
     
     
@@ -2079,7 +2079,7 @@ A total of 45 competitors entered, 5 for the first time this season. [Club Repor
 35 competitors entered the course, achieving 13 new overall PBs and 33 new split PBs: 12 in the pool, 15 on the bike, and 6 on the run.
 
 ```{r plot-race-9-full-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 9, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",9, "full",FALSE)
 ```
     
     
@@ -2097,7 +2097,7 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 9, "full",FALSE)
 10 competitors entered the course, achieving 3 new overall PBs and 5 new split PBs: 1 in the pool, 3 on the bike, and 1 on the run.
 
 ```{r plot-race-9-int-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 9, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",9, "int",FALSE)
 ```
     
     
@@ -2120,7 +2120,7 @@ A total of 77 competitors entered, 6 for the first time this season. [Club Repor
 58 competitors entered the course, achieving 29 new overall PBs and 84 new split PBs: 27 in the pool, 33 on the bike, and 24 on the run.
 
 ```{r plot-race-8-full-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 8, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",8, "full",FALSE)
 ```
     
     
@@ -2138,7 +2138,7 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 8, "full",FALSE)
 19 competitors entered the course, achieving 8 new overall PBs and 25 new split PBs: 9 in the pool, 9 on the bike, and 7 on the run.
 
 ```{r plot-race-8-int-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 8, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",8, "int",FALSE)
 ```
     
     
@@ -2161,7 +2161,7 @@ A total of 34 competitors entered, 8 for the first time this season. [Club Repor
 24 competitors entered the course, achieving 14 new overall PBs and 32 new split PBs: 11 in the pool, 10 on the bike, and 11 on the run.
 
 ```{r plot-race-6-full-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 6, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",6, "full",FALSE)
 ```
     
     
@@ -2179,7 +2179,7 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 6, "full",FALSE)
 10 competitors entered the course, achieving 4 new overall PBs and 11 new split PBs: 4 in the pool, 4 on the bike, and 3 on the run.
 
 ```{r plot-race-6-int-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 6, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",6, "int",FALSE)
 ```
     
     
@@ -2202,7 +2202,7 @@ A total of 76 competitors entered, 12 for the first time this season. [Club Repo
 65 competitors entered the course, achieving 37 new overall PBs and 100 new split PBs: 31 in the pool, 39 on the bike, and 30 on the run.
 
 ```{r plot-race-5-full-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 5, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",5, "full",FALSE)
 ```
     
     
@@ -2220,7 +2220,7 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 5, "full",FALSE)
 11 competitors entered the course, achieving 6 new overall PBs and 16 new split PBs: 5 in the pool, 6 on the bike, and 5 on the run.
 
 ```{r plot-race-5-int-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 5, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",5, "int",FALSE)
 ```
     
     
@@ -2243,7 +2243,7 @@ A total of 63 competitors entered, 7 for the first time this season. [Club Repor
 38 competitors entered the course, achieving 32 new overall PBs and 100 new split PBs: 34 in the pool, 34 on the bike, and 32 on the run.
 
 ```{r plot-race-4-double-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 4, "double",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",4, "double",FALSE)
 ```
     
     
@@ -2261,7 +2261,7 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 4, "double",FALSE)
 23 competitors entered the course, achieving 10 new overall PBs and 33 new split PBs: 9 in the pool, 10 on the bike, and 14 on the run.
 
 ```{r plot-race-4-full-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 4, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",4, "full",FALSE)
 ```
     
     
@@ -2279,7 +2279,7 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 4, "full",FALSE)
 2 competitors entered the course, achieving 1 new overall PBs and 1 new split PBs: 1 in the pool.
 
 ```{r plot-race-4-int-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 4, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",4, "int",FALSE)
 ```
     
     
@@ -2302,7 +2302,7 @@ A total of 52 competitors entered, 11 for the first time this season. [Club Repo
 43 competitors entered the course, achieving 21 new overall PBs and 61 new split PBs: 20 in the pool, 18 on the bike, and 23 on the run.
 
 ```{r plot-race-3-full-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 3, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",3, "full",FALSE)
 ```
     
     
@@ -2320,7 +2320,7 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 3, "full",FALSE)
 9 competitors entered the course, achieving 2 new overall PBs and 7 new split PBs: 5 in the pool, 1 on the bike, and 1 on the run.
 
 ```{r plot-race-3-int-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 3, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",3, "int",FALSE)
 ```
     
     
@@ -2343,7 +2343,7 @@ A total of 71 competitors entered, 24 for the first time this season. [Club Repo
 58 competitors entered the course, achieving 30 new overall PBs and 86 new split PBs: 25 in the pool, 32 on the bike, and 29 on the run.
 
 ```{r plot-race-2-full-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 2, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",2, "full",FALSE)
 ```
     
     
@@ -2361,7 +2361,7 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 2, "full",FALSE)
 13 competitors entered the course, achieving 5 new overall PBs and 18 new split PBs: 7 in the pool, 6 on the bike, and 5 on the run.
 
 ```{r plot-race-2-int-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 2, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",2, "int",FALSE)
 ```
     
     
@@ -2384,7 +2384,7 @@ A total of 73 competitors entered. [Club Report](http://www.twintownstriathlon.o
 61 competitors entered the course.
 
 ```{r plot-race-1-full-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 1, "full",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",1, "full",FALSE)
 ```
     
     
@@ -2402,7 +2402,7 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 1, "full",FALSE)
 12 competitors entered the course.
 
 ```{r plot-race-1-int-FALSE-2019-2020}
-plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 1, "int",FALSE)
+plotly_race(dt_all_long, tri_cols, "2019-2020",1, "int",FALSE)
 ```
     
     
@@ -2412,6 +2412,1172 @@ plotly_race(dt_all_long[season=="2019-2020"], tri_cols, 1, "int",FALSE)
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-1-int-FALSE-2019-2020}
 table_race(dt_all_long[season=="2019-2020"], tri_cols, 1, "int",FALSE)
+```
+
+# (PART\*) Season 2018-2019
+
+# Schedule {#schedule-2018-2019}
+
+```{r schedule-2018-2019}
+
+dt_season_show <- dt_season[season=="2018-2019"][(course=="full" | race_type == "Super Teams") & !(is_champ),
+                          .(`#` = race_number,
+                            # Date = date_ymd,
+                            `Event type` = race_type,
+                            cancelled,
+                            cancelled_reason,
+                            have_results,
+                            has_report,
+                            participation_only,
+                            Date = race_link,
+                            `Club Report` = report_link)]
+
+
+dt_season_show[, Note := ""]
+dt_season_show[`Event type` != "Standard", Note := `Event type`]
+dt_season_show[(participation_only), Note:= paste0(Note, ifelse(Note=="",""," - "),"Participation results only ")]
+dt_season_show[(cancelled), Note:= paste0(Note, ifelse(Note=="",""," - "),"Cancelled due to ", cancelled_reason)]
+dt_season_show[!(cancelled) & !(have_results), Note := paste0(Note,ifelse(Note=="",""," - "), "Results not available")]
+
+col_ref_hide <- which(!(names(dt_season_show) %in% c("#","Date","Note","Club Report")))-1 # columns are indexed from 0 - row name?
+
+datatable_std(dt_season_show,col_ref_hide,escape = FALSE,ordering = FALSE)
+```
+
+# Participation - Total {#participation-total-2018-2019}
+
+```{r}
+n_entries_all_season <- nrow(dt_all_long[season=="2018-2019"][(started) & part == "Swim"])
+n_athletes_season <- length(unique(dt_all_long[season=="2018-2019"][(started) & part == "Swim"]$Name))
+
+```
+
+There have been `r prettyNum(n_entries_all_season, big.mark = ",")` entries by `r n_athletes_season` competitors in the 2018-2019 season
+
+```{r part_hist-2018-2019}
+plotly_part_hist(dt_all_long[season=="2018-2019"],len_season=25)
+```
+
+```{r part-total-table-2018-2019}
+table_part_total(dt_all_long[season=="2018-2019"], tri_cols)
+```
+
+# Participation - Trends {#participation-trends-2018-2019}
+
+
+## By Race
+
+```{r course_totals_2018-2019}
+dt_entry_type <- dt_all_long[season=="2018-2019"][(started) & part == "Swim", .(count = .N), by = course_nice]
+setorder(dt_entry_type, course_nice)
+dt_entry_type[, text := paste0(count, " for ", course_nice)]
+```
+
+The total number of entries by course are `r list_with_and(dt_entry_type$text)`. The plot below shows the number of entries by course over the 2018-2019 season. Race cancellations are shown on the plot with the letter "C". 
+
+```{r plot-raace-count-2018-2019}
+plot_race_count(dt_all_long,"2018-2019",len_season=25)
+```
+
+
+
+## By Competitor
+
+
+This plot shows the cumulative number of races entered by each competitor over the 2018-2019 season. It's a bit crowded showing everyone, each competitor's entries can be toggled by clicking (or double-clicking) their names in the legend.
+
+```{r plot-race-series-2018-2019}
+plotly_time_series(dt_all_long[season=="2018-2019"],len_season=25)
+```
+
+
+# Best Times - Full {#best-times-full-2018-2019}
+  
+## Overall
+
+The best valid times for each competitor are ranked in the plot and table below.
+
+```{r plot-record-full-2018-2019}
+plotly_record(dt_all_long[season=="2018-2019"], tri_cols, "full")
+```
+
+
+
+Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for individual parts are provided only for PBs.
+  
+```{r tab-record-full-overall-2018-2019}
+table_record(dt_all_long[season=="2018-2019"], tri_cols, "full", "overall")
+```
+
+## Swim
+
+Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for other parts and overall are provided only for PBs.
+  
+```{r tab-record-full-Swim-2018-2019}
+table_record(dt_all_long[season=="2018-2019"], tri_cols, "full", "Swim")
+```
+
+## Ride
+
+Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for other parts and overall are provided only for PBs.
+  
+```{r tab-record-full-Ride-2018-2019}
+table_record(dt_all_long[season=="2018-2019"], tri_cols, "full", "Ride")
+```
+
+## Run
+
+Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for other parts and overall are provided only for PBs.
+  
+```{r tab-record-full-Run-2018-2019}
+table_record(dt_all_long[season=="2018-2019"], tri_cols, "full", "Run")
+```
+
+
+# Best Times - Intermediate {#best-times-int-2018-2019}
+  
+## Overall
+
+The best valid times for each competitor are ranked in the plot and table below.
+
+```{r plot-record-int-2018-2019}
+plotly_record(dt_all_long[season=="2018-2019"], tri_cols, "int")
+```
+
+
+
+Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for individual parts are provided only for PBs.
+  
+```{r tab-record-int-overall-2018-2019}
+table_record(dt_all_long[season=="2018-2019"], tri_cols, "int", "overall")
+```
+
+## Swim
+
+Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for other parts and overall are provided only for PBs.
+  
+```{r tab-record-int-Swim-2018-2019}
+table_record(dt_all_long[season=="2018-2019"], tri_cols, "int", "Swim")
+```
+
+## Ride
+
+Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for other parts and overall are provided only for PBs.
+  
+```{r tab-record-int-Ride-2018-2019}
+table_record(dt_all_long[season=="2018-2019"], tri_cols, "int", "Ride")
+```
+
+## Run
+
+Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for other parts and overall are provided only for PBs.
+  
+```{r tab-record-int-Run-2018-2019}
+table_record(dt_all_long[season=="2018-2019"], tri_cols, "int", "Run")
+```
+
+
+# Best Times - Double Distance {#best-times-double-2018-2019}
+  
+## Overall
+
+The best valid times for each competitor are ranked in the plot and table below.
+
+```{r plot-record-double-2018-2019}
+plotly_record(dt_all_long[season=="2018-2019"], tri_cols, "double")
+```
+
+
+
+Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for individual parts are provided only for PBs.
+  
+```{r tab-record-double-overall-2018-2019}
+table_record(dt_all_long[season=="2018-2019"], tri_cols, "double", "overall")
+```
+
+## Swim
+
+Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for other parts and overall are provided only for PBs.
+  
+```{r tab-record-double-Swim-2018-2019}
+table_record(dt_all_long[season=="2018-2019"], tri_cols, "double", "Swim")
+```
+
+## Ride
+
+Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for other parts and overall are provided only for PBs.
+  
+```{r tab-record-double-Ride-2018-2019}
+table_record(dt_all_long[season=="2018-2019"], tri_cols, "double", "Ride")
+```
+
+## Run
+
+Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for other parts and overall are provided only for PBs.
+  
+```{r tab-record-double-Run-2018-2019}
+table_record(dt_all_long[season=="2018-2019"], tri_cols, "double", "Run")
+```
+
+
+# Race 25: Mar 09 - Club Championships {#r-2019-03-09}
+
+A total of 58 competitors entered, 2 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=4504){target="_blank"}.
+
+
+## Club Championships
+
+30 competitors entered the course, achieving 12 new overall PBs and 27 new split PBs: 10 in the pool, 12 on the bike, and 5 on the run.
+
+```{r plot-race-25-full-TRUE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",25, "full",TRUE)
+```
+    
+    
+
+### Detailed results for Club Championships course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-25-full-TRUE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 25, "full",TRUE)
+```
+
+
+## Full
+
+15 competitors entered the course, achieving 5 new overall PBs and 15 new split PBs: 8 in the pool, 4 on the bike, and 3 on the run.
+
+```{r plot-race-25-full-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",25, "full",FALSE)
+```
+    
+    
+
+### Detailed results for Full course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-25-full-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 25, "full",FALSE)
+```
+
+
+## Intermediate
+
+13 competitors entered the course, achieving 7 new overall PBs and 16 new split PBs: 6 in the pool, 8 on the bike, and 2 on the run.
+
+```{r plot-race-25-int-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",25, "int",FALSE)
+```
+    
+    
+
+### Detailed results for Intermediate course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-25-int-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 25, "int",FALSE)
+```
+
+
+# Race 23: Feb 23 - Double Distance {#r-2019-02-23}
+
+A total of 33 competitors entered, 2 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=4448){target="_blank"}.
+
+
+## Double Distance
+
+15 competitors entered the course, achieving 6 new overall PBs and 22 new split PBs: 9 in the pool, 5 on the bike, and 8 on the run.
+
+```{r plot-race-23-double-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",23, "double",FALSE)
+```
+    
+    
+
+### Detailed results for Double Distance course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-23-double-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 23, "double",FALSE)
+```
+
+
+## Full
+
+14 competitors entered the course, achieving 7 new split PBs: 2 in the pool, 1 on the bike, and 4 on the run.
+
+```{r plot-race-23-full-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",23, "full",FALSE)
+```
+    
+    
+
+### Detailed results for Full course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-23-full-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 23, "full",FALSE)
+```
+
+
+## Intermediate
+
+4 competitors entered the course, achieving 1 new split PBs: 1 on the run.
+
+```{r plot-race-23-int-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",23, "int",FALSE)
+```
+    
+    
+
+### Detailed results for Intermediate course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-23-int-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 23, "int",FALSE)
+```
+
+
+# Race 22: Feb 16 {#r-2019-02-16}
+
+A total of 39 competitors entered, 1 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=4428){target="_blank"}.
+
+
+## Full
+
+35 competitors entered the course, achieving 5 new overall PBs and 16 new split PBs: 3 in the pool, 2 on the bike, and 11 on the run.
+
+```{r plot-race-22-full-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",22, "full",FALSE)
+```
+    
+    
+
+### Detailed results for Full course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-22-full-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 22, "full",FALSE)
+```
+
+
+## Intermediate
+
+4 competitors entered the course, achieving 1 new split PBs: 1 in the pool.
+
+```{r plot-race-22-int-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",22, "int",FALSE)
+```
+    
+    
+
+### Detailed results for Intermediate course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-22-int-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 22, "int",FALSE)
+```
+
+
+# Race 21: Feb 09 {#r-2019-02-09}
+
+A total of 65 competitors entered, 2 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=4399){target="_blank"}.
+
+
+## Full
+
+57 competitors entered the course, achieving 14 new overall PBs and 26 new split PBs: 9 in the pool, 14 on the bike, and 3 on the run.
+
+```{r plot-race-21-full-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",21, "full",FALSE)
+```
+    
+    
+
+### Detailed results for Full course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-21-full-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 21, "full",FALSE)
+```
+
+
+## Intermediate
+
+8 competitors entered the course, achieving 2 new overall PBs and 5 new split PBs: 1 in the pool, 1 on the bike, and 3 on the run.
+
+```{r plot-race-21-int-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",21, "int",FALSE)
+```
+    
+    
+
+### Detailed results for Intermediate course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-21-int-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 21, "int",FALSE)
+```
+
+
+# Race 20: Feb 02 {#r-2019-02-02}
+
+A total of 53 competitors entered, 1 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=4377){target="_blank"}.
+
+
+## Full
+
+49 competitors entered the course, achieving 15 new overall PBs and 26 new split PBs: 7 in the pool, 11 on the bike, and 8 on the run.
+
+```{r plot-race-20-full-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",20, "full",FALSE)
+```
+    
+    
+
+### Detailed results for Full course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-20-full-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 20, "full",FALSE)
+```
+
+
+## Intermediate
+
+4 competitors entered the course, achieving 1 new overall PBs and 3 new split PBs: 1 in the pool, 1 on the bike, and 1 on the run.
+
+```{r plot-race-20-int-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",20, "int",FALSE)
+```
+    
+    
+
+### Detailed results for Intermediate course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-20-int-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 20, "int",FALSE)
+```
+
+
+# Race 18: Jan 19 {#r-2019-01-19}
+
+A total of 57 competitors entered. [Club Report](http://www.twintownstriathlon.org.au/?p=4301){target="_blank"}.
+
+
+## Full
+
+53 competitors entered the course, achieving 17 new overall PBs and 41 new split PBs: 6 in the pool, 23 on the bike, and 12 on the run.
+
+```{r plot-race-18-full-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",18, "full",FALSE)
+```
+    
+    
+
+### Detailed results for Full course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-18-full-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 18, "full",FALSE)
+```
+
+
+## Intermediate
+
+4 competitors entered the course, achieving 1 new split PBs: 1 in the pool.
+
+```{r plot-race-18-int-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",18, "int",FALSE)
+```
+    
+    
+
+### Detailed results for Intermediate course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-18-int-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 18, "int",FALSE)
+```
+
+
+# Race 17: Jan 12 {#r-2019-01-12}
+
+A total of 74 competitors entered, 4 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=4277){target="_blank"}.
+
+
+## Full
+
+60 competitors entered the course, achieving 18 new overall PBs and 37 new split PBs: 9 in the pool, 18 on the bike, and 10 on the run.
+
+```{r plot-race-17-full-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",17, "full",FALSE)
+```
+    
+    
+
+### Detailed results for Full course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-17-full-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 17, "full",FALSE)
+```
+
+
+## Intermediate
+
+14 competitors entered the course, achieving 7 new overall PBs and 19 new split PBs: 7 in the pool, 5 on the bike, and 7 on the run.
+
+```{r plot-race-17-int-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",17, "int",FALSE)
+```
+    
+    
+
+### Detailed results for Intermediate course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-17-int-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 17, "int",FALSE)
+```
+
+
+# Race 16: Jan 05 {#r-2019-01-05}
+
+A total of 62 competitors entered, 5 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=4251){target="_blank"}.
+
+
+## Full
+
+49 competitors entered the course, achieving 6 new overall PBs and 17 new split PBs: 2 in the pool, 12 on the bike, and 3 on the run.
+
+```{r plot-race-16-full-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",16, "full",FALSE)
+```
+    
+    
+
+### Detailed results for Full course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-16-full-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 16, "full",FALSE)
+```
+
+
+## Intermediate
+
+13 competitors entered the course, achieving 6 new overall PBs and 14 new split PBs: 4 in the pool, 6 on the bike, and 4 on the run.
+
+```{r plot-race-16-int-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",16, "int",FALSE)
+```
+    
+    
+
+### Detailed results for Intermediate course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-16-int-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 16, "int",FALSE)
+```
+
+
+# Race 15: Dec 29 {#r-2018-12-29}
+
+A total of 49 competitors entered. [Club Report](http://www.twintownstriathlon.org.au/?p=4245){target="_blank"}.
+
+
+## Full
+
+40 competitors entered the course, achieving 14 new overall PBs and 23 new split PBs: 6 in the pool, 8 on the bike, and 9 on the run.
+
+```{r plot-race-15-full-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",15, "full",FALSE)
+```
+    
+    
+
+### Detailed results for Full course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-15-full-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 15, "full",FALSE)
+```
+
+
+## Intermediate
+
+9 competitors entered the course, achieving 6 new split PBs: 2 in the pool, 1 on the bike, and 3 on the run.
+
+```{r plot-race-15-int-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",15, "int",FALSE)
+```
+    
+    
+
+### Detailed results for Intermediate course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-15-int-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 15, "int",FALSE)
+```
+
+
+# Race 14: Dec 22 {#r-2018-12-22}
+
+A total of 46 competitors entered, 2 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=4223){target="_blank"}.
+
+
+## Full
+
+38 competitors entered the course, achieving 4 new overall PBs and 14 new split PBs: 11 in the pool, 1 on the bike, and 2 on the run.
+
+```{r plot-race-14-full-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",14, "full",FALSE)
+```
+    
+    
+
+### Detailed results for Full course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-14-full-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 14, "full",FALSE)
+```
+
+
+## Intermediate
+
+8 competitors entered the course, achieving 3 new overall PBs and 6 new split PBs: 2 in the pool, 2 on the bike, and 2 on the run.
+
+```{r plot-race-14-int-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",14, "int",FALSE)
+```
+    
+    
+
+### Detailed results for Intermediate course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-14-int-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 14, "int",FALSE)
+```
+
+
+# Race 13: Dec 15 {#r-2018-12-15}
+
+A total of 38 competitors entered. [Club Report](http://www.twintownstriathlon.org.au/?p=4205){target="_blank"}.
+
+
+## Full
+
+33 competitors entered the course, achieving 8 new overall PBs and 21 new split PBs: 12 in the pool, 6 on the bike, and 3 on the run.
+
+```{r plot-race-13-full-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",13, "full",FALSE)
+```
+    
+    
+
+### Detailed results for Full course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-13-full-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 13, "full",FALSE)
+```
+
+
+## Intermediate
+
+5 competitors entered the course, achieving 1 new overall PBs and 3 new split PBs: 1 in the pool and 2 on the bike.
+
+```{r plot-race-13-int-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",13, "int",FALSE)
+```
+    
+    
+
+### Detailed results for Intermediate course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-13-int-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 13, "int",FALSE)
+```
+
+
+# Race 12: Dec 08 {#r-2018-12-08}
+
+A total of 63 competitors entered, 2 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=4191){target="_blank"}.
+
+
+## Full
+
+54 competitors entered the course, achieving 10 new overall PBs and 37 new split PBs: 10 in the pool, 11 on the bike, and 16 on the run.
+
+```{r plot-race-12-full-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",12, "full",FALSE)
+```
+    
+    
+
+### Detailed results for Full course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-12-full-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 12, "full",FALSE)
+```
+
+
+## Intermediate
+
+9 competitors entered the course, achieving 4 new overall PBs and 7 new split PBs: 2 in the pool, 4 on the bike, and 1 on the run.
+
+```{r plot-race-12-int-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",12, "int",FALSE)
+```
+    
+    
+
+### Detailed results for Intermediate course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-12-int-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 12, "int",FALSE)
+```
+
+
+# Race 11: Dec 01 {#r-2018-12-01}
+
+A total of 56 competitors entered, 1 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=4181){target="_blank"}.
+
+
+## Full
+
+46 competitors entered the course, achieving 17 new overall PBs and 43 new split PBs: 19 in the pool, 16 on the bike, and 8 on the run.
+
+```{r plot-race-11-full-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",11, "full",FALSE)
+```
+    
+    
+
+### Detailed results for Full course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-11-full-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 11, "full",FALSE)
+```
+
+
+## Intermediate
+
+10 competitors entered the course, achieving 3 new overall PBs and 9 new split PBs: 2 in the pool, 5 on the bike, and 2 on the run.
+
+```{r plot-race-11-int-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",11, "int",FALSE)
+```
+    
+    
+
+### Detailed results for Intermediate course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-11-int-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 11, "int",FALSE)
+```
+
+
+# Race 10: Nov 24 {#r-2018-11-24}
+
+A total of 69 competitors entered, 7 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=4140){target="_blank"}.
+
+
+## Full
+
+59 competitors entered the course, achieving 17 new overall PBs and 46 new split PBs: 11 in the pool, 11 on the bike, and 24 on the run.
+
+```{r plot-race-10-full-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",10, "full",FALSE)
+```
+    
+    
+
+### Detailed results for Full course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-10-full-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 10, "full",FALSE)
+```
+
+
+## Intermediate
+
+10 competitors entered the course, achieving 5 new overall PBs and 12 new split PBs: 2 in the pool, 3 on the bike, and 7 on the run.
+
+```{r plot-race-10-int-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",10, "int",FALSE)
+```
+    
+    
+
+### Detailed results for Intermediate course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-10-int-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 10, "int",FALSE)
+```
+
+
+# Race 9: Nov 17 {#r-2018-11-17}
+
+A total of 74 competitors entered, 4 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=4126){target="_blank"}.
+
+
+## Full
+
+67 competitors entered the course, achieving 41 new overall PBs and 95 new split PBs: 24 in the pool, 48 on the bike, and 23 on the run.
+
+```{r plot-race-9-full-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",9, "full",FALSE)
+```
+    
+    
+
+### Detailed results for Full course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-9-full-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 9, "full",FALSE)
+```
+
+
+## Intermediate
+
+7 competitors entered the course, achieving 6 new overall PBs and 15 new split PBs: 4 in the pool, 6 on the bike, and 5 on the run.
+
+```{r plot-race-9-int-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",9, "int",FALSE)
+```
+    
+    
+
+### Detailed results for Intermediate course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-9-int-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 9, "int",FALSE)
+```
+
+
+# Race 8: Nov 10 {#r-2018-11-10}
+
+A total of 72 competitors entered, 4 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=4114){target="_blank"}.
+
+
+## Full
+
+72 competitors entered the course, achieving 41 new overall PBs and 109 new split PBs: 33 in the pool, 35 on the bike, and 41 on the run.
+
+```{r plot-race-8-full-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",8, "full",FALSE)
+```
+    
+    
+
+### Detailed results for Full course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-8-full-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 8, "full",FALSE)
+```
+
+
+# Race 7: Nov 03 {#r-2018-11-03}
+
+A total of 63 competitors entered, 8 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=4106){target="_blank"}.
+
+
+## Full
+
+56 competitors entered the course, achieving 21 new overall PBs and 55 new split PBs: 19 in the pool, 17 on the bike, and 19 on the run.
+
+```{r plot-race-7-full-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",7, "full",FALSE)
+```
+    
+    
+
+### Detailed results for Full course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-7-full-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 7, "full",FALSE)
+```
+
+
+## Intermediate
+
+7 competitors entered the course, achieving 3 new overall PBs and 8 new split PBs: 3 in the pool, 3 on the bike, and 2 on the run.
+
+```{r plot-race-7-int-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",7, "int",FALSE)
+```
+    
+    
+
+### Detailed results for Intermediate course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-7-int-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 7, "int",FALSE)
+```
+
+
+# Race 6: Oct 27 {#r-2018-10-27}
+
+A total of 76 competitors entered, 9 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=4078){target="_blank"}.
+
+
+## Full
+
+66 competitors entered the course, achieving 49 new overall PBs and 127 new split PBs: 42 in the pool, 48 on the bike, and 37 on the run.
+
+```{r plot-race-6-full-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",6, "full",FALSE)
+```
+    
+    
+
+### Detailed results for Full course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-6-full-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 6, "full",FALSE)
+```
+
+
+## Intermediate
+
+10 competitors entered the course, achieving 3 new overall PBs and 12 new split PBs: 3 in the pool, 6 on the bike, and 3 on the run.
+
+```{r plot-race-6-int-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",6, "int",FALSE)
+```
+    
+    
+
+### Detailed results for Intermediate course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-6-int-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 6, "int",FALSE)
+```
+
+
+# Race 5: Oct 20 - Double Distance {#r-2018-10-20}
+
+A total of 88 competitors entered, 6 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=4040){target="_blank"}.
+
+
+## Double Distance
+
+40 competitors entered the course, achieving 36 new overall PBs and 110 new split PBs: 37 in the pool, 37 on the bike, and 36 on the run.
+
+```{r plot-race-5-double-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",5, "double",FALSE)
+```
+    
+    
+
+### Detailed results for Double Distance course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-5-double-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 5, "double",FALSE)
+```
+
+
+## Full
+
+35 competitors entered the course, achieving 23 new overall PBs and 60 new split PBs: 24 in the pool, 19 on the bike, and 17 on the run.
+
+```{r plot-race-5-full-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",5, "full",FALSE)
+```
+    
+    
+
+### Detailed results for Full course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-5-full-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 5, "full",FALSE)
+```
+
+
+## Intermediate
+
+13 competitors entered the course, achieving 9 new overall PBs and 23 new split PBs: 9 in the pool, 8 on the bike, and 6 on the run.
+
+```{r plot-race-5-int-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",5, "int",FALSE)
+```
+    
+    
+
+### Detailed results for Intermediate course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-5-int-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 5, "int",FALSE)
+```
+
+
+# Race 4: Oct 13 {#r-2018-10-13}
+
+A total of 24 competitors entered, 2 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=3941){target="_blank"}.
+
+
+## Full
+
+24 competitors entered the course, achieving 11 new overall PBs and 31 new split PBs: 13 in the pool, 6 on the bike, and 12 on the run.
+
+```{r plot-race-4-full-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",4, "full",FALSE)
+```
+    
+    
+
+### Detailed results for Full course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-4-full-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 4, "full",FALSE)
+```
+
+
+# Race 3: Oct 06 {#r-2018-10-06}
+
+A total of 69 competitors entered, 14 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=3924){target="_blank"}.
+
+
+## Full
+
+57 competitors entered the course, achieving 36 new overall PBs and 85 new split PBs: 25 in the pool, 27 on the bike, and 33 on the run.
+
+```{r plot-race-3-full-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",3, "full",FALSE)
+```
+    
+    
+
+### Detailed results for Full course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-3-full-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 3, "full",FALSE)
+```
+
+
+## Intermediate
+
+12 competitors entered the course, achieving 7 new overall PBs and 23 new split PBs: 7 in the pool, 7 on the bike, and 9 on the run.
+
+```{r plot-race-3-int-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",3, "int",FALSE)
+```
+    
+    
+
+### Detailed results for Intermediate course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-3-int-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 3, "int",FALSE)
+```
+
+
+# Race 2: Sep 29 {#r-2018-09-29}
+
+A total of 79 competitors entered, 29 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=3901){target="_blank"}.
+
+
+## Full
+
+71 competitors entered the course, achieving 41 new overall PBs and 129 new split PBs: 43 in the pool, 44 on the bike, and 42 on the run.
+
+```{r plot-race-2-full-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",2, "full",FALSE)
+```
+    
+    
+
+### Detailed results for Full course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-2-full-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 2, "full",FALSE)
+```
+
+
+## Intermediate
+
+8 competitors entered the course, achieving 5 new overall PBs and 15 new split PBs: 5 in the pool, 5 on the bike, and 5 on the run.
+
+```{r plot-race-2-int-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",2, "int",FALSE)
+```
+    
+    
+
+### Detailed results for Intermediate course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-2-int-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 2, "int",FALSE)
+```
+
+
+# Race 1: Sep 22 {#r-2018-09-22}
+
+A total of 76 competitors entered. [Club Report](http://www.twintownstriathlon.org.au/?p=3870){target="_blank"}.
+
+
+## Full
+
+66 competitors entered the course.
+
+```{r plot-race-1-full-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",1, "full",FALSE)
+```
+    
+    
+
+### Detailed results for Full course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-1-full-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 1, "full",FALSE)
+```
+
+
+## Intermediate
+
+10 competitors entered the course.
+
+```{r plot-race-1-int-FALSE-2018-2019}
+plotly_race(dt_all_long, tri_cols, "2018-2019",1, "int",FALSE)
+```
+    
+    
+
+### Detailed results for Intermediate course
+
+2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-1-int-FALSE-2018-2019}
+table_race(dt_all_long[season=="2018-2019"], tri_cols, 1, "int",FALSE)
 ```
 
 

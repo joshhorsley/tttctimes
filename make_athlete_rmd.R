@@ -26,8 +26,15 @@ repeated <- foreach(k=athletes_ordered, .combine = paste0 ) %do% {
   k_seasons <- unique(dt_all_long_athlete$season)
   n_seasons <- length(k_seasons)
   
+  n_entries_athlete_all <- dt_all_long_athlete[(started) & (is_last_entry_all) & part == "Swim", entries_total_all]
+  
   paste0("# ", k, " {#", k_ref, "}",
-         "\n\n", name_first, " has results for ", n_seasons, " ", ifelse(n_seasons==1,"season", "seasons"),".",
+         "\n\n", name_first, " has ",
+         n_entries_athlete_all," ", ifelse(n_entries_athlete_all==1,"entry", "entries")
+         ," over ", n_seasons, " ", ifelse(n_seasons==1,"season", "seasons"),".\n\n",
+         "Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter \"I\": Intermediate, \"D\": Double Distance, \"T\": Teams. ",
+         "Race cancellations are shown on the plot with the letter \"C\". ",
+         "Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare ",name_first,"'s entries within seasons.\n",
          
          foreach(i_season = seasons, .combine = paste0) %do% {
            
@@ -84,7 +91,7 @@ repeated <- foreach(k=athletes_ordered, .combine = paste0 ) %do% {
 summary_sentence,"\n\n",
 
 '```{r ',k_ref,'-plot-',i_season,'}
-plotly_athlete(dt_all_long[season=="',i_season,'"], tri_cols, "',k,'", len_season=',len_season,')
+plotly_athlete(dt_all_long, tri_cols, "',i_season,'","',k,'", len_season=',len_season,')
 ```
 
 
@@ -100,10 +107,9 @@ foreach(j=k_courses, .combine=paste0) %do% {
   paste0(
 '\n### Detailed results for ',j_course_nice,' course
 
-Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts by this athlete over the season.
-
 ```{r ',k_ref,'-table-',i_season,'-',j,'}
-table_athlete_course(dt_all_long[season=="',i_season,'"], tri_cols, "',k,'", "',j,'")
+table_athlete_course(dt_all_long, tri_cols, "',i_season,'","',k,'", "',j,'")
+
 ```
 
 '

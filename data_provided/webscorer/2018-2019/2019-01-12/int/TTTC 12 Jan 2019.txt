@@ -1,0 +1,15 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Adjusted time	Time	Lap 1	Lap 2	Lap 3	Handicap	Difference	% Back	% Winning	% Average	% Median
+1	161	Timothy Stella	Timothy	STELLA	Intermediate	1:08:02.9	1:20:17.9	46:54.8	23:20.2	10:02.9	-12:15.0	-	-	100%	8.16%	8.93%
+2	155	Ethan Birtwistle	Ethan	BIRTWISTLE	Intermediate	41:56.1	1:21:56.1	46:34.8	24:23.7	10:57.7	-40:00.0	+1:38.2	+2.04%	98.00%	6.28%	7.07%
+3	67	Lisa WARNER	Lisa	WARNER	Intermediate	37:42.0	1:22:42.0	51:40.0	20:31.0	10:31.0	-45:00.0	+2:24.1	+2.99%	97.10%	5.41%	6.20%
+4	5	Jenny SCAYSBROOK	Jenny	SCAYSBROOK	Intermediate	39:00.6	1:25:56.6	52:54.2	20:26.5	12:35.9	-46:56.0	+5:38.7	+7.03%	93.43%	1.70%	2.53%
+5	158	Sally CAMPBELL	Sally	CAMPBELL	Intermediate	42:25.8	1:27:25.8	51:48.5	23:46.1	11:51.3	-45:00.0	+7:07.9	+8.88%	91.84%	0.00%	0.84%
+6	122	Bede CURNOW	Bede	CURNOW	Intermediate	35:32.3	1:28:02.3	57:47.7	21:03.1	9:11.5	-52:30.0	+7:44.4	+9.64%	91.21%	-0.70%	0.15%
+7	97	Kaleb ROBARDS	Kaleb	ROBARDS	Intermediate	35:43.7	1:28:08.7	57:44.0	21:15.4	9:09.2	-52:25.0	+7:50.8	+9.77%	91.10%	-0.82%	0.03%
+8	45	Paul WOODGER	Paul	WOODGER	Intermediate	43:11.8	1:28:11.8	58:03.1	21:36.9	8:31.8	-45:00.0	+7:53.9	+9.84%	91.04%	-0.88%	-0.03%
+9	181	Alan HEAD	Alan	HEAD	Intermediate	43:54.8	1:28:54.8	52:21.4	22:36.9	13:56.6	-45:00.0	+8:36.9	+10.73%	90.31%	-1.70%	-0.84%
+10	50	Amanda HALL	Amanda	HALL	Intermediate	41:56.4	1:28:59.4	53:42.4	23:23.5	11:53.5	-47:03.0	+8:41.5	+10.82%	90.23%	-1.79%	-0.93%
+11	93	Zoe TAYLOR-WEST	Zoe	TAYLOR-WEST	Intermediate	39:02.2	1:29:02.2	54:50.6	23:16.6	10:55.0	-50:00.0	+8:44.3	+10.88%	90.19%	-1.84%	-0.98%
+12	26	Deb ANDERSON	Deb	ANDERSON	Intermediate	43:36.8	1:30:07.8	53:57.4	24:56.6	11:13.9	-46:31.0	+9:49.9	+12.24%	89.09%	-3.09%	-2.22%
+13	63	Sebastian THOMSON	Sebastian	THOMSON	Intermediate	37:06.3	1:32:06.3	1:00:37.8	21:35.5	9:53.0	-55:00.0	+11:48.4	+14.70%	87.18%	-5.35%	-4.46%
+14	179	Patrick Rudd	John	DELBRIDGE	Intermediate	47:08.6	1:32:08.6	59:47.2	22:26.7	9:54.7	-45:00.0	+11:50.7	+14.75%	87.15%	-5.39%	-4.51%

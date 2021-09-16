@@ -1,0 +1,130 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Adjusted time	Time	Lap 1	Lap 2	Lap 3	Handicap	Difference	% Back	% Winning	% Average	% Median
+1	182	Sharyn KLEIN	Sharyn	KLEIN	Full	1:14:05.2	1:24:00.2	9:00.0	25:00.0	50:00.2	-9:55.0	-	-	100%	11.01%	11.05%
+2	115	Ross SALMON	Ross	SALMON	Full	1:07:52.2	1:29:50.2	27:25.1	36:06.6	26:18.5	-21:58.0	+5:50.0	+6.94%	93.51%	4.84%	4.88%
+3	51	Sue HAWKINS	Sue	HAWKINS	Full	1:07:20.4	1:30:45.4	32:24.3	34:47.6	23:33.5	-23:25.0	+6:45.2	+8.04%	92.56%	3.86%	3.90%
+4	41	Colin WOODWARD	Colin	WOODWARD	Full	34:12.2	1:31:20.2	13:19.6	41:36.3	36:24.3	-57:08.0	+7:20.0	+8.73%	91.97%	3.25%	3.29%
+5	11	Rob GILLIES	Rob	GILLIES	Full	36:03.5	1:31:27.5	8:58.1	43:34.4	38:55.0	-55:24.0	+7:27.3	+8.87%	91.85%	3.12%	3.16%
+6	114	Joe MOLLICA	Jo	MOLLICA	Full	1:17:06.1	1:31:37.1	28:06.7	36:09.6	27:20.8	-14:31.0	+7:36.9	+9.07%	91.69%	2.95%	2.99%
+7	176	Nick FAWAZ	Nick	FAWAZ	Full	59:18.8	1:32:44.8	42:40.0	31:39.7	18:25.0	-33:26.0	+8:44.6	+10.41%	90.57%	1.75%	1.79%
+8	53	Jo COLJA	Jo	COLJA	Full	1:08:38.2	1:36:08.2	37:03.5	32:58.7	26:05.9	-27:30.0	+12:08.0	+14.44%	87.38%	-1.84%	-1.79%
+9	70	Kev BANNERMAN	Kev	BANNERMAN	Full	1:27:19.7	1:37:19.7	19:42.7	37:27.9	40:09.0	-10:00.0	+13:19.5	+15.86%	86.31%	-3.10%	-3.06%
+10	84	Wendy WISE	Wendy	WISE	Full	1:27:19.8	1:37:19.8	23:56.9	43:41.9	29:41.0	-10:00.0	+13:19.6	+15.86%	86.31%	-3.10%	-3.06%
+11	32	Guy Davoren			Full	1:14:56.3	1:38:43.3	35:21.1	40:00.1	23:22.1	-23:47.0	+14:43.1	+17.52%	85.09%	-4.58%	-4.53%
+12	107	Marcel VAN KAMPEN	Marcel	VAN KAMPEN	Full	1:40:00.0	1:40:00.0	8:30.6	33:06.8	58:22.6	+0:00.0	+15:59.8	+19.04%	84.00%	-5.93%	-5.89%
+12	67	Lisa WARNER	Lisa	WARNER	Full	1:40:00.0	1:40:00.0	9:50.5	39:48.7	50:20.8	+0:00.0	+15:59.8	+19.04%	84.00%	-5.93%	-5.89%
+14	139	Matt Stanley	Matt	STANLEY	Full	1:08:03.0	1:40:21.0	43:24.2	35:42.7	21:14.0	-32:18.0	+16:20.8	+19.46%	83.71%	-6.30%	-6.26%
+-	57	Michelle JONES	Michelle	JONES	Full	DNF	DNF	-	-	-	-21:52.0	-	-	-	-	-
+-	1	Travis COLEMAN	Travis	COLEMAN	Full	DNS	DNS				-44:16.0	-	-	-	-	-
+-	3	Val LAMBARD	Val	LAMBARD	Full	DNS	DNS				-5:00.0	-	-	-	-	-
+-	4	Jim COLLINS	Jim	COLLINS	Full	DNS	DNS				-27:40.0	-	-	-	-	-
+-	8	Dave DE CLOSEY	Dave	DE CLOSEY	Full	DNS	DNS				-10:00.0	-	-	-	-	-
+-	9	Stuart CRAWFORD	Stuart	CRAWFORD	Full	DNS	DNS				-28:48.0	-	-	-	-	-
+-	12	Peter SERONE	Peter	SERONE	Full	DNS	DNS				-22:38.0	-	-	-	-	-
+-	13	Chris WATT	Chris	WATT	Full	DNS	DNS				-24:33.0	-	-	-	-	-
+-	14	Clive PEARCE	Clive	PEARCE	Full	DNS	DNS				-34:24.0	-	-	-	-	-
+-	15	Bobby SMITH	Bobby	SMITH	Full	DNS	DNS				-20:00.0	-	-	-	-	-
+-	16	Hillary DANCEWILSON	Hillary	DANCEWILSON	Full	DNS	DNS				-5:15.0	-	-	-	-	-
+-	19	Charlotte DANCEWILSON	Charlotte	DANCEWILSON	Full	DNS	DNS				-5:14.0	-	-	-	-	-
+-	21	Ross FERGUSON	Ross	FERGUSON	Full	DNS	DNS				-41:00.0	-	-	-	-	-
+-	22	Julie LOWE	Julie	LOWE	Full	DNS	DNS				-25:19.0	-	-	-	-	-
+-	23	Jamie STODDART	Jamie	STODDART	Full	DNS	DNS				-22:00.0	-	-	-	-	-
+-	28	Selywn VAN WYK	Selynwn	VAN WKY	Full	DNS	DNS				-35:59.0	-	-	-	-	-
+-	29	Kirsten ELLIS	Kirsten	ELLIS	Full	DNS	DNS				-16:01.0	-	-	-	-	-
+-	30	Alex TORRANCE	Alex	TORRANCE	Full	DNS	DNS				-29:19.0	-	-	-	-	-
+-	31	Christian ANDREWS	Christian	ANDREWS	Full	DNS	DNS				-36:52.0	-	-	-	-	-
+-	33	Mark YAGER	Mark	YAGER	Full	DNS	DNS				-37:12.0	-	-	-	-	-
+-	34	Simon BRADBERY	Simon	BRADBERY	Full	DNS	DNS				-27:35.0	-	-	-	-	-
+-	36	Scott COLLINS	Scott	COLLINS	Full	DNS	DNS				-20:53.0	-	-	-	-	-
+-	37	Jeff MURRAY	Jeff	MURRAY	Full	DNS	DNS				-21:40.0	-	-	-	-	-
+-	38	Noel COLEMAN	Noel	COLEMAN	Full	DNS	DNS				-7:21.0	-	-	-	-	-
+-	40	Joe WARD	Joe	WARD	Full	DNS	DNS				-56:09.0	-	-	-	-	-
+-	42	Frank ADLER	Frank	ADLER	Full	DNS	DNS				-27:12.0	-	-	-	-	-
+-	43	Pete McFIE	Pete	MCFIE	Full	DNS	DNS				+0:00.0	-	-	-	-	-
+-	44	Scott WILDIN	Scott	WILDIN	Full	DNS	DNS				-40:04.0	-	-	-	-	-
+-	48	Karen LOWRIE	Karen	LOWRIE	Full	DNS	DNS				-18:04.0	-	-	-	-	-
+-	52	Peter HARRINGTON	Peter	HARRINGTON	Full	DNS	DNS				-10:00.0	-	-	-	-	-
+-	54	Cheyne HAMPSON	Cheyne	HAMPSON	Full	DNS	DNS				-17:00.0	-	-	-	-	-
+-	55	Mark WHITICKER	Mark	WHITICKER	Full	DNS	DNS				-20:40.0	-	-	-	-	-
+-	56	Glenn LANCE	Glenn	LANCE	Full	DNS	DNS				-20:51.0	-	-	-	-	-
+-	58	Debbie DAVIES	Debbie	DAVIES	Full	DNS	DNS				-35:15.0	-	-	-	-	-
+-	59	Mark DAVIES	Mark	DAVIES	Full	DNS	DNS				-21:32.0	-	-	-	-	-
+-	60	Jonathan DAVIES	Jonathan	DAVIES	Full	DNS	DNS				-35:38.0	-	-	-	-	-
+-	61	Sera GRAHAM	Sera	GRAHAM	Full	DNS	DNS				-31:00.0	-	-	-	-	-
+-	62	Scott THOMSON	Scott	THOMSON	Full	DNS	DNS				-48:42.0	-	-	-	-	-
+-	65	David EMERY	David	EMERY	Full	DNS	DNS				-27:36.0	-	-	-	-	-
+-	68	Vicki LAWES	Vicki	LAWES	Full	DNS	DNS				-23:36.0	-	-	-	-	-
+-	69	Trevor LAWES	Trevor	LAWES	Full	DNS	DNS				-22:53.0	-	-	-	-	-
+-	73	Tamy TAYLOR	Tamy	TAYLOR	Full	DNS	DNS				-16:27.0	-	-	-	-	-
+-	74	Dawn COURAGE	Dawn	COURAGE	Full	DNS	DNS				-6:05.0	-	-	-	-	-
+-	75	Kipp FREEMAN	Kipp	FREEMAN	Full	DNS	DNS				-29:27.0	-	-	-	-	-
+-	76	Greg FREEMAN	Greg	FREEMAN	Full	DNS	DNS				-2:30.0	-	-	-	-	-
+-	77	John WARREN	John	WARREN	Full	DNS	DNS				-19:08.0	-	-	-	-	-
+-	78	Amanda ATTARD	Amanda	ATTARD	Full	DNS	DNS				-21:21.0	-	-	-	-	-
+-	79	Tim WHITBURN	Tim	WHITBURN	Full	DNS	DNS				-36:00.0	-	-	-	-	-
+-	80	Mark COLLINSON	Mark	COLLINSON	Full	DNS	DNS				-24:58.0	-	-	-	-	-
+-	81	Scott BORNHOLT	Scott	BORNHOLT	Full	DNS	DNS				-32:36.0	-	-	-	-	-
+-	82	Kara PEASE	Kara	PEASE	Full	DNS	DNS				-15:02.0	-	-	-	-	-
+-	83	Peter TOWNSEND	Peter	TOWNSEND	Full	DNS	DNS				-7:16.0	-	-	-	-	-
+-	86	Warren COPPING	Warren	COPPING	Full	DNS	DNS				-17:18.0	-	-	-	-	-
+-	90	Jeremy SIMPSON	Jeremy	SIMPSON	Full	DNS	DNS				-19:27.0	-	-	-	-	-
+-	91	Tanya SNOWDEN	Tanya	SNOWDEN	Full	DNS	DNS				-23:26.0	-	-	-	-	-
+-	92	Michael BUGDEN	Michael	BUGDEN	Full	DNS	DNS				-17:39.0	-	-	-	-	-
+-	94	Danny KHAZEN	Danny	KHAZEN	Full	DNS	DNS				-33:06.0	-	-	-	-	-
+-	95	Kim BOWRA	Kim	BOWRA	Full	DNS	DNS				-34:46.0	-	-	-	-	-
+-	96	Glenn BAILEY	Glenn	BAILEY	Full	DNS	DNS				-32:20.0	-	-	-	-	-
+-	98	Duncan ETHELL	Duncan	ETHELL	Full	DNS	DNS				-17:54.0	-	-	-	-	-
+-	99	Scott STYMAN	Scott	STYMAN	Full	DNS	DNS				-31:14.0	-	-	-	-	-
+-	100	Heleena ETHELL	Heleena	ETHELL	Full	DNS	DNS				-22:09.0	-	-	-	-	-
+-	101	Kieran HOWARD	Kieran	HOWARD	Full	DNS	DNS				-29:50.0	-	-	-	-	-
+-	102	Andrew COSTELLO	Andrew	COSTELLO	Full	DNS	DNS				-31:02.0	-	-	-	-	-
+-	103	Rhys CAMPBELL	Rhys	CAMPBELL	Full	DNS	DNS				-34:26.0	-	-	-	-	-
+-	106	Timothy EADE	Timothy	EADE	Full	DNS	DNS				-23:15.0	-	-	-	-	-
+-	108	Deidre STEIN	Deidre	STEIN	Full	DNS	DNS				-11:53.0	-	-	-	-	-
+-	109	Joseph COSTELLO	Joseph	COSTELLO	Full	DNS	DNS				-17:24.0	-	-	-	-	-
+-	110	Rowena SMITH	Rowena	SMITH	Full	DNS	DNS				-22:48.0	-	-	-	-	-
+-	111	Mitchell COOMBS	Mitchell	COOMBS	Full	DNS	DNS				-25:31.0	-	-	-	-	-
+-	112	Kent HOLMES	Kent	HOLMES	Full	DNS	DNS				-30:18.0	-	-	-	-	-
+-	113	Garry McKENZIE	Garry	McKENZIE	Full	DNS	DNS				-26:57.0	-	-	-	-	-
+-	116	Adrian BARTLETT	Adam	BARTLETT	Full	DNS	DNS				-37:40.0	-	-	-	-	-
+-	117	Des GOODA	Des	GOODA	Full	DNS	DNS				-34:19.0	-	-	-	-	-
+-	119	Pierse CHARLTON	Pierse	CHARLTON	Full	DNS	DNS				-8:53.0	-	-	-	-	-
+-	120	Helen THACKER	Helen	THACKER	Full	DNS	DNS				-15:58.0	-	-	-	-	-
+-	121	Ian CURNOW	Ian	CURNOW	Full	DNS	DNS				-37:03.0	-	-	-	-	-
+-	123	Stuart McGILL	Stuart	MCGILL	Full	DNS	DNS				-16:00.0	-	-	-	-	-
+-	126	Matthew TAPPING	Matthew	TAPPING	Full	DNS	DNS				-34:51.0	-	-	-	-	-
+-	128	Geoffrey TAPPING	Geoffrey	TAPPING	Full	DNS	DNS				-19:13.0	-	-	-	-	-
+-	129	Steve WHINCOP	Steve	WHINCOP	Full	DNS	DNS				-24:58.0	-	-	-	-	-
+-	132	Garrett Thompson	Garrett	THOMPSON	Full	DNS	DNS				-14:07.0	-	-	-	-	-
+-	133	Carl Patterson	Carl	PATTERSON	Full	DNS	DNS				-36:41.0	-	-	-	-	-
+-	134	Rob Eid	Rod	EID	Full	DNS	DNS				-30:00.0	-	-	-	-	-
+-	135	Luke Henry	Luke	HENRY	Full	DNS	DNS				-30:00.0	-	-	-	-	-
+-	137	Peter Crowe	Peter	CROWE	Full	DNS	DNS				-32:16.0	-	-	-	-	-
+-	138	Mark Birtwistle	Mark	BIRTWISTLE	Full	DNS	DNS				-26:27.0	-	-	-	-	-
+-	140	Glenn Payne	Glenn	PAYNE	Full	DNS	DNS				-32:05.0	-	-	-	-	-
+-	141	Erin Davoren	Erin	DAVOREN	Full	DNS	DNS				-10:02.0	-	-	-	-	-
+-	142	Ruth TUTTON	Ruth	TUTTON	Full	DNS	DNS				-17:36.0	-	-	-	-	-
+-	144	Shane SMITH	Shane	SMITH	Full	DNS	DNS				-22:45.0	-	-	-	-	-
+-	145	Nick O'REILLY	Nick	O"REILLY	Full	DNS	DNS				-34:30.0	-	-	-	-	-
+-	146	Jordan BIRTWISTLE	Jordan	BIRTWISTLE	Full	DNS	DNS				-24:07.0	-	-	-	-	-
+-	148	Matt BURGESS	Matt	BURGESS	Full	DNS	DNS				-15:34.0	-	-	-	-	-
+-	149	Chris BOYLE	Chris	BOYLE	Full	DNS	DNS				-41:02.0	-	-	-	-	-
+-	151	Craig TELLING	Craig	TELLING	Full	DNS	DNS				-37:32.0	-	-	-	-	-
+-	152	Tom BOSWELL	Tom	BOSWELL	Full	DNS	DNS				-37:43.0	-	-	-	-	-
+-	154	Rachel MORRISON	Rachel	MORRISON	Full	DNS	DNS				-23:09.0	-	-	-	-	-
+-	156	Stephen Ring	Stephen	RING	Full	DNS	DNS				-9:38.0	-	-	-	-	-
+-	159	Simon HARRADENCE	Simon	HARRADENCE	Full	DNS	DNS				-34:21.0	-	-	-	-	-
+-	163	Damion Toney	Damion	TONEY	Full	DNS	DNS				-21:50.0	-	-	-	-	-
+-	164	Jack LOVE	Jack	LOVE	Full	DNS	DNS				-34:20.0	-	-	-	-	-
+-	165	Katie Frew	Katie	FREW	Full	DNS	DNS				-30:00.0	-	-	-	-	-
+-	166	Craig Broadhurst	Craig	BROADHURST	Full	DNS	DNS				-24:54.0	-	-	-	-	-
+-	168	Craig BOSWELL	Craig	BOSWELL	Full	DNS	DNS				-24:34.0	-	-	-	-	-
+-	169	Darryl CAPNER	Darryl	CAPNER	Full	DNS	DNS				-14:27.0	-	-	-	-	-
+-	170	Amandine ADAM	Amanadine	ADAM	Full	DNS	DNS				-21:13.0	-	-	-	-	-
+-	171	Sam Adam	Sam	ADAM	Full	DNS	DNS				-26:01.0	-	-	-	-	-
+-	172	Thiago CORDERIO	Thiago	CORDERIO	Full	DNS	DNS				-5:00.0	-	-	-	-	-
+-	173	Sheridan BOSWORTH	Sheridan	BOSWORTH	Full	DNS	DNS				-5:27.0	-	-	-	-	-
+-	174	Sarah BUCHANAN	Sarah	BUCHANAN	Full	DNS	DNS				-33:14.0	-	-	-	-	-
+-	175	Kate HEAD	Kate	HEAD	Full	DNS	DNS				-6:03.0	-	-	-	-	-
+-	177	Caroline BELLENGER	Caroline	BELLENGER	Full	DNS	DNS				-12:01.0	-	-	-	-	-
+-	178	Amadeus BELLENGER	Amadeus	BELLENGER	Full	DNS	DNS				-30:01.0	-	-	-	-	-
+-	179	Nick LOCK	Nick	LOCK	Full	DNS	DNS				-20:00.0	-	-	-	-	-

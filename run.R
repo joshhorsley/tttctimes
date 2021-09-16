@@ -109,9 +109,9 @@ dt_teams_manual_long1 <- melt.data.table(dt_teams_manual,
                 variable.name = "racer_ref",
                 value.name = "Name")
 
-dt_teams_manual_long1[, Swim := "0:00:00"]
-dt_teams_manual_long1[, Ride := "0:00:00"]
-dt_teams_manual_long1[, Run := "0:00:00"]
+dt_teams_manual_long1[, Swim := "0:10:00.0"]
+dt_teams_manual_long1[, Ride := "0:30:00.0"]
+dt_teams_manual_long1[, Run := "0:20:00.0"]
 
 dt_teams_manual_long <- melt.data.table(dt_teams_manual_long1,
                 id.vars = c("season","race_number","date_ymd", "Team No","racer_ref", "Name"),
@@ -193,51 +193,65 @@ dt_all_long[, Name_import := Name]
 dt_all_long[, Name := standardise_names(Name), by = row_id ]
 
 
+dt_all_long[Name=="Adrian", Name := "Adrian Bartlett"]
+dt_all_long[Name=="Lorraine Basset", Name := "Lorraine Bassett"]
+
 dt_all_long[tolower(Name) %in% c("jo colja"), Name := "Joanne Colja"]
+
+dt_all_long[Name=="Charlotte Dance-Wilson", Name := "Charlotte Dancewilson"]
+dt_all_long[Name=="Erin Daveron", Name := "Erin Davoren"]
 dt_all_long[tolower(Name) %in% c("dave de closey"), Name := "David De Closey"]
 dt_all_long[tolower(Name) %in% c("ian driffil"), Name := "Ian Driffill"]
-dt_all_long[tolower(Name) %in% c("greg freeman"), Name := "Gregory Freeman"]
-dt_all_long[tolower(Name) %in% c("amanda hall"), Name := "Manda Hall"]
-dt_all_long[tolower(Name) %in% c("cassie heaslip"), Name := "Cassandra Heaslip"]
-dt_all_long[tolower(Name) %in% c("joshua horsley"), Name := "Josh Horsley"]
-dt_all_long[tolower(Name) %in% c("lydia kuschnirz"), Name := "Lydia Kuschmirz"]
-dt_all_long[tolower(Name) %in% c("valerie lambard"), Name := "Val Lambard"]
-dt_all_long[tolower(Name) %in% c("samatha leonard", "sam leonard"), Name := "Samantha Leonard"]
-dt_all_long[tolower(Name) %in% c("virginia jones", "ginny jones"), Name := "Ginny Jones"]
-dt_all_long[tolower(Name) %in% c("karen nixon-hind"), Name := "Karen Nixon"]
-dt_all_long[tolower(Name) %in% c("kaleb robarda"), Name := "Kaleb Robards"]
-dt_all_long[tolower(Name) %in% c("wendy saunders"), Name := "Wendy Sanders"]
-
-dt_all_long[tolower(Name) %in% c("jo ward", "joe ward"), Name := "Jolyon Ward"]
-dt_all_long[tolower(Name) %in% c("196"), Name := "Shelly Winder"]
+dt_all_long[Name=="Mel Duff", Name := "Melanie Duff"]
 
 dt_all_long[Name=="Tim Eade", Name := "Timothy Eade"]
-dt_all_long[Name=="Charlotte Dancewilson", Name := "Charlotte Dance-Wilson"]
-dt_all_long[Name=="Sue Hawkins", Name := "Sue Van Den Broek"]
-dt_all_long[Name=="Vaughn Skelly", Name := "Vaughan Skelly"]
-dt_all_long[Name=="Jeffrey Stella", Name := "Jeff Stella"]
-dt_all_long[Name=="Matt Stanley", Name := "Matthew Stanley"]
-dt_all_long[Name=="Adrian", Name := "Adrian Bartlett"]
-dt_all_long[Name=="Mel Duff", Name := "Melanie Duff"]
-dt_all_long[Name=="Erin Daveron", Name := "Erin Davoren"]
-dt_all_long[Name=="Nicholas Fawaz", Name := "Nick Fawaz"]
-dt_all_long[Name=="Shelly Winder", Name := "Shelley Winder"]
-dt_all_long[Name=="Sebastian", Name := "Sebastian Thomson"]
 dt_all_long[Name=="Kristen Ellis", Name := "Kirsten Ellis"]
-dt_all_long[Name=="Lucas N", Name := "Lucas Nixon-Hind"]
-dt_all_long[Name=="Adndrew Miller", Name := "Andrew Miller"]
-dt_all_long[Name=="Tim Taylor", Name := "Timothy Taylor"]
-dt_all_long[Name=="Will Taylor", Name := "William Taylor"]
-dt_all_long[Bib=="241" & Name=="Robert", Name := "Robert Harris"]
-dt_all_long[Bib=="240" & Name=="Sally", Name := "Sally Kingston"]
-dt_all_long[Name=="Rachel Meakes", Name := "Rachael Meakes"]
+
+dt_all_long[Name=="Nicholas Fawaz", Name := "Nick Fawaz"]
+dt_all_long[tolower(Name) %in% c("greg freeman"), Name := "Gregory Freeman"]
+
 dt_all_long[Name=="Trudie Gadaleta", Name := "Trudy Gadaleta"]
+
+dt_all_long[tolower(Name) %in% c("amanda hall"), Name := "Manda Hall"]
+dt_all_long[Bib=="241" & Name=="Robert", Name := "Robert Harris"]
+dt_all_long[tolower(Name) %in% c("cassie heaslip"), Name := "Cassandra Heaslip"]
+dt_all_long[tolower(Name) %in% c("joshua horsley"), Name := "Josh Horsley"]
+
 dt_all_long[Name=="Haydn Jenkins", Name := "Hayden Jenkins"]
+dt_all_long[tolower(Name) %in% c("virginia jones", "ginny jones"), Name := "Ginny Jones"]
+
+dt_all_long[Bib=="240" & Name=="Sally", Name := "Sally Kingston"]
+dt_all_long[tolower(Name) %in% c("lydia kuschnirz"), Name := "Lydia Kuschmirz"]
+
+dt_all_long[tolower(Name) %in% c("valerie lambard"), Name := "Val Lambard"]
+dt_all_long[tolower(Name) %in% c("samatha leonard", "sam leonard"), Name := "Samantha Leonard"]
 
 dt_all_long[Bib=="237" & Name=="Kristin", Name := "Christin Mcintosh"]
-dt_all_long[Name=="Nat Rogers", Name := "Natalie Rogers"]
-dt_all_long[Name=="Lorraine Basset", Name := "Lorraine Bassett"]
+dt_all_long[Name=="Rachel Meakes", Name := "Rachael Meakes"]
+dt_all_long[Name=="Adndrew Miller", Name := "Andrew Miller"]
+
+dt_all_long[Name=="Lucas N", Name := "Lucas Nixon-Hind"]
+dt_all_long[tolower(Name) %in% c("karen nixon-hind"), Name := "Karen Nixon"]
+
 dt_all_long[Name=="Sean Oldburg", Name := "Shaun Oldbury"]
+
+dt_all_long[tolower(Name) %in% c("kaleb robarda", "caleb robards"), Name := "Kaleb Robards"]
+dt_all_long[Name=="Nat Rogers", Name := "Natalie Rogers"]
+
+dt_all_long[tolower(Name) %in% c("wendy saunders"), Name := "Wendy Sanders"]
+dt_all_long[Name=="Vaughn Skelly", Name := "Vaughan Skelly"]
+dt_all_long[Name=="Matt Stanley", Name := "Matthew Stanley"]
+dt_all_long[Name=="Jeffrey Stella", Name := "Jeff Stella"]
+
+dt_all_long[Name=="Tim Taylor", Name := "Timothy Taylor"]
+dt_all_long[Name=="Will Taylor", Name := "William Taylor"]
+dt_all_long[Name=="Sebastian", Name := "Sebastian Thomson"]
+
+dt_all_long[Name=="Sue Hawkins", Name := "Sue Van Den Broek"]
+
+dt_all_long[tolower(Name) %in% c("jo ward", "joe ward"), Name := "Jolyon Ward"]
+dt_all_long[tolower(Name) %in% c("196", "shelly winder"), Name := "Shelley Winder"]
+
 
 
 dt_all_long[part=="Swim" & !(Bib %in% c("","-")) & !is.na(Bib),
@@ -268,6 +282,25 @@ dt_all_long[, athlete_link := paste0('<a href="', athlete_ref,'.html#',athlete_r
 athletes_ordered <- unique(dt_all_long[(started)][order(tolower(name_last))]$Name)
 
 
+# Catch multiple entries per date -----------------------------------------
+
+
+# Deal with Oct 20 2018 when those doing full or int course also appear in the double results
+dt_all_long[date_ymd=="2018-10-20", N_entries := .N , by = .(Name,part)]
+dt_all_long[date_ymd=="2018-10-20" & N_entries >1 & course=="double", drop_duplicate := TRUE]
+dt_all_long[is.na(drop_duplicate), drop_duplicate := FALSE]
+
+dt_all_long <- dt_all_long[!(drop_duplicate)]
+
+
+# test it
+# dt_all_long[date_ymd=="2018-10-20" & part=='Swim', .N, by = course]
+
+# check all are caught
+n_multi <- nrow(dt_all_long[part=="Swim", .(N = .N, course), by = .(Name, date_ymd)][N>1])
+stopifnot(n_multi==0)
+
+
 # Timing errors -----------------------------------------------------------
 
 
@@ -284,14 +317,27 @@ dt_all_long[, valid_overall := cumulative_valid[which(part=="Run")], by = .(seas
 dt_all_long[is.na(valid_overall), valid_overall := TRUE]
 
 # times that only have participation invalid
-dt_all_long[(participation_only), split_valid := FALSE]
-dt_all_long[(participation_only), valid_overall := FALSE]
+dt_all_long[(participation_only), `:=`(split_valid = FALSE,
+                                       cumulative_valid = FALSE,
+                                       valid_overall = FALSE)]
+
+
+# Catch races with all bad data
+dt_all_long[date_ymd=="2018-09-22", `:=`(split_valid = FALSE,
+                                         cumulative_valid = FALSE,
+                                         valid_overall = FALSE)]
+
+# Total time is given as time of day
+dt_all_long[date_ymd=="2018-09-22", time_overall_import := gsub("^7","1",time_overall_import)]
+dt_all_long[date_ymd=="2018-09-22" & part =="Swim", duration_import := time_overall_import]
 
 
 # Course entry errors -----------------------------------------------------
 
 
+dt_all_long[date_ymd=="2018-11-17" & Name == "Paul Woodger", course := "int"]
 dt_all_long[date_ymd=="2019-10-05" & Name == "Trudy Gadaleta", course := "int"]
+dt_all_long[date_ymd=="2019-10-05" & Name == "Charlotte Dance-Wilson", course := "full"]
 dt_all_long[date_ymd=="2019-10-19" & Name == "Ian Curnow", course := "full"]
 dt_all_long[date_ymd=="2019-11-30" & Name == "Melanie Duff", course := "int"]
 dt_all_long[date_ymd=="2020-10-10" & Name == "Lydia Kuschmirz", course := "int"]
@@ -491,12 +537,21 @@ dt_all_long[(started), place_cum_nice := format_place(place_cum_recalc)]
 
 # Participation -----------------------------------------------------------
 
-
+# By season
 dt_all_long[(started), entries_cumulative := cumsum(started), by = .(Name, season, part)]
 dt_all_long[(started), entries_total := max(entries_cumulative), by = .(Name, season)]
 dt_all_long[(started), is_last_entry := entries_total == entries_cumulative]
 
 dt_all_long[(started) & (is_last_entry), entries_total_rank := rank(-entries_total, ties.method = "min"), by = .(season,part)]
+
+
+# Over all seasons
+dt_all_long[(started), entries_cumulative_all := cumsum(started), by = .(Name, part)]
+dt_all_long[(started), entries_total_all := max(entries_cumulative_all), by = .(Name)]
+dt_all_long[(started), is_last_entry_all := entries_total_all == entries_cumulative_all]
+
+dt_all_long[(started) & (is_last_entry_all), entries_total_all_rank := rank(-entries_total_all, ties.method = "min"), by = .(part)]
+
 
 
 # PBs ---------------------------------------------------------------------

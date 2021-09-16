@@ -1,0 +1,27 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Adjusted time	Time	Lap 1	Lap 2	Lap 3	Handicap	Difference	% Back	% Winning	% Average	% Median
+1	122	Bede CURNOW	Bede	CURNOW	Intermediate	37:33.4	37:33.4	5:05.8	22:47.6	9:40.0	+0:00.0	-	-	100%	48.26%	57.42%
+2	45	Paul WOODGER	Paul	WOODGER	Intermediate	43:12.1	1:28:12.1	12:58.3	1:05:20.0	9:53.9	-45:00.0	+50:38.7	+134.85%	42.58%	-21.52%	0.00%
+3	97	Kaleb ROBARDS	Kaleb	ROBARDS	Intermediate	39:34.0	1:31:59.0	58:45.2	21:43.9	11:29.9	-52:25.0	+54:25.6	+144.92%	40.83%	-26.73%	-4.29%
+-	5	Jenny SCAYSBROOK	Jenny	SCAYSBROOK	Intermediate	DNS	DNS				-46:56.0	-	-	-	-	-
+-	24	Scott CUMMINGS	Scott	CUMMINGS	Intermediate	DNS	DNS				-45:00.0	-	-	-	-	-
+-	25	Susan BAXTER	Susan	BAXTER	Intermediate	DNS	DNS				-45:25.0	-	-	-	-	-
+-	26	Deb ANDERSON	Deb	ANDERSON	Intermediate	DNS	DNS				-46:31.0	-	-	-	-	-
+-	27	Lisa MOORE	Lisa	MOORE	Intermediate	DNS	DNS				-51:19.0	-	-	-	-	-
+-	35	Judy MURRAY	Judy	MURRAY	Intermediate	DNS	DNS				-45:00.0	-	-	-	-	-
+-	49	Talyn HALL	Talyn	HALL	Intermediate	DNS	DNS				-24:59.0	-	-	-	-	-
+-	50	Amanda HALL	Amanda	HALL	Intermediate	DNS	DNS				-47:03.0	-	-	-	-	-
+-	63	Sebastian THOMSON	Sebastian	THOMSON	Intermediate	DNS	DNS	56:27.8	21:29.8	10:11.8	-50:00.0	-	-	-	-	-
+-	66	Julie WEST	Julie	WEST	Intermediate	DNS	DNS				-16:17.0	-	-	-	-	-
+-	87	Tracey COPPING	Tracey	COPPING	Intermediate	DNS	DNS				-45:15.0	-	-	-	-	-
+-	93	Zoe TAYLOR-WEST	Zoe	TAYLOR-WEST	Intermediate	DNS	DNS				-50:00.0	-	-	-	-	-
+-	118	Peter CHARLTON	Peter	CHARLTON	Intermediate	DNS	DNS				-6:50.0	-	-	-	-	-
+-	124	Daniel BRAY	Daniel	BRAY	Intermediate	DNS	DNS				-55:00.0	-	-	-	-	-
+-	125	Alex BRAY	Alex	BRAY	Intermediate	DNS	DNS				-47:31.0	-	-	-	-	-
+-	147	Remy HAWKINS	Remy	HAWKINS	Intermediate	DNS	DNS				-45:30.0	-	-	-	-	-
+-	153	Luke ROBERTS	Luke	ROBERTS	Intermediate	DNS	DNS				+0:00.0	-	-	-	-	-
+-	155	Ethan Birtwistle	Ethan	BIRTWISTLE	Intermediate	DNS	DNS				-40:00.0	-	-	-	-	-
+-	158	Sally CAMPBELL	Sally	CAMPBELL	Intermediate	DNS	DNS				-45:00.0	-	-	-	-	-
+-	161	Timothy Stella	Timothy	STELLA	Intermediate	DNS	DNS				-12:15.0	-	-	-	-	-
+-	167	Rebecca Waldren	Rebecca	WALDREN	Intermediate	DNS	DNS				-45:00.0	-	-	-	-	-
+-	179	John DELBRIDGE	John	DELBRIDGE	Intermediate	DNS	DNS				-45:00.0	-	-	-	-	-
+-	181	Alan HEAD	Alan	HEAD	Intermediate	DNS	DNS				-45:00.0	-	-	-	-	-

@@ -1,0 +1,26 @@
+﻿Place	Bib	Name	First name	Last name	Time	Lap 1	Lap 2	Lap 3	Difference	% Back	% Winning	% Average	% Median
+1	131	Brendan BROOKS	Brendan	BROOKS	1:38:42.8	16:16.8	49:47.7	32:38.3	-	-	100%	17.57%	19.41%
+2	46	Kyle MOONEY	Kyle	MOONEY	1:47:55.8	16:13.4	55:52.4	35:50.0	+9:13.0	+9.34%	91.46%	9.87%	11.89%
+3	47	Ben HALL	Ben	HALL	1:48:54.3	16:18.3	53:09.7	39:26.3	+10:11.5	+10.32%	90.64%	9.06%	11.09%
+4	183	Taylor Love			1:51:04.7	15:53.1	55:42.9	39:28.7	+12:21.9	+12.53%	88.87%	7.25%	9.32%
+5	2	Tracy FOYSTER	Tracy	FOYSTER	1:52:38.6	17:25.5	57:18.1	37:55.0	+13:55.8	+14.11%	87.63%	5.94%	8.04%
+6	7	Alex GILKS	Alex	GILKS	1:56:07.5	18:03.4	59:00.2	39:03.9	+17:24.7	+17.64%	85.01%	3.03%	5.20%
+7	71	Danny WARNER	Danny	WARNER	2:00:34.2	19:45.7	57:41.5	43:06.9	+21:51.4	+22.14%	81.87%	-0.68%	1.57%
+8	89	Matt LANCE	Matt	LANCE	2:04:24.4	15:44.5	1:00:34.6	48:05.3	+25:41.6	+26.03%	79.35%	-3.88%	-1.57%
+9	17	Richard MORANT	Richard	MORANT	2:04:40.0	20:42.5	57:23.7	46:33.8	+25:57.2	+26.29%	79.18%	-4.10%	-1.78%
+10	85	Terence SIMPSON	Terence	SIMPSON	2:05:16.2	17:12.2	1:00:36.7	47:27.2	+26:33.4	+26.90%	78.80%	-4.61%	-2.27%
+11	105	Darren JONES	Darren	JONES	2:06:11.2	21:14.1	57:14.1	47:43.1	+27:28.4	+27.83%	78.23%	-5.37%	-3.02%
+12	180	Tyneal CLARK	Tyneal	CLARK	2:12:18.1	18:22.1	1:08:53.0	45:03.1	+33:35.3	+34.03%	74.61%	-10.48%	-8.01%
+13	110	Rowena SMITH	Rowena	SMITH	2:13:53.2	23:40.7	1:08:39.5	41:33.0	+35:10.4	+35.63%	73.73%	-11.80%	-9.31%
+14	10	Ginny JONES	Ginny	JONES	2:13:53.4	18:57.3	1:06:20.1	48:35.9	+35:10.6	+35.64%	73.73%	-11.80%	-9.31%
+-	18	Hollie ROBARDS	Hollie	ROBARDS	DNS				-	-	-	-	-
+-	20	Gerard ROBARDS	Gerard	Robards	DNS				-	-	-	-	-
+-	32	Guy DAVOREN	Guy	DAVOREN	DNS				-	-	-	-	-
+-	39	Vaughan SKELLY	Vaughan	SKELLY	DNS				-	-	-	-	-
+-	72	Rob WORTH	Rob	WORTH	DNS				-	-	-	-	-
+-	88	John KING	John	KING	DNS				-	-	-	-	-
+-	104	Viv WRIGHT	Viv	WRIGHT	DNS				-	-	-	-	-
+-	136	Hippolyte Lanchou	Hippolyte	LANCHOU	DNS				-	-	-	-	-
+-	157	Ben Courage	Ben	COURAGE	DNS	15:53.7			-	-	-	-	-
+-	160	Jeff Stella	Jeff	STELLA	DNS				-	-	-	-	-
+-	162	Peter Stowe	Peter	STOWE	DNS				-	-	-	-	-

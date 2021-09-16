@@ -62,9 +62,12 @@ plotly_time_series <- function(dt_all_long, len_season){
 # Plot by race ------------------------------------------------------------
 
 
-plot_race_count <- function(dt_all_long, len_season){
+plot_race_count <- function(dt_all_long,i_season, len_season){
+  
+  any_cancelled <- nrow(dt_season[season==i_season & (cancelled)]) > 0
+  
 
-  dt_entries_race <- dt_all_long[part=="Swim" & (started),
+  dt_entries_race <- dt_all_long[season==i_season & part=="Swim" & (started),
                             .(count = .N,
                               date_ymd = date_ymd[1]),
                             by = .(race_number, course_nice)]
@@ -90,6 +93,12 @@ plot_race_count <- function(dt_all_long, len_season){
     theme(legend.position="top",
           strip.background = element_rect(colour="black",
                                           fill="white"))
+  
+  if(any_cancelled){
+    races_cancalled <- unique(dt_season[season==i_season & (cancelled)]$race_number)
+    
+    g <- g + annotate("text", x= races_cancalled, y = 2, label = "C")
+  }
   
   g <- myscale_x_racenumber(g, len_season)
   
@@ -117,21 +126,69 @@ plot_race_count <- function(dt_all_long, len_season){
 # Total histogram ---------------------------------------------------------
 
 
-plotly_part_hist <- function(dt_all_long, len_season){
+tool_tip_names <- function(names_i, max_row = 20){
   
   
-  dt_entries_hist <- dt_all_long[order(name_last)][(started) & part == "Swim" & (is_last_entry),
-                                                   .(name_list = list(Name), count = .N),
-                                                   by = entries_total]
+  n_names <- length(names_i)
   
-  setorder(dt_entries_hist, -entries_total)
+  n_cols <- (n_names %/% max_row) + 1
   
-  dt_entries_hist[,tooltext :=paste0(count, " entered ",entries_total, " ", ifelse(entries_total==1, "race", "races"),":\n",
-                                     paste0(name_list[[1]], collapse = "\n")),
-                  by = entries_total]
+  if(n_cols> 1) {
+    joins <- c(rep_len(c(rep(", ", n_cols -1),"\n"),length.out = n_names-1), "")
+    
+    return(paste0(paste0(names_i, joins), collapse = ""))
+    
+  }
+  
+  return(paste0(names_i, collapse = "\n"))
+  
+  
+}
+
+plotly_part_hist <- function(dt_all_long, len_season = NULL, do_all = FALSE){
+  
+  
+  if(!do_all) {
+    
+    dt_entries_hist <- dt_all_long[order(name_last)][(started) & part == "Swim" & (is_last_entry),
+                                                     .(name_list = list(Name), count = .N),
+                                                     by = entries_total]
+    
+    setorder(dt_entries_hist, -entries_total)
+    
+    dt_entries_hist[,tooltext :=paste0(count, " entered ",entries_total, " ", ifelse(entries_total==1, "race", "races"),":\n",
+                                       tool_tip_names(name_list[[1]])),
+                    by = entries_total]
+    
+    max_entries <- len_season
+    
+    setnames(dt_entries_hist, "entries_total", "entries_total_plot")
+    
+  }
+  
+  if(do_all){
+    
+    dt_entries_hist <- dt_all_long[order(name_last)][(started) & part == "Swim" & (is_last_entry_all),
+                                                     .(name_list = list(Name), count = .N),
+                                                     by = entries_total_all]
+    
+    setorder(dt_entries_hist, -entries_total_all)
+    
+    dt_entries_hist[,tooltext :=paste0(count, " entered ",entries_total_all, " ", ifelse(entries_total_all==1, "race", "races"),":\n",
+                                       tool_tip_names(name_list[[1]])),
+                                                         by = entries_total_all]
+    
+    max_entries <- max(dt_entries_hist$entries_total_all)
+    
+    setnames(dt_entries_hist, "entries_total_all", "entries_total_plot")
+    
+    
+  }
+  
+
   
   g <- ggplot(dt_entries_hist,
-              aes(y = count, x = entries_total, text = tooltext)) +
+              aes(y = count, x = entries_total_plot, text = tooltext)) +
     geom_col(orientation = "x", width = 0.9, size = 0.3) +
     scale_y_continuous("Number of atheletes") +
     theme_minimal() +
@@ -139,7 +196,7 @@ plotly_part_hist <- function(dt_all_long, len_season){
           strip.background = element_rect(colour="black",
                                           fill="white"))
   
-  g <- myscale_x_racenumber(g, len_season, "Total Entries")
+  g <- myscale_x_racenumber(g, max_entries, "Total Entries")
   
   p <- ggplotly(g, width = NULL, tooltip = "text",layerData = TRUE, style = "mobile") %>% 
     layout(xaxis = list(fixedrange = TRUE),
@@ -164,22 +221,41 @@ plotly_part_hist <- function(dt_all_long, len_season){
 # Total table -------------------------------------------------------------
 
 
-table_part_total <- function(dt_all_long, tri_cols) {
+table_part_total <- function(dt_all_long, tri_cols, do_all = FALSE) {
   
   if(nrow(dt_all_long)==0) return("no data")
   
+  
+  if(!do_all) {
 
-  dt_entries_tab <- dt_all_long[(started) & part == "Swim" & (is_last_entry)]
-  setorder(dt_entries_tab, -entries_total, name_last)
+    dt_entries_tab <- dt_all_long[(started) & part == "Swim" & (is_last_entry)]
+    setorder(dt_entries_tab, -entries_total, name_last)
+    
+    setcolorder(dt_entries_tab,
+                c("entries_total_rank", "entries_total", "athlete_link" ))
+    
+    setnames(dt_entries_tab, "Name", "Name_old")
+    setnames(dt_entries_tab,
+             c("entries_total_rank", "entries_total", "athlete_link" ),
+             c("Rank","Entries", "Name"),
+             skip_absent = TRUE)
+  }
   
-  setcolorder(dt_entries_tab,
-              c("entries_total_rank", "entries_total", "athlete_link" ))
-  
-  setnames(dt_entries_tab, "Name", "Name_old")
-  setnames(dt_entries_tab,
-           c("entries_total_rank", "entries_total", "athlete_link" ),
-           c("Rank","Entries", "Name"),
-           skip_absent = TRUE)
+  if(do_all) {
+    
+    dt_entries_tab <- dt_all_long[(started) & part == "Swim" & (is_last_entry_all)]
+    setorder(dt_entries_tab, -entries_total_all, name_last)
+    
+    setcolorder(dt_entries_tab,
+                c("entries_total_all_rank", "entries_total_all", "athlete_link" ))
+    
+    setnames(dt_entries_tab, "Name", "Name_old")
+    setnames(dt_entries_tab,
+             c("entries_total_all_rank", "entries_total_all", "athlete_link" ),
+             c("Rank","Entries", "Name"),
+             skip_absent = TRUE)
+    
+  }
   
   col_ref_hide <- which(!(names(dt_entries_tab) %in% c("Rank","Entries","Name")))-1 # columns are indexed from 0 - row name?
   

@@ -1,0 +1,10 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Adjusted time	Time	Lap 1	Lap 2	Lap 3	Handicap	Difference	% Back	% Winning	% Average	% Median
+1	45	Paul WOODGER	Paul	WOODGER	Intermediate	34:04.3	1:25:47.3	58:14.1	18:38.7	8:54.5	-51:43.0	-	-	100%	5.16%	5.61%
+2	122	Bede CURNOW	Bede	CURNOW	Intermediate	37:37.5	1:27:47.5	55:37.0	22:09.5	10:01.0	-50:10.0	+2:00.2	+2.34%	97.72%	2.95%	3.40%
+3	147	Remy HAWKINS	Remy	HAWKINS	Intermediate	45:23.0	1:30:23.0	52:11.4	27:01.4	11:10.2	-45:00.0	+4:35.7	+5.36%	94.92%	0.08%	0.55%
+4	51	Sue HAWKINS	Sue	HAWKINS	Intermediate	1:07:12.4	1:30:25.4	52:13.4	27:08.8	11:03.1	-23:13.0	+4:38.1	+5.40%	94.87%	0.04%	0.51%
+5	167	Rebecca Waldren	Rebecca	WALDREN	Intermediate	45:53.0	1:30:53.0	51:56.4	26:02.7	12:53.8	-45:00.0	+5:05.7	+5.94%	94.39%	-0.47%	0.00%
+6	97	Kaleb ROBARDS	Kaleb	ROBARDS	Intermediate	40:06.2	1:31:19.2	57:52.1	22:19.5	11:07.6	-51:13.0	+5:31.9	+6.45%	93.94%	-0.95%	-0.48%
+7	87	Tracey COPPING	Tracey	COPPING	Intermediate	46:09.3	1:31:24.3	53:24.6	25:59.1	12:00.6	-45:15.0	+5:37.0	+6.55%	93.86%	-1.05%	-0.57%
+8	63	Sebastian THOMSON	Sebastian	THOMSON	Intermediate	40:49.3	1:32:48.3	59:36.2	23:01.3	10:10.8	-51:59.0	+7:01.0	+8.18%	92.44%	-2.59%	-2.11%
+9	35	Judy MURRAY	Judy	MURRAY	Intermediate	48:19.5	1:33:19.5	52:45.5	27:28.3	13:05.7	-45:00.0	+7:32.2	+8.79%	91.92%	-3.17%	-2.69%
