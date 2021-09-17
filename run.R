@@ -537,20 +537,40 @@ dt_all_long[(started), place_cum_nice := format_place(place_cum_recalc)]
 
 # Participation -----------------------------------------------------------
 
-# By season
-dt_all_long[(started), entries_cumulative := cumsum(started), by = .(Name, season, part)]
-dt_all_long[(started), entries_total := max(entries_cumulative), by = .(Name, season)]
-dt_all_long[(started), is_last_entry := entries_total == entries_cumulative]
 
-dt_all_long[(started) & (is_last_entry), entries_total_rank := rank(-entries_total, ties.method = "min"), by = .(season,part)]
+courses_fd <- c("full","double")
+
+# By season
+dt_all_long[, entries_cumulative := cumsum(started), by = .(Name, season, part)]
+dt_all_long[, entries_total := max(entries_cumulative), by = .(Name, season)]
+# dt_all_long[, is_last_entry := entries_total == entries_cumulative]
+dt_all_long[, is_last_entry := race_number == max(race_number), by = .(Name, season)]
+
+dt_all_long[(is_last_entry), entries_total_rank := rank(-entries_total, ties.method = "min"), by = .(season, part)]
+
+
+# By season - full and double
+dt_all_long[, entries_cumulative_fd := cumsum(course %in% courses_fd), by = .(Name, season, part)]
+dt_all_long[, entries_total_fd := max(entries_cumulative_fd), by = .(Name, season)]
+# dt_all_long[, is_last_entry_fd := entries_total_fd == entries_cumulative_fd]
+
+dt_all_long[(is_last_entry), entries_total_fd_rank := rank(-entries_total_fd, ties.method = "min"), by = .(season,part)]
 
 
 # Over all seasons
-dt_all_long[(started), entries_cumulative_all := cumsum(started), by = .(Name, part)]
-dt_all_long[(started), entries_total_all := max(entries_cumulative_all), by = .(Name)]
-dt_all_long[(started), is_last_entry_all := entries_total_all == entries_cumulative_all]
+dt_all_long[, entries_cumulative_all := cumsum(started), by = .(Name, part)]
+dt_all_long[, entries_total_all := max(entries_cumulative_all), by = .(Name)]
+dt_all_long[, is_last_entry_all := date_ymd == max(date_ymd), by = Name]
 
-dt_all_long[(started) & (is_last_entry_all), entries_total_all_rank := rank(-entries_total_all, ties.method = "min"), by = .(part)]
+dt_all_long[(is_last_entry_all), entries_total_all_rank := rank(-entries_total_all, ties.method = "min"), by = .(part)]
+
+
+# Over all seasons - full and double
+dt_all_long[, entries_cumulative_all_fd := cumsum(course %in% courses_fd), by = .(Name, part)]
+dt_all_long[, entries_total_all_fd := max(entries_cumulative_all_fd), by = .(Name)]
+# dt_all_long[, is_last_entry_all_fd := entries_total_all_fd == entries_cumulative_all_fd]
+
+dt_all_long[(is_last_entry), entries_total_all_fd_rank := rank(-entries_total_all_fd, ties.method = "min"), by = .(part)]
 
 
 

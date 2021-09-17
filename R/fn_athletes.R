@@ -3,9 +3,9 @@
 
 
 
-plotly_athlete <- function(dt_all_long, tri_cols, i_season,k, len_season) {
+plotly_athlete <- function(i_season, k, len_season) {
   
-  dt_k <- dt_all_long[(started) & Name==k & season==i_season][order(race_number)]
+  dt_k <- dt_all_long[Name==k & season==i_season][order(race_number)]
   
   any_cancelled <- nrow(dt_season[season==i_season & (cancelled)]) > 0
   
@@ -79,11 +79,11 @@ plotly_athlete <- function(dt_all_long, tri_cols, i_season,k, len_season) {
   g <- apply_col(g, tri_cols)
   
   p <- ggplotly(g, width = NULL, tooltip = "text",layerData = TRUE, style = "mobile") %>% 
-    layout(xaxis = list(fixedrange = TRUE), # axis put at bottom because plotly can't do this well with ggplot2 faceting
+    layout(xaxis = list(fixedrange = TRUE, side = "top"), #  plotly can't do axis at top well with ggplot2 faceting
            yaxis = list(fixedrange = TRUE),
            dragmode = FALSE,
            autosize = TRUE,
-           margin = list(l=75, r=25, t=0,b=0, pad=0),
+           margin = list(l=15, r=0, t=0,b=0, pad=0),
            legend = list(orientation = "h", y = -0.1, x= 0.5, xanchor = "center",
                          itemclick = FALSE, itemdoubleclick  = FALSE)) %>% 
     config(displayModeBar = TRUE, modeBarButtons = list(list("toImage")), displaylogo=FALSE,

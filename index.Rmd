@@ -47,7 +47,7 @@ plotly_part_hist(dt_all_long, do_all = TRUE)
 
 
 ```{r part-total-table-all}
-table_part_total(dt_all_long, tri_cols, do_all = TRUE)
+table_part_total(do_all = TRUE)
 
 ```
 

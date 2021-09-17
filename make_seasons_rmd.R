@@ -67,7 +67,7 @@ plotly_part_hist(dt_all_long[season=="',i_season,'"],len_season=',len_season,')
 ```
 
 ```{r part-total-table-',i_season,'}
-table_part_total(dt_all_long[season=="',i_season,'"], tri_cols)
+table_part_total("',i_season,'")
 ```
 
 # Participation - Trends {#participation-trends-',i_season,'}

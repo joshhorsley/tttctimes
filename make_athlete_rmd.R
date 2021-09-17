@@ -91,7 +91,7 @@ repeated <- foreach(k=athletes_ordered, .combine = paste0 ) %do% {
 summary_sentence,"\n\n",
 
 '```{r ',k_ref,'-plot-',i_season,'}
-plotly_athlete(dt_all_long, tri_cols, "',i_season,'","',k,'", len_season=',len_season,')
+plotly_athlete("',i_season,'","',k,'", len_season=',len_season,')
 ```
 
 

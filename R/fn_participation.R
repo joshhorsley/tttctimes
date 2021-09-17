@@ -150,7 +150,7 @@ plotly_part_hist <- function(dt_all_long, len_season = NULL, do_all = FALSE){
   
   if(!do_all) {
     
-    dt_entries_hist <- dt_all_long[order(name_last)][(started) & part == "Swim" & (is_last_entry),
+    dt_entries_hist <- dt_all_long[order(name_last)][part == "Swim" & (is_last_entry),
                                                      .(name_list = list(Name), count = .N),
                                                      by = entries_total]
     
@@ -168,7 +168,7 @@ plotly_part_hist <- function(dt_all_long, len_season = NULL, do_all = FALSE){
   
   if(do_all){
     
-    dt_entries_hist <- dt_all_long[order(name_last)][(started) & part == "Swim" & (is_last_entry_all),
+    dt_entries_hist <- dt_all_long[order(name_last)][part == "Swim" & (is_last_entry_all),
                                                      .(name_list = list(Name), count = .N),
                                                      by = entries_total_all]
     
@@ -185,6 +185,10 @@ plotly_part_hist <- function(dt_all_long, len_season = NULL, do_all = FALSE){
     
   }
   
+  step_options <- c(2,5,10,20,50)
+  n_ticks <- 15
+  break_step <- step_options[min(which(step_options > (max_entries %/% n_ticks)))]
+  breaks <- seq(0,max_entries,by = break_step)
 
   
   g <- ggplot(dt_entries_hist,
@@ -194,9 +198,8 @@ plotly_part_hist <- function(dt_all_long, len_season = NULL, do_all = FALSE){
     theme_minimal() +
     theme(legend.position="top",
           strip.background = element_rect(colour="black",
-                                          fill="white"))
-  
-  g <- myscale_x_racenumber(g, max_entries, "Total Entries")
+                                          fill="white"))+
+    scale_x_continuous("Total Entries", breaks = breaks, limits = c(0,max_entries+1))
   
   p <- ggplotly(g, width = NULL, tooltip = "text",layerData = TRUE, style = "mobile") %>% 
     layout(xaxis = list(fixedrange = TRUE),
@@ -221,47 +224,47 @@ plotly_part_hist <- function(dt_all_long, len_season = NULL, do_all = FALSE){
 # Total table -------------------------------------------------------------
 
 
-table_part_total <- function(dt_all_long, tri_cols, do_all = FALSE) {
+table_part_total <- function(i_season=NULL, do_all = FALSE) {
   
   if(nrow(dt_all_long)==0) return("no data")
   
   
   if(!do_all) {
 
-    dt_entries_tab <- dt_all_long[(started) & part == "Swim" & (is_last_entry)]
+    dt_entries_tab <- dt_all_long[(started) & season==i_season & part == "Swim" & (is_last_entry)]
     setorder(dt_entries_tab, -entries_total, name_last)
     
     setcolorder(dt_entries_tab,
-                c("entries_total_rank", "entries_total", "athlete_link" ))
+                c("entries_total_rank", "entries_total","entries_total_fd", "athlete_link" ))
     
     setnames(dt_entries_tab, "Name", "Name_old")
     setnames(dt_entries_tab,
-             c("entries_total_rank", "entries_total", "athlete_link" ),
-             c("Rank","Entries", "Name"),
+             c("entries_total_rank", "entries_total","entries_total_fd", "athlete_link" ),
+             c("Rank (All)","All","Full and Double", "Name"),
              skip_absent = TRUE)
   }
   
   if(do_all) {
     
-    dt_entries_tab <- dt_all_long[(started) & part == "Swim" & (is_last_entry_all)]
+    dt_entries_tab <- dt_all_long[ part == "Swim" & (is_last_entry_all)]
     setorder(dt_entries_tab, -entries_total_all, name_last)
     
     setcolorder(dt_entries_tab,
-                c("entries_total_all_rank", "entries_total_all", "athlete_link" ))
+                c("entries_total_all_rank", "entries_total_all","entries_total_all_fd", "athlete_link" ))
     
     setnames(dt_entries_tab, "Name", "Name_old")
     setnames(dt_entries_tab,
-             c("entries_total_all_rank", "entries_total_all", "athlete_link" ),
-             c("Rank","Entries", "Name"),
+             c("entries_total_all_rank", "entries_total_all","entries_total_all_fd","athlete_link" ),
+             c("Rank (All)","All","Full and Double", "Name"),
              skip_absent = TRUE)
     
   }
   
-  col_ref_hide <- which(!(names(dt_entries_tab) %in% c("Rank","Entries","Name")))-1 # columns are indexed from 0 - row name?
+  col_ref_hide <- which(!(names(dt_entries_tab) %in% c("Rank (All)","All","Full and Double","Name")))-1 # columns are indexed from 0 - row name?
   
   
   tab_part <- datatable_std(dt_entries_tab, col_ref_hide, escape=FALSE) %>% 
-    formatStyle(columns = "Rank", valueColumns = "Rank",
+    formatStyle(columns = "Rank (All)", valueColumns = "Rank (All)",
                 background = styleEqual(1,tri_cols$record))
   
   return(tab_part)

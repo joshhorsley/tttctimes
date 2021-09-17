@@ -76,7 +76,7 @@ plotly_part_hist(dt_all_long[season=="2020-2021"],len_season=26)
 ```
 
 ```{r part-total-table-2020-2021}
-table_part_total(dt_all_long[season=="2020-2021"], tri_cols)
+table_part_total("2020-2021")
 ```
 
 # Participation - Trends {#participation-trends-2020-2021}
@@ -1275,7 +1275,7 @@ plotly_part_hist(dt_all_long[season=="2019-2020"],len_season=27)
 ```
 
 ```{r part-total-table-2019-2020}
-table_part_total(dt_all_long[season=="2019-2020"], tri_cols)
+table_part_total("2019-2020")
 ```
 
 # Participation - Trends {#participation-trends-2019-2020}
@@ -2459,7 +2459,7 @@ plotly_part_hist(dt_all_long[season=="2018-2019"],len_season=25)
 ```
 
 ```{r part-total-table-2018-2019}
-table_part_total(dt_all_long[season=="2018-2019"], tri_cols)
+table_part_total("2018-2019")
 ```
 
 # Participation - Trends {#participation-trends-2018-2019}
