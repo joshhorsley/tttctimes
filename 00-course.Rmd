@@ -1,8 +1,6 @@
-<!-- # (PART\*) Courses -->
-
 # Courses {#courses}
 
-Work in progress.
+See the [FAQ page](http://www.twintownstriathlon.org.au/?page_id=28){target="_blank"} for more info and the  [official description](http://www.twintownstriathlon.org.au/?page_id=3809){target="_blank"} of the full course.
 
 ```{r course-map}
 
@@ -13,7 +11,8 @@ list_icons <- awesomeIconList(
   swimmer = makeAwesomeIcon(text = fa("swimmer"),markerColor = "blue"),
   traffic = makeAwesomeIcon(text = fa("traffic-light"), markerColor = "black"),
   marshall = makeAwesomeIcon(text = fa("user-circle"), markerColor = "pink"),
-  timer = makeAwesomeIcon(text = fa("stopwatch"), markerColor = "black")
+  timer = makeAwesomeIcon(text = fa("stopwatch"), markerColor = "black"),
+  circle = makeAwesomeIcon(text = fa("times-circle"), markerColor = "black", iconColor = "yellow")
 )
 
 unpack_points <- function(gpx_list, ord_name = c("lat","lon")[1]) {
@@ -31,19 +30,17 @@ import_gpx <- function(path_gpx) {
 }
 
 
-dt_courses <- data.table(course = "full", part = c("ride","run"),
+dt_courses <- data.table(course = c("full","full","int","int"),
+                                    part = c("ride","run","ride","run"),
                          path_gpx = c("data_provided/courses/TT_Tri_Ride.gpx",
-                                      "data_provided/courses/TT_Tri_Run.gpx"))
+                                      "data_provided/courses/TT_Tri_Run.gpx",
+                                      "data_provided/courses/TT_Tri_Intermediate_Ride.gpx",
+                                      "data_provided/courses/TT_Tri_Intermediate_Run.gpx"))
 
 dt_courses[, row_id := seq(.N)]
 dt_courses[, sf_poly := list(list(import_gpx(path_gpx))), by = row_id]
 dt_courses[, c("xmin", "ymin","xmax","ymax") := as.list(st_bbox(sf_poly[[1]])), by = row_id]
 
-# sf_trans <- st_polygon(list(matrix(c(153.537158, -28.214470,
-#          153.537314, -28.214496,
-#          153.537290, -28.214784,
-#          153.537113, -28.214760,
-#          153.537158, -28.214470),ncol=2,byrow = TRUE)))
 
 sf_trans <- st_polygon(list(matrix(
   c(153.53715076025483, -28.214527587458402, 
@@ -100,18 +97,28 @@ leaflet(width = "100%", height = 700) %>%
 # Add swimming marker -28.215316, 
   addAwesomeMarkers(lat = -28.215370, lng = 153.537490,
                     icon = list_icons["swimmer"], # fixed list, can't accept hex
-                    popup = "10 laps", # popup = "Full:10 laps<br>Int: 5 laps",
+                    popup = "10 laps",
                    group = "Full") %>%
+  addAwesomeMarkers(lat = -28.215370, lng = 153.537490,
+                    icon = list_icons["swimmer"], # fixed list, can't accept hex
+                    popup = "6 laps",
+                   group = "Intermediate") %>%
+  # intermediate turn around
+  addAwesomeMarkers(lat = -28.217697, lng = 153.541171,
+                    icon = list_icons["circle"], # fixed list, can't accept hex
+                    popup = "Run: Turn around at painted<br>yellow X on road",
+                   group = "Intermediate") %>%
   # Add courses
   addPolylines(data = dt_courses[course=="full" & part=="ride"]$sf_poly[[1]], color = tri_cols$ride, group = "Full") %>% 
   addPolylines(data = dt_courses[course=="full" & part=="run"]$sf_poly[[1]], color = tri_cols$run, group = "Full") %>% 
+  addPolylines(data = dt_courses[course=="int" & part=="ride"]$sf_poly[[1]], color = tri_cols$ride, group = "Intermediate",popup = "2 laps") %>% 
+  addPolylines(data = dt_courses[course=="int" & part=="run"]$sf_poly[[1]], color = tri_cols$run, group = "Intermediate") %>% 
   addLayersControl(baseGroups = c("Simple","Detailed", "Satellite"),
-                   # overlayGroups = c("Full", "Intermediate"),
-                   overlayGroups = c("Full","Info"),
+                   overlayGroups = c("Full","Intermediate","Info"),
                    options = layersControlOptions(collapsed = FALSE)) %>% 
   addFullscreenControl() %>% 
   addScaleBar(position = "bottomleft") %>% 
-  addLegend(position = "bottomright",colors = c(tri_cols$ride, tri_cols$run),labels = c("Ride","Run"))# %>%
-  # hideGroup(c("Intermediate")) #use this to choose set which layers are initially visible
+  addLegend(position = "bottomright",colors = c(tri_cols$ride, tri_cols$run),labels = c("Ride","Run")) %>%
+  hideGroup(c("Intermediate")) #use this to choose set which layers are initially visible
 
 ```
