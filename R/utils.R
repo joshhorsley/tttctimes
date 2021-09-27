@@ -177,6 +177,16 @@ format_place <- function(x, na_string = "NA") {
 
 
 
+seconds_to_hms <- function(x){
+  x2 <- seconds_to_period(x)
+  sprintf("%02d:%02d:%0.1f",
+          hour(x2),
+          minute(x2),
+          second(x2)
+  )
+}
+
+
 # Grammar -----------------------------------------------------------------
 
 
@@ -192,31 +202,24 @@ list_with_and <- function(parts) {
   
 }
 
-cap_first <- function(x) paste0( toupper(substring(x,1,1)), tolower(substring(x, 2)))
-cap_first_only <- function(x) paste0( toupper(substring(x,1,1)), substring(x, 2))
+cap_first_only <- function(x) paste0( toupper(substring(x,1,1)), substring(x, 2) )
+
 
 standardise_names <- function(name){
-  name <- paste0(unlist(
-    lapply(strsplit(name, c(" ")),
-           cap_first )
-  ), collapse = " ")
   
-  name_list <- strsplit(name, c("-"))
+  name <- tolower(name)
+  name <- cap_first_only(name)
   
-  if(length(name_list[[1]])>1) {
-    name =  paste0(name_list[[1]][1],
-                   "-",
-                   cap_first_only(name_list[[1]][2]))
+  for(i_split in c(" "," Mc"," mc","-Mc","-mc","'","-")) {
+    
+    name_list <- strsplit(name, i_split)
+    
+    if(length(name_list[[1]])>1) {
+      
+      name <- paste0(unlist(lapply(name_list, cap_first_only)), collapse = i_split)
+      
+    }
   }
-  
-  name_list <- strsplit(name, c("'"))
-  
-  if(length(name_list[[1]])>1) {
-    name =  paste0(name_list[[1]][1],
-                   "'",
-                   cap_first_only(name_list[[1]][2]))
-  }
-  
   
   return(name)
 

@@ -120,9 +120,7 @@ dt_teams_manual_long <- melt.data.table(dt_teams_manual_long1,
                 value.name = c("duration_import"))
                 
 
-# dt_teams_manual_long[, racer_ref := as.integer(substr(as.character(racer_ref),7,7))]
 dt_teams_manual_long[, course := "teams"]
-# dt_teams_manual_long[, course_nice := "Super Teams"]
 dt_teams_manual_long[, started := TRUE]
 dt_teams_manual_long[, is_champ := FALSE]
 dt_teams_manual_long[, participation_only := TRUE]
@@ -163,7 +161,6 @@ dt_all[, handicap_import := Handicap]
 
 
 dt_all[, started := TRUE]
-# dt_all[Swim %in% c("","-","DNS"), started := FALSE]
 dt_all[Swim %in% c("","-"), started := FALSE]
 dt_all[Time=="DNS" & Swim == "", started := FALSE]
 
@@ -226,9 +223,10 @@ dt_all_long[tolower(Name) %in% c("lydia kuschnirz"), Name := "Lydia Kuschmirz"]
 dt_all_long[tolower(Name) %in% c("valerie lambard"), Name := "Val Lambard"]
 dt_all_long[tolower(Name) %in% c("samatha leonard", "sam leonard"), Name := "Samantha Leonard"]
 
-dt_all_long[Bib=="237" & Name=="Kristin", Name := "Christin Mcintosh"]
+dt_all_long[Bib=="237" & Name=="Kristin", Name := "Christin McIntosh"]
 dt_all_long[Name=="Rachel Meakes", Name := "Rachael Meakes"]
 dt_all_long[Name=="Adndrew Miller", Name := "Andrew Miller"]
+dt_all_long[Name=="Richard Morant", Name := "Richard Mourant"]
 
 dt_all_long[Name=="Lucas N", Name := "Lucas Nixon-Hind"]
 dt_all_long[tolower(Name) %in% c("karen nixon-hind"), Name := "Karen Nixon"]
@@ -253,11 +251,13 @@ dt_all_long[tolower(Name) %in% c("jo ward", "joe ward"), Name := "Jolyon Ward"]
 dt_all_long[tolower(Name) %in% c("196", "shelly winder"), Name := "Shelley Winder"]
 
 
-
+if(FALSE) {
 dt_all_long[part=="Swim" & !(Bib %in% c("","-")) & !is.na(Bib),
             .(n_used = .N),by = .(Bib,Name,season)][,
             .(Name = Name, n_names = length(unique(Name)) , n_used = n_used),
             by = .(Bib,season)][n_names>1]
+  
+}
 
 
 # Separate Names ----------------------------------------------------------
@@ -276,6 +276,10 @@ dt_all_long[, athlete_ref := paste0("a-",athlete_ref)]
 dt_all_long[, athlete_link := paste0('<a href="', athlete_ref,'.html#',athlete_ref, '">',Name,'</a>')]
 
 
+if(FALSE){
+  dt_all_long[grepl("^Mc",name_last)]
+}
+
 # Ordered names -----------------------------------------------------------
 
 
@@ -292,9 +296,6 @@ dt_all_long[is.na(drop_duplicate), drop_duplicate := FALSE]
 
 dt_all_long <- dt_all_long[!(drop_duplicate)]
 
-
-# test it
-# dt_all_long[date_ymd=="2018-10-20" & part=='Swim', .N, by = course]
 
 # check all are caught
 n_multi <- nrow(dt_all_long[part=="Swim", .(N = .N, course), by = .(Name, date_ymd)][N>1])
@@ -381,12 +382,6 @@ stopifnot(n_bad_columns==0)
 dt_all_long[(has_handicap), handicap_negative := substr(handicap_import,1,1)=="-"]
 dt_all_long[(handicap_negative)]$handicap_import
 
-# n_positve_handicap <- nrow(dt_all_long[(has_handicap) & 
-#               handicap_import != "+0:00.0" &
-#               substr(handicap_import,1,1) != "-"])
-# 
-# stopifnot(n_positve_handicap==0)
-
 dt_all_long[(has_handicap), handicap_prep := substring(handicap_import, 2)]
 
 
@@ -397,7 +392,6 @@ dt_all_long[(has_handicap) & n_char_handicap==9, handicap_hms := handicap_prep]
 
 dt_all_long[(has_handicap), handicap_seconds := as.numeric(seconds(hms(handicap_hms)))]
 dt_all_long[(has_handicap) & (handicap_negative), handicap_seconds := -handicap_seconds]
-# dt_all_long[is.na(duration_seconds) & (started), duration_seconds := 0]
 
 # apply handiap only when it doesn't make the swim time negative
 dt_all_long[(has_handicap) & part == "Swim" & handicap_seconds + duration_seconds > 0, handicap_valid := TRUE]
@@ -406,47 +400,17 @@ dt_all_long[, handicap_valid := any(handicap_valid),  by = .(Name, season, race_
 dt_all_long[(handicap_valid) & part == "Swim", duration_seconds_original := duration_seconds ]
 dt_all_long[(handicap_valid) & part == "Swim", duration_seconds := duration_seconds + handicap_seconds ]
 
-# dt_all_long[(has_handicap) & (started), .(duration_seconds, handicap_seconds, handicap_hms, handicap_prep)]
 
 
 dt_all_long[, cumulative_seconds := cumsum(duration_seconds), by = .(Name, season, race_number)]
 
 # propagate handicap corrections
-
-seconds_to_hms <- function(x){
-  x2 <- seconds_to_period(x)
-  sprintf("%02d:%02d:%0.1f",
-          hour(x2),
-          minute(x2),
-          second(x2)
-  )
-}
-
 dt_all_long[(handicap_valid), duration_hms := seconds_to_hms(duration_seconds)]
 
 dt_all_long[, overall_seconds := as.numeric(seconds(hms(overall_hms)))]
 dt_all_long[(handicap_valid), overall_seconds := cumulative_seconds[which(part=="Run")], by = .(Name, season, race_number)]
 dt_all_long[(handicap_valid), overall_hms := seconds_to_hms(overall_seconds)]
 
-# dt_all_long[date_ymd=="2019-09-28" & Name == "Viv Wright"][(handicap_valid),  (cumulative_seconds)]
-# dt_all_long[date_ymd=="2019-09-28" & Name == "Viv Wright"][(handicap_valid),  (seconds_to_hms(overall_seconds))]
-# dt_all_long[, overall_seconds := as.numeric(seconds(hms(overall_hms)))]
-
-
-# dt_all_long[(has_handicap)]$handicap_import
-dt_all_long[date_ymd=="2019-09-28" & Name == "Viv Wright", 
-            .(part, handicap_import,handicap_negative,handicap_valid,
-              duration_import,duration_seconds, duration_seconds_original, 
-              duration_hms, cumulative_seconds,overall_seconds, overall_hms)]
-
-
-
-
-
-
-
-# dt_all_long[, cumulative_seconds := cumsum(duration_seconds), by = .(Name, race_number)]
-# dt_all_long[, overall_seconds := as.numeric(seconds(hms(overall_hms)))]
 
 # Check for any large disagreement between cumulative run and recorded total and resolve
 dt_all_long[part == "Run" & abs(cumulative_seconds - overall_seconds) > 1, total_disagree := TRUE]
@@ -534,7 +498,6 @@ dt_all_long[(started), place_lap_nice := format_place(place_lap_display)]
 dt_all_long[(started), place_cum_nice := format_place(place_cum_recalc)]
 
 
-
 # Participation -----------------------------------------------------------
 
 
@@ -543,7 +506,6 @@ courses_fd <- c("full","double")
 # By season
 dt_all_long[, entries_cumulative := cumsum(started), by = .(Name, season, part)]
 dt_all_long[, entries_total := max(entries_cumulative), by = .(Name, season)]
-# dt_all_long[, is_last_entry := entries_total == entries_cumulative]
 dt_all_long[, is_last_entry := race_number == max(race_number), by = .(Name, season)]
 
 dt_all_long[(is_last_entry), entries_total_rank := rank(-entries_total, ties.method = "min"), by = .(season, part)]
@@ -552,7 +514,6 @@ dt_all_long[(is_last_entry), entries_total_rank := rank(-entries_total, ties.met
 # By season - full and double
 dt_all_long[, entries_cumulative_fd := cumsum(course %in% courses_fd), by = .(Name, season, part)]
 dt_all_long[, entries_total_fd := max(entries_cumulative_fd), by = .(Name, season)]
-# dt_all_long[, is_last_entry_fd := entries_total_fd == entries_cumulative_fd]
 
 dt_all_long[(is_last_entry), entries_total_fd_rank := rank(-entries_total_fd, ties.method = "min"), by = .(season,part)]
 
@@ -568,7 +529,6 @@ dt_all_long[(is_last_entry_all), entries_total_all_rank := rank(-entries_total_a
 # Over all seasons - full and double
 dt_all_long[, entries_cumulative_all_fd := cumsum(course %in% courses_fd), by = .(Name, part)]
 dt_all_long[, entries_total_all_fd := max(entries_cumulative_all_fd), by = .(Name)]
-# dt_all_long[, is_last_entry_all_fd := entries_total_all_fd == entries_cumulative_all_fd]
 
 dt_all_long[(is_last_entry), entries_total_all_fd_rank := rank(-entries_total_all_fd, ties.method = "min"), by = .(part)]
 
@@ -620,6 +580,7 @@ dt_all_long[(started) & (isPB_overall), rank_pb_overall := rank(total_overall_mi
 dt_all_long[(started) & (isPB_split), rank_pb_split := rank(duration_mins, ties.method = "first"), by = .(course, season, part)]
 
 dt_all_long[(started), includes_pb_split := any(isPB_split), by = .(Name, season, course, race_number)]
+
 
 # Part naming -------------------------------------------------------------
 

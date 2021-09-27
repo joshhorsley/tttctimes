@@ -7528,7 +7528,7 @@ table_athlete_course(dt_all_long, tri_cols, "2019-2020","Lloyd Maunder", "int")
 
 ```
 
-## David Mcewan {#a-David-Mcewan}
+## David McEwan {#a-David-McEwan}
 
 David has 2 entries over 1 season.
 
@@ -7539,28 +7539,28 @@ Tap or hover on the plots for more info. Plots show all courses together, course
 
 David has entered 2 races this season, 1 Full and 1 Super Teams.
 
-```{r a-David-Mcewan-plot-2020-2021}
-plotly_athlete("2020-2021","David Mcewan", len_season=26)
+```{r a-David-McEwan-plot-2020-2021}
+plotly_athlete("2020-2021","David McEwan", len_season=26)
 ```
 
 
 
 #### Detailed results for Full course
 
-```{r a-David-Mcewan-table-2020-2021-full}
-table_athlete_course(dt_all_long, tri_cols, "2020-2021","David Mcewan", "full")
+```{r a-David-McEwan-table-2020-2021-full}
+table_athlete_course(dt_all_long, tri_cols, "2020-2021","David McEwan", "full")
 
 ```
 
 
 #### Detailed results for Super Teams course
 
-```{r a-David-Mcewan-table-2020-2021-teams}
-table_athlete_course(dt_all_long, tri_cols, "2020-2021","David Mcewan", "teams")
+```{r a-David-McEwan-table-2020-2021-teams}
+table_athlete_course(dt_all_long, tri_cols, "2020-2021","David McEwan", "teams")
 
 ```
 
-## Pete Mcfie {#a-Pete-Mcfie}
+## Pete McFie {#a-Pete-McFie}
 
 Pete has 3 entries over 2 seasons.
 
@@ -7571,16 +7571,16 @@ Tap or hover on the plots for more info. Plots show all courses together, course
 
 Pete has entered 2 races this season, 2 Intermediate.
 
-```{r a-Pete-Mcfie-plot-2019-2020}
-plotly_athlete("2019-2020","Pete Mcfie", len_season=27)
+```{r a-Pete-McFie-plot-2019-2020}
+plotly_athlete("2019-2020","Pete McFie", len_season=27)
 ```
 
 
 
 #### Detailed results for Intermediate course
 
-```{r a-Pete-Mcfie-table-2019-2020-int}
-table_athlete_course(dt_all_long, tri_cols, "2019-2020","Pete Mcfie", "int")
+```{r a-Pete-McFie-table-2019-2020-int}
+table_athlete_course(dt_all_long, tri_cols, "2019-2020","Pete McFie", "int")
 
 ```
 
@@ -7590,20 +7590,20 @@ table_athlete_course(dt_all_long, tri_cols, "2019-2020","Pete Mcfie", "int")
 
 Pete has entered 1 race this season, 1 Intermediate.
 
-```{r a-Pete-Mcfie-plot-2018-2019}
-plotly_athlete("2018-2019","Pete Mcfie", len_season=25)
+```{r a-Pete-McFie-plot-2018-2019}
+plotly_athlete("2018-2019","Pete McFie", len_season=25)
 ```
 
 
 
 #### Detailed results for Intermediate course
 
-```{r a-Pete-Mcfie-table-2018-2019-int}
-table_athlete_course(dt_all_long, tri_cols, "2018-2019","Pete Mcfie", "int")
+```{r a-Pete-McFie-table-2018-2019-int}
+table_athlete_course(dt_all_long, tri_cols, "2018-2019","Pete McFie", "int")
 
 ```
 
-## Stuart Mcgill {#a-Stuart-Mcgill}
+## Stuart McGill {#a-Stuart-McGill}
 
 Stuart has 8 entries over 2 seasons.
 
@@ -7614,16 +7614,16 @@ Tap or hover on the plots for more info. Plots show all courses together, course
 
 Stuart has entered 1 race this season, 1 Full.
 
-```{r a-Stuart-Mcgill-plot-2020-2021}
-plotly_athlete("2020-2021","Stuart Mcgill", len_season=26)
+```{r a-Stuart-McGill-plot-2020-2021}
+plotly_athlete("2020-2021","Stuart McGill", len_season=26)
 ```
 
 
 
 #### Detailed results for Full course
 
-```{r a-Stuart-Mcgill-table-2020-2021-full}
-table_athlete_course(dt_all_long, tri_cols, "2020-2021","Stuart Mcgill", "full")
+```{r a-Stuart-McGill-table-2020-2021-full}
+table_athlete_course(dt_all_long, tri_cols, "2020-2021","Stuart McGill", "full")
 
 ```
 
@@ -7633,20 +7633,20 @@ table_athlete_course(dt_all_long, tri_cols, "2020-2021","Stuart Mcgill", "full")
 
 Stuart has entered 7 races this season, 7 Full.
 
-```{r a-Stuart-Mcgill-plot-2018-2019}
-plotly_athlete("2018-2019","Stuart Mcgill", len_season=25)
+```{r a-Stuart-McGill-plot-2018-2019}
+plotly_athlete("2018-2019","Stuart McGill", len_season=25)
 ```
 
 
 
 #### Detailed results for Full course
 
-```{r a-Stuart-Mcgill-table-2018-2019-full}
-table_athlete_course(dt_all_long, tri_cols, "2018-2019","Stuart Mcgill", "full")
+```{r a-Stuart-McGill-table-2018-2019-full}
+table_athlete_course(dt_all_long, tri_cols, "2018-2019","Stuart McGill", "full")
 
 ```
 
-## Christin Mcintosh {#a-Christin-Mcintosh}
+## Christin McIntosh {#a-Christin-McIntosh}
 
 Christin has 4 entries over 1 season.
 
@@ -7657,20 +7657,20 @@ Tap or hover on the plots for more info. Plots show all courses together, course
 
 Christin has entered 4 races this season, 4 Intermediate.
 
-```{r a-Christin-Mcintosh-plot-2019-2020}
-plotly_athlete("2019-2020","Christin Mcintosh", len_season=27)
+```{r a-Christin-McIntosh-plot-2019-2020}
+plotly_athlete("2019-2020","Christin McIntosh", len_season=27)
 ```
 
 
 
 #### Detailed results for Intermediate course
 
-```{r a-Christin-Mcintosh-table-2019-2020-int}
-table_athlete_course(dt_all_long, tri_cols, "2019-2020","Christin Mcintosh", "int")
+```{r a-Christin-McIntosh-table-2019-2020-int}
+table_athlete_course(dt_all_long, tri_cols, "2019-2020","Christin McIntosh", "int")
 
 ```
 
-## Garry Mckenzie {#a-Garry-Mckenzie}
+## Garry McKenzie {#a-Garry-McKenzie}
 
 Garry has 7 entries over 1 season.
 
@@ -7681,20 +7681,20 @@ Tap or hover on the plots for more info. Plots show all courses together, course
 
 Garry has entered 7 races this season, 7 Full.
 
-```{r a-Garry-Mckenzie-plot-2018-2019}
-plotly_athlete("2018-2019","Garry Mckenzie", len_season=25)
+```{r a-Garry-McKenzie-plot-2018-2019}
+plotly_athlete("2018-2019","Garry McKenzie", len_season=25)
 ```
 
 
 
 #### Detailed results for Full course
 
-```{r a-Garry-Mckenzie-table-2018-2019-full}
-table_athlete_course(dt_all_long, tri_cols, "2018-2019","Garry Mckenzie", "full")
+```{r a-Garry-McKenzie-table-2018-2019-full}
+table_athlete_course(dt_all_long, tri_cols, "2018-2019","Garry McKenzie", "full")
 
 ```
 
-## Rebecca Mclucas {#a-Rebecca-Mclucas}
+## Rebecca McLucas {#a-Rebecca-McLucas}
 
 Rebecca has 2 entries over 2 seasons.
 
@@ -7705,16 +7705,16 @@ Tap or hover on the plots for more info. Plots show all courses together, course
 
 Rebecca has entered 1 race this season, 1 Intermediate.
 
-```{r a-Rebecca-Mclucas-plot-2019-2020}
-plotly_athlete("2019-2020","Rebecca Mclucas", len_season=27)
+```{r a-Rebecca-McLucas-plot-2019-2020}
+plotly_athlete("2019-2020","Rebecca McLucas", len_season=27)
 ```
 
 
 
 #### Detailed results for Intermediate course
 
-```{r a-Rebecca-Mclucas-table-2019-2020-int}
-table_athlete_course(dt_all_long, tri_cols, "2019-2020","Rebecca Mclucas", "int")
+```{r a-Rebecca-McLucas-table-2019-2020-int}
+table_athlete_course(dt_all_long, tri_cols, "2019-2020","Rebecca McLucas", "int")
 
 ```
 
@@ -7724,20 +7724,20 @@ table_athlete_course(dt_all_long, tri_cols, "2019-2020","Rebecca Mclucas", "int"
 
 Rebecca has entered 1 race this season, 1 Double Distance.
 
-```{r a-Rebecca-Mclucas-plot-2018-2019}
-plotly_athlete("2018-2019","Rebecca Mclucas", len_season=25)
+```{r a-Rebecca-McLucas-plot-2018-2019}
+plotly_athlete("2018-2019","Rebecca McLucas", len_season=25)
 ```
 
 
 
 #### Detailed results for Double Distance course
 
-```{r a-Rebecca-Mclucas-table-2018-2019-double}
-table_athlete_course(dt_all_long, tri_cols, "2018-2019","Rebecca Mclucas", "double")
+```{r a-Rebecca-McLucas-table-2018-2019-double}
+table_athlete_course(dt_all_long, tri_cols, "2018-2019","Rebecca McLucas", "double")
 
 ```
 
-## Bec Mclucas {#a-Bec-Mclucas}
+## Bec McLucas {#a-Bec-McLucas}
 
 Bec has 10 entries over 2 seasons.
 
@@ -7748,24 +7748,24 @@ Tap or hover on the plots for more info. Plots show all courses together, course
 
 Bec has entered 5 races this season, 4 Full and 1 Double Distance.
 
-```{r a-Bec-Mclucas-plot-2020-2021}
-plotly_athlete("2020-2021","Bec Mclucas", len_season=26)
+```{r a-Bec-McLucas-plot-2020-2021}
+plotly_athlete("2020-2021","Bec McLucas", len_season=26)
 ```
 
 
 
 #### Detailed results for Full course
 
-```{r a-Bec-Mclucas-table-2020-2021-full}
-table_athlete_course(dt_all_long, tri_cols, "2020-2021","Bec Mclucas", "full")
+```{r a-Bec-McLucas-table-2020-2021-full}
+table_athlete_course(dt_all_long, tri_cols, "2020-2021","Bec McLucas", "full")
 
 ```
 
 
 #### Detailed results for Double Distance course
 
-```{r a-Bec-Mclucas-table-2020-2021-double}
-table_athlete_course(dt_all_long, tri_cols, "2020-2021","Bec Mclucas", "double")
+```{r a-Bec-McLucas-table-2020-2021-double}
+table_athlete_course(dt_all_long, tri_cols, "2020-2021","Bec McLucas", "double")
 
 ```
 
@@ -7775,28 +7775,28 @@ table_athlete_course(dt_all_long, tri_cols, "2020-2021","Bec Mclucas", "double")
 
 Bec has entered 5 races this season, 4 Full and 1 Double Distance.
 
-```{r a-Bec-Mclucas-plot-2019-2020}
-plotly_athlete("2019-2020","Bec Mclucas", len_season=27)
+```{r a-Bec-McLucas-plot-2019-2020}
+plotly_athlete("2019-2020","Bec McLucas", len_season=27)
 ```
 
 
 
 #### Detailed results for Full course
 
-```{r a-Bec-Mclucas-table-2019-2020-full}
-table_athlete_course(dt_all_long, tri_cols, "2019-2020","Bec Mclucas", "full")
+```{r a-Bec-McLucas-table-2019-2020-full}
+table_athlete_course(dt_all_long, tri_cols, "2019-2020","Bec McLucas", "full")
 
 ```
 
 
 #### Detailed results for Double Distance course
 
-```{r a-Bec-Mclucas-table-2019-2020-double}
-table_athlete_course(dt_all_long, tri_cols, "2019-2020","Bec Mclucas", "double")
+```{r a-Bec-McLucas-table-2019-2020-double}
+table_athlete_course(dt_all_long, tri_cols, "2019-2020","Bec McLucas", "double")
 
 ```
 
-## Cat Mcnab {#a-Cat-Mcnab}
+## Cat McNab {#a-Cat-McNab}
 
 Cat has 1 entry over 1 season.
 
@@ -7807,16 +7807,16 @@ Tap or hover on the plots for more info. Plots show all courses together, course
 
 Cat has entered 1 race this season, 1 Intermediate.
 
-```{r a-Cat-Mcnab-plot-2019-2020}
-plotly_athlete("2019-2020","Cat Mcnab", len_season=27)
+```{r a-Cat-McNab-plot-2019-2020}
+plotly_athlete("2019-2020","Cat McNab", len_season=27)
 ```
 
 
 
 #### Detailed results for Intermediate course
 
-```{r a-Cat-Mcnab-table-2019-2020-int}
-table_athlete_course(dt_all_long, tri_cols, "2019-2020","Cat Mcnab", "int")
+```{r a-Cat-McNab-table-2019-2020-int}
+table_athlete_course(dt_all_long, tri_cols, "2019-2020","Cat McNab", "int")
 
 ```
 
@@ -8171,38 +8171,6 @@ table_athlete_course(dt_all_long, tri_cols, "2018-2019","Lisa Moore", "full")
 
 ```
 
-## Richard Morant {#a-Richard-Morant}
-
-Richard has 18 entries over 1 season.
-
-Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Richard's entries within seasons.
-
-
-### 2018-2019
-
-Richard has entered 18 races this season, 16 Full and 2 Double Distance.
-
-```{r a-Richard-Morant-plot-2018-2019}
-plotly_athlete("2018-2019","Richard Morant", len_season=25)
-```
-
-
-
-#### Detailed results for Full course
-
-```{r a-Richard-Morant-table-2018-2019-full}
-table_athlete_course(dt_all_long, tri_cols, "2018-2019","Richard Morant", "full")
-
-```
-
-
-#### Detailed results for Double Distance course
-
-```{r a-Richard-Morant-table-2018-2019-double}
-table_athlete_course(dt_all_long, tri_cols, "2018-2019","Richard Morant", "double")
-
-```
-
 ## Amy Morland {#a-Amy-Morland}
 
 Amy has 5 entries over 1 season.
@@ -8259,68 +8227,9 @@ table_athlete_course(dt_all_long, tri_cols, "2018-2019","Rachel Morrison", "full
 
 ```
 
-## James Mourant {#a-James-Mourant}
-
-James has 25 entries over 2 seasons.
-
-Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare James's entries within seasons.
-
-
-### 2020-2021
-
-James has entered 5 races this season, 4 Full and 1 Super Teams.
-
-```{r a-James-Mourant-plot-2020-2021}
-plotly_athlete("2020-2021","James Mourant", len_season=26)
-```
-
-
-
-#### Detailed results for Full course
-
-```{r a-James-Mourant-table-2020-2021-full}
-table_athlete_course(dt_all_long, tri_cols, "2020-2021","James Mourant", "full")
-
-```
-
-
-#### Detailed results for Super Teams course
-
-```{r a-James-Mourant-table-2020-2021-teams}
-table_athlete_course(dt_all_long, tri_cols, "2020-2021","James Mourant", "teams")
-
-```
-
-
-
-### 2019-2020
-
-James has entered 20 races this season, 19 Full and 1 Double Distance.
-
-```{r a-James-Mourant-plot-2019-2020}
-plotly_athlete("2019-2020","James Mourant", len_season=27)
-```
-
-
-
-#### Detailed results for Full course
-
-```{r a-James-Mourant-table-2019-2020-full}
-table_athlete_course(dt_all_long, tri_cols, "2019-2020","James Mourant", "full")
-
-```
-
-
-#### Detailed results for Double Distance course
-
-```{r a-James-Mourant-table-2019-2020-double}
-table_athlete_course(dt_all_long, tri_cols, "2019-2020","James Mourant", "double")
-
-```
-
 ## Richard Mourant {#a-Richard-Mourant}
 
-Richard has 38 entries over 2 seasons.
+Richard has 56 entries over 3 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Richard's entries within seasons.
 
@@ -8390,6 +8299,92 @@ table_athlete_course(dt_all_long, tri_cols, "2019-2020","Richard Mourant", "doub
 
 ```{r a-Richard-Mourant-table-2019-2020-int}
 table_athlete_course(dt_all_long, tri_cols, "2019-2020","Richard Mourant", "int")
+
+```
+
+
+
+### 2018-2019
+
+Richard has entered 18 races this season, 16 Full and 2 Double Distance.
+
+```{r a-Richard-Mourant-plot-2018-2019}
+plotly_athlete("2018-2019","Richard Mourant", len_season=25)
+```
+
+
+
+#### Detailed results for Full course
+
+```{r a-Richard-Mourant-table-2018-2019-full}
+table_athlete_course(dt_all_long, tri_cols, "2018-2019","Richard Mourant", "full")
+
+```
+
+
+#### Detailed results for Double Distance course
+
+```{r a-Richard-Mourant-table-2018-2019-double}
+table_athlete_course(dt_all_long, tri_cols, "2018-2019","Richard Mourant", "double")
+
+```
+
+## James Mourant {#a-James-Mourant}
+
+James has 25 entries over 2 seasons.
+
+Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare James's entries within seasons.
+
+
+### 2020-2021
+
+James has entered 5 races this season, 4 Full and 1 Super Teams.
+
+```{r a-James-Mourant-plot-2020-2021}
+plotly_athlete("2020-2021","James Mourant", len_season=26)
+```
+
+
+
+#### Detailed results for Full course
+
+```{r a-James-Mourant-table-2020-2021-full}
+table_athlete_course(dt_all_long, tri_cols, "2020-2021","James Mourant", "full")
+
+```
+
+
+#### Detailed results for Super Teams course
+
+```{r a-James-Mourant-table-2020-2021-teams}
+table_athlete_course(dt_all_long, tri_cols, "2020-2021","James Mourant", "teams")
+
+```
+
+
+
+### 2019-2020
+
+James has entered 20 races this season, 19 Full and 1 Double Distance.
+
+```{r a-James-Mourant-plot-2019-2020}
+plotly_athlete("2019-2020","James Mourant", len_season=27)
+```
+
+
+
+#### Detailed results for Full course
+
+```{r a-James-Mourant-table-2019-2020-full}
+table_athlete_course(dt_all_long, tri_cols, "2019-2020","James Mourant", "full")
+
+```
+
+
+#### Detailed results for Double Distance course
+
+```{r a-James-Mourant-table-2019-2020-double}
+table_athlete_course(dt_all_long, tri_cols, "2019-2020","James Mourant", "double")
 
 ```
 
