@@ -7,8 +7,9 @@ link-citations: yes
 description: "Twinnies Times"
 ---
 
+# Home
 
-```{r prep}
+```{r prep, echo = FALSE}
 
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, fig.height = 6, fig.width = 7)
 
@@ -22,7 +23,7 @@ season_lowest <- min(dt_season$season)
 ```
 
 
-# Home
+
 
 This is an unofficial collection of [TwinTowns Triathlon Club](http://www.twintownstriathlon.org.au){target="_blank"} race results based on the [club's webscorer page](https://www.webscorer.com/33755){target="_blank"}.
 

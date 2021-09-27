@@ -77,7 +77,7 @@ season,race_number,date_ymd,race_type,cancelled,cancelled_reason,report_id
 2020-2021,24,6/3/21,Standard,,,5992
 2020-2021,25,13/3/21,Standard,,,
 2020-2021,26,20/3/21,Club Championships,,,6001
-2021-2022,1,25/9/21,Standard,,,
+2021-2022,1,25/9/21,Standard,TRUE,COVID,
 2021-2022,2,2/10/21,Standard,,,
 2021-2022,3,9/10/21,Standard,,,
 2021-2022,4,16/10/21,Double Distance,,,
