@@ -270,7 +270,7 @@ dt_all_long[name_first == Name, name_last := ""] # Catch any people with only a 
 
 
 # Athlete refs and links
-dt_all_long[, athlete_ref := gsub(pattern = " ", "-", Name)]  
+dt_all_long[, athlete_ref := gsub(pattern = " ", "-", tolower(Name))]  
 dt_all_long[, athlete_ref := gsub(pattern = "'", "", athlete_ref)]
 dt_all_long[, athlete_ref := paste0("a-",athlete_ref)]
 dt_all_long[, athlete_link := paste0('<a href="', athlete_ref,'.html#',athlete_ref, '">',Name,'</a>')]
@@ -641,6 +641,6 @@ saveRDS(dt_all_long, "data_derived/dt_all_long.rds")
 # Update website ----------------------------------------------------------
 
 
-source("make_seasons_rmd.R")
 source("make_athlete_rmd.R")
+source("make_seasons_rmd.R")
 bookdown::render_book("index.Rmd",output_dir = site_path_relative)

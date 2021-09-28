@@ -29,7 +29,7 @@ This is an unofficial collection of [TwinTowns Triathlon Club](http://www.twinto
 
 Results are available from the `r season_lowest` season onwards.
 
-Results are presented in terms of [overall participation](#participation-total-all), participation and records in each season ([example](#participation-total-2020-2021)), for each race ([example](#r-2021-02-13)), and for each competitor ([example](#a-Tracy-Foyster)).
+Results are presented in terms of [overall participation](#participation-total-all), participation and records in each season ([example](#participation-total-2020-2021)), for each race ([example](#r-2021-02-13)), and for each competitor ([example](#a-tracy-foyster)).
 
 
 # Participation {#participation-total-all}

@@ -22,9 +22,7 @@ header <- paste0({
     len_season <- max(dt_season[season==i_season]$race_number)
     
   
-  
-  # paste0('# (PART\\*) Season ', i_season,'\n\n',
-  paste0('# Season ', i_season,'\n\n',
+    paste0('# Season ', i_season,'\n\n',
          
 '#### Schedule {#schedule-',i_season,'}
 
@@ -278,4 +276,4 @@ table_race_teams(dt_all_long[season=="',i_season,'"], tri_cols, ',i,', "',j,'",'
 )
 }
 
-write(paste0(header, body),file = "01-seasons_generated.Rmd")
+write(paste0(header, body),file = "02-seasons_generated.Rmd")
