@@ -108,7 +108,8 @@ plot_race_count <- function(dt_all_long,i_season, len_season){
            dragmode = FALSE,
            autosize = TRUE,
            margin = list(l=15, r=0, t=0,b=0, pad=0),
-           legend = list(orientation = "h", y = 0, x= 0.5, xanchor = "center",
+           legend = list(title = list(text="Course"),
+                         orientation = "h", y = 0, x= 0.5, xanchor = "center",
                          itemclick = FALSE, itemdoubleclick  = FALSE)) %>% 
     config(displayModeBar = TRUE, modeBarButtons = list(list("toImage")), displaylogo=FALSE,
            toImageButtonOptions = list(height = 500, width = 700, scale = 2,

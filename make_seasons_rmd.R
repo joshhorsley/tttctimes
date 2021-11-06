@@ -23,6 +23,13 @@ header <- paste0({
     
   
     paste0('# Season ', i_season,'\n\n',
+           
+           'Find race results from the schedule below or the menu. ',
+           
+           {if(any_entries) {paste0('Season [participation](#participation-total-',i_season,')',
+           ' and best times for each course are also available.')}},
+           
+           '\n\n',
          
 '#### Schedule {#schedule-',i_season,'}
 

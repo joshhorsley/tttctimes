@@ -218,6 +218,7 @@ dt_all_long[Name=="Haydn Jenkins", Name := "Hayden Jenkins"]
 dt_all_long[tolower(Name) %in% c("virginia jones", "ginny jones"), Name := "Ginny Jones"]
 
 dt_all_long[Bib=="240" & Name=="Sally", Name := "Sally Kingston"]
+dt_all_long[tolower(Name)=="cody klein", Name := "Codie Klein"]
 dt_all_long[tolower(Name) %in% c("lydia kuschnirz"), Name := "Lydia Kuschmirz"]
 
 dt_all_long[tolower(Name) %in% c("valerie lambard"), Name := "Val Lambard"]

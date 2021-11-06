@@ -1,0 +1,9 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Time	Lap 1	Lap 2	Lap 3	Difference	% Back	% Winning	% Average	% Median
+1	147	Remy Hawkins	Remy	Hawkins	Intermediate	37:39.8	5:13.8	21:25.2	11:00.8	-	-	100%	12.45%	9.65%
+2	208	Ava Thomson	Ava	Thomson	Intermediate	40:09.5	6:38.6	22:36.3	10:54.6	+2:29.7	+6.62%	93.79%	6.65%	3.66%
+3	101	Liam Foyster	Liam	Foyster	Intermediate	43:12.8	12:02.4	15:09.2	16:01.2	+5:33.0	+14.74%	87.16%	-0.46%	-3.66%
+4	35	Judy Murray	Judy	Murray	Intermediate	51:02.1	8:00.2	28:44.2	14:17.6	+13:22.3	+35.50%	73.80%	-18.64%	-22.43%
+-	-	Marcus Fox	Marcus	Fox	Intermediate	DNS				-	-	-	-	-
+-	22	Julie Lowe	Julie	Lowe	Intermediate	DNS				-	-	-	-	-
+-	214	Timothy Taylor	Timothy	Taylor	Intermediate	DNS				-	-	-	-	-
+-	287	Madeline Smith	Madeline	Smith	Intermediate	DNS				-	-	-	-	-

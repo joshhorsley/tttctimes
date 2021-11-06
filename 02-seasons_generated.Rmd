@@ -3,6 +3,8 @@
 
 # Season 2021-2022
 
+Find race results from the schedule below or the menu. Season [participation](#participation-total-2021-2022) and best times for each course are also available.
+
 #### Schedule {#schedule-2021-2022}
 
 ```{r schedule-2021-2022}
@@ -31,7 +33,182 @@ col_ref_hide <- which(!(names(dt_season_show) %in% c("#","Date","Note","Club Rep
 datatable_std(dt_season_show,col_ref_hide,escape = FALSE,ordering = FALSE)
 ```
 
+## Participation - Total {#participation-total-2021-2022}
+
+```{r}
+n_entries_all_season <- nrow(dt_all_long[season=="2021-2022"][(started) & part == "Swim"])
+n_athletes_season <- length(unique(dt_all_long[season=="2021-2022"][(started) & part == "Swim"]$Name))
+
+```
+
+There have been `r prettyNum(n_entries_all_season, big.mark = ",")` entries by `r n_athletes_season` competitors in the 2021-2022 season
+
+```{r part_hist-2021-2022}
+plotly_part_hist(dt_all_long[season=="2021-2022"],len_season=25)
+```
+
+```{r part-total-table-2021-2022}
+table_part_total("2021-2022")
+```
+
+## Participation - Trends {#participation-trends-2021-2022}
+
+
+### By Race
+
+```{r course_totals_2021-2022}
+dt_entry_type <- dt_all_long[season=="2021-2022"][(started) & part == "Swim", .(count = .N), by = course_nice]
+setorder(dt_entry_type, course_nice)
+dt_entry_type[, text := paste0(count, " for ", course_nice)]
+```
+
+The total number of entries by course are `r list_with_and(dt_entry_type$text)`. The plot below shows the number of entries by course over the 2021-2022 season. Race cancellations are shown on the plot with the letter "C". 
+
+```{r plot-raace-count-2021-2022}
+plot_race_count(dt_all_long,"2021-2022",len_season=25)
+```
+
+
+
+### By Competitor
+
+
+This plot shows the cumulative number of races entered by each competitor over the 2021-2022 season. It's a bit crowded showing everyone, each competitor's entries can be toggled by clicking (or double-clicking) their names in the legend.
+
+```{r plot-race-series-2021-2022}
+plotly_time_series(dt_all_long[season=="2021-2022"],len_season=25)
+```
+
+
+## Best Times - Full {#best-times-full-2021-2022}
+  
+### Overall
+
+The best valid times for each competitor are ranked in the plot and table below.
+
+```{r plot-record-full-2021-2022}
+plotly_record(dt_all_long[season=="2021-2022"], tri_cols, "full")
+```
+
+
+
+Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for individual parts are provided only for PBs.
+  
+```{r tab-record-full-overall-2021-2022}
+table_record(dt_all_long[season=="2021-2022"], tri_cols, "full", "overall")
+```
+
+### Swim
+
+Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for other parts and overall are provided only for PBs.
+  
+```{r tab-record-full-Swim-2021-2022}
+table_record(dt_all_long[season=="2021-2022"], tri_cols, "full", "Swim")
+```
+
+### Ride
+
+Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for other parts and overall are provided only for PBs.
+  
+```{r tab-record-full-Ride-2021-2022}
+table_record(dt_all_long[season=="2021-2022"], tri_cols, "full", "Ride")
+```
+
+### Run
+
+Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for other parts and overall are provided only for PBs.
+  
+```{r tab-record-full-Run-2021-2022}
+table_record(dt_all_long[season=="2021-2022"], tri_cols, "full", "Run")
+```
+
+
+## Best Times - Intermediate {#best-times-int-2021-2022}
+  
+### Overall
+
+The best valid times for each competitor are ranked in the plot and table below.
+
+```{r plot-record-int-2021-2022}
+plotly_record(dt_all_long[season=="2021-2022"], tri_cols, "int")
+```
+
+
+
+Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for individual parts are provided only for PBs.
+  
+```{r tab-record-int-overall-2021-2022}
+table_record(dt_all_long[season=="2021-2022"], tri_cols, "int", "overall")
+```
+
+### Swim
+
+Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for other parts and overall are provided only for PBs.
+  
+```{r tab-record-int-Swim-2021-2022}
+table_record(dt_all_long[season=="2021-2022"], tri_cols, "int", "Swim")
+```
+
+### Ride
+
+Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for other parts and overall are provided only for PBs.
+  
+```{r tab-record-int-Ride-2021-2022}
+table_record(dt_all_long[season=="2021-2022"], tri_cols, "int", "Ride")
+```
+
+### Run
+
+Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for other parts and overall are provided only for PBs.
+  
+```{r tab-record-int-Run-2021-2022}
+table_record(dt_all_long[season=="2021-2022"], tri_cols, "int", "Run")
+```
+
+
+## Race 7: 06 Nov 2021 {#r-2021-11-06}
+
+A total of 50 competitors entered, 50 for the first time this season. 
+
+
+### Full
+
+46 competitors entered the course.
+
+```{r plot-race-7-full-FALSE-2021-2022}
+plotly_race(dt_all_long, tri_cols, "2021-2022",7, "full",FALSE)
+```
+    
+    
+
+#### Detailed results for Full course
+
+2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-7-full-FALSE-2021-2022}
+table_race(dt_all_long[season=="2021-2022"], tri_cols, 7, "full",FALSE)
+```
+
+
+### Intermediate
+
+4 competitors entered the course.
+
+```{r plot-race-7-int-FALSE-2021-2022}
+plotly_race(dt_all_long, tri_cols, "2021-2022",7, "int",FALSE)
+```
+    
+    
+
+#### Detailed results for Intermediate course
+
+2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-7-int-FALSE-2021-2022}
+table_race(dt_all_long[season=="2021-2022"], tri_cols, 7, "int",FALSE)
+```
+
 # Season 2020-2021
+
+Find race results from the schedule below or the menu. Season [participation](#participation-total-2020-2021) and best times for each course are also available.
 
 #### Schedule {#schedule-2020-2021}
 
@@ -1232,6 +1409,8 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 1, "int",FALSE)
 
 # Season 2019-2020
 
+Find race results from the schedule below or the menu. Season [participation](#participation-total-2019-2020) and best times for each course are also available.
+
 #### Schedule {#schedule-2019-2020}
 
 ```{r schedule-2019-2020}
@@ -2415,6 +2594,8 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 1, "int",FALSE)
 ```
 
 # Season 2018-2019
+
+Find race results from the schedule below or the menu. Season [participation](#participation-total-2018-2019) and best times for each course are also available.
 
 #### Schedule {#schedule-2018-2019}
 
