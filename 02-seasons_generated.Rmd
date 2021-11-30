@@ -3884,36 +3884,4 @@ plotly_race(dt_all_long, tri_cols, "2018-2019",1, "int",FALSE)
 table_race(dt_all_long[season=="2018-2019"], tri_cols, 1, "int",FALSE)
 ```
 
-# Season 
-
-Find race results from the schedule below or the menu. 
-
-#### Schedule {#schedule-}
-
-```{r schedule-}
-
-dt_season_show <- dt_season[season==""][(course=="full" | race_type == "Super Teams") & !(is_champ),
-                          .(`#` = race_number,
-                            # Date = date_ymd,
-                            `Event type` = race_type,
-                            cancelled,
-                            cancelled_reason,
-                            have_results,
-                            has_report,
-                            participation_only,
-                            Date = race_link,
-                            `Club Report` = report_link)]
-
-
-dt_season_show[, Note := ""]
-dt_season_show[`Event type` != "Standard", Note := `Event type`]
-dt_season_show[(participation_only), Note:= paste0(Note, ifelse(Note=="",""," - "),"Participation results only ")]
-dt_season_show[(cancelled), Note:= paste0(Note, ifelse(Note=="",""," - "),"Cancelled due to ", cancelled_reason)]
-dt_season_show[!(cancelled) & !(have_results), Note := paste0(Note,ifelse(Note=="",""," - "), "Results not available")]
-
-col_ref_hide <- which(!(names(dt_season_show) %in% c("#","Date","Note","Club Report")))-1 # columns are indexed from 0 - row name?
-
-datatable_std(dt_season_show,col_ref_hide,escape = FALSE,ordering = FALSE)
-```
-
 
