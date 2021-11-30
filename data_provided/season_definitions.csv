@@ -83,10 +83,10 @@ season,race_number,date_ymd,race_type,cancelled,cancelled_reason,report_id
 2021-2022,4,16/10/21,Double Distance,TRUE,COVID,
 2021-2022,5,23/10/21,Standard,TRUE,COVID,
 2021-2022,6,30/10/21,Standard,,,6152
-2021-2022,7,6/11/21,Standard,,,
-2021-2022,8,13/11/21,Standard,,,
-2021-2022,9,20/11/21,Standard,,,
-2021-2022,10,27/11/21,Standard,,,
+2021-2022,7,6/11/21,Standard,,,6167
+2021-2022,8,13/11/21,Standard,,,6193
+2021-2022,9,20/11/21,Standard,,,6213
+2021-2022,10,27/11/21,Standard,,,6229
 2021-2022,11,4/12/21,Standard,,,
 2021-2022,12,11/12/21,Standard,,,
 2021-2022,13,18/12/21,Standard,,,
@@ -100,5 +100,5 @@ season,race_number,date_ymd,race_type,cancelled,cancelled_reason,report_id
 2021-2022,21,12/2/22,Standard,,,
 2021-2022,22,19/2/22,Double Distance,,,
 2021-2022,23,26/2/22,Standard,,,
-2021-2022,24,5/3/22,Standard,,,
-2021-2022,25,12/3/22,Club Championships,,,
+2021-2022,24,5/3/22,Club Championships,,,
+,,,,,,

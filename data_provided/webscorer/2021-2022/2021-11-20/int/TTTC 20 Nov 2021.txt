@@ -1,0 +1,12 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Time	Lap 1	Lap 2	Lap 3	Difference	% Back	% Winning	% Average	% Median
+1	56	Aimee Harradence	Aimee	Harradence	Intermediate	44:07.8	8:38.9	23:48.7	11:40.3	-	-	100%	11.68%	6.11%
+2	287	Madeline Smith	Madeline	Smith	Intermediate	44:36.2	6:21.2	24:14.8	14:00.2	+0:28.4	+1.07%	98.94%	10.74%	5.11%
+3	292	Anika Parker			Intermediate	45:07.1	6:35.0	24:27.7	14:04.4	+0:59.3	+2.24%	97.81%	9.70%	4.01%
+4	214	Timothy Taylor	Timothy	Taylor	Intermediate	46:16.7	7:55.4	26:10.5	12:10.8	+2:08.9	+4.87%	95.36%	7.38%	1.54%
+5	239	Glenn Hind	Glenn	Hind	Intermediate	46:59.2	8:20.1	27:15.7	11:23.4	+2:51.4	+6.47%	93.92%	5.97%	0.04%
+6	22	Julie Lowe	Julie	Lowe	Intermediate	47:01.3	6:22.6	29:31.5	11:07.2	+2:53.5	+6.55%	93.85%	5.90%	-0.04%
+7	35	Judy Murray	Judy	Murray	Intermediate	48:58.2	8:13.0	26:36.0	14:09.1	+4:50.4	+10.97%	90.12%	2.00%	-4.18%
+8	101	Liam Foyster	Liam	Foyster	Intermediate	53:53.0	10:54.0	26:53.2	16:05.8	+9:45.2	+22.10%	81.90%	-7.84%	-14.64%
+9	901	Isaac Bloor	Isaac	Bloor	Intermediate	56:01.0	8:00.8	33:36.9	14:23.4	+11:53.2	+26.94%	78.78%	-12.11%	-19.17%
+10	900	Cooper Bloor	Cooper	Bloor	Intermediate	1:06:40.0	10:02.6	41:26.6	15:10.8	+22:32.2	+51.07%	66.20%	-33.42%	-41.83%
+-	141	Erin Davoren	Erin	Davoren	Intermediate	DNS				-	-	-	-	-

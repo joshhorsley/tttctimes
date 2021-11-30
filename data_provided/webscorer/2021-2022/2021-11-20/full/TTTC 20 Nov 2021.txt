@@ -1,0 +1,66 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Time	Lap 1	Lap 2	Lap 3	Difference	% Back	% Winning	% Average	% Median
+1	44	Scott Wildin	Scott	Wildin	Full	49:29.5	7:24.6	25:20.9	16:44.0	-	-	100%	26.11%	25.16%
+2	1	Simon Harradence	Simon	Harradence	Full	53:01.1	8:04.8	24:32.1	20:24.2	+3:31.6	+7.13%	93.35%	20.85%	19.83%
+3	88	John King	John	King	Full	53:04.3	9:03.2	25:24.2	18:36.8	+3:34.8	+7.23%	93.25%	20.77%	19.74%
+4	145	Nick O'Reilly	Nick	O'Reilly	Full	54:14.8	9:01.1	26:46.7	18:27.0	+4:45.3	+9.61%	91.23%	19.02%	17.97%
+5	31	Christian Andrews	Christian	Andrews	Full	54:21.0	7:59.3	26:29.7	19:52.0	+4:51.5	+9.82%	91.06%	18.86%	17.81%
+6	2	Tracy Foyster	Tracy	Foyster	Full	56:35.4	9:17.7	27:43.5	19:34.3	+7:05.9	+14.34%	87.46%	15.52%	14.42%
+7	7	Alex Gilks	Alex	Gilks	Full	57:03.9	9:08.0	28:00.0	19:55.9	+7:34.4	+15.30%	86.73%	14.81%	13.71%
+8	14	Clive Pearce	Clive	Pearce	Full	57:13.5	10:50.3	26:25.0	19:58.2	+7:44.0	+15.63%	86.49%	14.57%	13.46%
+9	196	Bec McLucas	Bec	McLucas	Full	58:05.7	8:08.2	30:27.2	19:30.2	+8:36.2	+17.38%	85.19%	13.27%	12.15%
+10	20	Gerard Robards	Gerard	Robards	Full	58:33.4	10:17.2	26:50.0	21:26.2	+9:03.9	+18.32%	84.52%	12.58%	11.45%
+11	234	Andrew Miller	Andrew	Miller	Full	58:56.8	7:47.1	30:09.0	21:00.6	+9:27.3	+19.10%	83.96%	12.00%	10.86%
+12	99	Scott Styman	Scott	Styman	Full	59:13.3	9:33.5	30:06.6	19:33.3	+9:43.8	+19.66%	83.57%	11.59%	10.44%
+13	117	Des Gooda	Des	Gooda	Full	1:00:01.5	8:35.3	27:44.3	23:42.0	+10:32.0	+21.28%	82.45%	10.39%	9.23%
+14	206	Sam Colman	Sam	Colman	Full	1:00:03.0	8:53.1	25:03.7	26:06.3	+10:33.5	+21.33%	82.42%	10.35%	9.19%
+15	104	Viv Wright	Viv	Wright	Full	1:00:33.8	9:25.5	29:44.3	21:24.0	+11:04.3	+22.37%	81.72%	9.59%	8.42%
+16	72	Rob Worth	Rob	Worth	Full	1:01:34.1	9:58.3	29:37.2	21:58.7	+12:04.6	+24.40%	80.38%	8.09%	6.90%
+17	39	Vaughan Skelly	Vaughan	Skelly	Full	1:02:12.0	9:46.7	30:08.6	22:16.7	+12:42.5	+25.68%	79.57%	7.14%	5.94%
+18	151	Craig Telling	Craig	Telling	Full	1:03:02.5	9:37.8	33:22.6	20:02.1	+13:33.0	+27.38%	78.51%	5.89%	4.67%
+19	10	Virginia Jones	Virginia	Jones	Full	1:03:34.6	9:21.5	31:01.5	23:11.6	+14:05.1	+28.46%	77.85%	5.09%	3.86%
+20	252	Caroline Hogan	Caroline	Hogan	Full	1:04:11.0	10:51.0	30:33.8	22:46.2	+14:41.5	+29.69%	77.11%	4.18%	2.94%
+21	147	Remy Hawkins	Remy	Hawkins	Full	1:04:20.9	9:33.2	31:44.8	23:03.0	+14:51.4	+30.02%	76.91%	3.94%	2.69%
+22	5	Jenny Scaysbrook	Jenny	Scaysbrook	Full	1:04:25.4	8:43.0	30:24.3	25:18.1	+14:55.9	+30.17%	76.82%	3.82%	2.58%
+23	8	Dave de Closey	Dave	de Closey	Full	1:04:47.5	10:09.0	30:06.2	24:32.2	+15:18.0	+30.91%	76.39%	3.27%	2.02%
+24	105	Darren Jones	Darren	Jones	Full	1:04:49.2	10:21.3	30:00.5	24:27.5	+15:19.7	+30.97%	76.35%	3.23%	1.98%
+25	233	Kat Miller	Kat	Miller	Full	1:05:50.2	10:22.4	32:02.1	23:25.7	+16:20.7	+33.03%	75.17%	1.71%	0.44%
+26	65	David Emery	David	Emery	Full	1:06:07.7	10:36.7	32:19.3	23:11.7	+16:38.2	+33.62%	74.84%	1.28%	0.00%
+27	112	Kent Holmes	Kent	Holmes	Full	1:06:21.3	9:37.1	31:05.2	25:39.1	+16:51.8	+34.07%	74.59%	0.94%	-0.34%
+28	203	Michelle Miller	Michelle	Miller	Full	1:06:46.0	9:06.6	29:07.6	28:31.8	+17:16.5	+34.90%	74.13%	0.32%	-0.97%
+29	80	Mark Collinson	Mark	Collinson	Full	1:06:49.7	10:48.3	31:35.6	24:25.8	+17:20.2	+35.03%	74.06%	0.23%	-1.06%
+30	182	Sharyn Klein	Sharyn	Klein	Full	1:06:57.3	9:59.4	35:29.4	21:28.5	+17:27.8	+35.29%	73.92%	0.04%	-1.25%
+31	13	Chris Watt	Chris	Watt	Full	1:07:00.2	10:09.0	32:58.1	23:53.0	+17:30.7	+35.38%	73.86%	-0.03%	-1.32%
+32	36	Scott Collins	Scott	Collins	Full	1:08:59.7	8:21.9	36:31.2	24:06.6	+19:30.2	+39.41%	71.73%	-3.00%	-4.34%
+33	286	Peter Rudland	Peter	Rudland	Full	1:09:10.3	9:44.6	34:14.6	25:11.1	+19:40.8	+39.76%	71.55%	-3.27%	-4.60%
+34	32	Guy Davoren	Guy	Davoren	Full	1:09:29.2	11:25.5	36:08.2	21:55.6	+19:59.7	+40.40%	71.22%	-3.74%	-5.08%
+35	37	Jeff Murray	Jeff	Murray	Full	1:09:41.8	11:49.9	33:06.2	24:45.6	+20:12.3	+40.83%	71.01%	-4.05%	-5.40%
+36	289	Christopher Bilson	Christopher	Bilson	Full	1:10:06.8	11:10.6	34:59.5	23:56.7	+20:37.3	+41.67%	70.59%	-4.67%	-6.03%
+37	162	Peter Stowe	Peter	Stowe	Full	1:10:18.9	10:20.9	36:31.7	23:26.3	+20:49.4	+42.07%	70.39%	-4.97%	-6.33%
+38	4	Jim Collins	Jim	Collins	Full	1:10:26.8	10:54.0	33:40.7	25:52.1	+20:57.3	+42.34%	70.25%	-5.17%	-6.53%
+39	102	Andrew Costello	Andrew	Costello	Full	1:11:04.2	8:16.5	33:40.9	29:06.7	+21:34.7	+43.60%	69.64%	-6.10%	-7.47%
+40	18	Hollie Robards	Hollie	Robards	Full	1:11:47.0	8:59.8	37:37.6	25:09.6	+22:17.5	+45.04%	68.95%	-7.16%	-8.55%
+41	53	Joanne Colja	Joanne	Colja	Full	1:15:25.3	21:41.6	30:45.5	22:58.2	+25:55.8	+52.39%	65.62%	-12.60%	-14.05%
+42	202	Rod Sewell	Rod	Sewell	Full	1:15:39.6	9:20.0	35:17.8	31:01.8	+26:10.1	+52.87%	65.41%	-12.95%	-14.41%
+43	288	Wayde Smith	Wayde	Smith	Full	1:16:01.9	12:40.5	35:28.3	27:53.1	+26:32.4	+53.63%	65.09%	-13.51%	-14.98%
+44	207	Jamie Brindley	Jamie	Brindley	Full	1:16:28.6	11:02.1	37:06.0	28:20.4	+26:59.1	+54.52%	64.71%	-14.17%	-15.65%
+45	285	Lynette Nisbet	Lynette	Nisbet	Full	1:16:52.0	11:14.7	39:02.7	26:34.7	+27:22.5	+55.31%	64.39%	-14.75%	-16.24%
+46	85	Terence Simpson	Terence	Simpson	Full	1:16:58.5	9:32.9	35:50.9	31:34.8	+27:29.0	+55.53%	64.30%	-14.92%	-16.40%
+47	204	Lucas Nixon-Hind	Lucas	Nixon-Hind	Full	1:18:07.2	9:08.2	44:30.0	24:29.0	+28:37.7	+57.84%	63.35%	-16.62%	-18.13%
+48	76	Gregory Freeman	Gregory	Freeman	Full	1:29:23.5	12:39.9	44:56.4	31:47.2	+39:54.0	+80.62%	55.36%	-33.45%	-35.18%
+49	3	Val Lambard	Val	Lambard	Full	1:30:00.2	11:47.8	41:26.5	36:46.0	+40:30.7	+81.86%	54.99%	-34.36%	-36.10%
+50	84	Wendy Wise	Wendy	Wise	Full	1:30:00.5	12:16.6	42:36.9	35:07.0	+40:31.0	+81.87%	54.99%	-34.37%	-36.11%
+51	70	Kev Bannerman	Kev	Bannerman	Full	1:30:49.2	9:56.7	35:15.8	45:36.7	+41:19.7	+83.51%	54.49%	-35.58%	-37.34%
+-	-	Simon May	Simon	May	Full	DNS				-	-	-	-	-
+-	-	Suzie Hawkins	Suzie	Hawkins	Full	DNS				-	-	-	-	-
+-	55	Mark Whiticker	Mark	Whiticker	Full	DNS				-	-	-	-	-
+-	81	Scott Bornholt	Scott	Bornholt	Full	DNS				-	-	-	-	-
+-	86	Warren Copping	Warren	Copping	Full	DNS				-	-	-	-	-
+-	95	Kim Bowra	Kim	Bowra	Full	DNS				-	-	-	-	-
+-	97	Kaleb Robards	Kaleb	Robards	Full	DNS				-	-	-	-	-
+-	109	Joseph Costello	Joseph	Costello	Full	DNS				-	-	-	-	-
+-	212	Dean Webb	Dean	Webb	Full	DNS				-	-	-	-	-
+-	217	Sean Swain	Sean	Swain	Full	DNS				-	-	-	-	-
+-	250	Helen Murphy	Helen	Murphy	Full	DNS				-	-	-	-	-
+-	261	David Hogan	David	Hogan	Full	DNS				-	-	-	-	-
+-	274	Josh Horsley	Josh	Horsley	Full	DNS				-	-	-	-	-
+-	280	Ashleigh Murphy	Ashleigh	Murphy	Full	DNS				-	-	-	-	-

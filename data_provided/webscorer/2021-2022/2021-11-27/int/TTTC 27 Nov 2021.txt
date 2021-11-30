@@ -1,0 +1,16 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Time	Lap 1	Lap 2	Lap 3	Difference	% Back	% Winning	% Average	% Median
+1	22	Julie Lowe	Julie	Lowe	Intermediate	38:40.8	5:53.0	22:41.2	10:06.6	-	-	100%	25.46%	25.40%
+2	273	Christine Gannon	Christine	Gannon	Intermediate	49:28.4	9:24.5	26:52.8	13:11.2	+10:47.6	+27.90%	78.18%	4.66%	4.58%
+3	35	Judy Murray	Judy	Murray	Intermediate	49:44.6	8:05.1	27:40.2	13:59.3	+11:03.8	+28.60%	77.76%	4.14%	4.06%
+4	57	Michelle Jones			Intermediate	53:57.4	22:07.4	20:51.5	10:58.6	+15:16.6	+39.50%	71.69%	-3.98%	-4.06%
+5	101	Liam Foyster	Liam	Foyster	Intermediate	55:04.5	11:28.6	27:58.7	15:37.2	+16:23.7	+42.39%	70.23%	-6.14%	-6.22%
+6	293	Cohen Parker	Cohen	Parker	Intermediate	1:04:25.2	6:31.9	35:17.4	22:35.9	+25:44.4	+66.55%	60.04%	-24.14%	-24.24%
+-	-	Chantel Pearce	Chantel	Pearce	Intermediate	DNS				-	-	-	-	-
+-	-	Marcus Fox	Marcus	Fox	Intermediate	DNS				-	-	-	-	-
+-	-	Nicholas Pearce	Nicholas	Pearce	Intermediate	DNS				-	-	-	-	-
+-	141	Erin Davoren	Erin	Davoren	Intermediate	DNS				-	-	-	-	-
+-	214	Timothy Taylor	Timothy	Taylor	Intermediate	DNS				-	-	-	-	-
+-	239	Glenn Hind	Glenn	Hind	Intermediate	DNS				-	-	-	-	-
+-	287	Madeline Smith	Madeline	Smith	Intermediate	DNS				-	-	-	-	-
+-	291	Greg Murphy	Greg	Murphy	Intermediate	DNS				-	-	-	-	-
+-	292	Annika Parker	Annika	Parker	Intermediate	DNS				-	-	-	-	-

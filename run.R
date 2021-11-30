@@ -234,6 +234,8 @@ dt_all_long[tolower(Name) %in% c("karen nixon-hind"), Name := "Karen Nixon"]
 
 dt_all_long[Name=="Sean Oldburg", Name := "Shaun Oldbury"]
 
+dt_all_long[tolower(Name) %in% c("anika parker"), Name := "Annika Parker"]
+
 dt_all_long[tolower(Name) %in% c("kaleb robarda", "caleb robards"), Name := "Kaleb Robards"]
 dt_all_long[Name=="Nat Rogers", Name := "Natalie Rogers"]
 
