@@ -240,14 +240,14 @@ table_athlete_course(dt_all_long, tri_cols, "2018-2019","Jacqui Anderson", "int"
 
 ## Christian Andrews {#a-christian-andrews}
 
-Christian has 46 entries over 4 seasons.
+Christian has 47 entries over 4 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Christian's entries within seasons.
 
 
 ### 2021-2022
 
-Christian has entered 3 races this season, 3 Full.
+Christian has entered 4 races this season, 4 Full.
 
 ```{r a-christian-andrews-plot-2021-2022}
 plotly_athlete("2021-2022","Christian Andrews", len_season=24)
@@ -1049,14 +1049,14 @@ table_athlete_course(dt_all_long, tri_cols, "2019-2020","Jordon Birtwistle", "fu
 
 ## Isaac Bloor {#a-isaac-bloor}
 
-Isaac has 1 entry over 1 season.
+Isaac has 2 entries over 1 season.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Isaac's entries within seasons.
 
 
 ### 2021-2022
 
-Isaac has entered 1 race this season, 1 Intermediate.
+Isaac has entered 2 races this season, 2 Intermediate.
 
 ```{r a-isaac-bloor-plot-2021-2022}
 plotly_athlete("2021-2022","Isaac Bloor", len_season=24)
@@ -1073,14 +1073,14 @@ table_athlete_course(dt_all_long, tri_cols, "2021-2022","Isaac Bloor", "int")
 
 ## Cooper Bloor {#a-cooper-bloor}
 
-Cooper has 1 entry over 1 season.
+Cooper has 2 entries over 1 season.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Cooper's entries within seasons.
 
 
 ### 2021-2022
 
-Cooper has entered 1 race this season, 1 Intermediate.
+Cooper has entered 2 races this season, 2 Intermediate.
 
 ```{r a-cooper-bloor-plot-2021-2022}
 plotly_athlete("2021-2022","Cooper Bloor", len_season=24)
@@ -1585,14 +1585,14 @@ table_athlete_course(dt_all_long, tri_cols, "2018-2019","John Brazier", "int")
 
 ## Jamie Brindley {#a-jamie-brindley}
 
-Jamie has 25 entries over 3 seasons.
+Jamie has 26 entries over 3 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Jamie's entries within seasons.
 
 
 ### 2021-2022
 
-Jamie has entered 3 races this season, 3 Full.
+Jamie has entered 4 races this season, 4 Full.
 
 ```{r a-jamie-brindley-plot-2021-2022}
 plotly_athlete("2021-2022","Jamie Brindley", len_season=24)
@@ -2351,14 +2351,14 @@ table_athlete_course(dt_all_long, tri_cols, "2018-2019","Joanne Colja", "double"
 
 ## Jim Collins {#a-jim-collins}
 
-Jim has 61 entries over 4 seasons.
+Jim has 62 entries over 4 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Jim's entries within seasons.
 
 
 ### 2021-2022
 
-Jim has entered 4 races this season, 4 Full.
+Jim has entered 5 races this season, 5 Full.
 
 ```{r a-jim-collins-plot-2021-2022}
 plotly_athlete("2021-2022","Jim Collins", len_season=24)
@@ -2456,14 +2456,14 @@ table_athlete_course(dt_all_long, tri_cols, "2018-2019","Jim Collins", "double")
 
 ## Scott Collins {#a-scott-collins}
 
-Scott has 16 entries over 3 seasons.
+Scott has 17 entries over 3 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Scott's entries within seasons.
 
 
 ### 2021-2022
 
-Scott has entered 3 races this season, 3 Full.
+Scott has entered 4 races this season, 4 Full.
 
 ```{r a-scott-collins-plot-2021-2022}
 plotly_athlete("2021-2022","Scott Collins", len_season=24)
@@ -2526,14 +2526,14 @@ table_athlete_course(dt_all_long, tri_cols, "2019-2020","Scott Collins", "double
 
 ## Mark Collinson {#a-mark-collinson}
 
-Mark has 58 entries over 4 seasons.
+Mark has 59 entries over 4 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Mark's entries within seasons.
 
 
 ### 2021-2022
 
-Mark has entered 3 races this season, 3 Full.
+Mark has entered 4 races this season, 4 Full.
 
 ```{r a-mark-collinson-plot-2021-2022}
 plotly_athlete("2021-2022","Mark Collinson", len_season=24)
@@ -2631,14 +2631,14 @@ table_athlete_course(dt_all_long, tri_cols, "2018-2019","Mark Collinson", "full"
 
 ## Sam Colman {#a-sam-colman}
 
-Sam has 27 entries over 3 seasons.
+Sam has 28 entries over 3 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Sam's entries within seasons.
 
 
 ### 2021-2022
 
-Sam has entered 2 races this season, 2 Full.
+Sam has entered 3 races this season, 3 Full.
 
 ```{r a-sam-colman-plot-2021-2022}
 plotly_athlete("2021-2022","Sam Colman", len_season=24)
@@ -3732,14 +3732,14 @@ table_athlete_course(dt_all_long, tri_cols, "2018-2019","Mark Davies", "full")
 
 ## Guy Davoren {#a-guy-davoren}
 
-Guy has 66 entries over 4 seasons.
+Guy has 67 entries over 4 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Guy's entries within seasons.
 
 
 ### 2021-2022
 
-Guy has entered 4 races this season, 4 Full.
+Guy has entered 5 races this season, 5 Full.
 
 ```{r a-guy-davoren-plot-2021-2022}
 plotly_athlete("2021-2022","Guy Davoren", len_season=24)
@@ -3853,9 +3853,28 @@ table_athlete_course(dt_all_long, tri_cols, "2018-2019","Guy Davoren", "double")
 
 ## Erin Davoren {#a-erin-davoren}
 
-Erin has 16 entries over 2 seasons.
+Erin has 17 entries over 3 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Erin's entries within seasons.
+
+
+### 2021-2022
+
+Erin has entered 1 race this season, 1 Intermediate.
+
+```{r a-erin-davoren-plot-2021-2022}
+plotly_athlete("2021-2022","Erin Davoren", len_season=24)
+```
+
+
+
+#### Detailed results for Intermediate course
+
+```{r a-erin-davoren-table-2021-2022-int}
+table_athlete_course(dt_all_long, tri_cols, "2021-2022","Erin Davoren", "int")
+
+```
+
 
 
 ### 2020-2021
@@ -3904,14 +3923,14 @@ table_athlete_course(dt_all_long, tri_cols, "2018-2019","Erin Davoren", "full")
 
 ## David De Closey {#a-david-de-closey}
 
-David has 51 entries over 4 seasons.
+David has 52 entries over 4 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare David's entries within seasons.
 
 
 ### 2021-2022
 
-David has entered 3 races this season, 3 Full.
+David has entered 4 races this season, 4 Full.
 
 ```{r a-david-de-closey-plot-2021-2022}
 plotly_athlete("2021-2022","David De Closey", len_season=24)
@@ -4250,9 +4269,28 @@ table_athlete_course(dt_all_long, tri_cols, "2018-2019","Melanie Duff", "int")
 
 ## Timothy Eade {#a-timothy-eade}
 
-Timothy has 20 entries over 3 seasons.
+Timothy has 21 entries over 4 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Timothy's entries within seasons.
+
+
+### 2021-2022
+
+Timothy has entered 1 race this season, 1 Full.
+
+```{r a-timothy-eade-plot-2021-2022}
+plotly_athlete("2021-2022","Timothy Eade", len_season=24)
+```
+
+
+
+#### Detailed results for Full course
+
+```{r a-timothy-eade-table-2021-2022-full}
+table_athlete_course(dt_all_long, tri_cols, "2021-2022","Timothy Eade", "full")
+
+```
+
 
 
 ### 2020-2021
@@ -4808,14 +4846,14 @@ table_athlete_course(dt_all_long, tri_cols, "2020-2021","Marcus Fox", "int")
 
 ## Tracy Foyster {#a-tracy-foyster}
 
-Tracy has 57 entries over 4 seasons.
+Tracy has 58 entries over 4 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Tracy's entries within seasons.
 
 
 ### 2021-2022
 
-Tracy has entered 4 races this season, 4 Full.
+Tracy has entered 5 races this season, 5 Full.
 
 ```{r a-tracy-foyster-plot-2021-2022}
 plotly_athlete("2021-2022","Tracy Foyster", len_season=24)
@@ -4921,14 +4959,14 @@ table_athlete_course(dt_all_long, tri_cols, "2018-2019","Tracy Foyster", "double
 
 ## Liam Foyster {#a-liam-foyster}
 
-Liam has 14 entries over 2 seasons.
+Liam has 15 entries over 2 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Liam's entries within seasons.
 
 
 ### 2021-2022
 
-Liam has entered 4 races this season, 4 Intermediate.
+Liam has entered 5 races this season, 5 Intermediate.
 
 ```{r a-liam-foyster-plot-2021-2022}
 plotly_athlete("2021-2022","Liam Foyster", len_season=24)
@@ -5276,14 +5314,14 @@ table_athlete_course(dt_all_long, tri_cols, "2019-2020","Trudy Gadaleta", "full"
 
 ## Christine Gannon {#a-christine-gannon}
 
-Christine has 1 entry over 1 season.
+Christine has 2 entries over 1 season.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Christine's entries within seasons.
 
 
 ### 2021-2022
 
-Christine has entered 1 race this season, 1 Intermediate.
+Christine has entered 2 races this season, 2 Intermediate.
 
 ```{r a-christine-gannon-plot-2021-2022}
 plotly_athlete("2021-2022","Christine Gannon", len_season=24)
@@ -5759,14 +5797,14 @@ table_athlete_course(dt_all_long, tri_cols, "2018-2019","Sera Graham", "full")
 
 ## Ben Hall {#a-ben-hall}
 
-Ben has 61 entries over 4 seasons.
+Ben has 62 entries over 4 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Ben's entries within seasons.
 
 
 ### 2021-2022
 
-Ben has entered 3 races this season, 3 Full.
+Ben has entered 4 races this season, 4 Full.
 
 ```{r a-ben-hall-plot-2021-2022}
 plotly_athlete("2021-2022","Ben Hall", len_season=24)
@@ -6232,14 +6270,14 @@ table_athlete_course(dt_all_long, tri_cols, "2019-2020","Robert Harris", "full")
 
 ## Remy Hawkins {#a-remy-hawkins}
 
-Remy has 35 entries over 4 seasons.
+Remy has 36 entries over 4 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Remy's entries within seasons.
 
 
 ### 2021-2022
 
-Remy has entered 3 races this season, 1 Intermediate and 2 Full.
+Remy has entered 4 races this season, 1 Intermediate and 3 Full.
 
 ```{r a-remy-hawkins-plot-2021-2022}
 plotly_athlete("2021-2022","Remy Hawkins", len_season=24)
@@ -6645,14 +6683,14 @@ table_athlete_course(dt_all_long, tri_cols, "2020-2021","David Hogan", "teams")
 
 ## Kent Holmes {#a-kent-holmes}
 
-Kent has 36 entries over 4 seasons.
+Kent has 37 entries over 4 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Kent's entries within seasons.
 
 
 ### 2021-2022
 
-Kent has entered 3 races this season, 3 Full.
+Kent has entered 4 races this season, 4 Full.
 
 ```{r a-kent-holmes-plot-2021-2022}
 plotly_athlete("2021-2022","Kent Holmes", len_season=24)
@@ -6913,14 +6951,14 @@ table_athlete_course(dt_all_long, tri_cols, "2021-2022","Lewis Johnson", "full")
 
 ## Darren Jones {#a-darren-jones}
 
-Darren has 60 entries over 4 seasons.
+Darren has 61 entries over 4 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Darren's entries within seasons.
 
 
 ### 2021-2022
 
-Darren has entered 2 races this season, 2 Full.
+Darren has entered 3 races this season, 3 Full.
 
 ```{r a-darren-jones-plot-2021-2022}
 plotly_athlete("2021-2022","Darren Jones", len_season=24)
@@ -7123,14 +7161,14 @@ table_athlete_course(dt_all_long, tri_cols, "2018-2019","Ginny Jones", "double")
 
 ## Michelle Jones {#a-michelle-jones}
 
-Michelle has 41 entries over 4 seasons.
+Michelle has 42 entries over 4 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Michelle's entries within seasons.
 
 
 ### 2021-2022
 
-Michelle has entered 1 race this season, 1 Intermediate.
+Michelle has entered 2 races this season, 2 Intermediate.
 
 ```{r a-michelle-jones-plot-2021-2022}
 plotly_athlete("2021-2022","Michelle Jones", len_season=24)
@@ -7470,14 +7508,14 @@ table_athlete_course(dt_all_long, tri_cols, "2019-2020","Sally Kingston", "int")
 
 ## Sharyn Klein {#a-sharyn-klein}
 
-Sharyn has 30 entries over 4 seasons.
+Sharyn has 31 entries over 4 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Sharyn's entries within seasons.
 
 
 ### 2021-2022
 
-Sharyn has entered 2 races this season, 2 Full.
+Sharyn has entered 3 races this season, 3 Full.
 
 ```{r a-sharyn-klein-plot-2021-2022}
 plotly_athlete("2021-2022","Sharyn Klein", len_season=24)
@@ -7709,14 +7747,14 @@ table_athlete_course(dt_all_long, tri_cols, "2019-2020","Lydia Kuschmirz", "int"
 
 ## Val Lambard {#a-val-lambard}
 
-Val has 37 entries over 4 seasons.
+Val has 38 entries over 4 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Val's entries within seasons.
 
 
 ### 2021-2022
 
-Val has entered 2 races this season, 2 Full.
+Val has entered 3 races this season, 3 Full.
 
 ```{r a-val-lambard-plot-2021-2022}
 plotly_athlete("2021-2022","Val Lambard", len_season=24)
@@ -8200,14 +8238,14 @@ table_athlete_course(dt_all_long, tri_cols, "2020-2021","Jennifer Love", "int")
 
 ## Julie Lowe {#a-julie-lowe}
 
-Julie has 15 entries over 4 seasons.
+Julie has 16 entries over 4 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Julie's entries within seasons.
 
 
 ### 2021-2022
 
-Julie has entered 2 races this season, 2 Intermediate.
+Julie has entered 3 races this season, 3 Intermediate.
 
 ```{r a-julie-lowe-plot-2021-2022}
 plotly_athlete("2021-2022","Julie Lowe", len_season=24)
@@ -8380,6 +8418,30 @@ plotly_athlete("2019-2020","Lloyd Maunder", len_season=27)
 
 ```{r a-lloyd-maunder-table-2019-2020-int}
 table_athlete_course(dt_all_long, tri_cols, "2019-2020","Lloyd Maunder", "int")
+
+```
+
+## Simon May {#a-simon-may}
+
+Simon has 1 entry over 1 season.
+
+Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Simon's entries within seasons.
+
+
+### 2021-2022
+
+Simon has entered 1 race this season, 1 Full.
+
+```{r a-simon-may-plot-2021-2022}
+plotly_athlete("2021-2022","Simon May", len_season=24)
+```
+
+
+
+#### Detailed results for Full course
+
+```{r a-simon-may-table-2021-2022-full}
+table_athlete_course(dt_all_long, tri_cols, "2021-2022","Simon May", "full")
 
 ```
 
@@ -8594,14 +8656,14 @@ table_athlete_course(dt_all_long, tri_cols, "2018-2019","Rebecca McLucas", "doub
 
 ## Bec McLucas {#a-bec-mclucas}
 
-Bec has 12 entries over 3 seasons.
+Bec has 13 entries over 3 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Bec's entries within seasons.
 
 
 ### 2021-2022
 
-Bec has entered 2 races this season, 2 Full.
+Bec has entered 3 races this season, 3 Full.
 
 ```{r a-bec-mclucas-plot-2021-2022}
 plotly_athlete("2021-2022","Bec McLucas", len_season=24)
@@ -9402,14 +9464,14 @@ table_athlete_course(dt_all_long, tri_cols, "2019-2020","Billie Murphy", "int")
 
 ## Helen Murphy {#a-helen-murphy}
 
-Helen has 14 entries over 2 seasons.
+Helen has 15 entries over 2 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Helen's entries within seasons.
 
 
 ### 2021-2022
 
-Helen has entered 1 race this season, 1 Full.
+Helen has entered 2 races this season, 2 Full.
 
 ```{r a-helen-murphy-plot-2021-2022}
 plotly_athlete("2021-2022","Helen Murphy", len_season=24)
@@ -9485,14 +9547,14 @@ table_athlete_course(dt_all_long, tri_cols, "2020-2021","Ben Murphy", "full")
 
 ## Ashleigh Murphy {#a-ashleigh-murphy}
 
-Ashleigh has 9 entries over 2 seasons.
+Ashleigh has 10 entries over 2 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Ashleigh's entries within seasons.
 
 
 ### 2021-2022
 
-Ashleigh has entered 1 race this season, 1 Full.
+Ashleigh has entered 2 races this season, 2 Full.
 
 ```{r a-ashleigh-murphy-plot-2021-2022}
 plotly_athlete("2021-2022","Ashleigh Murphy", len_season=24)
@@ -9528,14 +9590,14 @@ table_athlete_course(dt_all_long, tri_cols, "2020-2021","Ashleigh Murphy", "int"
 
 ## Greg Murphy {#a-greg-murphy}
 
-Greg has 1 entry over 1 season.
+Greg has 2 entries over 1 season.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Greg's entries within seasons.
 
 
 ### 2021-2022
 
-Greg has entered 1 race this season, 1 Intermediate.
+Greg has entered 2 races this season, 2 Intermediate.
 
 ```{r a-greg-murphy-plot-2021-2022}
 plotly_athlete("2021-2022","Greg Murphy", len_season=24)
@@ -9754,14 +9816,14 @@ table_athlete_course(dt_all_long, tri_cols, "2020-2021","Darren Murray", "int")
 
 ## Owen Nagorcka {#a-owen-nagorcka}
 
-Owen has 2 entries over 1 season.
+Owen has 3 entries over 1 season.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Owen's entries within seasons.
 
 
 ### 2021-2022
 
-Owen has entered 2 races this season, 2 Full.
+Owen has entered 3 races this season, 3 Full.
 
 ```{r a-owen-nagorcka-plot-2021-2022}
 plotly_athlete("2021-2022","Owen Nagorcka", len_season=24)
@@ -10229,14 +10291,14 @@ table_athlete_course(dt_all_long, tri_cols, "2019-2020","Trent Ousby", "full")
 
 ## Annika Parker {#a-annika-parker}
 
-Annika has 3 entries over 2 seasons.
+Annika has 4 entries over 2 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Annika's entries within seasons.
 
 
 ### 2021-2022
 
-Annika has entered 2 races this season, 2 Intermediate.
+Annika has entered 3 races this season, 3 Intermediate.
 
 ```{r a-annika-parker-plot-2021-2022}
 plotly_athlete("2021-2022","Annika Parker", len_season=24)
@@ -10406,14 +10468,14 @@ table_athlete_course(dt_all_long, tri_cols, "2018-2019","Glenn Payne", "double")
 
 ## Clive Pearce {#a-clive-pearce}
 
-Clive has 47 entries over 4 seasons.
+Clive has 48 entries over 4 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Clive's entries within seasons.
 
 
 ### 2021-2022
 
-Clive has entered 2 races this season, 2 Full.
+Clive has entered 3 races this season, 3 Full.
 
 ```{r a-clive-pearce-plot-2021-2022}
 plotly_athlete("2021-2022","Clive Pearce", len_season=24)
@@ -10688,14 +10750,14 @@ table_athlete_course(dt_all_long, tri_cols, "2020-2021","Carol Ririnui", "int")
 
 ## Hollie Robards {#a-hollie-robards}
 
-Hollie has 42 entries over 4 seasons.
+Hollie has 43 entries over 4 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Hollie's entries within seasons.
 
 
 ### 2021-2022
 
-Hollie has entered 3 races this season, 3 Full.
+Hollie has entered 4 races this season, 4 Full.
 
 ```{r a-hollie-robards-plot-2021-2022}
 plotly_athlete("2021-2022","Hollie Robards", len_season=24)
@@ -10801,14 +10863,14 @@ table_athlete_course(dt_all_long, tri_cols, "2018-2019","Hollie Robards", "doubl
 
 ## Gerard Robards {#a-gerard-robards}
 
-Gerard has 52 entries over 4 seasons.
+Gerard has 53 entries over 4 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Gerard's entries within seasons.
 
 
 ### 2021-2022
 
-Gerard has entered 3 races this season, 3 Full.
+Gerard has entered 4 races this season, 4 Full.
 
 ```{r a-gerard-robards-plot-2021-2022}
 plotly_athlete("2021-2022","Gerard Robards", len_season=24)
@@ -10914,14 +10976,14 @@ table_athlete_course(dt_all_long, tri_cols, "2018-2019","Gerard Robards", "doubl
 
 ## Kaleb Robards {#a-kaleb-robards}
 
-Kaleb has 37 entries over 4 seasons.
+Kaleb has 38 entries over 4 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Kaleb's entries within seasons.
 
 
 ### 2021-2022
 
-Kaleb has entered 1 race this season, 1 Full.
+Kaleb has entered 2 races this season, 2 Full.
 
 ```{r a-kaleb-robards-plot-2021-2022}
 plotly_athlete("2021-2022","Kaleb Robards", len_season=24)
@@ -11472,14 +11534,14 @@ table_athlete_course(dt_all_long, tri_cols, "2018-2019","Jenny Scaysbrook", "int
 
 ## Peter Serone {#a-peter-serone}
 
-Peter has 31 entries over 4 seasons.
+Peter has 32 entries over 4 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Peter's entries within seasons.
 
 
 ### 2021-2022
 
-Peter has entered 3 races this season, 3 Full.
+Peter has entered 4 races this season, 4 Full.
 
 ```{r a-peter-serone-plot-2021-2022}
 plotly_athlete("2021-2022","Peter Serone", len_season=24)
@@ -11792,14 +11854,14 @@ table_athlete_course(dt_all_long, tri_cols, "2018-2019","Terence Simpson", "doub
 
 ## Vaughan Skelly {#a-vaughan-skelly}
 
-Vaughan has 41 entries over 4 seasons.
+Vaughan has 42 entries over 4 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Vaughan's entries within seasons.
 
 
 ### 2021-2022
 
-Vaughan has entered 2 races this season, 2 Full.
+Vaughan has entered 3 races this season, 3 Full.
 
 ```{r a-vaughan-skelly-plot-2021-2022}
 plotly_athlete("2021-2022","Vaughan Skelly", len_season=24)
@@ -12317,9 +12379,28 @@ table_athlete_course(dt_all_long, tri_cols, "2018-2019","Deidre Stein", "full")
 
 ## Jeff Stella {#a-jeff-stella}
 
-Jeff has 25 entries over 2 seasons.
+Jeff has 26 entries over 3 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Jeff's entries within seasons.
+
+
+### 2021-2022
+
+Jeff has entered 1 race this season, 1 Intermediate.
+
+```{r a-jeff-stella-plot-2021-2022}
+plotly_athlete("2021-2022","Jeff Stella", len_season=24)
+```
+
+
+
+#### Detailed results for Intermediate course
+
+```{r a-jeff-stella-table-2021-2022-int}
+table_athlete_course(dt_all_long, tri_cols, "2021-2022","Jeff Stella", "int")
+
+```
+
 
 
 ### 2019-2020
@@ -12459,14 +12540,14 @@ table_athlete_course(dt_all_long, tri_cols, "2018-2019","Jamie Stoddart", "full"
 
 ## Peter Stowe {#a-peter-stowe}
 
-Peter has 37 entries over 4 seasons.
+Peter has 38 entries over 4 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Peter's entries within seasons.
 
 
 ### 2021-2022
 
-Peter has entered 4 races this season, 4 Full.
+Peter has entered 5 races this season, 5 Full.
 
 ```{r a-peter-stowe-plot-2021-2022}
 plotly_athlete("2021-2022","Peter Stowe", len_season=24)
@@ -12548,14 +12629,14 @@ table_athlete_course(dt_all_long, tri_cols, "2018-2019","Peter Stowe", "full")
 
 ## Scott Styman {#a-scott-styman}
 
-Scott has 59 entries over 4 seasons.
+Scott has 60 entries over 4 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Scott's entries within seasons.
 
 
 ### 2021-2022
 
-Scott has entered 4 races this season, 4 Full.
+Scott has entered 5 races this season, 5 Full.
 
 ```{r a-scott-styman-plot-2021-2022}
 plotly_athlete("2021-2022","Scott Styman", len_season=24)
@@ -12824,14 +12905,14 @@ table_athlete_course(dt_all_long, tri_cols, "2018-2019","Tamy Taylor", "full")
 
 ## Timothy Taylor {#a-timothy-taylor}
 
-Timothy has 25 entries over 3 seasons.
+Timothy has 26 entries over 3 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Timothy's entries within seasons.
 
 
 ### 2021-2022
 
-Timothy has entered 1 race this season, 1 Intermediate.
+Timothy has entered 2 races this season, 2 Intermediate.
 
 ```{r a-timothy-taylor-plot-2021-2022}
 plotly_athlete("2021-2022","Timothy Taylor", len_season=24)
@@ -13007,14 +13088,14 @@ table_athlete_course(dt_all_long, tri_cols, "2018-2019","Zoe Taylor-West", "int"
 
 ## Craig Telling {#a-craig-telling}
 
-Craig has 38 entries over 4 seasons.
+Craig has 39 entries over 4 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Craig's entries within seasons.
 
 
 ### 2021-2022
 
-Craig has entered 2 races this season, 2 Full.
+Craig has entered 3 races this season, 3 Full.
 
 ```{r a-craig-telling-plot-2021-2022}
 plotly_athlete("2021-2022","Craig Telling", len_season=24)
@@ -13152,14 +13233,14 @@ table_athlete_course(dt_all_long, tri_cols, "2018-2019","Garrett Thompson", "ful
 
 ## Scott Thomson {#a-scott-thomson}
 
-Scott has 60 entries over 4 seasons.
+Scott has 61 entries over 4 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Scott's entries within seasons.
 
 
 ### 2021-2022
 
-Scott has entered 3 races this season, 3 Full.
+Scott has entered 4 races this season, 3 Full and 1 Intermediate.
 
 ```{r a-scott-thomson-plot-2021-2022}
 plotly_athlete("2021-2022","Scott Thomson", len_season=24)
@@ -13171,6 +13252,14 @@ plotly_athlete("2021-2022","Scott Thomson", len_season=24)
 
 ```{r a-scott-thomson-table-2021-2022-full}
 table_athlete_course(dt_all_long, tri_cols, "2021-2022","Scott Thomson", "full")
+
+```
+
+
+#### Detailed results for Intermediate course
+
+```{r a-scott-thomson-table-2021-2022-int}
+table_athlete_course(dt_all_long, tri_cols, "2021-2022","Scott Thomson", "int")
 
 ```
 
@@ -13281,14 +13370,14 @@ table_athlete_course(dt_all_long, tri_cols, "2018-2019","Scott Thomson", "double
 
 ## Sebastian Thomson {#a-sebastian-thomson}
 
-Sebastian has 57 entries over 4 seasons.
+Sebastian has 58 entries over 4 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Sebastian's entries within seasons.
 
 
 ### 2021-2022
 
-Sebastian has entered 3 races this season, 3 Full.
+Sebastian has entered 4 races this season, 3 Full and 1 Intermediate.
 
 ```{r a-sebastian-thomson-plot-2021-2022}
 plotly_athlete("2021-2022","Sebastian Thomson", len_season=24)
@@ -13300,6 +13389,14 @@ plotly_athlete("2021-2022","Sebastian Thomson", len_season=24)
 
 ```{r a-sebastian-thomson-table-2021-2022-full}
 table_athlete_course(dt_all_long, tri_cols, "2021-2022","Sebastian Thomson", "full")
+
+```
+
+
+#### Detailed results for Intermediate course
+
+```{r a-sebastian-thomson-table-2021-2022-int}
+table_athlete_course(dt_all_long, tri_cols, "2021-2022","Sebastian Thomson", "int")
 
 ```
 
@@ -13370,14 +13467,14 @@ table_athlete_course(dt_all_long, tri_cols, "2018-2019","Sebastian Thomson", "in
 
 ## Ava Thomson {#a-ava-thomson}
 
-Ava has 35 entries over 3 seasons.
+Ava has 36 entries over 3 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Ava's entries within seasons.
 
 
 ### 2021-2022
 
-Ava has entered 2 races this season, 1 Intermediate and 1 Full.
+Ava has entered 3 races this season, 2 Intermediate and 1 Full.
 
 ```{r a-ava-thomson-plot-2021-2022}
 plotly_athlete("2021-2022","Ava Thomson", len_season=24)
@@ -13443,6 +13540,30 @@ plotly_athlete("2019-2020","Ava Thomson", len_season=27)
 
 ```{r a-ava-thomson-table-2019-2020-int}
 table_athlete_course(dt_all_long, tri_cols, "2019-2020","Ava Thomson", "int")
+
+```
+
+## Eloise Thomson {#a-eloise-thomson}
+
+Eloise has 1 entry over 1 season.
+
+Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Eloise's entries within seasons.
+
+
+### 2021-2022
+
+Eloise has entered 1 race this season, 1 Intermediate.
+
+```{r a-eloise-thomson-plot-2021-2022}
+plotly_athlete("2021-2022","Eloise Thomson", len_season=24)
+```
+
+
+
+#### Detailed results for Intermediate course
+
+```{r a-eloise-thomson-table-2021-2022-int}
+table_athlete_course(dt_all_long, tri_cols, "2021-2022","Eloise Thomson", "int")
 
 ```
 
@@ -14656,14 +14777,14 @@ table_athlete_course(dt_all_long, tri_cols, "2018-2019","Mark Whiticker", "full"
 
 ## Scott Wildin {#a-scott-wildin}
 
-Scott has 12 entries over 4 seasons.
+Scott has 13 entries over 4 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Scott's entries within seasons.
 
 
 ### 2021-2022
 
-Scott has entered 1 race this season, 1 Full.
+Scott has entered 2 races this season, 2 Full.
 
 ```{r a-scott-wildin-plot-2021-2022}
 plotly_athlete("2021-2022","Scott Wildin", len_season=24)
@@ -14737,9 +14858,28 @@ table_athlete_course(dt_all_long, tri_cols, "2018-2019","Scott Wildin", "full")
 
 ## Greg Williamson {#a-greg-williamson}
 
-Greg has 4 entries over 1 season.
+Greg has 5 entries over 2 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Greg's entries within seasons.
+
+
+### 2021-2022
+
+Greg has entered 1 race this season, 1 Full.
+
+```{r a-greg-williamson-plot-2021-2022}
+plotly_athlete("2021-2022","Greg Williamson", len_season=24)
+```
+
+
+
+#### Detailed results for Full course
+
+```{r a-greg-williamson-table-2021-2022-full}
+table_athlete_course(dt_all_long, tri_cols, "2021-2022","Greg Williamson", "full")
+
+```
+
 
 
 ### 2020-2021
@@ -14841,14 +14981,14 @@ table_athlete_course(dt_all_long, tri_cols, "2019-2020","Shelley Winder", "full"
 
 ## Wendy Wise {#a-wendy-wise}
 
-Wendy has 38 entries over 4 seasons.
+Wendy has 39 entries over 4 seasons.
 
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. Race cancellations are shown on the plot with the letter "C". Season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare Wendy's entries within seasons.
 
 
 ### 2021-2022
 
-Wendy has entered 4 races this season, 4 Full.
+Wendy has entered 5 races this season, 5 Full.
 
 ```{r a-wendy-wise-plot-2021-2022}
 plotly_athlete("2021-2022","Wendy Wise", len_season=24)
