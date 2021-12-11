@@ -166,6 +166,47 @@ table_record(dt_all_long[season=="2021-2022"], tri_cols, "int", "Run")
 ```
 
 
+## Race 12: 11 Dec 2021 {#r-2021-12-11}
+
+A total of 58 competitors entered. 
+
+
+### Full
+
+52 competitors entered the course, achieving 25 new overall PBs and 65 new split PBs: 17 in the pool, 25 on the bike, and 23 on the run.
+
+```{r plot-race-12-full-FALSE-2021-2022}
+plotly_race(dt_all_long, tri_cols, "2021-2022",12, "full",FALSE)
+```
+    
+    
+
+#### Detailed results for Full course
+
+2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-12-full-FALSE-2021-2022}
+table_race(dt_all_long[season=="2021-2022"], tri_cols, 12, "full",FALSE)
+```
+
+
+### Intermediate
+
+6 competitors entered the course, achieving 3 new overall PBs and 10 new split PBs: 4 in the pool, 3 on the bike, and 3 on the run.
+
+```{r plot-race-12-int-FALSE-2021-2022}
+plotly_race(dt_all_long, tri_cols, "2021-2022",12, "int",FALSE)
+```
+    
+    
+
+#### Detailed results for Intermediate course
+
+2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-12-int-FALSE-2021-2022}
+table_race(dt_all_long[season=="2021-2022"], tri_cols, 12, "int",FALSE)
+```
+
+
 ## Race 11: 04 Dec 2021 {#r-2021-12-04}
 
 A total of 48 competitors entered, 6 for the first time this season. 

@@ -1,0 +1,12 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Time	Lap 1	Lap 2	Lap 3	Difference	% Back	% Winning	% Average	% Median
+1	160	Jeffrey Stella	Jeffrey	Stella	Intermediate	40:29.2	7:33.3	23:27.7	9:28.2	-	-	100%	18.79%	18.84%
+2	214	Timothy TAYLOR			Intermediate	41:52.7	7:43.8	23:09.8	10:59.1	+1:23.5	+3.44%	96.68%	16.00%	16.05%
+3	287	Madeline Smith	Madeline	Smith	Intermediate	46:15.6	6:24.4	25:36.6	14:14.5	+5:46.4	+14.26%	87.52%	7.22%	7.26%
+4	59	Eloise Thomson	Eloise	Thomson	Intermediate	53:30.4	6:57.0	29:12.3	17:21.1	+13:01.2	+32.16%	75.67%	-7.32%	-7.26%
+5	62	Scott Thomson	Scott	Thomson	Intermediate	53:36.2	6:58.0	29:18.5	17:19.7	+13:07.0	+32.40%	75.53%	-7.51%	-7.46%
+6	293	Cohen Parker	Cohen	Parker	Intermediate	1:03:24.5	9:44.7	34:26.1	19:13.7	+22:55.3	+56.62%	63.85%	-27.18%	-27.11%
+-	35	Judy Murray	Judy	Murray	Intermediate	DNS				-	-	-	-	-
+-	101	Liam Foyster	Liam	Foyster	Intermediate	DNS				-	-	-	-	-
+-	141	Erin Davoren	Erin	Davoren	Intermediate	DNS				-	-	-	-	-
+-	205	Karen Nixon	Karen	Nixon	Intermediate	DNS				-	-	-	-	-
+-	292	Annika Parker	Annika	Parker	Intermediate	DNS				-	-	-	-	-

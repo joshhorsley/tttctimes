@@ -194,6 +194,7 @@ dt_all_long[Name=="Adrian", Name := "Adrian Bartlett"]
 dt_all_long[Name=="Lorraine Basset", Name := "Lorraine Bassett"]
 
 dt_all_long[tolower(Name) %in% c("jo colja"), Name := "Joanne Colja"]
+dt_all_long[tolower(Name) %in% c("sam coleman"), Name := "Sam Colman"]
 
 dt_all_long[Name=="Charlotte Dance-Wilson", Name := "Charlotte Dancewilson"]
 dt_all_long[Name=="Erin Daveron", Name := "Erin Davoren"]
