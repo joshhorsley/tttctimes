@@ -168,12 +168,12 @@ table_record(dt_all_long[season=="2021-2022"], tri_cols, "int", "Run")
 
 ## Race 12: 11 Dec 2021 {#r-2021-12-11}
 
-A total of 58 competitors entered. 
+A total of 58 competitors entered. [Club Report](http://www.twintownstriathlon.org.au/?p=6328){target="_blank"}.
 
 
 ### Full
 
-52 competitors entered the course, achieving 25 new overall PBs and 65 new split PBs: 17 in the pool, 25 on the bike, and 23 on the run.
+52 competitors entered the course, achieving 25 new overall PBs and 64 new split PBs: 16 in the pool, 25 on the bike, and 23 on the run.
 
 ```{r plot-race-12-full-FALSE-2021-2022}
 plotly_race(dt_all_long, tri_cols, "2021-2022",12, "full",FALSE)
@@ -209,7 +209,7 @@ table_race(dt_all_long[season=="2021-2022"], tri_cols, 12, "int",FALSE)
 
 ## Race 11: 04 Dec 2021 {#r-2021-12-04}
 
-A total of 48 competitors entered, 6 for the first time this season. 
+A total of 48 competitors entered, 6 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=6268){target="_blank"}.
 
 
 ### Full

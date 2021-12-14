@@ -8,6 +8,20 @@ apply_col <- function(x,...) {
 
 apply_col.gg <- function(g, tri_cols){
   
+  
+  level_index <- which(c("Swim",
+          "Ride",
+          "Run",
+          "Swim (PB)",
+          "Ride (PB)",
+          "Run (PB)",
+          "Swim (record)",
+          "Ride (record)",
+          "Run (record)",
+          "Swim (invalid)",
+          "Ride (invalid)",
+          "Run (invalid)") %in% g$data$part_plot)
+  
   g + scale_fill_manual("Part",
                         values = c(Swim = tri_cols$swim,
                                    Ride = tri_cols$ride,
@@ -20,7 +34,7 @@ apply_col.gg <- function(g, tri_cols){
                                    `Run (record)` = tri_cols$record,
                                    `Swim (invalid)` = tri_cols$invalid,
                                    `Ride (invalid)` = tri_cols$invalid,
-                                   `Run (invalid)` = tri_cols$invalid)) +
+                                   `Run (invalid)` = tri_cols$invalid)[level_index]) +
     scale_color_manual("Part",
                        values = c(Swim = NA,
                                   Ride = NA,
@@ -33,7 +47,7 @@ apply_col.gg <- function(g, tri_cols){
                                   `Run (record)` = tri_cols$run,
                                   `Swim (invalid)` = tri_cols$swim,
                                   `Ride (invalid)` = tri_cols$ride,
-                                  `Run (invalid)` = tri_cols$run))
+                                  `Run (invalid)` = tri_cols$run)[level_index])
 }
 
 apply_col.datatables <- function(tab, tri_cols){
