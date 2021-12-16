@@ -62,7 +62,7 @@ race_video <- function(i_date_ymd, j,j_is_champ,fps) {
   dt_i[, stage_3 := total_mins_sort]
   
   dt_i_prep <- melt.data.table(dt_i,
-                  id.vars = c("place_name", "part", "total_mins_sort","place_overall_recalc","total_overall_mins","part_plot"),
+                  id.vars = c("place_name", "part", "total_mins_sort","place_overall_recalc","total_overall_mins","part_plot","place_cum_recalc"),
                   measure.vars = c("stage_0","stage_1","stage_2","stage_3"),
                   variable.name = "stage",
                   value.name = "duration_at_stage")
@@ -113,6 +113,11 @@ race_video <- function(i_date_ymd, j,j_is_champ,fps) {
 if(!dir.exists("video")) dir.create("video")
 
 if(FALSE) {
+  i_date_ymd <- "2021-12-11"
+  j <- "full"
+  j_is_champ <- FALSE
+  fps <- 30
+  
   race_video("2021-12-11", "full",FALSE,30)
   race_video("2021-12-11", "int",FALSE,30)
 }
