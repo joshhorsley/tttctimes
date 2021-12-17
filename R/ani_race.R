@@ -1,123 +1,119 @@
-library(ggplot2)
-library(gganimate)
-library(data.table)
-
-
-# Example https://stackoverflow.com/questions/52830938/how-to-gganimate-a-stacked-bar-graph
-
-# df <- structure(list(name = c("variable", "variable", "variable",    
-#                               "variable", "variable", "variable", "variable", "variable", "variable", 
-#                               "variable", "variable", "variable"),
-#                      groups = structure(c(3L, 3L, 3L, 2L, 2L, 2L, 1L, 1L, 1L, 4L, 4L, 4L),
-#                                         .Label = c("group 1", "group 2", "group 3", "group 4"),
-#                                         class = "factor"),
-#                      score = structure(c(4L,3L, 2L, 1L, 2L, 1L, 3L, 2L, 1L, 3L, 2L, 1L),
-#                                        .Label = c("4","3", "2", "1"),
-#                                        class = c("ordered", "factor")),
-#                      percentage = c(8,38, 38, 16, 40, 42.8571428571429, 40, 20, 40,5, 65, 30),
-#                      percentage2 = c("8%", "38%", "16%", "17.1%","40%", "42.9%", "40%", "20%", "40%", "5%", "65%", "30%"),
-#                      label = c(0.04,0.27, 0.65, 0.0857142857142857, 0.371428571428571, 0.785714285714286,0.2, 0.5, 0.8, 0.025, 0.375, 0.85)),
-#                 row.names = c(NA, -12L), class = "data.frame")
-# 
-# 
-# df$c <- ave(df$percentage, df$group, FUN=cumsum)
-# df <- df[order(df$groups, df$score, df$c), ]
-# 
-# 
-# g <- ggplot(df, aes(x = name, y = c, fill = score, group = score)) +
-#   geom_col(position = "identity", width = 0.8) +
-#   coord_flip() +
-#   labs(title = "{closest_state}") +
-#   # geom_label(aes(y = c, label = percentage2)) +
-#   scale_fill_manual(values = c("blue", "green", "red", "brown"), 
-#                     guide= guide_legend(reverse = TRUE), drop = FALSE) +
-#   transition_states(groups, transition_length = 2, state_length = 1)
-# 
-# 
-# df$c <- round(runif(n = nrow(df))*100,0)
-# 
-# df$c <- c(0,0,0,
-#           10,10,10,
-#           10,40,40,
-#           10,40,50
-#           )
-
-
-race_video <- function(i_date_ymd, j,j_is_champ,fps) {
+race_video <- function(i_date_ymd, j,j_is_champ,fps, scaling = 2L) {
   
   
   dt_i <- dt_all_long[date_ymd==i_date_ymd & course == j & j_is_champ == (is_champ)][(started)]
-
-
-  dt_i[(valid_overall), place_name := paste0(place_overall_recalc," ", Name)]
-  dt_i[!(valid_overall), place_name := paste0("TBC ", Name)]
+  
+  n_athletes <- length(unique(dt_i$Name))
+  
+  dt_prep_new <- dt_i[rep(1:(n_athletes*3), each = 7), .(Name, part, part_plot, name_last, name_first, cumulative_mins, place_cum_recalc, isPB_cumulative )]
   
   
-  # Prep dataframe for animation
-  dt_i[, stage_0 := 0]
+  # Define animation stages
+  dt_prep_new[, stage_E := rep(c(0L,1L,1L,2L,2L,3L,3L),n_athletes*3)] # Extend
+  dt_prep_new[, stage_R := rep(c(0L,0L,1L,1L,2L,2L,3L),n_athletes*3)] # Re-order
+  dt_prep_new[, stage_overall := rep(1:7, n_athletes*3)]
   
-  dt_i[, stage_1 := total_mins_sort[which(part=="Swim")], by = place_name]
-  dt_i[, stage_2 := total_mins_sort[c(which(part=="Swim"),rep(which(part=="Ride"),2))], by = place_name]
+  setorder(dt_prep_new, name_last, stage_E, stage_R, part)
   
-  dt_i[, stage_3 := total_mins_sort]
+  # set widths for extensions
+  dt_prep_new[stage_E==0L, width := 0]
+  dt_prep_new[stage_E==1L, width := cumulative_mins[which(part=="Swim")], by = .(Name, stage_overall)]
+  dt_prep_new[stage_E==2L, width := cumulative_mins[c(which(part=="Swim"),rep(which(part=="Ride"),2))], by = .(Name, stage_overall)]
+  dt_prep_new[stage_E==3L, width := cumulative_mins]
   
-  dt_i_prep <- melt.data.table(dt_i,
-                  id.vars = c("place_name", "part", "total_mins_sort","place_overall_recalc","total_overall_mins","part_plot","place_cum_recalc"),
-                  measure.vars = c("stage_0","stage_1","stage_2","stage_3"),
-                  variable.name = "stage",
-                  value.name = "duration_at_stage")
   
-  setorder(dt_i_prep,place_name, stage, -part)
+  # set vertical orders
+  dt_prep_new[stage_R==0L, place := order(name_last, name_first), by = .(part, stage_overall)]
+  dt_prep_new[stage_R==1L, place := place_cum_recalc[which(part=="Swim")], by = .(Name, stage_overall)]
+  dt_prep_new[stage_R==2L, place := place_cum_recalc[which(part=="Ride")], by = .(Name, stage_overall)]
+  dt_prep_new[stage_R==3L, place := place_cum_recalc[which(part=="Run")], by = .(Name, stage_overall)]
   
-  dt_i_prep[, stage := as.integer(substr(stage, 7,7))]
   
-  dt_i_prep[, part_plot := droplevels(part_plot)]
+  setorder(dt_prep_new, name_last, stage_E, stage_R, -part)
   
-  # dt_i_prep[, group := paste0(place_name, "-",part_plot)]
-
-
-  g <- ggplot(dt_i_prep, aes(y = - place_overall_recalc, x = duration_at_stage, fill = part_plot, col = part_plot, group = place_name)) +
-  # g <- ggplot(dt_i_prep, aes(y = - place_overall_recalc, x = duration_at_stage, fill = part_plot, col = part_plot,group = group)) +
+  
+  break_step <- ifelse( max(dt_prep_new$cumulative_mins, na.rm=TRUE) > 100, 20, 10)
+  lim_max <- max(dt_prep_new$cumulative_mins, na.rm=TRUE)
+  
+  name_position <- -30
+  
+  g <- ggplot(dt_prep_new, aes(y = - place, x = width, fill = part_plot, col = part_plot, group = Name)) +
     geom_col(orientation = "y", position = "identity", width = 0.8) +
-    labs(title = paste0(format(as.Date(i_date_ymd), "%d %b %Y"), " ", dt_i$course_nice[1])) +
-    # labs(title = "{closest_state}") +
-    # labs(title = "11 Dec 2021", subtitle = "{next_state}") +
-    scale_y_continuous("", breaks = -dt_i$place_overall_recalc,
-                       labels = dt_i$place_name, minor_breaks = NULL,
-                       limits = range(c(0,min(-dt_i$place_overall_recalc)-1))) +
+    labs(title = paste0(format(as.Date(i_date_ymd), "%d %b %Y"), " ", ifelse(j_is_champ,"Club Championship",as.character(dt_i$course_nice[1])))) +
+    geom_text(x=name_position, aes(label = Name), show.legend = FALSE, hjust = "left", col = "Black") +
+    scale_y_continuous("",
+                       breaks = -seq(n_athletes),
+                       minor_breaks = -seq(n_athletes),
+                       labels = seq(n_athletes))+
     theme_minimal() +
     theme(legend.position="bottom",
           plot.title = element_text(size=20))
+
+  g <- g + scale_x_continuous("Time (mins)", breaks = seq(0,150, break_step), minor_breaks = seq(0,150, 5),position = "top", limits = c(name_position,lim_max))
   
-  g <- myscale_x_racetime(g)
   g <- apply_col(g, tri_cols)
   
-  g <- g + transition_states(stage, transition_length = c(10,30,20), state_length = 3, wrap = FALSE)
+  # Apply animation
+  g <- g + transition_states(stage_overall, transition_length = 1, state_length = 6, wrap = FALSE)
   
-  # g <- g + transition_reveal(total_mins_sort, keep_last = TRUE)
-
-  n_athletes <- length(unique(dt_i$Name))
-
-  g_an <- animate(g, duration = 10, fps = fps,
-                  height = 150 + 16*n_athletes, width=700, res = 100, device = "png",
-                  renderer = ffmpeg_renderer(format = "mp4",options = list(codec="libx264", pix_fmt ="yuv420p")))
-
+  g_an <- animate(g, duration = 18, fps = fps,
+                  height = scaling*(150 + 16*n_athletes), width=scaling*700, res = scaling*100, device = "png",
+                  renderer = ffmpeg_renderer(format = "mp4",
+                                             options = list(codec="libx264",
+                                                            pix_fmt ="yuv420p",
+                                                            vf = 'pad="width=ceil(iw/2)*2:height=ceil(ih/2)*2"'))) # avoid error: [libx264 @ 0x7fe29e811c00] height not divisible by 2 (700x869)
+  
+  
   path_out <- file.path("video",
-                        paste0(paste0(c(i_date_ymd, j,j_is_champ),collapse = "-"),".mp4"))
+                        paste0(paste0(c(i_date_ymd, j,{ if(j_is_champ) {"champ"}}),collapse = "-"),".mp4"))
   
   anim_save(path_out, g_an)
-
+  
 }
+  
+
+# n_stages <- 7
+# 
+# for(i in 1:(n_stages-1)) {
+#   do_animation_stage(dt_prep_new, i, 60)
+# }
+# 
+# control_content <- paste0(paste0("file '", seq(n_stages-1), ".mp4'"),collapse = "\n")
+# 
+# 
+# control_file <- "video_temp/video_list.txt"
+# write(control_content, control_file)
+
+# system(command = paste0("ls video_temp/"))
+# system(command = paste0("cd video_temp && ffmpeg -y -f concat -i video_list.txt -c copy out.mp4"))
 
 
+
+
+
+# if(!dir.exists("video_temp")) dir.create("video_temp")
 if(!dir.exists("video")) dir.create("video")
 
 if(FALSE) {
-  i_date_ymd <- "2021-12-11"
+  i_date_ymd <- "2021-12-18"
   j <- "full"
   j_is_champ <- FALSE
-  fps <- 30
+  fps <- 2
+  fps <- 60
   
-  race_video("2021-12-11", "full",FALSE,30)
+  race_video("2021-12-18", "full",FALSE,fps)
+  race_video("2021-12-18", "int",FALSE,fps)
+  
+  race_video("2021-12-11", "full",FALSE,2)
   race_video("2021-12-11", "int",FALSE,30)
+  
+  
+  do_arrange(dt_i_prep2, 1)
+  do_arrange(dt_i_prep2, 2)
+  do_arrange(dt_i_prep2, 3)
+  
+  
+  do_extend(dt_i_prep2, 1)
+  do_extend(dt_i_prep2, 2)
+  do_extend(dt_i_prep2, 3)
 }
