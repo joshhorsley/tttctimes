@@ -1,4 +1,4 @@
-race_video <- function(i_date_ymd, j,j_is_champ,fps, scaling = 2L) {
+race_video <- function(i_date_ymd, j,j_is_champ,fps, duration  =18L, scaling = 2L) {
   
   
   dt_i <- dt_all_long[date_ymd==i_date_ymd & course == j & j_is_champ == (is_champ)][(started)]
@@ -29,18 +29,33 @@ race_video <- function(i_date_ymd, j,j_is_champ,fps, scaling = 2L) {
   dt_prep_new[stage_R==3L, place := place_cum_recalc[which(part=="Run")], by = .(Name, stage_overall)]
   
   
+  dt_prep_new[, place_last := shift(place,2), by = .(Name, part)]
+  dt_prep_new[stage_overall >=4, place_diff := place - place_last]
+
+  
+  dt_prep_new[stage_overall %in% c(5,7) & place_diff < 0, `:=`(change_type = "up", place_text_up = paste0("\u2191", " ", -place_diff))]
+  dt_prep_new[stage_overall  %in% c(5,7) & place_diff > 0, `:=`(change_type = "down", place_text_down = paste0("\u2193", " ", place_diff))]
+  dt_prep_new[stage_overall  %in% c(5,7) & place_diff == 0, `:=`(change_type = "equal",place_text_eq = paste0("-"))]
+  
+  
+  dt_prep_new[Name=="Josh Horsley"]
+  
   setorder(dt_prep_new, name_last, stage_E, stage_R, -part)
   
   
   break_step <- ifelse( max(dt_prep_new$cumulative_mins, na.rm=TRUE) > 100, 20, 10)
   lim_max <- max(dt_prep_new$cumulative_mins, na.rm=TRUE)
   
-  name_position <- -30
+  name_position <- -35
+  place_change_offset <- -10
   
   g <- ggplot(dt_prep_new, aes(y = - place, x = width, fill = part_plot, col = part_plot, group = Name)) +
     geom_col(orientation = "y", position = "identity", width = 0.8) +
     labs(title = paste0(format(as.Date(i_date_ymd), "%d %b %Y"), " ", ifelse(j_is_champ,"Club Championship",as.character(dt_i$course_nice[1])))) +
     geom_text(x=name_position, aes(label = Name), show.legend = FALSE, hjust = "left", col = "Black") +
+    geom_text(x = name_position + place_change_offset, aes(label = place_text_up), show.legend = FALSE, hjust = "left", col = tri_cols$ride) +
+    geom_text(x = name_position + place_change_offset, aes(label = place_text_down), show.legend = FALSE, hjust = "left", col = tri_cols$run) +
+    geom_text(x = name_position + place_change_offset, aes(label = place_text_eq), show.legend = FALSE, hjust = "left", col = tri_cols$swim) +
     scale_y_continuous("",
                        breaks = -seq(n_athletes),
                        minor_breaks = -seq(n_athletes),
@@ -49,14 +64,14 @@ race_video <- function(i_date_ymd, j,j_is_champ,fps, scaling = 2L) {
     theme(legend.position="bottom",
           plot.title = element_text(size=20))
 
-  g <- g + scale_x_continuous("Time (mins)", breaks = seq(0,150, break_step), minor_breaks = seq(0,150, 5),position = "top", limits = c(name_position,lim_max))
+  g <- g + scale_x_continuous("Time (mins)", breaks = seq(0,150, break_step), minor_breaks = seq(0,150, 5),position = "top", limits = c(name_position + place_change_offset,lim_max))
   
   g <- apply_col(g, tri_cols)
   
   # Apply animation
   g <- g + transition_states(stage_overall, transition_length = 1, state_length = 6, wrap = FALSE)
   
-  g_an <- animate(g, duration = 18, fps = fps,
+  g_an <- animate(g, duration = duration, fps = fps,
                   height = scaling*(150 + 16*n_athletes), width=scaling*700, res = scaling*100, device = "png",
                   renderer = ffmpeg_renderer(format = "mp4",
                                              options = list(codec="libx264",
@@ -95,7 +110,7 @@ race_video <- function(i_date_ymd, j,j_is_champ,fps, scaling = 2L) {
 if(!dir.exists("video")) dir.create("video")
 
 if(FALSE) {
-  i_date_ymd <- "2021-12-18"
+  i_date_ymd <- "2021-12-11"
   j <- "full"
   j_is_champ <- FALSE
   fps <- 2
@@ -104,16 +119,7 @@ if(FALSE) {
   race_video("2021-12-18", "full",FALSE,fps)
   race_video("2021-12-18", "int",FALSE,fps)
   
-  race_video("2021-12-11", "full",FALSE,2)
-  race_video("2021-12-11", "int",FALSE,30)
-  
-  
-  do_arrange(dt_i_prep2, 1)
-  do_arrange(dt_i_prep2, 2)
-  do_arrange(dt_i_prep2, 3)
-  
-  
-  do_extend(dt_i_prep2, 1)
-  do_extend(dt_i_prep2, 2)
-  do_extend(dt_i_prep2, 3)
+  race_video("2021-12-11", "full",FALSE,fps)
+  race_video("2021-12-11", "int",FALSE,fps)
+
 }

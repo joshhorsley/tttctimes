@@ -168,7 +168,7 @@ table_record(dt_all_long[season=="2021-2022"], tri_cols, "int", "Run")
 
 ## Race 13: 18 Dec 2021 {#r-2021-12-18}
 
-A total of 54 competitors entered, 4 for the first time this season. 
+A total of 54 competitors entered, 4 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=6335){target="_blank"}.
 
 
 ### Full
