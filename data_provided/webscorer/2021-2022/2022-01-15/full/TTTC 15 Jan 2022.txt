@@ -1,0 +1,50 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Time	Lap 1	Lap 2	Lap 3	Difference	% Back	% Winning	% Average	% Median
+1	1	Simon Harradence	Simon	Harradence	Full	49:41.7	7:54.1	24:47.9	16:59.6	-	-	100%	22.65%	22.49%
+2	46	Kyle Mooney	Kyle	Mooney	Full	51:37.6	8:17.1	25:30.1	17:50.4	+1:55.9	+3.89%	96.26%	19.64%	19.47%
+3	31	Christian Andrews	Christian	Andrews	Full	53:17.0	8:02.2	25:37.9	19:36.8	+3:35.3	+7.22%	93.27%	17.07%	16.89%
+4	145	Nick O'Reilly			Full	54:50.3	9:10.7	27:02.2	18:37.3	+5:08.6	+10.35%	90.62%	14.64%	14.46%
+5	47	Ben Hall	Ben	Hall	Full	55:10.7	7:56.1	25:45.4	21:29.3	+5:29.0	+11.03%	90.06%	14.12%	13.93%
+6	107	Marcel Van Kampen	Marcel	Van Kampen	Full	55:18.5	8:08.7	25:33.2	21:36.6	+5:36.8	+11.30%	89.85%	13.91%	13.73%
+7	133	Carl Patterson	Carl	Patterson	Full	56:29.2	7:26.2	27:19.5	21:43.5	+6:47.5	+13.67%	87.98%	12.08%	11.89%
+8	151	Craig Telling	Craig	Telling	Full	57:31.0	9:29.4	26:43.0	21:18.7	+7:49.3	+15.74%	86.40%	10.48%	10.29%
+9	20	Gerard Robards	Gerard	Robards	Full	58:23.1	10:10.4	26:37.7	21:35.1	+8:41.4	+17.49%	85.12%	9.12%	8.93%
+10	192	James Mourant	James	Mourant	Full	58:36.2	8:40.3	27:20.7	22:35.2	+8:54.5	+17.93%	84.80%	8.78%	8.59%
+11	63	Sebastian Thomson	Sebastian	Thomson	Full	59:04.7	9:44.3	27:51.6	21:28.9	+9:23.0	+18.88%	84.12%	8.05%	7.85%
+12	62	Scott Thomson	Scott	Thomson	Full	59:07.1	8:18.5	29:25.6	21:23.0	+9:25.4	+18.96%	84.06%	7.98%	7.79%
+13	7	Alex Gilks	Alex	Gilks	Full	59:13.2	9:17.0	29:03.1	20:53.2	+9:31.5	+19.17%	83.92%	7.82%	7.63%
+14	39	Vaughan Skelly	Vaughan	Skelly	Full	1:00:26.8	9:25.6	29:37.5	21:23.7	+10:45.1	+21.64%	82.21%	5.92%	5.72%
+15	204	Lucas Nixon-Hind	Lucas	Nixon-Hind	Full	1:02:57.8	37:15.3	25:39.8	0:02.6	+13:16.1	+26.70%	78.93%	2.00%	1.79%
+16	53	Joanne Colja	Joanne	Colja	Full	1:03:35.2	9:28.9	30:33.6	23:32.7	+13:53.5	+27.95%	78.15%	1.03%	0.82%
+17	5	Jenny Scaysbrook	Jenny	Scaysbrook	Full	1:03:45.3	8:46.1	29:03.2	25:55.9	+14:03.6	+28.29%	77.95%	0.77%	0.56%
+18	10	Virginia Jones	Virginia	Jones	Full	1:04:28.1	9:45.2	31:38.8	23:04.0	+14:46.4	+29.73%	77.08%	-0.34%	-0.56%
+19	220	Amy Morland	Amy	Morland	Full	1:04:45.6	9:45.6	32:32.7	22:27.4	+15:03.9	+30.31%	76.74%	-0.80%	-1.01%
+20	17	Richard Mourant	Richard	Mourant	Full	1:05:34.9	10:41.9	30:40.7	24:12.3	+15:53.2	+31.97%	75.78%	-2.08%	-2.29%
+21	105	Darren Jones	Darren	Jones	Full	1:06:09.7	11:12.6	30:23.9	24:33.2	+16:28.0	+33.14%	75.11%	-2.98%	-3.20%
+22	65	David Emery	David	Emery	Full	1:06:14.7	10:52.9	32:24.1	22:57.7	+16:33.0	+33.30%	75.02%	-3.11%	-3.33%
+23	75	Kipp Freeman	Kipp	Freeman	Full	1:06:45.9	8:43.6	37:39.0	20:23.2	+17:04.2	+34.35%	74.43%	-3.92%	-4.14%
+24	80	Mark Collinson	Mark	Collinson	Full	1:07:18.3	11:00.5	31:31.1	24:46.7	+17:36.6	+35.44%	73.84%	-4.76%	-4.98%
+25	37	Jeff Murray	Jeff	Murray	Full	1:07:36.0	11:20.1	32:30.0	23:45.8	+17:54.3	+36.03%	73.51%	-5.22%	-5.44%
+26	299	Katie Kissell	Katie	Kissell	Full	1:07:59.5	11:21.1	33:32.6	23:05.8	+18:17.8	+36.82%	73.09%	-5.83%	-6.05%
+27	182	Sharyn KLEIN	Sharyn	KLEIN	Full	1:08:47.1	9:52.7	35:38.0	23:16.5	+19:05.4	+38.41%	72.25%	-7.06%	-7.29%
+28	18	Hollie Robards	Hollie	Robards	Full	1:12:05.0	9:26.5	37:19.1	25:19.4	+22:23.3	+45.05%	68.94%	-12.20%	-12.43%
+29	286	Peter Rudland	Peter	Rudland	Full	1:13:01.7	9:58.9	35:29.2	27:33.7	+23:20.0	+46.95%	68.05%	-13.67%	-13.91%
+30	32	Guy Davoren	Guy	Davoren	Full	1:14:19.2	11:50.6	39:25.6	23:03.0	+24:37.5	+49.55%	66.87%	-15.68%	-15.92%
+31	130	Melanie Duff	Melanie	Duff	Full	1:14:21.4	11:17.8	37:45.1	25:18.5	+24:39.7	+49.63%	66.83%	-15.74%	-15.98%
+32	298	Jason Littlewood	Jason	Littlewood	Full	1:17:14.2	11:02.6	38:19.9	27:51.7	+27:32.5	+55.42%	64.34%	-20.22%	-20.47%
+33	86	Warren Copping	Warren	Copping	Full	1:18:03.5	12:20.8	38:25.8	27:16.8	+28:21.8	+57.07%	63.66%	-21.50%	-21.75%
+34	76	Greg Freeman	Greg	Freeman	Full	1:30:34.2	13:45.0	43:16.4	33:32.8	+40:52.5	+82.25%	54.87%	-40.97%	-41.27%
+-	9	Stuart Crawford	Stuart	Crawford	Full	DNS				-	-	-	-	-
+-	14	Clive Pearce	Clive	Pearce	Full	DNS				-	-	-	-	-
+-	30	Alex Torrance	Alex	Torrance	Full	DNS				-	-	-	-	-
+-	70	Kev Bannerman	Kev	Bannerman	Full	DNS				-	-	-	-	-
+-	71	Danny Warner	Danny	Warner	Full	DNS				-	-	-	-	-
+-	81	Scott Bornholt	Scott	Bornholt	Full	DNS				-	-	-	-	-
+-	88	John King	John	King	Full	DNS				-	-	-	-	-
+-	97	Kaleb Robards	Kaleb	Robards	Full	DNS				-	-	-	-	-
+-	99	Scott Styman	Scott	Styman	Full	DNS				-	-	-	-	-
+-	104	Viv Wright	Viv	Wright	Full	DNS				-	-	-	-	-
+-	106	Tim Eade	Tim	Eade	Full	DNS				-	-	-	-	-
+-	162	Peter Stowe	Peter	Stowe	Full	DNS				-	-	-	-	-
+-	196	Bec McLucas	Bec	McLucas	Full	DNS				-	-	-	-	-
+-	198	Aaron Neylan	Aaron	Neylan	Full	DNS				-	-	-	-	-
+-	274	Josh Horsley	Josh	Horsley	Full	DNS				-	-	-	-	-

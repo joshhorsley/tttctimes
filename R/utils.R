@@ -20,7 +20,7 @@ apply_col.gg <- function(g, tri_cols){
           "Run (record)",
           "Swim (invalid)",
           "Ride (invalid)",
-          "Run (invalid)") %in% g$data$part_plot)
+          "Run (invalid)") %in% union(g$data$part_plot, g$data$part_plot_pb))
   
   g + scale_fill_manual("Part",
                         values = c(Swim = tri_cols$swim,

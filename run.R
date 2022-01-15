@@ -21,7 +21,7 @@ tri_cols <- list(pb = "pink",
 
 
 dt_season_import <- fread("data_provided/season_definitions.csv")
-dt_season_import[, date_ymd := as.IDate(date_ymd, format = "%d/%m/%y")]
+dt_season_import[, date_ymd := as.IDate(date_ymd, format = "%d/%m/%Y")]
 
 
 # Add multiple courses per race
@@ -310,7 +310,7 @@ stopifnot(n_multi==0)
 
 
 dt_problems <- fread("data_provided/webscorer/webscorer_problems.csv")
-dt_problems[, date_ymd := as.IDate(date_ymd, format = "%d/%m/%y")]
+dt_problems[, date_ymd := as.IDate(date_ymd, format = "%d/%m/%Y")]
 
 dt_all_long[dt_problems, on = .(race_number, date_ymd, Name, part), `:=`(split_valid = i.split_valid, cumulative_valid = i.cumulative_valid)]
 dt_all_long[is.na(split_valid), split_valid := TRUE]
