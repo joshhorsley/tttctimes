@@ -312,13 +312,13 @@ stopifnot(n_multi==0)
 dt_problems <- fread("data_provided/webscorer/webscorer_problems.csv")
 dt_problems[, date_ymd := as.IDate(date_ymd, format = "%d/%m/%Y")]
 
-dt_all_long[dt_problems, on = .(race_number, date_ymd, Name, part), `:=`(split_valid = i.split_valid, cumulative_valid = i.cumulative_valid)]
+dt_all_long[dt_problems, on = .(date_ymd, Name, part), `:=`(split_valid = i.split_valid, cumulative_valid = i.cumulative_valid)]
 dt_all_long[is.na(split_valid), split_valid := TRUE]
 dt_all_long[is.na(cumulative_valid), cumulative_valid := TRUE]
 
 
 # overall_invalid if cumulative time at end of run is invalid
-dt_all_long[, valid_overall := cumulative_valid[which(part=="Run")], by = .(season, race_number, Name)]
+dt_all_long[, valid_overall := cumulative_valid[which(part=="Run")], by = .(date_ymd, Name)]
 dt_all_long[is.na(valid_overall), valid_overall := TRUE]
 
 # times that only have participation invalid
@@ -357,7 +357,8 @@ dt_all_long[date_ymd=="2021-02-13" & Name == "Colin Woodward", course := "int"]
 
 # Set row order
 dt_all_long[, part := ordered(as.character(part), levels = c("Swim","Ride","Run"))]
-setorder(dt_all_long, Name, race_number, part)
+# setorder(dt_all_long, Name, race_number, part)
+setorder(dt_all_long, Name, date_ymd, part)
 
 
 # Format time
@@ -399,34 +400,34 @@ dt_all_long[(has_handicap) & (handicap_negative), handicap_seconds := -handicap_
 
 # apply handiap only when it doesn't make the swim time negative
 dt_all_long[(has_handicap) & part == "Swim" & handicap_seconds + duration_seconds > 0, handicap_valid := TRUE]
-dt_all_long[, handicap_valid := any(handicap_valid),  by = .(Name, season, race_number)]
+dt_all_long[, handicap_valid := any(handicap_valid),  by = .(Name, date_ymd)]
 
 dt_all_long[(handicap_valid) & part == "Swim", duration_seconds_original := duration_seconds ]
 dt_all_long[(handicap_valid) & part == "Swim", duration_seconds := duration_seconds + handicap_seconds ]
 
 
 
-dt_all_long[, cumulative_seconds := cumsum(duration_seconds), by = .(Name, season, race_number)]
+dt_all_long[, cumulative_seconds := cumsum(duration_seconds), by = .(Name, date_ymd)]
 
 # propagate handicap corrections
 dt_all_long[(handicap_valid), duration_hms := seconds_to_hms(duration_seconds)]
 
 dt_all_long[, overall_seconds := as.numeric(seconds(hms(overall_hms)))]
-dt_all_long[(handicap_valid), overall_seconds := cumulative_seconds[which(part=="Run")], by = .(Name, season, race_number)]
+dt_all_long[(handicap_valid), overall_seconds := cumulative_seconds[which(part=="Run")], by = .(Name, date_ymd)]
 dt_all_long[(handicap_valid), overall_hms := seconds_to_hms(overall_seconds)]
 
 
 # Check for any large disagreement between cumulative run and recorded total and resolve
 dt_all_long[part == "Run" & abs(cumulative_seconds - overall_seconds) > 1, total_disagree := TRUE]
-dt_all_long[,total_disagree := any(total_disagree,na.rm = TRUE),by = .(Name, race_number)]
+dt_all_long[,total_disagree := any(total_disagree,na.rm = TRUE),by = .(Name, date_ymd)]
 
 dt_all_long[(total_disagree) & part=="Run" & (cumulative_valid), total_resolve := "cumulative"]
 dt_all_long[(total_disagree) & part=="Run" & !(cumulative_valid), total_resolve := "imported"]
-dt_all_long[(total_disagree),total_resolve := total_resolve[which(part=="Run")],by = .(Name, season, race_number)]
+dt_all_long[(total_disagree),total_resolve := total_resolve[which(part=="Run")],by = .(Name, date_ymd)]
 
 dt_all_long[(total_disagree) & total_resolve =="cumulative",
             `:=`(total_resolved = TRUE,
-                 overall_seconds = cumulative_seconds[which(part=="Run")]), by = .(Name, season, race_number)]
+                 overall_seconds = cumulative_seconds[which(part=="Run")]), by = .(Name, date_ymd)]
 
 dt_all_long[(total_disagree) & total_resolve =="imported" & part=="Run", cumulative_seconds := overall_seconds]
 dt_all_long[(total_disagree) & total_resolve =="imported", total_resolved := TRUE]
@@ -437,7 +438,7 @@ stopifnot(n_total_resolve_errors==0)
 
 
 # Catch cases where overall time is invalid but a run time has been recorded
-dt_all_long[(started) & is.na(overall_seconds), overall_seconds := max(cumulative_seconds), by = .(Name, season, race_number)]
+dt_all_long[(started) & is.na(overall_seconds), overall_seconds := max(cumulative_seconds), by = .(Name, date_ymd)]
 
 
 dt_all_long[, duration_mins := duration_seconds/60]

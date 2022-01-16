@@ -1,5 +1,5 @@
 --- 
-title: "Twinnies Times (unofficial)"
+title: "Twinnies Times"
 author: "Created by Josh Horsley, updated `r as.integer(format(Sys.time(),'%d'))` `r format(Sys.time(),'%b %Y')`"
 site: bookdown::bookdown_site
 documentclass: book

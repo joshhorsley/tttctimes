@@ -117,9 +117,9 @@ plotly_time_series(dt_all_long[season=="',i_season,'"],len_season=',len_season,'
     
     
     
-    paste0("\n## Best Times - ", j_course_nice,' {#best-times-',j,'-',i_season,"}
-  \n### Overall\n\n",
-  "The best valid times for each competitor are ranked in the plot and table below.\n",
+    paste0("\n## Best Times - ", j_course_nice,' {#best-times-',j,'-',i_season,"}",
+  "\n\nThe fastest valid overall and split times in the ",i_season," season for each competitor are ranked in the plot and tables below.\n\n",
+  "\n\n### Overall\n\n",
   '
 ```{r plot-record-',j,'-',i_season,'}
 plotly_record(dt_all_long[season=="',i_season,'"], tri_cols, "',j,'")

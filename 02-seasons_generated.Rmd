@@ -81,10 +81,13 @@ plotly_time_series(dt_all_long[season=="2021-2022"],len_season=24)
 
 
 ## Best Times - Full {#best-times-full-2021-2022}
-  
+
+The fastest valid overall and split times in the 2021-2022 season for each competitor are ranked in the plot and tables below.
+
+
+
 ### Overall
 
-The best valid times for each competitor are ranked in the plot and table below.
 
 ```{r plot-record-full-2021-2022}
 plotly_record(dt_all_long[season=="2021-2022"], tri_cols, "full")
@@ -124,10 +127,13 @@ table_record(dt_all_long[season=="2021-2022"], tri_cols, "full", "Run")
 
 
 ## Best Times - Intermediate {#best-times-int-2021-2022}
-  
+
+The fastest valid overall and split times in the 2021-2022 season for each competitor are ranked in the plot and tables below.
+
+
+
 ### Overall
 
-The best valid times for each competitor are ranked in the plot and table below.
 
 ```{r plot-record-int-2021-2022}
 plotly_record(dt_all_long[season=="2021-2022"], tri_cols, "int")
@@ -168,7 +174,7 @@ table_record(dt_all_long[season=="2021-2022"], tri_cols, "int", "Run")
 
 ## Race 17: 15 Jan 2022 {#r-2022-01-15}
 
-A total of 41 competitors entered, 9 for the first time this season. 
+A total of 41 competitors entered, 9 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=6362){target="_blank"}.
 
 
 ### Full
@@ -573,10 +579,13 @@ plotly_time_series(dt_all_long[season=="2020-2021"],len_season=26)
 
 
 ## Best Times - Full {#best-times-full-2020-2021}
-  
+
+The fastest valid overall and split times in the 2020-2021 season for each competitor are ranked in the plot and tables below.
+
+
+
 ### Overall
 
-The best valid times for each competitor are ranked in the plot and table below.
 
 ```{r plot-record-full-2020-2021}
 plotly_record(dt_all_long[season=="2020-2021"], tri_cols, "full")
@@ -616,10 +625,13 @@ table_record(dt_all_long[season=="2020-2021"], tri_cols, "full", "Run")
 
 
 ## Best Times - Intermediate {#best-times-int-2020-2021}
-  
+
+The fastest valid overall and split times in the 2020-2021 season for each competitor are ranked in the plot and tables below.
+
+
+
 ### Overall
 
-The best valid times for each competitor are ranked in the plot and table below.
 
 ```{r plot-record-int-2020-2021}
 plotly_record(dt_all_long[season=="2020-2021"], tri_cols, "int")
@@ -659,10 +671,13 @@ table_record(dt_all_long[season=="2020-2021"], tri_cols, "int", "Run")
 
 
 ## Best Times - Double Distance {#best-times-double-2020-2021}
-  
+
+The fastest valid overall and split times in the 2020-2021 season for each competitor are ranked in the plot and tables below.
+
+
+
 ### Overall
 
-The best valid times for each competitor are ranked in the plot and table below.
 
 ```{r plot-record-double-2020-2021}
 plotly_record(dt_all_long[season=="2020-2021"], tri_cols, "double")
@@ -1774,10 +1789,13 @@ plotly_time_series(dt_all_long[season=="2019-2020"],len_season=27)
 
 
 ## Best Times - Full {#best-times-full-2019-2020}
-  
+
+The fastest valid overall and split times in the 2019-2020 season for each competitor are ranked in the plot and tables below.
+
+
+
 ### Overall
 
-The best valid times for each competitor are ranked in the plot and table below.
 
 ```{r plot-record-full-2019-2020}
 plotly_record(dt_all_long[season=="2019-2020"], tri_cols, "full")
@@ -1817,10 +1835,13 @@ table_record(dt_all_long[season=="2019-2020"], tri_cols, "full", "Run")
 
 
 ## Best Times - Intermediate {#best-times-int-2019-2020}
-  
+
+The fastest valid overall and split times in the 2019-2020 season for each competitor are ranked in the plot and tables below.
+
+
+
 ### Overall
 
-The best valid times for each competitor are ranked in the plot and table below.
 
 ```{r plot-record-int-2019-2020}
 plotly_record(dt_all_long[season=="2019-2020"], tri_cols, "int")
@@ -1860,10 +1881,13 @@ table_record(dt_all_long[season=="2019-2020"], tri_cols, "int", "Run")
 
 
 ## Best Times - Double Distance {#best-times-double-2019-2020}
-  
+
+The fastest valid overall and split times in the 2019-2020 season for each competitor are ranked in the plot and tables below.
+
+
+
 ### Overall
 
-The best valid times for each competitor are ranked in the plot and table below.
 
 ```{r plot-record-double-2019-2020}
 plotly_record(dt_all_long[season=="2019-2020"], tri_cols, "double")
@@ -2960,10 +2984,13 @@ plotly_time_series(dt_all_long[season=="2018-2019"],len_season=25)
 
 
 ## Best Times - Full {#best-times-full-2018-2019}
-  
+
+The fastest valid overall and split times in the 2018-2019 season for each competitor are ranked in the plot and tables below.
+
+
+
 ### Overall
 
-The best valid times for each competitor are ranked in the plot and table below.
 
 ```{r plot-record-full-2018-2019}
 plotly_record(dt_all_long[season=="2018-2019"], tri_cols, "full")
@@ -3003,10 +3030,13 @@ table_record(dt_all_long[season=="2018-2019"], tri_cols, "full", "Run")
 
 
 ## Best Times - Intermediate {#best-times-int-2018-2019}
-  
+
+The fastest valid overall and split times in the 2018-2019 season for each competitor are ranked in the plot and tables below.
+
+
+
 ### Overall
 
-The best valid times for each competitor are ranked in the plot and table below.
 
 ```{r plot-record-int-2018-2019}
 plotly_record(dt_all_long[season=="2018-2019"], tri_cols, "int")
@@ -3046,10 +3076,13 @@ table_record(dt_all_long[season=="2018-2019"], tri_cols, "int", "Run")
 
 
 ## Best Times - Double Distance {#best-times-double-2018-2019}
-  
+
+The fastest valid overall and split times in the 2018-2019 season for each competitor are ranked in the plot and tables below.
+
+
+
 ### Overall
 
-The best valid times for each competitor are ranked in the plot and table below.
 
 ```{r plot-record-double-2018-2019}
 plotly_record(dt_all_long[season=="2018-2019"], tri_cols, "double")
