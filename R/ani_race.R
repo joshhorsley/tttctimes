@@ -110,7 +110,7 @@ race_video <- function(i_date_ymd, j,j_is_champ,fps, duration  =18L, scaling = 2
 if(!dir.exists("video")) dir.create("video")
 
 if(FALSE) {
-  i_date_ymd <- "2022-01-15"
+  i_date_ymd <- "2022-01-22"
   # j <- "full"
   j_is_champ <- FALSE
   fps <- 2

@@ -36,8 +36,8 @@ datatable_std(dt_season_show,col_ref_hide,escape = FALSE,ordering = FALSE)
 ## Participation - Total {#participation-total-2021-2022}
 
 ```{r}
-n_entries_all_season <- nrow(dt_all_long[season=="2021-2022"][(started) & part == "Swim"])
-n_athletes_season <- length(unique(dt_all_long[season=="2021-2022"][(started) & part == "Swim"]$Name))
+n_entries_all_season <- nrow(dt_all_long[season=="2021-2022"][part == "Swim"])
+n_athletes_season <- length(unique(dt_all_long[season=="2021-2022"][part == "Swim"]$Name))
 
 ```
 
@@ -57,7 +57,7 @@ table_part_total("2021-2022")
 ### By Race
 
 ```{r course_totals_2021-2022}
-dt_entry_type <- dt_all_long[season=="2021-2022"][(started) & part == "Swim", .(count = .N), by = course_nice]
+dt_entry_type <- dt_all_long[season=="2021-2022"][part == "Swim", .(count = .N), by = course_nice]
 setorder(dt_entry_type, course_nice)
 dt_entry_type[, text := paste0(count, " for ", course_nice)]
 ```
@@ -169,6 +169,47 @@ Season records are show in gold, split PBs are shown in pink, and invalid times 
   
 ```{r tab-record-int-Run-2021-2022}
 table_record(dt_all_long[season=="2021-2022"], tri_cols, "int", "Run")
+```
+
+
+## Race 18: 22 Jan 2022 {#r-2022-01-22}
+
+A total of 55 competitors entered, 5 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=6374){target="_blank"}.
+
+
+### Full
+
+47 competitors entered the course, achieving 10 new overall PBs and 29 new split PBs: 10 in the pool, 8 on the bike, and 11 on the run.
+
+```{r plot-race-18-full-FALSE-2021-2022}
+plotly_race(dt_all_long, tri_cols, "2021-2022",18, "full",FALSE)
+```
+    
+    
+
+#### Detailed results for Full course
+
+2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-18-full-FALSE-2021-2022}
+table_race(dt_all_long[season=="2021-2022"], tri_cols, 18, "full",FALSE)
+```
+
+
+### Intermediate
+
+8 competitors entered the course, achieving 1 new overall PBs and 3 new split PBs: 1 in the pool and 2 on the run.
+
+```{r plot-race-18-int-FALSE-2021-2022}
+plotly_race(dt_all_long, tri_cols, "2021-2022",18, "int",FALSE)
+```
+    
+    
+
+#### Detailed results for Intermediate course
+
+2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-18-int-FALSE-2021-2022}
+table_race(dt_all_long[season=="2021-2022"], tri_cols, 18, "int",FALSE)
 ```
 
 
@@ -297,12 +338,12 @@ table_race(dt_all_long[season=="2021-2022"], tri_cols, 12, "int",FALSE)
 
 ## Race 11: 04 Dec 2021 {#r-2021-12-04}
 
-A total of 48 competitors entered, 6 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=6268){target="_blank"}.
+A total of 48 competitors entered, 4 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=6268){target="_blank"}.
 
 
 ### Full
 
-33 competitors entered the course, achieving 11 new overall PBs and 27 new split PBs: 9 in the pool, 10 on the bike, and 8 on the run.
+33 competitors entered the course, achieving 13 new overall PBs and 33 new split PBs: 11 in the pool, 12 on the bike, and 10 on the run.
 
 ```{r plot-race-11-full-FALSE-2021-2022}
 plotly_race(dt_all_long, tri_cols, "2021-2022",11, "full",FALSE)
@@ -379,12 +420,12 @@ table_race(dt_all_long[season=="2021-2022"], tri_cols, 10, "int",FALSE)
 
 ## Race 9: 20 Nov 2021 {#r-2021-11-20}
 
-A total of 61 competitors entered, 13 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=6213){target="_blank"}.
+A total of 61 competitors entered, 8 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=6213){target="_blank"}.
 
 
 ### Full
 
-51 competitors entered the course, achieving 29 new overall PBs and 79 new split PBs: 26 in the pool, 33 on the bike, and 20 on the run.
+51 competitors entered the course, achieving 31 new overall PBs and 85 new split PBs: 28 in the pool, 35 on the bike, and 22 on the run.
 
 ```{r plot-race-9-full-FALSE-2021-2022}
 plotly_race(dt_all_long, tri_cols, "2021-2022",9, "full",FALSE)
@@ -402,7 +443,7 @@ table_race(dt_all_long[season=="2021-2022"], tri_cols, 9, "full",FALSE)
 
 ### Intermediate
 
-10 competitors entered the course, achieving 2 new overall PBs and 7 new split PBs: 3 in the pool, 2 on the bike, and 2 on the run.
+10 competitors entered the course, achieving 5 new overall PBs and 16 new split PBs: 6 in the pool, 5 on the bike, and 5 on the run.
 
 ```{r plot-race-9-int-FALSE-2021-2022}
 plotly_race(dt_all_long, tri_cols, "2021-2022",9, "int",FALSE)
@@ -420,12 +461,12 @@ table_race(dt_all_long[season=="2021-2022"], tri_cols, 9, "int",FALSE)
 
 ## Race 8: 13 Nov 2021 {#r-2021-11-13}
 
-A total of 64 competitors entered, 22 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=6193){target="_blank"}.
+A total of 64 competitors entered, 10 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=6193){target="_blank"}.
 
 
 ### Full
 
-59 competitors entered the course, achieving 34 new overall PBs and 88 new split PBs: 26 in the pool, 31 on the bike, and 31 on the run.
+59 competitors entered the course, achieving 46 new overall PBs and 124 new split PBs: 38 in the pool, 43 on the bike, and 43 on the run.
 
 ```{r plot-race-8-full-FALSE-2021-2022}
 plotly_race(dt_all_long, tri_cols, "2021-2022",8, "full",FALSE)
@@ -461,12 +502,12 @@ table_race(dt_all_long[season=="2021-2022"], tri_cols, 8, "int",FALSE)
 
 ## Race 7: 06 Nov 2021 {#r-2021-11-06}
 
-A total of 50 competitors entered, 50 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=6167){target="_blank"}.
+A total of 50 competitors entered, 13 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=6167){target="_blank"}.
 
 
 ### Full
 
-46 competitors entered the course.
+46 competitors entered the course, achieving 36 new overall PBs and 108 new split PBs: 36 in the pool, 36 on the bike, and 36 on the run.
 
 ```{r plot-race-7-full-FALSE-2021-2022}
 plotly_race(dt_all_long, tri_cols, "2021-2022",7, "full",FALSE)
@@ -484,7 +525,7 @@ table_race(dt_all_long[season=="2021-2022"], tri_cols, 7, "full",FALSE)
 
 ### Intermediate
 
-4 competitors entered the course.
+4 competitors entered the course, achieving 1 new overall PBs and 3 new split PBs: 1 in the pool, 1 on the bike, and 1 on the run.
 
 ```{r plot-race-7-int-FALSE-2021-2022}
 plotly_race(dt_all_long, tri_cols, "2021-2022",7, "int",FALSE)
@@ -497,6 +538,39 @@ plotly_race(dt_all_long, tri_cols, "2021-2022",7, "int",FALSE)
 2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-7-int-FALSE-2021-2022}
 table_race(dt_all_long[season=="2021-2022"], tri_cols, 7, "int",FALSE)
+```
+
+
+## Race 6: 30 Oct 2021 {#r-2021-10-30}
+
+A total of 58 competitors entered, 58 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=6152){target="_blank"}.
+
+
+### Full
+
+53 competitors entered the course.
+
+
+
+#### Detailed results for Full course
+
+2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-6-full-FALSE-2021-2022}
+table_race_part_only(dt_all_long, "2021-2022", 6, "full",FALSE)
+```
+
+
+### Intermediate
+
+5 competitors entered the course.
+
+
+
+#### Detailed results for Intermediate course
+
+2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-6-int-FALSE-2021-2022}
+table_race_part_only(dt_all_long, "2021-2022", 6, "int",FALSE)
 ```
 
 # Season 2020-2021
@@ -534,8 +608,8 @@ datatable_std(dt_season_show,col_ref_hide,escape = FALSE,ordering = FALSE)
 ## Participation - Total {#participation-total-2020-2021}
 
 ```{r}
-n_entries_all_season <- nrow(dt_all_long[season=="2020-2021"][(started) & part == "Swim"])
-n_athletes_season <- length(unique(dt_all_long[season=="2020-2021"][(started) & part == "Swim"]$Name))
+n_entries_all_season <- nrow(dt_all_long[season=="2020-2021"][part == "Swim"])
+n_athletes_season <- length(unique(dt_all_long[season=="2020-2021"][part == "Swim"]$Name))
 
 ```
 
@@ -555,7 +629,7 @@ table_part_total("2020-2021")
 ### By Race
 
 ```{r course_totals_2020-2021}
-dt_entry_type <- dt_all_long[season=="2020-2021"][(started) & part == "Swim", .(count = .N), by = course_nice]
+dt_entry_type <- dt_all_long[season=="2020-2021"][part == "Swim", .(count = .N), by = course_nice]
 setorder(dt_entry_type, course_nice)
 dt_entry_type[, text := paste0(count, " for ", course_nice)]
 ```
@@ -1744,8 +1818,8 @@ datatable_std(dt_season_show,col_ref_hide,escape = FALSE,ordering = FALSE)
 ## Participation - Total {#participation-total-2019-2020}
 
 ```{r}
-n_entries_all_season <- nrow(dt_all_long[season=="2019-2020"][(started) & part == "Swim"])
-n_athletes_season <- length(unique(dt_all_long[season=="2019-2020"][(started) & part == "Swim"]$Name))
+n_entries_all_season <- nrow(dt_all_long[season=="2019-2020"][part == "Swim"])
+n_athletes_season <- length(unique(dt_all_long[season=="2019-2020"][part == "Swim"]$Name))
 
 ```
 
@@ -1765,7 +1839,7 @@ table_part_total("2019-2020")
 ### By Race
 
 ```{r course_totals_2019-2020}
-dt_entry_type <- dt_all_long[season=="2019-2020"][(started) & part == "Swim", .(count = .N), by = course_nice]
+dt_entry_type <- dt_all_long[season=="2019-2020"][part == "Swim", .(count = .N), by = course_nice]
 setorder(dt_entry_type, course_nice)
 dt_entry_type[, text := paste0(count, " for ", course_nice)]
 ```
@@ -2939,8 +3013,8 @@ datatable_std(dt_season_show,col_ref_hide,escape = FALSE,ordering = FALSE)
 ## Participation - Total {#participation-total-2018-2019}
 
 ```{r}
-n_entries_all_season <- nrow(dt_all_long[season=="2018-2019"][(started) & part == "Swim"])
-n_athletes_season <- length(unique(dt_all_long[season=="2018-2019"][(started) & part == "Swim"]$Name))
+n_entries_all_season <- nrow(dt_all_long[season=="2018-2019"][part == "Swim"])
+n_athletes_season <- length(unique(dt_all_long[season=="2018-2019"][part == "Swim"]$Name))
 
 ```
 
@@ -2960,7 +3034,7 @@ table_part_total("2018-2019")
 ### By Race
 
 ```{r course_totals_2018-2019}
-dt_entry_type <- dt_all_long[season=="2018-2019"][(started) & part == "Swim", .(count = .N), by = course_nice]
+dt_entry_type <- dt_all_long[season=="2018-2019"][part == "Swim", .(count = .N), by = course_nice]
 setorder(dt_entry_type, course_nice)
 dt_entry_type[, text := paste0(count, " for ", course_nice)]
 ```

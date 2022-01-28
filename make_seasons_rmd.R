@@ -12,12 +12,12 @@ header <- paste0({
 
   body <- foreach(i_season = seasons, .combine = paste0) %do% {
     
-    course_avail_season <- unique(dt_all_long[(started) & season == i_season]$course)
+    course_avail_season <- unique(dt_all_long[season == i_season]$course)
     course_avail_season <- sort(ordered(course_avail_season, c("full", "int", "double")))
     
     race_numbers <- sort(unique(dt_all_long[season==i_season]$race_number))
     
-    any_entries <- i_season %in% unique(dt_all_long[(started)]$season)
+    any_entries <- i_season %in% unique(dt_all_long$season)
     
     len_season <- max(dt_season[season==i_season]$race_number)
     
@@ -62,8 +62,8 @@ datatable_std(dt_season_show,col_ref_hide,escape = FALSE,ordering = FALSE)
 ', {if(any_entries) {paste0('## Participation - Total {#participation-total-',i_season,'}
 
 ```{r}
-n_entries_all_season <- nrow(dt_all_long[season=="',i_season,'"][(started) & part == "Swim"])
-n_athletes_season <- length(unique(dt_all_long[season=="',i_season,'"][(started) & part == "Swim"]$Name))
+n_entries_all_season <- nrow(dt_all_long[season=="',i_season,'"][part == "Swim"])
+n_athletes_season <- length(unique(dt_all_long[season=="',i_season,'"][part == "Swim"]$Name))
 
 ```
 
@@ -83,7 +83,7 @@ table_part_total("',i_season,'")
 ### By Race
 
 ```{r course_totals_',i_season,'}
-dt_entry_type <- dt_all_long[season=="',i_season,'"][(started) & part == "Swim", .(count = .N), by = course_nice]
+dt_entry_type <- dt_all_long[season=="',i_season,'"][part == "Swim", .(count = .N), by = course_nice]
 setorder(dt_entry_type, course_nice)
 dt_entry_type[, text := paste0(count, " for ", course_nice)]
 ```
@@ -152,9 +152,9 @@ table_record(dt_all_long[season=="',i_season,'"], tri_cols, "',j,'", "',l,'")
 foreach (i=rev(race_numbers), .combine = paste0 ) %do% {
   
   
-  n_athletes <- nrow(dt_all_long[(started) & season==i_season & part == "Swim" & race_number == i])
+  n_athletes <- nrow(dt_all_long[season==i_season & part == "Swim" & race_number == i])
   
-  n_new_athletes <- nrow(dt_all_long[(started) & (isFirstRace )& season == i_season & part == "Swim" & race_number == i])
+  n_new_athletes <- nrow(dt_all_long[(isFirstRace )& season == i_season & part == "Swim" & race_number == i])
   text_new_athletes <- if(i==1 | n_new_athletes == 0) {
     ""
   } else {
@@ -197,7 +197,7 @@ foreach (j_counter=j_options, .combine = paste0 ) %do% {
   j <- i_courses[j_counter]
   j_is_champ <- i_is_champ[j_counter]
   
-  dt_i <- dt_all_long[season==i_season & race_number== i & course == j & j_is_champ == (is_champ)][(started)]
+  dt_i <- dt_all_long[season==i_season & race_number== i & course == j & j_is_champ == (is_champ)]
   
   n_athletes_j <- length(unique(dt_i[part=="Swim"]$Name))
   
@@ -215,6 +215,8 @@ foreach (j_counter=j_options, .combine = paste0 ) %do% {
   
   n_pb_splits_new <- sum(dt_pb_split_new$N)
   pb_overall_new <- nrow(dt_i[(isNewPB_overall) & part=="Swim"])
+  
+  part_only_j <- dt_i[1]$participation_only
   
   if(j=="teams"){
     n_pb_splits_new=0
@@ -237,7 +239,7 @@ foreach (j_counter=j_options, .combine = paste0 ) %do% {
     '.',
     
     '\n\n',
-    {if(j!="teams"){
+    {if(j!="teams" & !part_only_j){
       
 paste0('```{r plot-race-',i,'-',j,'-',j_is_champ,'-',i_season,'}
 plotly_race(dt_all_long, tri_cols, "',i_season,'",',i,', "',j,'",',j_is_champ,')
@@ -253,14 +255,29 @@ plotly_race(dt_all_long, tri_cols, "',i_season,'",',i,', "',j,'",',j_is_champ,')
 
 ',i_season ,' season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ',
-{if(j!="teams"){
+{if(j!="teams" & !part_only_j){
   
   paste0(
 '```{r tab-race-',i,'-',j,'-',j_is_champ,'-',i_season,'}
 table_race(dt_all_long[season=="',i_season,'"], tri_cols, ',i,', "',j,'",',j_is_champ,')
 ```
 
-')} else {
+')}},
+
+
+{if(j!="teams" & part_only_j){
+  
+  paste0(
+    '```{r tab-race-',i,'-',j,'-',j_is_champ,'-',i_season,'}
+table_race_part_only(dt_all_long, "',i_season,'", ',i,', "',j,'",',j_is_champ,')
+```
+
+')}
+  
+  
+},
+  
+  {if(j=="teams"){
   # team membership only
   paste0(
     '```{r tab-race-',i,'-',j,'-',j_is_champ,'-',i_season,'}

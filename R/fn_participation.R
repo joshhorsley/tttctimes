@@ -5,7 +5,7 @@
 
 plotly_time_series <- function(dt_all_long, len_season){
   
-  dt_entries <- dt_all_long[part=="Swim" & (started)]
+  dt_entries <- dt_all_long[part=="Swim"]
   
   
   dt_entries[, tooltext := paste0(Name, "\n",
@@ -67,7 +67,7 @@ plot_race_count <- function(dt_all_long,i_season, len_season){
   any_cancelled <- nrow(dt_season[season==i_season & (cancelled)]) > 0
   
 
-  dt_entries_race <- dt_all_long[season==i_season & part=="Swim" & (started),
+  dt_entries_race <- dt_all_long[season==i_season & part=="Swim",
                             .(count = .N,
                               date_ymd = date_ymd[1]),
                             by = .(race_number, course_nice)]
@@ -179,7 +179,7 @@ plotly_part_hist <- function(dt_all_long, len_season = NULL, do_all = FALSE){
                                        tool_tip_names(name_list[[1]])),
                                                          by = entries_total_all]
     
-    max_entries <- max(dt_entries_hist$entries_total_all)
+    max_entries <- max(dt_entries_hist$entries_total_all, na.rm=TRUE)
     
     setnames(dt_entries_hist, "entries_total_all", "entries_total_plot")
     
@@ -232,7 +232,7 @@ table_part_total <- function(i_season=NULL, do_all = FALSE) {
   
   if(!do_all) {
 
-    dt_entries_tab <- dt_all_long[(started) & season==i_season & part == "Swim" & (is_last_entry)]
+    dt_entries_tab <- dt_all_long[season==i_season & part == "Swim" & (is_last_entry)]
     setorder(dt_entries_tab, -entries_total, name_last)
     
     setcolorder(dt_entries_tab,

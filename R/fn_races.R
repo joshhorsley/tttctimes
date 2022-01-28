@@ -144,3 +144,33 @@ table_race_teams <- function(dt_all_long, tri_cols, i, j,j_is_champ) {
   
   return(tab_i)
 }
+
+
+table_race_part_only <- function(dt_all_long, i_season, i, j, j_is_champ) {
+  
+  dt_i <- dt_all_long[season==i_season & race_number == i & course==j & (is_champ) == j_is_champ][, .(name_last,part, athlete_link)]
+  
+  
+  setnames(dt_i,"athlete_link","Name")
+  
+  cols_retain_new_names <- c("Name")
+  
+  # col_ref_hide <- 1
+  col_ref_hide <- which(!(names(dt_i) %in% cols_retain_new_names))-1
+  
+  
+  
+  tab_i <- datatable_std(dt_i[part=="Swim"][order(name_last)], col_ref_hide, escape = FALSE)
+  
+  tab_i$sizingPolicy$browser$fill <- TRUE
+  
+  return(tab_i)
+  
+  
+}
+
+
+i_season <- "2021-2022"
+i=6
+j="full"
+j_is_champ <- FALSE

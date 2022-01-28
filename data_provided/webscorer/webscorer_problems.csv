@@ -749,3 +749,7 @@ date_ymd,Name,part,split_valid,cumulative_valid
 15/1/2022,Lucas Nixon-Hind,Swim,FALSE,FALSE
 15/1/2022,Lucas Nixon-Hind,Ride,FALSE,FALSE
 15/1/2022,Lucas Nixon-Hind,Run,FALSE,FALSE
+,,,,
+22/1/2022,David Emery,Swim,FALSE,FALSE
+22/1/2022,David Emery,Ride,FALSE,FALSE
+22/1/2022,David Emery,Run,FALSE,TRUE

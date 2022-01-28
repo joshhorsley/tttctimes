@@ -1,0 +1,14 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Adjusted time	Time	Lap 1	Lap 2	Lap 3	Handicap	Difference	% Back	% Winning	% Average	% Median
+1	130	Melanie Duff	Melanie	Duff	Intermediate	44:09.7	44:09.7	6:34.9	25:56.1	11:38.7	+0:00.0	-	-	100%	27.68%	24.28%
+2	166	Craig BROADHURST	Craig	BROADHURST	Intermediate	36:42.5	51:42.5	20:57.9	18:57.9	11:46.6	-15:00.0	+7:32.8	+17.09%	85.41%	15.32%	11.34%
+3	301	Odette Blacklock	Odette	Blacklock	Intermediate	41:20.3	56:20.3	21:18.8	25:36.8	9:24.7	-15:00.0	+12:10.6	+27.57%	78.39%	7.74%	3.40%
+4	214	Timothy Taylor	Timothy	Taylor	Intermediate	41:58.4	56:58.4	22:57.5	22:15.1	11:45.7	-15:00.0	+12:48.7	+29.01%	77.51%	6.70%	2.31%
+5	56	Aimee Harradence	Aimee	Harradence	Intermediate	44:39.9	59:39.9	22:16.4	26:26.5	10:57.0	-15:00.0	+15:30.2	+35.11%	74.02%	2.29%	-2.31%
+6	249	Robyn Barry	Robyn	Barry	Intermediate	49:47.3	1:04:47.3	22:09.1	27:06.8	15:31.4	-15:00.0	+20:37.6	+46.71%	68.16%	-6.10%	-11.09%
+7	59	Eloise Thomson	Eloise	Thomson	Intermediate	1:02:20.6	1:17:20.6	22:13.5	37:10.8	17:56.2	-15:00.0	+33:10.9	+75.14%	57.10%	-26.66%	-32.62%
+8	62	Scott Thomson	Scott	Thomson	Intermediate	1:02:32.5	1:17:32.5	22:13.5	37:31.6	17:47.4	-15:00.0	+33:22.8	+75.59%	56.95%	-26.98%	-32.96%
+-	51	Sue Van Den Broek	Sue	Van Den Broek	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	160	Jeff Stella	Jeffrey	Stella	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	240	Sally Kingston	Sally	Kingston	Intermediate	DNS	DNS				+0:00.0	-	-	-	-	-
+-	273	Christine Gannon	Christine	Gannon	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	287	Madeline Smith	Madeline	Smith	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-

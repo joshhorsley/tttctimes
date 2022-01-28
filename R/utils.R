@@ -191,12 +191,30 @@ format_place <- function(x, na_string = "NA") {
 
 
 
-seconds_to_hms <- function(x){
+seconds_to_hms <- function(x, second_round = c("no","round","ceiling","floor")[1],
+                           second_decimal = TRUE){
   x2 <- seconds_to_period(x)
-  sprintf("%02d:%02d:%0.1f",
+  
+  s <- second(x2)
+
+  s_out <- switch(second_round,
+                  no = s,
+                  round = round(s,0),
+                  ceiling = ceiling(s),
+                  floor = floor(s))
+  
+  
+  fstring <- if(second_decimal){
+    "%02d:%02d:%04.1f"
+  } else {
+    "%02d:%02d:%02d"
+  }
+  
+  
+  sprintf(fstring,
           hour(x2),
           minute(x2),
-          second(x2)
+          s_out
   )
 }
 

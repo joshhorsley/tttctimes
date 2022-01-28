@@ -17,6 +17,14 @@ tri_cols <- list(pb = "pink",
                  run = "#BF5324")
 
 
+# Time placeholders -------------------------------------------------------
+
+
+dummy_times <- list(Swim = "0:10:00.0",
+                    Ride = "0:30:00.0",
+                    Run = "0:20:00.0")
+
+
 # Season ------------------------------------------------------------------
 
 
@@ -77,15 +85,22 @@ dummy <- dt_season[, if(!dir.exists(dir_webscorer)) dir.create(dir_webscorer,rec
 dt_season[, path_webscorer := list.files(dir_webscorer,full.names = TRUE, pattern = "txt$"), by = dir_webscorer]
 
 
-dt_teams_manual <- fread("data_provided/teams_manual/teams.csv")
-dt_teams_manual[, date_ymd := as.IDate(date_ymd, format = "%d/%m/%y")]
+# manual regular only
+dt_regular_manual <- fread("data_provided/manual/participation_only.csv")
+dt_regular_manual[, date_ymd := as.IDate(date_ymd, format = "%d/%m/%Y")]
+
+regular_manual_dates <- unique(dt_regular_manual$date_ymd)
+
+# manual team participation
+dt_teams_manual <- fread("data_provided/manual/teams.csv")
+dt_teams_manual[, date_ymd := as.IDate(date_ymd, format = "%d/%m/%Y")]
 
 teams_manual_dates <- unique(dt_teams_manual$date_ymd)
 
 # have results
 
 dt_season[, have_results_webscorer := file.exists(path_webscorer)]
-dt_season[, have_results_manual := date_ymd %in% teams_manual_dates]
+dt_season[, have_results_manual := date_ymd %in% c(teams_manual_dates,regular_manual_dates)]
 dt_season[, have_results := (have_results_webscorer) | (have_results_manual)]
 
 dt_season[, participation_only := have_results_manual]
@@ -109,9 +124,9 @@ dt_teams_manual_long1 <- melt.data.table(dt_teams_manual,
                 variable.name = "racer_ref",
                 value.name = "Name")
 
-dt_teams_manual_long1[, Swim := "0:10:00.0"]
-dt_teams_manual_long1[, Ride := "0:30:00.0"]
-dt_teams_manual_long1[, Run := "0:20:00.0"]
+dt_teams_manual_long1[, Swim := dummy_times$Swim]
+dt_teams_manual_long1[, Ride := dummy_times$Ride]
+dt_teams_manual_long1[, Run := dummy_times$Run]
 
 dt_teams_manual_long <- melt.data.table(dt_teams_manual_long1,
                 id.vars = c("season","race_number","date_ymd", "Team No","racer_ref", "Name"),
@@ -129,6 +144,29 @@ new_cols <- c("course_nice","race_type","race_ref", "race_link")
 dt_teams_manual_long[dt_season, on = .(date_ymd, course, is_champ), (new_cols) := mget(new_cols)]
 
 setnames(dt_teams_manual_long, "Team No", "team_number")
+
+
+
+
+# Prep manual regular results ---------------------------------------------
+
+
+dt_regular_manual[, Swim := dummy_times$Swim]
+dt_regular_manual[, Ride := dummy_times$Ride]
+dt_regular_manual[, Run := dummy_times$Run]
+
+dt_regular_manual_long <- melt.data.table(dt_regular_manual,
+                                        id.vars = c("date_ymd","course","Name", "is_champ"),
+                                        measure.vars = c("Swim","Ride","Run"),
+                                        variable.name = c("part"),
+                                        value.name = c("duration_import"))
+
+dt_regular_manual_long[, started := TRUE]
+dt_regular_manual_long[, participation_only := TRUE]
+
+
+new_cols <- c("season", "race_number","course_nice","race_type","race_ref", "race_link")
+dt_regular_manual_long[dt_season, on = .(date_ymd, course, is_champ), (new_cols) := mget(new_cols)]
 
 
 # Load webscorer results --------------------------------------------------
@@ -177,8 +215,8 @@ dt_all_long <- melt.data.table(dt_all[(started)],
                                value.name = c("duration_import"))
 
 
-dt_all_long <- rbindlist(list(dt_all_long, dt_teams_manual_long), fill=TRUE)
-
+dt_all_long <- rbindlist(list(dt_all_long, dt_teams_manual_long, dt_regular_manual_long), fill=TRUE)
+dt_all_long[is.na(participation_only), participation_only := FALSE]
 
 # Name inconsistencies ----------------------------------------------------
 
@@ -192,6 +230,7 @@ dt_all_long[, Name := standardise_names(Name), by = row_id ]
 
 dt_all_long[Name=="Adrian", Name := "Adrian Bartlett"]
 dt_all_long[Name=="Lorraine Basset", Name := "Lorraine Bassett"]
+dt_all_long[Name=="Kevin Bannerman", Name := "Kev Bannerman"]
 
 dt_all_long[tolower(Name) %in% c("jo colja"), Name := "Joanne Colja"]
 dt_all_long[tolower(Name) %in% c("sam coleman"), Name := "Sam Colman"]
@@ -385,7 +424,6 @@ stopifnot(n_bad_columns==0)
 
 # get sign of handicap
 dt_all_long[(has_handicap), handicap_negative := substr(handicap_import,1,1)=="-"]
-dt_all_long[(handicap_negative)]$handicap_import
 
 dt_all_long[(has_handicap), handicap_prep := substring(handicap_import, 2)]
 
