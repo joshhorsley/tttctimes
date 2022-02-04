@@ -3,18 +3,8 @@
 # Functions ---------------------------------------------------------------
 
 
+source("R/req_packages.R")
 dummy <- lapply(list.files("R", full.names = TRUE), source)
-
-
-# Colours -----------------------------------------------------------------
-
-
-tri_cols <- list(pb = "pink",
-                 record = "gold",
-                 invalid = "grey",
-                 swim = "#2E63BC",
-                 ride = "#3B8544",
-                 run = "#BF5324")
 
 
 # Time placeholders -------------------------------------------------------
@@ -41,6 +31,7 @@ dt_season_import2 <- dt_season_import[, .(season,
                      race_number,
                      race_type,
                      cancelled,
+                     scheduled,
                      cancelled_reason,
                      report_id,
                      course = unlist(course_list)),
@@ -57,11 +48,14 @@ dt_season <- dt_season_import2[, .(season,
                                    date_ymd,
                                    race_type,
                                    cancelled,
+                                   scheduled,
                                    cancelled_reason,
                                    report_id,
                                    is_champ = unlist(is_champ)),
                                by =.(date_ymd, course)][order(season, race_number)]
 
+
+dt_season[is.na(scheduled),scheduled := TRUE ]
 
 dt_season[course=="full", course_nice := "Full"]
 dt_season[course=="full" & (is_champ), course_nice := "Club Championships"]
@@ -105,7 +99,7 @@ dt_season[, have_results := (have_results_webscorer) | (have_results_manual)]
 
 dt_season[, participation_only := have_results_manual]
 
-dt_season[, missing_results := !cancelled & !have_results]
+dt_season[, missing_results := !cancelled  & scheduled & !have_results]
 
 dt_season[, row_id := seq(.N)]
 
@@ -188,7 +182,6 @@ setcolorder(dt_all, new_cols)
 setnames(dt_all, c("Lap.1","Lap.2","Lap.3"), c("Swim", "Ride", "Run"))
 
 
-
 # Prep --------------------------------------------------------------------
 
 
@@ -218,80 +211,20 @@ dt_all_long <- melt.data.table(dt_all[(started)],
 dt_all_long <- rbindlist(list(dt_all_long, dt_teams_manual_long, dt_regular_manual_long), fill=TRUE)
 dt_all_long[is.na(participation_only), participation_only := FALSE]
 
+
 # Name inconsistencies ----------------------------------------------------
 
 
 dt_all_long[, row_id := seq(.N)]
 
-
 dt_all_long[, Name_import := Name]
+
 dt_all_long[, Name := standardise_names(Name), by = row_id ]
 
-
-dt_all_long[Name=="Adrian", Name := "Adrian Bartlett"]
-dt_all_long[Name=="Lorraine Basset", Name := "Lorraine Bassett"]
-dt_all_long[Name=="Kevin Bannerman", Name := "Kev Bannerman"]
-
-dt_all_long[tolower(Name) %in% c("jo colja"), Name := "Joanne Colja"]
-dt_all_long[tolower(Name) %in% c("sam coleman"), Name := "Sam Colman"]
-
-dt_all_long[Name=="Charlotte Dance-Wilson", Name := "Charlotte Dancewilson"]
-dt_all_long[Name=="Erin Daveron", Name := "Erin Davoren"]
-dt_all_long[tolower(Name) %in% c("dave de closey"), Name := "David De Closey"]
-dt_all_long[tolower(Name) %in% c("ian driffil"), Name := "Ian Driffill"]
-dt_all_long[Name=="Mel Duff", Name := "Melanie Duff"]
-
-dt_all_long[Name=="Tim Eade", Name := "Timothy Eade"]
-dt_all_long[Name=="Kristen Ellis", Name := "Kirsten Ellis"]
-
-dt_all_long[Name=="Nicholas Fawaz", Name := "Nick Fawaz"]
-dt_all_long[tolower(Name) %in% c("greg freeman"), Name := "Gregory Freeman"]
-
-dt_all_long[Name=="Trudie Gadaleta", Name := "Trudy Gadaleta"]
-
-dt_all_long[tolower(Name) %in% c("amanda hall"), Name := "Manda Hall"]
-dt_all_long[Bib=="241" & Name=="Robert", Name := "Robert Harris"]
-dt_all_long[tolower(Name) %in% c("cassie heaslip"), Name := "Cassandra Heaslip"]
-dt_all_long[tolower(Name) %in% c("joshua horsley"), Name := "Josh Horsley"]
-
-dt_all_long[Name=="Haydn Jenkins", Name := "Hayden Jenkins"]
-dt_all_long[tolower(Name) %in% c("virginia jones", "ginny jones"), Name := "Ginny Jones"]
-
-dt_all_long[Bib=="240" & Name=="Sally", Name := "Sally Kingston"]
-dt_all_long[tolower(Name)=="cody klein", Name := "Codie Klein"]
-dt_all_long[tolower(Name) %in% c("lydia kuschnirz"), Name := "Lydia Kuschmirz"]
-
-dt_all_long[tolower(Name) %in% c("valerie lambard"), Name := "Val Lambard"]
-dt_all_long[tolower(Name) %in% c("samatha leonard", "sam leonard"), Name := "Samantha Leonard"]
-
-dt_all_long[Bib=="237" & Name=="Kristin", Name := "Christin McIntosh"]
-dt_all_long[Name=="Rachel Meakes", Name := "Rachael Meakes"]
-dt_all_long[Name=="Adndrew Miller", Name := "Andrew Miller"]
-dt_all_long[Name=="Richard Morant", Name := "Richard Mourant"]
-
-dt_all_long[Name=="Lucas N", Name := "Lucas Nixon-Hind"]
-dt_all_long[tolower(Name) %in% c("karen nixon-hind"), Name := "Karen Nixon"]
-
-dt_all_long[Name=="Sean Oldburg", Name := "Shaun Oldbury"]
-
-dt_all_long[tolower(Name) %in% c("anika parker"), Name := "Annika Parker"]
-
-dt_all_long[tolower(Name) %in% c("kaleb robarda", "caleb robards"), Name := "Kaleb Robards"]
-dt_all_long[Name=="Nat Rogers", Name := "Natalie Rogers"]
-
-dt_all_long[tolower(Name) %in% c("wendy saunders"), Name := "Wendy Sanders"]
-dt_all_long[Name=="Vaughn Skelly", Name := "Vaughan Skelly"]
-dt_all_long[Name=="Matt Stanley", Name := "Matthew Stanley"]
-dt_all_long[Name=="Jeffrey Stella", Name := "Jeff Stella"]
-
-dt_all_long[Name=="Tim Taylor", Name := "Timothy Taylor"]
-dt_all_long[Name=="Will Taylor", Name := "William Taylor"]
-dt_all_long[Name=="Sebastian", Name := "Sebastian Thomson"]
-
-dt_all_long[Name=="Sue Hawkins", Name := "Sue Van Den Broek"]
-
-dt_all_long[tolower(Name) %in% c("jo ward", "joe ward"), Name := "Jolyon Ward"]
-dt_all_long[tolower(Name) %in% c("196", "shelly winder"), Name := "Shelley Winder"]
+dt_all_long[, Name_lower := tolower(Name)]
+dt_name_fix <- fread("data_provided/name_variations.csv")
+dt_name_fix[, name_in := tolower(name_in) ]
+dt_all_long[dt_name_fix, on = c(Name_lower = "name_in"), Name := i.name_out]
 
 
 if(FALSE) {

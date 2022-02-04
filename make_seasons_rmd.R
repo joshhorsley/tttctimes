@@ -40,6 +40,7 @@ dt_season_show <- dt_season[season=="',i_season,'"][(course=="full" | race_type 
                             # Date = date_ymd,
                             `Event type` = race_type,
                             cancelled,
+                            scheduled,
                             cancelled_reason,
                             have_results,
                             has_report,
@@ -52,7 +53,9 @@ dt_season_show[, Note := ""]
 dt_season_show[`Event type` != "Standard", Note := `Event type`]
 dt_season_show[(participation_only), Note:= paste0(Note, ifelse(Note=="",""," - "),"Participation results only ")]
 dt_season_show[(cancelled), Note:= paste0(Note, ifelse(Note=="",""," - "),"Cancelled due to ", cancelled_reason)]
-dt_season_show[!(cancelled) & !(have_results), Note := paste0(Note,ifelse(Note=="",""," - "), "Results not available")]
+dt_season_show[!(scheduled), Note:= paste0(Note, ifelse(Note=="",""," - "),"No race due to ", cancelled_reason)]
+dt_season_show[(scheduled) & !(cancelled) & !(have_results), Note := paste0(Note,ifelse(Note=="",""," - "), "Results not available")]
+
 
 col_ref_hide <- which(!(names(dt_season_show) %in% c("#","Date","Note","Club Report")))-1 # columns are indexed from 0 - row name?
 
@@ -94,7 +97,7 @@ The total number of entries by course are `r list_with_and(dt_entry_type$text)`.
 plot_race_count(dt_all_long,"',i_season,'",len_season=',len_season,')
 ```
 
-
+',{if(FALSE) {paste0('
 
 ### By Competitor
 
@@ -105,7 +108,7 @@ This plot shows the cumulative number of races entered by each competitor over t
 plotly_time_series(dt_all_long[season=="',i_season,'"],len_season=',len_season,')
 ```
 
-',
+')}},
 
   
   
@@ -243,17 +246,10 @@ foreach (j_counter=j_options, .combine = paste0 ) %do% {
       
 paste0('```{r plot-race-',i,'-',j,'-',j_is_champ,'-',i_season,'}
 plotly_race(dt_all_long, tri_cols, "',i_season,'",',i,', "',j,'",',j_is_champ,')
-```
-    
-    ')
+```\n\n')
     }},    
     
-    # tables
-    '
-
-#### Detailed results for ',i_courses_nice[j_counter],' course
-
-',i_season ,' season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+    i_season ,' season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ',
 {if(j!="teams" & !part_only_j){
   

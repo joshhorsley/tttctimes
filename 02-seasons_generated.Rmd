@@ -14,6 +14,7 @@ dt_season_show <- dt_season[season=="2021-2022"][(course=="full" | race_type == 
                             # Date = date_ymd,
                             `Event type` = race_type,
                             cancelled,
+                            scheduled,
                             cancelled_reason,
                             have_results,
                             has_report,
@@ -26,7 +27,9 @@ dt_season_show[, Note := ""]
 dt_season_show[`Event type` != "Standard", Note := `Event type`]
 dt_season_show[(participation_only), Note:= paste0(Note, ifelse(Note=="",""," - "),"Participation results only ")]
 dt_season_show[(cancelled), Note:= paste0(Note, ifelse(Note=="",""," - "),"Cancelled due to ", cancelled_reason)]
-dt_season_show[!(cancelled) & !(have_results), Note := paste0(Note,ifelse(Note=="",""," - "), "Results not available")]
+dt_season_show[!(scheduled), Note:= paste0(Note, ifelse(Note=="",""," - "),"No race due to ", cancelled_reason)]
+dt_season_show[(scheduled) & !(cancelled) & !(have_results), Note := paste0(Note,ifelse(Note=="",""," - "), "Results not available")]
+
 
 col_ref_hide <- which(!(names(dt_season_show) %in% c("#","Date","Note","Club Report")))-1 # columns are indexed from 0 - row name?
 
@@ -66,17 +69,6 @@ The total number of entries by course are `r list_with_and(dt_entry_type$text)`.
 
 ```{r plot-raace-count-2021-2022}
 plot_race_count(dt_all_long,"2021-2022",len_season=24)
-```
-
-
-
-### By Competitor
-
-
-This plot shows the cumulative number of races entered by each competitor over the 2021-2022 season. It's a bit crowded showing everyone, each competitor's entries can be toggled by clicking (or double-clicking) their names in the legend.
-
-```{r plot-race-series-2021-2022}
-plotly_time_series(dt_all_long[season=="2021-2022"],len_season=24)
 ```
 
 
@@ -172,6 +164,21 @@ table_record(dt_all_long[season=="2021-2022"], tri_cols, "int", "Run")
 ```
 
 
+## Race 19: 29 Jan 2022 - Super Teams {#r-2022-01-29}
+
+A total of 33 competitors entered, 2 for the first time this season. 
+
+
+### Super Teams
+
+33 competitors entered the course.
+
+2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-19-teams-FALSE-2021-2022}
+table_race_teams(dt_all_long[season=="2021-2022"], tri_cols, 19, "teams",FALSE)
+```
+
+
 ## Race 18: 22 Jan 2022 {#r-2022-01-22}
 
 A total of 55 competitors entered, 5 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=6374){target="_blank"}.
@@ -184,10 +191,6 @@ A total of 55 competitors entered, 5 for the first time this season. [Club Repor
 ```{r plot-race-18-full-FALSE-2021-2022}
 plotly_race(dt_all_long, tri_cols, "2021-2022",18, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-18-full-FALSE-2021-2022}
@@ -202,10 +205,6 @@ table_race(dt_all_long[season=="2021-2022"], tri_cols, 18, "full",FALSE)
 ```{r plot-race-18-int-FALSE-2021-2022}
 plotly_race(dt_all_long, tri_cols, "2021-2022",18, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-18-int-FALSE-2021-2022}
@@ -225,10 +224,6 @@ A total of 41 competitors entered, 9 for the first time this season. [Club Repor
 ```{r plot-race-17-full-FALSE-2021-2022}
 plotly_race(dt_all_long, tri_cols, "2021-2022",17, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-17-full-FALSE-2021-2022}
@@ -243,10 +238,6 @@ table_race(dt_all_long[season=="2021-2022"], tri_cols, 17, "full",FALSE)
 ```{r plot-race-17-int-FALSE-2021-2022}
 plotly_race(dt_all_long, tri_cols, "2021-2022",17, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-17-int-FALSE-2021-2022}
@@ -266,10 +257,6 @@ A total of 54 competitors entered, 4 for the first time this season. [Club Repor
 ```{r plot-race-13-full-FALSE-2021-2022}
 plotly_race(dt_all_long, tri_cols, "2021-2022",13, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-13-full-FALSE-2021-2022}
@@ -284,10 +271,6 @@ table_race(dt_all_long[season=="2021-2022"], tri_cols, 13, "full",FALSE)
 ```{r plot-race-13-int-FALSE-2021-2022}
 plotly_race(dt_all_long, tri_cols, "2021-2022",13, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-13-int-FALSE-2021-2022}
@@ -307,10 +290,6 @@ A total of 58 competitors entered. [Club Report](http://www.twintownstriathlon.o
 ```{r plot-race-12-full-FALSE-2021-2022}
 plotly_race(dt_all_long, tri_cols, "2021-2022",12, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-12-full-FALSE-2021-2022}
@@ -325,10 +304,6 @@ table_race(dt_all_long[season=="2021-2022"], tri_cols, 12, "full",FALSE)
 ```{r plot-race-12-int-FALSE-2021-2022}
 plotly_race(dt_all_long, tri_cols, "2021-2022",12, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-12-int-FALSE-2021-2022}
@@ -348,10 +323,6 @@ A total of 48 competitors entered, 4 for the first time this season. [Club Repor
 ```{r plot-race-11-full-FALSE-2021-2022}
 plotly_race(dt_all_long, tri_cols, "2021-2022",11, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-11-full-FALSE-2021-2022}
@@ -366,10 +337,6 @@ table_race(dt_all_long[season=="2021-2022"], tri_cols, 11, "full",FALSE)
 ```{r plot-race-11-int-FALSE-2021-2022}
 plotly_race(dt_all_long, tri_cols, "2021-2022",11, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-11-int-FALSE-2021-2022}
@@ -389,10 +356,6 @@ A total of 41 competitors entered, 5 for the first time this season. [Club Repor
 ```{r plot-race-10-full-FALSE-2021-2022}
 plotly_race(dt_all_long, tri_cols, "2021-2022",10, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-10-full-FALSE-2021-2022}
@@ -407,10 +370,6 @@ table_race(dt_all_long[season=="2021-2022"], tri_cols, 10, "full",FALSE)
 ```{r plot-race-10-int-FALSE-2021-2022}
 plotly_race(dt_all_long, tri_cols, "2021-2022",10, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-10-int-FALSE-2021-2022}
@@ -430,10 +389,6 @@ A total of 61 competitors entered, 8 for the first time this season. [Club Repor
 ```{r plot-race-9-full-FALSE-2021-2022}
 plotly_race(dt_all_long, tri_cols, "2021-2022",9, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-9-full-FALSE-2021-2022}
@@ -448,10 +403,6 @@ table_race(dt_all_long[season=="2021-2022"], tri_cols, 9, "full",FALSE)
 ```{r plot-race-9-int-FALSE-2021-2022}
 plotly_race(dt_all_long, tri_cols, "2021-2022",9, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-9-int-FALSE-2021-2022}
@@ -471,10 +422,6 @@ A total of 64 competitors entered, 10 for the first time this season. [Club Repo
 ```{r plot-race-8-full-FALSE-2021-2022}
 plotly_race(dt_all_long, tri_cols, "2021-2022",8, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-8-full-FALSE-2021-2022}
@@ -489,10 +436,6 @@ table_race(dt_all_long[season=="2021-2022"], tri_cols, 8, "full",FALSE)
 ```{r plot-race-8-int-FALSE-2021-2022}
 plotly_race(dt_all_long, tri_cols, "2021-2022",8, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-8-int-FALSE-2021-2022}
@@ -512,10 +455,6 @@ A total of 50 competitors entered, 13 for the first time this season. [Club Repo
 ```{r plot-race-7-full-FALSE-2021-2022}
 plotly_race(dt_all_long, tri_cols, "2021-2022",7, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-7-full-FALSE-2021-2022}
@@ -530,10 +469,6 @@ table_race(dt_all_long[season=="2021-2022"], tri_cols, 7, "full",FALSE)
 ```{r plot-race-7-int-FALSE-2021-2022}
 plotly_race(dt_all_long, tri_cols, "2021-2022",7, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-7-int-FALSE-2021-2022}
@@ -550,10 +485,6 @@ A total of 58 competitors entered, 58 for the first time this season. [Club Repo
 
 53 competitors entered the course.
 
-
-
-#### Detailed results for Full course
-
 2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-6-full-FALSE-2021-2022}
 table_race_part_only(dt_all_long, "2021-2022", 6, "full",FALSE)
@@ -563,10 +494,6 @@ table_race_part_only(dt_all_long, "2021-2022", 6, "full",FALSE)
 ### Intermediate
 
 5 competitors entered the course.
-
-
-
-#### Detailed results for Intermediate course
 
 2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-6-int-FALSE-2021-2022}
@@ -586,6 +513,7 @@ dt_season_show <- dt_season[season=="2020-2021"][(course=="full" | race_type == 
                             # Date = date_ymd,
                             `Event type` = race_type,
                             cancelled,
+                            scheduled,
                             cancelled_reason,
                             have_results,
                             has_report,
@@ -598,7 +526,9 @@ dt_season_show[, Note := ""]
 dt_season_show[`Event type` != "Standard", Note := `Event type`]
 dt_season_show[(participation_only), Note:= paste0(Note, ifelse(Note=="",""," - "),"Participation results only ")]
 dt_season_show[(cancelled), Note:= paste0(Note, ifelse(Note=="",""," - "),"Cancelled due to ", cancelled_reason)]
-dt_season_show[!(cancelled) & !(have_results), Note := paste0(Note,ifelse(Note=="",""," - "), "Results not available")]
+dt_season_show[!(scheduled), Note:= paste0(Note, ifelse(Note=="",""," - "),"No race due to ", cancelled_reason)]
+dt_season_show[(scheduled) & !(cancelled) & !(have_results), Note := paste0(Note,ifelse(Note=="",""," - "), "Results not available")]
+
 
 col_ref_hide <- which(!(names(dt_season_show) %in% c("#","Date","Note","Club Report")))-1 # columns are indexed from 0 - row name?
 
@@ -638,17 +568,6 @@ The total number of entries by course are `r list_with_and(dt_entry_type$text)`.
 
 ```{r plot-raace-count-2020-2021}
 plot_race_count(dt_all_long,"2020-2021",len_season=26)
-```
-
-
-
-### By Competitor
-
-
-This plot shows the cumulative number of races entered by each competitor over the 2020-2021 season. It's a bit crowded showing everyone, each competitor's entries can be toggled by clicking (or double-clicking) their names in the legend.
-
-```{r plot-race-series-2020-2021}
-plotly_time_series(dt_all_long[season=="2020-2021"],len_season=26)
 ```
 
 
@@ -802,10 +721,6 @@ A total of 43 competitors entered, 1 for the first time this season. [Club Repor
 ```{r plot-race-26-full-TRUE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",26, "full",TRUE)
 ```
-    
-    
-
-#### Detailed results for Club Championships course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-26-full-TRUE-2020-2021}
@@ -820,10 +735,6 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 26, "full",TRUE)
 ```{r plot-race-26-full-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",26, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-26-full-FALSE-2020-2021}
@@ -838,10 +749,6 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 26, "full",FALSE)
 ```{r plot-race-26-int-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",26, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-26-int-FALSE-2020-2021}
@@ -861,10 +768,6 @@ A total of 55 competitors entered, 6 for the first time this season.
 ```{r plot-race-25-full-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",25, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-25-full-FALSE-2020-2021}
@@ -879,10 +782,6 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 25, "full",FALSE)
 ```{r plot-race-25-int-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",25, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-25-int-FALSE-2020-2021}
@@ -902,10 +801,6 @@ A total of 33 competitors entered, 1 for the first time this season. [Club Repor
 ```{r plot-race-24-full-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",24, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-24-full-FALSE-2020-2021}
@@ -920,10 +815,6 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 24, "full",FALSE)
 ```{r plot-race-24-int-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",24, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-24-int-FALSE-2020-2021}
@@ -943,10 +834,6 @@ A total of 56 competitors entered, 1 for the first time this season. [Club Repor
 ```{r plot-race-23-double-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",23, "double",FALSE)
 ```
-    
-    
-
-#### Detailed results for Double Distance course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-23-double-FALSE-2020-2021}
@@ -961,10 +848,6 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 23, "double",FALSE)
 ```{r plot-race-23-full-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",23, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-23-full-FALSE-2020-2021}
@@ -979,10 +862,6 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 23, "full",FALSE)
 ```{r plot-race-23-int-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",23, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-23-int-FALSE-2020-2021}
@@ -1002,10 +881,6 @@ A total of 53 competitors entered, 3 for the first time this season. [Club Repor
 ```{r plot-race-22-full-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",22, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-22-full-FALSE-2020-2021}
@@ -1020,10 +895,6 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 22, "full",FALSE)
 ```{r plot-race-22-int-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",22, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-22-int-FALSE-2020-2021}
@@ -1043,10 +914,6 @@ A total of 68 competitors entered, 2 for the first time this season. [Club Repor
 ```{r plot-race-21-full-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",21, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-21-full-FALSE-2020-2021}
@@ -1061,10 +928,6 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 21, "full",FALSE)
 ```{r plot-race-21-int-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",21, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-21-int-FALSE-2020-2021}
@@ -1084,10 +947,6 @@ A total of 65 competitors entered. [Club Report](http://www.twintownstriathlon.o
 ```{r plot-race-20-full-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",20, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-20-full-FALSE-2020-2021}
@@ -1102,10 +961,6 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 20, "full",FALSE)
 ```{r plot-race-20-int-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",20, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-20-int-FALSE-2020-2021}
@@ -1125,10 +980,6 @@ A total of 79 competitors entered, 5 for the first time this season. [Club Repor
 ```{r plot-race-19-full-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",19, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-19-full-FALSE-2020-2021}
@@ -1143,10 +994,6 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 19, "full",FALSE)
 ```{r plot-race-19-int-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",19, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-19-int-FALSE-2020-2021}
@@ -1162,10 +1009,6 @@ A total of 60 competitors entered, 1 for the first time this season. [Club Repor
 ### Super Teams
 
 60 competitors entered the course.
-
-
-
-#### Detailed results for Super Teams course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-18-teams-FALSE-2020-2021}
@@ -1185,10 +1028,6 @@ A total of 45 competitors entered, 1 for the first time this season. [Club Repor
 ```{r plot-race-17-full-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",17, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-17-full-FALSE-2020-2021}
@@ -1203,10 +1042,6 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 17, "full",FALSE)
 ```{r plot-race-17-int-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",17, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-17-int-FALSE-2020-2021}
@@ -1226,10 +1061,6 @@ A total of 41 competitors entered, 1 for the first time this season. [Club Repor
 ```{r plot-race-16-full-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",16, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-16-full-FALSE-2020-2021}
@@ -1244,10 +1075,6 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 16, "full",FALSE)
 ```{r plot-race-16-int-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",16, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-16-int-FALSE-2020-2021}
@@ -1267,10 +1094,6 @@ A total of 67 competitors entered, 4 for the first time this season. [Club Repor
 ```{r plot-race-15-full-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",15, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-15-full-FALSE-2020-2021}
@@ -1285,10 +1108,6 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 15, "full",FALSE)
 ```{r plot-race-15-int-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",15, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-15-int-FALSE-2020-2021}
@@ -1308,10 +1127,6 @@ A total of 55 competitors entered. [Club Report](http://www.twintownstriathlon.o
 ```{r plot-race-13-full-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",13, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-13-full-FALSE-2020-2021}
@@ -1326,10 +1141,6 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 13, "full",FALSE)
 ```{r plot-race-13-int-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",13, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-13-int-FALSE-2020-2021}
@@ -1349,10 +1160,6 @@ A total of 63 competitors entered, 3 for the first time this season. [Club Repor
 ```{r plot-race-11-full-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",11, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-11-full-FALSE-2020-2021}
@@ -1367,10 +1174,6 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 11, "full",FALSE)
 ```{r plot-race-11-int-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",11, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-11-int-FALSE-2020-2021}
@@ -1390,10 +1193,6 @@ A total of 49 competitors entered, 2 for the first time this season. [Club Repor
 ```{r plot-race-10-full-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",10, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-10-full-FALSE-2020-2021}
@@ -1408,10 +1207,6 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 10, "full",FALSE)
 ```{r plot-race-10-int-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",10, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-10-int-FALSE-2020-2021}
@@ -1431,10 +1226,6 @@ A total of 65 competitors entered, 2 for the first time this season. [Club Repor
 ```{r plot-race-9-full-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",9, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-9-full-FALSE-2020-2021}
@@ -1449,10 +1240,6 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 9, "full",FALSE)
 ```{r plot-race-9-int-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",9, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-9-int-FALSE-2020-2021}
@@ -1468,10 +1255,6 @@ A total of 57 competitors entered, 1 for the first time this season. [Club Repor
 ### Super Teams
 
 57 competitors entered the course.
-
-
-
-#### Detailed results for Super Teams course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-8-teams-FALSE-2020-2021}
@@ -1491,10 +1274,6 @@ A total of 72 competitors entered, 4 for the first time this season. [Club Repor
 ```{r plot-race-7-full-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",7, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-7-full-FALSE-2020-2021}
@@ -1509,10 +1288,6 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 7, "full",FALSE)
 ```{r plot-race-7-int-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",7, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-7-int-FALSE-2020-2021}
@@ -1532,10 +1307,6 @@ A total of 62 competitors entered, 8 for the first time this season. [Club Repor
 ```{r plot-race-6-full-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",6, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-6-full-FALSE-2020-2021}
@@ -1550,10 +1321,6 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 6, "full",FALSE)
 ```{r plot-race-6-int-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",6, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-6-int-FALSE-2020-2021}
@@ -1573,10 +1340,6 @@ A total of 79 competitors entered, 4 for the first time this season. [Club Repor
 ```{r plot-race-5-full-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",5, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-5-full-FALSE-2020-2021}
@@ -1591,10 +1354,6 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 5, "full",FALSE)
 ```{r plot-race-5-int-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",5, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-5-int-FALSE-2020-2021}
@@ -1614,10 +1373,6 @@ A total of 73 competitors entered, 11 for the first time this season. [Club Repo
 ```{r plot-race-4-double-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",4, "double",FALSE)
 ```
-    
-    
-
-#### Detailed results for Double Distance course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-4-double-FALSE-2020-2021}
@@ -1632,10 +1387,6 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 4, "double",FALSE)
 ```{r plot-race-4-full-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",4, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-4-full-FALSE-2020-2021}
@@ -1650,10 +1401,6 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 4, "full",FALSE)
 ```{r plot-race-4-int-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",4, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-4-int-FALSE-2020-2021}
@@ -1673,10 +1420,6 @@ A total of 66 competitors entered, 13 for the first time this season. [Club Repo
 ```{r plot-race-3-full-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",3, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-3-full-FALSE-2020-2021}
@@ -1691,10 +1434,6 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 3, "full",FALSE)
 ```{r plot-race-3-int-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",3, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-3-int-FALSE-2020-2021}
@@ -1714,10 +1453,6 @@ A total of 65 competitors entered, 23 for the first time this season. [Club Repo
 ```{r plot-race-2-full-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",2, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-2-full-FALSE-2020-2021}
@@ -1732,10 +1467,6 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 2, "full",FALSE)
 ```{r plot-race-2-int-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",2, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-2-int-FALSE-2020-2021}
@@ -1755,10 +1486,6 @@ A total of 65 competitors entered. [Club Report](http://www.twintownstriathlon.o
 ```{r plot-race-1-full-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",1, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-1-full-FALSE-2020-2021}
@@ -1773,10 +1500,6 @@ table_race(dt_all_long[season=="2020-2021"], tri_cols, 1, "full",FALSE)
 ```{r plot-race-1-int-FALSE-2020-2021}
 plotly_race(dt_all_long, tri_cols, "2020-2021",1, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-1-int-FALSE-2020-2021}
@@ -1796,6 +1519,7 @@ dt_season_show <- dt_season[season=="2019-2020"][(course=="full" | race_type == 
                             # Date = date_ymd,
                             `Event type` = race_type,
                             cancelled,
+                            scheduled,
                             cancelled_reason,
                             have_results,
                             has_report,
@@ -1808,7 +1532,9 @@ dt_season_show[, Note := ""]
 dt_season_show[`Event type` != "Standard", Note := `Event type`]
 dt_season_show[(participation_only), Note:= paste0(Note, ifelse(Note=="",""," - "),"Participation results only ")]
 dt_season_show[(cancelled), Note:= paste0(Note, ifelse(Note=="",""," - "),"Cancelled due to ", cancelled_reason)]
-dt_season_show[!(cancelled) & !(have_results), Note := paste0(Note,ifelse(Note=="",""," - "), "Results not available")]
+dt_season_show[!(scheduled), Note:= paste0(Note, ifelse(Note=="",""," - "),"No race due to ", cancelled_reason)]
+dt_season_show[(scheduled) & !(cancelled) & !(have_results), Note := paste0(Note,ifelse(Note=="",""," - "), "Results not available")]
+
 
 col_ref_hide <- which(!(names(dt_season_show) %in% c("#","Date","Note","Club Report")))-1 # columns are indexed from 0 - row name?
 
@@ -1848,17 +1574,6 @@ The total number of entries by course are `r list_with_and(dt_entry_type$text)`.
 
 ```{r plot-raace-count-2019-2020}
 plot_race_count(dt_all_long,"2019-2020",len_season=27)
-```
-
-
-
-### By Competitor
-
-
-This plot shows the cumulative number of races entered by each competitor over the 2019-2020 season. It's a bit crowded showing everyone, each competitor's entries can be toggled by clicking (or double-clicking) their names in the legend.
-
-```{r plot-race-series-2019-2020}
-plotly_time_series(dt_all_long[season=="2019-2020"],len_season=27)
 ```
 
 
@@ -2012,10 +1727,6 @@ A total of 46 competitors entered, 3 for the first time this season. [Club Repor
 ```{r plot-race-26-full-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",26, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-26-full-FALSE-2019-2020}
@@ -2030,10 +1741,6 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 26, "full",FALSE)
 ```{r plot-race-26-int-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",26, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-26-int-FALSE-2019-2020}
@@ -2053,10 +1760,6 @@ A total of 60 competitors entered. [Club Report](http://www.twintownstriathlon.o
 ```{r plot-race-25-full-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",25, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-25-full-FALSE-2019-2020}
@@ -2071,10 +1774,6 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 25, "full",FALSE)
 ```{r plot-race-25-int-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",25, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-25-int-FALSE-2019-2020}
@@ -2094,10 +1793,6 @@ A total of 41 competitors entered. [Club Report](http://www.twintownstriathlon.o
 ```{r plot-race-24-full-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",24, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-24-full-FALSE-2019-2020}
@@ -2112,10 +1807,6 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 24, "full",FALSE)
 ```{r plot-race-24-int-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",24, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-24-int-FALSE-2019-2020}
@@ -2135,10 +1826,6 @@ A total of 68 competitors entered, 2 for the first time this season. [Club Repor
 ```{r plot-race-23-double-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",23, "double",FALSE)
 ```
-    
-    
-
-#### Detailed results for Double Distance course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-23-double-FALSE-2019-2020}
@@ -2153,10 +1840,6 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 23, "double",FALSE)
 ```{r plot-race-23-full-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",23, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-23-full-FALSE-2019-2020}
@@ -2171,10 +1854,6 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 23, "full",FALSE)
 ```{r plot-race-23-int-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",23, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-23-int-FALSE-2019-2020}
@@ -2194,10 +1873,6 @@ A total of 61 competitors entered, 2 for the first time this season. [Club Repor
 ```{r plot-race-22-full-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",22, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-22-full-FALSE-2019-2020}
@@ -2212,10 +1887,6 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 22, "full",FALSE)
 ```{r plot-race-22-int-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",22, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-22-int-FALSE-2019-2020}
@@ -2235,10 +1906,6 @@ A total of 62 competitors entered, 2 for the first time this season. [Club Repor
 ```{r plot-race-21-full-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",21, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-21-full-FALSE-2019-2020}
@@ -2253,10 +1920,6 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 21, "full",FALSE)
 ```{r plot-race-21-int-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",21, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-21-int-FALSE-2019-2020}
@@ -2276,10 +1939,6 @@ A total of 35 competitors entered. [Club Report](http://www.twintownstriathlon.o
 ```{r plot-race-20-full-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",20, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-20-full-FALSE-2019-2020}
@@ -2294,10 +1953,6 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 20, "full",FALSE)
 ```{r plot-race-20-int-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",20, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-20-int-FALSE-2019-2020}
@@ -2317,10 +1972,6 @@ A total of 60 competitors entered, 2 for the first time this season. [Club Repor
 ```{r plot-race-19-full-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",19, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-19-full-FALSE-2019-2020}
@@ -2335,10 +1986,6 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 19, "full",FALSE)
 ```{r plot-race-19-int-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",19, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-19-int-FALSE-2019-2020}
@@ -2358,10 +2005,6 @@ A total of 59 competitors entered, 1 for the first time this season. [Club Repor
 ```{r plot-race-16-full-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",16, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-16-full-FALSE-2019-2020}
@@ -2376,10 +2019,6 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 16, "full",FALSE)
 ```{r plot-race-16-int-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",16, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-16-int-FALSE-2019-2020}
@@ -2399,10 +2038,6 @@ A total of 70 competitors entered, 2 for the first time this season. [Club Repor
 ```{r plot-race-15-full-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",15, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-15-full-FALSE-2019-2020}
@@ -2417,10 +2052,6 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 15, "full",FALSE)
 ```{r plot-race-15-int-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",15, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-15-int-FALSE-2019-2020}
@@ -2440,10 +2071,6 @@ A total of 60 competitors entered, 1 for the first time this season. [Club Repor
 ```{r plot-race-14-full-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",14, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-14-full-FALSE-2019-2020}
@@ -2458,10 +2085,6 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 14, "full",FALSE)
 ```{r plot-race-14-int-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",14, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-14-int-FALSE-2019-2020}
@@ -2481,10 +2104,6 @@ A total of 51 competitors entered, 3 for the first time this season. [Club Repor
 ```{r plot-race-13-full-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",13, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-13-full-FALSE-2019-2020}
@@ -2499,10 +2118,6 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 13, "full",FALSE)
 ```{r plot-race-13-int-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",13, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-13-int-FALSE-2019-2020}
@@ -2522,10 +2137,6 @@ A total of 60 competitors entered, 1 for the first time this season. [Club Repor
 ```{r plot-race-12-full-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",12, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-12-full-FALSE-2019-2020}
@@ -2540,10 +2151,6 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 12, "full",FALSE)
 ```{r plot-race-12-int-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",12, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-12-int-FALSE-2019-2020}
@@ -2563,10 +2170,6 @@ A total of 66 competitors entered, 5 for the first time this season. [Club Repor
 ```{r plot-race-11-full-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",11, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-11-full-FALSE-2019-2020}
@@ -2581,10 +2184,6 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 11, "full",FALSE)
 ```{r plot-race-11-int-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",11, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-11-int-FALSE-2019-2020}
@@ -2604,10 +2203,6 @@ A total of 67 competitors entered, 4 for the first time this season. [Club Repor
 ```{r plot-race-10-full-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",10, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-10-full-FALSE-2019-2020}
@@ -2622,10 +2217,6 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 10, "full",FALSE)
 ```{r plot-race-10-int-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",10, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-10-int-FALSE-2019-2020}
@@ -2645,10 +2236,6 @@ A total of 45 competitors entered, 5 for the first time this season. [Club Repor
 ```{r plot-race-9-full-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",9, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-9-full-FALSE-2019-2020}
@@ -2663,10 +2250,6 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 9, "full",FALSE)
 ```{r plot-race-9-int-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",9, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-9-int-FALSE-2019-2020}
@@ -2686,10 +2269,6 @@ A total of 77 competitors entered, 6 for the first time this season. [Club Repor
 ```{r plot-race-8-full-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",8, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-8-full-FALSE-2019-2020}
@@ -2704,10 +2283,6 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 8, "full",FALSE)
 ```{r plot-race-8-int-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",8, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-8-int-FALSE-2019-2020}
@@ -2727,10 +2302,6 @@ A total of 34 competitors entered, 8 for the first time this season. [Club Repor
 ```{r plot-race-6-full-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",6, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-6-full-FALSE-2019-2020}
@@ -2745,10 +2316,6 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 6, "full",FALSE)
 ```{r plot-race-6-int-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",6, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-6-int-FALSE-2019-2020}
@@ -2768,10 +2335,6 @@ A total of 76 competitors entered, 12 for the first time this season. [Club Repo
 ```{r plot-race-5-full-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",5, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-5-full-FALSE-2019-2020}
@@ -2786,10 +2349,6 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 5, "full",FALSE)
 ```{r plot-race-5-int-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",5, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-5-int-FALSE-2019-2020}
@@ -2809,10 +2368,6 @@ A total of 63 competitors entered, 7 for the first time this season. [Club Repor
 ```{r plot-race-4-double-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",4, "double",FALSE)
 ```
-    
-    
-
-#### Detailed results for Double Distance course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-4-double-FALSE-2019-2020}
@@ -2827,10 +2382,6 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 4, "double",FALSE)
 ```{r plot-race-4-full-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",4, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-4-full-FALSE-2019-2020}
@@ -2845,10 +2396,6 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 4, "full",FALSE)
 ```{r plot-race-4-int-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",4, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-4-int-FALSE-2019-2020}
@@ -2868,10 +2415,6 @@ A total of 52 competitors entered, 11 for the first time this season. [Club Repo
 ```{r plot-race-3-full-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",3, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-3-full-FALSE-2019-2020}
@@ -2886,10 +2429,6 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 3, "full",FALSE)
 ```{r plot-race-3-int-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",3, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-3-int-FALSE-2019-2020}
@@ -2909,10 +2448,6 @@ A total of 71 competitors entered, 24 for the first time this season. [Club Repo
 ```{r plot-race-2-full-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",2, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-2-full-FALSE-2019-2020}
@@ -2927,10 +2462,6 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 2, "full",FALSE)
 ```{r plot-race-2-int-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",2, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-2-int-FALSE-2019-2020}
@@ -2950,10 +2481,6 @@ A total of 73 competitors entered. [Club Report](http://www.twintownstriathlon.o
 ```{r plot-race-1-full-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",1, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-1-full-FALSE-2019-2020}
@@ -2968,10 +2495,6 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 1, "full",FALSE)
 ```{r plot-race-1-int-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",1, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2019-2020 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-1-int-FALSE-2019-2020}
@@ -2991,6 +2514,7 @@ dt_season_show <- dt_season[season=="2018-2019"][(course=="full" | race_type == 
                             # Date = date_ymd,
                             `Event type` = race_type,
                             cancelled,
+                            scheduled,
                             cancelled_reason,
                             have_results,
                             has_report,
@@ -3003,7 +2527,9 @@ dt_season_show[, Note := ""]
 dt_season_show[`Event type` != "Standard", Note := `Event type`]
 dt_season_show[(participation_only), Note:= paste0(Note, ifelse(Note=="",""," - "),"Participation results only ")]
 dt_season_show[(cancelled), Note:= paste0(Note, ifelse(Note=="",""," - "),"Cancelled due to ", cancelled_reason)]
-dt_season_show[!(cancelled) & !(have_results), Note := paste0(Note,ifelse(Note=="",""," - "), "Results not available")]
+dt_season_show[!(scheduled), Note:= paste0(Note, ifelse(Note=="",""," - "),"No race due to ", cancelled_reason)]
+dt_season_show[(scheduled) & !(cancelled) & !(have_results), Note := paste0(Note,ifelse(Note=="",""," - "), "Results not available")]
+
 
 col_ref_hide <- which(!(names(dt_season_show) %in% c("#","Date","Note","Club Report")))-1 # columns are indexed from 0 - row name?
 
@@ -3043,17 +2569,6 @@ The total number of entries by course are `r list_with_and(dt_entry_type$text)`.
 
 ```{r plot-raace-count-2018-2019}
 plot_race_count(dt_all_long,"2018-2019",len_season=25)
-```
-
-
-
-### By Competitor
-
-
-This plot shows the cumulative number of races entered by each competitor over the 2018-2019 season. It's a bit crowded showing everyone, each competitor's entries can be toggled by clicking (or double-clicking) their names in the legend.
-
-```{r plot-race-series-2018-2019}
-plotly_time_series(dt_all_long[season=="2018-2019"],len_season=25)
 ```
 
 
@@ -3207,10 +2722,6 @@ A total of 58 competitors entered, 2 for the first time this season. [Club Repor
 ```{r plot-race-25-full-TRUE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",25, "full",TRUE)
 ```
-    
-    
-
-#### Detailed results for Club Championships course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-25-full-TRUE-2018-2019}
@@ -3225,10 +2736,6 @@ table_race(dt_all_long[season=="2018-2019"], tri_cols, 25, "full",TRUE)
 ```{r plot-race-25-full-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",25, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-25-full-FALSE-2018-2019}
@@ -3243,10 +2750,6 @@ table_race(dt_all_long[season=="2018-2019"], tri_cols, 25, "full",FALSE)
 ```{r plot-race-25-int-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",25, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-25-int-FALSE-2018-2019}
@@ -3266,10 +2769,6 @@ A total of 33 competitors entered, 2 for the first time this season. [Club Repor
 ```{r plot-race-23-double-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",23, "double",FALSE)
 ```
-    
-    
-
-#### Detailed results for Double Distance course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-23-double-FALSE-2018-2019}
@@ -3284,10 +2783,6 @@ table_race(dt_all_long[season=="2018-2019"], tri_cols, 23, "double",FALSE)
 ```{r plot-race-23-full-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",23, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-23-full-FALSE-2018-2019}
@@ -3302,10 +2797,6 @@ table_race(dt_all_long[season=="2018-2019"], tri_cols, 23, "full",FALSE)
 ```{r plot-race-23-int-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",23, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-23-int-FALSE-2018-2019}
@@ -3325,10 +2816,6 @@ A total of 39 competitors entered, 1 for the first time this season. [Club Repor
 ```{r plot-race-22-full-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",22, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-22-full-FALSE-2018-2019}
@@ -3343,10 +2830,6 @@ table_race(dt_all_long[season=="2018-2019"], tri_cols, 22, "full",FALSE)
 ```{r plot-race-22-int-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",22, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-22-int-FALSE-2018-2019}
@@ -3366,10 +2849,6 @@ A total of 65 competitors entered, 2 for the first time this season. [Club Repor
 ```{r plot-race-21-full-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",21, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-21-full-FALSE-2018-2019}
@@ -3384,10 +2863,6 @@ table_race(dt_all_long[season=="2018-2019"], tri_cols, 21, "full",FALSE)
 ```{r plot-race-21-int-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",21, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-21-int-FALSE-2018-2019}
@@ -3407,10 +2882,6 @@ A total of 53 competitors entered, 1 for the first time this season. [Club Repor
 ```{r plot-race-20-full-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",20, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-20-full-FALSE-2018-2019}
@@ -3425,10 +2896,6 @@ table_race(dt_all_long[season=="2018-2019"], tri_cols, 20, "full",FALSE)
 ```{r plot-race-20-int-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",20, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-20-int-FALSE-2018-2019}
@@ -3448,10 +2915,6 @@ A total of 57 competitors entered. [Club Report](http://www.twintownstriathlon.o
 ```{r plot-race-18-full-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",18, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-18-full-FALSE-2018-2019}
@@ -3466,10 +2929,6 @@ table_race(dt_all_long[season=="2018-2019"], tri_cols, 18, "full",FALSE)
 ```{r plot-race-18-int-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",18, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-18-int-FALSE-2018-2019}
@@ -3489,10 +2948,6 @@ A total of 74 competitors entered, 4 for the first time this season. [Club Repor
 ```{r plot-race-17-full-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",17, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-17-full-FALSE-2018-2019}
@@ -3507,10 +2962,6 @@ table_race(dt_all_long[season=="2018-2019"], tri_cols, 17, "full",FALSE)
 ```{r plot-race-17-int-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",17, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-17-int-FALSE-2018-2019}
@@ -3530,10 +2981,6 @@ A total of 62 competitors entered, 5 for the first time this season. [Club Repor
 ```{r plot-race-16-full-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",16, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-16-full-FALSE-2018-2019}
@@ -3548,10 +2995,6 @@ table_race(dt_all_long[season=="2018-2019"], tri_cols, 16, "full",FALSE)
 ```{r plot-race-16-int-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",16, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-16-int-FALSE-2018-2019}
@@ -3571,10 +3014,6 @@ A total of 49 competitors entered. [Club Report](http://www.twintownstriathlon.o
 ```{r plot-race-15-full-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",15, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-15-full-FALSE-2018-2019}
@@ -3589,10 +3028,6 @@ table_race(dt_all_long[season=="2018-2019"], tri_cols, 15, "full",FALSE)
 ```{r plot-race-15-int-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",15, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-15-int-FALSE-2018-2019}
@@ -3612,10 +3047,6 @@ A total of 46 competitors entered, 2 for the first time this season. [Club Repor
 ```{r plot-race-14-full-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",14, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-14-full-FALSE-2018-2019}
@@ -3630,10 +3061,6 @@ table_race(dt_all_long[season=="2018-2019"], tri_cols, 14, "full",FALSE)
 ```{r plot-race-14-int-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",14, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-14-int-FALSE-2018-2019}
@@ -3653,10 +3080,6 @@ A total of 38 competitors entered. [Club Report](http://www.twintownstriathlon.o
 ```{r plot-race-13-full-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",13, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-13-full-FALSE-2018-2019}
@@ -3671,10 +3094,6 @@ table_race(dt_all_long[season=="2018-2019"], tri_cols, 13, "full",FALSE)
 ```{r plot-race-13-int-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",13, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-13-int-FALSE-2018-2019}
@@ -3694,10 +3113,6 @@ A total of 63 competitors entered, 2 for the first time this season. [Club Repor
 ```{r plot-race-12-full-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",12, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-12-full-FALSE-2018-2019}
@@ -3712,10 +3127,6 @@ table_race(dt_all_long[season=="2018-2019"], tri_cols, 12, "full",FALSE)
 ```{r plot-race-12-int-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",12, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-12-int-FALSE-2018-2019}
@@ -3735,10 +3146,6 @@ A total of 56 competitors entered, 1 for the first time this season. [Club Repor
 ```{r plot-race-11-full-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",11, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-11-full-FALSE-2018-2019}
@@ -3753,10 +3160,6 @@ table_race(dt_all_long[season=="2018-2019"], tri_cols, 11, "full",FALSE)
 ```{r plot-race-11-int-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",11, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-11-int-FALSE-2018-2019}
@@ -3776,10 +3179,6 @@ A total of 69 competitors entered, 7 for the first time this season. [Club Repor
 ```{r plot-race-10-full-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",10, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-10-full-FALSE-2018-2019}
@@ -3794,10 +3193,6 @@ table_race(dt_all_long[season=="2018-2019"], tri_cols, 10, "full",FALSE)
 ```{r plot-race-10-int-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",10, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-10-int-FALSE-2018-2019}
@@ -3817,10 +3212,6 @@ A total of 74 competitors entered, 4 for the first time this season. [Club Repor
 ```{r plot-race-9-full-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",9, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-9-full-FALSE-2018-2019}
@@ -3835,10 +3226,6 @@ table_race(dt_all_long[season=="2018-2019"], tri_cols, 9, "full",FALSE)
 ```{r plot-race-9-int-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",9, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-9-int-FALSE-2018-2019}
@@ -3858,10 +3245,6 @@ A total of 72 competitors entered, 4 for the first time this season. [Club Repor
 ```{r plot-race-8-full-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",8, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-8-full-FALSE-2018-2019}
@@ -3881,10 +3264,6 @@ A total of 63 competitors entered, 8 for the first time this season. [Club Repor
 ```{r plot-race-7-full-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",7, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-7-full-FALSE-2018-2019}
@@ -3899,10 +3278,6 @@ table_race(dt_all_long[season=="2018-2019"], tri_cols, 7, "full",FALSE)
 ```{r plot-race-7-int-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",7, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-7-int-FALSE-2018-2019}
@@ -3922,10 +3297,6 @@ A total of 76 competitors entered, 9 for the first time this season. [Club Repor
 ```{r plot-race-6-full-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",6, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-6-full-FALSE-2018-2019}
@@ -3940,10 +3311,6 @@ table_race(dt_all_long[season=="2018-2019"], tri_cols, 6, "full",FALSE)
 ```{r plot-race-6-int-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",6, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-6-int-FALSE-2018-2019}
@@ -3963,10 +3330,6 @@ A total of 88 competitors entered, 6 for the first time this season. [Club Repor
 ```{r plot-race-5-double-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",5, "double",FALSE)
 ```
-    
-    
-
-#### Detailed results for Double Distance course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-5-double-FALSE-2018-2019}
@@ -3981,10 +3344,6 @@ table_race(dt_all_long[season=="2018-2019"], tri_cols, 5, "double",FALSE)
 ```{r plot-race-5-full-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",5, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-5-full-FALSE-2018-2019}
@@ -3999,10 +3358,6 @@ table_race(dt_all_long[season=="2018-2019"], tri_cols, 5, "full",FALSE)
 ```{r plot-race-5-int-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",5, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-5-int-FALSE-2018-2019}
@@ -4022,10 +3377,6 @@ A total of 24 competitors entered, 2 for the first time this season. [Club Repor
 ```{r plot-race-4-full-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",4, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-4-full-FALSE-2018-2019}
@@ -4045,10 +3396,6 @@ A total of 69 competitors entered, 14 for the first time this season. [Club Repo
 ```{r plot-race-3-full-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",3, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-3-full-FALSE-2018-2019}
@@ -4063,10 +3410,6 @@ table_race(dt_all_long[season=="2018-2019"], tri_cols, 3, "full",FALSE)
 ```{r plot-race-3-int-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",3, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-3-int-FALSE-2018-2019}
@@ -4086,10 +3429,6 @@ A total of 79 competitors entered, 29 for the first time this season. [Club Repo
 ```{r plot-race-2-full-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",2, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-2-full-FALSE-2018-2019}
@@ -4104,10 +3443,6 @@ table_race(dt_all_long[season=="2018-2019"], tri_cols, 2, "full",FALSE)
 ```{r plot-race-2-int-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",2, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-2-int-FALSE-2018-2019}
@@ -4127,10 +3462,6 @@ A total of 76 competitors entered. [Club Report](http://www.twintownstriathlon.o
 ```{r plot-race-1-full-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",1, "full",FALSE)
 ```
-    
-    
-
-#### Detailed results for Full course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-1-full-FALSE-2018-2019}
@@ -4145,10 +3476,6 @@ table_race(dt_all_long[season=="2018-2019"], tri_cols, 1, "full",FALSE)
 ```{r plot-race-1-int-FALSE-2018-2019}
 plotly_race(dt_all_long, tri_cols, "2018-2019",1, "int",FALSE)
 ```
-    
-    
-
-#### Detailed results for Intermediate course
 
 2018-2019 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
 ```{r tab-race-1-int-FALSE-2018-2019}

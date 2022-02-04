@@ -156,8 +156,11 @@ clean_legend_names_plotly <- function(p) {
   n_legend <- length(p$x$data)
   
   for (i_legend in seq(n_legend)) {
-    p$x$data[[i_legend]]$name <- gsub(",1\\)$","",gsub("^\\(","",p$x$data[[i_legend]]$name))
-    
+    # p$x$data[[i_legend]]$name <- gsub(",1\\)$","",gsub("^\\(","",p$x$data[[i_legend]]$name))
+    p$x$data[[i_legend]]$name <- gsub(",[0-9]\\)$","",gsub("^\\(","",p$x$data[[i_legend]]$name))
+    p$x$data[[i_legend]]$legendgroup <- gsub(",[0-9]\\)$","",gsub("^\\(","",p$x$data[[i_legend]]$legendgroup))
+    # p$x$data[[i_legend]]$name <- gsub(",[0-9]\\)$","",gsub("^\\(","",p$x$data[[i_legend]]$name))
+    # print(p$x$data[[i_legend]]$name)
   }
   
   p

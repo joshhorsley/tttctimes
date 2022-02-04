@@ -1,0 +1,81 @@
+﻿Ginny Jones	Ginny	Jones	Full	
+Greg Freeman	Greg	Freeman	Full	
+Danielle Lambert	Danielle	Lambert	Full	
+Bri Perrin	Bri	Perrin	Intermediate	
+Tyson Perrin	Tyson	Perrin	Intermediate	
+Marcin Mazurek	Marcin	Mazurek	Intermediate	
+Annika Parker	Annika	Parker	Intermediate	
+Yaminah Hogg	Yaminah	Hogg	Intermediate	
+Val Lambard	Val	Lambard	Full	3
+Jim Collins	Jim	Collins	Full	4
+Jenny Scaysbrook	Jenny	Scaysbrook	Full	5
+Alex Gilks	Alex	Gilks	Full	7
+Stuart Crawford	Stuart	Crawford	Full	9
+Clive Pearce	Clive	Pearce	Full	14
+Richard Mourant	Richard	Mourant	Full	17
+Hollie Robards	Hollie	Robards	Full	18
+Gerard Robards	Gerard	Robards	Full	20
+Julie Lowe	Julie	Lowe	Intermediate	22
+Alex Torrance	Alex	Torrance	Full	30
+Christian Andrews	Christian	Andrews	Full	31
+Guy Davoren	Guy	Davoren	Full	32
+Simon Bradbery	Simon	Bradbery	Full	34
+Judy Murray	Judy	Murray	Intermediate	35
+Jeff Murray	Jeff	Murray	Full	37
+Scott Wildin	Scott	Wildin	Full	44
+Kyle Mooney	Kyle	Mooney	Full	46
+Ben Hall	Ben	Hall	Full	47
+Sue Van Den Broek	Sue	Van Den Broek	Full	51
+Joanne Colja	Joanne	Colja	Full	53
+Michelle Jones	Michelle	Jones	Full	57
+Eloise Thomson	Eloise	Thomson	Intermediate	59
+Scott Thomson	Scott	Thomson	Full	62
+Sebastian Thomson	Sebastian	Thomson	Full	63
+Kev Bannerman	Kev	Bannerman	Full	70
+Danny Warner	Danny	Warner	Full	71
+Rob Worth	Rob	Worth	Full	72
+Mark Collinson	Mark	Collinson	Full	80
+Wendy Wise	Wendy	Wise	Full	84
+Warren Copping	Warren	Copping	Full	86
+John King	John	King	Full	88
+Kaleb Robards	Kaleb	Robards	Full	97
+Scott Styman	Scott	Styman	Full	99
+Viv Wright	Viv	Wright	Full	104
+Darren Jones	Darren	Jones	Full	105
+Tim Eade	Tim	Eade	Full	106
+Marcel Van Kampen	Marcel	Van Kampen	Full	107
+Rowena Smith	Rowena	Smith	Full	110
+Kent Holmes	Kent	Holmes	Full	112
+Adrian Bartlett	Adrian	Bartlett	Full	116
+Des Gooda	Des	Gooda	Full	117
+Melanie Duff	Melanie	Duff	Full	130
+Carl Patterson	Carl	Patterson	Full	133
+Greg Williamson	Greg	Williamson	Full	136
+Matthew Stanley	Matthew	Stanley	Full	139
+Remy Hawkins	Remy	Hawkins	Full	147
+Craig Telling	Craig	Telling	Full	151
+Peter Stowe	Peter	Stowe	Full	162
+Craig Broadhurst	Craig	Broadhurst	Intermediate	166
+Sharyn Klein	Sharyn	Klein	Full	182
+Bec McLucas	Bec	McLucas	Full	196
+Rod Sewell	Rod	Sewell	Full	202
+Lucas Nixon-Hind	Lucas	Nixon-Hind	Full	204
+Karen Nixon	Karen	Nixon	Intermediate	205
+Ava Thomson	Ava	Thomson	Full	208
+Trudy Gadaleta	Trudy	Gadaleta	Full	218
+Amy Morland	Amy	Morland	Full	220
+Kat Miller	Kat	Miller	Full	233
+Andrew Miller	Andrew	Miller	Full	234
+Glenn Hind	Glenn	Hind	Intermediate	239
+Robyn Barry	Robyn	Barry	Intermediate	249
+Caroline Hogan	Caroline	Hogan	Full	252
+David Hogan	David	Hogan	Full	261
+Josh Horsley	Josh	Horsley	Full	274
+Ashleigh Murphy	Ashleigh	Murphy	Full	280
+Peter Rudland	Peter	Rudland	Full	286
+Madeline Smith	Madeline	Smith	Intermediate	287
+Wayde Smith	Wayde	Smith	Full	288
+Chris Bilson	Chris	Bilson	Full	289
+Cohen Parker	Cohen	Parker	Intermediate	293
+Cooper Bloor	Cooper	Bloor	Intermediate	296
+Isaac Bloor	Isaac	Bloor	Intermediate	297
