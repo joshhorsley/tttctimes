@@ -1,0 +1,18 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Adjusted time	Time	Lap 1	Lap 2	Lap 3	Handicap	Difference	% Back	% Winning	% Average	% Median
+1	500	Yaminah Hogg	Yaminah	Hogg	Intermediate	30:37.3	45:37.3	8:03.2	26:21.0	11:13.1	-15:00.0	-	-	100%	21.81%	20.37%
+2	166	Craig Broadhurst	Craig	Broadhurst	Intermediate	36:04.7	51:04.7	20:49.8	18:56.6	11:18.3	-15:00.0	+5:27.4	+11.96%	89.32%	12.45%	10.85%
+3	800	Bri Perrin	Bri	Perrin	Intermediate	52:40.3	52:40.3	8:51.8	30:51.7	12:56.8	+0:00.0	+7:03.0	+15.45%	86.62%	9.72%	8.07%
+4	296	Cooper Bloor	Cooper	Bloor	Intermediate	57:12.9	57:12.9	11:44.6	30:12.5	15:15.8	+0:00.0	+11:35.6	+25.41%	79.74%	1.94%	0.14%
+5	22	Julie Lowe	Julie	Lowe	Intermediate	42:16.7	57:16.7	21:05.8	25:23.5	10:47.4	-15:00.0	+11:39.4	+25.55%	79.65%	1.83%	0.03%
+6	600	Marcin Mazurek	Marcin	Mazurek	Intermediate	42:18.7	57:18.7	21:08.6	25:54.6	10:15.5	-15:00.0	+11:41.4	+25.62%	79.60%	1.77%	-0.03%
+7	214	Timothy TAYLOR	Timothy	TAYLOR	Intermediate	43:58.2	58:58.2	22:56.7	23:47.2	12:14.2	-15:00.0	+13:20.9	+29.26%	77.36%	-1.07%	-2.92%
+8	700	Tyson Perrin	Tyson	Perrin	Intermediate	45:07.5	1:00:07.5	19:46.8	25:29.1	14:51.6	-15:00.0	+14:30.2	+31.79%	75.88%	-3.05%	-4.94%
+9	35	Judy Murray	Judy	Murray	Intermediate	52:10.6	1:07:10.6	23:10.8	28:21.8	15:38.0	-15:00.0	+21:33.3	+47.25%	67.91%	-15.14%	-17.25%
+10	293	Cohen Parker	Cohen	Parker	Intermediate	1:01:00.0	1:16:00.0	18:53.9	33:18.9	23:47.2	-15:00.0	+30:22.7	+66.59%	60.03%	-30.26%	-32.65%
+-	-	Annika Parker	Annika	Parker	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	59	Eloise Thomson	Eloise	Thomson	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	205	Karen Nixon	Karen	Nixon	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	239	Glenn Hind	Glenn	Hind	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	249	Robyn Barry	Robyn	Barry	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	287	Madeline Smith	Madeline	Smith	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	297	Isaac Bloor	Isaac	Bloor	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-

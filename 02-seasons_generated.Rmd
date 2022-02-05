@@ -164,6 +164,39 @@ table_record(dt_all_long[season=="2021-2022"], tri_cols, "int", "Run")
 ```
 
 
+## Race 20: 05 Feb 2022 {#r-2022-02-05}
+
+A total of 52 competitors entered, 7 for the first time this season. 
+
+
+### Full
+
+42 competitors entered the course, achieving 7 new overall PBs and 26 new split PBs: 10 in the pool, 7 on the bike, and 9 on the run.
+
+```{r plot-race-20-full-FALSE-2021-2022}
+plotly_race(dt_all_long, tri_cols, "2021-2022",20, "full",FALSE)
+```
+
+2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-20-full-FALSE-2021-2022}
+table_race(dt_all_long[season=="2021-2022"], tri_cols, 20, "full",FALSE)
+```
+
+
+### Intermediate
+
+10 competitors entered the course, achieving 4 new overall PBs and 8 new split PBs: 2 in the pool, 4 on the bike, and 2 on the run.
+
+```{r plot-race-20-int-FALSE-2021-2022}
+plotly_race(dt_all_long, tri_cols, "2021-2022",20, "int",FALSE)
+```
+
+2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-20-int-FALSE-2021-2022}
+table_race(dt_all_long[season=="2021-2022"], tri_cols, 20, "int",FALSE)
+```
+
+
 ## Race 19: 29 Jan 2022 - Super Teams {#r-2022-01-29}
 
 A total of 33 competitors entered, 2 for the first time this season. 
@@ -379,12 +412,12 @@ table_race(dt_all_long[season=="2021-2022"], tri_cols, 10, "int",FALSE)
 
 ## Race 9: 20 Nov 2021 {#r-2021-11-20}
 
-A total of 61 competitors entered, 8 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=6213){target="_blank"}.
+A total of 61 competitors entered, 7 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=6213){target="_blank"}.
 
 
 ### Full
 
-51 competitors entered the course, achieving 31 new overall PBs and 85 new split PBs: 28 in the pool, 35 on the bike, and 22 on the run.
+51 competitors entered the course, achieving 32 new overall PBs and 88 new split PBs: 29 in the pool, 36 on the bike, and 23 on the run.
 
 ```{r plot-race-9-full-FALSE-2021-2022}
 plotly_race(dt_all_long, tri_cols, "2021-2022",9, "full",FALSE)

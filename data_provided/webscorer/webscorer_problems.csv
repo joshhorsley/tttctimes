@@ -753,3 +753,13 @@ date_ymd,Name,part,split_valid,cumulative_valid
 22/1/2022,David Emery,Swim,FALSE,FALSE
 22/1/2022,David Emery,Ride,FALSE,FALSE
 22/1/2022,David Emery,Run,FALSE,TRUE
+,,,,
+,,,,
+5/2/2022,Jenny Scaysbrook,Run,FALSE,FALSE
+5/2/2022,Peter Rudland,Swim,FALSE,FALSE
+5/2/2022,Wendy Wise,Swim,FALSE,FALSE
+5/2/2022,Rowena Smith,Swim,FALSE,FALSE
+5/2/2022,Cohen Parker,Swim,FALSE,FALSE
+5/2/2022,Sue Van Den Broek,Swim,FALSE,FALSE
+5/2/2022,Sue Van Den Broek,Ride,TRUE,FALSE
+5/2/2022,Sue Van Den Broek,Run,FALSE,FALSE

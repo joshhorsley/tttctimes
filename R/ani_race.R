@@ -1,4 +1,4 @@
-race_video <- function(i_date_ymd, j,j_is_champ,fps, duration  =18L, scaling = 2L) {
+race_video <- function(i_date_ymd, j,j_is_champ,fps, duration  =60L, scaling = 2L) {
   
   
   dt_i <- dt_all_long[date_ymd==i_date_ymd & course == j & j_is_champ == (is_champ)][(started)]
@@ -38,16 +38,15 @@ race_video <- function(i_date_ymd, j,j_is_champ,fps, duration  =18L, scaling = 2
   dt_prep_new[stage_overall  %in% c(5,7) & place_diff == 0, `:=`(change_type = "equal",place_text_eq = paste0("-"))]
   
   
-  dt_prep_new[Name=="Josh Horsley"]
-  
+
   setorder(dt_prep_new, name_last, stage_E, stage_R, -part)
   
   
   break_step <- ifelse( max(dt_prep_new$cumulative_mins, na.rm=TRUE) > 100, 20, 10)
   lim_max <- max(dt_prep_new$cumulative_mins, na.rm=TRUE)
   
-  name_position <- -35
-  place_change_offset <- -10
+  name_position <- -50
+  place_change_offset <- -15
   
   g <- ggplot(dt_prep_new, aes(y = - place, x = width, fill = part_plot, col = part_plot, group = Name)) +
     geom_col(orientation = "y", position = "identity", width = 0.8) +
@@ -69,10 +68,10 @@ race_video <- function(i_date_ymd, j,j_is_champ,fps, duration  =18L, scaling = 2
   g <- apply_col(g, tri_cols)
   
   # Apply animation
-  g <- g + transition_states(stage_overall, transition_length = 1, state_length = 6, wrap = FALSE)
+  g <- g + transition_states(stage_overall, transition_length = c(1,6,1,6,1,6), state_length = 1, wrap = FALSE)
   
   g_an <- animate(g, duration = duration, fps = fps,
-                  height = scaling*(150 + 16*n_athletes), width=scaling*700, res = scaling*100, device = "png",
+                  height = scaling*812, width=scaling*375, res = scaling*100, device = "png",
                   renderer = ffmpeg_renderer(format = "mp4",
                                              options = list(codec="libx264",
                                                             pix_fmt ="yuv420p",
@@ -110,7 +109,14 @@ race_video <- function(i_date_ymd, j,j_is_champ,fps, duration  =18L, scaling = 2
 if(!dir.exists("video")) dir.create("video")
 
 if(FALSE) {
-  i_date_ymd <- "2022-01-22"
+  source("R/req_packages.R")
+  source("R/utils.R")
+  source("R/tricols.R")
+  
+  dt_season <- readRDS("data_derived/dt_season.rds")
+  dt_all_long <- readRDS("data_derived/dt_all_long.rds")
+  
+  i_date_ymd <- "2022-02-05"
   # j <- "full"
   j_is_champ <- FALSE
   fps <- 2
@@ -119,7 +125,7 @@ if(FALSE) {
   race_video(i_date_ymd, "full",FALSE,fps)
   race_video(i_date_ymd, "int",FALSE,fps)
   
-  race_video("2021-12-11", "full",FALSE,fps)
-  race_video("2021-12-11", "int",FALSE,fps)
+  # race_video("2021-12-11", "full",FALSE,fps)
+  # race_video("2021-12-11", "int",FALSE,fps)
 
 }

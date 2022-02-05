@@ -1,5 +1,5 @@
 
-participation_video <- function(i_season, fps, duration, scaling = 2L, summary_offset = 15L) {
+participation_video <- function(i_season, fps, duration, scaling = 2L, summary_offset = 25L) {
   
   
   len_season <- max(dt_season[season==i_season, race_number])
@@ -61,13 +61,15 @@ participation_video <- function(i_season, fps, duration, scaling = 2L, summary_o
   
   dt_prep_new[race_number > stage_overall, `:=`(emo = NA, entries = 0, entries_label = NA)]
   dt_prep_new[race_number != stage_overall, summary_text := NA]
+  
+  dt_prep_new[, emo_pos := 6 - 3*(seq(race_number) %% 2)]
 
   
   g <- ggplot(dt_prep_new,
               aes(y = entries, x = race_number, group = race_number, label = emo)) +
     # geom_col(orientation = "x", width = 0.9, size = 0.3, col = c(tri_cols$club_1, tri_cols$club_2, tri_cols$club_3)) +
     geom_col(orientation = "x", width = 0.9, size = 0.3) +
-    geom_text(family="EmojiOne", size = 6, y = 3) +
+    geom_text(family="EmojiOne", size = 6, aes(y = emo_pos)) +
     geom_text(aes(y = entries + 2, x =race_number, group = race_number, label = entries_label), size = 6) +
     geom_text(aes(label = summary_text), y = max_entries + summary_offset + 1, x = -1, hjust = "left", vjust = "top",size = 6) +
     ggtitle(paste0(i_season, " Entries")) + 
@@ -88,7 +90,7 @@ participation_video <- function(i_season, fps, duration, scaling = 2L, summary_o
   if(missing(duration)) duration <- (stage_max + 1)
   
   g_an <- animate(g, duration = duration, fps = fps,
-                  height = scaling*1000, width=scaling*700, res = scaling*100, device = "png",
+                  height = scaling*812, width=scaling*375, res = scaling*100, device = "png",
                   renderer = ffmpeg_renderer(format = "mp4",
                                              options = list(codec="libx264",
                                                             pix_fmt ="yuv420p",
