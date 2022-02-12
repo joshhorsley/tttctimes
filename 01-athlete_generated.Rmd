@@ -475,6 +475,8 @@ Competitors are listed below by last name. Click a name to see all their results
 
 [Owen Nagorcka](#a-owen-nagorcka)
 
+[Owen Navi](#a-owen-navi)
+
 [Aaron Neylan](#a-aaron-neylan)
 
 [Gavin Nichols](#a-gavin-nichols)
@@ -867,7 +869,7 @@ plotly_athlete_all("Sienna Archibald")
 
 ## Andrew Armstrong {#a-andrew-armstrong}
 
-Andrew has results for 7 entries over 3 seasons.
+Andrew has results for 8 entries over 3 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -957,7 +959,7 @@ plotly_athlete_all("Glenn Bailey")
 
 ## Kev Bannerman {#a-kev-bannerman}
 
-Kev has results for 65 entries over 4 seasons.
+Kev has results for 66 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -972,7 +974,7 @@ plotly_athlete_all("Kev Bannerman")
 
 ## Robyn Barry {#a-robyn-barry}
 
-Robyn has results for 16 entries over 2 seasons.
+Robyn has results for 17 entries over 2 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -1077,7 +1079,7 @@ plotly_athlete_all("Greg Bemet")
 
 ## Chris Bilson {#a-chris-bilson}
 
-Chris has results for 3 entries over 1 season.
+Chris has results for 4 entries over 1 season.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -1287,7 +1289,7 @@ plotly_athlete_all("Chris Boyle")
 
 ## Simon Bradbery {#a-simon-bradbery}
 
-Simon has results for 19 entries over 4 seasons.
+Simon has results for 20 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -1452,7 +1454,7 @@ plotly_athlete_all("Matt Burgess")
 
 ## Lee Butcher {#a-lee-butcher}
 
-Lee has results for 1 entry over 1 season.
+Lee has results for 2 entries over 1 season.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -1662,7 +1664,7 @@ plotly_athlete_all("Travis Coleman")
 
 ## Joanne Colja {#a-joanne-colja}
 
-Joanne has results for 52 entries over 4 seasons.
+Joanne has results for 53 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -1692,7 +1694,7 @@ plotly_athlete_all("Jim Collins")
 
 ## Scott Collins {#a-scott-collins}
 
-Scott has results for 18 entries over 3 seasons.
+Scott has results for 19 entries over 3 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -1722,7 +1724,7 @@ plotly_athlete_all("Mark Collinson")
 
 ## Sam Colman {#a-sam-colman}
 
-Sam has results for 32 entries over 3 seasons.
+Sam has results for 33 entries over 3 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -1782,7 +1784,7 @@ plotly_athlete_all("Steve Copeland")
 
 ## Warren Copping {#a-warren-copping}
 
-Warren has results for 59 entries over 4 seasons.
+Warren has results for 60 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -1932,7 +1934,7 @@ plotly_athlete_all("Peter Crowe")
 
 ## Ian Curnow {#a-ian-curnow}
 
-Ian has results for 25 entries over 2 seasons.
+Ian has results for 26 entries over 3 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -1962,7 +1964,7 @@ plotly_athlete_all("Bede Curnow")
 
 ## Jenny Curnow {#a-jenny-curnow}
 
-Jenny has results for 1 entry over 1 season.
+Jenny has results for 2 entries over 2 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -2052,7 +2054,7 @@ plotly_athlete_all("Mark Davies")
 
 ## Guy Davoren {#a-guy-davoren}
 
-Guy has results for 74 entries over 4 seasons.
+Guy has results for 75 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -2187,7 +2189,7 @@ plotly_athlete_all("Aaron Duel")
 
 ## Melanie Duff {#a-melanie-duff}
 
-Melanie has results for 19 entries over 4 seasons.
+Melanie has results for 20 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -2337,7 +2339,7 @@ plotly_athlete_all("Iona Faga")
 
 ## Nick Fawaz {#a-nick-fawaz}
 
-Nick has results for 8 entries over 3 seasons.
+Nick has results for 9 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -2382,7 +2384,7 @@ plotly_athlete_all("Marcus Fox")
 
 ## Tracy Foyster {#a-tracy-foyster}
 
-Tracy has results for 63 entries over 4 seasons.
+Tracy has results for 64 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -2397,7 +2399,7 @@ plotly_athlete_all("Tracy Foyster")
 
 ## Liam Foyster {#a-liam-foyster}
 
-Liam has results for 17 entries over 2 seasons.
+Liam has results for 18 entries over 2 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -2427,7 +2429,7 @@ plotly_athlete_all("Kipp Freeman")
 
 ## Gregory Freeman {#a-gregory-freeman}
 
-Gregory has results for 57 entries over 4 seasons.
+Gregory has results for 58 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -2547,7 +2549,7 @@ plotly_athlete_all("Tyler Gilbert")
 
 ## Alex Gilks {#a-alex-gilks}
 
-Alex has results for 65 entries over 4 seasons.
+Alex has results for 66 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -2562,7 +2564,7 @@ plotly_athlete_all("Alex Gilks")
 
 ## Rob Gillies {#a-rob-gillies}
 
-Rob has results for 36 entries over 4 seasons.
+Rob has results for 37 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -2622,7 +2624,7 @@ plotly_athlete_all("Sera Graham")
 
 ## Ben Hall {#a-ben-hall}
 
-Ben has results for 67 entries over 4 seasons.
+Ben has results for 68 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -2697,7 +2699,7 @@ plotly_athlete_all("Cheyne Hampson")
 
 ## Simon Harradence {#a-simon-harradence}
 
-Simon has results for 33 entries over 4 seasons.
+Simon has results for 34 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -2877,7 +2879,7 @@ plotly_athlete_all("Nina Hoffman")
 
 ## Caroline Hogan {#a-caroline-hogan}
 
-Caroline has results for 17 entries over 2 seasons.
+Caroline has results for 18 entries over 2 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -2892,7 +2894,7 @@ plotly_athlete_all("Caroline Hogan")
 
 ## David Hogan {#a-david-hogan}
 
-David has results for 14 entries over 2 seasons.
+David has results for 15 entries over 2 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -2922,7 +2924,7 @@ plotly_athlete_all("Yaminah Hogg")
 
 ## Kent Holmes {#a-kent-holmes}
 
-Kent has results for 41 entries over 4 seasons.
+Kent has results for 42 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -3027,7 +3029,7 @@ plotly_athlete_all("Lewis Johnson")
 
 ## Darren Jones {#a-darren-jones}
 
-Darren has results for 66 entries over 4 seasons.
+Darren has results for 67 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -3042,7 +3044,7 @@ plotly_athlete_all("Darren Jones")
 
 ## Ginny Jones {#a-ginny-jones}
 
-Ginny has results for 62 entries over 4 seasons.
+Ginny has results for 63 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -3057,7 +3059,7 @@ plotly_athlete_all("Ginny Jones")
 
 ## Michelle Jones {#a-michelle-jones}
 
-Michelle has results for 45 entries over 4 seasons.
+Michelle has results for 46 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -3222,7 +3224,7 @@ plotly_athlete_all("Val Lambard")
 
 ## Danielle Lambert {#a-danielle-lambert}
 
-Danielle has results for 1 entry over 1 season.
+Danielle has results for 2 entries over 1 season.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -3342,7 +3344,7 @@ plotly_athlete_all("Taryn Lester")
 
 ## Jason Littlewood {#a-jason-littlewood}
 
-Jason has results for 1 entry over 1 season.
+Jason has results for 2 entries over 1 season.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -3507,7 +3509,7 @@ plotly_athlete_all("David McEwan")
 
 ## Dane McEwan {#a-dane-mcewan}
 
-Dane has results for 1 entry over 1 season.
+Dane has results for 2 entries over 1 season.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -3597,7 +3599,7 @@ plotly_athlete_all("Rebecca McLucas")
 
 ## Bec McLucas {#a-bec-mclucas}
 
-Bec has results for 15 entries over 3 seasons.
+Bec has results for 16 entries over 3 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -3672,7 +3674,7 @@ plotly_athlete_all("Andrew Miller")
 
 ## Kat Miller {#a-kat-miller}
 
-Kat has results for 27 entries over 3 seasons.
+Kat has results for 28 entries over 3 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -3702,7 +3704,7 @@ plotly_athlete_all("Joe Mollica")
 
 ## Kyle Mooney {#a-kyle-mooney}
 
-Kyle has results for 41 entries over 4 seasons.
+Kyle has results for 42 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -3762,7 +3764,7 @@ plotly_athlete_all("Rachel Morrison")
 
 ## Richard Mourant {#a-richard-mourant}
 
-Richard has results for 63 entries over 4 seasons.
+Richard has results for 64 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -3925,9 +3927,24 @@ Tap or hover on the plots for more info. Plots show all courses together, course
 plotly_athlete_all("Owen Nagorcka")
 ```
 
+## Owen Navi {#a-owen-navi}
+
+Owen has results for 1 entry over 1 season.
+
+Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
+
+```{r a-owen-navi-table}
+table_athlete_all("Owen Navi")
+```
+
+Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. 
+```{r a-owen-navi-plot}
+plotly_athlete_all("Owen Navi")
+```
+
 ## Aaron Neylan {#a-aaron-neylan}
 
-Aaron has results for 31 entries over 2 seasons.
+Aaron has results for 32 entries over 3 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -3957,7 +3974,7 @@ plotly_athlete_all("Gavin Nichols")
 
 ## Lynette Nisbet {#a-lynette-nisbet}
 
-Lynette has results for 6 entries over 2 seasons.
+Lynette has results for 7 entries over 2 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -3972,7 +3989,7 @@ plotly_athlete_all("Lynette Nisbet")
 
 ## Karen Nixon {#a-karen-nixon}
 
-Karen has results for 13 entries over 3 seasons.
+Karen has results for 14 entries over 3 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -3987,7 +4004,7 @@ plotly_athlete_all("Karen Nixon")
 
 ## Lucas Nixon-Hind {#a-lucas-nixon-hind}
 
-Lucas has results for 28 entries over 3 seasons.
+Lucas has results for 29 entries over 3 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -4002,7 +4019,7 @@ plotly_athlete_all("Lucas Nixon-Hind")
 
 ## Nick O'Reilly {#a-nick-oreilly}
 
-Nick has results for 31 entries over 4 seasons.
+Nick has results for 32 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -4227,7 +4244,7 @@ plotly_athlete_all("Carol Ririnui")
 
 ## Hollie Robards {#a-hollie-robards}
 
-Hollie has results for 49 entries over 4 seasons.
+Hollie has results for 50 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -4242,7 +4259,7 @@ plotly_athlete_all("Hollie Robards")
 
 ## Gerard Robards {#a-gerard-robards}
 
-Gerard has results for 59 entries over 4 seasons.
+Gerard has results for 60 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -4407,7 +4424,7 @@ plotly_athlete_all("Wendy Sanders")
 
 ## Jenny Scaysbrook {#a-jenny-scaysbrook}
 
-Jenny has results for 35 entries over 4 seasons.
+Jenny has results for 36 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -4452,7 +4469,7 @@ plotly_athlete_all("Tracey Sewell")
 
 ## Rod Sewell {#a-rod-sewell}
 
-Rod has results for 23 entries over 2 seasons.
+Rod has results for 24 entries over 2 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -4512,7 +4529,7 @@ plotly_athlete_all("Vaughan Skelly")
 
 ## Rowena Smith {#a-rowena-smith}
 
-Rowena has results for 38 entries over 4 seasons.
+Rowena has results for 39 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -4662,7 +4679,7 @@ plotly_athlete_all("Heidi Sowerby")
 
 ## Matthew Stanley {#a-matthew-stanley}
 
-Matthew has results for 52 entries over 4 seasons.
+Matthew has results for 53 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -4752,7 +4769,7 @@ plotly_athlete_all("Jamie Stoddart")
 
 ## Peter Stowe {#a-peter-stowe}
 
-Peter has results for 39 entries over 4 seasons.
+Peter has results for 40 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -4767,7 +4784,7 @@ plotly_athlete_all("Peter Stowe")
 
 ## Scott Styman {#a-scott-styman}
 
-Scott has results for 65 entries over 4 seasons.
+Scott has results for 66 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -4887,7 +4904,7 @@ plotly_athlete_all("Tamy Taylor")
 
 ## Timothy Taylor {#a-timothy-taylor}
 
-Timothy has results for 32 entries over 3 seasons.
+Timothy has results for 33 entries over 3 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -4932,7 +4949,7 @@ plotly_athlete_all("Zoe Taylor-West")
 
 ## Craig Telling {#a-craig-telling}
 
-Craig has results for 44 entries over 4 seasons.
+Craig has results for 45 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -4992,7 +5009,7 @@ plotly_athlete_all("Scott Thomson")
 
 ## Sebastian Thomson {#a-sebastian-thomson}
 
-Sebastian has results for 65 entries over 4 seasons.
+Sebastian has results for 66 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -5007,7 +5024,7 @@ plotly_athlete_all("Sebastian Thomson")
 
 ## Ava Thomson {#a-ava-thomson}
 
-Ava has results for 40 entries over 3 seasons.
+Ava has results for 41 entries over 3 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -5127,7 +5144,7 @@ plotly_athlete_all("Ruth Tutton")
 
 ## Sue Van Den Broek {#a-sue-van-den-broek}
 
-Sue has results for 43 entries over 4 seasons.
+Sue has results for 44 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -5247,7 +5264,7 @@ plotly_athlete_all("Lisa Warner")
 
 ## Danny Warner {#a-danny-warner}
 
-Danny has results for 57 entries over 4 seasons.
+Danny has results for 58 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -5442,7 +5459,7 @@ plotly_athlete_all("Shelley Winder")
 
 ## Wendy Wise {#a-wendy-wise}
 
-Wendy has results for 45 entries over 4 seasons.
+Wendy has results for 46 entries over 4 seasons.
 
 Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 

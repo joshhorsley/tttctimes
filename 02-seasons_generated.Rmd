@@ -164,6 +164,31 @@ table_record(dt_all_long[season=="2021-2022"], tri_cols, "int", "Run")
 ```
 
 
+## Race 21: 12 Feb 2022 {#r-2022-02-12}
+
+A total of 56 competitors entered, 5 for the first time this season. 
+
+
+### Full
+
+48 competitors entered the course.
+
+No timing available for this race. Competitors are listed below.
+```{r tab-race-21-full-FALSE-2021-2022}
+table_race_part_only(dt_all_long, "2021-2022", 21, "full",FALSE)
+```
+
+
+### Intermediate
+
+8 competitors entered the course.
+
+No timing available for this race. Competitors are listed below.
+```{r tab-race-21-int-FALSE-2021-2022}
+table_race_part_only(dt_all_long, "2021-2022", 21, "int",FALSE)
+```
+
+
 ## Race 20: 05 Feb 2022 {#r-2022-02-05}
 
 A total of 52 competitors entered, 7 for the first time this season. 
@@ -206,7 +231,7 @@ A total of 33 competitors entered, 2 for the first time this season.
 
 33 competitors entered the course.
 
-2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+No timing available for this race. Competitors are listed below.
 ```{r tab-race-19-teams-FALSE-2021-2022}
 table_race_teams(dt_all_long[season=="2021-2022"], tri_cols, 19, "teams",FALSE)
 ```
@@ -518,7 +543,7 @@ A total of 58 competitors entered, 58 for the first time this season. [Club Repo
 
 53 competitors entered the course.
 
-2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+No timing available for this race. Competitors are listed below.
 ```{r tab-race-6-full-FALSE-2021-2022}
 table_race_part_only(dt_all_long, "2021-2022", 6, "full",FALSE)
 ```
@@ -528,7 +553,7 @@ table_race_part_only(dt_all_long, "2021-2022", 6, "full",FALSE)
 
 5 competitors entered the course.
 
-2021-2022 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+No timing available for this race. Competitors are listed below.
 ```{r tab-race-6-int-FALSE-2021-2022}
 table_race_part_only(dt_all_long, "2021-2022", 6, "int",FALSE)
 ```
@@ -1043,7 +1068,7 @@ A total of 60 competitors entered, 1 for the first time this season. [Club Repor
 
 60 competitors entered the course.
 
-2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+No timing available for this race. Competitors are listed below.
 ```{r tab-race-18-teams-FALSE-2020-2021}
 table_race_teams(dt_all_long[season=="2020-2021"], tri_cols, 18, "teams",FALSE)
 ```
@@ -1289,7 +1314,7 @@ A total of 57 competitors entered, 1 for the first time this season. [Club Repor
 
 57 competitors entered the course.
 
-2020-2021 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+No timing available for this race. Competitors are listed below.
 ```{r tab-race-8-teams-FALSE-2020-2021}
 table_race_teams(dt_all_long[season=="2020-2021"], tri_cols, 8, "teams",FALSE)
 ```

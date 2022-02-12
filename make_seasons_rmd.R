@@ -247,10 +247,16 @@ foreach (j_counter=j_options, .combine = paste0 ) %do% {
 paste0('```{r plot-race-',i,'-',j,'-',j_is_champ,'-',i_season,'}
 plotly_race(dt_all_long, tri_cols, "',i_season,'",',i,', "',j,'",',j_is_champ,')
 ```\n\n')
-    }},    
+    }},
+
+{if(part_only_j) {
+  "No timing available for this race. Competitors are listed below.\n"
+} else {
+  
+    paste0(i_season ,' season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.\n')
+}
     
-    i_season ,' season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
-',
+  },
 {if(j!="teams" & !part_only_j){
   
   paste0(

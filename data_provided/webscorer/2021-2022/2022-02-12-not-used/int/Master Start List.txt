@@ -1,0 +1,14 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Adjusted time	Time	Lap 1	Lap 2	Lap 3	Handicap	Difference	% Back	% Winning	% Average	% Median
+1	51	Sue Van Den Broek	Sue	Van Den Broek	Intermediate	44:04.2	59:04.2	25:15.0	33:28.0	0:21.2	-15:00.0	-	-	100%	14.40%	6.97%
+2	214	Timothy Taylor	Timothy	Taylor	Intermediate	44:19.8	59:19.8	22:46.9	24:13.0	12:19.9	-15:00.0	+0:15.6	+0.44%	99.56%	14.02%	6.56%
+3	249	Robyn Barry	Robyn	Barry	Intermediate	48:29.8	1:03:29.8	21:48.2	26:27.5	15:14.1	-15:00.0	+4:25.6	+7.49%	93.03%	7.99%	0.00%
+4	130	Melanie Duff	Melanie	Duff	Intermediate	1:11:48.3	1:11:48.3	11:09.1	36:14.0	24:25.1	+0:00.0	+12:44.1	+21.56%	82.26%	-4.05%	-13.08%
+5	62	Scott Thomson	Scott	Thomson	Intermediate	1:16:20.0	1:31:20.0	24:14.5	41:56.4	25:09.1	-15:00.0	+32:15.8	+54.62%	64.68%	-32.35%	-43.84%
+-	-	Odette Blacklock	Odette	Blacklock	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	56	Aimee Harradence	Aimee	Harradence	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	59	Eloise Thomson	Eloise	Thomson	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	160	Jeff Stella	Jeffrey	Stella	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	166	Craig BROADHURST	Craig	BROADHURST	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	240	Sally Kingston	Sally	Kingston	Intermediate	DNS	DNS				+0:00.0	-	-	-	-	-
+-	273	Christine Gannon	Christine	Gannon	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	287	Madeline Smith	Madeline	Smith	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
