@@ -212,6 +212,10 @@ date_ymd,Name,part,split_valid,cumulative_valid
 16/2/2019,Julie West,Ride,FALSE,FALSE
 16/2/2019,Julie West,Run,TRUE,TRUE
 ,,,,
+16/2/2019,Paul Woodger,Swim,FALSE,FALSE
+16/2/2019,Paul Woodger,Ride,TRUE,FALSE
+16/2/2019,Paul Woodger,Run,TRUE,FALSE
+,,,,
 ,,,,
 23/2/2019,Ben Courage,Ride,FALSE,FALSE
 23/2/2019,Ben Courage,Run,FALSE,FALSE
@@ -447,7 +451,6 @@ date_ymd,Name,part,split_valid,cumulative_valid
 1/2/2020,Sharyn Klein,Run,FALSE,FALSE
 ,,,,
 ,,,,
-,,,,
 8/2/2020,Marcel Van Kampen,Ride,FALSE,FALSE
 8/2/2020,Marcel Van Kampen,Run,TRUE,FALSE
 ,,,,
@@ -476,8 +479,8 @@ date_ymd,Name,part,split_valid,cumulative_valid
 29/2/2020,Danny Warner,Ride,FALSE,FALSE
 29/2/2020,Danny Warner,Run,FALSE,FALSE
 ,,,,
-29/2/2020,Scott Thompson,Ride,FALSE,FALSE
-29/2/2020,Scott Thompson,Run,TRUE,FALSE
+29/2/2020,Scott Thomson,Ride,FALSE,FALSE
+29/2/2020,Scott Thomson,Run,TRUE,FALSE
 ,,,,
 29/2/2020,Darren Jones,Run,FALSE,FALSE
 ,,,,

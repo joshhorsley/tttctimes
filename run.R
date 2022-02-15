@@ -259,7 +259,7 @@ if(FALSE){
 # Ordered names -----------------------------------------------------------
 
 
-athletes_ordered <- unique(dt_all_long[(started)][order(tolower(name_last))]$Name)
+athletes_ordered <- unique(dt_all_long[(started)][order(name_last=="", tolower(name_last))]$Name)
 
 
 # Catch multiple entries per date -----------------------------------------
@@ -332,22 +332,11 @@ dt_all_long[, part := ordered(as.character(part), levels = c("Swim","Ride","Run"
 # setorder(dt_all_long, Name, race_number, part)
 setorder(dt_all_long, Name, date_ymd, part)
 
-
-# Format time
-dt_all_long[, n_char_duration := nchar(duration_import)]
-dt_all_long[n_char_duration==6, duration_hms := paste0("0:0", duration_import)]
-dt_all_long[n_char_duration==7, duration_hms := paste0("0:", duration_import)]
-dt_all_long[n_char_duration==9, duration_hms := duration_import]
-
-dt_all_long[, n_char_overall := nchar(time_overall_import)]
-dt_all_long[n_char_overall==6, overall_hms := paste0("0:0", time_overall_import)]
-dt_all_long[n_char_overall==7, overall_hms := paste0("0:", time_overall_import)]
-dt_all_long[n_char_overall==9, overall_hms := time_overall_import]
+dt_all_long[, duration_hms := std_time(duration_import)]
+dt_all_long[, overall_hms := std_time(time_overall_import)]
 
 dt_all_long[, duration_seconds := as.numeric(seconds(hms(duration_hms)))]
 dt_all_long[is.na(duration_seconds) & (started), duration_seconds := 0]
-
-
 
 # Apply handicaps
 dt_all_long[!is.na(handicap_import) & (started), has_handicap := TRUE]
@@ -357,14 +346,10 @@ stopifnot(n_bad_columns==0)
 
 # get sign of handicap
 dt_all_long[(has_handicap), handicap_negative := substr(handicap_import,1,1)=="-"]
-
 dt_all_long[(has_handicap), handicap_prep := substring(handicap_import, 2)]
 
 
-dt_all_long[(has_handicap), n_char_handicap := nchar(handicap_prep)]
-dt_all_long[(has_handicap) & n_char_handicap==6, handicap_hms := paste0("0:0", handicap_prep)]
-dt_all_long[(has_handicap) & n_char_handicap==7, handicap_hms := paste0("0:", handicap_prep)]
-dt_all_long[(has_handicap) & n_char_handicap==9, handicap_hms := handicap_prep]
+dt_all_long[, handicap_hms := std_time(handicap_prep)]
 
 dt_all_long[(has_handicap), handicap_seconds := as.numeric(seconds(hms(handicap_hms)))]
 dt_all_long[(has_handicap) & (handicap_negative), handicap_seconds := -handicap_seconds]

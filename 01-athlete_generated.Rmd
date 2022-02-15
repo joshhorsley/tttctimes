@@ -6,11 +6,6 @@
 Competitors are listed below by last name. Click a name to see all their results.
 
 
-**Unknown**
-
-[Taku](#a-taku)
-
-
 **A**
 
 [Amanadine Adam](#a-amanadine-adam)
@@ -717,20 +712,10 @@ Competitors are listed below by last name. Click a name to see all their results
 
 [Mark Yager](#a-mark-yager)
 
-## Taku {#a-taku}
 
-Taku has results for 1 entry over 1 season.
+**Unknown**
 
-Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
-
-```{r a-taku-table}
-table_athlete_all("Taku")
-```
-
-Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. 
-```{r a-taku-plot}
-plotly_athlete_all("Taku")
-```
+[Taku](#a-taku)
 
 ## Amanadine Adam {#a-amanadine-adam}
 
@@ -5560,6 +5545,21 @@ table_athlete_all("Mark Yager")
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. 
 ```{r a-mark-yager-plot}
 plotly_athlete_all("Mark Yager")
+```
+
+## Taku {#a-taku}
+
+Taku has results for 1 entry over 1 season.
+
+Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
+
+```{r a-taku-table}
+table_athlete_all("Taku")
+```
+
+Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. 
+```{r a-taku-plot}
+plotly_athlete_all("Taku")
 ```
 
 

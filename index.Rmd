@@ -22,14 +22,31 @@ season_lowest <- min(dt_season$season)
 
 ```
 
-
-
-
 This is an unofficial collection of [TwinTowns Triathlon Club](http://www.twintownstriathlon.org.au){target="_blank"} race results based on the [club's webscorer page](https://www.webscorer.com/33755){target="_blank"}.
 
-Results are available from the `r season_lowest` season onwards.
+See results by:
 
-Results are presented in terms of [overall participation](#participation-total-all), participation and records in each season ([example](#participation-total-2020-2021)), for each race ([example](#r-2021-02-13)), and for each competitor ([example](#a-tracy-foyster)).
+- Race ([eg 5 Feb 2022](#r-2022-02-05))
+- [Competitor](#athletes)
+- Season participation and records ([eg 2021-2022](#season-2021-2022))
+- [Race entries](#participation-total-all)
+
+Results are available from the `r season_lowest` season onwards:
+
+
+```{r season-table}
+
+dt_season_tab <- dt_season[, .(Seasons =unique(season))]
+
+dt_season_tab[, Seasons := paste0('<a href="season-',Seasons, '.html#',Seasons,'">',Seasons,'</a>')]
+
+DT::datatable(dt_season_tab, rownames = FALSE,escape = FALSE,
+              options = list(ordering = FALSE,
+                             paging = FALSE,
+                             dom = 't'))
+
+```
+
 
 
 # Participation {#participation-total-all}

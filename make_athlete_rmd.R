@@ -16,7 +16,7 @@ Competitors are listed below by last name. Click a name to see all their results
 
 
 # Name list
-dt_names <- dt_all_long[, .(name_last = name_last[1], name_first = name_first[1],athlete_ref = athlete_ref[1]), by = Name][order(name_last, name_first)]
+dt_names <- dt_all_long[, .(name_last = name_last[1], name_first = name_first[1],athlete_ref = athlete_ref[1]), by = Name][order(name_last=="", name_last, name_first)]
 
 dt_names[, last_initial := substr(name_last,1,1)]
 dt_names[last_initial=="", last_initial := "Unknown"]

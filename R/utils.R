@@ -260,3 +260,26 @@ standardise_names <- function(name){
 
   
 }
+
+
+
+# Time --------------------------------------------------------------------
+
+
+std_time <- function(x) {
+  
+  n_char_in <- nchar(x)
+  
+  x[n_char_in==6 & !is.na(n_char_in)] <- paste0("0:0", x[n_char_in==6 & !is.na(n_char_in)])
+  x[n_char_in==7 & !is.na(n_char_in)] <- paste0("0:", x[n_char_in==7 & !is.na(n_char_in)])
+
+  return(x)
+  
+}
+
+
+
+
+
+
+

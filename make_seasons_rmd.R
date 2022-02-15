@@ -22,16 +22,29 @@ header <- paste0({
     len_season <- max(dt_season[season==i_season]$race_number)
     
   
-    paste0('# Season ', i_season,'\n\n',
+    paste0('# Season ', i_season, ' {#season-',i_season,'}\n\n',
            
-           'Find race results from the schedule below or the menu. ',
+           'Find race results from the schedule below. Or see:',
+           '\n',
            
-           {if(any_entries) {paste0('Season [participation](#participation-total-',i_season,')',
-           ' and best times for each course are also available.')}},
+           {if(any_entries) {
+             
+             paste0("\nParticipation by:"
+                    ,"\n\n- [Total entries](#participation-total-",i_season,")",
+                    "\n- [Race and course](#participation-trends-",i_season,")",
+                    
+                    "\n\nSeason course records:\n",
+                    {if("full" %in% course_avail_season) paste0('\n- [Full](#best-times-full-',i_season,")")},
+                    {if("int" %in% course_avail_season) paste0('\n- [Intermediate](#best-times-int-',i_season,")")},
+                    {if("double" %in% course_avail_season) paste0('\n- [Double Distance](#best-times-double-',i_season,")")}
+                    )
+             
+             
+           }},
            
-           '\n\n',
+           
          
-'#### Schedule {#schedule-',i_season,'}
+'\n\n#### Schedule {#schedule-',i_season,'}
 
 ```{r schedule-',i_season,'}
 
@@ -62,7 +75,7 @@ col_ref_hide <- which(!(names(dt_season_show) %in% c("#","Date","Note","Club Rep
 datatable_std(dt_season_show,col_ref_hide,escape = FALSE,ordering = FALSE)
 ```
 
-', {if(any_entries) {paste0('## Participation - Total {#participation-total-',i_season,'}
+', {if(any_entries) {paste0('## Participation ',i_season,' - Total {#participation-total-',i_season,'}
 
 ```{r}
 n_entries_all_season <- nrow(dt_all_long[season=="',i_season,'"][part == "Swim"])
@@ -80,7 +93,7 @@ plotly_part_hist(dt_all_long[season=="',i_season,'"],len_season=',len_season,')
 table_part_total("',i_season,'")
 ```
 
-## Participation - Trends {#participation-trends-',i_season,'}
+## Participation ',i_season,' - Trends {#participation-trends-',i_season,'}
 
 
 ### By Race
@@ -93,7 +106,7 @@ dt_entry_type[, text := paste0(count, " for ", course_nice)]
 
 The total number of entries by course are `r list_with_and(dt_entry_type$text)`. The plot below shows the number of entries by course over the ',i_season,' season. Race cancellations are shown on the plot with the letter \"C\". 
 
-```{r plot-raace-count-',i_season,'}
+```{r plot-race-count-',i_season,'}
 plot_race_count(dt_all_long,"',i_season,'",len_season=',len_season,')
 ```
 
@@ -120,7 +133,7 @@ plotly_time_series(dt_all_long[season=="',i_season,'"],len_season=',len_season,'
     
     
     
-    paste0("\n## Best Times - ", j_course_nice,' {#best-times-',j,'-',i_season,"}",
+    paste0("\n## Best Times ",i_season," - ", j_course_nice,' {#best-times-',j,'-',i_season,"}",
   "\n\nThe fastest valid overall and split times in the ",i_season," season for each competitor are ranked in the plot and tables below.\n\n",
   "\n\n### Overall\n\n",
   '
