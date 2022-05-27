@@ -759,10 +759,63 @@ date_ymd,Name,part,split_valid,cumulative_valid
 ,,,,
 ,,,,
 5/2/2022,Jenny Scaysbrook,Run,FALSE,FALSE
+,,,,
 5/2/2022,Peter Rudland,Swim,FALSE,FALSE
+,,,,
 5/2/2022,Wendy Wise,Swim,FALSE,FALSE
+,,,,
 5/2/2022,Rowena Smith,Swim,FALSE,FALSE
+,,,,
 5/2/2022,Cohen Parker,Swim,FALSE,FALSE
+,,,,
 5/2/2022,Sue Van Den Broek,Swim,FALSE,FALSE
 5/2/2022,Sue Van Den Broek,Ride,TRUE,FALSE
 5/2/2022,Sue Van Den Broek,Run,FALSE,FALSE
+,,,,
+,,,,
+19/2/2022,Ian Curnow,Swim,FALSE,FALSE
+19/2/2022,Ian Curnow,Ride,TRUE,FALSE
+19/2/2022,Ian Curnow,Run,TRUE,FALSE
+,,,,
+19/2/2022,Warren Copping,Swim,FALSE,FALSE
+19/2/2022,Warren Copping,Ride,TRUE,FALSE
+19/2/2022,Warren Copping,Run,TRUE,FALSE
+,,,,
+19/2/2022,Rowena Smith,Swim,FALSE,FALSE
+19/2/2022,Rowena Smith,Ride,TRUE,FALSE
+19/2/2022,Rowena Smith,Run,TRUE,FALSE
+,,,,
+19/2/2022,Guy Davoren,Run,FALSE,FALSE
+,,,,
+,,,,
+26/2/2022,Kat Miller,Swim,FALSE,FALSE
+26/2/2022,Kat Miller,Ride,TRUE,FALSE
+26/2/2022,Kat Miller,Run,TRUE,FALSE
+,,,,
+26/2/2022,Peter Rudland,Swim,FALSE,FALSE
+26/2/2022,Peter Rudland,Ride,TRUE,FALSE
+26/2/2022,Peter Rudland,Run,TRUE,FALSE
+,,,,
+26/2/2022,Danielle Lambert,Swim,FALSE,FALSE
+26/2/2022,Danielle Lambert,Ride,TRUE,FALSE
+26/2/2022,Danielle Lambert,Run,FALSE,FALSE
+,,,,
+26/2/2022,Wendy Wise,Swim,FALSE,FALSE
+26/2/2022,Wendy Wise,Ride,TRUE,FALSE
+26/2/2022,Wendy Wise,Run,TRUE,FALSE
+,,,,
+26/2/2022,Ian Curnow,Swim,FALSE,FALSE
+26/2/2022,Ian Curnow,Ride,TRUE,FALSE
+26/2/2022,Ian Curnow,Run,TRUE,FALSE
+,,,,
+26/2/2022,Sue Van Den Broek,Swim,FALSE,FALSE
+26/2/2022,Sue Van Den Broek,Ride,TRUE,FALSE
+26/2/2022,Sue Van Den Broek,Run,TRUE,FALSE
+,,,,
+26/2/2022,Rowena Smith,Swim,FALSE,FALSE
+26/2/2022,Rowena Smith,Ride,TRUE,FALSE
+26/2/2022,Rowena Smith,Run,TRUE,FALSE
+,,,,
+26/2/2022,John King,Swim,FALSE,FALSE
+26/2/2022,John King,Ride,TRUE,FALSE
+26/2/2022,John King,Run,TRUE,FALSE

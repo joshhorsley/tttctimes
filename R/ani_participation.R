@@ -90,7 +90,7 @@ participation_video <- function(i_season, fps, duration, scaling = 2L, summary_o
   if(missing(duration)) duration <- (stage_max + 1)
   
   g_an <- animate(g, duration = duration, fps = fps,
-                  height = scaling*812, width=scaling*375, res = scaling*100, device = "png",
+                  height = scaling*700, width=scaling*375, res = scaling*100, device = "png",
                   renderer = ffmpeg_renderer(format = "mp4",
                                              options = list(codec="libx264",
                                                             pix_fmt ="yuv420p",
@@ -116,7 +116,7 @@ if(FALSE) {
   
   i_season <- "2021-2022"
   
-  participation_video(i_season, 60)
+  participation_video(i_season, 2)
   
   
 }

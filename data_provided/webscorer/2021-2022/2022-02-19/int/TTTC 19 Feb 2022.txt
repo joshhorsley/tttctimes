@@ -1,0 +1,13 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Adjusted time	Time	Lap 1	Lap 2	Lap 3	Handicap	Difference	% Back	% Winning	% Average	% Median
+1	110	Rowena Smith	Rowena	Smith	Intermediate	33:47.3	56:12.3	22:42.2	22:55.4	10:34.7	-22:25.0	-	-	100%	15.95%	16.91%
+2	214	Timothy Taylor	Timothy	Taylor	Intermediate	43:08.6	58:08.6	22:44.5	22:41.0	12:43.1	-15:00.0	+1:56.3	+3.45%	96.67%	13.05%	14.04%
+3	249	Robyn Barry	Robyn	Barry	Intermediate	47:55.4	1:02:55.4	21:57.2	26:08.4	14:49.9	-15:00.0	+6:43.1	+11.95%	89.32%	5.91%	6.97%
+4	59	Eloise Thompson	Eloise	Thompson	Intermediate	57:21.5	1:12:21.5	21:59.0	32:22.5	18:00.0	-15:00.0	+16:09.2	+28.74%	77.68%	-8.20%	-6.97%
+5	101	Liam Foyster	Liam	Foyster	Intermediate	59:57.4	1:14:57.4	27:19.3	31:17.6	16:20.5	-15:00.0	+18:45.1	+33.36%	74.98%	-12.09%	-10.82%
+6	32	Guy Davoren	Guy	Davoren	Intermediate	1:01:39.2	1:16:39.2	11:53.9	58:23.0	6:22.3	-15:00.0	+20:26.9	+36.38%	73.32%	-14.62%	-13.32%
+-	-	Bri Perrin	Bri	Perrin	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	-	Elliot-Rose McLucas	Elliot-Rose	McLucas	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	-	Tyson Perrin	Tyson	Perrin	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	22	Julie Lowe	Julie	Lowe	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	296	Cooper Bloor	Cooper	Bloor	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	297	Isaac Bloor	Isaac	Bloor	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-

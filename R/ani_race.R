@@ -61,7 +61,7 @@ race_video <- function(i_date_ymd, j,j_is_champ,fps, duration  =60L, scaling = 2
                        labels = seq(n_athletes))+
     theme_minimal() +
     theme(legend.position="bottom",
-          plot.title = element_text(size=20))
+          plot.title = element_text(size=15))
 
   g <- g + scale_x_continuous("Time (mins)", breaks = seq(0,150, break_step), minor_breaks = seq(0,150, 5),position = "top", limits = c(name_position + place_change_offset,lim_max))
   
@@ -71,7 +71,7 @@ race_video <- function(i_date_ymd, j,j_is_champ,fps, duration  =60L, scaling = 2
   g <- g + transition_states(stage_overall, transition_length = c(1,6,1,6,1,6), state_length = 1, wrap = FALSE)
   
   g_an <- animate(g, duration = duration, fps = fps,
-                  height = scaling*812, width=scaling*375, res = scaling*100, device = "png",
+                  height = scaling*700, width=scaling*375, res = scaling*100, device = "png",
                   renderer = ffmpeg_renderer(format = "mp4",
                                              options = list(codec="libx264",
                                                             pix_fmt ="yuv420p",
@@ -116,12 +116,14 @@ if(FALSE) {
   dt_season <- readRDS("data_derived/dt_season.rds")
   dt_all_long <- readRDS("data_derived/dt_all_long.rds")
   
-  i_date_ymd <- "2022-02-05"
+  i_date_ymd <- "2022-03-19"
   # j <- "full"
+  j_is_champ <- TRUE
   j_is_champ <- FALSE
   fps <- 2
   fps <- 60
   
+  race_video(i_date_ymd, "full",j_is_champ,fps)
   race_video(i_date_ymd, "full",FALSE,fps)
   race_video(i_date_ymd, "int",FALSE,fps)
   

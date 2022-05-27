@@ -1,0 +1,16 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Adjusted time	Time	Lap 1	Lap 2	Lap 3	Handicap	Difference	% Back	% Winning	% Average	% Median
+1	280	Ashleigh MURPHY	Ashleigh	MURPHY	Intermediate	47:17.5	52:47.5	12:04.5	27:50.7	12:52.4	-5:30.0	-	-	100%	12.52%	16.85%
+2	249	Robyn BARRY	Robyn	BARRY	Intermediate	48:29.4	1:03:29.4	21:53.2	26:46.1	14:50.0	-15:00.0	+10:41.9	+20.27%	83.15%	-5.20%	0.00%
+3	205	Karen NIXON	Karen	NIXON	Intermediate	49:46.0	1:04:46.0	23:53.3	27:59.8	12:52.9	-15:00.0	+11:58.5	+22.68%	81.51%	-7.32%	-2.01%
+-	56	Aimee HARRADENCE	Aimee	HARRADENCE	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	59	Eloise Thomson	Eloise	Thomson	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	101	Liam FOYSTER	Liam	FOYSTER	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	136	Greg WILLIAMSON	Greg	WILLIAMSON	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	141	Erin DAVERON	Erin	DAVOREN	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	214	Timothy TAYLOR	Timothy	TAYLOR	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	281	Carol RIRINUI	Carol	RIRINUI	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	287	Madeline Smith	madeline	Smith	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	292	Annaka PARKER	Annaka	PARKER	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	293	Cohen PARKER	Cohen	PARKER	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	296	Cooper Bloor	Cooper	Bloor	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	297	Isaac BLOOR	Isaac	BLOOR	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-

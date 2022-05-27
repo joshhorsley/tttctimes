@@ -322,6 +322,7 @@ dt_all_long[date_ymd=="2020-01-11" & Name == "Andrew Armstrong", course := "int"
 dt_all_long[date_ymd=="2020-02-22" & Name == "Lydia Kuschmirz", course := "int"]
 dt_all_long[date_ymd=="2020-02-29" & Name == "Timothy Eade", course := "full"]
 dt_all_long[date_ymd=="2021-02-13" & Name == "Colin Woodward", course := "int"]
+dt_all_long[date_ymd=="2022-02-26" & Name == "Judy Murray", course := "int"]
 
 
 # Cleaning ----------------------------------------------------------------
