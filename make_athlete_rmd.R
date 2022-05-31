@@ -54,12 +54,13 @@ repeated <- foreach(k=athletes_ordered, .combine = paste0 ) %do% {
   n_entries_athlete_all <- dt_all_long_athlete[(is_last_entry_all) & part == "Swim", entries_total_all]
   
   paste0("## ", k, " {#", k_ref, "}",
-         "\n\n", name_first, " has results for ",
-         n_entries_athlete_all," ", ifelse(n_entries_athlete_all==1,"entry", "entries")
-         ," over ", n_seasons, " ", ifelse(n_seasons==1,"season", "seasons"),".\n\n",
+         "\n\n", name_first, " has ",
+         n_entries_athlete_all," ", ifelse(n_entries_athlete_all==1,"entry", "entries"),
+         # ," over ", n_seasons, " ", ifelse(n_seasons==1,"season", "seasons"),
+         ".\n\n",
          
          
-         "Scroll down to see a table and plot of all results. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.\n",
+         "Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.\n",
 
 '\n```{r ',k_ref,'-table}
 table_athlete_all("',k,'")

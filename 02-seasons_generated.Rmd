@@ -259,7 +259,7 @@ table_race(dt_all_long[season=="2021-2022"], tri_cols, 24, "int",FALSE)
 
 ## Race 23: 26 Feb 2022 {#r-2022-02-26}
 
-A total of 44 competitors entered, 1 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=6426){target="_blank"}.
+A total of 44 competitors entered. [Club Report](http://www.twintownstriathlon.org.au/?p=6426){target="_blank"}.
 
 
 ### Full
@@ -2201,12 +2201,12 @@ table_race(dt_all_long[season=="2019-2020"], tri_cols, 20, "int",FALSE)
 
 ## Race 19: 01 Feb 2020 {#r-2020-02-01}
 
-A total of 60 competitors entered, 2 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=5395){target="_blank"}.
+A total of 60 competitors entered, 1 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=5395){target="_blank"}.
 
 
 ### Full
 
-49 competitors entered the course, achieving 8 new overall PBs and 25 new split PBs: 11 in the pool, 12 on the bike, and 2 on the run.
+49 competitors entered the course, achieving 9 new overall PBs and 28 new split PBs: 12 in the pool, 13 on the bike, and 3 on the run.
 
 ```{r plot-race-19-full-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",19, "full",FALSE)

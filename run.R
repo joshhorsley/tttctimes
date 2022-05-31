@@ -465,6 +465,145 @@ dt_all_long[(started), place_cum_nice := format_place(place_cum_recalc)]
 
 courses_fd <- c("full","double")
 
+# get old totals
+path_totals <- "data_provided/manual/Total Tri Races 2022 Season.xlsx"
+
+rows_drop <- c(
+  "zz",
+  "zz ALL YEARS",
+  "zz INTERMEDIATE All",
+  "zz INTERMEDIATE COMPETITORS",
+  "zzTOTAL COMPETITORS",
+  "zzTOTAL STARTERS"
+)
+
+dt_totals_old <- as.data.table(read_xlsx(path_totals))[!(Name %in% rows_drop)]
+
+dt_totals_old[, entries_historical := sum(`17/18`,
+                                 `16/17`,
+                                 `15/16`,
+                                 `14/15`,
+                                 `13/14`,
+                                 `12/13`,
+                                 `11/12`,
+                                 `10/11`,
+                                 `09/10`,
+                                 `08/09`,
+                                 `07/08`,
+                                 `06/07`,
+                                 `'05/06`,
+                                 `'04/05`,
+                                 `'03/04`,
+                                 `'02/03`,
+                                 `'01/02`,
+                                 `'00/01`,
+                                 `99/00`,
+                                 `98/99`,
+                                 `97/98`,
+                                 `96/97`,
+                                 `95/96`,
+                                 `94/95`,
+                                 `93/94`,
+                                 `92/93`,
+                                 `91/92`,
+                                 `90/91`,
+                                 `89/90`,
+                                 na.rm=TRUE), by = Name]
+
+
+# join
+dt_all_long[, name_match := tolower(paste0(name_last, " ", name_first))]
+# dt_all_long$name_match %in% tolower(dt_totals_old$Name)
+
+
+dt_totals_old[Name == "HEAD Allan", name_match := "HEAD Alan"]
+dt_totals_old[Name == "SMITH Alex William", name_match := "SMITH Alex"]
+dt_totals_old[Name == "BELLENGER Armadeus", name_match := "BELLENGER Amadeus"]
+dt_totals_old[Name == "McLUCAS Rebecca", name_match := "McLucas Bec"]
+dt_totals_old[Name == "SMITH Bob", name_match := "SMITH Bobby"]
+dt_totals_old[Name == "BELLENGER Carol", name_match := "BELLENGER Caroline"]
+dt_totals_old[Name == "HEASLIP Cassie", name_match := "HEASLIP Cassandra"]
+dt_totals_old[Name == "DANCE-WILSON Charlotte", name_match := "DANCEWILSON Charlotte"]
+dt_totals_old[Name == "KLEIN Kodie", name_match := "KLEIN Codie"]
+dt_totals_old[Name == "TONEY Damion", name_match := "TONEY Damien"]
+dt_totals_old[Name == "JOHNSON Daniel", name_match := "JOHNSON Dan"]
+dt_totals_old[Name == "Geoffrey Tapping", name_match := "Tapping Geoffrey"]
+dt_totals_old[Name == "JONES Virginia", name_match := "JONES Ginny"]
+dt_totals_old[Name == "SMITH Geoff Kevin", name_match := "SMITH Geoff"]
+dt_totals_old[Name == "FORBES Glen", name_match := "FORBES Glenn"]
+dt_totals_old[Name == "FREEMAN Greg", name_match := "FREEMAN Gregory"]
+dt_totals_old[Name == "JENKINS Haydn", name_match := "JENKINS Hayden"]
+dt_totals_old[Name == "DANCE-WILSON Hillary", name_match := "DANCEWILSON Hillary"]
+dt_totals_old[Name == "STELLA Jeffrey", name_match := "STELLA Jeff"]
+dt_totals_old[Name == "SCAYSBROOK Jen", name_match := "SCAYSBROOK Jenny"]
+dt_totals_old[Name == "WARD Joe", name_match := "WARD Jolyon"]
+dt_totals_old[Name == "DAVIES Jonathon", name_match := "DAVIES Jonathan"]
+dt_totals_old[Name == "COSTELLO Joe", name_match := "COSTELLO Joseph"]
+dt_totals_old[Name == "HEAD Katie", name_match := "HEAD Kate"]
+dt_totals_old[Name == "STUTTLE Kelly", name_match := "Styman Kelly"]
+dt_totals_old[Name == "BANNERMAN Kevin", name_match := "BANNERMAN Kev"]
+dt_totals_old[Name == "HALL Amanda", name_match := "HALL Manda"]
+dt_totals_old[Name == "VANKAMPEN Marcel", name_match := "VAN KAMPEN Marcel"]
+dt_totals_old[Name == "STANLEY Matt", name_match := "STANLEY Matthew"]
+dt_totals_old[Name == "Matthew Tapping", name_match := "TAPPING MATTHEW"]
+dt_totals_old[Name == "OREILLY Nick", name_match := "O'REILLY Nick"]
+dt_totals_old[Name == "Peta Edge", name_match := "EDGE Peta"]
+dt_totals_old[Name == "McFIE Peter", name_match := "McFIE Pete"]
+dt_totals_old[Name == "SALTER Phil", name_match := "SALTER Philip"]
+dt_totals_old[Name == "EID Rod", name_match := "EID Rob"]
+dt_totals_old[Name == "LEONARD Sam", name_match := "LEONARD Samantha"]
+dt_totals_old[Name == "THOMPSON Sebastian", name_match := "THOMSON Sebastian"]
+dt_totals_old[Name == "VAN WYK Selwyn", name_match := "VAN WYK Selywn"]
+dt_totals_old[Name == "OLDBURG Sean", name_match := "Oldbury Shaun"]
+dt_totals_old[Name == "WINDER Shelly", name_match := "WINDER Shelley"]
+dt_totals_old[Name == "BAXTER Sue", name_match := "BAXTER Susan"]
+dt_totals_old[Name == "TAYLOR Tammy", name_match := "TAYLOR Tamy"]
+dt_totals_old[Name == "SIMPSON Terry", name_match := "SIMPSON Terence"]
+dt_totals_old[Name == "CORDEIRO Thaigo", name_match := "CORDEIRO Thiago"]
+dt_totals_old[Name == "TAYLOR Tim", name_match := "TAYLOR Timothy"]
+dt_totals_old[Name == "GADALETA Trudie", name_match := "GADALETA Trudy"]
+dt_totals_old[Name == "LAMBARD Valerie", name_match := "LAMBARD Val"]
+dt_totals_old[Name == "LAWES Vicky", name_match := "LAWES Vicki"]
+dt_totals_old[Name == "WRIGHT Vivienne", name_match := "WRIGHT Viv"]
+dt_totals_old[Name == "SMITH Wayne", name_match := "SMITH Wayde"]
+dt_totals_old[Name == "TAYLOR Will", name_match := "TAYLOR William"]
+
+dt_totals_old[is.na(name_match), name_match := Name]
+dt_totals_old[, name_match := tolower(name_match)]
+
+confirm_not <- c("Aimee Harradence",
+                 "Brett Archibald",
+                 "Bri Perrin",
+                 "Dan Delbridge",
+                 "Dane McEwan",
+                 "Jack Hall",
+                 "Jasmine Costanza",
+                 "Lewis Johnson",
+                 "Marcin Mazurek",
+                 "Marcus Fox",
+                 "Owen Navi",
+                 "Patrick Rudd",
+                 "Robyn Barry",
+                 "Ryan Bray",
+                 "Sienna Archibald",
+                 "Taku",
+                 "Tyson Perrin",
+                 "Yaminah Hogg"
+                 )
+
+dt_test_coverage <- dt_all_long[!(name_match %in% tolower(dt_totals_old$name_match))][
+  part=="Swim", .(Bib = list(unique(Bib)), races = sum(started)), by = Name][
+    !(Name) %in% confirm_not
+  ]
+
+if(nrow(dt_test_coverage) !=0 ) {
+  warning("Some new names not found in participation archive")
+}
+
+dt_all_long[dt_totals_old, on = .(name_match), entries_historical := i.entries_historical]
+dt_all_long[Name %in% confirm_not, entries_historical := 0]
+
+
 # By season
 dt_all_long[, entries_cumulative := cumsum(started), by = .(Name, season, part)]
 dt_all_long[, entries_total := max(entries_cumulative), by = .(Name, season)]
@@ -482,7 +621,7 @@ dt_all_long[(is_last_entry), entries_total_fd_rank := rank(-entries_total_fd, ti
 
 # Over all seasons
 dt_all_long[, entries_cumulative_all := cumsum(started), by = .(Name, part)]
-dt_all_long[, entries_total_all := max(entries_cumulative_all), by = .(Name)]
+dt_all_long[, entries_total_all := max(entries_cumulative_all) + entries_historical, by = .(Name)]
 dt_all_long[, is_last_entry_all := date_ymd == max(date_ymd), by = Name]
 
 dt_all_long[(is_last_entry_all), entries_total_all_rank := rank(-entries_total_all, ties.method = "min"), by = .(part)]
@@ -490,7 +629,7 @@ dt_all_long[(is_last_entry_all), entries_total_all_rank := rank(-entries_total_a
 
 # Over all seasons - full and double
 dt_all_long[, entries_cumulative_all_fd := cumsum(course %in% courses_fd), by = .(Name, part)]
-dt_all_long[, entries_total_all_fd := max(entries_cumulative_all_fd), by = .(Name)]
+dt_all_long[, entries_total_all_fd := max(entries_cumulative_all_fd) + entries_historical, by = .(Name)]
 
 dt_all_long[(is_last_entry), entries_total_all_fd_rank := rank(-entries_total_all_fd, ties.method = "min"), by = .(part)]
 
