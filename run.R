@@ -92,7 +92,6 @@ dt_teams_manual[, date_ymd := as.IDate(date_ymd, format = "%d/%m/%Y")]
 teams_manual_dates <- unique(dt_teams_manual$date_ymd)
 
 # have results
-
 dt_season[, have_results_webscorer := file.exists(path_webscorer)]
 dt_season[, have_results_manual := date_ymd %in% c(teams_manual_dates,regular_manual_dates)]
 dt_season[, have_results := (have_results_webscorer) | (have_results_manual)]
@@ -118,9 +117,9 @@ dt_teams_manual_long1 <- melt.data.table(dt_teams_manual,
                 variable.name = "racer_ref",
                 value.name = "Name")
 
-dt_teams_manual_long1[, Swim := dummy_times$Swim]
-dt_teams_manual_long1[, Ride := dummy_times$Ride]
-dt_teams_manual_long1[, Run := dummy_times$Run]
+dt_teams_manual_long1[, `:=`(Swim = dummy_times$Swim,
+                             Ride = dummy_times$Ride,
+                             Run = dummy_times$Run)]
 
 dt_teams_manual_long <- melt.data.table(dt_teams_manual_long1,
                 id.vars = c("season","race_number","date_ymd", "Team No","racer_ref", "Name"),
@@ -129,10 +128,7 @@ dt_teams_manual_long <- melt.data.table(dt_teams_manual_long1,
                 value.name = c("duration_import"))
                 
 
-dt_teams_manual_long[, course := "teams"]
-dt_teams_manual_long[, started := TRUE]
-dt_teams_manual_long[, is_champ := FALSE]
-dt_teams_manual_long[, participation_only := TRUE]
+dt_teams_manual_long[, `:=`(course = "teams", started = TRUE, is_champ = FALSE, participation_only = TRUE)]
 
 new_cols <- c("course_nice","race_type","race_ref", "race_link")
 dt_teams_manual_long[dt_season, on = .(date_ymd, course, is_champ), (new_cols) := mget(new_cols)]
@@ -140,14 +136,12 @@ dt_teams_manual_long[dt_season, on = .(date_ymd, course, is_champ), (new_cols) :
 setnames(dt_teams_manual_long, "Team No", "team_number")
 
 
-
-
 # Prep manual regular results ---------------------------------------------
 
 
-dt_regular_manual[, Swim := dummy_times$Swim]
-dt_regular_manual[, Ride := dummy_times$Ride]
-dt_regular_manual[, Run := dummy_times$Run]
+dt_regular_manual[, `:=`(Swim = dummy_times$Swim,
+                         Ride = dummy_times$Ride,
+                         Run = dummy_times$Run)]
 
 dt_regular_manual_long <- melt.data.table(dt_regular_manual,
                                         id.vars = c("date_ymd","course","Name", "is_champ"),
@@ -155,9 +149,7 @@ dt_regular_manual_long <- melt.data.table(dt_regular_manual,
                                         variable.name = c("part"),
                                         value.name = c("duration_import"))
 
-dt_regular_manual_long[, started := TRUE]
-dt_regular_manual_long[, participation_only := TRUE]
-
+dt_regular_manual_long[, `:=`(started = TRUE, participation_only = TRUE)]
 
 new_cols <- c("season", "race_number","course_nice","race_type","race_ref", "race_link")
 dt_regular_manual_long[dt_season, on = .(date_ymd, course, is_champ), (new_cols) := mget(new_cols)]
@@ -182,14 +174,13 @@ setcolorder(dt_all, new_cols)
 setnames(dt_all, c("Lap.1","Lap.2","Lap.3"), c("Swim", "Ride", "Run"))
 
 
-# Prep --------------------------------------------------------------------
-
+# Combine webscorer data and manual individual race participation ---------
+# This covers 2018-2019 onwards
 
 # Formats
-dt_all[, place_import := as.numeric(Place)]
-dt_all[, time_overall_import := Time]
-dt_all[, handicap_import := Handicap]
-
+dt_all[, `:=`(place_import = as.numeric(Place),
+              time_overall_import = Time,
+              handicap_import = Handicap)]
 
 dt_all[, started := TRUE]
 dt_all[Swim %in% c("","-"), started := FALSE]
@@ -210,59 +201,145 @@ dt_all_long <- melt.data.table(dt_all[(started)],
 
 dt_all_long <- rbindlist(list(dt_all_long, dt_teams_manual_long, dt_regular_manual_long), fill=TRUE)
 dt_all_long[is.na(participation_only), participation_only := FALSE]
-
-
-# Name inconsistencies ----------------------------------------------------
-
-
 dt_all_long[, row_id := seq(.N)]
 
-dt_all_long[, Name_import := Name]
 
+# Load name corrections ---------------------------------------------------
+
+
+dt_name_fix <- fread("data_provided/name_variations.csv")
+dt_name_fix[, name_in := tolower(name_in) ]
+
+
+# Correct webscorer names -------------------------------------------------
+
+
+# dt_all_long[, Name_import := Name] # use for testing only
 dt_all_long[, Name := standardise_names(Name), by = row_id ]
 
 dt_all_long[, Name_lower := tolower(Name)]
-dt_name_fix <- fread("data_provided/name_variations.csv")
-dt_name_fix[, name_in := tolower(name_in) ]
 dt_all_long[dt_name_fix, on = c(Name_lower = "name_in"), Name := i.name_out]
 
 
 if(FALSE) {
-dt_all_long[part=="Swim" & !(Bib %in% c("","-")) & !is.na(Bib),
-            .(n_used = .N),by = .(Bib,Name,season)][,
-            .(Name = Name, n_names = length(unique(Name)) , n_used = n_used),
-            by = .(Bib,season)][n_names>1]
-  
+  # Check for names with multiple bib numbers
+  dt_all_long[part=="Swim" & !(Bib %in% c("","-")) & !is.na(Bib),
+              .(n_used = .N),by = .(Bib,Name,season)][,
+              .(Name = Name, n_names = length(unique(Name)) , n_used = n_used),
+              by = .(Bib,season)][n_names>1]
 }
 
 
-# Separate Names ----------------------------------------------------------
+
+# HISTORICAL PARTICIPATION PRE 2018-2019 ----------------------------------
+
+# Load historical counts --------------------------------------------------
+
+# get old totals
+path_totals_old <- "data_provided/manual/Total Tri Races 2022 Season.xlsx"
+
+rows_drop <- c(
+  "zz",
+  "zz ALL YEARS",
+  "zz INTERMEDIATE All",
+  "zz INTERMEDIATE COMPETITORS",
+  "zzTOTAL COMPETITORS",
+  "zzTOTAL STARTERS"#,
+  #"GILLIES Rob *E Assisted"
+)
+
+dt_totals_old_import <- as.data.table(read_xlsx(path_totals_old))[!(Name %in% rows_drop)]
+dt_totals_old_import[, row_id := seq(.N)]
+
+
+# standardise names
+
+#' workbook has most names as: LAST1 LAST2 First
+#' name correction CSV should account for exceptions
+dt_totals_old_import[, Name := reverse_names(Name), by = row_id]
+dt_totals_old_import[, Name := standardise_names(Name), by = row_id ]
+dt_totals_old_import[, Name_lower := tolower(Name)]
+
+dt_totals_old_import[dt_name_fix, on = c(Name_lower = "name_in"), Name := i.name_out]
+
+
+dt_totals_old_long <- melt.data.table(dt_totals_old_import,
+                                      id.vars = "Name",
+                                      measure.vars = setdiff(names(dt_totals_old_import), c("Name","Bib", "In List?", "TOTAL","row_id","Name_lower", "l_split")),
+                                      value.name = "entries",
+                                      variable.name = "season")
+
+
+dt_totals_old_long[, season := gsub("^'","",season)]
+dt_totals_old_long[, season := paste0(format(as.Date(substr(season, 1,2), "%y"), "%Y"),"-",
+                                      format(as.Date(substr(season, 4,5), "%y"), "%Y"))]
+
+dt_totals_old_long[entries==0, entries := NA]
+setorder(dt_totals_old_long, Name, season)
+
+# assuming all historical participation is full or double course
+dt_totals_old_long[,entries_fd := entries]
+
+# pre-webscorer summary
+dt_totals_old <- dt_totals_old_long[!(is.na(entries)) & !(season %in% c("2021-2022","2020-2021","2019-2020","2018-2019")),
+                                    .(entries_pre1819 = sum(entries, na.rm=TRUE)),
+                                    by = .(Name)]
+
+
+
+#' Test for any unknown cases of webcsorer athletes don't have historical data
+#' Need to do this to make sure absensce of data is not from name inconsistencies
+confirm_not <- c("Aimee Harradence",
+                 "Brett Archibald",
+                 "Bri Perrin",
+                 "Dan Delbridge",
+                 "Dane McEwan",
+                 "Jack Hall",
+                 "Jasmine Costanza",
+                 "Lewis Johnson",
+                 "Marcin Mazurek",
+                 "Marcus Fox",
+                 "Owen Navi",
+                 "Patrick Rudd",
+                 "Robyn Barry",
+                 "Ryan Bray",
+                 "Sienna Archibald",
+                 "Taku",
+                 "Tyson Perrin",
+                 "Yaminah Hogg")
+
+dt_test_coverage <- dt_all_long[!(tolower(Name) %in% tolower(dt_totals_old_long$Name))][
+  part=="Swim", .(Bib = list(unique(Bib)), races = sum(started)), by = Name][
+    !(Name) %in% confirm_not]
+
+if(nrow(dt_test_coverage) !=0 ) {
+  warning("Some new names not found in participation archive")
+}
+
+
+# PROCESS DETAILED RESULTS (post 2018-2019) -------------------------------
+
+
+## Separate Names ----------------------------------------------------------
 
 
 dt_all_long[, name_first := strsplit(Name, " ")[[1]][1],  by = row_id]
-
 dt_all_long[, name_last := gsub(paste0(name_first, " "), "", Name), by = row_id]
 dt_all_long[name_first == Name, name_last := ""] # Catch any people with only a first name
 
-
 # Athlete refs and links
-dt_all_long[, athlete_ref := gsub(pattern = " ", "-", tolower(Name))]  
-dt_all_long[, athlete_ref := gsub(pattern = "'", "", athlete_ref)]
+dt_all_long[, athlete_ref := gsub(pattern = "( |\')", "-", tolower(Name))]  
 dt_all_long[, athlete_ref := paste0("a-",athlete_ref)]
 dt_all_long[, athlete_link := paste0('<a href="', athlete_ref,'.html#',athlete_ref, '">',Name,'</a>')]
 
 
-if(FALSE){
-  dt_all_long[grepl("^Mc",name_last)]
-}
-
-# Ordered names -----------------------------------------------------------
+## Ordered names -----------------------------------------------------------
 
 
 athletes_ordered <- unique(dt_all_long[(started)][order(name_last=="", tolower(name_last))]$Name)
 
 
-# Catch multiple entries per date -----------------------------------------
+## Catch multiple entries per date -----------------------------------------
 
 
 # Deal with Oct 20 2018 when those doing full or int course also appear in the double results
@@ -278,7 +355,7 @@ n_multi <- nrow(dt_all_long[part=="Swim", .(N = .N, course), by = .(Name, date_y
 stopifnot(n_multi==0)
 
 
-# Timing errors -----------------------------------------------------------
+## Timing errors -----------------------------------------------------------
 
 
 dt_problems <- fread("data_provided/webscorer/webscorer_problems.csv")
@@ -298,7 +375,6 @@ dt_all_long[(participation_only), `:=`(split_valid = FALSE,
                                        cumulative_valid = FALSE,
                                        valid_overall = FALSE)]
 
-
 # Catch races with all bad data
 dt_all_long[date_ymd=="2018-09-22", `:=`(split_valid = FALSE,
                                          cumulative_valid = FALSE,
@@ -309,12 +385,12 @@ dt_all_long[date_ymd=="2018-09-22", time_overall_import := gsub("^7","1",time_ov
 dt_all_long[date_ymd=="2018-09-22" & part =="Swim", duration_import := time_overall_import]
 
 
-# Course entry errors -----------------------------------------------------
+## Course entry errors -----------------------------------------------------
 
 
 dt_all_long[date_ymd=="2018-11-17" & Name == "Paul Woodger", course := "int"]
 dt_all_long[date_ymd=="2019-10-05" & Name == "Trudy Gadaleta", course := "int"]
-dt_all_long[date_ymd=="2019-10-05" & Name == "Charlotte Dance-Wilson", course := "full"]
+dt_all_long[date_ymd=="2019-10-05" & Name == "Charlotte Dancewilson", course := "full"]
 dt_all_long[date_ymd=="2019-10-19" & Name == "Ian Curnow", course := "full"]
 dt_all_long[date_ymd=="2019-11-30" & Name == "Melanie Duff", course := "int"]
 dt_all_long[date_ymd=="2020-10-10" & Name == "Lydia Kuschmirz", course := "int"]
@@ -325,12 +401,11 @@ dt_all_long[date_ymd=="2021-02-13" & Name == "Colin Woodward", course := "int"]
 dt_all_long[date_ymd=="2022-02-26" & Name == "Judy Murray", course := "int"]
 
 
-# Cleaning ----------------------------------------------------------------
+## Clean up webscorer timing data formatting -------------------------------
 
 
 # Set row order
 dt_all_long[, part := ordered(as.character(part), levels = c("Swim","Ride","Run"))]
-# setorder(dt_all_long, Name, race_number, part)
 setorder(dt_all_long, Name, date_ymd, part)
 
 dt_all_long[, duration_hms := std_time(duration_import)]
@@ -417,21 +492,10 @@ dt_all_long[, total_overall_hms_short := gsub("^0:","",total_overall_hms)]
 
 
 # Use recorded overall time for run cumulative
-dt_all_long[(started) & part == "Run", cumulative_seconds := overall_seconds]
+dt_all_long[part == "Run", cumulative_seconds := overall_seconds]
 
 
-# Catch unrealistic times -------------------------------------------------
-# 
-# 
-# seasons_auto_qa <- c("2019-2020")
-# 
-# dt_all_long[season %in% seasons_auto_qa & part=="Swim" & course == "full" & duration_seconds < 360,
-#             `:=`(split_valid = FALSE, cumulative_valid=FALSE)]
-
-
-
-
-# Recalculate places ------------------------------------------------------
+## Recalculate places ------------------------------------------------------
 
 
 dt_all_long[(split_valid), duration_mins_sort := duration_mins]
@@ -444,164 +508,32 @@ dt_all_long[(valid_overall), total_overall_sort := total_overall_mins]
 dt_all_long[!(valid_overall), total_overall_sort := NA]
 
 
-dt_all_long[(started), place_lap := as.integer(rank(duration_mins_sort, ties.method = "first")), by = .(season, race_number, course, part, is_champ)]
-dt_all_long[(started), place_cum_recalc := as.integer(rank(total_mins_sort, ties.method = "first")), by = .(season, race_number, course, part, is_champ)]
-dt_all_long[(started), place_overall_recalc := as.integer(rank(total_overall_sort, ties.method = "first")), by = .(season, race_number, course, part, is_champ)]
+dt_all_long[, place_lap := as.integer(rank(duration_mins_sort, ties.method = "first")), by = .(season, race_number, course, part, is_champ)]
+dt_all_long[, place_cum_recalc := as.integer(rank(total_mins_sort, ties.method = "first")), by = .(season, race_number, course, part, is_champ)]
+dt_all_long[, place_overall_recalc := as.integer(rank(total_overall_sort, ties.method = "first")), by = .(season, race_number, course, part, is_champ)]
 
-dt_all_long[(started), athlete_rank_split := as.integer(rank(duration_mins_sort, ties.method = "first")), by = .(Name, season, course, part)]
-dt_all_long[(started), athlete_rank_cumulative := as.integer(rank(total_mins_sort, ties.method = "first")), by = .(Name, season, course, part)]
-dt_all_long[(started), athlete_rank_overall := as.integer(rank(total_overall_sort, ties.method = "first")), by = .(Name, season, course, part)]
+dt_all_long[, athlete_rank_split := as.integer(rank(duration_mins_sort, ties.method = "first")), by = .(Name, season, course, part)]
+dt_all_long[, athlete_rank_cumulative := as.integer(rank(total_mins_sort, ties.method = "first")), by = .(Name, season, course, part)]
+dt_all_long[, athlete_rank_overall := as.integer(rank(total_overall_sort, ties.method = "first")), by = .(Name, season, course, part)]
 
-dt_all_long[(started) & (split_valid), place_lap_display := place_lap]
-dt_all_long[(started) & !(split_valid), place_lap_display := NA]
-
-
-dt_all_long[(started), place_lap_nice := format_place(place_lap_display)]
-dt_all_long[(started), place_cum_nice := format_place(place_cum_recalc)]
+dt_all_long[(split_valid), place_lap_display := place_lap]
+dt_all_long[!(split_valid), place_lap_display := NA]
 
 
-# Participation -----------------------------------------------------------
+dt_all_long[, place_lap_nice := format_place(place_lap_display)]
+dt_all_long[, place_cum_nice := format_place(place_cum_recalc)]
+
+
+# PARTICIPATION -----------------------------------------------------------
+
+## Webscorer participation ------------------------------------------------
 
 
 courses_fd <- c("full","double")
 
-# get old totals
-path_totals <- "data_provided/manual/Total Tri Races 2022 Season.xlsx"
 
-rows_drop <- c(
-  "zz",
-  "zz ALL YEARS",
-  "zz INTERMEDIATE All",
-  "zz INTERMEDIATE COMPETITORS",
-  "zzTOTAL COMPETITORS",
-  "zzTOTAL STARTERS"
-)
-
-dt_totals_old <- as.data.table(read_xlsx(path_totals))[!(Name %in% rows_drop)]
-
-dt_totals_old[, entries_historical := sum(`17/18`,
-                                 `16/17`,
-                                 `15/16`,
-                                 `14/15`,
-                                 `13/14`,
-                                 `12/13`,
-                                 `11/12`,
-                                 `10/11`,
-                                 `09/10`,
-                                 `08/09`,
-                                 `07/08`,
-                                 `06/07`,
-                                 `'05/06`,
-                                 `'04/05`,
-                                 `'03/04`,
-                                 `'02/03`,
-                                 `'01/02`,
-                                 `'00/01`,
-                                 `99/00`,
-                                 `98/99`,
-                                 `97/98`,
-                                 `96/97`,
-                                 `95/96`,
-                                 `94/95`,
-                                 `93/94`,
-                                 `92/93`,
-                                 `91/92`,
-                                 `90/91`,
-                                 `89/90`,
-                                 na.rm=TRUE), by = Name]
-
-
-# join
-dt_all_long[, name_match := tolower(paste0(name_last, " ", name_first))]
-# dt_all_long$name_match %in% tolower(dt_totals_old$Name)
-
-
-dt_totals_old[Name == "HEAD Allan", name_match := "HEAD Alan"]
-dt_totals_old[Name == "SMITH Alex William", name_match := "SMITH Alex"]
-dt_totals_old[Name == "BELLENGER Armadeus", name_match := "BELLENGER Amadeus"]
-dt_totals_old[Name == "McLUCAS Rebecca", name_match := "McLucas Bec"]
-dt_totals_old[Name == "SMITH Bob", name_match := "SMITH Bobby"]
-dt_totals_old[Name == "BELLENGER Carol", name_match := "BELLENGER Caroline"]
-dt_totals_old[Name == "HEASLIP Cassie", name_match := "HEASLIP Cassandra"]
-dt_totals_old[Name == "DANCE-WILSON Charlotte", name_match := "DANCEWILSON Charlotte"]
-dt_totals_old[Name == "KLEIN Kodie", name_match := "KLEIN Codie"]
-dt_totals_old[Name == "TONEY Damion", name_match := "TONEY Damien"]
-dt_totals_old[Name == "JOHNSON Daniel", name_match := "JOHNSON Dan"]
-dt_totals_old[Name == "Geoffrey Tapping", name_match := "Tapping Geoffrey"]
-dt_totals_old[Name == "JONES Virginia", name_match := "JONES Ginny"]
-dt_totals_old[Name == "SMITH Geoff Kevin", name_match := "SMITH Geoff"]
-dt_totals_old[Name == "FORBES Glen", name_match := "FORBES Glenn"]
-dt_totals_old[Name == "FREEMAN Greg", name_match := "FREEMAN Gregory"]
-dt_totals_old[Name == "JENKINS Haydn", name_match := "JENKINS Hayden"]
-dt_totals_old[Name == "DANCE-WILSON Hillary", name_match := "DANCEWILSON Hillary"]
-dt_totals_old[Name == "STELLA Jeffrey", name_match := "STELLA Jeff"]
-dt_totals_old[Name == "SCAYSBROOK Jen", name_match := "SCAYSBROOK Jenny"]
-dt_totals_old[Name == "WARD Joe", name_match := "WARD Jolyon"]
-dt_totals_old[Name == "DAVIES Jonathon", name_match := "DAVIES Jonathan"]
-dt_totals_old[Name == "COSTELLO Joe", name_match := "COSTELLO Joseph"]
-dt_totals_old[Name == "HEAD Katie", name_match := "HEAD Kate"]
-dt_totals_old[Name == "STUTTLE Kelly", name_match := "Styman Kelly"]
-dt_totals_old[Name == "BANNERMAN Kevin", name_match := "BANNERMAN Kev"]
-dt_totals_old[Name == "HALL Amanda", name_match := "HALL Manda"]
-dt_totals_old[Name == "VANKAMPEN Marcel", name_match := "VAN KAMPEN Marcel"]
-dt_totals_old[Name == "STANLEY Matt", name_match := "STANLEY Matthew"]
-dt_totals_old[Name == "Matthew Tapping", name_match := "TAPPING MATTHEW"]
-dt_totals_old[Name == "OREILLY Nick", name_match := "O'REILLY Nick"]
-dt_totals_old[Name == "Peta Edge", name_match := "EDGE Peta"]
-dt_totals_old[Name == "McFIE Peter", name_match := "McFIE Pete"]
-dt_totals_old[Name == "SALTER Phil", name_match := "SALTER Philip"]
-dt_totals_old[Name == "EID Rod", name_match := "EID Rob"]
-dt_totals_old[Name == "LEONARD Sam", name_match := "LEONARD Samantha"]
-dt_totals_old[Name == "THOMPSON Sebastian", name_match := "THOMSON Sebastian"]
-dt_totals_old[Name == "VAN WYK Selwyn", name_match := "VAN WYK Selywn"]
-dt_totals_old[Name == "OLDBURG Sean", name_match := "Oldbury Shaun"]
-dt_totals_old[Name == "WINDER Shelly", name_match := "WINDER Shelley"]
-dt_totals_old[Name == "BAXTER Sue", name_match := "BAXTER Susan"]
-dt_totals_old[Name == "TAYLOR Tammy", name_match := "TAYLOR Tamy"]
-dt_totals_old[Name == "SIMPSON Terry", name_match := "SIMPSON Terence"]
-dt_totals_old[Name == "CORDEIRO Thaigo", name_match := "CORDEIRO Thiago"]
-dt_totals_old[Name == "TAYLOR Tim", name_match := "TAYLOR Timothy"]
-dt_totals_old[Name == "GADALETA Trudie", name_match := "GADALETA Trudy"]
-dt_totals_old[Name == "LAMBARD Valerie", name_match := "LAMBARD Val"]
-dt_totals_old[Name == "LAWES Vicky", name_match := "LAWES Vicki"]
-dt_totals_old[Name == "WRIGHT Vivienne", name_match := "WRIGHT Viv"]
-dt_totals_old[Name == "SMITH Wayne", name_match := "SMITH Wayde"]
-dt_totals_old[Name == "TAYLOR Will", name_match := "TAYLOR William"]
-
-dt_totals_old[is.na(name_match), name_match := Name]
-dt_totals_old[, name_match := tolower(name_match)]
-
-confirm_not <- c("Aimee Harradence",
-                 "Brett Archibald",
-                 "Bri Perrin",
-                 "Dan Delbridge",
-                 "Dane McEwan",
-                 "Jack Hall",
-                 "Jasmine Costanza",
-                 "Lewis Johnson",
-                 "Marcin Mazurek",
-                 "Marcus Fox",
-                 "Owen Navi",
-                 "Patrick Rudd",
-                 "Robyn Barry",
-                 "Ryan Bray",
-                 "Sienna Archibald",
-                 "Taku",
-                 "Tyson Perrin",
-                 "Yaminah Hogg"
-                 )
-
-dt_test_coverage <- dt_all_long[!(name_match %in% tolower(dt_totals_old$name_match))][
-  part=="Swim", .(Bib = list(unique(Bib)), races = sum(started)), by = Name][
-    !(Name) %in% confirm_not
-  ]
-
-if(nrow(dt_test_coverage) !=0 ) {
-  warning("Some new names not found in participation archive")
-}
-
-dt_all_long[dt_totals_old, on = .(name_match), entries_historical := i.entries_historical]
-dt_all_long[Name %in% confirm_not, entries_historical := 0]
+dt_all_long[dt_totals_old, on = .(Name), `:=`(entries_pre1819 = i.entries_pre1819)]
+dt_all_long[Name %in% confirm_not, entries_pre1819 := 0]
 
 
 # By season
@@ -620,57 +552,79 @@ dt_all_long[(is_last_entry), entries_total_fd_rank := rank(-entries_total_fd, ti
 
 
 # Over all seasons
-dt_all_long[, entries_cumulative_all := cumsum(started), by = .(Name, part)]
-dt_all_long[, entries_total_all := max(entries_cumulative_all) + entries_historical, by = .(Name)]
+dt_all_long[, entries_cumulative_all := cumsum(started + entries_pre1819), by = .(Name, part)]
+dt_all_long[, entries_total_all := max(entries_cumulative_all), by = .(Name)]
 dt_all_long[, is_last_entry_all := date_ymd == max(date_ymd), by = Name]
 
 dt_all_long[(is_last_entry_all), entries_total_all_rank := rank(-entries_total_all, ties.method = "min"), by = .(part)]
 
 
 # Over all seasons - full and double
-dt_all_long[, entries_cumulative_all_fd := cumsum(course %in% courses_fd), by = .(Name, part)]
-dt_all_long[, entries_total_all_fd := max(entries_cumulative_all_fd) + entries_historical, by = .(Name)]
+dt_all_long[, entries_cumulative_all_fd := cumsum(course %in% courses_fd) + entries_pre1819, by = .(Name, part)]
+dt_all_long[, entries_total_all_fd := max(entries_cumulative_all_fd), by = .(Name)]
 
 dt_all_long[(is_last_entry), entries_total_all_fd_rank := rank(-entries_total_all_fd, ties.method = "min"), by = .(part)]
 
+
+## Participation summary ---------------------------------------------------
+
+
+# By seasons
+dt_summary_seasons_post2018 <- dt_all_long[part=="Swim", .(entries_fd = sum(course %in% courses_fd),
+                                                           entries = .N),
+                                           by = .(Name, season)]
+
+dt_summary_seasons_all <- rbindlist(list(dt_summary_seasons_post2018, dt_totals_old_long[ !(season %in% c("2021-2022","2020-2021","2019-2020","2018-2019"))]), fill=TRUE)
+setorder(dt_summary_seasons_all, Name, season)
+
+# Overall
+dt_summary_all <- dt_summary_seasons_all[!is.na(entries), .(entries_fd = sum(entries_fd, na.rm = TRUE),
+                                                            entries = sum(entries, na.rm = TRUE),
+                                                            first_season = season[1],
+                                                            latest_season = season[.N],
+                                                            season_count = .N), by = Name]
+
+# Add links where available
+dt_summary_all[dt_all_long, on = .(Name), athlete_link := i.athlete_link]
+dt_summary_all[is.na(athlete_link), athlete_link := Name]
 
 
 # PBs ---------------------------------------------------------------------
 
 
-dt_all_long[(started), isFirstRace := entries_cumulative == 1, by = .(Name, season, part) ]
+dt_all_long[, isFirstRace := entries_cumulative == 1, by = .(Name, season, part) ]
 
 
 # PB change over seasons
-dt_all_long[(started) & (split_valid), pb_split_running := cummin(duration_mins), by = .(Name, season, part, course) ]
-dt_all_long[(started) & (split_valid), isNewPB_split := duration_mins == pb_split_running, by = .(Name, season, part, course) ]
+dt_all_long[(split_valid), pb_split_running := cummin(duration_mins), by = .(Name, season, part, course) ]
+dt_all_long[(split_valid), isNewPB_split := duration_mins == pb_split_running, by = .(Name, season, part, course) ]
 
 dt_all_long[is.na(isNewPB_split), isNewPB_split := FALSE]
 dt_all_long[(isFirstRace), isNewPB_split := FALSE]
 
-dt_all_long[(started) & (cumulative_valid), pb_cum_running := cummin(cumulative_mins), by = .(Name, season, part, course) ]
-dt_all_long[(started) & (cumulative_valid), isNewPB_cum := cumulative_mins == pb_cum_running, by = .(Name, season, part, course) ]
+dt_all_long[(cumulative_valid), pb_cum_running := cummin(cumulative_mins), by = .(Name, season, part, course) ]
+dt_all_long[(cumulative_valid), isNewPB_cum := cumulative_mins == pb_cum_running, by = .(Name, season, part, course) ]
 
 dt_all_long[is.na(isNewPB_cum), isNewPB_cum := FALSE]
 dt_all_long[(isFirstRace), isNewPB_cum := FALSE]
 
-dt_all_long[(started) & (valid_overall), pb_overall_running := cummin(total_overall_mins), by = .(Name, season, course) ]
-dt_all_long[(started) & (valid_overall), isNewPB_overall := total_overall_mins == pb_overall_running, by = .(Name, season, course) ]
+dt_all_long[(valid_overall), pb_overall_running := cummin(total_overall_mins), by = .(Name, season, course) ]
+dt_all_long[(valid_overall), isNewPB_overall := total_overall_mins == pb_overall_running, by = .(Name, season, course) ]
 
 dt_all_long[is.na(isNewPB_overall), isNewPB_overall := FALSE]
 dt_all_long[(isFirstRace), isNewPB_overall := FALSE]
 
 # season PB
-dt_all_long[(started) & (valid_overall), pb_overall := min(total_overall_mins), by = .(Name, season, course) ]
-dt_all_long[(started) & (valid_overall), isPB_overall := total_overall_mins == pb_overall, by = .(Name, season, course) ]
+dt_all_long[(valid_overall), pb_overall := min(total_overall_mins), by = .(Name, season, course) ]
+dt_all_long[(valid_overall), isPB_overall := total_overall_mins == pb_overall, by = .(Name, season, course) ]
 dt_all_long[is.na(isPB_overall), isPB_overall := FALSE]
 
-dt_all_long[(started) & (split_valid), pb_split := min(duration_mins), by = .(Name, season, part, course) ]
-dt_all_long[(started) & (split_valid), isPB_split := duration_mins == pb_split, by = .(Name, season, part, course) ]
+dt_all_long[(split_valid), pb_split := min(duration_mins), by = .(Name, season, part, course) ]
+dt_all_long[(split_valid), isPB_split := duration_mins == pb_split, by = .(Name, season, part, course) ]
 dt_all_long[is.na(isPB_split), isPB_split := FALSE]
 
-dt_all_long[(started) & (cumulative_valid), pb_cumulative := min(cumulative_mins), by = .(Name, season, part, course) ]
-dt_all_long[(started) & (cumulative_valid), isPB_cumulative := cumulative_mins == pb_cumulative, by = .(Name, season, part, course) ]
+dt_all_long[(cumulative_valid), pb_cumulative := min(cumulative_mins), by = .(Name, season, part, course) ]
+dt_all_long[(cumulative_valid), isPB_cumulative := cumulative_mins == pb_cumulative, by = .(Name, season, part, course) ]
 dt_all_long[is.na(isPB_cumulative), isPB_cumulative := FALSE]
 
 
@@ -717,7 +671,10 @@ dt_all_long[course=="int", course_nice := "Intermediate"]
 dt_all_long[, course_nice := ordered(course_nice, levels = c("Intermediate", "Full", "Double Distance", "Super Teams"))]
 
 
-# Plot prep ---------------------------------------------------------------
+# OUTPUT ------------------------------------------------------------------
+
+
+## Prep --------------------------------------------------------------------
 
 
 set.seed(100)
@@ -731,15 +688,16 @@ if(!dir.exists(site_path_relative)) dir.create(site_path_relative)
 libpath <- file.path(getwd(), "docs/libs")
 
 
-# Export for website ------------------------------------------------------
+## Export for website ------------------------------------------------------
 
 
 if(!dir.exists("data_derived")) dir.create("data_derived")
 saveRDS(dt_season, "data_derived/dt_season.rds")
 saveRDS(dt_all_long, "data_derived/dt_all_long.rds")
+saveRDS(dt_summary_all, "data_derived/dt_summary_all.rds")
 
 
-# Update website ----------------------------------------------------------
+## Update website ----------------------------------------------------------
 
 
 source("make_athlete_rmd.R")

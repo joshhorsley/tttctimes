@@ -262,6 +262,19 @@ standardise_names <- function(name){
 }
 
 
+reverse_names <- function(name) {
+  
+  name <- trimws(gsub("  "," ", name))
+  
+  name_split <- unlist(strsplit(name, " "))
+  l_split <- length(name_split)
+  
+  if(l_split<=1) return(name)
+  
+  return(paste(name_split[l_split], paste(name_split[1:(l_split-1)],collapse = " " )))
+  
+}
+
 
 # Time --------------------------------------------------------------------
 
@@ -278,8 +291,15 @@ std_time <- function(x) {
 }
 
 
+# Other -------------------------------------------------------------------
 
-
-
-
+# 
+# make_athlete_ref <- function(Name) {
+#   
+#   ref <- gsub(pattern = " ", "-", tolower(Name))
+#   ref <- gsub(pattern = "'", "", ref)
+#   ref <- paste0("a-",ref)
+#   
+#   return(paste0('<a href="', ref,'.html#',ref, '">',Name,'</a>'))
+# }
 

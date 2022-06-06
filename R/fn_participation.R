@@ -271,3 +271,24 @@ table_part_total <- function(i_season=NULL, do_all = FALSE) {
   return(tab_part)
 
 }
+
+
+
+table_part_total_all <- function() {
+  
+  dt_temp <- dt_summary_all[TRUE]
+  
+  setorder(dt_temp, -entries)
+  
+  setcolorder(dt_temp, c("athlete_link","entries_fd", "entries","season_count","first_season", "latest_season"))
+  
+  setnames(dt_temp,
+           c("athlete_link","Name","entries","entries_fd","season_count","first_season","latest_season"),
+           c("Name","Name_old", "All", "Full and Double", "Seasons", "First Season", "Latest Season"))
+  
+  col_ref_hide <- which(!(names(dt_temp) %in% c("Name", "All", "Full and Double", "Seasons", "First Season", "Latest Season") ))-1 # columns are indexed from 0 - row name?
+  
+  tab_part <- datatable_std(dt_temp, col_ref_hide, escape=FALSE, filter = "top")
+        
+  return(tab_part)
+}

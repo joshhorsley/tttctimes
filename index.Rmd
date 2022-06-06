@@ -17,8 +17,9 @@ dummy <- lapply(list.files("R", full.names = TRUE), source)
 
 dt_season <- readRDS("data_derived/dt_season.rds")
 dt_all_long <- readRDS("data_derived/dt_all_long.rds")
+saveRDS(dt_summary_all, "data_derived/dt_summary_all.rds")
 
-season_lowest <- min(dt_season$season)
+season_lowest_detail <- min(dt_season$season)
 
 ```
 
@@ -29,9 +30,9 @@ See results by:
 - Race ([eg 5 Feb 2022](#r-2022-02-05))
 - [Competitor](#athletes)
 - Season participation and records ([eg 2021-2022](#season-2021-2022))
-- [Race entries](#participation-total-all)
+- [Total Participation](#participation-total-all)
 
-Results are available from the `r season_lowest` season onwards:
+Detailed results are available from the `r season_lowest_detail` season onwards:
 
 
 ```{r season-table}
@@ -52,20 +53,24 @@ DT::datatable(dt_season_tab, rownames = FALSE,escape = FALSE,
 # Participation {#participation-total-all}
 
 ```{r}
-n_entries_all <- nrow(dt_all_long[(started) & part == "Swim"])
-n_athletes <- length(unique(dt_all_long[(started) & part == "Swim"]$Name))
+n_entries_all <- sum(dt_summary_all$entries)
+n_athletes <- nrow(dt_summary_all)
+
+season_latest <- as.integer(substring(max(dt_season[(have_results)]$season),1,4))
+n_seasons <- season_latest - 1989L + 1L
 ```
 
-There have been `r prettyNum(n_entries_all, big.mark = ",")` entries by `r prettyNum(n_athletes, big.mark = ",")` competitors since the `r season_lowest` season
+Since 1989 there have been `r prettyNum(n_entries_all, big.mark = ",")` entries by `r prettyNum(n_athletes, big.mark = ",")` competitors over `r n_seasons` seasons.
+
+Detailed results are available since the `r season_lowest_detail` season. 
 
 
-```{r part_hist-all}
-plotly_part_hist(dt_all_long, do_all = TRUE)
-```
+<!-- ```{r part_hist-all} -->
+<!-- plotly_part_hist(dt_all_long, do_all = TRUE) -->
+<!-- ``` -->
 
 
 ```{r part-total-table-all}
-table_part_total(do_all = TRUE)
-
+table_part_total_all()
 ```
 
