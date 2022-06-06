@@ -2239,7 +2239,7 @@ A total of 59 competitors entered, 1 for the first time this season. [Club Repor
 
 ### Full
 
-51 competitors entered the course, achieving 9 new overall PBs and 17 new split PBs: 5 in the pool, 8 on the bike, and 4 on the run.
+51 competitors entered the course, achieving 9 new overall PBs and 18 new split PBs: 6 in the pool, 8 on the bike, and 4 on the run.
 
 ```{r plot-race-16-full-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",16, "full",FALSE)
@@ -2371,7 +2371,7 @@ A total of 60 competitors entered, 1 for the first time this season. [Club Repor
 
 ### Full
 
-41 competitors entered the course, achieving 14 new overall PBs and 37 new split PBs: 12 in the pool, 11 on the bike, and 14 on the run.
+41 competitors entered the course, achieving 14 new overall PBs and 36 new split PBs: 11 in the pool, 11 on the bike, and 14 on the run.
 
 ```{r plot-race-12-full-FALSE-2019-2020}
 plotly_race(dt_all_long, tri_cols, "2019-2020",12, "full",FALSE)

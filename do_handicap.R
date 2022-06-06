@@ -16,6 +16,7 @@ dummy <- lapply(list.files("R", full.names = TRUE), source)
 
 # Race results
 dt_all_long <- readRDS("data_derived/dt_all_long.rds")
+dt_season <- readRDS("data_derived/dt_season.rds")
 
 # Start list
 dt_start_list <- fread(path_webscorer_confirmation,
@@ -44,8 +45,11 @@ dt_start_list[dt_name_fix, on = c(Name_lower = "name_in"), Name := i.name_out]
 # Get handicaps -----------------------------------------------------------
 
 
-dt_handicaps_all <- get_all_handicaps(dt_all_long)
+date_last_race <- dt_season[(have_results), max(date_ymd)]
+date_for_handicap <- dt_season[date_ymd > date_last_race, min(date_ymd)]
 
+dt_handicaps_all <- get_all_handicaps(dt_all_long, dt_season)
+dt_handicap <- dt_handicaps_all
 
 # Join handicaps
 new_cols <- setdiff(names(dt_handicaps_all), c("Name","course"))
