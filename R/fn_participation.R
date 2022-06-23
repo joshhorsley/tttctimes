@@ -274,11 +274,17 @@ table_part_total <- function(i_season=NULL, do_all = FALSE) {
 
 
 
-table_part_total_all <- function() {
+table_part_total_all <- function(milestones = FALSE) {
   
+
   dt_temp <- dt_summary_all[TRUE]
-  
   setorder(dt_temp, -entries)
+  
+  if(milestones) {
+    dt_temp <- dt_temp[, milestone_distance := 50 - entries_fd %% 50]
+    dt_temp <- dt_temp[milestone_distance <= 3][order(milestone_distance)]
+  }
+  
   
   setcolorder(dt_temp, c("athlete_link","entries_fd", "entries","season_count","first_season", "latest_season"))
   

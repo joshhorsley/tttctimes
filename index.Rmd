@@ -62,16 +62,25 @@ n_seasons <- season_latest - 1989L + 1L
 
 Since 1989 there have been `r prettyNum(n_entries_all, big.mark = ",")` entries by `r prettyNum(n_athletes, big.mark = ",")` competitors over `r n_seasons` seasons.
 
-Detailed results are available since the `r season_lowest_detail` season. 
+On this page:
+
+- [Total Entries Leader Board](#part-total-all-table)
+- [Upcoming Milestones](#part-total-upcoming)
 
 
-<!-- ```{r part_hist-all} -->
-<!-- plotly_part_hist(dt_all_long, do_all = TRUE) -->
-<!-- ``` -->
 
+### Total Entries Leader Board {#part-total-all-table}
 
 ```{r part-total-table-all}
 table_part_total_all()
+```
+
+### Upcoming Milstones {#part-total-upcoming}
+
+Competitors approaching race total milestones are listed below.
+
+```{r part-total-upcoming-table}
+table_part_total_all(milestones = TRUE)
 ```
 
 
