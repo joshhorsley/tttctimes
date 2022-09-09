@@ -144,7 +144,7 @@ leaflet(width = "100%", height = 400) %>%
   addPolylines(data = dt_courses[course=="int (old)" & part=="ride"]$sf_poly[[1]], color = tri_cols$ride, group = "Intermediate (old)",popup = "2 laps") %>% 
   addPolylines(data = dt_courses[course=="int (old)" & part=="run"]$sf_poly[[1]], color = tri_cols$run, group = "Intermediate (old)") %>% 
   addLayersControl(baseGroups = c("Simple","Detailed", "Satellite"),
-                   overlayGroups = c("Full (new)","Full (old)","Intermediate (old)","Info (old)"),
+                   overlayGroups = c("Full (new)","Info (new)","Full (old)","Intermediate (old)","Info (old)"),
                    options = layersControlOptions(collapsed = FALSE)) %>% 
   addFullscreenControl() %>% 
   addScaleBar(position = "bottomleft") %>% 
