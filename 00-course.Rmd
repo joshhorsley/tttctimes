@@ -1,6 +1,9 @@
 # Courses {#courses}
 
-See the [FAQ page](http://www.twintownstriathlon.org.au/?page_id=28){target="_blank"} for more info and the  [official description](http://www.twintownstriathlon.org.au/?page_id=3809){target="_blank"} of the full course.
+The proposed new full course based at TRAC Tweed Heads South is shown below. Marshall locations are indicated by the pink icons.
+
+
+<!-- See the [FAQ page](http://www.twintownstriathlon.org.au/?page_id=28){target="_blank"} for more info and the  [official description](http://www.twintownstriathlon.org.au/?page_id=3809){target="_blank"} of the full course. -->
 
 ```{r course-map}
 
@@ -8,11 +11,11 @@ See the [FAQ page](http://www.twintownstriathlon.org.au/?page_id=28){target="_bl
 # icon example https://github.com/rstudio/leaflet/issues/691
 
 list_icons <- awesomeIconList(
-  swimmer = makeAwesomeIcon(text = fa("swimmer"),markerColor = "blue"),
+  swimmer = makeAwesomeIcon(text = fa("person-swimming"),markerColor = "blue"),
   traffic = makeAwesomeIcon(text = fa("traffic-light"), markerColor = "black"),
-  marshall = makeAwesomeIcon(text = fa("user-circle"), markerColor = "pink"),
+  marshall = makeAwesomeIcon(text = fa("circle-user"), markerColor = "pink"),
   timer = makeAwesomeIcon(text = fa("stopwatch"), markerColor = "black"),
-  circle = makeAwesomeIcon(text = fa("times-circle"), markerColor = "black", iconColor = "yellow")
+  circle = makeAwesomeIcon(text = fa("circle-xmark"), markerColor = "black", iconColor = "yellow")
 )
 
 unpack_points <- function(gpx_list, ord_name = c("lat","lon")[1]) {
@@ -30,9 +33,11 @@ import_gpx <- function(path_gpx) {
 }
 
 
-dt_courses <- data.table(course = c("full","full","int","int"),
-                                    part = c("ride","run","ride","run"),
-                         path_gpx = c("data_provided/courses/TT_Tri_Ride.gpx",
+dt_courses <- data.table(course = c("full","full","full (old)","full (old)","int (old)","int (old)"),
+                                    part = c("ride","run","ride","run","ride","run"),
+                         path_gpx = c("data_provided/courses/Twinnies full proposed.gpx",
+                                      "data_provided/courses/Reconning.gpx",
+                                      "data_provided/courses/TT_Tri_Ride.gpx",
                                       "data_provided/courses/TT_Tri_Run.gpx",
                                       "data_provided/courses/TT_Tri_Intermediate_Ride.gpx",
                                       "data_provided/courses/TT_Tri_Intermediate_Run.gpx"))
@@ -55,6 +60,21 @@ dt_courses_range <- dt_courses[, .(xmin = min(xmin),
                xmax = max(xmax),
                ymax = max(ymax))]
 
+dt_markers_new <- data.table(lat = c(-28.213376212245354, 
+                                 -28.231228,-28.209872829666857, -28.19393845224043,
+                                 -28.194949373861867),
+                         lng = c(153.5226650096654,
+                                 153.526104, 153.52372975721073, 153.53884997902225,
+                                 153.54222891317784),
+                         popup = c(rep("Traffic lights",1),
+                                   "Marshall: Fraser Dr Upper Roundabout",
+                                   "Marshall: Fraser Dr Lower Roundabout",
+                                   "Marshall: Oxley St & Cunningham St",
+                                   "Timer"
+                         ),
+                         icon = c(rep("traffic",1),
+                                  rep("marshall",3),
+                                  "timer"))
 
 dt_markers <- data.table(lat = c(-28.214021, -28.214762,
                                  -28.231228, -28.214127, -28.227960, -28.216583,
@@ -67,14 +87,14 @@ dt_markers <- data.table(lat = c(-28.214021, -28.214762,
                                    "Marshall: Woodlands Dr Roundabout",
                                    "Marshall: Lochlomond Dr Roundabout",
                                    "Marshall: Toolona Ave Roundabout",
-                                   "Timer and Finish"
+                                   "Timer"
                                    ),
                          icon = c(rep("traffic",2),
                                   rep("marshall",4),
                                   "timer"))
 
 
-leaflet(width = "100%", height = 700) %>% 
+leaflet(width = "100%", height = 400) %>% 
   addTiles(group = "Detailed") %>% 
   addProviderTiles(providers$CartoDB.Positron, group = "Simple") %>% 
   addProviderTiles("Esri.WorldImagery", group = "Satellite") %>% 
@@ -83,42 +103,52 @@ leaflet(width = "100%", height = 700) %>%
             lat1 = dt_courses_range$ymin,
             lat2 = dt_courses_range$ymax) %>% 
   # Add general markers
+  addAwesomeMarkers(data = dt_markers_new,
+                    lng = ~lng, lat =~lat,
+                    icon = ~list_icons[icon],popup = ~popup, group = "Info (new)") %>% 
   addAwesomeMarkers(data = dt_markers,
                     lng = ~lng, lat =~lat,
-                    icon = ~list_icons[icon],popup = ~popup, group = "Info") %>% 
+                    icon = ~list_icons[icon],popup = ~popup, group = "Info (old)") %>% 
   
   # Add transition
   addPolygons(data = sf_trans,color = "black", fillColor = "black",
               label = "T",labelOptions = labelOptions(noHide = TRUE,
                                                       direction = "center",
                                                       textOnly = TRUE,textsize = "20px"),
-              group = "Info") %>% 
+              group = "Info (old)") %>% 
   
 # Add swimming marker -28.215316, 
+  addAwesomeMarkers(lat = -28.195599589008136, lng = 153.5421932591716,
+                    icon = list_icons["swimmer"], # fixed list, can't accept hex
+                    popup = "20x25m laps",
+                   group = "Full (new)") %>%
+
   addAwesomeMarkers(lat = -28.215370, lng = 153.537490,
                     icon = list_icons["swimmer"], # fixed list, can't accept hex
-                    popup = "10 laps",
-                   group = "Full") %>%
+                    popup = "10x50m laps",
+                   group = "Full (old)") %>%
   addAwesomeMarkers(lat = -28.215370, lng = 153.537490,
                     icon = list_icons["swimmer"], # fixed list, can't accept hex
-                    popup = "6 laps",
-                   group = "Intermediate") %>%
+                    popup = "6x50m laps",
+                   group = "Intermediate (old)") %>%
   # intermediate turn around
   addAwesomeMarkers(lat = -28.217697, lng = 153.541171,
                     icon = list_icons["circle"], # fixed list, can't accept hex
                     popup = "Run: Turn around at painted<br>yellow X on road",
-                   group = "Intermediate") %>%
+                   group = "Intermediate (old)") %>%
   # Add courses
-  addPolylines(data = dt_courses[course=="full" & part=="ride"]$sf_poly[[1]], color = tri_cols$ride, group = "Full") %>% 
-  addPolylines(data = dt_courses[course=="full" & part=="run"]$sf_poly[[1]], color = tri_cols$run, group = "Full") %>% 
-  addPolylines(data = dt_courses[course=="int" & part=="ride"]$sf_poly[[1]], color = tri_cols$ride, group = "Intermediate",popup = "2 laps") %>% 
-  addPolylines(data = dt_courses[course=="int" & part=="run"]$sf_poly[[1]], color = tri_cols$run, group = "Intermediate") %>% 
+  addPolylines(data = dt_courses[course=="full" & part=="ride"]$sf_poly[[1]], color = tri_cols$ride, group = "Full (new)") %>% 
+  addPolylines(data = dt_courses[course=="full" & part=="run"]$sf_poly[[1]], color = tri_cols$run, group = "Full (new)") %>% 
+  addPolylines(data = dt_courses[course=="full (old)" & part=="ride"]$sf_poly[[1]], color = tri_cols$ride, group = "Full (old)") %>% 
+  addPolylines(data = dt_courses[course=="full (old)" & part=="run"]$sf_poly[[1]], color = tri_cols$run, group = "Full (old)") %>% 
+  addPolylines(data = dt_courses[course=="int (old)" & part=="ride"]$sf_poly[[1]], color = tri_cols$ride, group = "Intermediate (old)",popup = "2 laps") %>% 
+  addPolylines(data = dt_courses[course=="int (old)" & part=="run"]$sf_poly[[1]], color = tri_cols$run, group = "Intermediate (old)") %>% 
   addLayersControl(baseGroups = c("Simple","Detailed", "Satellite"),
-                   overlayGroups = c("Full","Intermediate","Info"),
+                   overlayGroups = c("Full (new)","Full (old)","Intermediate (old)","Info (old)"),
                    options = layersControlOptions(collapsed = FALSE)) %>% 
   addFullscreenControl() %>% 
   addScaleBar(position = "bottomleft") %>% 
-  addLegend(position = "bottomright",colors = c(tri_cols$ride, tri_cols$run),labels = c("Ride","Run")) %>%
-  hideGroup(c("Intermediate")) #use this to choose set which layers are initially visible
+  addLegend(position = "topleft",colors = c(tri_cols$ride, tri_cols$run),labels = c("Ride","Run")) %>%
+  hideGroup(c("Full (old)","Intermediate (old)", "Info (old)")) #use this to choose set which layers are initially visible
 
 ```
