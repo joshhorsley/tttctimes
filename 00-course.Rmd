@@ -129,8 +129,6 @@ Marshalls: 3 shown in pink icons on the map:
 - Fraser Dr lower roundabout at Stradbroke Dr
 - Fraser Dr upper roundabout at Altitude Blvd
 
-The ride course has one set of traffic lights 
-
 ### Course Map {#map-full-new}
 
 ```{r}
