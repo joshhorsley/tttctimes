@@ -11,7 +11,7 @@ description: "Twinnies Times"
 
 ```{r prep, echo = FALSE}
 
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE, fig.height = 6, fig.width = 7)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, fig.height = 6, fig.width = 7, widgetframe_widgets_dir = 'widgets')
 
 dummy <- lapply(list.files("R", full.names = TRUE), source)
 
@@ -105,14 +105,15 @@ dt_handicaps_all <- get_all_handicaps(dt_all_long, dt_season,
                                       taget_time_hour = taget_time_hour)
 ```
 
+To be updated pending new course.
 
-Handicaps and start times are calculated for `r date_for_handicap_nice`.
+<!-- Handicaps and start times are calculated for `r date_for_handicap_nice`. -->
 
-Handicaps are calculated for the full course using results from the current season and the previous `r n_old_seasons_use` seasons.
+<!-- Handicaps are calculated for the full course using results from the current season and the previous `r n_old_seasons_use` seasons. -->
 
-Times from previous seasons are adjusted by adding `r old_season_add_mins` minutes. Start times are calculated by subtracting the adjusted best time from the target finish time of `r taget_time_hour_nice`.
+<!-- Times from previous seasons are adjusted by adding `r old_season_add_mins` minutes. Start times are calculated by subtracting the adjusted best time from the target finish time of `r taget_time_hour_nice`. -->
 
-```{r tab-handiap}
-tab_handicaps(dt_handicaps_all)
-```
+<!-- ```{r tab-handiap} -->
+<!-- tab_handicaps(dt_handicaps_all) -->
+<!-- ``` -->
 

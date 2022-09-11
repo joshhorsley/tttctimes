@@ -10,6 +10,7 @@
       .desktop {display: none;}
   } 
 
+
 p.caption {
   color: #777;
   margin-top: 10px;
@@ -40,3 +41,4 @@ pre code {
 .book .book-body .navigation.navigation-next {
   display: none;
 }
+
