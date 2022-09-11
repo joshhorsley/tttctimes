@@ -165,7 +165,7 @@ leaflet(width = "100%", height = 400) %>%
                    overlayGroups = c("Swim","Ride","Run", "Info"),
                    options = layersControlOptions(collapsed = TRUE)) %>% 
   # hideGroup(c("Full (old)","Intermediate (old)", "Info (old)"))
-  widgetframe::frameWidget()
+  widgetframe::frameWidget(options = frameOptions(allowfullscreen = TRUE))
 ```
 
 ### Bike Course Directions {#course-directions-full-new}
@@ -241,6 +241,6 @@ leaflet(width = "100%", height = 400) %>%
                    options = layersControlOptions(collapsed = TRUE)) %>% 
   addScaleBar(position = "bottomleft") %>% 
   hideGroup(c("Intermediate")) %>% 
-  widgetframe::frameWidget()
+  widgetframe::frameWidget(options = frameOptions(allowfullscreen = TRUE))
 ```
 
