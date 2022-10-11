@@ -16,100 +16,26 @@ list_icons <- awesomeIconList(
   circle = makeAwesomeIcon(text = fa("circle-xmark"), markerColor = "black", iconColor = "yellow")
 )
 
-unpack_points <- function(gpx_list, ord_name = c("lat","lon")[1]) {
-  
-  as.numeric(unlist(unname(lapply(gpx_list$gpx$trk$trkseg, function(x) attr(x, ord_name)))))
-}
-
-import_gpx <- function(path_gpx) {
-  gpx_list <- as_list(xml2::read_xml(path_gpx))
-  
-  lats <- unpack_points(gpx_list, "lat")
-  lons <- unpack_points(gpx_list, "lon")
-
-  return(st_linestring(x = matrix(c(lons, lats),ncol=2),dim = "XY"))
-}
-
-
-dt_courses <- data.table(course = c("full","full","full (old)","full (old)","int (old)","int (old)"),
-                                    part = c("ride","run","ride","run","ride","run"),
-                         # dist_km = c(16.7,4.4,NA,NA,NA,NA),
-                         path_gpx = c("data_provided/courses/Twinnies full proposed.gpx",
-                                      "data_provided/courses/Reconning.gpx",
-                                      "data_provided/courses/TT_Tri_Ride.gpx",
-                                      "data_provided/courses/TT_Tri_Run.gpx",
-                                      "data_provided/courses/TT_Tri_Intermediate_Ride.gpx",
-                                      "data_provided/courses/TT_Tri_Intermediate_Run.gpx"))
-
-dt_courses[, row_id := seq(.N)]
-dt_courses[, sf_poly := list(list(import_gpx(path_gpx))), by = row_id]
-dt_courses[, c("xmin", "ymin","xmax","ymax") := as.list(st_bbox(sf_poly[[1]])), by = row_id]
-
-
-
-sf_trans <- st_polygon(list(matrix(
-  c(153.53715076025483, -28.214527587458402, 
-         153.53732204033093, -28.214552769875205, 
-         153.5372821355182, -28.214802763001195, 
-         153.53710607076877,-28.214777784964596, 
-         153.53715076025483, -28.214527587458402),
-  ncol=2,byrow = TRUE)))
-
-dt_courses_range <- dt_courses[, .(xmin = min(xmin),
-               ymin = min(ymin),
-               xmax = max(xmax),
-               ymax = max(ymax))]
-
-dt_markers_new <- data.table(lat = c(-28.213376212245354, 
-                                 -28.231228,-28.209872829666857, -28.19393845224043,
-                                 -28.194949373861867),
-                         lng = c(153.5226650096654,
-                                 153.526104, 153.52372975721073, 153.53884997902225,
-                                 153.54222891317784),
-                         popup = c(rep("Traffic lights",1),
-                                   "Marshall: Fraser Dr upper roundabout at Altitude Blvd",
-                                   "Marshall: Fraser Dr lower roundabout at Stradbroke Dr",
-                                   "Marshall: Corner of Oxley St & Cunningham St",
-                                   "Timer"
-                         ),
-                         icon = c(rep("traffic",1),
-                                  rep("marshall",3),
-                                  "timer"))
-
-dt_markers <- data.table(lat = c(-28.214021, -28.214762,
-                                 -28.231228, -28.214127, -28.227960, -28.216583,
-                                 -28.214749),
-                         lng = c(153.540331, 153.525837,
-                                 153.526104, 153.528090, 153.538349, 153.541749,
-                                 153.537454),
-                         popup = c(rep("Traffic lights",2),
-                                   "Marshall: Fraser Dr Roundabout",
-                                   "Marshall: Woodlands Dr Roundabout",
-                                   "Marshall: Lochlomond Dr Roundabout",
-                                   "Marshall: Toolona Ave Roundabout",
-                                   "Timer"
-                                   ),
-                         icon = c(rep("traffic",2),
-                                  rep("marshall",4),
-                                  "timer"))
-
-
-
+sf_courses <- st_read("data_provided/courses/shp/courses.shp")
+sf_poi <- st_read("data_provided/courses/shp/poi.shp")
 ```
 
 ### New Courses
 
 New courses based at TRAC Tweed Heads South
 
-- [Full (Proposed)](#course-full-new)
-- Intermediate TBC
+- [Full](#course-full-new)
+- [Intermediate](#course-int-new)
+
 
 ### Old Courses
 
 - [Old Courses](#course-old)
 
 
-## Full (New Proposed) {#course-full-new}
+
+
+## Full (New) {#course-full-new}
 
 The new courses are based at TRAC Tweed Heads South
 
@@ -123,47 +49,37 @@ Distances are similar to the previous course:
 
 Traffic lights: 1 set on Fraser Dr heading south
 
-Marshalls: 3 shown in pink icons on the map:
+Marshalls: 4 shown in pink icons on the map:
 
-- Corner of Oxley St & Cunningham St
-- Fraser Dr lower roundabout at Stradbroke Dr
-- Fraser Dr upper roundabout at Altitude Blvd
+- Cnr Oxley & Cunningham (corner of Netball Courts)
+- Cnr Dry Dock Rd & Sullivan St
+- RAB Vintage Lakes & Stradbroke roundabout (SW corner)
+- RAB of Fraser Dr and Altitude Blvd
+
 
 ### Course Map {#map-full-new}
+
+Toggle full-screen with the button below the zoom in/out.
 
 ```{r}
 leaflet(width = "100%", height = 400) %>% 
   addTiles(group = "Detailed") %>% 
   addProviderTiles(providers$CartoDB.Positron, group = "Simple") %>% 
   addProviderTiles("Esri.WorldImagery", group = "Satellite") %>% 
-  fitBounds(lng1 = dt_courses_range$xmin,
-            lng2 =dt_courses_range$xmax,
-            lat1 = dt_courses_range$ymin,
-            lat2 = dt_courses_range$ymax) %>% 
-  # Add general markers
-  addAwesomeMarkers(data = dt_markers_new,
-                    lng = ~lng, lat =~lat,
-                    icon = ~list_icons[icon],popup = ~popup, group = "Info") %>% 
+  addPolylines(data = sf_courses[with(sf_courses, which(version == "trac" & distance=="full" & part =="ride")),], col = tri_cols$ride, group = "Ride") %>% 
+  addPolylines(data = sf_courses[with(sf_courses, which(version == "trac" & distance=="full" & part =="run")),], col = tri_cols$run, group = "Run") %>% 
   
+  addAwesomeMarkers(data = sf_poi,
+                    icon =  ~list_icons[type],
+                    popup = ~name,
+                    group = "Info") %>% 
   
-# Add swimming marker -28.215316, 
-  addAwesomeMarkers(lat = -28.195599589008136, lng = 153.5421932591716,
-                    icon = list_icons["swimmer"], # fixed list, can't accept hex
-                    popup = "20x25m laps",
-                   group = "Swim") %>%
-
-  # Add courses
-  addPolylines(data = dt_courses[course=="full" & part=="ride"]$sf_poly[[1]], color = tri_cols$ride, group = "Ride") %>% 
-  addPolylines(data = dt_courses[course=="full" & part=="run"]$sf_poly[[1]], color = tri_cols$run, group = "Run") %>% 
-
   addFullscreenControl() %>% 
   addScaleBar(position = "bottomleft") %>% 
   addLegend(position = "topleft",colors = c(tri_cols$ride, tri_cols$run),labels = c("Ride","Run")) %>%
   addLayersControl(position = "topleft",baseGroups = c("Simple","Detailed", "Satellite"),
-                   overlayGroups = c("Swim","Ride","Run", "Info"),
-                   options = layersControlOptions(collapsed = TRUE)) %>% 
-  # hideGroup(c("Full (old)","Intermediate (old)", "Info (old)"))
-  widgetframe::frameWidget(options = frameOptions(allowfullscreen = TRUE))
+                   overlayGroups = c("Ride","Run", "Info"),
+                   options = layersControlOptions(collapsed = TRUE))
 ```
 
 ### Bike Course Directions {#course-directions-full-new}
@@ -187,12 +103,159 @@ leaflet(width = "100%", height = 400) %>%
 - Left into Heffron Street to return to TRAC Tweed Heads South
 
 
+## Intermediate (New) {#course-int-new}
+
+The new courses are based at TRAC Tweed Heads South
+
+Scroll down for [Course Map](#map-int-new) and [Bike Course Directions](#course-directions-int-new)
+
+Distances are similar to the previous course:
+
+- Swim 300m (12x25m laps)
+- Ride 7.5km
+- Run 2km
+
+Traffic lights: None!
+
+Marshalls: 2 of the 4 marshall locations are on the intermediate course. These are shown in pink icons on the map below.
+
+- Cnr Oxley & Cunningham (corner of Netball Courts)
+- Cnr Dry Dock Rd & Sullivan St
+
+
+### Course Map {#map-int-new}
+
+Toggle full-screen with the button below the zoom in/out.
+
+```{r}
+leaflet(width = "100%", height = 400) %>% 
+  addTiles(group = "Detailed") %>% 
+  addProviderTiles(providers$CartoDB.Positron, group = "Simple") %>% 
+  addProviderTiles("Esri.WorldImagery", group = "Satellite") %>% 
+  addPolylines(data = sf_courses[with(sf_courses, which(version == "trac" & distance=="int" & part =="ride")),], col = tri_cols$ride, group = "Ride") %>% 
+  addPolylines(data = sf_courses[with(sf_courses, which(version == "trac" & distance=="int" & part =="run")),], col = tri_cols$run, group = "Run") %>% 
+  
+  addAwesomeMarkers(data = sf_poi[with(sf_poi, which(course == "both")),],
+                    icon =  ~list_icons[type],
+                    popup = ~name,
+                    group = "Info") %>% 
+  
+  addFullscreenControl() %>% 
+  addScaleBar(position = "bottomleft") %>% 
+  addLegend(position = "topleft",colors = c(tri_cols$ride, tri_cols$run),labels = c("Ride","Run")) %>%
+  addLayersControl(position = "topleft",baseGroups = c("Simple","Detailed", "Satellite"),
+                   overlayGroups = c("Ride","Run", "Info"),
+                   options = layersControlOptions(collapsed = TRUE))
+```
+
+### Bike Course Directions {#course-directions-int-new}
+
+Follow directions on the day.
+
+- Start from TRAC Tweed Heads South
+- Left into Heffron Street
+- Right into Oxley Street
+- Left into Cunningham Street
+
+Complete two laps of:
+
+- Right into Sullivan Street
+- Left into Dry Dock Road
+- Left onto the footpath just before the motorway bridge
+- Continue south on the footpath as it runs next to the motorway then turns alongside Kirkwood Rd
+- Follow the footpath when it turns left and crosses a pedestrian bridge towards Arkinstall Park
+- Continue on the footpath as it turns alongside Oxley Street, then Robert St
+- Stay on the footpath until it ends after the Soccer club building
+- Watch for traffic before turning left onto Robert Street
+- Left into Cunningham Street to complete the second lap
+
+After the second lap:
+
+- Right onto Cunningham Street
+- Right into Oxley Street
+- Left into Heffron Street
+- Left into Heffron Street to return to TRAC Tweed Heads South
+
+
+<!-- - Left into Fraser Drive -->
+<!-- - Continue all the way up Fraser Drive to the roundabout at Altitude Blvd, go around roundabout to continue back down (north) Fraser Drive -->
+<!-- - Left into Botanical Circuit -->
+<!-- - Left into Leisure Drive -->
+<!-- - Left into Fraser Drive -->
+<!-- - Left into Kirkwood Road which becomes Philp Parade -->
+<!-- - Left into Dry Dock Road -->
+<!-- - Right into Sullivan Street -->
+<!-- - Left into Cunningham Street -->
+<!-- - Right into Oxley Street -->
+<!-- - Left into Heffron Street to return to TRAC Tweed Heads South -->
+
+
 ## Old {#course-old}
 
 Courses based at Club Banora Oasis Pools
 
 
 ```{r}
+
+unpack_points <- function(gpx_list, ord_name = c("lat","lon")[1]) {
+  
+  as.numeric(unlist(unname(lapply(gpx_list$gpx$trk$trkseg, function(x) attr(x, ord_name)))))
+}
+
+import_gpx <- function(path_gpx) {
+  gpx_list <- as_list(xml2::read_xml(path_gpx))
+  
+  lats <- unpack_points(gpx_list, "lat")
+  lons <- unpack_points(gpx_list, "lon")
+
+  return(st_linestring(x = matrix(c(lons, lats),ncol=2),dim = "XY"))
+}
+
+
+dt_courses <- data.table(course = c("full (old)","full (old)","int (old)","int (old)"),
+                                    part = c("ride","run","ride","run"),
+                         path_gpx = c("data_provided/courses/TT_Tri_Ride.gpx",
+                                      "data_provided/courses/TT_Tri_Run.gpx",
+                                      "data_provided/courses/TT_Tri_Intermediate_Ride.gpx",
+                                      "data_provided/courses/TT_Tri_Intermediate_Run.gpx"))
+
+dt_courses[, row_id := seq(.N)]
+dt_courses[, sf_poly := list(list(import_gpx(path_gpx))), by = row_id]
+dt_courses[, c("xmin", "ymin","xmax","ymax") := as.list(st_bbox(sf_poly[[1]])), by = row_id]
+
+
+
+sf_trans <- st_polygon(list(matrix(
+  c(153.53715076025483, -28.214527587458402, 
+         153.53732204033093, -28.214552769875205, 
+         153.5372821355182, -28.214802763001195, 
+         153.53710607076877,-28.214777784964596, 
+         153.53715076025483, -28.214527587458402),
+  ncol=2,byrow = TRUE)))
+
+dt_courses_range <- dt_courses[, .(xmin = min(xmin),
+               ymin = min(ymin),
+               xmax = max(xmax),
+               ymax = max(ymax))]
+
+
+dt_markers <- data.table(lat = c(-28.214021, -28.214762,
+                                 -28.231228, -28.214127, -28.227960, -28.216583,
+                                 -28.214749),
+                         lng = c(153.540331, 153.525837,
+                                 153.526104, 153.528090, 153.538349, 153.541749,
+                                 153.537454),
+                         popup = c(rep("Traffic lights",2),
+                                   "Marshall: Fraser Dr Roundabout",
+                                   "Marshall: Woodlands Dr Roundabout",
+                                   "Marshall: Lochlomond Dr Roundabout",
+                                   "Marshall: Toolona Ave Roundabout",
+                                   "Timer"
+                                   ),
+                         icon = c(rep("traffic",2),
+                                  rep("marshall",4),
+                                  "timer"))
+
 leaflet(width = "100%", height = 400) %>% 
   addTiles(group = "Detailed") %>% 
   addProviderTiles(providers$CartoDB.Positron, group = "Simple") %>% 
@@ -238,7 +301,6 @@ leaflet(width = "100%", height = 400) %>%
                    overlayGroups = c("Full","Intermediate","Info"),
                    options = layersControlOptions(collapsed = TRUE)) %>% 
   addScaleBar(position = "bottomleft") %>% 
-  hideGroup(c("Intermediate")) %>% 
-  widgetframe::frameWidget(options = frameOptions(allowfullscreen = TRUE))
+  hideGroup(c("Intermediate"))
 ```
 

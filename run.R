@@ -692,9 +692,6 @@ libpath <- file.path(getwd(), "docs/libs")
 
 
 if(!dir.exists("data_derived")) dir.create("data_derived")
-saveRDS(dt_season, "data_derived/dt_season.rds")
-saveRDS(dt_all_long, "data_derived/dt_all_long.rds")
-saveRDS(dt_summary_all, "data_derived/dt_summary_all.rds")
 
 
 ## Update website ----------------------------------------------------------
@@ -703,5 +700,3 @@ saveRDS(dt_summary_all, "data_derived/dt_summary_all.rds")
 source("make_athlete_rmd.R")
 source("make_seasons_rmd.R")
 bookdown::render_book("index.Rmd",output_dir = site_path_relative)
-if(dir.exists("docs/widgets")) system(command="rm -r docs/widgets")
-system(command="mv -f widgets docs")

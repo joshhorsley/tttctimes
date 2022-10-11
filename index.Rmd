@@ -13,12 +13,6 @@ description: "Twinnies Times"
 
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, fig.height = 6, fig.width = 7, widgetframe_widgets_dir = 'widgets')
 
-dummy <- lapply(list.files("R", full.names = TRUE), source)
-
-dt_season <- readRDS("data_derived/dt_season.rds")
-dt_all_long <- readRDS("data_derived/dt_all_long.rds")
-dt_summary_all <- readRDS("data_derived/dt_summary_all.rds")
-
 season_lowest_detail <- min(dt_season$season)
 
 ```
