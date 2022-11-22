@@ -1,0 +1,8 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Adjusted time	Time	Lap 1	Lap 2	Lap 3	Handicap	Difference	% Back	% Winning	% Average	% Median
+1	240	Sally Kingston	Sally	Kingston	Intermediate	44:28.2	59:28.2	22:04.5	20:59.0	16:24.7	-15:00.0	-	-	100%	1.58%	1.58%
+2	304	Olivia Kane			Intermediate	46:22.4	1:01:22.4	22:44.0	28:04.1	10:34.3	-15:00.0	+1:54.2	+3.20%	96.90%	-1.58%	-1.58%
+-	-	Cormac Thomson	Cormac	Thomson	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	59	Eloise Thomson	Eloise	Thomson	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	62	Scott Thomson	Scott	Thomson	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	208	Ava Thomson	Ava	Thomson	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	214	Timothy Taylor	Timothy	Taylor	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-

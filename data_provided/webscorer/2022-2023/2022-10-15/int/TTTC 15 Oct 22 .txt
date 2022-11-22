@@ -1,0 +1,5 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Adjusted time	Time	Lap 1	Lap 2	Lap 3	Handicap	Difference	% Back	% Winning	% Average	% Median
+1	249	Robyn Barry	Robyn	Barry	Intermediate	46:57.5	1:01:57.5	22:47.6	23:36.2	15:33.7	-15:00.0	-	-	100%	0.00%	0.00%
+-	59	Eloise Thomson	Eloise	Thomson	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	70	Kev Bannerman	Kev	Bannerman	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-
+-	214	Timothy Taylor	Timothy	Taylor	Intermediate	DNS	DNS				-15:00.0	-	-	-	-	-

@@ -1,0 +1,24 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Adjusted time	Time	Lap 1	Lap 2	Lap 3	Handicap	Difference	% Back	% Winning	% Average	% Median
+1	99	Scott Styman	Scott	Styman	Full	1:03:17.9	1:29:04.9	34:54.1	34:35.5	19:35.2	-25:47.0	-	-	100%	15.56%	16.06%
+2	63	Sebastian Thomson			Full	1:05:44.2	1:31:34.2	35:26.2	34:06.9	22:01.1	-25:50.0	+2:26.3	+3.85%	96.29%	12.31%	12.83%
+3	30	Alex Torrance	Alex	Torrance	Full	1:07:27.2	1:27:19.2	29:52.9	33:51.7	23:34.6	-19:52.0	+4:09.3	+6.56%	93.84%	10.02%	10.55%
+4	106	Tim Eade	Tim	Eade	Full	1:09:29.9	1:24:56.9	24:07.2	38:15.1	22:34.7	-15:27.0	+6:12.0	+9.79%	91.08%	7.29%	7.84%
+5	10	Ginny Jones	Ginny	Jones	Full	1:10:57.2	1:32:47.2	31:43.3	37:10.3	23:53.6	-21:50.0	+7:39.3	+12.09%	89.21%	5.35%	5.91%
+6	284	Will Styman	Will	Styman	Full	1:11:49.7	1:26:49.7	23:59.0	40:42.1	22:08.5	-15:00.0	+8:31.8	+13.48%	88.12%	4.19%	4.75%
+7	107	Marcel Van Kampen	Marcel	Van Kampen	Full	1:13:32.3	1:43:14.3	37:16.4	36:02.8	29:55.0	-29:42.0	+10:14.4	+16.18%	86.08%	1.90%	2.48%
+8	233	Kat Miller	Kat	Miller	Full	1:17:16.9	1:36:52.9	30:14.1	38:38.1	28:00.6	-19:36.0	+13:59.0	+22.09%	81.91%	-3.09%	-2.48%
+9	160	Jeffrey Stella	Jeffrey	Stella	Full	1:17:28.1	1:17:28.1	12:25.0	42:54.2	22:09.0	+0:00.0	+14:10.2	+22.39%	81.71%	-3.34%	-2.73%
+10	162	Peter Stowe	Peter	Stowe	Full	1:17:30.7	1:32:40.7	25:53.4	42:40.1	24:07.3	-15:10.0	+14:12.8	+22.45%	81.66%	-3.40%	-2.79%
+11	285	Lynette Nisbet	Lynette	Nisbet	Full	1:21:08.2	1:31:36.2	21:39.7	42:24.4	27:32.1	-10:28.0	+17:50.3	+28.18%	78.01%	-8.23%	-7.59%
+12	305	Zane Simpson	Zane	Simpson	Full	1:23:11.3	1:23:11.3	10:46.1	45:18.0	27:07.2	+0:00.0	+19:53.4	+31.42%	76.09%	-10.97%	-10.31%
+13	84	Wendy Wise	Wendy	Wise	Full	1:24:32.3	1:29:19.3	18:16.5	42:02.6	29:00.2	-4:47.0	+21:14.4	+33.56%	74.88%	-12.77%	-12.10%
+14	195	Andrew Armstrong	Andrew	Armstrong	Full	1:26:05.8	1:28:40.8	15:10.6	41:45.4	31:44.8	-2:35.0	+22:47.9	+36.02%	73.52%	-14.85%	-14.17%
+-	34	Simon Bradbery	Simon	Bradbery	Full	DNS	DNS				-21:16.0	-	-	-	-	-
+-	55	Mark Whiticker	Mark	Whiticker	Full	DNS	DNS				-16:22.0	-	-	-	-	-
+-	76	Gregory Freeman	Gregory	Freeman	Full	DNS	DNS				+0:00.0	-	-	-	-	-
+-	81	Scott Bornholt	Scott	Bornholt	Full	DNS	DNS				-25:45.0	-	-	-	-	-
+-	112	Kent Holmes	Kent	Holmes	Full	DNS	DNS				-20:54.0	-	-	-	-	-
+-	192	James Mourant	James	Mourant	Full	DNS	DNS				-27:08.0	-	-	-	-	-
+-	256	Mark Harrison	Mark	Harrison	Full	DNS	DNS				-7:10.0	-	-	-	-	-
+-	286	Peter Rudland	Peter	Rudland	Full	DNS	DNS				-18:03.0	-	-	-	-	-
+-	303	Adrian Bartlett	Adrian	Bartlett	Full	DNS	DNS				-28:04.0	-	-	-	-	-

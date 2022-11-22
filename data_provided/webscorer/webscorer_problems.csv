@@ -819,3 +819,28 @@ date_ymd,Name,part,split_valid,cumulative_valid
 26/2/2022,John King,Swim,FALSE,FALSE
 26/2/2022,John King,Ride,TRUE,FALSE
 26/2/2022,John King,Run,TRUE,FALSE
+,,,,
+,,,,
+15/10/2022,Bec McLucas,Swim,FALSE,FALSE
+15/10/2022,Bec McLucas,Ride,TRUE,FALSE
+15/10/2022,Bec McLucas,Run,TRUE,FALSE
+,,,,
+15/10/2022,Wendy Wise,Swim,FALSE,FALSE
+15/10/2022,Wendy Wise,Ride,TRUE,FALSE
+15/10/2022,Wendy Wise,Run,TRUE,FALSE
+,,,,
+5/11/2022,Kent Holmes,Swim,TRUE,TRUE
+5/11/2022,Kent Holmes,Ride,TRUE,FALSE
+5/11/2022,Kent Holmes,Run,FALSE,FALSE
+,,,,
+12/11/2022,Bec McLucas,Swim,FALSE,FALSE
+12/11/2022,Bec McLucas,Ride,TRUE,FALSE
+12/11/2022,Bec McLucas,Run,TRUE,FALSE
+,,,,
+12/11/2022,Danny Warner,Swim,FALSE,FALSE
+12/11/2022,Danny Warner,Ride,TRUE,FALSE
+12/11/2022,Danny Warner,Run,TRUE,FALSE
+,,,,
+19/11/2022,Michelle Jones,Swim,FALSE,FALSE
+19/11/2022,Michelle Jones,Ride,FALSE,TRUE
+19/11/2022,Michelle Jones,Run,TRUE,TRUE

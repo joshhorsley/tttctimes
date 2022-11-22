@@ -5,6 +5,15 @@
 
 Find race results from the schedule below. Or see:
 
+Participation by:
+
+- [Total entries](#participation-total-2022-2023)
+- [Race and course](#participation-trends-2022-2023)
+
+Season course records:
+
+- [Full](#best-times-full-2022-2023)
+- [Intermediate](#best-times-int-2022-2023)
 
 #### Schedule {#schedule-2022-2023}
 
@@ -35,6 +44,317 @@ dt_season_show[(scheduled) & !(cancelled) & !(have_results), Note := paste0(Note
 col_ref_hide <- which(!(names(dt_season_show) %in% c("#","Date","Note","Club Report")))-1 # columns are indexed from 0 - row name?
 
 datatable_std(dt_season_show,col_ref_hide,escape = FALSE,ordering = FALSE)
+```
+
+## Participation 2022-2023 - Total {#participation-total-2022-2023}
+
+```{r}
+n_entries_all_season <- nrow(dt_all_long[season=="2022-2023"][part == "Swim"])
+n_athletes_season <- length(unique(dt_all_long[season=="2022-2023"][part == "Swim"]$Name))
+
+```
+
+There have been `r prettyNum(n_entries_all_season, big.mark = ",")` entries by `r n_athletes_season` competitors in the 2022-2023 season
+
+```{r part_hist-2022-2023}
+plotly_part_hist(dt_all_long[season=="2022-2023"],len_season=25)
+```
+
+```{r part-total-table-2022-2023}
+table_part_total("2022-2023")
+```
+
+## Participation 2022-2023 - Trends {#participation-trends-2022-2023}
+
+
+### By Race
+
+```{r course_totals_2022-2023}
+dt_entry_type <- dt_all_long[season=="2022-2023"][part == "Swim", .(count = .N), by = course_nice]
+setorder(dt_entry_type, course_nice)
+dt_entry_type[, text := paste0(count, " for ", course_nice)]
+```
+
+The total number of entries by course are `r list_with_and(dt_entry_type$text)`. The plot below shows the number of entries by course over the 2022-2023 season. Race cancellations are shown on the plot with the letter "C". 
+
+```{r plot-race-count-2022-2023}
+plot_race_count(dt_all_long,"2022-2023",len_season=25)
+```
+
+
+## Best Times 2022-2023 - Full {#best-times-full-2022-2023}
+
+The fastest valid overall and split times in the 2022-2023 season for each competitor are ranked in the plot and tables below.
+
+
+
+### Overall
+
+
+```{r plot-record-full-2022-2023}
+plotly_record(dt_all_long[season=="2022-2023"], tri_cols, "full")
+```
+
+
+
+Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for individual parts are provided only for PBs.
+  
+```{r tab-record-full-overall-2022-2023}
+table_record(dt_all_long[season=="2022-2023"], tri_cols, "full", "overall")
+```
+
+### Swim
+
+Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for other parts and overall are provided only for PBs.
+  
+```{r tab-record-full-Swim-2022-2023}
+table_record(dt_all_long[season=="2022-2023"], tri_cols, "full", "Swim")
+```
+
+### Ride
+
+Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for other parts and overall are provided only for PBs.
+  
+```{r tab-record-full-Ride-2022-2023}
+table_record(dt_all_long[season=="2022-2023"], tri_cols, "full", "Ride")
+```
+
+### Run
+
+Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for other parts and overall are provided only for PBs.
+  
+```{r tab-record-full-Run-2022-2023}
+table_record(dt_all_long[season=="2022-2023"], tri_cols, "full", "Run")
+```
+
+
+## Best Times 2022-2023 - Intermediate {#best-times-int-2022-2023}
+
+The fastest valid overall and split times in the 2022-2023 season for each competitor are ranked in the plot and tables below.
+
+
+
+### Overall
+
+
+```{r plot-record-int-2022-2023}
+plotly_record(dt_all_long[season=="2022-2023"], tri_cols, "int")
+```
+
+
+
+Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for individual parts are provided only for PBs.
+  
+```{r tab-record-int-overall-2022-2023}
+table_record(dt_all_long[season=="2022-2023"], tri_cols, "int", "overall")
+```
+
+### Swim
+
+Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for other parts and overall are provided only for PBs.
+  
+```{r tab-record-int-Swim-2022-2023}
+table_record(dt_all_long[season=="2022-2023"], tri_cols, "int", "Swim")
+```
+
+### Ride
+
+Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for other parts and overall are provided only for PBs.
+  
+```{r tab-record-int-Ride-2022-2023}
+table_record(dt_all_long[season=="2022-2023"], tri_cols, "int", "Ride")
+```
+
+### Run
+
+Season records are show in gold, split PBs are shown in pink, and invalid times in grey. Ranks for other parts and overall are provided only for PBs.
+  
+```{r tab-record-int-Run-2022-2023}
+table_record(dt_all_long[season=="2022-2023"], tri_cols, "int", "Run")
+```
+
+
+## Race 6: 19 Nov 2022 {#r-2022-11-19}
+
+A total of 46 competitors entered, 5 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=6674){target="_blank"}.
+
+
+### Full
+
+42 competitors entered the course, achieving 19 new overall PBs and 40 new split PBs: 8 in the pool, 20 on the bike, and 12 on the run.
+
+```{r plot-race-6-full-FALSE-2022-2023}
+plotly_race(dt_all_long, tri_cols, "2022-2023",6, "full",FALSE)
+```
+
+2022-2023 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-6-full-FALSE-2022-2023}
+table_race(dt_all_long[season=="2022-2023"], tri_cols, 6, "full",FALSE)
+```
+
+
+### Intermediate
+
+4 competitors entered the course, achieving 2 new overall PBs and 5 new split PBs: 1 in the pool, 2 on the bike, and 2 on the run.
+
+```{r plot-race-6-int-FALSE-2022-2023}
+plotly_race(dt_all_long, tri_cols, "2022-2023",6, "int",FALSE)
+```
+
+2022-2023 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-6-int-FALSE-2022-2023}
+table_race(dt_all_long[season=="2022-2023"], tri_cols, 6, "int",FALSE)
+```
+
+
+## Race 5: 12 Nov 2022 {#r-2022-11-12}
+
+A total of 48 competitors entered, 8 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=6663){target="_blank"}.
+
+
+### Full
+
+42 competitors entered the course, achieving 29 new overall PBs and 67 new split PBs: 14 in the pool, 35 on the bike, and 18 on the run.
+
+```{r plot-race-5-full-FALSE-2022-2023}
+plotly_race(dt_all_long, tri_cols, "2022-2023",5, "full",FALSE)
+```
+
+2022-2023 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-5-full-FALSE-2022-2023}
+table_race(dt_all_long[season=="2022-2023"], tri_cols, 5, "full",FALSE)
+```
+
+
+### Intermediate
+
+6 competitors entered the course, achieving 3 new overall PBs and 9 new split PBs: 3 in the pool, 4 on the bike, and 2 on the run.
+
+```{r plot-race-5-int-FALSE-2022-2023}
+plotly_race(dt_all_long, tri_cols, "2022-2023",5, "int",FALSE)
+```
+
+2022-2023 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-5-int-FALSE-2022-2023}
+table_race(dt_all_long[season=="2022-2023"], tri_cols, 5, "int",FALSE)
+```
+
+
+## Race 4: 05 Nov 2022 {#r-2022-11-05}
+
+A total of 42 competitors entered, 9 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=6652){target="_blank"}.
+
+
+### Full
+
+42 competitors entered the course, achieving 19 new overall PBs and 55 new split PBs: 18 in the pool, 18 on the bike, and 19 on the run.
+
+```{r plot-race-4-full-FALSE-2022-2023}
+plotly_race(dt_all_long, tri_cols, "2022-2023",4, "full",FALSE)
+```
+
+2022-2023 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-4-full-FALSE-2022-2023}
+table_race(dt_all_long[season=="2022-2023"], tri_cols, 4, "full",FALSE)
+```
+
+
+## Race 3: 29 Oct 2022 {#r-2022-10-29}
+
+A total of 20 competitors entered, 11 for the first time this season. 
+
+
+### Full
+
+14 competitors entered the course, achieving 5 new overall PBs and 12 new split PBs: 3 in the pool, 5 on the bike, and 4 on the run.
+
+```{r plot-race-3-full-FALSE-2022-2023}
+plotly_race(dt_all_long, tri_cols, "2022-2023",3, "full",FALSE)
+```
+
+2022-2023 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-3-full-FALSE-2022-2023}
+table_race(dt_all_long[season=="2022-2023"], tri_cols, 3, "full",FALSE)
+```
+
+
+### Intermediate
+
+6 competitors entered the course, achieving 1 new overall PBs and 3 new split PBs: 1 in the pool, 1 on the bike, and 1 on the run.
+
+```{r plot-race-3-int-FALSE-2022-2023}
+plotly_race(dt_all_long, tri_cols, "2022-2023",3, "int",FALSE)
+```
+
+2022-2023 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-3-int-FALSE-2022-2023}
+table_race(dt_all_long[season=="2022-2023"], tri_cols, 3, "int",FALSE)
+```
+
+
+## Race 2: 22 Oct 2022 {#r-2022-10-22}
+
+A total of 29 competitors entered, 11 for the first time this season. 
+
+
+### Full
+
+27 competitors entered the course, achieving 16 new overall PBs and 43 new split PBs: 15 in the pool, 12 on the bike, and 16 on the run.
+
+```{r plot-race-2-full-FALSE-2022-2023}
+plotly_race(dt_all_long, tri_cols, "2022-2023",2, "full",FALSE)
+```
+
+2022-2023 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-2-full-FALSE-2022-2023}
+table_race(dt_all_long[season=="2022-2023"], tri_cols, 2, "full",FALSE)
+```
+
+
+### Intermediate
+
+2 competitors entered the course.
+
+```{r plot-race-2-int-FALSE-2022-2023}
+plotly_race(dt_all_long, tri_cols, "2022-2023",2, "int",FALSE)
+```
+
+2022-2023 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-2-int-FALSE-2022-2023}
+table_race(dt_all_long[season=="2022-2023"], tri_cols, 2, "int",FALSE)
+```
+
+
+## Race 1: 15 Oct 2022 {#r-2022-10-15}
+
+A total of 40 competitors entered. [Club Report](http://www.twintownstriathlon.org.au/?p=6608){target="_blank"}.
+
+
+### Full
+
+39 competitors entered the course.
+
+```{r plot-race-1-full-FALSE-2022-2023}
+plotly_race(dt_all_long, tri_cols, "2022-2023",1, "full",FALSE)
+```
+
+2022-2023 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-1-full-FALSE-2022-2023}
+table_race(dt_all_long[season=="2022-2023"], tri_cols, 1, "full",FALSE)
+```
+
+
+### Intermediate
+
+1 competitors entered the course.
+
+```{r plot-race-1-int-FALSE-2022-2023}
+plotly_race(dt_all_long, tri_cols, "2022-2023",1, "int",FALSE)
+```
+
+2022-2023 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-1-int-FALSE-2022-2023}
+table_race(dt_all_long[season=="2022-2023"], tri_cols, 1, "int",FALSE)
 ```
 
 # Season 2021-2022 {#season-2021-2022}

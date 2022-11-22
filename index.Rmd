@@ -17,7 +17,7 @@ season_lowest_detail <- min(dt_season$season)
 
 ```
 
-This is an unofficial collection of [TwinTowns Triathlon Club](http://www.twintownstriathlon.org.au){target="_blank"} race results based on the [club's webscorer page](https://www.webscorer.com/33755){target="_blank"}.
+This is a collection of [TwinTowns Triathlon Club](http://www.twintownstriathlon.org.au){target="_blank"} race results based on the [club's webscorer page](https://www.webscorer.com/33755){target="_blank"}.
 
 See results by:
 
