@@ -1,0 +1,4 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Adjusted time	Time	Lap 1	Lap 2	Handicap	Difference	% Back	% Winning	% Average	% Median
+1	5	Jenny Scaysbrook	Jenny	Scaysbrook	Aqua Bike	42:01.9	52:01.9	19:26.5	32:35.4	-10:00.0	-	-	100%	1.62%	1.62%
+2	51	Sue Van Den Broek	Sue	Van Den Broek	Aqua Bike	43:44.7	53:44.7	20:07.7	33:37.0	-10:00.0	+1:42.8	+3.29%	96.81%	-1.62%	-1.62%
+-	166	Craig Broadhurst	Craig	Broadhurst	Aqua Bike	DNS	DNS			-10:00.0	-	-	-	-	-

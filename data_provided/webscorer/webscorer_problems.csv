@@ -844,3 +844,24 @@ date_ymd,Name,part,split_valid,cumulative_valid
 19/11/2022,Michelle Jones,Swim,FALSE,FALSE
 19/11/2022,Michelle Jones,Ride,FALSE,TRUE
 19/11/2022,Michelle Jones,Run,TRUE,TRUE
+,,,,
+,,,,
+26/11/2022,Zavier Schneider,Swim,FALSE,FALSE
+26/11/2022,Zavier Schneider,Ride,FALSE,FALSE
+26/11/2022,Zavier Schneider,Run,FALSE,FALSE
+,,,,
+26/11/2022,Andrew Miller,Swim,TRUE,TRUE
+26/11/2022,Andrew Miller,Ride,FALSE,FALSE
+26/11/2022,Andrew Miller,Run,FALSE,FALSE
+,,,,
+26/11/2022,Val Lambard,Swim,TRUE,TRUE
+26/11/2022,Val Lambard,Ride,FALSE,FALSE
+26/11/2022,Val Lambard,Run,FALSE,FALSE
+,,,,
+26/11/2022,David Hogan,Swim,FALSE,FALSE
+26/11/2022,David Hogan,Ride,FALSE,TRUE
+26/11/2022,David Hogan,Run,TRUE,TRUE
+,,,,
+26/11/2022,Gabrielle Stella,Swim,TRUE,TRUE
+26/11/2022,Gabrielle Stella,Ride,FALSE,FALSE
+26/11/2022,Gabrielle Stella,Run,TRUE,FALSE
