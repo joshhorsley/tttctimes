@@ -1,0 +1,34 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Adjusted time	Time	Lap 1	Lap 2	Lap 3	Handicap	Difference	% Back	% Winning	% Average	% Median
+1	110	Rowena Smith	Rowena	Smith	Full	1:01:42.1	1:01:42.1	12:18.4	27:58.4	21:25.3	+0:00.0	-	-	100%	25.64%	28.30%
+2	99	Scott Styman	Scott	Styman	Full	1:04:03.6	1:04:03.6	9:13.1	34:11.8	20:38.6	+0:00.0	+2:21.5	+3.82%	96.32%	22.80%	25.55%
+3	7	Alex Gilks	Alex	Gilks	Full	1:06:09.5	1:06:09.5	9:56.7	34:26.5	21:46.4	+0:00.0	+4:27.4	+7.22%	93.26%	20.27%	23.12%
+4	53	Joanne Colja	Joanne	Colja	Full	1:18:18.5	1:18:18.5	10:07.3	38:14.4	29:56.8	+0:00.0	+16:36.4	+26.91%	78.79%	5.63%	9.00%
+5	106	Tim Eade	Tim	Eade	Full	1:07:52.8	1:23:19.8	25:08.0	35:52.6	22:19.2	-15:27.0	+21:37.7	+35.05%	74.04%	-0.43%	3.16%
+6	274	Josh Horsley	Josh	Horsley	Full	1:03:05.5	1:24:08.5	30:49.6	30:33.9	22:45.0	-21:03.0	+22:26.4	+36.37%	73.33%	-1.40%	2.22%
+7	104	Viv Wright	Viv	Wright	Full	1:25:54.5	1:25:54.5	9:50.4	32:41.8	43:22.3	+0:00.0	+24:12.4	+39.23%	71.82%	-3.53%	0.16%
+8	84	Wendy Wise	Wendy	Wise	Full	1:26:11.5	1:26:11.5	13:13.6	43:38.4	29:19.4	+0:00.0	+24:29.4	+39.69%	71.59%	-3.87%	-0.16%
+9	8	Dave de Closey	Dave	de Closey	Full	1:16:19.2	1:26:19.2	25:22.1	33:44.2	27:12.9	-10:00.0	+24:37.1	+39.90%	71.48%	-4.03%	-0.31%
+10	139	Matthew Stanley	Matthew	Stanley	Full	1:12:17.1	1:27:17.1	25:56.0	38:24.1	22:57.0	-15:00.0	+25:35.0	+41.46%	70.69%	-5.19%	-1.44%
+11	80	Mark Collinson	Mark	Collinson	Full	1:11:15.0	1:29:30.0	26:28.2	37:43.2	25:18.6	-18:15.0	+27:47.9	+45.05%	68.94%	-7.86%	-4.01%
+12	32	Guy Davoren	Guy	Davoren	Full	1:18:30.9	1:34:01.9	26:22.0	42:35.4	25:04.6	-15:31.0	+32:19.8	+52.40%	65.62%	-13.32%	-9.28%
+13	248	Philip Salter	Philip	Salter	Full	1:37:20.6	1:37:20.6	13:31.8	44:14.6	39:34.2	+0:00.0	+35:38.5	+57.76%	63.39%	-17.31%	-13.12%
+14	112	Kent Holmes	Kent	Holmes	Full	1:16:30.0	1:37:24.0	25:23.1	33:39.0	38:21.8	-20:54.0	+35:41.9	+57.86%	63.35%	-17.38%	-13.19%
+-	3	Valerie Lambard	Valerie	Lambard	Full	DNS	DNS				+0:00.0	-	-	-	-	-
+-	9	Stuart Crawford	Stuart	Crawford	Full	DNS	DNS				+0:00.0	-	-	-	-	-
+-	18	Hollie Robards	Hollie	Robards	Full	DNS	DNS				-13:13.0	-	-	-	-	-
+-	20	Gerard Robards	Gerard	Robards	Full	DNS	DNS				-26:53.0	-	-	-	-	-
+-	30	Alex Torrance	Alex	Torrance	Full	DNS	DNS				-19:52.0	-	-	-	-	-
+-	34	Simon Bradbery	Simon	Bradbery	Full	DNS	DNS				-21:16.0	-	-	-	-	-
+-	62	Scott Thomson	Scott	Thomson	Full	DNS	DNS				-33:19.0	-	-	-	-	-
+-	72	Rob Worth	Rob	Worth	Full	DNS	DNS				-23:37.0	-	-	-	-	-
+-	76	Gregory Freeman	Gregory	Freeman	Full	DNS	DNS				+0:00.0	-	-	-	-	-
+-	86	Warren Copping	Warren	Copping	Full	DNS	DNS				-9:14.0	-	-	-	-	-
+-	88	John King	John	King	Full	DNS	DNS				-31:56.0	-	-	-	-	-
+-	89	Matt Lance	Matt	Lance	Full	DNS	DNS				-20:52.0	-	-	-	-	-
+-	107	Marcel Van Kampen	Marcel	Van Kampen	Full	DNS	DNS				-29:42.0	-	-	-	-	-
+-	151	Craig Telling	Craig	Telling	Full	DNS	DNS				-28:42.0	-	-	-	-	-
+-	162	Peter Stowe	Peter	Stowe	Full	DNS	DNS				-15:10.0	-	-	-	-	-
+-	192	James Mourant	James	Mourant	Full	DNS	DNS				-27:08.0	-	-	-	-	-
+-	196	Bec McLucas	Bec	McLucas	Full	DNS	DNS				-28:19.0	-	-	-	-	-
+-	208	Ava Thomson	Ava	Thomson	Full	DNS	DNS				-11:17.0	-	-	-	-	-
+-	234	Andrew Miller	Andrew	Miller	Full	DNS	DNS				-26:04.0	-	-	-	-	-

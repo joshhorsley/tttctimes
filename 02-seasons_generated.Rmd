@@ -174,6 +174,39 @@ table_record(dt_all_long[season=="2022-2023"], tri_cols, "int", "Run")
 ```
 
 
+## Race 8: 03 Dec 2022 {#r-2022-12-03}
+
+A total of 19 competitors entered. 
+
+
+### Full
+
+14 competitors entered the course, achieving 7 new split PBs: 2 in the pool, 2 on the bike, and 3 on the run.
+
+```{r plot-race-8-full-FALSE-2022-2023}
+plotly_race(dt_all_long, tri_cols, "2022-2023",8, "full",FALSE)
+```
+
+2022-2023 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-8-full-FALSE-2022-2023}
+table_race(dt_all_long[season=="2022-2023"], tri_cols, 8, "full",FALSE)
+```
+
+
+### Intermediate
+
+5 competitors entered the course, achieving 4 new split PBs: 2 in the pool and 2 on the run.
+
+```{r plot-race-8-int-FALSE-2022-2023}
+plotly_race(dt_all_long, tri_cols, "2022-2023",8, "int",FALSE)
+```
+
+2022-2023 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-8-int-FALSE-2022-2023}
+table_race(dt_all_long[season=="2022-2023"], tri_cols, 8, "int",FALSE)
+```
+
+
 ## Race 7: 26 Nov 2022 {#r-2022-11-26}
 
 A total of 38 competitors entered, 2 for the first time this season. 
@@ -195,7 +228,7 @@ table_race(dt_all_long[season=="2022-2023"], tri_cols, 7, "full",FALSE)
 
 ### Intermediate
 
-7 competitors entered the course, achieving 3 new overall PBs and 9 new split PBs: 2 in the pool, 4 on the bike, and 3 on the run.
+7 competitors entered the course, achieving 2 new overall PBs and 8 new split PBs: 2 in the pool, 3 on the bike, and 3 on the run.
 
 ```{r plot-race-7-int-FALSE-2022-2023}
 plotly_race(dt_all_long, tri_cols, "2022-2023",7, "int",FALSE)
