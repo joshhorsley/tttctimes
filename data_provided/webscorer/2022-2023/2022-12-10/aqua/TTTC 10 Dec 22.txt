@@ -1,0 +1,4 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Adjusted time	Time	Lap 1	Lap 2	Handicap	Difference	% Back	% Winning	% Average	% Median
+1	51	Sue Van Den Broek	Sue	Van Den Broek	Aqua Bike	42:28.5	52:28.5	19:52.9	32:35.6	-10:00.0	-	-	100%	2.05%	2.05%
+2	45	Paul Woodger	Paul	Woodger	Aqua Bike	44:40.0	54:40.0	19:58.8	34:41.2	-10:00.0	+2:11.5	+4.18%	95.99%	-2.05%	-2.05%
+-	166	Craig Broadhurst	Craig	Broadhurst	Aqua Bike	DNS	DNS			-10:00.0	-	-	-	-	-

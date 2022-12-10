@@ -890,3 +890,8 @@ date_ymd,Name,part,split_valid,cumulative_valid
 3/12/2022,Jeff Stella,Swim,TRUE,TRUE
 3/12/2022,Jeff Stella,Ride,FALSE,FALSE
 3/12/2022,Jeff Stella,Run,TRUE,FALSE
+,,,,
+,,,,
+10/12/2022,Sebastian Thomson,Swim,TRUE,TRUE
+10/12/2022,Sebastian Thomson,Ride,FALSE,FALSE
+10/12/2022,Sebastian Thomson,Run,FALSE,TRUE
