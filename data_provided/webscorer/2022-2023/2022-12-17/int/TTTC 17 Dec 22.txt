@@ -1,0 +1,5 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Adjusted time	Time	Lap 1	Lap 2	Lap 3	Handicap	Difference	% Back	% Winning	% Average	% Median
+1	127	Cormac Thomson	Cormac	Thomson	Intermediate	34:16.6	44:16.6	15:48.0	19:15.2	9:13.3	-10:00.0	-	-	100%	10.36%	10.36%
+2	249	Robyn Barry	Robyn	Barry	Intermediate	44:30.5	54:30.5	17:39.8	22:03.6	14:47.1	-10:00.0	+10:13.9	+23.11%	81.23%	-10.36%	-10.36%
+-	59	Eloise Thomson	Eloise	Thomson	Intermediate	DNS	DNS				-10:00.0	-	-	-	-	-
+-	304	Olivia Kane	Olivia	Kane	Intermediate	DNS	DNS				-10:00.0	-	-	-	-	-

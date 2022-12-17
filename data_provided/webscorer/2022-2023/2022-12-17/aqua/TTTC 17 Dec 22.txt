@@ -1,0 +1,2 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Adjusted time	Time	Lap 1	Lap 2	Handicap	Difference	% Back	% Winning	% Average	% Median
+1	51	Sue Van Den Broek	Sue	Van Den Broek	Aqua Bike	41:14.4	51:14.4	19:40.4	31:34.0	-10:00.0	-	-	100%	0.00%	0.00%
