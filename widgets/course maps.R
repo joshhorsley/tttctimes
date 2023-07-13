@@ -4,6 +4,9 @@ dummy <- lapply(list.files("R", full.names = TRUE), source)
 
 library(leaflet.extras2)
 
+
+# Icons -------------------------------------------------------------------
+
 list_icons <- awesomeIconList(
   swimmer = makeAwesomeIcon(text = fa("person-swimming"),markerColor = "blue"),
   traffic = makeAwesomeIcon(text = fa("traffic-light"), markerColor = "black"),
@@ -12,64 +15,128 @@ list_icons <- awesomeIconList(
   circle = makeAwesomeIcon(text = fa("circle-xmark"), markerColor = "black", iconColor = "yellow")
 )
 
+list_icons_athlete <- list(ride = "https://www.twintownstriathlon.org.au/wp-content/uploads/2023/07/icons8-bike-100.png",
+                           run = "https://www.twintownstriathlon.org.au/wp-content/uploads/2023/07/icons8-run-100.png")
+
+
+# Items to map ------------------------------------------------------------
+
 
 sf_courses <- st_read("data_provided/courses/shp/courses.shp")
 sf_poi <- st_read("data_provided/courses/shp/poi.shp")
 
-sf_use <- sf_courses[with(sf_courses, which(version == "trac" & distance=="full" & part =="ride")),]
+
+# Random text for unique file names ---------------------------------------
 
 
-buffer_dist <- 1000
-units(buffer_dist) <- "m"
-sf_bbox_use <- sf_use |> 
-  st_buffer(dist = 10000) |>
-  st_bbox()
+# wordpress keeps old version cached and does not overwrite them
+v_text <- 2
 
-bbox_use <- as.list(sf_bbox_use)
-names(bbox_use) <- names(sf_bbox_use)
+# Functions ---------------------------------------------------------------
 
-l_ride <- leaflet(width = "100%", height = 400) |> 
-  setMaxBounds(lng1 = bbox_use$xmin,lat1 = bbox_use$ymin, lng2 = bbox_use$xmax,lat2 = bbox_use$ymax) |>
-  addTiles(group = "Detailed") |>
-  addProviderTiles(providers$CartoDB.Positron, group = "Simple") |>
-  addProviderTiles("Esri.WorldImagery", group = "Satellite") |>
+
+make_map <- function(sf_course,
+                     sf_poi,
+                     i_part) {
+  
+  # browser()
+  
+  buffer_dist <- 10000
+  units(buffer_dist) <- "m"
+  sf_bbox_use <- sf_use |> 
+    st_buffer(dist = buffer_dist) |>
+    st_bbox()
+  
+  bbox_use <- as.list(sf_bbox_use)
+  names(bbox_use) <- names(sf_bbox_use)
   
   
-  addPolylines(data = sf_use,
-               col = tri_cols$ride,
-               group = "Ride") %>%
-  # addPolylines(data = sf_courses[with(sf_courses, which(version == "trac" & distance=="full" & part =="run")),], col = tri_cols$run, group = "Run") |>
+  leaflet(width = "100%", height = 400) |> 
+    setMaxBounds(lng1 = bbox_use$xmin,lat1 = bbox_use$ymin, lng2 = bbox_use$xmax,lat2 = bbox_use$ymax) |>
+    addTiles(group = "Detailed") |>
+    addProviderTiles(providers$CartoDB.Positron, group = "Simple") |>
+    addProviderTiles("Esri.WorldImagery", group = "Satellite") |>
+    
+    
+    addPolylines(data = sf_use,
+                 col = tri_cols[[i_part]],
+                 group = "Course") |> 
+    
+    addAwesomeMarkers(data = sf_poi,
+                      icon =  ~list_icons[type],
+                      label =~name,
+                      group = "Info") |>
+    
+    leaflet.extras2::addMovingMarker(data = sf_use,
+                                     duration = 20*1000,
+                                     icon = makeIcon(iconUrl = list_icons_athlete[[i_part]],
+                                                     iconWidth = 25,
+                                                     iconHeight = 25),
+                                     movingOptions = movingMarkerOptions(autostart = TRUE,
+                                                                         loop = TRUE)) |> 
+    
+    addFullscreenControl() |>  
+    addResetMapButton() |> 
+    addScaleBar(position = "bottomleft") |> 
+    addLayersControl(position = "topleft",
+                     baseGroups = c("Simple","Detailed", "Satellite"),
+                     options = layersControlOptions(collapsed = TRUE))
   
-  addAwesomeMarkers(data = sf_poi,
-                    icon =  ~list_icons[type],
-                    # popup = ~name,
-                    label =~name,
-                    group = "Info") |>
+}
+
+
+save_map <- function(l_out, course, part, v_text="") {
   
-  leaflet.extras2::addMovingMarker(data = sf_use,duration = 20*1000, label = "Rider",
-                                   # icon = makeIcon(iconUrl = "data_provided/icons/icons8-bike-100.png",
-                                   # icon = makeIcon(iconUrl = "/Users/joshuahorsley/Desktop/tttctimes/data_provided/icons/icons8-bike-100.png",
-                                   # icon = makeIcon(iconUrl = "https://leafletjs.com/examples/custom-icons/leaf-green.png",
-                                   icon = makeIcon(iconUrl = "https://www.twintownstriathlon.org.au/wp-content/uploads/2023/07/icons8-bike-100.png",
-                                                   # icon = icons(iconUrl = "person-biking-solid.svg",
-                                                   # iconRetinaUrl= "data_provided/icons/icons8-bike-100.png",
-                                                   iconWidth = 25,iconHeight = 25),
-                                   movingOptions = movingMarkerOptions(autostart = TRUE, loop = TRUE)) |> 
+  path_out <- paste0("widgets/out/course-",course,"-",part,"_",v_text,".html")
+  dir_out <- dirname(path_out)
+  if(!dir.exists(dir_out)) dir.create(dir_out)
   
-  addFullscreenControl() |>  
-  addResetMapButton() |> 
-  addScaleBar(position = "bottomleft") |> 
-  # addLegend(position = "topleft",colors = c(tri_cols$ride, tri_cols$run),labels = c("Ride","Run")) %>%
-  addLayersControl(position = "topleft",baseGroups = c("Simple","Detailed", "Satellite"),
-                   # overlayGroups = c("Ride","Run", "Info"),
-                   options = layersControlOptions(collapsed = TRUE))
+  path_files <- gsub(".html$","_files",path_out)
+  
+  htmlwidgets::saveWidget(l_out, path_out,selfcontained = TRUE)
+  unlink(path_files, recursive = TRUE)
+  
+  
+}
 
 
+which_poi <- function(sf_course, sf_poi_all, buffer_m = 20) {
+  buffer_dist <- 20
+  units(buffer_dist) <- "m"
+  
+  ind_poi_include <- st_contains(
+    sf_use |> 
+      st_buffer(dist = buffer_dist) |> 
+      st_bbox() |> 
+      st_as_sfc()
+    ,
+    sf_poi
+  ) |> 
+    unlist()
+  
+  sf_poi_all[ind_poi_include,]
+} 
 
-path_out <- "widgets/out/course-full-bike.html"
-dir_out <- dirname(path_out)
-if(!dir.exists(dir_out)) dir.create(dir_out)
-path_files <- gsub(".html$","_files",path_out)
 
-htmlwidgets::saveWidget(l_ride, path_out,selfcontained = TRUE)
-unlink(path_files, recursive = TRUE)
+new_course_names <- list(full = "sprint",
+                         int = "tempta")
+
+# Generate ----------------------------------------------------------------
+
+
+for(i_course in c("full","int")) {
+  
+  
+  for(i_part in c("ride","run")) {
+    
+    sf_use <- sf_courses[with(sf_courses, which(version == "trac" & distance==i_course & part == i_part)),]
+    
+    sf_poi_use <- which_poi(sf_use, sf_poi)
+    
+    i_map <- make_map(sf_use,
+                      sf_poi_use,
+                      i_part)
+    
+    save_map(i_map, new_course_names[[i_course]], i_part, v_text)
+  }
+}
