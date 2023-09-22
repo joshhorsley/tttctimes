@@ -1,0 +1,27 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Chip id	Adjusted time	Time	Lap 1	Lap 2	Lap 3	Handicap	Difference	% Back	% Winning	% Average	% Median
+1	30	Alex Torrance	Alex	Torrance	Full	30	59:39.0	1:09:39.0	18:40.1	29:18.3	21:40.7	-10:00.0	-	-	100%	13.06%	14.78%
+2	196	Bec McLucas	Bec	McLucas	Full	196	1:00:13.1	1:10:13.1	18:33.5	31:58.9	19:40.8	-10:00.0	+0:34.1	+0.82%	99.19%	12.35%	14.09%
+3	99	Scott Styman	Scott	Styman	Full	99	1:01:26.5	1:11:26.5	18:57.6	32:36.1	19:52.8	-10:00.0	+1:47.5	+2.57%	97.49%	10.82%	12.59%
+4	7	Alex Gilks	Alex	Gilks	Full	7	1:02:08.9	1:12:08.9	19:24.9	31:22.5	21:21.5	-10:00.0	+2:29.9	+3.59%	96.54%	9.94%	11.73%
+5	4	Jim Collins	Jim	Collins	Full	4	1:14:00.8	1:14:00.8	12:18.5	35:54.1	25:48.3	+0:00.0	+4:21.8	+6.26%	94.10%	7.61%	9.45%
+6	160	Jeffrey Stella	Jeffrey	Stella	Full	160	1:17:02.6	1:17:02.6	12:42.1	40:26.0	23:54.6	+0:00.0	+7:23.6	+10.61%	90.40%	3.83%	5.74%
+7	32	Guy Davoren	Guy	Davoren	Full	32	1:20:58.1	1:20:58.1	12:13.2	40:45.6	27:59.4	+0:00.0	+11:19.1	+16.25%	86.02%	-1.07%	0.94%
+8	80	Mark Collinson	Mark	Collinson	Full	80	1:12:29.9	1:22:29.9	20:58.3	35:08.0	26:23.5	-10:00.0	+12:50.9	+18.45%	84.43%	-2.98%	-0.94%
+9	105	Darren Jones	Darren	Jones	Full	105	1:12:31.1	1:22:31.1	21:38.5	32:44.2	28:08.4	-10:00.0	+12:52.1	+18.48%	84.41%	-3.00%	-0.96%
+10	86	Warren Copping	Warren	Copping	Full	86	1:22:33.9	1:22:33.9	12:38.8	41:43.3	28:11.9	+0:00.0	+12:54.9	+18.54%	84.36%	-3.06%	-1.02%
+11	104	Viv Wright	Viv	Wright	Full	104	1:23:53.4	1:23:53.4	0:28.4	37:05.8	46:19.2	+0:00.0	+14:14.4	+20.45%	83.03%	-4.71%	-2.64%
+12	8	Dave de Closey	Dave	de closey	Full	8	1:41:22.9	1:31:22.9	19:35.7	30:50.3	40:56.9	+10:00.0	+21:43.9	+31.20%	76.22%	-14.06%	-11.80%
+13	89	Matt Lance	Matt	Lance	Full	89	1:21:29.0	1:31:29.0	18:00.2	30:37.9	42:50.8	-10:00.0	+21:50.0	+31.35%	76.13%	-14.19%	-11.93%
+14	76	Gregory Freeman	Gregory	Freeman	Full	76	1:31:46.5	1:31:46.5	14:24.6	47:58.7	29:23.3	+0:00.0	+22:07.5	+31.77%	75.89%	-14.56%	-12.29%
+-	1	Tracy Foyster	Tracy	Foyster	Full	1	DNS	DNS				-10:00.0	-	-	-	-	-
+-	9	Stuart Crawford	Stuart	Crawford	Full	9	DNS	DNS				+0:00.0	-	-	-	-	-
+-	18	Hollie Robards	Hollie	Robards	Full	18	DNS	DNS				+0:00.0	-	-	-	-	-
+-	20	Gerard Robards	Gerard	Robards	Full	20	DNS	DNS				-10:00.0	-	-	-	-	-
+-	34	Simon Bradbery	Simon	Bradbery	Full	34	DNS	DNS				-10:00.0	-	-	-	-	-
+-	44	Scott Wildin	Scott	Wildin	Full	44	DNS	DNS				-10:00.0	-	-	-	-	-
+-	72	Rob Worth	Rob	Worth	Full	72	DNS	DNS				-10:00.0	-	-	-	-	-
+-	110	Rowena Smith	Rowena	Smith	Full	110	DNS	DNS				+0:00.0	-	-	-	-	-
+-	162	Peter Stowe	Peter	Stowe	Full	162	DNS	DNS				+0:00.0	-	-	-	-	-
+-	248	Philip Salter	Philip	Salter	Full	248	DNS	DNS				+0:00.0	-	-	-	-	-
+-	252	Caroline Hogan	Caroline	Hogan	Full	252	DNS	DNS				-10:00.0	-	-	-	-	-
+-	303	Adrian Bartlett	Adrian	Bartlett	Full	303	DNS	DNS				-10:00.0	-	-	-	-	-

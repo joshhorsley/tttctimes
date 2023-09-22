@@ -1,0 +1,45 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Chip id	Adjusted time	Time	Lap 1	Lap 2	Lap 3	Handicap	Difference	% Back	% Winning	% Average	% Median
+1	107	Marcel Van Kampen	Marcel	Van Kampen	Full	107	59:30.1	54:30.1	2:43.7	29:59.6	21:46.7	+5:00.0	-	-	100%	36.85%	36.67%
+2	274	Josh Horsley	Josh	Horsley	Full	274	38:55.8	59:58.8	3:36.3	26:59.1	29:23.4	-21:03.0	+5:28.7	+10.05%	90.87%	30.50%	30.31%
+3	99	Scott Styman	Scott	Styman	Full	99	1:02:30.7	1:02:30.7	8:54.8	33:50.5	19:45.4	+0:00.0	+8:00.6	+14.70%	87.19%	27.57%	27.36%
+4	1	Tracy Foyster	Tracy	Foyster	Full	1	1:03:01.6	1:03:01.6	16:11.1	9:20.3	20:48.5	+0:00.0	+8:31.5	+15.64%	86.47%	26.97%	26.76%
+5	7	Alex Gilks	Alex	Gilks	Full	7	1:06:46.4	1:06:46.4	26:29.5	9:18.8	40:27.7	+0:00.0	+12:16.3	+22.52%	81.62%	22.63%	22.41%
+6	256	Mark Harrison	Mark	Harrison	Full	256	1:01:49.6	1:08:59.6	15:36.7	32:24.4	20:58.5	-7:10.0	+14:29.5	+26.59%	79.00%	20.06%	19.83%
+7	110	Rowena Smith	Rowena	Smith	Full	110	1:12:56.8	1:12:56.8	11:43.1	39:18.8	21:54.8	+0:00.0	+18:26.7	+33.84%	74.71%	15.48%	15.24%
+8	248	Philip Salter	Philip	Salter	Full	248	1:15:35.4	1:15:35.4	11:19.6	35:53.6	28:22.2	+0:00.0	+21:05.3	+38.69%	72.10%	12.42%	12.17%
+9	30	Alex Torrance	Alex	Torrance	Full	30	59:50.1	1:19:42.1	12:00.2	27:13.8	36:09.0	-19:52.0	+25:12.0	+46.24%	68.38%	7.65%	7.39%
+10	196	Bec McLucas	Bec	McLucas	Full	196	1:00:32.1	1:20:32.1	27:58.3	32:39.0	18:58.6	-20:00.0	+26:02.0	+47.77%	67.67%	6.69%	6.42%
+11	8	Dave de Closey	Dave	de Closey	Full	8	1:05:39.6	1:20:39.6	36:24.1	24:03.3	32:17.7	-15:00.0	+26:09.5	+48.00%	67.57%	6.54%	6.28%
+12	88	John King	John	King	Full	88	1:40:40.6	1:20:40.6	28:54.0	29:50.0	21:56.6	+20:00.0	+26:10.5	+48.03%	67.56%	6.52%	6.26%
+13	106	Tim Eade	Tim	Eade	Full	106	1:06:40.7	1:22:07.7	25:58.8	33:51.8	22:17.1	-15:27.0	+27:37.6	+50.69%	66.36%	4.84%	4.57%
+14	3	Val Lambard	Val	Lambard	Full	3	1:22:31.2	1:22:31.2	31:13.9	12:07.1	34:28.7	+0:00.0	+28:01.1	+51.41%	66.05%	4.39%	4.11%
+15	4	Jim Collins	Jim	Collins	Full	4	1:22:33.4	1:22:33.4	38:19.4	12:18.9	29:08.6	+0:00.0	+28:03.3	+51.48%	66.02%	4.35%	4.07%
+16	53	Joanne Colja	Joanne	Colja	Full	53	1:09:48.3	1:24:48.3	24:11.2	34:10.9	26:26.2	-15:00.0	+30:18.2	+55.60%	64.27%	1.74%	1.46%
+17	55	Mark Whiticker	Mark	Whiticker	Full	55	1:10:57.0	1:27:19.0	25:06.4	34:40.9	27:31.7	-16:22.0	+32:48.9	+60.21%	62.42%	-1.17%	-1.46%
+18	139	Matthew Stanley	Matthew	Stanley	Full	139	1:06:07.4	1:27:19.4	31:23.5	34:57.1	20:58.7	-21:12.0	+32:49.3	+60.22%	62.41%	-1.18%	-1.47%
+19	34	Simon Bradbery	Simon	Bradbery	Full	34	1:06:41.3	1:27:57.3	30:41.1	34:56.5	22:19.7	-21:16.0	+33:27.2	+61.38%	61.97%	-1.91%	-2.20%
+20	72	Rob Worth	Rob	Worth	Full	72	1:05:52.1	1:29:29.1	32:41.3	31:31.2	25:16.6	-23:37.0	+34:59.0	+64.19%	60.91%	-3.68%	-3.98%
+21	32	Guy Davoren	Guy	Davoren	Full	32	1:15:04.7	1:30:35.7	10:24.1	26:48.0	42:30.4	-15:31.0	+36:05.6	+66.22%	60.16%	-4.97%	-5.27%
+22	162	Peter Stowe	Peter	Stowe	Full	162	1:15:34.6	1:30:44.6	25:19.3	40:09.5	25:15.9	-15:10.0	+36:14.5	+66.50%	60.06%	-5.14%	-5.44%
+23	233	Kat Miller	Kat	Miller	Full	233	1:47:19.1	1:32:19.1	25:56.0	40:00.3	26:22.8	+15:00.0	+37:49.0	+69.39%	59.04%	-6.96%	-7.27%
+24	18	Hollie Robards	Hollie	Robards	Full	18	1:34:07.2	1:34:07.2	26:28.8	9:46.6	40:24.7	+0:00.0	+39:37.1	+72.69%	57.91%	-9.05%	-9.36%
+25	14	Clive Pearce	Clive	Pearce	Full	14	1:08:18.1	1:36:05.1	28:57.5	37:49.6	34:57.8	-27:47.0	+41:35.0	+76.30%	56.72%	-11.33%	-11.65%
+26	31	Christian Andrews	Christian	Andrews	Full	31	1:17:36.2	1:49:19.2	31:07.0	39:11.2	29:57.8	-31:43.0	+54:49.1	+100.58%	49.86%	-26.66%	-27.03%
+27	17	Richard Mourant	Richard	Mourant	Full	17	1:23:25.9	1:49:20.9	36:05.8	48:00.2	25:14.8	-25:55.0	+54:50.8	+100.63%	49.84%	-26.70%	-27.06%
+28	86	Warren Copping	Warren	Copping	Full	86	1:40:29.9	1:49:43.9	26:33.7	57:44.1	25:26.1	-9:14.0	+55:13.8	+101.34%	49.67%	-27.14%	-27.50%
+29	47	Ben Hall	Ben	Hall	Full	47	1:18:28.6	1:49:48.6	38:47.8	45:29.8	25:31.0	-31:20.0	+55:18.5	+101.48%	49.63%	-27.23%	-27.60%
+30	105	Darren Jones	Darren	Jones	Full	105	1:29:41.4	1:49:52.4	30:19.7	32:15.9	47:16.8	-20:11.0	+55:22.3	+101.60%	49.60%	-27.30%	-27.67%
+31	20	Gerard Robards	Gerard	Robards	Full	20	1:23:00.0	1:49:53.0	36:14.7	29:10.2	44:28.2	-26:53.0	+55:22.9	+101.61%	49.60%	-27.32%	-27.68%
+32	84	Wendy Wise	Wendy	Wise	Full	84	1:45:14.1	1:50:01.1	16:40.5	40:40.0	52:40.5	-4:47.0	+55:31.0	+101.86%	49.54%	-27.47%	-27.84%
+-	50	Amanda Hall	Amanda	Hall	Full	50	DNS	DNS				+0:00.0	-	-	-	-	-
+-	62	Scott Thomson	Scott	Thomson	Full	62	DNS	DNS				-33:19.0	-	-	-	-	-
+-	63	Sebastian Thomson	Sebastian	Thomson	Full	63	DNS	DNS				-25:56.0	-	-	-	-	-
+-	70	Kev Bannerman	Kev	Bannerman	Full	70	DNS	DNS				+0:00.0	-	-	-	-	-
+-	80	Mark Collinson	Mark	Collinson	Full	80	DNS	DNS				-18:15.0	-	-	-	-	-
+-	89	Matt Lance	Matt	Lance	Full	89	DNS	DNS				-25:00.0	-	-	-	-	-
+-	104	Viv Wright	Viv	Wright	Full	104	DNS	DNS				+0:00.0	-	-	-	-	-
+-	151	Craig Telling	Craig	Telling	Full	151	DNS	DNS				-28:42.0	-	-	-	-	-
+-	250	Helen Murphy	Helen	Murphy	Full	250	DNS	DNS				-13:51.0	-	-	-	-	-
+-	285	Lynette Nisbet	Lynette	Nisbet	Full	285	DNS	DNS				-10:28.0	-	-	-	-	-
+-	286	Peter Rudland	Peter	Rudland	Full	286	DNS	DNS				+0:00.0	-	-	-	-	-
+-	305	Zane Simpson	Zane	Simpson	Full	305	DNS	DNS				-15:00.0	-	-	-	-	-

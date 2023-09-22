@@ -241,8 +241,6 @@ Competitors with detailed results since the `r season_lowest_detail` season are 
 
 [Nick Fawaz](#a-nick-fawaz)
 
-[Nickolas Fawaz](#a-nickolas-fawaz)
-
 [Glenn Forbes](#a-glenn-forbes)
 
 [Marcus Fox](#a-marcus-fox)
@@ -329,6 +327,8 @@ Competitors with detailed results since the `r season_lowest_detail` season are 
 
 [Yaminah Hogg](#a-yaminah-hogg)
 
+[Amanda Holmes](#a-amanda-holmes)
+
 [Kent Holmes](#a-kent-holmes)
 
 [Josh Horsley](#a-josh-horsley)
@@ -407,6 +407,8 @@ Competitors with detailed results since the `r season_lowest_detail` season are 
 [Julie Lowe](#a-julie-lowe)
 
 [Karen Lowrie](#a-karen-lowrie)
+
+[Gavin Lowth](#a-gavin-lowth)
 
 
 **M**
@@ -848,7 +850,7 @@ plotly_athlete_all("Jacqui Anderson")
 
 ## Christian Andrews {#a-christian-andrews}
 
-Christian has 92 entries.
+Christian has 96 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -1013,7 +1015,7 @@ plotly_athlete_all("Robyn Barry")
 
 ## Adrian Bartlett {#a-adrian-bartlett}
 
-Adrian has 12 entries.
+Adrian has 14 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -1223,7 +1225,7 @@ plotly_athlete_all("Jo-Anne Borgas")
 
 ## Scott Bornholt {#a-scott-bornholt}
 
-Scott has 128 entries.
+Scott has 129 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -1313,7 +1315,7 @@ plotly_athlete_all("Chris Boyle")
 
 ## Simon Bradbery {#a-simon-bradbery}
 
-Simon has 145 entries.
+Simon has 149 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -1688,7 +1690,7 @@ plotly_athlete_all("Travis Coleman")
 
 ## Joanne Colja {#a-joanne-colja}
 
-Joanne has 258 entries.
+Joanne has 267 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -1703,7 +1705,7 @@ plotly_athlete_all("Joanne Colja")
 
 ## Jim Collins {#a-jim-collins}
 
-Jim has 616 entries.
+Jim has 624 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -1733,7 +1735,7 @@ plotly_athlete_all("Scott Collins")
 
 ## Mark Collinson {#a-mark-collinson}
 
-Mark has 109 entries.
+Mark has 119 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -1748,7 +1750,7 @@ plotly_athlete_all("Mark Collinson")
 
 ## Sam Colman {#a-sam-colman}
 
-Sam has 39 entries.
+Sam has 43 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -1808,7 +1810,7 @@ plotly_athlete_all("Steve Copeland")
 
 ## Warren Copping {#a-warren-copping}
 
-Warren has 249 entries.
+Warren has 258 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -1928,7 +1930,7 @@ plotly_athlete_all("Dawn Courage")
 
 ## Stuart Crawford {#a-stuart-crawford}
 
-Stuart has 265 entries.
+Stuart has 270 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -2078,7 +2080,7 @@ plotly_athlete_all("Mark Davies")
 
 ## Guy Davoren {#a-guy-davoren}
 
-Guy has 528 entries.
+Guy has 540 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -2108,7 +2110,7 @@ plotly_athlete_all("Erin Davoren")
 
 ## David De Closey {#a-david-de-closey}
 
-David has 349 entries.
+David has 358 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -2213,7 +2215,7 @@ plotly_athlete_all("Aaron Duel")
 
 ## Melanie Duff {#a-melanie-duff}
 
-Melanie has 22 entries.
+Melanie has 23 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -2228,7 +2230,7 @@ plotly_athlete_all("Melanie Duff")
 
 ## Timothy Eade {#a-timothy-eade}
 
-Timothy has 32 entries.
+Timothy has 42 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -2363,7 +2365,7 @@ plotly_athlete_all("Iona Faga")
 
 ## Nick Fawaz {#a-nick-fawaz}
 
-Nick has 53 entries.
+Nick has 54 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -2374,21 +2376,6 @@ table_athlete_all("Nick Fawaz")
 Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. 
 ```{r a-nick-fawaz-plot}
 plotly_athlete_all("Nick Fawaz")
-```
-
-## Nickolas Fawaz {#a-nickolas-fawaz}
-
-Nickolas has 1 entry.
-
-Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
-
-```{r a-nickolas-fawaz-table}
-table_athlete_all("Nickolas Fawaz")
-```
-
-Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. 
-```{r a-nickolas-fawaz-plot}
-plotly_athlete_all("Nickolas Fawaz")
 ```
 
 ## Glenn Forbes {#a-glenn-forbes}
@@ -2423,7 +2410,7 @@ plotly_athlete_all("Marcus Fox")
 
 ## Tracy Foyster {#a-tracy-foyster}
 
-Tracy has 504 entries.
+Tracy has 511 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -2453,7 +2440,7 @@ plotly_athlete_all("Liam Foyster")
 
 ## Kipp Freeman {#a-kipp-freeman}
 
-Kipp has 68 entries.
+Kipp has 69 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -2468,7 +2455,7 @@ plotly_athlete_all("Kipp Freeman")
 
 ## Gregory Freeman {#a-gregory-freeman}
 
-Gregory has 475 entries.
+Gregory has 481 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -2588,7 +2575,7 @@ plotly_athlete_all("Tyler Gilbert")
 
 ## Alex Gilks {#a-alex-gilks}
 
-Alex has 650 entries.
+Alex has 660 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -2663,7 +2650,7 @@ plotly_athlete_all("Sera Graham")
 
 ## Ben Hall {#a-ben-hall}
 
-Ben has 167 entries.
+Ben has 173 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -2678,7 +2665,7 @@ plotly_athlete_all("Ben Hall")
 
 ## Manda Hall {#a-manda-hall}
 
-Manda has 57 entries.
+Manda has 59 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -2738,7 +2725,7 @@ plotly_athlete_all("Cheyne Hampson")
 
 ## Simon Harradence {#a-simon-harradence}
 
-Simon has 37 entries.
+Simon has 38 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -2798,7 +2785,7 @@ plotly_athlete_all("Robert Harris")
 
 ## Mark Harrison {#a-mark-harrison}
 
-Mark has 6 entries.
+Mark has 10 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -2933,7 +2920,7 @@ plotly_athlete_all("Nina Hoffman")
 
 ## Caroline Hogan {#a-caroline-hogan}
 
-Caroline has 21 entries.
+Caroline has 22 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -2993,7 +2980,7 @@ plotly_athlete_all("Yaminah Hogg")
 
 ## Kent Holmes {#a-kent-holmes}
 
-Kent has 159 entries.
+Kent has 161 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -3006,9 +2993,24 @@ Tap or hover on the plots for more info. Plots show all courses together, course
 plotly_athlete_all("Kent Holmes")
 ```
 
+## Amanda Holmes {#a-amanda-holmes}
+
+Amanda has 1 entry.
+
+Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
+
+```{r a-amanda-holmes-table}
+table_athlete_all("Amanda Holmes")
+```
+
+Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. 
+```{r a-amanda-holmes-plot}
+plotly_athlete_all("Amanda Holmes")
+```
+
 ## Josh Horsley {#a-josh-horsley}
 
-Josh has 18 entries.
+Josh has 26 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -3083,7 +3085,7 @@ plotly_athlete_all("Dan Johnson")
 
 ## Lewis Johnson {#a-lewis-johnson}
 
-Lewis has 1 entry.
+Lewis has 2 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -3098,7 +3100,7 @@ plotly_athlete_all("Lewis Johnson")
 
 ## Darren Jones {#a-darren-jones}
 
-Darren has 232 entries.
+Darren has 238 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -3113,7 +3115,7 @@ plotly_athlete_all("Darren Jones")
 
 ## Ginny Jones {#a-ginny-jones}
 
-Ginny has 290 entries.
+Ginny has 296 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -3173,7 +3175,7 @@ plotly_athlete_all("Danny Khazen")
 
 ## John King {#a-john-king}
 
-John has 269 entries.
+John has 276 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -3218,7 +3220,7 @@ plotly_athlete_all("Katie Kissell")
 
 ## Sharyn Klein {#a-sharyn-klein}
 
-Sharyn has 332 entries.
+Sharyn has 333 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -3233,7 +3235,7 @@ plotly_athlete_all("Sharyn Klein")
 
 ## Codie Klein {#a-codie-klein}
 
-Codie has 4 entries.
+Codie has 5 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -3293,7 +3295,7 @@ plotly_athlete_all("Lydia Kuschmirz")
 
 ## Val Lambard {#a-val-lambard}
 
-Val has 390 entries.
+Val has 393 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -3338,7 +3340,7 @@ plotly_athlete_all("Glenn Lance")
 
 ## Matt Lance {#a-matt-lance}
 
-Matt has 192 entries.
+Matt has 198 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -3516,6 +3518,21 @@ Tap or hover on the plots for more info. Plots show all courses together, course
 plotly_athlete_all("Karen Lowrie")
 ```
 
+## Gavin Lowth {#a-gavin-lowth}
+
+Gavin has 1 entry.
+
+Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
+
+```{r a-gavin-lowth-table}
+table_athlete_all("Gavin Lowth")
+```
+
+Tap or hover on the plots for more info. Plots show all courses together, courses other than Full are identified with a letter "I": Intermediate, "D": Double Distance, "T": Teams. 
+```{r a-gavin-lowth-plot}
+plotly_athlete_all("Gavin Lowth")
+```
+
 ## Stuart Mason {#a-stuart-mason}
 
 Stuart has 4 entries.
@@ -3668,7 +3685,7 @@ plotly_athlete_all("Garry McKenzie")
 
 ## Bec McLucas {#a-bec-mclucas}
 
-Bec has 91 entries.
+Bec has 99 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -3758,7 +3775,7 @@ plotly_athlete_all("Andrew Miller")
 
 ## Kat Miller {#a-kat-miller}
 
-Kat has 34 entries.
+Kat has 39 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -3803,7 +3820,7 @@ plotly_athlete_all("Joe Mollica")
 
 ## Kyle Mooney {#a-kyle-mooney}
 
-Kyle has 117 entries.
+Kyle has 120 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -3863,7 +3880,7 @@ plotly_athlete_all("Rachel Morrison")
 
 ## Richard Mourant {#a-richard-mourant}
 
-Richard has 255 entries.
+Richard has 259 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -3878,7 +3895,7 @@ plotly_athlete_all("Richard Mourant")
 
 ## James Mourant {#a-james-mourant}
 
-James has 97 entries.
+James has 98 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -4073,7 +4090,7 @@ plotly_athlete_all("Gavin Nichols")
 
 ## Lynette Nisbet {#a-lynette-nisbet}
 
-Lynette has 11 entries.
+Lynette has 12 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -4118,7 +4135,7 @@ plotly_athlete_all("Lucas Nixon-Hind")
 
 ## Nick O'Reilly {#a-nick-o-reilly}
 
-Nick has 42 entries.
+Nick has 45 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -4253,7 +4270,7 @@ plotly_athlete_all("Glenn Payne")
 
 ## Clive Pearce {#a-clive-pearce}
 
-Clive has 107 entries.
+Clive has 110 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -4358,7 +4375,7 @@ plotly_athlete_all("Carol Ririnui")
 
 ## Hollie Robards {#a-hollie-robards}
 
-Hollie has 139 entries.
+Hollie has 144 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -4373,7 +4390,7 @@ plotly_athlete_all("Hollie Robards")
 
 ## Gerard Robards {#a-gerard-robards}
 
-Gerard has 356 entries.
+Gerard has 362 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -4463,7 +4480,7 @@ plotly_athlete_all("Patrick Rudd")
 
 ## Peter Rudland {#a-peter-rudland}
 
-Peter has 11 entries.
+Peter has 12 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -4493,7 +4510,7 @@ plotly_athlete_all("Anthony Rushton")
 
 ## Ross Salmon {#a-ross-salmon}
 
-Ross has 121 entries.
+Ross has 122 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -4508,7 +4525,7 @@ plotly_athlete_all("Ross Salmon")
 
 ## Philip Salter {#a-philip-salter}
 
-Philip has 292 entries.
+Philip has 297 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -4538,7 +4555,7 @@ plotly_athlete_all("Wendy Sanders")
 
 ## Jenny Scaysbrook {#a-jenny-scaysbrook}
 
-Jenny has 367 entries.
+Jenny has 370 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -4583,7 +4600,7 @@ plotly_athlete_all("Katrina Schneider")
 
 ## Peter Serone {#a-peter-serone}
 
-Peter has 462 entries.
+Peter has 464 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -4643,7 +4660,7 @@ plotly_athlete_all("Jeremy Simpson")
 
 ## Terence Simpson {#a-terence-simpson}
 
-Terence has 200 entries.
+Terence has 201 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -4658,7 +4675,7 @@ plotly_athlete_all("Terence Simpson")
 
 ## Zane Simpson {#a-zane-simpson}
 
-Zane has 23 entries.
+Zane has 26 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -4688,7 +4705,7 @@ plotly_athlete_all("Vaughan Skelly")
 
 ## Rowena Smith {#a-rowena-smith}
 
-Rowena has 68 entries.
+Rowena has 75 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -4838,7 +4855,7 @@ plotly_athlete_all("Heidi Sowerby")
 
 ## Matthew Stanley {#a-matthew-stanley}
 
-Matthew has 293 entries.
+Matthew has 298 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -4868,7 +4885,7 @@ plotly_athlete_all("Deidre Stein")
 
 ## Jeff Stella {#a-jeff-stella}
 
-Jeff has 55 entries.
+Jeff has 60 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -4943,7 +4960,7 @@ plotly_athlete_all("Jamie Stoddart")
 
 ## Peter Stowe {#a-peter-stowe}
 
-Peter has 162 entries.
+Peter has 170 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -4958,7 +4975,7 @@ plotly_athlete_all("Peter Stowe")
 
 ## Scott Styman {#a-scott-styman}
 
-Scott has 542 entries.
+Scott has 552 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -5123,7 +5140,7 @@ plotly_athlete_all("Zoe Taylor-West")
 
 ## Craig Telling {#a-craig-telling}
 
-Craig has 59 entries.
+Craig has 63 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -5168,7 +5185,7 @@ plotly_athlete_all("Garrett Thompson")
 
 ## Scott Thomson {#a-scott-thomson}
 
-Scott has 91 entries.
+Scott has 95 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -5183,7 +5200,7 @@ plotly_athlete_all("Scott Thomson")
 
 ## Sebastian Thomson {#a-sebastian-thomson}
 
-Sebastian has 74 entries.
+Sebastian has 78 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -5258,7 +5275,7 @@ plotly_athlete_all("Damien Toney")
 
 ## Alex Torrance {#a-alex-torrance}
 
-Alex has 59 entries.
+Alex has 66 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -5348,7 +5365,7 @@ plotly_athlete_all("Sue Van Den Broek")
 
 ## Marcel Van Kampen {#a-marcel-van-kampen}
 
-Marcel has 494 entries.
+Marcel has 499 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -5453,7 +5470,7 @@ plotly_athlete_all("Lisa Warner")
 
 ## Danny Warner {#a-danny-warner}
 
-Danny has 145 entries.
+Danny has 149 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -5573,7 +5590,7 @@ plotly_athlete_all("Tim Whitburn")
 
 ## Mark Whiticker {#a-mark-whiticker}
 
-Mark has 314 entries.
+Mark has 320 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -5588,7 +5605,7 @@ plotly_athlete_all("Mark Whiticker")
 
 ## Scott Wildin {#a-scott-wildin}
 
-Scott has 41 entries.
+Scott has 43 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -5648,7 +5665,7 @@ plotly_athlete_all("Shelley Winder")
 
 ## Wendy Wise {#a-wendy-wise}
 
-Wendy has 561 entries.
+Wendy has 568 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -5678,7 +5695,7 @@ plotly_athlete_all("Michael Wise")
 
 ## Paul Woodger {#a-paul-woodger}
 
-Paul has 272 entries.
+Paul has 273 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -5708,7 +5725,7 @@ plotly_athlete_all("Colin Woodward")
 
 ## Rob Worth {#a-rob-worth}
 
-Rob has 51 entries.
+Rob has 56 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 
@@ -5723,7 +5740,7 @@ plotly_athlete_all("Rob Worth")
 
 ## Viv Wright {#a-viv-wright}
 
-Viv has 98 entries.
+Viv has 106 entries.
 
 Scroll down to see a table and plot of all results since the 2018-2019 season. Season records are show in gold, season PBs are shown in pink, and invalid times in grey.
 

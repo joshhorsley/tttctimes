@@ -833,6 +833,10 @@ date_ymd,Name,part,split_valid,cumulative_valid
 5/11/2022,Kent Holmes,Ride,TRUE,FALSE
 5/11/2022,Kent Holmes,Run,FALSE,FALSE
 ,,,,
+5/11/2022,David De Closey,Swim,FALSE,FALSE
+5/11/2022,David De Closey,Ride,TRUE,FALSE
+5/11/2022,David De Closey,Run,TRUE,FALSE
+,,,,
 12/11/2022,Bec McLucas,Swim,FALSE,FALSE
 12/11/2022,Bec McLucas,Ride,TRUE,FALSE
 12/11/2022,Bec McLucas,Run,TRUE,FALSE
@@ -895,3 +899,66 @@ date_ymd,Name,part,split_valid,cumulative_valid
 10/12/2022,Sebastian Thomson,Swim,TRUE,TRUE
 10/12/2022,Sebastian Thomson,Ride,FALSE,FALSE
 10/12/2022,Sebastian Thomson,Run,FALSE,TRUE
+,,,,
+,,,,
+14/1/2023,Val Lambard,Swim,TRUE,TRUE
+14/1/2023,Val Lambard,Ride,FALSE,FALSE
+14/1/2023,Val Lambard,Run,TRUE,FALSE
+,,,,
+11/2/2023,Val Lambard,Swim,TRUE,TRUE
+11/2/2023,Val Lambard,Ride,TRUE,TRUE
+11/2/2023,Val Lambard,Run,FALSE,FALSE
+,,,,
+,,,,
+14/1/2023,Tracy Foyster,Swim,TRUE,FALSE
+14/1/2023,Tracy Foyster,Ride,FALSE,FALSE
+14/1/2023,Tracy Foyster,Run,TRUE,FALSE
+,,,,
+28/1/2023,Matthew Stanley,Swim,TRUE,TRUE
+28/1/2023,Matthew Stanley,Ride,TRUE,TRUE
+28/1/2023,Matthew Stanley,Run,FALSE,FALSE
+,,,,
+28/1/2023,Mark Whiticker,Swim,FALSE,FALSE
+28/1/2023,Mark Whiticker,Ride,TRUE,FALSE
+28/1/2023,Mark Whiticker,Run,TRUE,FALSE
+,,,,
+,,,,
+11/2/2023,Simon Bradbery,Swim,TRUE,TRUE
+11/2/2023,Simon Bradbery,Ride,TRUE,TRUE
+11/2/2023,Simon Bradbery,Run,FALSE,FALSE
+,,,,
+11/2/2023,John King,Swim,FALSE,FALSE
+11/2/2023,John King,Ride,TRUE,FALSE
+11/2/2023,John King,Run,TRUE,FALSE
+,,,,
+25/2/2023,Wendy Wise,Swim,FALSE,FALSE
+25/2/2023,Wendy Wise,Ride,TRUE,FALSE
+25/2/2023,Wendy Wise,Run,TRUE,FALSE
+,,,,
+15/10/2022,Viv Wright,Swim,TRUE,TRUE
+15/10/2022,Viv Wright,Ride,TRUE,TRUE
+15/10/2022,Viv Wright,Run,FALSE,FALSE
+,,,,
+22/10/2022,Viv Wright,Swim,TRUE,TRUE
+22/10/2022,Viv Wright,Ride,TRUE,TRUE
+22/10/2022,Viv Wright,Run,FALSE,FALSE
+,,,,
+12/11/2022,Viv Wright,Swim,TRUE,TRUE
+12/11/2022,Viv Wright,Ride,TRUE,TRUE
+12/11/2022,Viv Wright,Run,FALSE,FALSE
+,,,,
+28/1/2023,Matthew Stanley,Swim,TRUE,TRUE
+28/1/2023,Matthew Stanley,Ride,TRUE,TRUE
+28/1/2023,Matthew Stanley,Run,FALSE,FALSE
+,,,,
+7/1/2023,Kat Miller,Swim,FALSE,FALSE
+7/1/2023,Kat Miller,Ride,TRUE,FALSE
+7/1/2023,Kat Miller,Run,TRUE,FALSE
+,,,,
+11/2/2023,Kat Miller,Swim,FALSE,FALSE
+11/2/2023,Kat Miller,Ride,TRUE,FALSE
+11/2/2023,Kat Miller,Run,TRUE,FALSE
+,,,,
+29/10/2022,Andrew Miller,Swim,TRUE,TRUE
+29/10/2022,Andrew Miller,Ride,TRUE,FALSE
+29/10/2022,Andrew Miller,Run,FALSE,FALSE

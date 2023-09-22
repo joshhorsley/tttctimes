@@ -1,0 +1,36 @@
+﻿Place	Bib	Name	First name	Last name	Distance	Chip id	Adjusted time	Time	Lap 1	Lap 2	Lap 3	Handicap	Difference	% Back	% Winning	% Average	% Median
+1	145	Nick O'Reilly	Nick	O'Reilly	Full	145	56:28.8	1:06:28.8	19:07.8	28:28.2	18:52.8	-10:00.0	-	-	100%	11.73%	5.70%
+2	47	Ben Hall	Ben	Hall	Full	47	57:42.6	1:07:42.6	18:31.4	28:56.6	20:14.6	-10:00.0	+1:13.8	+1.85%	98.18%	10.09%	3.95%
+3	274	Josh Horsley	Josh	Horsley	Full	274	58:00.2	1:08:00.2	19:40.6	29:14.3	19:05.3	-10:00.0	+1:31.4	+2.29%	97.76%	9.70%	3.54%
+4	305	Zane Simpson	Zane	Simpson	Full	305	1:08:39.7	1:08:39.7	10:15.0	37:16.1	21:08.7	+0:00.0	+2:10.9	+3.28%	96.82%	8.83%	2.60%
+5	151	Craig Teling			Full		58:47.7	1:08:47.7	19:25.6	29:03.7	20:18.4	-10:00.0	+2:18.9	+3.48%	96.63%	8.65%	2.41%
+6	89	Matt Lance	Matt	Lance	Full	89	59:35.5	1:09:35.5	17:25.2	30:29.7	21:40.6	-10:00.0	+3:06.7	+4.68%	95.53%	7.60%	1.28%
+7	303	Adrian Bartlett	Adrian	Bartlett	Full	303	59:35.7	1:09:35.7	19:03.3	29:45.8	20:46.6	-10:00.0	+3:06.9	+4.69%	95.52%	7.59%	1.28%
+8	88	John King	John	King	Full	88	59:56.6	1:09:56.6	19:08.6	31:28.5	19:19.5	-10:00.0	+3:27.8	+5.21%	95.05%	7.13%	0.79%
+9	1	Tracy Foyster	Tracy	Foyster	Full	1	1:00:29.0	1:10:29.0	19:18.3	31:02.2	20:08.5	-10:00.0	+4:00.2	+6.02%	94.32%	6.41%	0.02%
+10	99	Scott Styman	Scott	Styman	Full	99	1:00:30.7	1:10:30.7	19:09.6	31:43.5	19:37.6	-10:00.0	+4:01.9	+6.06%	94.28%	6.37%	-0.02%
+11	106	Tim Eade	Tim	Eade	Full	106	1:03:05.8	1:13:05.8	19:34.0	32:04.7	21:27.1	-10:00.0	+6:37.0	+9.95%	90.95%	2.94%	-3.69%
+12	7	Alex Giks			Full		1:03:34.4	1:13:34.4	19:37.8	32:04.2	21:52.4	-10:00.0	+7:05.6	+10.67%	90.36%	2.31%	-4.36%
+13	84	Wendy Wise	Wendy	Wise	Full	84	1:16:06.0	1:16:06.0	2:48.4	43:48.4	29:29.2	+0:00.0	+9:37.2	+14.47%	87.36%	-1.05%	-7.95%
+14	18	Hollie Robards	Hollie	Robards	Full	18	1:13:04.5	1:23:04.5	19:04.0	38:37.7	25:22.8	-10:00.0	+16:35.7	+24.96%	80.02%	-10.31%	-17.84%
+15	160	Jeffrey Stella	Jeffrey	Stella	Full	160	1:18:41.7	1:28:41.7	23:08.4	40:54.7	24:38.5	-10:00.0	+22:12.9	+33.42%	74.95%	-17.77%	-25.81%
+16	32	Guy Davoren	Guy	Davoren	Full	32	1:19:32.5	1:29:32.5	21:46.6	42:08.1	25:37.8	-10:00.0	+23:03.7	+34.69%	74.24%	-18.89%	-27.01%
+17	162	Peter Stowe	Peter	Stowe	Full	162	1:19:50.3	1:29:50.3	20:26.0	44:36.2	24:48.1	-10:00.0	+23:21.5	+35.14%	74.00%	-19.29%	-27.43%
+18	5	Jenny Scaysbrook	Jenny	Scaysbrook	Full	5	1:31:55.0	1:31:55.0	9:39.3	36:04.7	46:11.0	+0:00.0	+25:26.2	+38.26%	72.33%	-22.05%	-30.38%
+-	4	Jim Collins	Jim	Collins	Full	4	DNS	DNS				-16:47.0	-	-	-	-	-
+-	9	Stuart Crawford	Stuart	Crawford	Full	9	DNS	DNS				+0:00.0	-	-	-	-	-
+-	10	Virginia Jones	Virginia	Jones	Full	10	DNS	DNS				-21:50.0	-	-	-	-	-
+-	17	Richard Mourant	Richard	Mourant	Full	17	DNS	DNS				-25:55.0	-	-	-	-	-
+-	20	Gerard Robards	Gerard	Robards	Full	20	DNS	DNS				-26:53.0	-	-	-	-	-
+-	44	Scott Wildin	Scott	Wildin	Full	44	DNS	DNS				-35:31.0	-	-	-	-	-
+-	46	Kyle Mooney	Kyle	Mooney	Full	46	DNS	DNS				-33:23.0	-	-	-	-	-
+-	72	Rob Worth	Rob	Worth	Full	72	DNS	DNS				-23:37.0	-	-	-	-	-
+-	76	Gregory Freeman	Gregory	Freeman	Full	76	DNS	DNS				+0:00.0	-	-	-	-	-
+-	86	Warren Copping	Warren	Copping	Full	86	DNS	DNS				-9:14.0	-	-	-	-	-
+-	104	Viv Wright	Viv	Wright	Full	104	DNS	DNS				+0:00.0	-	-	-	-	-
+-	105	Darren Jones	Darren	Jones	Full	105	DNS	DNS				-20:11.0	-	-	-	-	-
+-	182	Sharyn Klein	Sharyn	Klein	Full	182	DNS	DNS				-19:22.0	-	-	-	-	-
+-	196	Bec McLucas	Bec	McLucas	Full	196	DNS	DNS				-20:00.0	-	-	-	-	-
+-	206	Sam Colman	Sam	Colman	Full	206	DNS	DNS				-28:17.0	-	-	-	-	-
+-	252	Caroline Hogan	Caroline	Hogan	Full	252	DNS	DNS				-20:49.0	-	-	-	-	-
+-	256	Mark Harrison	Mark	Harrison	Full	256	DNS	DNS				-7:10.0	-	-	-	-	-

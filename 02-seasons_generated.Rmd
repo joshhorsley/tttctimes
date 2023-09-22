@@ -174,6 +174,248 @@ table_record(dt_all_long[season=="2022-2023"], tri_cols, "int", "Run")
 ```
 
 
+## Race 25: 01 Apr 2023 - Club Championships {#r-2023-04-01}
+
+A total of 32 competitors entered, 2 for the first time this season. 
+
+
+### Club Championships
+
+22 competitors entered the course, achieving 13 new overall PBs and 24 new split PBs: 6 in the pool, 9 on the bike, and 9 on the run.
+
+```{r plot-race-25-full-TRUE-2022-2023}
+plotly_race(dt_all_long, tri_cols, "2022-2023",25, "full",TRUE)
+```
+
+2022-2023 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-25-full-TRUE-2022-2023}
+table_race(dt_all_long[season=="2022-2023"], tri_cols, 25, "full",TRUE)
+```
+
+
+### Full
+
+10 competitors entered the course, achieving 2 new overall PBs and 3 new split PBs: 2 in the pool and 1 on the run.
+
+```{r plot-race-25-full-FALSE-2022-2023}
+plotly_race(dt_all_long, tri_cols, "2022-2023",25, "full",FALSE)
+```
+
+2022-2023 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-25-full-FALSE-2022-2023}
+table_race(dt_all_long[season=="2022-2023"], tri_cols, 25, "full",FALSE)
+```
+
+
+## Race 23: 18 Mar 2023 {#r-2023-03-18}
+
+A total of 18 competitors entered. 
+
+
+### Full
+
+18 competitors entered the course, achieving 2 new overall PBs and 6 new split PBs: 3 in the pool and 3 on the run.
+
+```{r plot-race-23-full-FALSE-2022-2023}
+plotly_race(dt_all_long, tri_cols, "2022-2023",23, "full",FALSE)
+```
+
+2022-2023 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-23-full-FALSE-2022-2023}
+table_race(dt_all_long[season=="2022-2023"], tri_cols, 23, "full",FALSE)
+```
+
+
+## Race 22: 11 Mar 2023 {#r-2023-03-11}
+
+A total of 20 competitors entered. 
+
+
+### Full
+
+20 competitors entered the course, achieving 4 new overall PBs and 6 new split PBs: 2 on the bike and 4 on the run.
+
+```{r plot-race-22-full-FALSE-2022-2023}
+plotly_race(dt_all_long, tri_cols, "2022-2023",22, "full",FALSE)
+```
+
+2022-2023 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-22-full-FALSE-2022-2023}
+table_race(dt_all_long[season=="2022-2023"], tri_cols, 22, "full",FALSE)
+```
+
+
+## Race 21: 04 Mar 2023 {#r-2023-03-04}
+
+A total of 14 competitors entered. 
+
+
+### Full
+
+14 competitors entered the course, achieving 2 new overall PBs and 1 new split PBs: 1 in the pool.
+
+```{r plot-race-21-full-FALSE-2022-2023}
+plotly_race(dt_all_long, tri_cols, "2022-2023",21, "full",FALSE)
+```
+
+2022-2023 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-21-full-FALSE-2022-2023}
+table_race(dt_all_long[season=="2022-2023"], tri_cols, 21, "full",FALSE)
+```
+
+
+## Race 20: 25 Feb 2023 {#r-2023-02-25}
+
+A total of 18 competitors entered. 
+
+
+### Full
+
+18 competitors entered the course, achieving 5 new overall PBs and 8 new split PBs: 2 in the pool, 4 on the bike, and 2 on the run.
+
+```{r plot-race-20-full-FALSE-2022-2023}
+plotly_race(dt_all_long, tri_cols, "2022-2023",20, "full",FALSE)
+```
+
+2022-2023 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-20-full-FALSE-2022-2023}
+table_race(dt_all_long[season=="2022-2023"], tri_cols, 20, "full",FALSE)
+```
+
+
+## Race 19: 18 Feb 2023 {#r-2023-02-18}
+
+A total of 25 competitors entered. 
+
+
+### Full
+
+25 competitors entered the course, achieving 5 new overall PBs and 10 new split PBs: 2 in the pool, 3 on the bike, and 5 on the run.
+
+```{r plot-race-19-full-FALSE-2022-2023}
+plotly_race(dt_all_long, tri_cols, "2022-2023",19, "full",FALSE)
+```
+
+2022-2023 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-19-full-FALSE-2022-2023}
+table_race(dt_all_long[season=="2022-2023"], tri_cols, 19, "full",FALSE)
+```
+
+
+## Race 18: 11 Feb 2023 {#r-2023-02-11}
+
+A total of 33 competitors entered, 1 for the first time this season. 
+
+
+### Full
+
+33 competitors entered the course, achieving 8 new overall PBs and 18 new split PBs: 1 in the pool, 10 on the bike, and 7 on the run.
+
+```{r plot-race-18-full-FALSE-2022-2023}
+plotly_race(dt_all_long, tri_cols, "2022-2023",18, "full",FALSE)
+```
+
+2022-2023 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-18-full-FALSE-2022-2023}
+table_race(dt_all_long[season=="2022-2023"], tri_cols, 18, "full",FALSE)
+```
+
+
+## Race 16: 28 Jan 2023 {#r-2023-01-28}
+
+A total of 24 competitors entered. 
+
+
+### Full
+
+24 competitors entered the course, achieving 3 new overall PBs and 8 new split PBs: 6 on the bike and 2 on the run.
+
+```{r plot-race-16-full-FALSE-2022-2023}
+plotly_race(dt_all_long, tri_cols, "2022-2023",16, "full",FALSE)
+```
+
+2022-2023 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-16-full-FALSE-2022-2023}
+table_race(dt_all_long[season=="2022-2023"], tri_cols, 16, "full",FALSE)
+```
+
+
+## Race 15: 21 Jan 2023 {#r-2023-01-21}
+
+A total of 29 competitors entered. 
+
+
+### Full
+
+29 competitors entered the course, achieving 6 new overall PBs and 14 new split PBs: 2 in the pool, 6 on the bike, and 6 on the run.
+
+```{r plot-race-15-full-FALSE-2022-2023}
+plotly_race(dt_all_long, tri_cols, "2022-2023",15, "full",FALSE)
+```
+
+2022-2023 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-15-full-FALSE-2022-2023}
+table_race(dt_all_long[season=="2022-2023"], tri_cols, 15, "full",FALSE)
+```
+
+
+## Race 14: 14 Jan 2023 {#r-2023-01-14}
+
+A total of 32 competitors entered. 
+
+
+### Full
+
+32 competitors entered the course, achieving 4 new overall PBs and 25 new split PBs: 11 in the pool, 11 on the bike, and 3 on the run.
+
+```{r plot-race-14-full-FALSE-2022-2023}
+plotly_race(dt_all_long, tri_cols, "2022-2023",14, "full",FALSE)
+```
+
+2022-2023 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-14-full-FALSE-2022-2023}
+table_race(dt_all_long[season=="2022-2023"], tri_cols, 14, "full",FALSE)
+```
+
+
+## Race 13: 07 Jan 2023 {#r-2023-01-07}
+
+A total of 33 competitors entered, 1 for the first time this season. 
+
+
+### Full
+
+33 competitors entered the course, achieving 6 new overall PBs and 13 new split PBs: 4 in the pool, 4 on the bike, and 5 on the run.
+
+```{r plot-race-13-full-FALSE-2022-2023}
+plotly_race(dt_all_long, tri_cols, "2022-2023",13, "full",FALSE)
+```
+
+2022-2023 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-13-full-FALSE-2022-2023}
+table_race(dt_all_long[season=="2022-2023"], tri_cols, 13, "full",FALSE)
+```
+
+
+## Race 11: 24 Dec 2022 {#r-2022-12-24}
+
+A total of 38 competitors entered, 3 for the first time this season. 
+
+
+### Full
+
+38 competitors entered the course, achieving 19 new overall PBs and 39 new split PBs: 10 in the pool, 19 on the bike, and 10 on the run.
+
+```{r plot-race-11-full-FALSE-2022-2023}
+plotly_race(dt_all_long, tri_cols, "2022-2023",11, "full",FALSE)
+```
+
+2022-2023 season records are show in gold, season PBs are shown in pink, and invalid times in grey. Ranks compare efforts in this race.
+```{r tab-race-11-full-FALSE-2022-2023}
+table_race(dt_all_long[season=="2022-2023"], tri_cols, 11, "full",FALSE)
+```
+
+
 ## Race 10: 17 Dec 2022 {#r-2022-12-17}
 
 A total of 49 competitors entered, 4 for the first time this season. 
@@ -181,7 +423,7 @@ A total of 49 competitors entered, 4 for the first time this season.
 
 ### Full
 
-47 competitors entered the course, achieving 15 new overall PBs and 41 new split PBs: 13 in the pool, 13 on the bike, and 15 on the run.
+47 competitors entered the course, achieving 15 new overall PBs and 42 new split PBs: 13 in the pool, 13 on the bike, and 16 on the run.
 
 ```{r plot-race-10-full-FALSE-2022-2023}
 plotly_race(dt_all_long, tri_cols, "2022-2023",10, "full",FALSE)
@@ -247,7 +489,7 @@ A total of 19 competitors entered. [Club Report](http://www.twintownstriathlon.o
 
 ### Full
 
-14 competitors entered the course, achieving 7 new split PBs: 2 in the pool, 2 on the bike, and 3 on the run.
+14 competitors entered the course, achieving 1 new overall PBs and 9 new split PBs: 3 in the pool, 2 on the bike, and 4 on the run.
 
 ```{r plot-race-8-full-FALSE-2022-2023}
 plotly_race(dt_all_long, tri_cols, "2022-2023",8, "full",FALSE)
@@ -280,7 +522,7 @@ A total of 38 competitors entered, 2 for the first time this season.
 
 ### Full
 
-31 competitors entered the course, achieving 13 new overall PBs and 34 new split PBs: 6 in the pool, 15 on the bike, and 13 on the run.
+31 competitors entered the course, achieving 14 new overall PBs and 35 new split PBs: 6 in the pool, 15 on the bike, and 14 on the run.
 
 ```{r plot-race-7-full-FALSE-2022-2023}
 plotly_race(dt_all_long, tri_cols, "2022-2023",7, "full",FALSE)
@@ -313,7 +555,7 @@ A total of 46 competitors entered, 5 for the first time this season. [Club Repor
 
 ### Full
 
-42 competitors entered the course, achieving 19 new overall PBs and 40 new split PBs: 8 in the pool, 20 on the bike, and 12 on the run.
+42 competitors entered the course, achieving 20 new overall PBs and 41 new split PBs: 8 in the pool, 20 on the bike, and 13 on the run.
 
 ```{r plot-race-6-full-FALSE-2022-2023}
 plotly_race(dt_all_long, tri_cols, "2022-2023",6, "full",FALSE)
@@ -346,7 +588,7 @@ A total of 48 competitors entered, 8 for the first time this season. [Club Repor
 
 ### Full
 
-42 competitors entered the course, achieving 29 new overall PBs and 67 new split PBs: 14 in the pool, 35 on the bike, and 18 on the run.
+42 competitors entered the course, achieving 28 new overall PBs and 66 new split PBs: 14 in the pool, 35 on the bike, and 17 on the run.
 
 ```{r plot-race-5-full-FALSE-2022-2023}
 plotly_race(dt_all_long, tri_cols, "2022-2023",5, "full",FALSE)
@@ -374,12 +616,12 @@ table_race(dt_all_long[season=="2022-2023"], tri_cols, 5, "int",FALSE)
 
 ## Race 4: 05 Nov 2022 {#r-2022-11-05}
 
-A total of 42 competitors entered, 9 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=6652){target="_blank"}.
+A total of 42 competitors entered, 8 for the first time this season. [Club Report](http://www.twintownstriathlon.org.au/?p=6652){target="_blank"}.
 
 
 ### Full
 
-42 competitors entered the course, achieving 19 new overall PBs and 55 new split PBs: 18 in the pool, 18 on the bike, and 19 on the run.
+42 competitors entered the course, achieving 20 new overall PBs and 56 new split PBs: 18 in the pool, 18 on the bike, and 20 on the run.
 
 ```{r plot-race-4-full-FALSE-2022-2023}
 plotly_race(dt_all_long, tri_cols, "2022-2023",4, "full",FALSE)
@@ -431,7 +673,7 @@ A total of 29 competitors entered, 11 for the first time this season.
 
 ### Full
 
-27 competitors entered the course, achieving 16 new overall PBs and 43 new split PBs: 15 in the pool, 12 on the bike, and 16 on the run.
+27 competitors entered the course, achieving 15 new overall PBs and 42 new split PBs: 15 in the pool, 12 on the bike, and 15 on the run.
 
 ```{r plot-race-2-full-FALSE-2022-2023}
 plotly_race(dt_all_long, tri_cols, "2022-2023",2, "full",FALSE)

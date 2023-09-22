@@ -1,0 +1,11 @@
+Place	Bib	Name	First name	Last name	Distance	Chip id	Time	Lap 1	Lap 2	Lap 3	Difference	% Back	% Winning	% Average	% Median
+1	2	Simon Harradence	Simon	Harradence	Full	2	57:00.0	8:07.1	29:20.9	19:32.0	-	-	100%	24.06%	25.79%
+2	325	Amanda Holmes	Amanda	Holmes	Full	325	1:10:00.0	9:33.8	37:12.6	23:13.6	+13:00.0	+22.81%	81.43%	6.74%	8.86%
+3	53	Joanne Colja	Joanne	Colja	Full	53	1:12:16.0	9:39.9	35:14.4	27:21.7	+15:16.0	+26.78%	78.87%	3.72%	5.91%
+4	162	Peter Stowe	Peter	Stowe	Full	162	1:13:30.3	9:51.2	39:56.5	23:42.6	+16:30.3	+28.96%	77.55%	2.07%	4.30%
+5	105	Darren Jones	Darren	Jones	Full	105	1:16:46.5	10:36.6	36:06.2	30:03.7	+19:46.5	+34.69%	74.24%	-2.29%	0.04%
+6	315	Gavin Lowth			Full	315	1:16:50.5	38:58.4	27:42.1	10:10.0	+19:50.5	+34.81%	74.18%	-2.38%	-0.04%
+7	104	Viv Wright	Viv	Wright	Full	104	1:16:58.1	9:32.2	32:13.8	35:12.1	+19:58.1	+35.03%	74.06%	-2.54%	-0.21%
+8	32	Guy Davoren	Guy	Davoren	Full	32	1:19:50.6	10:47.2	44:00.8	25:02.6	+22:50.6	+40.08%	71.39%	-6.38%	-3.95%
+9	84	Wendy Wise	Wendy	Wise	Full	84	1:21:23.9	11:56.8	41:33.8	27:53.3	+24:23.9	+42.80%	70.03%	-8.45%	-5.98%
+10	86	Warren Copping	Warren	Copping	Full	86	1:25:59.0	12:14.0	42:59.7	30:45.3	+28:59.0	+50.85%	66.29%	-14.56%	-11.95%
