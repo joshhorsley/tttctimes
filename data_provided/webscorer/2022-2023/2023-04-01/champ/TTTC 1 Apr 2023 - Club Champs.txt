@@ -14,7 +14,7 @@ Place	Bib	Name	First name	Last name	Distance	Chip id	Time	Lap 1	Lap 2	Lap 3	Diff
 13	34	Simon Bradbery	Simon	Bradbery	Club Champs	34	1:00:34.0	9:27.0	30:24.0	20:43.0	+6:16.0	+11.54%	89.65%	3.52%	-0.53%
 14	99	Scott Styman	Scott	Styman	Club Champs	99	1:00:57.0	8:51.0	31:57.0	20:09.0	+6:39.0	+12.25%	89.09%	2.91%	-1.16%
 15	106	Tim Eade	Tim	Eade	Club Champs	106	1:02:51.0	10:54.0	30:43.0	21:14.0	+8:33.0	+15.75%	86.40%	-0.12%	-4.32%
-16	63	Sebastian Thomson	Sebastian	Thomson	Club Champs	63	1:05:44.0	8:58.0	34:26.0	22:19.900	+11:26.0	+21.06%	82.61%	-4.71%	-9.10%
+16	63	Sebastian Thomson	Sebastian	Thomson	Club Champs	63	1:05:44.0	8:58.0	34:26.0	22:19.9	+11:26.0	+21.06%	82.61%	-4.71%	-9.10%
 17	10	Virginia Jones	Virginia	Jones	Club Champs	10	1:08:38.0	9:26.0	34:19.0	24:53.0	+14:20.0	+26.40%	79.12%	-9.33%	-13.91%
 18	80	Mark Collinson	Mark	Collinson	Club Champs	80	1:08:44.0	9:27.0	35:31.0	23:46.0	+14:26.0	+26.58%	79.00%	-9.49%	-14.08%
 19	4	Jim Collins	Jim	Collins	Club Champs	4	1:09:15.0	11:01.0	32:49.0	25:25.0	+14:57.0	+27.53%	78.41%	-10.32%	-14.94%
