@@ -25,14 +25,15 @@ list_icons_athlete <- list(ride = "https://www.twintownstriathlon.org.au/wp-cont
 sf_courses <- st_read("data_provided/courses/shp/courses.shp", quiet = TRUE)
 sf_poi <- st_read("data_provided/courses/shp/poi.shp", quiet = TRUE)
 
-sf_poi <- sf_poi[sf_poi$name != "Marshall: Cnr Oxley & Cunningham (corner of Netball Courts)",]
+# sf_poi <- sf_poi[sf_poi$name != "Marshall: Cnr Oxley & Cunningham (corner of Netball Courts)",]
+sf_poi <- sf_poi[sf_poi$name != "Marshall: RAB Vintage Lakes & Stradbroke roundabout (SW corner)",]
 
 
 # Random text for unique file names ---------------------------------------
 
 
 # wordpress keeps old version cached and does not overwrite them
-v_text <- 3
+v_text <- 4
 
 # Functions ---------------------------------------------------------------
 
