@@ -10,7 +10,7 @@ library(leaflet.extras2)
 list_icons <- awesomeIconList(
   swimmer = makeAwesomeIcon(text = fa("person-swimming"),markerColor = "blue"),
   traffic = makeAwesomeIcon(text = fa("traffic-light"), markerColor = "black"),
-  marshall = makeAwesomeIcon(text = fa("circle-user"), markerColor = "pink"),
+  marshal = makeAwesomeIcon(text = fa("circle-user"), markerColor = "pink"),
   timer = makeAwesomeIcon(text = fa("stopwatch"), markerColor = "black"),
   circle = makeAwesomeIcon(text = fa("circle-xmark"), markerColor = "black", iconColor = "yellow")
 )
@@ -26,14 +26,14 @@ sf_courses <- st_read("data_provided/courses/shp/courses.shp", quiet = TRUE)
 sf_poi <- st_read("data_provided/courses/shp/poi.shp", quiet = TRUE)
 
 # sf_poi <- sf_poi[sf_poi$name != "Marshall: Cnr Oxley & Cunningham (corner of Netball Courts)",]
-sf_poi <- sf_poi[sf_poi$name != "Marshall: RAB Vintage Lakes & Stradbroke roundabout (SW corner)",]
+sf_poi <- sf_poi[sf_poi$name != "Marshal: RAB Vintage Lakes & Stradbroke roundabout (SW corner)",]
 
 
 # Random text for unique file names ---------------------------------------
 
 
 # wordpress keeps old version cached and does not overwrite them
-v_text <- 4
+v_text <- 6
 
 # Functions ---------------------------------------------------------------
 

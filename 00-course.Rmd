@@ -11,7 +11,7 @@ dummy <- lapply(list.files("R", full.names = TRUE), source)
 list_icons <- awesomeIconList(
   swimmer = makeAwesomeIcon(text = fa("person-swimming"),markerColor = "blue"),
   traffic = makeAwesomeIcon(text = fa("traffic-light"), markerColor = "black"),
-  marshall = makeAwesomeIcon(text = fa("circle-user"), markerColor = "pink"),
+  marshal = makeAwesomeIcon(text = fa("circle-user"), markerColor = "pink"),
   timer = makeAwesomeIcon(text = fa("stopwatch"), markerColor = "black"),
   circle = makeAwesomeIcon(text = fa("circle-xmark"), markerColor = "black", iconColor = "yellow")
 )
