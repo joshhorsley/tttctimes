@@ -7,6 +7,7 @@ library(leaflet.extras2)
 
 # Icons -------------------------------------------------------------------
 
+
 list_icons <- awesomeIconList(
   swimmer = makeAwesomeIcon(text = fa("person-swimming"),markerColor = "blue"),
   traffic = makeAwesomeIcon(text = fa("traffic-light"), markerColor = "black"),
@@ -25,15 +26,37 @@ list_icons_athlete <- list(ride = "https://www.twintownstriathlon.org.au/wp-cont
 sf_courses <- st_read("data_provided/courses/shp/courses.shp", quiet = TRUE)
 sf_poi <- st_read("data_provided/courses/shp/poi.shp", quiet = TRUE)
 
+sf_sprint_run2 <- st_read("data_provided/courses/shp/trac2sprintrun.shp") |> 
+  st_set_crs(st_crs(sf_courses))
+sf_sprint_run2$version <- "trac2"
+sf_sprint_run2$part <- "run"
+sf_sprint_run2$distance <- "sprint"
+sf_sprint_run2$id <- NA
+
+sf_tempta_ride2 <- st_read("data_provided/courses/shp/trac2temptaride.shp")# |> 
+# st_make_valid() # animated marker was making extra step to maximum y value at end - this fixed it
+
+sf_courses <- rbind(sf_courses,
+                    sf_sprint_run2,
+                    sf_tempta_ride2
+)
+
+sf_courses$distance[sf_courses$distance=="full"] <- "sprint"
+sf_courses$distance[sf_courses$distance=="int"] <- "tempta"
+
+
+
+
 # sf_poi <- sf_poi[sf_poi$name != "Marshall: Cnr Oxley & Cunningham (corner of Netball Courts)",]
-sf_poi <- sf_poi[sf_poi$name != "Marshal: RAB Vintage Lakes & Stradbroke roundabout (SW corner)",]
+sf_poi <- sf_poi[!(sf_poi$name %in% c("Marshal: RAB Vintage Lakes & Stradbroke roundabout (SW corner)", 
+                                      "Marshal: Cnr Oxley & Cunningham (corner of Netball Courts)")),]
 
 
 # Random text for unique file names ---------------------------------------
 
 
 # wordpress keeps old version cached and does not overwrite them
-v_text <- 6
+v_text <- 7
 
 # Functions ---------------------------------------------------------------
 
@@ -88,9 +111,9 @@ make_map <- function(sf_course,
 }
 
 
-save_map <- function(l_out, course, part, v_text="") {
+save_map <- function(l_out, course, part, version,v_text="") {
   
-  path_out <- paste0("widgets/out/course-",course,"-",part,"_",v_text,".html")
+  path_out <- paste0("widgets/out/course-",course,"-",version,"-",part,"_",v_text,".html")
   dir_out <- dirname(path_out)
   if(!dir.exists(dir_out)) dir.create(dir_out)
   
@@ -124,22 +147,61 @@ which_poi <- function(sf_course, sf_poi_all, buffer_m = 20) {
 new_course_names <- list(full = "sprint",
                          int = "tempta")
 
+
+
 # Generate ----------------------------------------------------------------
 
 
-for(i_course in c("full","int")) {
+for(i_row in seq(nrow(sf_courses))) {
   
+  sf_use <- sf_courses[i_row,]
   
-  for(i_part in c("ride","run")) {
-    
-    sf_use <- sf_courses[with(sf_courses, which(version == "trac" & distance==i_course & part == i_part)),]
-    
-    sf_poi_use <- which_poi(sf_use, sf_poi)
-    
-    i_map <- make_map(sf_use,
-                      sf_poi_use,
-                      i_part)
-    
-    save_map(i_map, new_course_names[[i_course]], i_part, v_text)
-  }
+  sf_poi_use <- which_poi(sf_use, sf_poi)
+  
+  i_map <- make_map(sf_use,
+                    sf_poi_use,
+                    sf_use$part)
+  
+  save_map(i_map, sf_use$distance, sf_use$part, sf_use$version, v_text)
+  
 }
+
+
+# Marshal map -------------------------------------------------------------
+
+
+make_map_marshal <- function() {
+  
+  buffer_dist <- 10000
+  units(buffer_dist) <- "m"
+  sf_bbox_use <- sf_poi |> 
+    st_buffer(dist = buffer_dist) |>
+    st_bbox()
+  
+  bbox_use <- as.list(sf_bbox_use)
+  names(bbox_use) <- names(sf_bbox_use)
+  
+  leaflet(width = "100%", height = 400) |> 
+    setMaxBounds(lng1 = bbox_use$xmin,lat1 = bbox_use$ymin, lng2 = bbox_use$xmax,lat2 = bbox_use$ymax) |>
+    addTiles(group = "Detailed") |>
+    addProviderTiles(providers$CartoDB.Positron, group = "Simple") |>
+    addProviderTiles("Esri.WorldImagery", group = "Satellite") |>
+    
+    addAwesomeMarkers(data = sf_poi,
+                      icon =  ~list_icons[type],
+                      label =~name,
+                      group = "Info") |>
+    
+    
+    addFullscreenControl() |>  
+    addResetMapButton() |> 
+    addScaleBar(position = "bottomleft") |> 
+    addLayersControl(position = "topleft",
+                     baseGroups = c("Simple","Detailed", "Satellite"),
+                     options = layersControlOptions(collapsed = TRUE))
+  
+}
+
+l_marshals <- make_map_marshal()
+
+save_map(l_marshals, "marshal","all","trac2",v_text)
