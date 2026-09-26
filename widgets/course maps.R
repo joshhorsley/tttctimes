@@ -56,7 +56,7 @@ sf_poi <- sf_poi[!(sf_poi$name %in% c("Marshal: RAB Vintage Lakes & Stradbroke r
 
 
 # wordpress keeps old version cached and does not overwrite them
-v_text <- 7
+v_text <- 8
 
 # Functions ---------------------------------------------------------------
 
@@ -79,8 +79,7 @@ make_map <- function(sf_course,
   
   leaflet(width = "100%", height = 400) |> 
     setMaxBounds(lng1 = bbox_use$xmin,lat1 = bbox_use$ymin, lng2 = bbox_use$xmax,lat2 = bbox_use$ymax) |>
-    addTiles(group = "Detailed") |>
-    addProviderTiles(providers$CartoDB.Positron, group = "Simple") |>
+    addTiles(group = "OSM") |>
     addProviderTiles("Esri.WorldImagery", group = "Satellite") |>
     
     
@@ -105,7 +104,7 @@ make_map <- function(sf_course,
     addResetMapButton() |> 
     addScaleBar(position = "bottomleft") |> 
     addLayersControl(position = "topleft",
-                     baseGroups = c("Simple","Detailed", "Satellite"),
+                     baseGroups = c("OSM", "Satellite"),
                      options = layersControlOptions(collapsed = TRUE))
   
 }
@@ -183,8 +182,7 @@ make_map_marshal <- function() {
   
   leaflet(width = "100%", height = 400) |> 
     setMaxBounds(lng1 = bbox_use$xmin,lat1 = bbox_use$ymin, lng2 = bbox_use$xmax,lat2 = bbox_use$ymax) |>
-    addTiles(group = "Detailed") |>
-    addProviderTiles(providers$CartoDB.Positron, group = "Simple") |>
+    addTiles(group = "OSM") |>
     addProviderTiles("Esri.WorldImagery", group = "Satellite") |>
     
     addAwesomeMarkers(data = sf_poi,
@@ -197,7 +195,7 @@ make_map_marshal <- function() {
     addResetMapButton() |> 
     addScaleBar(position = "bottomleft") |> 
     addLayersControl(position = "topleft",
-                     baseGroups = c("Simple","Detailed", "Satellite"),
+                     baseGroups = c("OSM", "Satellite"),
                      options = layersControlOptions(collapsed = TRUE))
   
 }
